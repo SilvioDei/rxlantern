@@ -1,0 +1,3808 @@
+{
+  "checked_date": "2026-10-23",
+  "count": 20,
+  "pharmacies": [
+    {
+      "id": "cvs-10174",
+      "name": "CVS Pharmacy",
+      "type": "chain",
+      "neighborhood": "Downtown",
+      "address": "700 Atlantic Ave, Boston, MA 02111",
+      "zip": "02111",
+      "phone": "(617) 737-7232",
+      "latitude": 42.35215,
+      "longitude": -71.05516,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "07:00",
+            "close": "19:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "07:00",
+            "close": "19:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "07:00",
+            "close": "19:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "07:00",
+            "close": "19:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "07:00",
+            "close": "19:00"
+          }
+        ],
+        "sat": [],
+        "sun": []
+      },
+      "store_hours": {
+        "mon": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      "lunch_break": {
+        "mon": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "tue": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "wed": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "thu": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "fri": {
+          "start": "13:30",
+          "end": "14:00"
+        }
+      },
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "no",
+      "delivery": "yes",
+      "delivery_details": {
+        "same_day": "Same-day (within about 4 hours) or 1-3 day delivery, once the prescription is ready",
+        "cost": "In most locations $9.49 same-day, $5.49 for 1-3 day; free with ExtraCare Plus",
+        "area": "1-3 day: address must be in the same state as the pharmacy. Same-day: needs a street address (no PO boxes). Not all stores or drugs qualify; some insurance plans do not allow delivery.",
+        "how_to_request": "After the prescription is ready: call the store, choose delivery in the CVS Health app or on cvs.com, or use the link in the order-ready text",
+        "note": "Chain-wide CVS delivery page, not store-specific. The store page lists 'Rx delivery' for this store.",
+        "source": "https://www.cvs.com/content/delivery"
+      },
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": [
+          "Flu",
+          "COVID-19"
+        ],
+        "vaccines_travel": "not found",
+        "clinic_on_site": "no (no MinuteClinic at this store in CVS's MinuteClinic locator)",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "COVID-19 vaccine",
+          "COVID-19 testing",
+          "Flu shots",
+          "In-store pickup",
+          "Immunizations",
+          "Photo",
+          "Rx delivery",
+          "Accepts SNAP",
+          "OTC Health Solutions"
+        ]
+      },
+      "website": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+      "vaccine_booking_url": "https://www.cvs.com/immunizations/get-vaccinated",
+      "sources": {
+        "clinic_on_site": "https://www.cvs.com/minuteclinic/clinic-locator/ma/boston/10174.html",
+        "address": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "zip": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "phone": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "latitude": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "longitude": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "pharmacy_hours": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "store_hours": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "lunch_break": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "holiday_hours": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "is_24_hours": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "store_is_24_hours": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "delivery": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "drive_thru": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "services": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "website": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "vaccine_booking_url": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+        "delivery_details": "https://www.cvs.com/content/delivery",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Store page lists 'Immunizations' in general; only the vaccines named on the page are listed above.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "chain": "CVS",
+      "store_number": "10174",
+      "nearby_clinics": [
+        {
+          "name": "SOUTH STREET CLINIC (SOUTH COVE COMMUNITY HEALTH CENTER, INC)",
+          "kind": "community health center",
+          "address": "145 South St, Boston, MA 02111",
+          "distance_miles": 0.2,
+          "distance_label": "about 0.2 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Mass General Brigham Urgent Care - Boston Common",
+          "kind": "urgent care",
+          "address": "137 Stuart St, Suite A-7, Boston, MA 02116",
+          "distance_miles": 0.6,
+          "distance_label": "about 0.6 miles away",
+          "walk_in": "yes",
+          "source": "https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "WASHINGTON STREET CLINIC (SOUTH COVE COMMUNITY HEALTH CENTER, INC)",
+          "kind": "community health center",
+          "address": "885 Washington St, Boston, MA 02111",
+          "distance_miles": 0.6,
+          "distance_label": "about 0.6 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Seaport (SOUTH BOSTON COMMUNITY HEALTH CENTER, INC.)",
+          "kind": "community health center",
+          "address": "505 Congress St, Boston, MA 02210",
+          "distance_miles": 0.8,
+          "distance_label": "about 0.8 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "NORTH END WATERFRONT HEALTH (North End Community Health Committee Inc)",
+          "kind": "community health center",
+          "address": "332 Hanover St, Boston, MA 02113",
+          "distance_miles": 0.9,
+          "distance_label": "about 0.9 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "cvs-5874",
+      "name": "CVS Pharmacy",
+      "type": "chain",
+      "neighborhood": "Chinatown",
+      "address": "631 Washington St, Boston, MA 02111",
+      "zip": "02111",
+      "phone": "(617) 338-0128",
+      "latitude": 42.35251,
+      "longitude": -71.06288,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "10:00",
+            "close": "19:00"
+          }
+        ]
+      },
+      "store_hours": {
+        "mon": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      "lunch_break": {
+        "mon": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "tue": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "wed": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "thu": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "fri": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sat": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sun": {
+          "start": "13:30",
+          "end": "14:00"
+        }
+      },
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "no",
+      "delivery": "yes",
+      "delivery_details": {
+        "same_day": "Same-day (within about 4 hours) or 1-3 day delivery, once the prescription is ready",
+        "cost": "In most locations $9.49 same-day, $5.49 for 1-3 day; free with ExtraCare Plus",
+        "area": "1-3 day: address must be in the same state as the pharmacy. Same-day: needs a street address (no PO boxes). Not all stores or drugs qualify; some insurance plans do not allow delivery.",
+        "how_to_request": "After the prescription is ready: call the store, choose delivery in the CVS Health app or on cvs.com, or use the link in the order-ready text",
+        "note": "Chain-wide CVS delivery page, not store-specific. The store page lists 'Rx delivery' for this store.",
+        "source": "https://www.cvs.com/content/delivery"
+      },
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": [
+          "Flu",
+          "COVID-19"
+        ],
+        "vaccines_travel": "not found",
+        "clinic_on_site": "no (no MinuteClinic at this store in CVS's MinuteClinic locator)",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "COVID-19 vaccine",
+          "COVID-19 testing",
+          "Flu shots",
+          "In-store pickup",
+          "Immunizations",
+          "Photo",
+          "Drug disposal",
+          "Rx delivery",
+          "Accepts SNAP",
+          "OTC Health Solutions",
+          "Beauty IRL",
+          "ATM inside"
+        ]
+      },
+      "website": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+      "vaccine_booking_url": "https://www.cvs.com/immunizations/get-vaccinated",
+      "sources": {
+        "clinic_on_site": "https://www.cvs.com/minuteclinic/clinic-locator/ma/boston/5874.html",
+        "address": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "zip": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "phone": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "latitude": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "longitude": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "pharmacy_hours": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "store_hours": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "lunch_break": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "holiday_hours": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "is_24_hours": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "store_is_24_hours": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "delivery": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "drive_thru": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "services": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "website": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "vaccine_booking_url": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
+        "delivery_details": "https://www.cvs.com/content/delivery",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Store page lists 'Immunizations' in general; only the vaccines named on the page are listed above.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "chain": "CVS",
+      "store_number": "5874",
+      "nearby_clinics": [
+        {
+          "name": "Mass General Brigham Urgent Care - Boston Common",
+          "kind": "urgent care",
+          "address": "137 Stuart St, Suite A-7, Boston, MA 02116",
+          "distance_miles": 0.2,
+          "distance_label": "about 0.2 miles away",
+          "walk_in": "yes",
+          "source": "https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "SOUTH STREET CLINIC (SOUTH COVE COMMUNITY HEALTH CENTER, INC)",
+          "kind": "community health center",
+          "address": "145 South St, Boston, MA 02111",
+          "distance_miles": 0.3,
+          "distance_label": "about 0.3 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "WASHINGTON STREET CLINIC (SOUTH COVE COMMUNITY HEALTH CENTER, INC)",
+          "kind": "community health center",
+          "address": "885 Washington St, Boston, MA 02111",
+          "distance_miles": 0.3,
+          "distance_label": "about 0.3 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "AFC Urgent Care Back Bay",
+          "kind": "urgent care",
+          "address": "575 Boylston St, Boston, MA 02116",
+          "distance_miles": 0.7,
+          "distance_label": "about 0.7 miles away",
+          "walk_in": "yes ('No appointment necessary')",
+          "source": "https://www.afcurgentcare.com/back-bay/patient-services/urgent-care",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "NORTH END WATERFRONT HEALTH (North End Community Health Committee Inc)",
+          "kind": "community health center",
+          "address": "332 Hanover St, Boston, MA 02113",
+          "distance_miles": 1.0,
+          "distance_label": "about 1.0 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "cvs-1217",
+      "name": "CVS Pharmacy",
+      "type": "chain",
+      "neighborhood": "Back Bay",
+      "address": "587 Boylston Street, Boston, MA 02116",
+      "zip": "02116",
+      "phone": "(617) 437-8414",
+      "latitude": 42.35042,
+      "longitude": -71.07697,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "11:00",
+            "close": "17:00"
+          }
+        ]
+      },
+      "store_hours": {
+        "mon": [
+          {
+            "open": "00:00",
+            "close": "23:59"
+          }
+        ],
+        "tue": [
+          {
+            "open": "00:00",
+            "close": "23:59"
+          }
+        ],
+        "wed": [
+          {
+            "open": "00:00",
+            "close": "23:59"
+          }
+        ],
+        "thu": [
+          {
+            "open": "00:00",
+            "close": "23:59"
+          }
+        ],
+        "fri": [
+          {
+            "open": "00:00",
+            "close": "23:59"
+          }
+        ],
+        "sat": [
+          {
+            "open": "00:00",
+            "close": "23:59"
+          }
+        ],
+        "sun": [
+          {
+            "open": "00:00",
+            "close": "23:59"
+          }
+        ]
+      },
+      "lunch_break": {
+        "mon": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "tue": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "wed": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "thu": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "fri": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sat": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sun": {
+          "start": "13:30",
+          "end": "14:00"
+        }
+      },
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "yes",
+      "delivery": "yes",
+      "delivery_details": {
+        "same_day": "Same-day (within about 4 hours) or 1-3 day delivery, once the prescription is ready",
+        "cost": "In most locations $9.49 same-day, $5.49 for 1-3 day; free with ExtraCare Plus",
+        "area": "1-3 day: address must be in the same state as the pharmacy. Same-day: needs a street address (no PO boxes). Not all stores or drugs qualify; some insurance plans do not allow delivery.",
+        "how_to_request": "After the prescription is ready: call the store, choose delivery in the CVS Health app or on cvs.com, or use the link in the order-ready text",
+        "note": "Chain-wide CVS delivery page, not store-specific. The store page lists 'Rx delivery' for this store.",
+        "source": "https://www.cvs.com/content/delivery"
+      },
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": [
+          "Flu",
+          "COVID-19"
+        ],
+        "vaccines_travel": "not found",
+        "clinic_on_site": "no (no MinuteClinic at this store in CVS's MinuteClinic locator)",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "Store open 24 hours",
+          "COVID-19 vaccine",
+          "COVID-19 testing",
+          "Flu shots",
+          "In-store pickup",
+          "Immunizations",
+          "Photo",
+          "Rx delivery",
+          "Accepts SNAP",
+          "OTC Health Solutions",
+          "Beauty IRL",
+          "ATM inside"
+        ]
+      },
+      "website": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+      "vaccine_booking_url": "https://www.cvs.com/immunizations/get-vaccinated",
+      "sources": {
+        "clinic_on_site": "https://www.cvs.com/minuteclinic/clinic-locator/ma/boston/1217.html",
+        "address": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "zip": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "phone": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "latitude": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "longitude": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "pharmacy_hours": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "store_hours": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "lunch_break": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "holiday_hours": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "is_24_hours": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "store_is_24_hours": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "delivery": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "drive_thru": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "services": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "website": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "vaccine_booking_url": "https://www.cvs.com/store-locator/boston-ma-pharmacies/587-boylston-street-boston-ma-02116/storeid=1217",
+        "delivery_details": "https://www.cvs.com/content/delivery",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Store page lists 'Immunizations' in general; only the vaccines named on the page are listed above.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "chain": "CVS",
+      "store_number": "1217",
+      "nearby_clinics": [
+        {
+          "name": "AFC Urgent Care Back Bay",
+          "kind": "urgent care",
+          "address": "575 Boylston St, Boston, MA 02116",
+          "distance_miles": 0.0,
+          "distance_label": "less than 0.1 miles away",
+          "walk_in": "yes ('No appointment necessary')",
+          "source": "https://www.afcurgentcare.com/back-bay/patient-services/urgent-care",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Mass General Brigham Urgent Care - Boston Common",
+          "kind": "urgent care",
+          "address": "137 Stuart St, Suite A-7, Boston, MA 02116",
+          "distance_miles": 0.5,
+          "distance_label": "about 0.5 miles away",
+          "walk_in": "yes",
+          "source": "https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "WASHINGTON STREET CLINIC (SOUTH COVE COMMUNITY HEALTH CENTER, INC)",
+          "kind": "community health center",
+          "address": "885 Washington St, Boston, MA 02111",
+          "distance_miles": 0.6,
+          "distance_label": "about 0.6 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "South End Community Health Center (NEIGHBORHEALTH CORPORATION)",
+          "kind": "community health center",
+          "address": "1601 Washington St, Boston, MA 02118",
+          "distance_miles": 0.8,
+          "distance_label": "about 0.8 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "SOUTH STREET CLINIC (SOUTH COVE COMMUNITY HEALTH CENTER, INC)",
+          "kind": "community health center",
+          "address": "145 South St, Boston, MA 02111",
+          "distance_miles": 1.0,
+          "distance_label": "about 1.0 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "cvs-2283",
+      "name": "CVS Pharmacy",
+      "type": "chain",
+      "neighborhood": "Dorchester",
+      "address": "715 Morrissey Boulevard, Dorchester, MA 02122",
+      "zip": "02122",
+      "phone": "(617) 822-1307",
+      "latitude": 42.29744,
+      "longitude": -71.04986,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      "store_hours": {
+        "mon": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      "lunch_break": {
+        "mon": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "tue": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "wed": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "thu": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "fri": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sat": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sun": {
+          "start": "13:30",
+          "end": "14:00"
+        }
+      },
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "no",
+      "delivery": "yes",
+      "delivery_details": {
+        "same_day": "Same-day (within about 4 hours) or 1-3 day delivery, once the prescription is ready",
+        "cost": "In most locations $9.49 same-day, $5.49 for 1-3 day; free with ExtraCare Plus",
+        "area": "1-3 day: address must be in the same state as the pharmacy. Same-day: needs a street address (no PO boxes). Not all stores or drugs qualify; some insurance plans do not allow delivery.",
+        "how_to_request": "After the prescription is ready: call the store, choose delivery in the CVS Health app or on cvs.com, or use the link in the order-ready text",
+        "note": "Chain-wide CVS delivery page, not store-specific. The store page lists 'Rx delivery' for this store.",
+        "source": "https://www.cvs.com/content/delivery"
+      },
+      "drive_thru": "yes",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": [
+          "Flu",
+          "COVID-19"
+        ],
+        "vaccines_travel": "not found",
+        "clinic_on_site": "no (no MinuteClinic at this store in CVS's MinuteClinic locator)",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "COVID-19 vaccine",
+          "COVID-19 testing",
+          "Flu shots",
+          "In-store pickup",
+          "Pharmacy drive thru",
+          "Immunizations",
+          "Photo",
+          "UPS access point",
+          "Drug disposal",
+          "Rx delivery",
+          "Accepts SNAP",
+          "Accepts WIC",
+          "OTC Health Solutions",
+          "ATM inside"
+        ]
+      },
+      "website": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+      "vaccine_booking_url": "https://www.cvs.com/immunizations/get-vaccinated",
+      "sources": {
+        "clinic_on_site": "https://www.cvs.com/minuteclinic/clinic-locator/ma/dorchester/2283.html",
+        "address": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "zip": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "phone": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "latitude": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "longitude": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "pharmacy_hours": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "store_hours": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "lunch_break": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "holiday_hours": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "is_24_hours": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "store_is_24_hours": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "delivery": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "drive_thru": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "services": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "website": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "vaccine_booking_url": "https://www.cvs.com/store-locator/dorchester-ma-pharmacies/715-morrissey-boulevard-dorchester-ma-02122/storeid=2283",
+        "delivery_details": "https://www.cvs.com/content/delivery",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Store page lists 'Immunizations' in general; only the vaccines named on the page are listed above.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "chain": "CVS",
+      "store_number": "2283",
+      "nearby_clinics": [
+        {
+          "name": "DotHouse Health (Dothouse Health, Inc.)",
+          "kind": "community health center",
+          "address": "1353 Dorchester Ave, Dorchester, MA 02122",
+          "distance_miles": 0.7,
+          "distance_label": "about 0.7 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Daniel Driscoll  -  Neponset Health Center (HARBOR HEALTH SERVICES, INC.)",
+          "kind": "community health center",
+          "address": "398 Neponset Ave, Dorchester, MA 02122",
+          "distance_miles": 0.8,
+          "distance_label": "about 0.8 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "cvs-1265",
+      "name": "CVS Pharmacy",
+      "type": "chain",
+      "neighborhood": "East Boston",
+      "address": "210 Border Street, East Boston, MA 02128",
+      "zip": "02128",
+      "phone": "(617) 567-5147",
+      "latitude": 42.37546,
+      "longitude": -71.04067,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "09:00",
+            "close": "18:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      "store_hours": {
+        "mon": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      "lunch_break": {
+        "mon": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "tue": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "wed": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "thu": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "fri": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sat": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sun": {
+          "start": "13:30",
+          "end": "14:00"
+        }
+      },
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "no",
+      "delivery": "yes",
+      "delivery_details": {
+        "same_day": "Same-day (within about 4 hours) or 1-3 day delivery, once the prescription is ready",
+        "cost": "In most locations $9.49 same-day, $5.49 for 1-3 day; free with ExtraCare Plus",
+        "area": "1-3 day: address must be in the same state as the pharmacy. Same-day: needs a street address (no PO boxes). Not all stores or drugs qualify; some insurance plans do not allow delivery.",
+        "how_to_request": "After the prescription is ready: call the store, choose delivery in the CVS Health app or on cvs.com, or use the link in the order-ready text",
+        "note": "Chain-wide CVS delivery page, not store-specific. The store page lists 'Rx delivery' for this store.",
+        "source": "https://www.cvs.com/content/delivery"
+      },
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": [
+          "Flu",
+          "COVID-19"
+        ],
+        "vaccines_travel": "not found",
+        "clinic_on_site": "no (no MinuteClinic at this store in CVS's MinuteClinic locator)",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "COVID-19 vaccine",
+          "COVID-19 testing",
+          "Flu shots",
+          "In-store pickup",
+          "Immunizations",
+          "Photo",
+          "UPS access point",
+          "Drug disposal",
+          "Rx delivery",
+          "Accepts SNAP",
+          "Accepts WIC",
+          "OTC Health Solutions",
+          "ATM inside"
+        ]
+      },
+      "website": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+      "vaccine_booking_url": "https://www.cvs.com/immunizations/get-vaccinated",
+      "sources": {
+        "clinic_on_site": "https://www.cvs.com/minuteclinic/clinic-locator/ma/east-boston/1265.html",
+        "address": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "zip": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "phone": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "latitude": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "longitude": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "pharmacy_hours": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "store_hours": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "lunch_break": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "holiday_hours": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "is_24_hours": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "store_is_24_hours": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "delivery": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "drive_thru": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "services": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "website": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "vaccine_booking_url": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
+        "delivery_details": "https://www.cvs.com/content/delivery",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Store page lists 'Immunizations' in general; only the vaccines named on the page are listed above.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "chain": "CVS",
+      "store_number": "1265",
+      "nearby_clinics": [
+        {
+          "name": "79 Paris Street (NEIGHBORHEALTH CORPORATION)",
+          "kind": "community health center",
+          "address": "79 Paris St, East Boston, MA 02128",
+          "distance_miles": 0.3,
+          "distance_label": "about 0.3 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "10 Gove Street (NEIGHBORHEALTH CORPORATION)",
+          "kind": "community health center",
+          "address": "10 Gove St, East Boston, MA 02128",
+          "distance_miles": 0.3,
+          "distance_label": "about 0.3 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "20 Maverick Square (NEIGHBORHEALTH CORPORATION)",
+          "kind": "community health center",
+          "address": "20 Maverick Sq, East Boston, MA 02128",
+          "distance_miles": 0.4,
+          "distance_label": "about 0.4 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "250 Sumner Street (NEIGHBORHEALTH CORPORATION)",
+          "kind": "community health center",
+          "address": "250 Sumner St, East Boston, MA 02128",
+          "distance_miles": 0.5,
+          "distance_label": "about 0.5 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "225 Sumner Street (NEIGHBORHEALTH CORPORATION)",
+          "kind": "community health center",
+          "address": "225 Sumner St, Boston, MA 02128",
+          "distance_miles": 0.5,
+          "distance_label": "about 0.5 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "New Health Charlestown (North End Community Health Committee Inc)",
+          "kind": "community health center",
+          "address": "15 Tufts St, Charlestown, MA 02129",
+          "distance_miles": 0.8,
+          "distance_label": "about 0.8 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "NORTH END WATERFRONT HEALTH (North End Community Health Committee Inc)",
+          "kind": "community health center",
+          "address": "332 Hanover St, Boston, MA 02113",
+          "distance_miles": 1.0,
+          "distance_label": "about 1.0 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "cvs-1264",
+      "name": "CVS Pharmacy",
+      "type": "chain",
+      "neighborhood": "Jamaica Plain",
+      "address": "704 Centre Street, Jamaica Plain, MA 02130",
+      "zip": "02130",
+      "phone": "(617) 524-4714",
+      "latitude": 42.31143,
+      "longitude": -71.1143,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      "store_hours": {
+        "mon": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      "lunch_break": {
+        "mon": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "tue": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "wed": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "thu": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "fri": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sat": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sun": {
+          "start": "13:30",
+          "end": "14:00"
+        }
+      },
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "no",
+      "delivery": "yes",
+      "delivery_details": {
+        "same_day": "Same-day (within about 4 hours) or 1-3 day delivery, once the prescription is ready",
+        "cost": "In most locations $9.49 same-day, $5.49 for 1-3 day; free with ExtraCare Plus",
+        "area": "1-3 day: address must be in the same state as the pharmacy. Same-day: needs a street address (no PO boxes). Not all stores or drugs qualify; some insurance plans do not allow delivery.",
+        "how_to_request": "After the prescription is ready: call the store, choose delivery in the CVS Health app or on cvs.com, or use the link in the order-ready text",
+        "note": "Chain-wide CVS delivery page, not store-specific. The store page lists 'Rx delivery' for this store.",
+        "source": "https://www.cvs.com/content/delivery"
+      },
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": [
+          "Flu",
+          "COVID-19"
+        ],
+        "vaccines_travel": "not found",
+        "clinic_on_site": "no (no MinuteClinic at this store in CVS's MinuteClinic locator)",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "COVID-19 vaccine",
+          "COVID-19 testing",
+          "Flu shots",
+          "In-store pickup",
+          "Immunizations",
+          "Photo",
+          "UPS access point",
+          "Rx delivery",
+          "Accepts SNAP",
+          "Accepts WIC",
+          "OTC Health Solutions",
+          "ATM inside"
+        ]
+      },
+      "website": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+      "vaccine_booking_url": "https://www.cvs.com/immunizations/get-vaccinated",
+      "sources": {
+        "clinic_on_site": "https://www.cvs.com/minuteclinic/clinic-locator/ma/jamaica-plain/1264.html",
+        "address": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "zip": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "phone": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "latitude": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "longitude": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "pharmacy_hours": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "store_hours": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "lunch_break": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "holiday_hours": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "is_24_hours": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "store_is_24_hours": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "delivery": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "drive_thru": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "services": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "website": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "vaccine_booking_url": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/704-centre-street-jamaica-plain-ma-02130/storeid=1264",
+        "delivery_details": "https://www.cvs.com/content/delivery",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Store page lists 'Immunizations' in general; only the vaccines named on the page are listed above.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "chain": "CVS",
+      "store_number": "1264",
+      "nearby_clinics": "none found within 1 mile"
+    },
+    {
+      "id": "cvs-2070",
+      "name": "CVS Pharmacy",
+      "type": "chain",
+      "neighborhood": "Jamaica Plain",
+      "address": "467 Centre Street, Jamaica Plain, MA 02130",
+      "zip": "02130",
+      "phone": "(617) 522-8062",
+      "latitude": 42.3194,
+      "longitude": -71.11202,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      "store_hours": {
+        "mon": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      "lunch_break": {
+        "mon": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "tue": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "wed": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "thu": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "fri": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sat": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sun": {
+          "start": "13:30",
+          "end": "14:00"
+        }
+      },
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "no",
+      "delivery": "yes",
+      "delivery_details": {
+        "same_day": "Same-day (within about 4 hours) or 1-3 day delivery, once the prescription is ready",
+        "cost": "In most locations $9.49 same-day, $5.49 for 1-3 day; free with ExtraCare Plus",
+        "area": "1-3 day: address must be in the same state as the pharmacy. Same-day: needs a street address (no PO boxes). Not all stores or drugs qualify; some insurance plans do not allow delivery.",
+        "how_to_request": "After the prescription is ready: call the store, choose delivery in the CVS Health app or on cvs.com, or use the link in the order-ready text",
+        "note": "Chain-wide CVS delivery page, not store-specific. The store page lists 'Rx delivery' for this store.",
+        "source": "https://www.cvs.com/content/delivery"
+      },
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": [
+          "Flu",
+          "COVID-19"
+        ],
+        "vaccines_travel": "not found",
+        "clinic_on_site": "no (no MinuteClinic at this store in CVS's MinuteClinic locator)",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "COVID-19 vaccine",
+          "COVID-19 testing",
+          "Flu shots",
+          "In-store pickup",
+          "Immunizations",
+          "Photo",
+          "Drug disposal",
+          "Rx delivery",
+          "Accepts SNAP",
+          "OTC Health Solutions",
+          "ATM inside"
+        ]
+      },
+      "website": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+      "vaccine_booking_url": "https://www.cvs.com/immunizations/get-vaccinated",
+      "sources": {
+        "clinic_on_site": "https://www.cvs.com/minuteclinic/clinic-locator/ma/jamaica-plain/2070.html",
+        "address": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "zip": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "phone": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "latitude": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "longitude": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "pharmacy_hours": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "store_hours": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "lunch_break": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "holiday_hours": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "is_24_hours": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "store_is_24_hours": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "delivery": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "drive_thru": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "services": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "website": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "vaccine_booking_url": "https://www.cvs.com/store-locator/jamaica-plain-ma-pharmacies/467-centre-street-jamaica-plain-ma-02130/storeid=2070",
+        "delivery_details": "https://www.cvs.com/content/delivery",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Store page lists 'Immunizations' in general; only the vaccines named on the page are listed above.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "chain": "CVS",
+      "store_number": "2070",
+      "nearby_clinics": [
+        {
+          "name": "DIMOCK COMMUNITY HEALTH CENTER (DIMOCK COMMUNITY HEALTH CENTER)",
+          "kind": "community health center",
+          "address": "45 Dimock St, Roxbury, MA 02119",
+          "distance_miles": 0.8,
+          "distance_label": "about 0.8 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "cvs-5464",
+      "name": "CVS Pharmacy",
+      "type": "chain",
+      "neighborhood": "Mattapan",
+      "address": "1575 Blue Hill Ave, Mattapan, MA 02126",
+      "zip": "02126",
+      "phone": "(617) 898-1282",
+      "latitude": 42.26979,
+      "longitude": -71.09395,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "09:00",
+            "close": "18:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      "store_hours": {
+        "mon": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ]
+      },
+      "lunch_break": {
+        "mon": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "tue": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "wed": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "thu": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "fri": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sat": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sun": {
+          "start": "13:30",
+          "end": "14:00"
+        }
+      },
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "no",
+      "delivery": "yes",
+      "delivery_details": {
+        "same_day": "Same-day (within about 4 hours) or 1-3 day delivery, once the prescription is ready",
+        "cost": "In most locations $9.49 same-day, $5.49 for 1-3 day; free with ExtraCare Plus",
+        "area": "1-3 day: address must be in the same state as the pharmacy. Same-day: needs a street address (no PO boxes). Not all stores or drugs qualify; some insurance plans do not allow delivery.",
+        "how_to_request": "After the prescription is ready: call the store, choose delivery in the CVS Health app or on cvs.com, or use the link in the order-ready text",
+        "note": "Chain-wide CVS delivery page, not store-specific. The store page lists 'Rx delivery' for this store.",
+        "source": "https://www.cvs.com/content/delivery"
+      },
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": [
+          "Flu",
+          "COVID-19"
+        ],
+        "vaccines_travel": "not found",
+        "clinic_on_site": "no (no MinuteClinic at this store in CVS's MinuteClinic locator)",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "COVID-19 vaccine",
+          "COVID-19 testing",
+          "Flu shots",
+          "In-store pickup",
+          "Immunizations",
+          "Photo",
+          "Rx delivery",
+          "Accepts SNAP",
+          "Accepts WIC",
+          "OTC Health Solutions",
+          "ATM inside"
+        ]
+      },
+      "website": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+      "vaccine_booking_url": "https://www.cvs.com/immunizations/get-vaccinated",
+      "sources": {
+        "clinic_on_site": "https://www.cvs.com/minuteclinic/clinic-locator/ma/mattapan/5464.html",
+        "address": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "zip": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "phone": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "latitude": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "longitude": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "pharmacy_hours": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "store_hours": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "lunch_break": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "holiday_hours": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "is_24_hours": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "store_is_24_hours": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "delivery": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "drive_thru": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "services": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "website": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "vaccine_booking_url": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
+        "delivery_details": "https://www.cvs.com/content/delivery",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Store page lists 'Immunizations' in general; only the vaccines named on the page are listed above.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "chain": "CVS",
+      "store_number": "5464",
+      "nearby_clinics": [
+        {
+          "name": "Mattapan Community Health Center (MATTAPAN COMMUNITY HEALTH CENTER INC)",
+          "kind": "community health center",
+          "address": "1575 Blue Hill Ave, Mattapan, MA 02126",
+          "distance_miles": 0.0,
+          "distance_label": "less than 0.1 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "walgreens-15390",
+      "name": "Walgreens",
+      "type": "chain",
+      "neighborhood": "Downtown",
+      "address": "24 School St, Boston, MA 02108",
+      "zip": "02108",
+      "phone": "(617) 372-8156",
+      "latitude": 42.3574238,
+      "longitude": -71.05905181,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ],
+        "sat": [],
+        "sun": []
+      },
+      "store_hours": {
+        "mon": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ]
+      },
+      "lunch_break": {
+        "mon": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "tue": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "wed": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "thu": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "fri": {
+          "start": "13:30",
+          "end": "14:00"
+        }
+      },
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "no",
+      "delivery": "not found",
+      "delivery_details": "not found",
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": [
+          "Flu",
+          "COVID-19",
+          "Hepatitis B",
+          "Shingles",
+          "RSV",
+          "Pneumococcal (pneumonia)",
+          "Tdap"
+        ],
+        "vaccines_travel": [
+          "Hepatitis A",
+          "Tick-borne encephalitis",
+          "Travel health consultation"
+        ],
+        "clinic_on_site": "not found",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "Immunizations",
+          "Medication compounding",
+          "Travel health consultations",
+          "Feel More Like You cancer service",
+          "Meningitis vaccine",
+          "Varicella vaccine",
+          "MMR vaccine",
+          "Monkeypox"
+        ]
+      },
+      "website": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+      "vaccine_booking_url": "https://www.walgreens.com/topic/pharmacy/immunization-services-appointments.jsp",
+      "sources": {
+        "address": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+        "zip": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+        "phone": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+        "latitude": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+        "longitude": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+        "pharmacy_hours": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+        "store_hours": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+        "lunch_break": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+        "is_24_hours": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+        "store_is_24_hours": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+        "drive_thru": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+        "services": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+        "website": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+        "vaccine_booking_url": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Store page does not state prescription delivery for this store; walgreens.com/topic/pharmacy/prescription-delivery.jsp describes delivery chain-wide.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "chain": "Walgreens",
+      "store_number": "15390",
+      "nearby_clinics": [
+        {
+          "name": "SOUTH STREET CLINIC (SOUTH COVE COMMUNITY HEALTH CENTER, INC)",
+          "kind": "community health center",
+          "address": "145 South St, Boston, MA 02111",
+          "distance_miles": 0.5,
+          "distance_label": "about 0.5 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Mass General Brigham Urgent Care - Boston Common",
+          "kind": "urgent care",
+          "address": "137 Stuart St, Suite A-7, Boston, MA 02116",
+          "distance_miles": 0.6,
+          "distance_label": "about 0.6 miles away",
+          "walk_in": "yes",
+          "source": "https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "NORTH END WATERFRONT HEALTH (North End Community Health Committee Inc)",
+          "kind": "community health center",
+          "address": "332 Hanover St, Boston, MA 02113",
+          "distance_miles": 0.6,
+          "distance_label": "about 0.6 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "WASHINGTON STREET CLINIC (SOUTH COVE COMMUNITY HEALTH CENTER, INC)",
+          "kind": "community health center",
+          "address": "885 Washington St, Boston, MA 02111",
+          "distance_miles": 0.7,
+          "distance_label": "about 0.7 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "walgreens-5756",
+      "name": "Walgreens",
+      "type": "chain",
+      "neighborhood": "East Boston",
+      "address": "1 Central Sq, East Boston, MA 02128",
+      "zip": "02128",
+      "phone": "(617) 569-5278",
+      "latitude": 42.37429435,
+      "longitude": -71.03886695,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ],
+        "sat": [],
+        "sun": []
+      },
+      "store_hours": {
+        "mon": [
+          {
+            "open": "06:00",
+            "close": "23:59"
+          }
+        ],
+        "tue": [
+          {
+            "open": "06:00",
+            "close": "23:59"
+          }
+        ],
+        "wed": [
+          {
+            "open": "06:00",
+            "close": "23:59"
+          }
+        ],
+        "thu": [
+          {
+            "open": "06:00",
+            "close": "23:59"
+          }
+        ],
+        "fri": [
+          {
+            "open": "06:00",
+            "close": "23:59"
+          }
+        ],
+        "sat": [
+          {
+            "open": "06:00",
+            "close": "23:59"
+          }
+        ],
+        "sun": [
+          {
+            "open": "06:00",
+            "close": "23:59"
+          }
+        ]
+      },
+      "lunch_break": {
+        "mon": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "tue": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "wed": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "thu": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "fri": {
+          "start": "13:30",
+          "end": "14:00"
+        }
+      },
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "no",
+      "delivery": "not found",
+      "delivery_details": "not found",
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": [
+          "Flu",
+          "COVID-19",
+          "Hepatitis B",
+          "Shingles",
+          "RSV",
+          "Pneumococcal (pneumonia)",
+          "Tdap"
+        ],
+        "vaccines_travel": [
+          "Hepatitis A",
+          "Tick-borne encephalitis",
+          "Travel health consultation"
+        ],
+        "clinic_on_site": "not found",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "Immunizations",
+          "Medication compounding",
+          "Travel health consultations",
+          "Feel More Like You cancer service",
+          "Meningitis vaccine",
+          "Varicella vaccine",
+          "MMR vaccine",
+          "Monkeypox"
+        ]
+      },
+      "website": "https://www.walgreens.com/locator/walgreens-1+central+sq-east+boston-ma-02128/id=5756",
+      "vaccine_booking_url": "https://www.walgreens.com/topic/pharmacy/immunization-services-appointments.jsp",
+      "sources": {
+        "address": "https://www.walgreens.com/locator/walgreens-1+central+sq-east+boston-ma-02128/id=5756",
+        "zip": "https://www.walgreens.com/locator/walgreens-1+central+sq-east+boston-ma-02128/id=5756",
+        "phone": "https://www.walgreens.com/locator/walgreens-1+central+sq-east+boston-ma-02128/id=5756",
+        "latitude": "https://www.walgreens.com/locator/walgreens-1+central+sq-east+boston-ma-02128/id=5756",
+        "longitude": "https://www.walgreens.com/locator/walgreens-1+central+sq-east+boston-ma-02128/id=5756",
+        "pharmacy_hours": "https://www.walgreens.com/locator/walgreens-1+central+sq-east+boston-ma-02128/id=5756",
+        "store_hours": "https://www.walgreens.com/locator/walgreens-1+central+sq-east+boston-ma-02128/id=5756",
+        "lunch_break": "https://www.walgreens.com/locator/walgreens-1+central+sq-east+boston-ma-02128/id=5756",
+        "is_24_hours": "https://www.walgreens.com/locator/walgreens-1+central+sq-east+boston-ma-02128/id=5756",
+        "store_is_24_hours": "https://www.walgreens.com/locator/walgreens-1+central+sq-east+boston-ma-02128/id=5756",
+        "drive_thru": "https://www.walgreens.com/locator/walgreens-1+central+sq-east+boston-ma-02128/id=5756",
+        "services": "https://www.walgreens.com/locator/walgreens-1+central+sq-east+boston-ma-02128/id=5756",
+        "website": "https://www.walgreens.com/locator/walgreens-1+central+sq-east+boston-ma-02128/id=5756",
+        "vaccine_booking_url": "https://www.walgreens.com/locator/walgreens-1+central+sq-east+boston-ma-02128/id=5756",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Store page does not state prescription delivery for this store; walgreens.com/topic/pharmacy/prescription-delivery.jsp describes delivery chain-wide.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "chain": "Walgreens",
+      "store_number": "5756",
+      "nearby_clinics": [
+        {
+          "name": "10 Gove Street (NEIGHBORHEALTH CORPORATION)",
+          "kind": "community health center",
+          "address": "10 Gove St, East Boston, MA 02128",
+          "distance_miles": 0.1,
+          "distance_label": "about 0.1 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "79 Paris Street (NEIGHBORHEALTH CORPORATION)",
+          "kind": "community health center",
+          "address": "79 Paris St, East Boston, MA 02128",
+          "distance_miles": 0.2,
+          "distance_label": "about 0.2 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "20 Maverick Square (NEIGHBORHEALTH CORPORATION)",
+          "kind": "community health center",
+          "address": "20 Maverick Sq, East Boston, MA 02128",
+          "distance_miles": 0.3,
+          "distance_label": "about 0.3 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "250 Sumner Street (NEIGHBORHEALTH CORPORATION)",
+          "kind": "community health center",
+          "address": "250 Sumner St, East Boston, MA 02128",
+          "distance_miles": 0.4,
+          "distance_label": "about 0.4 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "225 Sumner Street (NEIGHBORHEALTH CORPORATION)",
+          "kind": "community health center",
+          "address": "225 Sumner St, Boston, MA 02128",
+          "distance_miles": 0.4,
+          "distance_label": "about 0.4 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "New Health Charlestown (North End Community Health Committee Inc)",
+          "kind": "community health center",
+          "address": "15 Tufts St, Charlestown, MA 02129",
+          "distance_miles": 0.9,
+          "distance_label": "about 0.9 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "walgreens-3135",
+      "name": "Walgreens",
+      "type": "chain",
+      "neighborhood": "Mattapan",
+      "address": "825 Morton St, Boston, MA 02126",
+      "zip": "02126",
+      "phone": "(617) 298-3114",
+      "latitude": 42.28149126,
+      "longitude": -71.08780878,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "09:00",
+            "close": "18:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "10:00",
+            "close": "18:00"
+          }
+        ]
+      },
+      "store_hours": {
+        "mon": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      "lunch_break": {
+        "mon": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "tue": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "wed": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "thu": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "fri": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sat": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sun": {
+          "start": "13:30",
+          "end": "14:00"
+        }
+      },
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "no",
+      "delivery": "not found",
+      "delivery_details": "not found",
+      "drive_thru": "yes",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": [
+          "Flu",
+          "COVID-19",
+          "Hepatitis B",
+          "Shingles",
+          "RSV",
+          "Pneumococcal (pneumonia)",
+          "Tdap"
+        ],
+        "vaccines_travel": [
+          "Hepatitis A",
+          "Tick-borne encephalitis"
+        ],
+        "clinic_on_site": "not found",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "Immunizations",
+          "Medication compounding",
+          "Blood pressure",
+          "Meningitis vaccine",
+          "Varicella vaccine",
+          "MMR vaccine",
+          "Monkeypox"
+        ]
+      },
+      "website": "https://www.walgreens.com/locator/walgreens-825+morton+st-boston-ma-02126/id=3135",
+      "vaccine_booking_url": "https://www.walgreens.com/topic/pharmacy/immunization-services-appointments.jsp",
+      "sources": {
+        "address": "https://www.walgreens.com/locator/walgreens-825+morton+st-boston-ma-02126/id=3135",
+        "zip": "https://www.walgreens.com/locator/walgreens-825+morton+st-boston-ma-02126/id=3135",
+        "phone": "https://www.walgreens.com/locator/walgreens-825+morton+st-boston-ma-02126/id=3135",
+        "latitude": "https://www.walgreens.com/locator/walgreens-825+morton+st-boston-ma-02126/id=3135",
+        "longitude": "https://www.walgreens.com/locator/walgreens-825+morton+st-boston-ma-02126/id=3135",
+        "pharmacy_hours": "https://www.walgreens.com/locator/walgreens-825+morton+st-boston-ma-02126/id=3135",
+        "store_hours": "https://www.walgreens.com/locator/walgreens-825+morton+st-boston-ma-02126/id=3135",
+        "lunch_break": "https://www.walgreens.com/locator/walgreens-825+morton+st-boston-ma-02126/id=3135",
+        "is_24_hours": "https://www.walgreens.com/locator/walgreens-825+morton+st-boston-ma-02126/id=3135",
+        "store_is_24_hours": "https://www.walgreens.com/locator/walgreens-825+morton+st-boston-ma-02126/id=3135",
+        "drive_thru": "https://www.walgreens.com/locator/walgreens-825+morton+st-boston-ma-02126/id=3135",
+        "services": "https://www.walgreens.com/locator/walgreens-825+morton+st-boston-ma-02126/id=3135",
+        "website": "https://www.walgreens.com/locator/walgreens-825+morton+st-boston-ma-02126/id=3135",
+        "vaccine_booking_url": "https://www.walgreens.com/locator/walgreens-825+morton+st-boston-ma-02126/id=3135",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Store page does not state prescription delivery for this store; walgreens.com/topic/pharmacy/prescription-delivery.jsp describes delivery chain-wide.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "chain": "Walgreens",
+      "store_number": "3135",
+      "nearby_clinics": [
+        {
+          "name": "Harvard Street Neighborhood Health Center (HARVARD STREET NEIGHBORHOOD HEALTH CENTER INC)",
+          "kind": "community health center",
+          "address": "895 Blue Hill Ave, Dorchester Center, MA 02124",
+          "distance_miles": 0.9,
+          "distance_label": "about 0.9 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Mattapan Community Health Center (MATTAPAN COMMUNITY HEALTH CENTER INC)",
+          "kind": "community health center",
+          "address": "1575 Blue Hill Ave, Mattapan, MA 02126",
+          "distance_miles": 0.9,
+          "distance_label": "about 0.9 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Codman Square Health Center (CODMAN SQUARE HEALTH CENTER, INC)",
+          "kind": "community health center",
+          "address": "637 Washington St, Dorchester Center, MA 02124",
+          "distance_miles": 1.0,
+          "distance_label": "about 1.0 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "stopandshop-0429",
+      "name": "Stop & Shop Pharmacy",
+      "type": "grocery",
+      "neighborhood": "Dorchester",
+      "address": "1100 Massachusetts Ave, Dorchester, MA 02125",
+      "zip": "02125",
+      "phone": "(617) 541-4300",
+      "latitude": 42.3264764,
+      "longitude": -71.0651112,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "09:00",
+            "close": "17:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "09:00",
+            "close": "17:00"
+          }
+        ]
+      },
+      "store_hours": {
+        "mon": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      },
+      "lunch_break": {
+        "mon": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "tue": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "wed": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "thu": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "fri": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sat": {
+          "start": "13:30",
+          "end": "14:00"
+        },
+        "sun": {
+          "start": "13:30",
+          "end": "14:00"
+        }
+      },
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "no",
+      "delivery": "not found",
+      "delivery_details": "not found",
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": [
+          "Shingles"
+        ],
+        "vaccines_travel": "not found",
+        "clinic_on_site": "not found",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "Immunization services",
+          "Diabetes care",
+          "Prescription transfers",
+          "Health screenings",
+          "Text alerts",
+          "Automatic refills",
+          "Pet prescriptions",
+          "Generic prescription savings"
+        ]
+      },
+      "website": "https://pharmacy.stopandshop.com/ma/dorchester/1100-massachusetts-avenue",
+      "vaccine_booking_url": "not found",
+      "sources": {
+        "address": "https://pharmacy.stopandshop.com/ma/dorchester/1100-massachusetts-avenue",
+        "zip": "https://pharmacy.stopandshop.com/ma/dorchester/1100-massachusetts-avenue",
+        "phone": "https://pharmacy.stopandshop.com/ma/dorchester/1100-massachusetts-avenue",
+        "pharmacy_hours": "https://pharmacy.stopandshop.com/ma/dorchester/1100-massachusetts-avenue",
+        "lunch_break": "https://pharmacy.stopandshop.com/ma/dorchester/1100-massachusetts-avenue",
+        "is_24_hours": "https://pharmacy.stopandshop.com/ma/dorchester/1100-massachusetts-avenue",
+        "services": "https://pharmacy.stopandshop.com/ma/dorchester/1100-massachusetts-avenue",
+        "website": "https://pharmacy.stopandshop.com/ma/dorchester/1100-massachusetts-avenue",
+        "store_hours": "https://stores.stopandshop.com/0429",
+        "latitude": "https://pharmacy.stopandshop.com/ma/dorchester/1100-massachusetts-avenue",
+        "longitude": "https://pharmacy.stopandshop.com/ma/dorchester/1100-massachusetts-avenue",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Pharmacy page lists 'Immunization Services' and names only the shingles vaccine.",
+        "Pharmacy page describes grocery delivery and pickup, not prescription delivery, so prescription delivery is 'not found'.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "chain": "Stop & Shop",
+      "store_number": "0429",
+      "nearby_clinics": [
+        {
+          "name": "Nubian Square (UPHAMS CORNER HEALTH COMMITTEE, INC.)",
+          "kind": "community health center",
+          "address": "36 Dearborn Street, Roxbury, MA 02119",
+          "distance_miles": 0.7,
+          "distance_label": "about 0.7 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "South End Community Health Center (NEIGHBORHEALTH CORPORATION)",
+          "kind": "community health center",
+          "address": "1601 Washington St, Boston, MA 02118",
+          "distance_miles": 1.0,
+          "distance_label": "about 1.0 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "starmarket-3588",
+      "name": "Star Market Pharmacy",
+      "type": "grocery",
+      "neighborhood": "Allston",
+      "address": "1065 Commonwealth Ave, Boston, MA 02215",
+      "zip": "02215",
+      "phone": "(617) 782-4585",
+      "latitude": 42.3526371,
+      "longitude": -71.1233303,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "09:00",
+            "close": "20:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "09:00",
+            "close": "17:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "10:00",
+            "close": "17:00"
+          }
+        ]
+      },
+      "store_hours": "not found",
+      "lunch_break": {
+        "mon": {
+          "start": "14:00",
+          "end": "14:30"
+        },
+        "tue": {
+          "start": "14:00",
+          "end": "14:30"
+        },
+        "wed": {
+          "start": "14:00",
+          "end": "14:30"
+        },
+        "thu": {
+          "start": "14:00",
+          "end": "14:30"
+        },
+        "fri": {
+          "start": "14:00",
+          "end": "14:30"
+        },
+        "sat": {
+          "start": "14:00",
+          "end": "14:30"
+        },
+        "sun": {
+          "start": "14:00",
+          "end": "14:30"
+        }
+      },
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "not found",
+      "delivery": "not found",
+      "delivery_details": "not found",
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": [
+          "Flu",
+          "COVID-19",
+          "Pneumococcal (pneumonia)",
+          "RSV",
+          "Shingles",
+          "Hepatitis B"
+        ],
+        "vaccines_travel": [
+          "Travel vaccines (page says 'travel'; specific vaccines not named)"
+        ],
+        "clinic_on_site": "not found",
+        "specialty_pharmacy": "yes (listed under Pharmacy Services)",
+        "other": [
+          "Back-to-school vaccines",
+          "Blood pressure",
+          "Diabetes consultations",
+          "Health screenings",
+          "Medication review",
+          "Refill prescriptions",
+          "Transfer prescription",
+          "Worker's comp",
+          "Pet prescriptions"
+        ]
+      },
+      "website": "https://local.pharmacy.starmarket.com/ma/boston/1065-commonwealth-ave.html",
+      "vaccine_booking_url": "https://www.starmarket.com/health/appointments/home?loc=3588",
+      "sources": {
+        "address": "https://local.pharmacy.starmarket.com/ma/boston/1065-commonwealth-ave.html",
+        "zip": "https://local.pharmacy.starmarket.com/ma/boston/1065-commonwealth-ave.html",
+        "phone": "https://local.pharmacy.starmarket.com/ma/boston/1065-commonwealth-ave.html",
+        "pharmacy_hours": "https://local.pharmacy.starmarket.com/ma/boston/1065-commonwealth-ave.html",
+        "lunch_break": "https://local.pharmacy.starmarket.com/ma/boston/1065-commonwealth-ave.html",
+        "is_24_hours": "https://local.pharmacy.starmarket.com/ma/boston/1065-commonwealth-ave.html",
+        "services": "https://local.pharmacy.starmarket.com/ma/boston/1065-commonwealth-ave.html",
+        "website": "https://local.pharmacy.starmarket.com/ma/boston/1065-commonwealth-ave.html",
+        "vaccine_booking_url": "https://local.pharmacy.starmarket.com/ma/boston/1065-commonwealth-ave.html",
+        "latitude": "https://local.pharmacy.starmarket.com/ma/boston/1065-commonwealth-ave.html",
+        "longitude": "https://local.pharmacy.starmarket.com/ma/boston/1065-commonwealth-ave.html",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Pharmacy page mentions pickup or delivery for over-the-counter shopping only; prescription delivery not found.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "chain": "Star Market",
+      "store_number": "3588",
+      "nearby_clinics": "none found within 1 mile"
+    },
+    {
+      "id": "gary-drug",
+      "name": "Gary Drug Co.",
+      "type": "independent",
+      "neighborhood": "Beacon Hill",
+      "address": "59 Charles St, Boston, MA 02114",
+      "zip": "02114",
+      "phone": "(617) 227-0023",
+      "latitude": 42.357766,
+      "longitude": -71.070191,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "08:30",
+            "close": "18:30"
+          }
+        ],
+        "tue": [
+          {
+            "open": "08:30",
+            "close": "18:30"
+          }
+        ],
+        "wed": [
+          {
+            "open": "08:30",
+            "close": "18:30"
+          }
+        ],
+        "thu": [
+          {
+            "open": "08:30",
+            "close": "18:30"
+          }
+        ],
+        "fri": [
+          {
+            "open": "08:30",
+            "close": "18:30"
+          }
+        ],
+        "sat": [
+          {
+            "open": "09:00",
+            "close": "17:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "09:00",
+            "close": "15:00"
+          }
+        ]
+      },
+      "store_hours": "not found",
+      "lunch_break": "not found",
+      "holiday_hours": "Closed on major holidays",
+      "is_24_hours": "no",
+      "store_is_24_hours": "not found",
+      "delivery": "yes",
+      "delivery_details": {
+        "same_day": "not found",
+        "cost": "not found",
+        "area": "Local (page says 'Local Home Delivery')",
+        "how_to_request": "Request a refill in the Gary Drug mobile app and choose delivery",
+        "source": "https://www.garydrug.com/services"
+      },
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": "not found (page says 'Flu Shots & Immunizations' without naming others)",
+        "vaccines_travel": "not found",
+        "clinic_on_site": "not found",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "Flu shots & immunizations",
+          "Basic compounding",
+          "Special orders / hard-to-locate medications",
+          "Home medical supplies (incl. wheelchair sales and rental)",
+          "Wellness classes"
+        ]
+      },
+      "website": "https://www.garydrug.com/",
+      "vaccine_booking_url": "not found",
+      "sources": {
+        "address": "https://www.garydrug.com/",
+        "zip": "https://www.garydrug.com/",
+        "phone": "https://www.garydrug.com/",
+        "pharmacy_hours": "https://www.garydrug.com/",
+        "holiday_hours": "https://www.garydrug.com/location",
+        "is_24_hours": "https://www.garydrug.com/",
+        "delivery": "https://www.garydrug.com/services",
+        "delivery_details": "https://www.garydrug.com/",
+        "services": "https://www.garydrug.com/services",
+        "website": "https://www.garydrug.com/",
+        "latitude": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?benchmark=Public_AR_Current&address=59+Charles+St%2C+Boston%2C+MA+02114",
+        "longitude": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?benchmark=Public_AR_Current&address=59+Charles+St%2C+Boston%2C+MA+02114",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "'Wheelchair Sales and Rental' is a product, not building access, so wheelchair accessibility is 'not found'.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "nearby_clinics": [
+        {
+          "name": "Mass General Brigham Urgent Care - Boston Common",
+          "kind": "urgent care",
+          "address": "137 Stuart St, Suite A-7, Boston, MA 02116",
+          "distance_miles": 0.5,
+          "distance_label": "about 0.5 miles away",
+          "walk_in": "yes",
+          "source": "https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "AFC Urgent Care Back Bay",
+          "kind": "urgent care",
+          "address": "575 Boylston St, Boston, MA 02116",
+          "distance_miles": 0.6,
+          "distance_label": "about 0.6 miles away",
+          "walk_in": "yes ('No appointment necessary')",
+          "source": "https://www.afcurgentcare.com/back-bay/patient-services/urgent-care",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "WASHINGTON STREET CLINIC (SOUTH COVE COMMUNITY HEALTH CENTER, INC)",
+          "kind": "community health center",
+          "address": "885 Washington St, Boston, MA 02111",
+          "distance_miles": 0.7,
+          "distance_label": "about 0.7 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "SOUTH STREET CLINIC (SOUTH COVE COMMUNITY HEALTH CENTER, INC)",
+          "kind": "community health center",
+          "address": "145 South St, Boston, MA 02111",
+          "distance_miles": 0.8,
+          "distance_label": "about 0.8 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "NORTH END WATERFRONT HEALTH (North End Community Health Committee Inc)",
+          "kind": "community health center",
+          "address": "332 Hanover St, Boston, MA 02113",
+          "distance_miles": 1.0,
+          "distance_label": "about 1.0 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "community-care-pharmacy",
+      "name": "Community Care Pharmacy",
+      "type": "independent",
+      "neighborhood": "Dorchester",
+      "address": "246 Bowdoin St, Dorchester, MA 02122",
+      "zip": "02122",
+      "phone": "(617) 322-9265",
+      "latitude": 42.306238,
+      "longitude": -71.067117,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "09:00",
+            "close": "14:00"
+          }
+        ],
+        "sun": []
+      },
+      "store_hours": "not found",
+      "lunch_break": "not found",
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "not found",
+      "delivery": "yes",
+      "delivery_details": {
+        "same_day": "not found",
+        "cost": "not found",
+        "area": "not found",
+        "how_to_request": "Home delivery 'per request' (call the pharmacy). Signature needed at delivery; pay with card on file or cash.",
+        "source": "https://www.ccprxboston.com/services"
+      },
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": [
+          "Flu",
+          "COVID-19",
+          "RSV",
+          "Shingles",
+          "Pneumococcal (pneumonia)",
+          "Tdap"
+        ],
+        "vaccines_travel": "not found",
+        "clinic_on_site": "not found",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "Blister packs / multi-dose packaging",
+          "Medication synchronization",
+          "On-site vaccination clinics for groups",
+          "OTC medicines"
+        ]
+      },
+      "website": "https://www.ccprxboston.com/",
+      "vaccine_booking_url": "https://form.jotform.com/252438750937163",
+      "sources": {
+        "address": "https://www.ccprxboston.com/",
+        "zip": "https://www.ccprxboston.com/",
+        "phone": "https://www.ccprxboston.com/",
+        "pharmacy_hours": "https://www.ccprxboston.com/",
+        "is_24_hours": "https://www.ccprxboston.com/",
+        "delivery": "https://www.ccprxboston.com/services",
+        "delivery_details": "https://www.ccprxboston.com/",
+        "services": "https://www.ccprxboston.com/immunizations",
+        "website": "https://www.ccprxboston.com/",
+        "vaccine_booking_url": "https://www.ccprxboston.com/immunizations",
+        "latitude": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?benchmark=Public_AR_Current&address=246+Bowdoin+St%2C+Boston%2C+MA+02122",
+        "longitude": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?benchmark=Public_AR_Current&address=246+Bowdoin+St%2C+Boston%2C+MA+02122",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "nearby_clinics": [
+        {
+          "name": "DotHouse Health (Dothouse Health, Inc.)",
+          "kind": "community health center",
+          "address": "1353 Dorchester Ave, Dorchester, MA 02122",
+          "distance_miles": 0.4,
+          "distance_label": "about 0.4 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Upham's Corner Helath Center (UPHAMS CORNER HEALTH COMMITTEE, INC.)",
+          "kind": "community health center",
+          "address": "415 Columbia Rd, Dorchester, MA 02125",
+          "distance_miles": 0.4,
+          "distance_label": "about 0.4 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Savin Hill (UPHAMS CORNER HEALTH COMMITTEE, INC.)",
+          "kind": "community health center",
+          "address": "1140 Dorchester Avenue, Dorchester, MA 02125",
+          "distance_miles": 0.6,
+          "distance_label": "about 0.6 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Whittier North Dorchester Clinic (WHITTIER STREET HEALTH CENTER)",
+          "kind": "community health center",
+          "address": "292 Blue Hill Ave, Roxbury, MA 02119",
+          "distance_miles": 0.8,
+          "distance_label": "about 0.8 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Harvard Street Neighborhood Health Center (HARVARD STREET NEIGHBORHOOD HEALTH CENTER INC)",
+          "kind": "community health center",
+          "address": "632 Blue Hill Ave, Dorchester, MA 02121",
+          "distance_miles": 1.0,
+          "distance_label": "about 1.0 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "health-first-pharmacy",
+      "name": "Health First Pharmacy",
+      "type": "independent",
+      "neighborhood": "Brighton",
+      "address": "1670 Commonwealth Ave, Brighton, MA 02135",
+      "zip": "02135",
+      "phone": "(617) 206-3233",
+      "latitude": 42.34163,
+      "longitude": -71.145158,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "10:00",
+            "close": "15:00"
+          }
+        ],
+        "sun": []
+      },
+      "store_hours": "not found",
+      "lunch_break": "not found",
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "not found",
+      "delivery": "yes",
+      "delivery_details": {
+        "same_day": "not found",
+        "cost": "Free",
+        "area": "Within Massachusetts (page also mentions 'a specific radius' without defining it)",
+        "how_to_request": "Order online through the website or by phone",
+        "source": "https://healthfirstboston.com/"
+      },
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": [
+          "Flu",
+          "Pneumococcal (pneumonia)",
+          "Shingles"
+        ],
+        "vaccines_travel": "not found",
+        "clinic_on_site": "not found",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "Diabetes specialized care",
+          "Pharmacist consultations",
+          "Prescription transfers"
+        ]
+      },
+      "website": "https://healthfirstboston.com/",
+      "vaccine_booking_url": "not found",
+      "sources": {
+        "address": "https://healthfirstboston.com/contact-pharmacy/",
+        "zip": "https://healthfirstboston.com/contact-pharmacy/",
+        "phone": "https://healthfirstboston.com/contact-pharmacy/",
+        "pharmacy_hours": "https://healthfirstboston.com/",
+        "is_24_hours": "https://healthfirstboston.com/",
+        "delivery": "https://healthfirstboston.com/",
+        "delivery_details": "https://healthfirstboston.com/",
+        "services": "https://healthfirstboston.com/services/",
+        "website": "https://healthfirstboston.com/",
+        "latitude": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?benchmark=Public_AR_Current&address=1670+Commonwealth+Ave%2C+Boston%2C+MA+02135",
+        "longitude": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?benchmark=Public_AR_Current&address=1670+Commonwealth+Ave%2C+Boston%2C+MA+02135",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Holiday hours are not listed; the site says they may vary and to call first.",
+        "Site mentions OTC products for Russian and Chinese communities but does not say which languages staff speak.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "nearby_clinics": "none found within 1 mile"
+    },
+    {
+      "id": "bmc-shapiro",
+      "name": "BMC Shapiro Center Pharmacy",
+      "type": "hospital outpatient",
+      "neighborhood": "South End",
+      "address": "725 Albany St, Boston, MA 02118",
+      "zip": "02118",
+      "phone": "(617) 414-4880",
+      "latitude": 42.335524,
+      "longitude": -71.07078,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "10:00",
+            "close": "14:00"
+          }
+        ],
+        "sun": []
+      },
+      "store_hours": "not found",
+      "lunch_break": "not found",
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "not found",
+      "delivery": "yes",
+      "delivery_details": {
+        "same_day": "not found",
+        "cost": "Free ('no extra charge')",
+        "area": "not found",
+        "how_to_request": "Enroll with BMC's home delivery pharmacy (Cornerstone Health Solutions) by calling 781-805-8220",
+        "note": "BMC system-wide home delivery; covers specialty, controlled, and cold-storage medicines.",
+        "source": "https://www.bmc.org/services/pharmacy"
+      },
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": "not found",
+        "vaccines_travel": "not found",
+        "clinic_on_site": "not found",
+        "specialty_pharmacy": "yes (BMC specialty pharmacy on campus, call 781-805-8220)",
+        "other": [
+          "Multi-med adherence packaging",
+          "Online refills / PocketRx app"
+        ]
+      },
+      "website": "https://www.bmc.org/services/pharmacy",
+      "vaccine_booking_url": "not found",
+      "sources": {
+        "address": "https://www.bmc.org/services/pharmacy",
+        "zip": "https://www.bmc.org/services/pharmacy",
+        "phone": "https://www.bmc.org/services/pharmacy",
+        "pharmacy_hours": "https://www.bmc.org/services/pharmacy",
+        "is_24_hours": "https://www.bmc.org/services/pharmacy",
+        "delivery": "https://www.bmc.org/services/pharmacy",
+        "delivery_details": "https://www.bmc.org/services/pharmacy",
+        "services": "https://www.bmc.org/services/pharmacy",
+        "website": "https://www.bmc.org/services/pharmacy",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "system": "Boston Medical Center",
+      "nearby_clinics": [
+        {
+          "name": "South End Community Health Center (NEIGHBORHEALTH CORPORATION)",
+          "kind": "community health center",
+          "address": "1601 Washington St, Boston, MA 02118",
+          "distance_miles": 0.3,
+          "distance_label": "about 0.3 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Nubian Square (UPHAMS CORNER HEALTH COMMITTEE, INC.)",
+          "kind": "community health center",
+          "address": "36 Dearborn Street, Roxbury, MA 02119",
+          "distance_miles": 0.6,
+          "distance_label": "about 0.6 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "WASHINGTON STREET CLINIC (SOUTH COVE COMMUNITY HEALTH CENTER, INC)",
+          "kind": "community health center",
+          "address": "885 Washington St, Boston, MA 02111",
+          "distance_miles": 0.9,
+          "distance_label": "about 0.9 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "bilh-bidmc",
+      "name": "BILH Pharmacy at Beth Israel Deaconess",
+      "type": "hospital outpatient",
+      "neighborhood": "Longwood",
+      "address": "364 Brookline Ave (Shapiro Lobby), Boston, MA 02215",
+      "zip": "02215",
+      "phone": "(617) 667-6200",
+      "latitude": 42.338808,
+      "longitude": -71.107323,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "09:00",
+            "close": "17:00"
+          }
+        ],
+        "sun": [
+          {
+            "open": "09:00",
+            "close": "17:00"
+          }
+        ]
+      },
+      "store_hours": "not found",
+      "lunch_break": "not found",
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "not found",
+      "delivery": "yes",
+      "delivery_details": {
+        "same_day": "not found",
+        "cost": "Free ('at no cost')",
+        "area": "not found",
+        "how_to_request": "BILH Pharmacy Direct: call 781-352-6500 or use the sign-up form https://bidmc.formstack.com/forms/bilh_pharmacy_prescription_transfer_form",
+        "note": "Delivered by BILH Pharmacy Direct (Westwood), not from this counter.",
+        "source": "https://bidmc.org/centers-and-departments/pharmacy"
+      },
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": "not found",
+        "vaccines_travel": "not found",
+        "clinic_on_site": "not found",
+        "specialty_pharmacy": "yes (BILH Specialty Pharmacy, Westwood, 781-352-6600; not at this location)",
+        "other": [
+          "Refill reminders and text alerts",
+          "Co-pay assistance",
+          "Medication review",
+          "MyBILH Pharmacy app"
+        ]
+      },
+      "website": "https://bidmc.org/centers-and-departments/pharmacy",
+      "vaccine_booking_url": "not found",
+      "sources": {
+        "address": "https://bidmc.org/centers-and-departments/pharmacy",
+        "zip": "https://bidmc.org/centers-and-departments/pharmacy",
+        "phone": "https://bidmc.org/centers-and-departments/pharmacy",
+        "pharmacy_hours": "https://bidmc.org/centers-and-departments/pharmacy",
+        "is_24_hours": "https://bidmc.org/centers-and-departments/pharmacy",
+        "delivery": "https://bidmc.org/centers-and-departments/pharmacy",
+        "delivery_details": "https://bidmc.org/centers-and-departments/pharmacy",
+        "services": "https://bidmc.org/centers-and-departments/pharmacy",
+        "website": "https://bidmc.org/centers-and-departments/pharmacy",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "system": "Beth Israel Lahey Health",
+      "nearby_clinics": [
+        {
+          "name": "Fenway Health, Ansin Building (FENWAY COMMUNITY HEALTH CENTER, INC.)",
+          "kind": "community health center",
+          "address": "1340 Boylston St, Boston, MA 02215",
+          "distance_miles": 0.6,
+          "distance_label": "about 0.6 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Whittier Street Health Center (WHITTIER STREET HEALTH CENTER)",
+          "kind": "community health center",
+          "address": "1290 Tremont St, Roxbury Crossing, MA 02120",
+          "distance_miles": 0.9,
+          "distance_label": "about 0.9 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "bmc-yawkey",
+      "name": "BMC Yawkey Building Pharmacy",
+      "type": "hospital outpatient",
+      "neighborhood": "South End",
+      "address": "850 Harrison Ave, Boston, MA 02118",
+      "zip": "02118",
+      "phone": "(617) 414-4883",
+      "latitude": 42.334557,
+      "longitude": -71.075584,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "10:00",
+            "close": "14:00"
+          }
+        ],
+        "sun": []
+      },
+      "store_hours": "not found",
+      "lunch_break": "not found",
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "not found",
+      "delivery": "yes",
+      "delivery_details": {
+        "same_day": "not found",
+        "cost": "Free ('no extra charge')",
+        "area": "not found",
+        "how_to_request": "Enroll with BMC's home delivery pharmacy (Cornerstone Health Solutions) by calling 781-805-8220",
+        "note": "BMC system-wide home delivery; covers specialty, controlled, and cold-storage medicines.",
+        "source": "https://www.bmc.org/services/pharmacy"
+      },
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": "not found",
+        "vaccines_travel": "not found",
+        "clinic_on_site": "not found",
+        "specialty_pharmacy": "yes (BMC specialty pharmacy on campus, call 781-805-8220)",
+        "other": [
+          "Multi-med adherence packaging",
+          "Online refills / PocketRx app"
+        ]
+      },
+      "website": "https://www.bmc.org/services/pharmacy",
+      "vaccine_booking_url": "not found",
+      "sources": {
+        "address": "https://www.bmc.org/services/pharmacy",
+        "zip": "https://www.bmc.org/services/pharmacy",
+        "phone": "https://www.bmc.org/services/pharmacy",
+        "pharmacy_hours": "https://www.bmc.org/services/pharmacy",
+        "is_24_hours": "https://www.bmc.org/services/pharmacy",
+        "delivery": "https://www.bmc.org/services/pharmacy",
+        "delivery_details": "https://www.bmc.org/services/pharmacy",
+        "services": "https://www.bmc.org/services/pharmacy",
+        "website": "https://www.bmc.org/services/pharmacy",
+        "latitude": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?benchmark=Public_AR_Current&address=850+Harrison+Ave%2C+Boston%2C+MA+02118",
+        "longitude": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?benchmark=Public_AR_Current&address=850+Harrison+Ave%2C+Boston%2C+MA+02118",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Replaced Tufts Medical Center Atrium 3 Pharmacy (hours and services not on Tufts' public pages). Boston Children's Pharmacy was checked first but its page lists no hours.",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "system": "Boston Medical Center",
+      "nearby_clinics": [
+        {
+          "name": "South End Community Health Center (NEIGHBORHEALTH CORPORATION)",
+          "kind": "community health center",
+          "address": "1601 Washington St, Boston, MA 02118",
+          "distance_miles": 0.3,
+          "distance_label": "about 0.3 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Nubian Square (UPHAMS CORNER HEALTH COMMITTEE, INC.)",
+          "kind": "community health center",
+          "address": "36 Dearborn Street, Roxbury, MA 02119",
+          "distance_miles": 0.4,
+          "distance_label": "about 0.4 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Whittier Street Health Center (WHITTIER STREET HEALTH CENTER)",
+          "kind": "community health center",
+          "address": "1290 Tremont St, Roxbury Crossing, MA 02120",
+          "distance_miles": 0.8,
+          "distance_label": "about 0.8 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "scchc-pharmacy",
+      "name": "South Cove Community Health Center Pharmacy (formerly Tai Tung Pharmacy)",
+      "type": "community health center",
+      "neighborhood": "Chinatown",
+      "address": "256 Harrison Ave, Boston, MA 02111",
+      "zip": "02111",
+      "phone": "(617) 482-7419",
+      "latitude": 42.34761,
+      "longitude": -71.062671,
+      "pharmacy_hours": {
+        "mon": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "tue": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "wed": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "thu": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "fri": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "sat": [
+          {
+            "open": "09:00",
+            "close": "18:00"
+          }
+        ],
+        "sun": []
+      },
+      "store_hours": "not found",
+      "lunch_break": "not found",
+      "holiday_hours": "not found",
+      "is_24_hours": "no",
+      "store_is_24_hours": "not found",
+      "delivery": "not found",
+      "delivery_details": "not found",
+      "drive_thru": "not found",
+      "wheelchair_accessible": "not found",
+      "languages": "not found",
+      "services": {
+        "vaccines_routine": "not found (page says vaccines for children and adults, without naming them)",
+        "vaccines_travel": "not found",
+        "clinic_on_site": "not found",
+        "specialty_pharmacy": "not found",
+        "other": [
+          "Refills by phone",
+          "Pharmacist consultations",
+          "OTC products",
+          "Walk-in or scheduled vaccines"
+        ]
+      },
+      "website": "https://scchc.org/boston-pharmacy/",
+      "vaccine_booking_url": "not found",
+      "sources": {
+        "address": "https://scchc.org/boston-pharmacy/",
+        "zip": "https://scchc.org/boston-pharmacy/",
+        "phone": "https://scchc.org/boston-pharmacy/",
+        "pharmacy_hours": "https://scchc.org/boston-pharmacy/",
+        "is_24_hours": "https://scchc.org/boston-pharmacy/",
+        "services": "https://scchc.org/boston-pharmacy/",
+        "website": "https://scchc.org/boston-pharmacy/",
+        "nearby_clinics": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv; https://www.afcurgentcare.com/back-bay/patient-services/urgent-care; https://www.cvs.com/minuteclinic/clinic-locator/ma/charlestown/1009.html; https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common"
+      },
+      "checked_date": "2026-10-23",
+      "notes": [
+        "Run by South Cove Community Health Center, a nonprofit health center (not one of the four requested types).",
+        "Nearby clinic distances are straight-line from coordinates, not walking distance."
+      ],
+      "nearby_clinics": [
+        {
+          "name": "WASHINGTON STREET CLINIC (SOUTH COVE COMMUNITY HEALTH CENTER, INC)",
+          "kind": "community health center",
+          "address": "885 Washington St, Boston, MA 02111",
+          "distance_miles": 0.1,
+          "distance_label": "about 0.1 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "Mass General Brigham Urgent Care - Boston Common",
+          "kind": "urgent care",
+          "address": "137 Stuart St, Suite A-7, Boston, MA 02116",
+          "distance_miles": 0.3,
+          "distance_label": "about 0.3 miles away",
+          "walk_in": "yes",
+          "source": "https://www.massgeneralbrigham.org/en/patient-care/services-and-specialties/locations/mass-general-brigham-urgent-care-boston-common",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "SOUTH STREET CLINIC (SOUTH COVE COMMUNITY HEALTH CENTER, INC)",
+          "kind": "community health center",
+          "address": "145 South St, Boston, MA 02111",
+          "distance_miles": 0.3,
+          "distance_label": "about 0.3 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "AFC Urgent Care Back Bay",
+          "kind": "urgent care",
+          "address": "575 Boylston St, Boston, MA 02116",
+          "distance_miles": 0.7,
+          "distance_label": "about 0.7 miles away",
+          "walk_in": "yes ('No appointment necessary')",
+          "source": "https://www.afcurgentcare.com/back-bay/patient-services/urgent-care",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "South End Community Health Center (NEIGHBORHEALTH CORPORATION)",
+          "kind": "community health center",
+          "address": "1601 Washington St, Boston, MA 02118",
+          "distance_miles": 0.9,
+          "distance_label": "about 0.9 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "name": "South Boston Community Health Center (SOUTH BOSTON COMMUNITY HEALTH CENTER, INC.)",
+          "kind": "community health center",
+          "address": "386 W Broadway, South Boston, MA 02127",
+          "distance_miles": 1.0,
+          "distance_label": "about 1.0 miles away",
+          "walk_in": "not found (call first)",
+          "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
+          "checked_date": "2026-10-23"
+        }
+      ]
+    }
+  ]
+}
