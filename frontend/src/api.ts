@@ -48,7 +48,7 @@ export interface PharmacyCard {
 export interface FinalReply {
   run_id: string; language: "en" | "es"; reply_text: string; stop_reason: string;
   pharmacy_cards: PharmacyCard[]; call_script: string | null; sources: Fact[]; follow_up_question: string | null;
-  warnings: string[]; agents_run: string[]; emergency?: boolean; drug_id?: string | null;
+  warnings: string[]; agents_run: string[]; emergency?: boolean; drug_id?: string | null; controlled?: boolean;
   usage: { total_tokens: number; cost_usd: number | null };
 }
 export interface DrugMeta {

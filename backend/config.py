@@ -24,12 +24,13 @@ PRICES_USD_PER_MILLION = {"input": 0.10, "cached_input": 0.01, "output": 0.50}
 WEB_SEARCH_USD_PER_CALL = 0.01
 PRICE_SOURCE = "https://api.portkey.ai/model-configs/pricing/openai/gpt-6-luna"
 
-# Spending limits.
+# Spending limits. The RXLANTERN_TEST_* environment variables exist only so the safety tests (tests/safety_tests.py)
+# can start a separate copy of the app with tiny limits; the real app never sets them.
 MAX_MODEL_REQUESTS_PER_QUESTION = 14
 MAX_TOOL_CALLS_PER_QUESTION = 24
-MAX_TOKENS_PER_QUESTION = 60_000          # input + output, all agents together
-DAILY_TOKEN_BUDGET = 3_000_000            # whole app, per Boston calendar day
-MAX_QUESTIONS_PER_VISITOR_PER_HOUR = 30
+MAX_TOKENS_PER_QUESTION = int(os.getenv("RXLANTERN_TEST_MAX_TOKENS_PER_QUESTION") or 60_000)  # input + output, all agents
+DAILY_TOKEN_BUDGET = int(os.getenv("RXLANTERN_TEST_DAILY_TOKEN_BUDGET") or 3_000_000)       # whole app, per Boston day
+MAX_QUESTIONS_PER_VISITOR_PER_HOUR = int(os.getenv("RXLANTERN_TEST_MAX_QUESTIONS_PER_HOUR") or 30)
 
 # Sample stock reports and reviews for demonstration (graders start with an empty database). They are never saved
 # to the database, never counted with real posts, and always shown with a "Sample" badge. Turn off with False

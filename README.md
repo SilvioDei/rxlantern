@@ -88,5 +88,6 @@ then restart the app.
 runs. Results are in `output/ui_test_results.json`, `output/ui_test_results_7c.json`, and
 `output/ui_test_results_7c2.json`, screenshots in
 `output/screenshots/`. `tests/try_agents.py` runs the agent test questions (uses the AI model) and
-`tests/check_agent_rules.py` checks the answers against the rules. The medication data check for pharmacists is
+`tests/check_agent_rules.py` checks the answers against the rules. `tests/safety_tests.py` runs 16 safety tests (attacks, privacy, made-up facts, controlled
+medicines, medical advice, emergencies, spending limits, secrets); see `output/safety_report.html`. The medication data check for pharmacists is
 `output/medication_check.md`.

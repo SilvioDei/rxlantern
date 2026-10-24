@@ -100,6 +100,8 @@ class FinalReply(BaseModel):
     usage: Usage = Field(default_factory=Usage)
     safety: list[str] = Field(default_factory=list, description="Code-level safety actions taken for this question.")
     emergency: bool = Field(default=False, description="True when the emergency rule answered (911 / Poison Control).")
+    controlled: bool = Field(default=False, description="True when the question or a tool result involves a controlled "
+                             "medicine: the website then never shows stock report buttons for this answer.")
     drug_id: str | None = Field(default=None, description="The one RxLantern drug the question names, if any (for the "
                                                           "'I called a pharmacy' buttons under the call script).")
 

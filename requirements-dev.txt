@@ -1,1 +1,2 @@
 playwright
+pillow  # only for shrinking the screenshots embedded in output/safety_report.html

@@ -34,7 +34,7 @@ export function Answer({ reply, onFollowUp }: { reply: FinalReply; onFollowUp: (
   const cost = reply.usage.cost_usd;
   const tokens = reply.usage.total_tokens;
   const drug = meta?.drugs.find((d) => d.id === reply.drug_id);
-  const controlled = !!drug?.controlled;
+  const controlled = !!drug?.controlled || !!reply.controlled;
   const onlyPharmacy = reply.pharmacy_cards.length === 1 ? reply.pharmacy_cards[0].id : undefined;
 
   return (

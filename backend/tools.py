@@ -729,6 +729,12 @@ def find_pharmacy(description: str) -> dict:
     if landmark:
         out["landmark"] = {"name": landmark["name"], "says": landmark["says"], "source": landmark["source"],
                            "checked_date": landmark["checked_date"]}
+    # A street was named ("the CVS on Mars Street") but no pharmacy is on it: "not found", never a list of guesses.
+    names_street = re.search(r"\b(street|st|avenue|ave|road|rd|boulevard|blvd|square|sq|drive|dr|way|lane|ln|place|"
+                             r"pl|highway|hwy|parkway|pkwy|calle|avenida)\b\.?", q)
+    if top and names_street and hits[0][0] == 0:
+        return out | {"found": False, "message": "Not found: no pharmacy on that street is in RxLantern's list. "
+                      "Ask for the street or neighborhood again, or suggest calling the pharmacy."}
     if not top:
         return out | {"found": False, "message": "No matching pharmacy in RxLantern. Ask for the street or neighborhood."}
     if len(top) > 1:

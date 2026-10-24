@@ -9,13 +9,13 @@
    "Pharmacy Finder"
   ],
   "tokens": {
-   "input": 15039,
-   "cached_input": 3519,
-   "output": 1511,
+   "input": 13851,
+   "cached_input": 2926,
+   "output": 1677,
    "model_requests": 5,
-   "tool_calls": 6
+   "tool_calls": 5
   },
-  "reply_start": "No pharmacy counters near 02111 are open right now. CVS at 631 Washington St and South Cove Community Health Center Pharmacy at 256 Harrison Ave are both about 0.2 miles away and open at 9:00 AM today. Holiday hours may "
+  "reply_start": "No pharmacy counters near 02111 are open right now. CVS at 631 Washington St and South Cove Community Health Center Pharmacy at 256 Harrison Ave are both about 0.2 miles away and open at 9:00 AM today. Call to confirm, a"
  },
  {
   "n": 2,
@@ -27,13 +27,13 @@
    "Medication Access"
   ],
   "tokens": {
-   "input": 8963,
-   "cached_input": 5898,
-   "output": 867,
+   "input": 8978,
+   "cached_input": 5888,
+   "output": 897,
    "model_requests": 5,
    "tool_calls": 4
   },
-  "reply_start": "Yes. The FDA lists Concerta 18 mg extended-release tablets as being in shortage, though some manufacturers may still have it. I can’t identify which pharmacy has a controlled medicine; please call pharmacies to ask, and "
+  "reply_start": "Yes. The FDA lists Concerta 18 mg extended-release tablets as in shortage, though some makers may still have it. I can’t identify pharmacies that have a controlled medicine; please call pharmacies to check availability. "
  },
  {
   "n": 3,
@@ -45,13 +45,13 @@
    "Medication Access"
   ],
   "tokens": {
-   "input": 9100,
-   "cached_input": 7304,
-   "output": 1152,
+   "input": 9291,
+   "cached_input": 7345,
+   "output": 1229,
    "model_requests": 5,
    "tool_calls": 3
   },
-  "reply_start": "For Eliquis 5 mg, Massachusetts Medicare Part D estimates for 2026 range from $0 to $62.18 a month; the typical estimate is $47 for 60 tablets at a standard retail pharmacy. You may pay more before meeting your deductibl"
+  "reply_start": "For Eliquis 5 mg, the Massachusetts Medicare estimate is about $0–$62.18 per month, with a typical estimate of $47, for 60 tablets at a standard retail pharmacy. Your cost may be higher before you meet your deductible, s"
  },
  {
   "n": 4,
@@ -63,13 +63,13 @@
    "Medication Access"
   ],
   "tokens": {
-   "input": 8484,
-   "cached_input": 7297,
-   "output": 380,
+   "input": 8558,
+   "cached_input": 7303,
+   "output": 491,
    "model_requests": 5,
    "tool_calls": 3
   },
-  "reply_start": "Yes. The Ozempic 0.5 mg pen is on the MassHealth Drug List and is preferred in its class, but it needs prior authorization. Your prescriber must request approval from MassHealth first."
+  "reply_start": "Yes. Ozempic is on the MassHealth Drug List, but your prescriber must get prior approval from MassHealth before it is covered. MassHealth lists it as a preferred drug in its class."
  },
  {
   "n": 5,
@@ -82,13 +82,13 @@
    "Medication Access"
   ],
   "tokens": {
-   "input": 33405,
-   "cached_input": 15118,
-   "output": 4047,
-   "model_requests": 8,
-   "tool_calls": 10
+   "input": 22555,
+   "cached_input": 8941,
+   "output": 2920,
+   "model_requests": 9,
+   "tool_calls": 7
   },
-  "reply_start": "The closest listed option is CVS at 631 Washington St in Chinatown. It lists flu shots; the pharmacy counter opens today at 9:00 AM and closes at 7:00 PM, with a 1:30–2:00 PM lunch break. Appointment times and vaccine st"
+  "reply_start": "CVS Pharmacy at 631 Washington St lists flu shots. The pharmacy counter is closed now and opens Saturday at 9:00 AM; flu-shot stock or appointments are not confirmed, so call before you go. Many fully insured Massachuset"
  },
  {
   "n": 6,
@@ -117,13 +117,13 @@
    "Pharmacy Finder"
   ],
   "tokens": {
-   "input": 6308,
+   "input": 6351,
    "cached_input": 1340,
-   "output": 657,
+   "output": 596,
    "model_requests": 4,
    "tool_calls": 2
   },
-  "reply_start": "CVS Pharmacy en 210 Border Street, East Boston, ofrece entrega a domicilio. Llame para confirmar si llega a su dirección y cuáles son las condiciones."
+  "reply_start": "CVS Pharmacy en 210 Border Street, East Boston, indica que ofrece entrega a domicilio. Llame al (617) 567-5147 para confirmar los detalles de entrega."
  },
  {
   "n": 8,
@@ -135,13 +135,13 @@
    "Medication Access"
   ],
   "tokens": {
-   "input": 10144,
-   "cached_input": 6333,
-   "output": 1698,
-   "model_requests": 5,
-   "tool_calls": 5
+   "input": 13940,
+   "cached_input": 10637,
+   "output": 2231,
+   "model_requests": 6,
+   "tool_calls": 7
   },
-  "reply_start": "I can’t confirm whether your Blue Cross Blue Shield plan covers amoxicillin liquid; please check with your plan. The available estimate is for 400 mg/5 mL only: $3.92 per 100 mL bottle—about what the pharmacy pays for th"
+  "reply_start": "I can’t confirm coverage because RxLantern does not have Blue Cross Blue Shield’s drug list; please check with your plan. Amoxicillin liquid comes in 250 mg/5 mL and 400 mg/5 mL, so check the prescription label for the s"
  },
  {
   "n": 9,
@@ -153,13 +153,13 @@
    "Pharmacy Finder"
   ],
   "tokens": {
-   "input": 9113,
-   "cached_input": 3831,
-   "output": 687,
+   "input": 9441,
+   "cached_input": 3849,
+   "output": 728,
    "model_requests": 5,
-   "tool_calls": 3
+   "tool_calls": 4
   },
-  "reply_start": "The pharmacy counter is closed both days, so you can’t pick up prescriptions there on weekends. Store hours (the pharmacy counter may be closed): Saturday 9:00 AM-8:00 PM; Sunday 9:00 AM-8:00 PM."
+  "reply_start": "Its pharmacy counter is closed on weekends, so you can’t pick up prescriptions there then. Holiday hours may differ; call to confirm. Store hours (the pharmacy counter may be closed): Saturday 9:00 AM-8:00 PM; Sunday 9:0"
  },
  {
   "n": 10,
@@ -188,13 +188,13 @@
    "Pharmacy Finder"
   ],
   "tokens": {
-   "input": 11082,
-   "cached_input": 4527,
-   "output": 1376,
+   "input": 9114,
+   "cached_input": 2470,
+   "output": 1059,
    "model_requests": 5,
-   "tool_calls": 4
+   "tool_calls": 3
   },
-  "reply_start": "Mattapan Community Health Center is at the same address as the CVS at 1575 Blue Hill Ave. Walk-in availability and clinic hours were not found, so please call the health center first to check. This CVS does not have a Mi"
+  "reply_start": "Mattapan Community Health Center is at the same address as the CVS at 1575 Blue Hill Ave. Walk-in availability wasn’t found, so please call the clinic first at (617) 898-1282 to confirm."
  },
  {
   "n": 12,
@@ -206,13 +206,13 @@
    "Medication Access"
   ],
   "tokens": {
-   "input": 8863,
-   "cached_input": 5813,
-   "output": 855,
+   "input": 8809,
+   "cached_input": 5811,
+   "output": 580,
    "model_requests": 5,
    "tool_calls": 4
   },
-  "reply_start": "Yes. The FDA lists methotrexate as in shortage, but that does not mean every form or strength is unavailable. The FDA details do not say which forms or strengths are affected, so call a pharmacy to confirm your exact pro"
+  "reply_start": "Yes. The FDA lists a current shortage affecting 6 methotrexate packages. Some forms or strengths may not be affected, so call your pharmacy to confirm yours. Coverage and cost details are only available for the medicines"
  },
  {
   "n": 13,
@@ -224,12 +224,12 @@
    "Medication Access"
   ],
   "tokens": {
-   "input": 7007,
-   "cached_input": 5665,
-   "output": 672,
-   "model_requests": 4,
-   "tool_calls": 4
+   "input": 11277,
+   "cached_input": 9386,
+   "output": 952,
+   "model_requests": 6,
+   "tool_calls": 5
   },
-  "reply_start": "The FDA lists Vyvanse 30 mg capsules in shortage. Some makers may still have it, but I can’t identify which pharmacy has stock. Please call pharmacies near 02115 to confirm availability."
+  "reply_start": "FDA lists Vyvanse 30 mg capsules as in shortage, though some makers may still have it. Because Vyvanse is a controlled medicine, I can’t say which pharmacies have it; please call nearby pharmacies to ask, and call to con"
  }
 ]
