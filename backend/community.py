@@ -196,6 +196,18 @@ def logout(token: str | None) -> None:
             con.commit()
 
 
+def delete_account(user: dict) -> dict:
+    """Delete an account and everything it posted (stock reports, reviews, sessions)."""
+    with _con() as con:
+        n_reports = con.execute("DELETE FROM stock_reports WHERE user_id = ?", (user["id"],)).rowcount
+        n_reviews = con.execute("DELETE FROM reviews WHERE user_id = ?", (user["id"],)).rowcount
+        con.execute("DELETE FROM sessions WHERE user_id = ?", (user["id"],))
+        con.execute("DELETE FROM login_failures WHERE email_hash = ?", (_email_hash(user["email"]),))
+        con.execute("DELETE FROM users WHERE id = ?", (user["id"],))
+        con.commit()
+    return {"deleted": True, "stock_reports_deleted": n_reports, "reviews_deleted": n_reviews}
+
+
 def user_from_token(token: str | None) -> dict | None:
     if not token:
         return None

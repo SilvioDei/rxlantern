@@ -603,7 +603,8 @@ async def ask(question: str, language: str = "en", zip_code: str | None = None,
 
     agents_run = list(dict.fromkeys(e.agent for e in deps.trace))
     tools_run = [f"{e.agent}: {e.tool}" for e in deps.trace if e.tool]
-    final = FinalReply(app=APP_NAME, run_id=run_id, language=language, reply_text=reply, stop_reason=stop,
+    warnings = list(dict.fromkeys(w for s in deps.steps if s.get("type") == "agent_result" for w in s.get("warnings") or []))
+    final = FinalReply(warnings=warnings[:4] if stop == "completed" else [], app=APP_NAME, run_id=run_id, language=language, reply_text=reply, stop_reason=stop,
                        pharmacy_cards=cards, call_script=out.call_script or deps.call_script, sources=kept,
                        follow_up_question=out.follow_up_question, agents_run=agents_run, tools_run=tools_run,
                        trace=deps.trace, usage=_usage(_snapshot(usage), deps.agent_usage, usage.tool_calls),

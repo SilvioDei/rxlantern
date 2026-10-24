@@ -3742,6 +3742,1501 @@
     }
    },
    "safety_rules_fired": []
+  },
+  {
+   "run_id": "91f82fb35d47",
+   "timestamp": "2026-10-23T22:06:32-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near ZIP code 02111 in Boston that are open right now. Today is Friday, October 23, 2026, 10:06 PM America/New_York. Include pharmacy counter hours first and identify any open locations."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "02111",
+      "open_now": true
+     },
+     "result": "1 pharmacies: cvs-2283"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "open_status",
+     "input": {
+      "pharmacy_id": "cvs-2283"
+     },
+     "result": "CVS Pharmacy (cvs-2283), open now"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-2283"
+     },
+     "result": "CVS Pharmacy (cvs-2283)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "Pharmacy counter hours: Monday–Friday 8:00 AM–11:00 PM; Saturday–Sunday 8:00 AM–8:00 PM (lunch break daily 1:30–2:00 PM). Open now: CVS Pharmacy, 715 Morrissey Boulevard, Dorchester, MA 02122 — about 3.7 miles from ZIP 02111; the counter is open and closes at 11:00 PM tonight. Call (617) 822-1307...",
+     "not_found": [],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 6461,
+      "cached_input_tokens": 1291,
+      "output_tokens": 696,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 9939,
+     "cached_input_tokens": 2621,
+     "output_tokens": 1089,
+     "total_tokens": 11028,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 4,
+     "cost_usd": 0.001303
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3478,
+      "cached_input_tokens": 1330,
+      "output_tokens": 393,
+      "web_searches": 0,
+      "cost_usd": 0.000425
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 6461,
+      "cached_input_tokens": 1291,
+      "output_tokens": 696,
+      "web_searches": 0,
+      "cost_usd": 0.000878
+     }
+    ]
+   },
+   "safety_rules_fired": [
+    "hours reply reordered: pharmacy counter first, store hours labeled"
+   ],
+   "reply_preview": "The pharmacy counter is open now until 11:00 PM. Yes. CVS Pharmacy at 715 Morrissey Boulevard in Dorchester is open now, about 3.7 miles from 02111. The pharmacy counter closes at 11:00 PM Boston time"
+  },
+  {
+   "run_id": "e88a65bb3dad",
+   "timestamp": "2026-10-23T22:06:45-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is Concerta 18 mg in shortage? Which pharmacy has it?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Concerta (methylphenidate extended-release) 18 mg tablets: current FDA shortage status and a call script for asking nearby pharmacies about availability. Insurance type not provided; do not assume coverage."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "call_script",
+     "input": {
+      "drug": "Concerta 18 mg tablets"
+     },
+     "result": "call_script=Hi. I'm calling about Concerta 18 mg ER , source=RxLantern call script template, checked_date=2026-10-23"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "lookup_drug",
+     "input": {
+      "name": "Concerta methylphenidate extended-release 18 mg tablets"
+     },
+     "result": "found=True, drug_id=concerta_18, name=Concerta 18 mg ER tablet, generic_name=methylphenidate"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "fda_shortage",
+     "input": {
+      "drug": "Concerta 18 mg tablets"
+     },
+     "result": "status: in shortage"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "FDA lists Concerta 18 mg extended-release tablets as in shortage. Some makers may still have it, so call nearby pharmacies to confirm availability. No insurance type was provided, so I can’t say whether it is covered.",
+     "not_found": [],
+     "warnings": [
+      "Call to confirm availability; this does not identify a pharmacy with stock."
+     ],
+     "tokens": {
+      "requests": 2,
+      "input_tokens": 3362,
+      "cached_input_tokens": 1335,
+      "output_tokens": 408,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 6735,
+     "cached_input_tokens": 3981,
+     "output_tokens": 911,
+     "total_tokens": 7646,
+     "web_searches": 0,
+     "model_requests": 4,
+     "tool_calls": 4,
+     "cost_usd": 0.000771
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3373,
+      "cached_input_tokens": 2646,
+      "output_tokens": 503,
+      "web_searches": 0,
+      "cost_usd": 0.000351
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 2,
+      "input_tokens": 3362,
+      "cached_input_tokens": 1335,
+      "output_tokens": 408,
+      "web_searches": 0,
+      "cost_usd": 0.00042
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "Yes. The FDA lists Concerta 18 mg extended-release tablets as in shortage, though some makers may still have it. I can’t share which pharmacies have a controlled medicine; please call nearby pharmacie"
+  },
+  {
+   "run_id": "a2e1b39db20e",
+   "timestamp": "2026-10-23T22:06:56-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is the CVS at South Station open on weekends?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Weekend hours for the CVS at South Station, Boston, Massachusetts. Please include prescription pharmacy counter hours separately from store hours, if available."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacy",
+     "input": {
+      "description": "the CVS at South Station, Boston, Massachusetts"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "The pharmacy counter is closed on Saturday and Sunday, so prescriptions cannot be picked up there on weekends. The store is open 9:00 AM–8:00 PM both Saturday and Sunday. (CVS Pharmacy, 700 Atlantic Ave, Boston, MA 02111.)",
+     "not_found": [],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 5807,
+      "cached_input_tokens": 1166,
+      "output_tokens": 276,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 8996,
+     "cached_input_tokens": 3808,
+     "output_tokens": 517,
+     "total_tokens": 9513,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.000815
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3189,
+      "cached_input_tokens": 2642,
+      "output_tokens": 241,
+      "web_searches": 0,
+      "cost_usd": 0.000202
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 5807,
+      "cached_input_tokens": 1166,
+      "output_tokens": 276,
+      "web_searches": 0,
+      "cost_usd": 0.000614
+     }
+    ]
+   },
+   "safety_rules_fired": [
+    "hours reply reordered: pharmacy counter first, store hours labeled"
+   ],
+   "reply_preview": "The pharmacy counter is closed on Saturday and Sunday. You cannot pick up prescriptions here on weekends. The CVS at South Station is open 9:00 AM–8:00 PM on Saturdays and Sundays. The pharmacy counte"
+  },
+  {
+   "run_id": "8f46f2e5e880",
+   "timestamp": "2026-10-23T22:07:15-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Where can I fill Eliquis 5 mg near 02111, and what should I say when I call the pharmacy?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near ZIP code 02111 in Boston where a patient can fill Eliquis 5 mg. Return pharmacy IDs and relevant location details."
+    },
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "For Eliquis 5 mg, provide a short call script the patient can use to ask a pharmacy about filling the prescription. Insurance type not provided."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "lookup_drug",
+     "input": {
+      "name": "Eliquis 5 mg"
+     },
+     "result": "found=True, drug_id=eliquis_5, name=Eliquis (apixaban) 5 mg tablet, generic_name=apixaban"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "02111"
+     },
+     "result": "5 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174, walgreens-15390, gary-drug"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111"
+     },
+     "result": "1 pharmacies: cvs-2283"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "call_script",
+     "input": {
+      "drug": "Eliquis 5 mg"
+     },
+     "result": "call_script=Hi. I'm calling about Eliquis (apixaban), source=RxLantern call script template, checked_date=2026-10-23"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "Call the pharmacy to ask whether they can fill your Eliquis 5 mg prescription. Insurance information wasn’t provided, so they can check whether they take your plan and what your copay may be.",
+     "not_found": [],
+     "warnings": [
+      "Call to confirm stock."
+     ],
+     "tokens": {
+      "requests": 5,
+      "input_tokens": 7798,
+      "cached_input_tokens": 2751,
+      "output_tokens": 430,
+      "web_searches": 0
+     }
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "These nearby pharmacies are listed around ZIP 02111, but the results do not confirm that Eliquis 5 mg is in stock. Call before going to check availability. All five nearby counters are closed now: CVS at 631 Washington St, South Cove Community Health Center Pharmacy, and Gary Drug Co. open tomorr...",
+     "not_found": [
+      "Eliquis 5 mg stock or ability to fill the prescription was not provided by the pharmacy search results."
+     ],
+     "warnings": [
+      "Call the pharmacy to confirm Eliquis 5 mg is in stock before traveling.",
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 6,
+      "input_tokens": 10175,
+      "cached_input_tokens": 4566,
+      "output_tokens": 1318,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 14272,
+     "cached_input_tokens": 5880,
+     "output_tokens": 2346,
+     "total_tokens": 16618,
+     "web_searches": 0,
+     "model_requests": 8,
+     "tool_calls": 6,
+     "cost_usd": 0.002071
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": -3,
+      "input_tokens": -3701,
+      "cached_input_tokens": -1437,
+      "output_tokens": 598,
+      "web_searches": 0,
+      "cost_usd": 0.000285
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 5,
+      "input_tokens": 7798,
+      "cached_input_tokens": 2751,
+      "output_tokens": 430,
+      "web_searches": 0,
+      "cost_usd": 0.000747
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 6,
+      "input_tokens": 10175,
+      "cached_input_tokens": 4566,
+      "output_tokens": 1318,
+      "web_searches": 0,
+      "cost_usd": 0.001266
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "The closest pharmacy listed as open now is CVS at 715 Morrissey Boulevard, about 3.7 miles away; it is open until 11:00 PM. Closer options near 02111 include CVS at 631 Washington St and South Cove Co"
+  },
+  {
+   "run_id": "885fb10a2256",
+   "timestamp": "2026-10-23T22:07:28-04:00",
+   "type": "moderation",
+   "review_id": 1,
+   "pharmacy_id": "cvs-2283",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes the patient's own pharmacy experience and contains no sensitive information.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 619,
+     "cached_input_tokens": 0,
+     "output_tokens": 47,
+     "total_tokens": 666,
+     "cost_usd": 8.5e-05,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "d9988032d2fd",
+   "timestamp": "2026-10-23T22:07:39-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Does MassHealth cover Ozempic?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Does MassHealth cover Ozempic? Please provide current coverage/formulary criteria and any source links and checked dates."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "lookup_drug",
+     "input": {
+      "name": "Ozempic"
+     },
+     "result": "found=True, drug_id=ozempic_05, name=Ozempic (semaglutide) 0.5 mg pen, generic_name=semaglutide"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "masshealth_coverage",
+     "input": {
+      "drug": "ozempic_05"
+     },
+     "result": "covered: yes (on the MassHealth Drug List)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "Yes. Ozempic (semaglutide) 0.5 mg pen is on the MassHealth Drug List and is preferred in its drug class. Prior authorization is required; this means your prescriber has to ask MassHealth for approval first. The information available here does not specify the clinical criteria MassHealth uses for ...",
+     "not_found": [
+      "Specific clinical prior-authorization criteria were not provided in the available MassHealth coverage result."
+     ],
+     "warnings": [],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 4794,
+      "cached_input_tokens": 4081,
+      "output_tokens": 407,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 8028,
+     "cached_input_tokens": 6721,
+     "output_tokens": 643,
+     "total_tokens": 8671,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.000519
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3234,
+      "cached_input_tokens": 2640,
+      "output_tokens": 236,
+      "web_searches": 0,
+      "cost_usd": 0.000204
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 3,
+      "input_tokens": 4794,
+      "cached_input_tokens": 4081,
+      "output_tokens": 407,
+      "web_searches": 0,
+      "cost_usd": 0.000316
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "Yes. MassHealth lists Ozempic 0.5 mg pen as a preferred drug, but prior approval is required. The available information does not say what criteria MassHealth uses to approve it. Please ask your prescr"
+  },
+  {
+   "run_id": "8c05a8f17147",
+   "timestamp": "2026-10-23T22:07:53-04:00",
+   "language": "es",
+   "mode": "normal",
+   "question_redacted": "¿Qué farmacia en East Boston tiene entrega a domicilio?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Farmacias en East Boston, Boston MA, que ofrecen entrega a domicilio; incluya nombres, dirección, teléfono y datos de entrega disponibles."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "East Boston, Boston MA",
+      "delivery": true
+     },
+     "result": "5 pharmacies: cvs-1265, cvs-10174, cvs-5874, gary-drug, cvs-1217"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "East Boston, Boston MA"
+     },
+     "result": "1 pharmacies: cvs-2283"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "En East Boston encontré una farmacia que ofrece entrega a domicilio: CVS Pharmacy, 210 Border Street, East Boston, MA 02128; teléfono (617) 567-5147. La ficha indica que ofrece entrega, pero no aporta detalles sobre horarios, tarifas ni requisitos; llame para confirmarlos. El mostrador está cerra...",
+     "not_found": [
+      "No se proporcionaron detalles de entrega como horarios, tarifas o requisitos."
+     ],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm delivery details and hours."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 5435,
+      "cached_input_tokens": 1844,
+      "output_tokens": 768,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 8880,
+     "cached_input_tokens": 3172,
+     "output_tokens": 1062,
+     "total_tokens": 9942,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.001134
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3445,
+      "cached_input_tokens": 1328,
+      "output_tokens": 294,
+      "web_searches": 0,
+      "cost_usd": 0.000372
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 5435,
+      "cached_input_tokens": 1844,
+      "output_tokens": 768,
+      "web_searches": 0,
+      "cost_usd": 0.000762
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "En East Boston, CVS Pharmacy en 210 Border Street ofrece entrega a domicilio. No encontré detalles sobre horarios, tarifas o requisitos; llama para confirmarlos. El mostrador está cerrado ahora y abre"
+  },
+  {
+   "run_id": "9f025ba13b9a",
+   "timestamp": "2026-10-23T22:08:55-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near ZIP code 02111 in Boston that are open right now. Today is Friday, October 23, 2026 at 10:08 PM America/New_York. Include pharmacy counter hours and pharmacy IDs."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston"
+     },
+     "result": "1 pharmacies: cvs-2283"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-2283"
+     },
+     "result": "CVS Pharmacy (cvs-2283)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "One pharmacy counter near ZIP code 02111 is open now (Friday, October 23, at 10:08 PM): CVS Pharmacy, 715 Morrissey Boulevard, Dorchester, MA 02122, about 3.7 miles away in a straight line. The counter is open until 11:00 PM tonight. Counter hours: Monday–Friday 8:00 AM–11:00 PM; Saturday–Sunday ...",
+     "not_found": [],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 6104,
+      "cached_input_tokens": 1285,
+      "output_tokens": 452,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 9419,
+     "cached_input_tokens": 2615,
+     "output_tokens": 779,
+     "total_tokens": 10198,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.001096
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3315,
+      "cached_input_tokens": 1330,
+      "output_tokens": 327,
+      "web_searches": 0,
+      "cost_usd": 0.000375
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 6104,
+      "cached_input_tokens": 1285,
+      "output_tokens": 452,
+      "web_searches": 0,
+      "cost_usd": 0.000721
+     }
+    ]
+   },
+   "safety_rules_fired": [
+    "hours reply reordered: pharmacy counter first, store hours labeled"
+   ],
+   "reply_preview": "The pharmacy counter is open now until 11:00 PM. Yes. CVS Pharmacy at 715 Morrissey Boulevard in Dorchester is open now, about 3.7 miles from ZIP code 02111. The pharmacy counter closes at 11:00 PM to"
+  },
+  {
+   "run_id": "3786f9227942",
+   "timestamp": "2026-10-23T22:09:06-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is Concerta 18 mg in shortage? Which pharmacy has it?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Check FDA shortage status for Concerta 18 mg extended-release tablets, and provide the recommended call script for a patient seeking this controlled medicine in Boston, Massachusetts. Do not identify pharmacies with stock."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "lookup_drug",
+     "input": {
+      "name": "Concerta 18 mg extended-release tablets"
+     },
+     "result": "found=True, drug_id=concerta_18, name=Concerta 18 mg ER tablet, generic_name=methylphenidate"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "call_script",
+     "input": {
+      "drug": "Concerta 18 mg extended-release tablets"
+     },
+     "result": "call_script=Hi. I'm calling about Concerta 18 mg ER , source=RxLantern call script template, checked_date=2026-10-23"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "fda_shortage",
+     "input": {
+      "drug": "concerta_18"
+     },
+     "result": "status: in shortage"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "The FDA lists Concerta 18 mg extended-release tablets as in shortage. Some makers may still have it, so call a pharmacy to confirm availability. I can’t identify pharmacies with stock.",
+     "not_found": [],
+     "warnings": [
+      "Call to confirm stock."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 4955,
+      "cached_input_tokens": 1333,
+      "output_tokens": 315,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 8210,
+     "cached_input_tokens": 2647,
+     "output_tokens": 654,
+     "total_tokens": 8864,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 4,
+     "cost_usd": 0.00091
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3255,
+      "cached_input_tokens": 1314,
+      "output_tokens": 339,
+      "web_searches": 0,
+      "cost_usd": 0.000377
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 3,
+      "input_tokens": 4955,
+      "cached_input_tokens": 1333,
+      "output_tokens": 315,
+      "web_searches": 0,
+      "cost_usd": 0.000533
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "Yes. The FDA lists Concerta 18 mg extended-release tablets as in shortage, though some makers may still have it. I can’t identify which pharmacies have this controlled medicine in stock, so please cal"
+  },
+  {
+   "run_id": "19b8f786b6f6",
+   "timestamp": "2026-10-23T22:09:15-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is the CVS at South Station open on weekends?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Weekend hours for the CVS at South Station in Boston, Massachusetts. Please distinguish pharmacy counter hours from store hours."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacy",
+     "input": {
+      "description": "the CVS at South Station in Boston, Massachusetts"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "The pharmacy counter is closed on Saturday and Sunday, so you can’t pick up prescriptions there on weekends. The CVS store itself is open Saturday and Sunday, 9:00 AM–8:00 PM. Call (617) 737-7232 to confirm; holiday hours may differ.",
+     "not_found": [],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 5792,
+      "cached_input_tokens": 1161,
+      "output_tokens": 405,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 9105,
+     "cached_input_tokens": 3803,
+     "output_tokens": 653,
+     "total_tokens": 9758,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.000895
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3313,
+      "cached_input_tokens": 2642,
+      "output_tokens": 248,
+      "web_searches": 0,
+      "cost_usd": 0.000218
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 5792,
+      "cached_input_tokens": 1161,
+      "output_tokens": 405,
+      "web_searches": 0,
+      "cost_usd": 0.000677
+     }
+    ]
+   },
+   "safety_rules_fired": [
+    "hours reply reordered: pharmacy counter first, store hours labeled"
+   ],
+   "reply_preview": "The pharmacy counter is closed both days, so you can’t pick up prescriptions there on weekends. Call to confirm, especially around holidays. Store hours (the pharmacy counter may be closed): Saturday "
+  },
+  {
+   "run_id": "571ba2313b38",
+   "timestamp": "2026-10-23T22:09:34-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Where can I fill Eliquis 5 mg near 02111, and what should I say when I call the pharmacy?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near ZIP code 02111 in Boston where a patient can fill Eliquis 5 mg. Return relevant locations and IDs."
+    },
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Provide a call script for asking a pharmacy about filling Eliquis 5 mg. Include any relevant 2026 Medicare negotiated price only if applicable; insurance type was not provided."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "02111, Boston"
+     },
+     "result": "5 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174, walgreens-15390, gary-drug"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "lookup_drug",
+     "input": {
+      "name": "Eliquis 5 mg"
+     },
+     "result": "found=True, drug_id=eliquis_5, name=Eliquis (apixaban) 5 mg tablet, generic_name=apixaban"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "call_script",
+     "input": {
+      "drug": "Eliquis 5 mg"
+     },
+     "result": "call_script=Hi. I'm calling about Eliquis (apixaban), source=RxLantern call script template, checked_date=2026-10-23"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston"
+     },
+     "result": "1 pharmacies: cvs-2283"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "medicare_coverage",
+     "input": {
+      "drug": "eliquis_5"
+     },
+     "result": "drug=Eliquis (apixaban) 5 mg tablet, amount_used_for_estimates=60 tablets (1 twice a day), rules_2026={'yearly_out_of_pocket_cap': {'value': ', source=https://data.cms.gov/sites/default/files"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "I found five nearby pharmacies, but the lookup does not confirm whether any has Eliquis 5 mg in stock or can fill it for this patient. Please call to confirm availability and prescription/insurance details. The listed nearby counters are closed now; the next opening times are below. The nearest c...",
+     "not_found": [
+      "Eliquis 5 mg stock and ability to fill the prescription at these locations were not confirmed."
+     ],
+     "warnings": [
+      "Call the pharmacy to confirm Eliquis 5 mg availability and prescription/insurance details."
+     ],
+     "tokens": {
+      "requests": 5,
+      "input_tokens": 8581,
+      "cached_input_tokens": 4434,
+      "output_tokens": 1096,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 15103,
+     "cached_input_tokens": 8557,
+     "output_tokens": 2966,
+     "total_tokens": 18069,
+     "web_searches": 0,
+     "model_requests": 8,
+     "tool_calls": 7,
+     "cost_usd": 0.002223
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": -3,
+      "input_tokens": -4292,
+      "cached_input_tokens": -1777,
+      "output_tokens": 176,
+      "web_searches": 0,
+      "cost_usd": 7e-05
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 5,
+      "input_tokens": 8581,
+      "cached_input_tokens": 4434,
+      "output_tokens": 1096,
+      "web_searches": 0,
+      "cost_usd": 0.001007
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 6,
+      "input_tokens": 10814,
+      "cached_input_tokens": 5900,
+      "output_tokens": 1694,
+      "web_searches": 0,
+      "cost_usd": 0.001397
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "Near 02111, CVS at 631 Washington St and South Cove Community Health Center Pharmacy are both about 0.2 miles away; both are closed now and open tomorrow at 9:00 AM. Gary Drug Co. is about 0.7 miles a"
+  },
+  {
+   "run_id": "8b4b5706c6fe",
+   "timestamp": "2026-10-23T22:09:48-04:00",
+   "type": "moderation",
+   "review_id": 1,
+   "pharmacy_id": "cvs-2283",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes the patient's own pharmacy experience and contains no sensitive information.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 619,
+     "cached_input_tokens": 0,
+     "output_tokens": 47,
+     "total_tokens": 666,
+     "cost_usd": 8.5e-05,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "1e18ba15d979",
+   "timestamp": "2026-10-23T22:10:08-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Does MassHealth cover Ozempic?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Does MassHealth cover Ozempic? Need current coverage/formulary criteria or restrictions. Patient did not specify strength; ask about medication access coverage for Ozempic under MassHealth generally."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "lookup_drug",
+     "input": {
+      "name": "Ozempic"
+     },
+     "result": "found=True, drug_id=ozempic_05, name=Ozempic (semaglutide) 0.5 mg pen, generic_name=semaglutide"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "masshealth_coverage",
+     "input": {
+      "drug": "ozempic_05"
+     },
+     "result": "covered: yes (on the MassHealth Drug List)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "Yes. Ozempic 0.5 mg pen is on the MassHealth Drug List and is listed as preferred in its class, but prior authorization is required. Your prescriber has to ask MassHealth for approval first. The coverage result does not include detailed approval criteria; ask MassHealth or your prescriber for those.",
+     "not_found": [
+      "Detailed MassHealth prior-authorization approval criteria."
+     ],
+     "warnings": [],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 4836,
+      "cached_input_tokens": 2777,
+      "output_tokens": 367,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 8045,
+     "cached_input_tokens": 4091,
+     "output_tokens": 575,
+     "total_tokens": 8620,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.000724
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3209,
+      "cached_input_tokens": 1314,
+      "output_tokens": 208,
+      "web_searches": 0,
+      "cost_usd": 0.000307
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 3,
+      "input_tokens": 4836,
+      "cached_input_tokens": 2777,
+      "output_tokens": 367,
+      "web_searches": 0,
+      "cost_usd": 0.000417
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "Yes. MassHealth lists the Ozempic 0.5 mg pen as preferred in its class, but prior approval is required. Your prescriber must request approval from MassHealth; the detailed approval rules were not foun"
+  },
+  {
+   "run_id": "ce8b2ea4f197",
+   "timestamp": "2026-10-23T22:10:16-04:00",
+   "language": "es",
+   "mode": "normal",
+   "question_redacted": "¿Qué farmacia en East Boston tiene entrega a domicilio?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Farmacias en East Boston, Boston, Massachusetts que ofrecen entrega a domicilio; indicar nombres, direcciones/IDs y detalles relevantes de entrega."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "East Boston, Boston, Massachusetts",
+      "delivery": true
+     },
+     "result": "5 pharmacies: cvs-1265, cvs-10174, cvs-5874, gary-drug, cvs-1217"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "En East Boston encontré una farmacia que ofrece entrega a domicilio: CVS Pharmacy, 210 Border Street, East Boston, MA 02128 (ID: cvs-1265). Teléfono: (617) 567-5147. La entrega figura como disponible; el detalle de condiciones o cobertura no aparece en los datos. Está cerrada ahora y abre mañana ...",
+     "not_found": [
+      "No se encontraron detalles sobre condiciones, alcance o costo de la entrega."
+     ],
+     "warnings": [
+      "Llame a la farmacia para confirmar disponibilidad y detalles de entrega."
+     ],
+     "tokens": {
+      "requests": 2,
+      "input_tokens": 3079,
+      "cached_input_tokens": 0,
+      "output_tokens": 330,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 6342,
+     "cached_input_tokens": 1328,
+     "output_tokens": 613,
+     "total_tokens": 6955,
+     "web_searches": 0,
+     "model_requests": 4,
+     "tool_calls": 2,
+     "cost_usd": 0.000821
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3263,
+      "cached_input_tokens": 1328,
+      "output_tokens": 283,
+      "web_searches": 0,
+      "cost_usd": 0.000348
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 2,
+      "input_tokens": 3079,
+      "cached_input_tokens": 0,
+      "output_tokens": 330,
+      "web_searches": 0,
+      "cost_usd": 0.000473
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "CVS Pharmacy en 210 Border Street ofrece entrega a domicilio. Está cerrada ahora y abre mañana a las 9:00 a. m. No encontré detalles sobre el costo ni las condiciones de entrega; llama para confirmar "
+  },
+  {
+   "run_id": "ca06e4032ae9",
+   "timestamp": "2026-10-23T22:11:42-04:00",
+   "type": "moderation",
+   "review_id": 1,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "b028b226df3e",
+   "timestamp": "2026-10-23T22:11:42-04:00",
+   "type": "moderation",
+   "review_id": 2,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "6e6233d0c7ca",
+   "timestamp": "2026-10-23T22:11:43-04:00",
+   "type": "moderation",
+   "review_id": 3,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "d535fbad3727",
+   "timestamp": "2026-10-23T22:11:44-04:00",
+   "type": "moderation",
+   "review_id": 4,
+   "pharmacy_id": "cvs-10174",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes a safe personal experience at the pharmacy.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 624,
+     "cached_input_tokens": 0,
+     "output_tokens": 36,
+     "total_tokens": 660,
+     "cost_usd": 8e-05,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "576f58643b16",
+   "timestamp": "2026-10-23T22:11:44-04:00",
+   "type": "moderation",
+   "review_id": 5,
+   "pharmacy_id": "cvs-5874",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes the patient's own pharmacy experience and contains no identifying health information.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 624,
+     "cached_input_tokens": 0,
+     "output_tokens": 48,
+     "total_tokens": 672,
+     "cost_usd": 8.6e-05,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "2423714b2640",
+   "timestamp": "2026-10-23T22:11:44-04:00",
+   "type": "moderation",
+   "review_id": 6,
+   "pharmacy_id": "cvs-1217",
+   "stage": "code",
+   "decision": "rejected",
+   "category": "personal_health_information",
+   "reason": "Comment linked a person to a health detail.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation rejected: personal_health_information"
+   ]
+  },
+  {
+   "run_id": "907e15114925",
+   "timestamp": "2026-10-23T22:11:44-04:00",
+   "type": "moderation",
+   "review_id": 7,
+   "pharmacy_id": "cvs-1265",
+   "stage": "code",
+   "decision": "rejected",
+   "category": "hidden_instructions",
+   "reason": "Comment tried to give instructions to the app.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation rejected: hidden_instructions"
+   ]
+  },
+  {
+   "run_id": "6c6fc0eaa680",
+   "timestamp": "2026-10-23T22:11:44-04:00",
+   "type": "moderation",
+   "review_id": 8,
+   "pharmacy_id": "cvs-1264",
+   "stage": "code",
+   "decision": "rejected",
+   "category": "spam",
+   "reason": "Comment looked like spam or advertising.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation rejected: spam"
+   ]
+  },
+  {
+   "run_id": "821513d72589",
+   "timestamp": "2026-10-23T22:11:44-04:00",
+   "type": "moderation",
+   "review_id": 9,
+   "pharmacy_id": "cvs-2070",
+   "stage": "code",
+   "decision": "pending",
+   "category": "unclear",
+   "reason": "Comment names a person; a human will check it.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation pending: unclear"
+   ]
+  },
+  {
+   "run_id": "6e82bbf96c4d",
+   "timestamp": "2026-10-23T22:11:45-04:00",
+   "type": "moderation",
+   "review_id": 9,
+   "pharmacy_id": "cvs-2070",
+   "stage": "human admin",
+   "decision": "published",
+   "category": "admin decision",
+   "reason": "approved by admin",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
   }
  ]
 }

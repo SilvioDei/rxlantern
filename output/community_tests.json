@@ -64,7 +64,7 @@
           "drug_id": "ozempic_05",
           "in_stock_reports": 1,
           "out_of_stock_reports": 0,
-          "latest_report": "2026-10-24T01:45:33+00:00",
+          "latest_report": "2026-10-24T02:11:42+00:00",
           "conflicting": false
         }
       ],
@@ -109,7 +109,7 @@
         "drug_id": "ozempic_05",
         "in_stock_reports": 1,
         "out_of_stock_reports": 1,
-        "latest_report": "2026-10-24T01:45:34+00:00",
+        "latest_report": "2026-10-24T02:11:42+00:00",
         "conflicting": true,
         "note": "People reported both in stock and out of stock. Stock can change quickly."
       }

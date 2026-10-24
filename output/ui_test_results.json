@@ -1,0 +1,169 @@
+{
+  "passed": 34,
+  "total": 34,
+  "results": [
+    {
+      "step": "home loads with app name from the backend",
+      "passed": true,
+      "title": "RxLantern"
+    },
+    {
+      "step": "Easy view button on the first screen",
+      "passed": true
+    },
+    {
+      "step": "footer shows the safety lines",
+      "passed": true
+    },
+    {
+      "step": "no key or owner email visible: 01_home_normal",
+      "passed": true
+    },
+    {
+      "step": "asked through the website: Is there a pharmacy open right now near 02111?",
+      "passed": true,
+      "reply": "The pharmacy counter is open now until 11:00 PM. Yes. CVS Pharmacy at 715 Morrissey Boulevard in Dorchester is open now, about 3.7 miles from ZIP code 02111. Th",
+      "tokens_line": "This answer used 10,198 tokens, about $0.0011."
+    },
+    {
+      "step": "asked through the website: Is Concerta 18 mg in shortage? Which pharmacy has it?",
+      "passed": true,
+      "reply": "Yes. The FDA lists Concerta 18 mg extended-release tablets as in shortage, though some makers may still have it. I can’t identify which pharmacies have this con",
+      "tokens_line": "This answer used 8,864 tokens, about $0.0009."
+    },
+    {
+      "step": "asked through the website: Is the CVS at South Station open on weekends?",
+      "passed": true,
+      "reply": "The pharmacy counter is closed both days, so you can’t pick up prescriptions there on weekends. Call to confirm, especially around holidays. Store hours (the ph",
+      "tokens_line": "This answer used 9,758 tokens, about $0.0009."
+    },
+    {
+      "step": "answer shows pharmacy cards and a call script",
+      "passed": true,
+      "cards": 4,
+      "script": true
+    },
+    {
+      "step": "pharmacy card has tap-to-call and directions links",
+      "passed": true
+    },
+    {
+      "step": "tokens and cost line shown",
+      "passed": true
+    },
+    {
+      "step": "no key or owner email visible: answer",
+      "passed": true
+    },
+    {
+      "step": "pharmacies list with filters and map",
+      "passed": true,
+      "all": 20,
+      "delivery": 14
+    },
+    {
+      "step": "no key or owner email visible: 09_pharmacies_list_and_map",
+      "passed": true
+    },
+    {
+      "step": "pharmacy page: counter hours first, store hours beside it",
+      "passed": true
+    },
+    {
+      "step": "no key or owner email visible: 05_pharmacy_page",
+      "passed": true
+    },
+    {
+      "step": "shortage watch: 25 drugs, controlled show call script only",
+      "passed": true
+    },
+    {
+      "step": "no key or owner email visible: 06_shortage_watch",
+      "passed": true
+    },
+    {
+      "step": "vaccines: pharmacies, Massachusetts rule, large-employer warning",
+      "passed": true
+    },
+    {
+      "step": "no key or owner email visible: 07_vaccines",
+      "passed": true
+    },
+    {
+      "step": "admin page hidden from visitors",
+      "passed": true
+    },
+    {
+      "step": "account pop-up appears only when posting, then the report form opens",
+      "passed": true
+    },
+    {
+      "step": "stock report posted and shown",
+      "passed": true
+    },
+    {
+      "step": "review posted with a friendly moderation message",
+      "passed": true,
+      "message": "Thank you! Your review is published."
+    },
+    {
+      "step": "test account and its posts deleted; real database empty again",
+      "passed": true,
+      "deleted": {
+        "deleted": true,
+        "stock_reports_deleted": 1,
+        "reviews_deleted": 1
+      },
+      "counts": {
+        "users": 0,
+        "sessions": 0,
+        "stock_reports": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "step": "Easy view: larger text and remembered in the browser",
+      "passed": true,
+      "font_px": 22
+    },
+    {
+      "step": "microphone button shown only when the browser supports it",
+      "passed": true,
+      "supported": true
+    },
+    {
+      "step": "keyboard focus is visible",
+      "passed": true,
+      "outline": "solid"
+    },
+    {
+      "step": "no key or owner email visible: 02_home_easy_view",
+      "passed": true
+    },
+    {
+      "step": "Easy view: read-aloud button on the answer",
+      "passed": true
+    },
+    {
+      "step": "Spanish switch changes the site text",
+      "passed": true
+    },
+    {
+      "step": "no key or owner email visible: 03_home_spanish",
+      "passed": true
+    },
+    {
+      "step": "agent reply is in Spanish",
+      "passed": true,
+      "reply": "CVS Pharmacy en 210 Border Street ofrece entrega a domicilio. Está cerrada ahora y abre mañana a las 9:00 a. m. No encontré detalles sobre el costo ni las condi"
+    },
+    {
+      "step": "phone width: no sideways scrolling",
+      "passed": true
+    },
+    {
+      "step": "no key or owner email visible: 08_home_phone",
+      "passed": true
+    }
+  ]
+}

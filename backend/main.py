@@ -1,17 +1,17 @@
-"""FastAPI app (name comes from backend.config.APP_NAME).
+"""FastAPI app (name comes from backend.config.APP_NAME). Serves the API and the built website (frontend/dist).
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe -m uvicorn backend.main:app
+Start everything with one command from rxcompass/:  ..\\.venv\\Scripts\\python.exe run.py
 """
 
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException, Request, Response
-from fastapi.responses import JSONResponse
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
 from pydantic import BaseModel, Field
 
-from backend import community, usage_log
+from backend import community, usage_log, web_api
 from backend.build_db import ensure_db
-from backend.config import APP_NAME
+from backend.config import APP_NAME, REPO_DIR
 from backend.models import AskRequest, FinalReply
 
 rate_limiter = usage_log.RateLimiter()
@@ -25,6 +25,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title=APP_NAME, lifespan=lifespan)
+app.include_router(web_api.router)
 
 
 @app.get("/api/health")
@@ -118,6 +119,14 @@ def logout_route(request: Request, response: Response) -> dict:
     return {"logged_in": False}
 
 
+@app.delete("/api/auth/account")
+def delete_account(request: Request, response: Response) -> dict:
+    """Delete my account and everything I posted."""
+    out = community.delete_account(require_user(request))
+    response.delete_cookie(SESSION_COOKIE, path="/")
+    return out
+
+
 @app.get("/api/auth/me")
 def me(request: Request) -> dict:
     user = current_user(request)
@@ -172,3 +181,22 @@ def admin_approve(review_id: int, request: Request) -> dict:
 @app.post("/api/admin/reviews/{review_id}/reject")
 def admin_reject(review_id: int, request: Request) -> dict:
     return community.decide(review_id, False, require_admin(request))
+
+
+# ----------------------------------------------------------------------------- the website (built React app)
+DIST = REPO_DIR / "frontend" / "dist"
+
+
+@app.get("/{path:path}", include_in_schema=False)
+def website(path: str):
+    """Serve frontend/dist. Unknown paths get index.html so the page routes (/pharmacies, /vaccines, ...) work."""
+    if path.startswith("api/"):
+        raise HTTPException(404, "Not found.")
+    file = (DIST / path).resolve()
+    if path and file.is_file() and DIST.resolve() in file.parents:
+        return FileResponse(file)
+    index = DIST / "index.html"
+    if index.is_file():
+        return FileResponse(index, headers={"Cache-Control": "no-cache"})
+    return HTMLResponse(f"<h1>{APP_NAME}</h1><p>The website has not been built yet (frontend/dist is missing). "
+                        "The API is running at /api/health.</p>", status_code=503)

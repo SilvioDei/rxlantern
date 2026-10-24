@@ -410,3 +410,46 @@ Every prompt sent to the AI assistant, word for word, grouped by build step.
 > 2. Make sure the app runs normally if RXLANTERN_ADMIN_EMAILS is missing. The graders' .env will only have PORTKEY_API_KEY and OPENAI_API_KEY, so the admin queue should simply have no admin in that case, without errors.
 >
 > Add this to AI_prompts.md under Step 6, commit, then stop.
+
+## Step 7 — The website
+
+> Step 7: The website
+>
+> Build the RxLantern website in frontend/ with React + Vite + TypeScript, using the API routes from Steps 4 to 6. Build it into frontend/dist and have FastAPI serve it at "/", so the whole app starts with one Python command and graders do not need Node.js. Commit the built frontend/dist folder so it works from a fresh clone. Read the app name from the backend setting.
+>
+> Design: "Lantern Glow"
+> - An elite, modern healthcare app: colorful and vibrant, but soothing and calm, never loud or cluttered.
+> - Colors: deep midnight teal and navy as the base, a warm amber/gold glow for buttons, highlights, and "open now" badges, soft cream cards, and a touch of coral for warnings.
+> - Fonts: an elegant serif for headings (for example Fraunces) and Atkinson Hyperlegible for body text (designed for people with low vision), with fallback fonts so it still looks good offline.
+> - A simple, original lantern logo drawn in SVG, with a soft glow.
+> - Gentle motion only (for example a soft glow on the lantern), and none at all for visitors whose system asks for reduced motion.
+> - Good contrast everywhere, and it must work well on a phone-sized screen.
+>
+> Pages and features
+> 1. Home: a large "Ask RxLantern" box, plus quick-start buttons: "Find a pharmacy open now", "Is my medicine in shortage?", "What will it cost?", "Vaccines", and "I just called a pharmacy" (post a stock report). Optional fields for ZIP code or neighborhood and insurance type (MassHealth, Medicare, commercial, none). These are saved only in the visitor's browser, with a short note: "RxLantern never stores your name or health information."
+> 2. Answers: show the reply text, pharmacy cards (name, address, an "Open now" or "Closed, opens at…" badge, closes at, distance, a tap-to-call phone link, and a directions link), the call script in its own card with "Copy" and "Read aloud" buttons, warnings, sources with dates in a small section at the bottom, and follow-up question buttons when the Front Desk needs more details. Show a small line with the tokens and cost from the API ("This answer used X tokens, about $Y"). While waiting, show a friendly message about which helper is working.
+> 3. Pharmacies: a list with filters (open now, delivery, vaccines, language spoken, wheelchair access, neighborhood) and a map using OpenStreetMap with Leaflet (no API key). Each pharmacy has a page with pharmacy counter hours and store hours side by side (counter first), lunch breaks, weekend and holiday notes, delivery, services, nearby clinics, recent community stock reports, and reviews.
+> 4. Shortage watch: our 25 drugs with their FDA shortage status and date checked. For non-controlled drugs, show fresh community reports. For controlled drugs, show the shortage status and a call script only, with a short explanation.
+> 5. Vaccines: each vaccine, which pharmacies offer it, and coverage by insurance type, including the Massachusetts rule and the large-employer warning.
+> 6. Accounts and posting: log in and create account in a simple pop-up, only when someone tries to post. Simple forms for stock reports and reviews. Show friendly messages when moderation rejects or holds a comment.
+> 7. Admin: a page to review the pending queue, visible only to admin accounts.
+> 8. A footer on every page: "RxLantern gives information, not medical advice. In an emergency, call 911." and "Information comes from public sources; each fact shows the date it was checked."
+>
+> Easy view (turned on by the visitor, not on for everyone)
+> - A clear "Easy view" button on the first screen.
+> - When on: much larger text, high contrast, bigger buttons and spacing, a simpler layout, a "Read aloud" button on every answer (browser speech synthesis), and a microphone button for voice questions (browser speech recognition; hide it if the browser does not support it). Full keyboard navigation with visible focus outlines.
+> - Remember the choice in the browser.
+>
+> Language
+> - An English / Español switch on every page. All website text lives in one translation file. When Spanish is chosen, the whole site and the agents' replies are in Spanish.
+>
+> Errors
+> - Friendly messages for the spending limits from Step 5 ("RxLantern is busy, please try again later"), for the rate limit, and for a lost connection.
+>
+> Test it
+> - Build the site, start the app with one command, and click through every page.
+> - Ask 3 questions from Step 4 through the website, post a stock report and a review with a test account (then delete the test account and its posts so the real database is empty again), and switch on Easy view and Spanish.
+> - Take screenshots with Playwright and save them to output/screenshots/: home (normal), home (Easy view), home (Spanish), an answer with pharmacy cards and a call script, a pharmacy page, the shortage page, the vaccines page, and the home page at phone width. Make sure no screenshot shows an API key or my email.
+> - Tell me the exact one command to start the app.
+>
+> Add this prompt to AI_prompts.md under Step 7. Commit with the message "Step 7: website", then stop.

@@ -93,6 +93,7 @@ class FinalReply(BaseModel):
     call_script: str | None = None
     sources: list[Fact] = Field(default_factory=list)
     follow_up_question: str | None = None
+    warnings: list[str] = Field(default_factory=list, description="Warnings the specialists returned (e.g. call to confirm).")
     agents_run: list[str] = Field(default_factory=list)
     tools_run: list[str] = Field(default_factory=list)
     trace: list[TraceEvent] = Field(default_factory=list)

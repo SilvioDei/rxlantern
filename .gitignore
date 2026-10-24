@@ -12,7 +12,7 @@ __pycache__/
 
 # Node / front end
 node_modules/
-frontend/dist/
+# frontend/dist IS committed so the app runs from a fresh clone without Node.js
 
 # Large or local data files (all databases, including data/rxlantern_user.db)
 *.db
