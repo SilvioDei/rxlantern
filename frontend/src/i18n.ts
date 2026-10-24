@@ -520,7 +520,7 @@ const en = {
   impactTitle: "Time saved",
   impactLine: "RxLantern has answered {x} questions, saving patients an estimated {y} minutes on the phone and pharmacy staff an estimated {z} minutes.",
   impactEstimate: "Estimate",
-  impactHow: "How we estimate: one real call to a Boston pharmacy took a patient about 15 minutes and 3 calls, and a pharmacy manager estimates each \"do you have it?\" call takes staff about 4 minutes. Only real chat questions are counted, not tests or sample data.",
+  impactHow: "How we estimate: getting an answer from a Boston pharmacy took a patient about 15 minutes and 3 calls. Only one of those calls (the others were a voicemail and a dropped callback) took staff time: about 4 minutes, by a pharmacy manager's estimate. So each answered question saves about 15 patient minutes and 4 staff minutes. Only real chat questions are counted, not tests or sample data.",
 
 };
 
@@ -1030,7 +1030,7 @@ const es: Dict = {
   impactTitle: "Tiempo ahorrado",
   impactLine: "RxLantern ha respondido {x} preguntas, ahorrando a los pacientes unos {y} minutos al teléfono (estimado) y al personal de farmacia unos {z} minutos (estimado).",
   impactEstimate: "Estimado",
-  impactHow: "Cómo lo estimamos: una llamada real a una farmacia de Boston le tomó a un paciente unos 15 minutos y 3 llamadas, y una gerente de farmacia estima que cada llamada de \"¿lo tienen?\" toma unos 4 minutos del personal. Solo se cuentan preguntas reales del chat, no pruebas ni datos de ejemplo.",
+  impactHow: "Cómo lo estimamos: obtener una respuesta de una farmacia de Boston le tomó a un paciente unos 15 minutos y 3 llamadas. Solo una de esas llamadas (las otras fueron un buzón de voz y una devolución de llamada que se cortó) tomó tiempo del personal: unos 4 minutos, según una gerente de farmacia. Así que cada pregunta respondida ahorra unos 15 minutos al paciente y 4 al personal. Solo se cuentan preguntas reales del chat, no pruebas ni datos de ejemplo.",
 
 };
 

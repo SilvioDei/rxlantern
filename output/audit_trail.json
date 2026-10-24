@@ -13803,6 +13803,722 @@
    },
    "safety_rules_fired": [],
    "reply_preview": "The FDA lists Vyvanse 30 mg capsules in shortage. Some makers may still have it, but I can’t identify which pharmacy has stock. Please call pharmacies near 02115 to confirm availability."
+  },
+  {
+   "run_id": "b52244192193",
+   "timestamp": "2026-10-24T02:49:34-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near ZIP code 02111 in Boston that are open right now. It is Saturday, October 24, 2026 at 2:49 AM America/New_York. Include pharmacy counter hours first."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "02111, Boston",
+      "open_now": true
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "scchc-pharmacy"
+     },
+     "result": "South Cove Community Health Center Pharmacy (formerly Tai Tung Pharmacy) (scchc-pharmacy)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "No pharmacy counters near ZIP 02111 are open right now (2:49 AM Saturday). Counter hours: CVS, 631 Washington St (about 0.2 miles): Saturday 9 AM–7 PM, Sunday 10 AM–7 PM; opens today at 9 AM. South Cove Community Health Center Pharmacy, 256 Harrison Ave (about 0.2 miles): Saturday 9 AM–6 PM, Sund...",
+     "not_found": [],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 4,
+      "input_tokens": 13160,
+      "cached_input_tokens": 3817,
+      "output_tokens": 1086,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 16719,
+     "cached_input_tokens": 5159,
+     "output_tokens": 1505,
+     "total_tokens": 18224,
+     "web_searches": 0,
+     "model_requests": 6,
+     "tool_calls": 6,
+     "cost_usd": 0.00196
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3559,
+      "cached_input_tokens": 1342,
+      "output_tokens": 419,
+      "web_searches": 0,
+      "cost_usd": 0.000445
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 4,
+      "input_tokens": 13160,
+      "cached_input_tokens": 3817,
+      "output_tokens": 1086,
+      "web_searches": 0,
+      "cost_usd": 0.001515
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "No pharmacy counters near 02111 are open right now. The closest options open later today are CVS at 631 Washington St and South Cove Pharmacy at 256 Harrison Ave; both open at 9:00 AM."
+  },
+  {
+   "run_id": "f20c3bb77a8b",
+   "timestamp": "2026-10-24T02:49:35-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near ZIP code 02111 in Boston that are open right now. It is Saturday, October 24, 2026 at 2:49 AM America/New_York. Include pharmacy counter hours first."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "02111, Boston",
+      "open_now": true
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "scchc-pharmacy"
+     },
+     "result": "South Cove Community Health Center Pharmacy (formerly Tai Tung Pharmacy) (scchc-pharmacy)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "No pharmacy counters near ZIP 02111 are open right now (2:49 AM Saturday). Counter hours: CVS, 631 Washington St (about 0.2 miles): Saturday 9 AM–7 PM, Sunday 10 AM–7 PM; opens today at 9 AM. South Cove Community Health Center Pharmacy, 256 Harrison Ave (about 0.2 miles): Saturday 9 AM–6 PM, Sund...",
+     "not_found": [],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 4,
+      "input_tokens": 13160,
+      "cached_input_tokens": 3817,
+      "output_tokens": 1086,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 16719,
+     "cached_input_tokens": 5159,
+     "output_tokens": 1505,
+     "total_tokens": 18224,
+     "web_searches": 0,
+     "model_requests": 6,
+     "tool_calls": 6,
+     "cost_usd": 0.00196
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3559,
+      "cached_input_tokens": 1342,
+      "output_tokens": 419,
+      "web_searches": 0,
+      "cost_usd": 0.000445
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 4,
+      "input_tokens": 13160,
+      "cached_input_tokens": 3817,
+      "output_tokens": 1086,
+      "web_searches": 0,
+      "cost_usd": 0.001515
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "No pharmacy counters near 02111 are open right now. The closest options open later today are CVS at 631 Washington St and South Cove Pharmacy at 256 Harrison Ave; both open at 9:00 AM."
+  },
+  {
+   "run_id": "954474c072ae",
+   "timestamp": "2026-10-24T02:49:35-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "I took too many pills",
+   "stop_reason": "emergency message shown",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "emergency message shown (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "emergency message shown (rule in code, no model call)"
+   ],
+   "reply_preview": "If this is an emergency, call 911. For a possible poisoning or overdose, call Poison Control at 1-800-222-1222."
+  },
+  {
+   "run_id": "1688a2e1a22c",
+   "timestamp": "2026-10-24T02:50:09-04:00",
+   "type": "moderation",
+   "review_id": 1,
+   "pharmacy_id": "bmc-yawkey",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "05249bfd71ad",
+   "timestamp": "2026-10-24T02:50:13-04:00",
+   "type": "moderation",
+   "review_id": 2,
+   "pharmacy_id": "gary-drug",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "ebf8e8b6dcaf",
+   "timestamp": "2026-10-24T02:50:14-04:00",
+   "type": "moderation",
+   "review_id": 3,
+   "pharmacy_id": "gary-drug",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "8bbde963734f",
+   "timestamp": "2026-10-24T02:50:14-04:00",
+   "type": "moderation",
+   "review_id": 4,
+   "pharmacy_id": "gary-drug",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "f705304d754c",
+   "timestamp": "2026-10-24T02:54:04-04:00",
+   "type": "moderation",
+   "review_id": 1,
+   "pharmacy_id": "bmc-yawkey",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "257496357cdb",
+   "timestamp": "2026-10-24T02:54:07-04:00",
+   "type": "moderation",
+   "review_id": 2,
+   "pharmacy_id": "gary-drug",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "8fdce6c1e005",
+   "timestamp": "2026-10-24T02:54:07-04:00",
+   "type": "moderation",
+   "review_id": 3,
+   "pharmacy_id": "gary-drug",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "cfbfb69a67ef",
+   "timestamp": "2026-10-24T02:54:08-04:00",
+   "type": "moderation",
+   "review_id": 4,
+   "pharmacy_id": "gary-drug",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "5ce658282230",
+   "timestamp": "2026-10-24T02:54:30-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near ZIP code 02111 in Boston that are open right now (Saturday, October 24, 2026 at 2:54 AM America/New_York). Include pharmacy counter hours and IDs."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "scchc-pharmacy"
+     },
+     "result": "South Cove Community Health Center Pharmacy (formerly Tai Tung Pharmacy) (scchc-pharmacy)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "No pharmacy counter near ZIP 02111 is open right now (Saturday, Oct. 24, 2026, 2:54 AM). The closest listed options are closed and open at 9:00 AM today:\n\n- CVS Pharmacy, 631 Washington St (about 0.2 miles): Saturday counter hours 9:00 AM–7:00 PM; Sunday 10:00 AM–7:00 PM. ID: cvs-5874.\n- South Co...",
+     "not_found": [
+      "No pharmacy counter open right now near ZIP 02111."
+     ],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 10144,
+      "cached_input_tokens": 1582,
+      "output_tokens": 935,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 13784,
+     "cached_input_tokens": 2924,
+     "output_tokens": 1369,
+     "total_tokens": 15153,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 5,
+     "cost_usd": 0.0018
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3640,
+      "cached_input_tokens": 1342,
+      "output_tokens": 434,
+      "web_searches": 0,
+      "cost_usd": 0.00046
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 10144,
+      "cached_input_tokens": 1582,
+      "output_tokens": 935,
+      "web_searches": 0,
+      "cost_usd": 0.00134
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "No pharmacy counter near 02111 is open right now. The closest listed options, CVS at 631 Washington St and South Cove Community Health Center Pharmacy, both open at 9:00 AM today. Holiday hours may di"
+  },
+  {
+   "run_id": "370624d23437",
+   "timestamp": "2026-10-24T02:54:31-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near ZIP code 02111 in Boston that are open right now (Saturday, October 24, 2026 at 2:54 AM America/New_York). Include pharmacy counter hours and IDs."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "scchc-pharmacy"
+     },
+     "result": "South Cove Community Health Center Pharmacy (formerly Tai Tung Pharmacy) (scchc-pharmacy)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "No pharmacy counter near ZIP 02111 is open right now (Saturday, Oct. 24, 2026, 2:54 AM). The closest listed options are closed and open at 9:00 AM today:\n\n- CVS Pharmacy, 631 Washington St (about 0.2 miles): Saturday counter hours 9:00 AM–7:00 PM; Sunday 10:00 AM–7:00 PM. ID: cvs-5874.\n- South Co...",
+     "not_found": [
+      "No pharmacy counter open right now near ZIP 02111."
+     ],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 10144,
+      "cached_input_tokens": 1582,
+      "output_tokens": 935,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 13784,
+     "cached_input_tokens": 2924,
+     "output_tokens": 1369,
+     "total_tokens": 15153,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 5,
+     "cost_usd": 0.0018
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3640,
+      "cached_input_tokens": 1342,
+      "output_tokens": 434,
+      "web_searches": 0,
+      "cost_usd": 0.00046
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 10144,
+      "cached_input_tokens": 1582,
+      "output_tokens": 935,
+      "web_searches": 0,
+      "cost_usd": 0.00134
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "No pharmacy counter near 02111 is open right now. The closest listed options, CVS at 631 Washington St and South Cove Community Health Center Pharmacy, both open at 9:00 AM today. Holiday hours may di"
+  },
+  {
+   "run_id": "cf0d8152481b",
+   "timestamp": "2026-10-24T02:54:31-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "I took too many pills",
+   "stop_reason": "emergency message shown",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "emergency message shown (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "emergency message shown (rule in code, no model call)"
+   ],
+   "reply_preview": "If this is an emergency, call 911. For a possible poisoning or overdose, call Poison Control at 1-800-222-1222."
   }
  ]
 }

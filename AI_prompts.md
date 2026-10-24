@@ -672,3 +672,13 @@ Every prompt sent to the AI assistant, word for word, grouped by build step.
 > Then delete all test accounts, test posts, and test search counts so the real database has no real-user rows again. Retake the screenshots, adding one for each new feature. Make sure no screenshot shows an API key or my email.
 >
 > Update PROJECT_NOTES.md and README.md. Rebuild frontend/dist. Commit with the message "Step 7c part 2: new features". Then give me the pass/fail table, any choices you made while I was asleep, and the start command. Then stop.
+
+### Step 7c (part 2) — fix time-saved estimate and MassHealth copay wording
+
+> Two corrections:
+> 1. Time-saved counter: change the staff estimate from 12 minutes to 4 minutes per answered question. My roommate's 3 calls included a voicemail and a dropped callback; only one call actually took staff time (about 4 minutes). Keep the patient estimate at 15 minutes. Update the About page, home page line, PROJECT_NOTES.md, and any test that checks the numbers.
+> 2. MassHealth copays: [KEEP: I confirm MassHealth members currently pay no prescription copays, so keep the wording as it is, citing the MassHealth Drug List PDF.]  OR  [SOFTEN: change it to "MassHealth members usually pay little or nothing for covered prescriptions. Ask your pharmacy to confirm."]
+>
+> Add this to AI_prompts.md under Step 7c (part 2) and commit with the message "Fix time-saved estimate and MassHealth copay wording".
+>
+> (answer to "Which wording should the site use?") "KEEP"

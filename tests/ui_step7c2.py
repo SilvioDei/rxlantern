@@ -419,12 +419,12 @@ def t_impact(browser):
     assert r.status_code == 200 and r.json()["stop_reason"] == "completed", r.text[:200]
     after_real = httpx.get(f"{BASE}/api/impact").json()
     assert after_real["questions"] == start + 1, after_real
-    assert after_real["patient_minutes"] == (start + 1) * 15 and after_real["staff_minutes"] == (start + 1) * 12
+    assert after_real["patient_minutes"] == (start + 1) * 15 and after_real["staff_minutes"] == (start + 1) * 4
     ctx = new_ctx(browser)
     page = ctx.new_page()
     resp = page.request.post(f"{BASE}/api/ask", data=q, timeout=180000)  # headless browser = automated test
     assert resp.ok
-    httpx.post(f"{BASE}/api/ask", json=q | {"question": "I took too many pills"}, headers=REAL_UA)  # emergency: no answer counted
+    httpx.post(f"{BASE}/api/ask", json=q | {"question": "I took too many pills"}, headers=REAL_UA, timeout=60)  # emergency: no answer counted
     assert httpx.get(f"{BASE}/api/impact").json()["questions"] == start + 1, "a test question was counted"
     page.goto(BASE)
     expect(page.locator(".impact-line").first).to_contain_text(f"RxLantern has answered {start + 1} question")
@@ -432,9 +432,10 @@ def t_impact(browser):
     page.goto(f"{BASE}/about")
     expect(page.locator(".impact-card")).to_contain_text(f"saving patients an estimated {(start + 1) * 15} minutes")
     expect(page.locator(".impact-card")).to_contain_text("about 15 minutes and 3 calls")
+    expect(page.locator(".impact-card")).to_contain_text(f"pharmacy staff an estimated {(start + 1) * 4} minutes")
     shot(page, "11_time_saved_about.png")
     ctx.close()
-    return f"real question: {start} -> {start + 1} (15 patient min, 12 staff min each); headless-browser question and emergency message: not counted; home line and About card labeled 'Estimate'"
+    return f"real question: {start} -> {start + 1} (15 patient min, 4 staff min each); headless-browser question and emergency message: not counted; home line and About card labeled 'Estimate'"
 
 
 # ----------------------------------------------------------------------------- 12. Spanish, Easy view, phone

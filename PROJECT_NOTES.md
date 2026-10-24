@@ -152,7 +152,8 @@ width. New routes are in `backend/insights.py`; shared pieces in `frontend/src/c
   (106 of 150; never controlled drugs). Manufacturer programs from each brand's own site (30 of 38 brand drugs; 8 "not
   found"). Shown for no insurance, work/private plans, or no insurance chosen; Medicare and MassHealth see only the note.
 - **Time saved**: `impact_counter` counts real chat answers only (completed, not tests). Estimate per question: patient
-  15 minutes (one real call took about 15 minutes and 3 calls), staff 3 calls x 4 minutes = 12 minutes.
+  15 minutes (getting an answer took about 15 minutes and 3 calls), staff 4 minutes (only one of the 3 calls took
+  staff time; the others were a voicemail and a dropped callback).
 - **Sample data** (`SHOW_SAMPLE_DATA`): languages on sample reviews, three sample reviews at CVS Chinatown in the same
   weekday-morning slot (best time), and sample search counts (one under 5, so hidden). Never counted with real data.
 - **Shortage watch speed**: `/api/drugs` reads all 150 shortage results on one database connection (0.65 s -> 0.03 s).
