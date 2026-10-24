@@ -4,6 +4,7 @@ Run by hand:   ..\\.venv\\Scripts\\python.exe -m backend.build_db
 The app also calls ensure_db() on startup, so graders never need to run this.
 """
 
+import csv
 import json
 import sqlite3
 from pathlib import Path
@@ -12,6 +13,36 @@ from backend.config import DATA_DIR
 
 JSON_PATH = DATA_DIR / "pharmacies.json"
 DB_PATH = DATA_DIR / "rxlantern.db"
+MEDICARE_DIR = DATA_DIR / "medicare"
+
+MED_SCHEMA = """
+CREATE TABLE drugs (
+    id TEXT PRIMARY KEY, display_name TEXT NOT NULL, category TEXT, generic_name TEXT, brand_names TEXT,
+    strength TEXT, dosage_form TEXT, controlled INTEGER NOT NULL, dea_schedule TEXT, rxcuis TEXT, ndcs TEXT,
+    rxnorm_generic TEXT, rxnorm_brand TEXT, typical_30_day_supply TEXT, shortage_search TEXT, sources TEXT,
+    checked_date TEXT
+);
+-- Saved snapshot (fallback). Live API answers are cached separately in shortage_cache.
+CREATE TABLE shortages (
+    drug_id TEXT PRIMARY KEY REFERENCES drugs(id), status TEXT, summary TEXT, other_forms_on_list TEXT,
+    matching_entries TEXT, source TEXT, api TEXT, checked_at TEXT
+);
+CREATE TABLE shortage_cache (drug_id TEXT PRIMARY KEY, fetched_at TEXT NOT NULL, result_json TEXT NOT NULL);
+CREATE TABLE nadac_prices (
+    drug_id TEXT REFERENCES drugs(id), ndc TEXT, ndc_description TEXT, nadac_per_unit REAL, pricing_unit TEXT,
+    effective_date TEXT, as_of_date TEXT, classification TEXT, otc TEXT, pharmacy_type TEXT, source_file TEXT,
+    checked_date TEXT
+);
+CREATE TABLE masshealth (
+    drug_id TEXT PRIMARY KEY REFERENCES drugs(id), covered TEXT, prior_authorization TEXT, drug_class TEXT,
+    notes TEXT, mhdl_rows TEXT, source TEXT, list_last_updated TEXT, checked_date TEXT
+);
+CREATE TABLE vaccines (
+    id TEXT PRIMARY KEY, name TEXT, vaccine_group TEXT, medicare TEXT, masshealth TEXT, commercial TEXT,
+    notes TEXT, certified_sites_only INTEGER, clinic_finder TEXT, extra_sources TEXT, checked_date TEXT
+);
+CREATE TABLE medicare_rules (key TEXT PRIMARY KEY, value TEXT, source TEXT, checked_date TEXT);
+"""
 
 # Columns that hold lists or objects are stored as JSON text.
 JSON_COLUMNS = {
@@ -88,8 +119,90 @@ def _row(p: dict) -> dict:
     return row
 
 
+def _insert(con: sqlite3.Connection, table: str, rows: list[dict]) -> None:
+    if not rows:
+        return
+    cols = list(rows[0])
+    con.executemany(f"INSERT INTO {table} ({', '.join(cols)}) VALUES ({', '.join(':' + c for c in cols)})", rows)
+
+
+def _j(v):
+    return v if isinstance(v, str) else json.dumps(v, ensure_ascii=False)
+
+
+def _load(name: str):
+    return json.loads((DATA_DIR / name).read_text(encoding="utf-8"))
+
+
+def _medication_tables(con: sqlite3.Connection) -> dict:
+    """Drugs, shortages, NADAC, MassHealth, Medicare, and vaccines, all from small files in data/."""
+    counts = {}
+    con.executescript(MED_SCHEMA)
+
+    drugs = _load("drugs.json")["drugs"]
+    _insert(con, "drugs", [{
+        "id": d["id"], "display_name": d["display_name"], "category": d["category"],
+        "generic_name": d["generic_name"], "brand_names": json.dumps(d["brand_names"]), "strength": d["strength"],
+        "dosage_form": d["dosage_form"], "controlled": int(d["controlled"]), "dea_schedule": d["dea_schedule"],
+        "rxcuis": _j(d["rxcuis"]), "ndcs": _j(d["ndcs"]), "rxnorm_generic": _j(d["rxnorm_generic"]),
+        "rxnorm_brand": _j(d["rxnorm_brand"]), "typical_30_day_supply": _j(d["typical_30_day_supply"]),
+        "shortage_search": d["shortage_search"], "sources": _j(d["sources"]), "checked_date": d["checked_date"],
+    } for d in drugs])
+    counts["drugs"] = len(drugs)
+
+    snap = _load("shortages_snapshot.json")
+    _insert(con, "shortages", [{
+        "drug_id": x["drug_id"], "status": x["status"], "summary": x["summary"],
+        "other_forms_on_list": _j(x.get("other_forms_on_list", [])), "matching_entries": _j(x["matching_entries"]),
+        "source": x["source"], "api": x["api"], "checked_at": x["checked_at"],
+    } for x in snap["drugs"]])
+    counts["shortages"] = len(snap["drugs"])
+
+    with open(DATA_DIR / "nadac_sample.csv", newline="", encoding="utf-8") as f:
+        nadac = list(csv.DictReader(f))
+    for r in nadac:
+        r["nadac_per_unit"] = float(r["nadac_per_unit"])
+    _insert(con, "nadac_prices", nadac)
+    counts["nadac_prices"] = len(nadac)
+
+    mh = _load("masshealth.json")
+    _insert(con, "masshealth", [{
+        "drug_id": x["drug_id"], "covered": x["covered"], "prior_authorization": x["prior_authorization"],
+        "drug_class": x.get("drug_class", "not found"), "notes": _j(x["notes"]), "mhdl_rows": _j(x["mhdl_rows"]),
+        "source": x["source"], "list_last_updated": mh["list_last_updated"], "checked_date": x["checked_date"],
+    } for x in mh["drugs"]])
+    counts["masshealth"] = len(mh["drugs"])
+
+    vac = _load("vaccines.json")
+    _insert(con, "vaccines", [{
+        "id": v["id"], "name": v["name"], "vaccine_group": v["group"], "medicare": _j(v["medicare"]),
+        "masshealth": _j(v["masshealth"]), "commercial": _j(v["commercial"]), "notes": _j(v["notes"]),
+        "certified_sites_only": int(bool(v.get("certified_sites_only"))), "clinic_finder": v.get("clinic_finder"),
+        "extra_sources": _j(v.get("extra_sources", [])), "checked_date": v["checked_date"],
+    } for v in vac["vaccines"]])
+    counts["vaccines"] = len(vac["vaccines"])
+
+    # Medicare Part D: every CSV in data/medicare/ becomes a table named medicare_<file name>.
+    for path in sorted(MEDICARE_DIR.glob("*.csv")):
+        with open(path, newline="", encoding="utf-8") as f:
+            rows = list(csv.DictReader(f))
+        if not rows:
+            continue
+        table = "medicare_" + path.stem
+        con.execute(f"CREATE TABLE {table} ({', '.join(c + ' TEXT' for c in rows[0])})")
+        _insert(con, table, rows)
+        counts[table] = len(rows)
+    rules = MEDICARE_DIR / "part_d_rules_2026.json"
+    if rules.exists():
+        r = json.loads(rules.read_text(encoding="utf-8"))
+        _insert(con, "medicare_rules", [{"key": k, "value": _j(v["value"]), "source": v["source"],
+                                         "checked_date": r["checked_date"]} for k, v in r["rules"].items()])
+        counts["medicare_rules"] = len(r["rules"])
+    return counts
+
+
 def build_db(json_path: Path = JSON_PATH, db_path: Path = DB_PATH) -> int:
-    """(Re)create the pharmacies table from the JSON file. Returns the row count."""
+    """(Re)create every table from the small files in data/. Returns the pharmacy row count."""
     data = json.loads(json_path.read_text(encoding="utf-8"))
     rows = [_row(p) for p in data["pharmacies"]]
     tmp = db_path.with_suffix(".tmp")
@@ -97,11 +210,8 @@ def build_db(json_path: Path = JSON_PATH, db_path: Path = DB_PATH) -> int:
     con = sqlite3.connect(tmp)
     try:
         con.executescript(SCHEMA)
-        cols = list(rows[0])
-        con.executemany(
-            f"INSERT INTO pharmacies ({', '.join(cols)}) VALUES ({', '.join(':' + c for c in cols)})",
-            rows,
-        )
+        _insert(con, "pharmacies", rows)
+        _medication_tables(con)
         con.commit()
     finally:
         con.close()
@@ -109,12 +219,17 @@ def build_db(json_path: Path = JSON_PATH, db_path: Path = DB_PATH) -> int:
     return len(rows)
 
 
+def _sources() -> list[Path]:
+    names = ("drugs.json", "shortages_snapshot.json", "nadac_sample.csv", "masshealth.json", "vaccines.json")
+    return [JSON_PATH, *(DATA_DIR / n for n in names), *MEDICARE_DIR.glob("*")]
+
+
 def ensure_db() -> Path:
-    """Build the database if it does not exist yet, or if pharmacies.json is newer."""
-    if not DB_PATH.exists() or JSON_PATH.stat().st_mtime > DB_PATH.stat().st_mtime:
+    """Build the database if it does not exist yet, or if any source file in data/ is newer."""
+    if not DB_PATH.exists() or any(p.exists() and p.stat().st_mtime > DB_PATH.stat().st_mtime for p in _sources()):
         build_db()
     return DB_PATH
 
 
 if __name__ == "__main__":
-    print(f"Wrote {build_db()} pharmacies to {DB_PATH}")
+    print(f"Wrote {build_db()} pharmacies (plus medication tables) to {DB_PATH}")

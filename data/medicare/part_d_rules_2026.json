@@ -1,0 +1,36 @@
+{
+  "checked_date": "2026-10-23",
+  "plan_year": 2026,
+  "rules": {
+    "out_of_pocket_cap": {
+      "label": "Yearly out-of-pocket cap for covered Part D drugs",
+      "value": "$2,100 in 2026 ($2,400 in 2027).",
+      "source": "https://www.medicare.gov/drug-coverage-part-d/costs-for-medicare-drug-coverage"
+    },
+    "deductible_max": {
+      "label": "Highest Part D deductible a plan may charge",
+      "value": "$615 in 2026 ($700 in 2027)",
+      "source": "https://www.medicare.gov/drug-coverage-part-d/costs-for-medicare-drug-coverage"
+    },
+    "insulin_cap": {
+      "label": "Insulin cap",
+      "value": "No more than $35 for a one-month supply of each Part B- or Part D-covered insulin product, and no deductible for insulin.",
+      "source": "https://www.medicare.gov/coverage/insulin"
+    },
+    "negotiated_prices_2026_all": {
+      "label": "Drugs with a Medicare negotiated price (Maximum Fair Price) starting January 1, 2026",
+      "value": ["Eliquis", "Jardiance", "Xarelto", "Januvia", "Farxiga", "Entresto", "Enbrel", "Imbruvica", "Stelara", "Fiasp / NovoLog insulin aspart products"],
+      "source": "https://www.cms.gov/files/document/infographic-negotiated-prices-maximum-fair-prices.pdf"
+    },
+    "negotiated_prices_2026_our_drugs": {
+      "label": "Which of the 25 RxLantern drugs have a negotiated price in 2026",
+      "value": ["Eliquis (apixaban) - CMS lists a 56% discount off the 2023 list price for a 30-day supply"],
+      "source": "https://www.cms.gov/newsroom/fact-sheets/medicare-drug-price-negotiation-program-negotiated-prices-initial-price-applicability-year-2026"
+    },
+    "negotiated_prices_effective_date": {
+      "label": "When the 2026 negotiated prices start",
+      "value": "January 1, 2026",
+      "source": "https://www.cms.gov/newsroom/fact-sheets/medicare-drug-price-negotiation-program-negotiated-prices-initial-price-applicability-year-2026"
+    }
+  }
+}

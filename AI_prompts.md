@@ -179,3 +179,25 @@ Every prompt sent to the AI assistant, word for word, grouped by build step.
 > Rename: The app is now called RxLantern instead of RxCompass. Update every place the name appears (PROJECT_NOTES.md, the backend, any config, and the database or file names if they use the old name). Keep the app name in one setting in backend/config.py, next to the model name, so the website, agents, and page title all read it from there. Do not rename the rxcompass/ folder yet; we will rename the repo when we push to GitHub. In AI_prompts.md, keep my earlier prompts exactly as I wrote them (they say RxCompass) and log this prompt under Step 3. Do not call Portkey. Commit with the message "Rename app to RxLantern", then stop.
 >
 > (sent mid-task) “Is Step 3 finished? Did the Medicare step and the commit complete?”
+
+### Step 3 — go-ahead to finish
+
+> Yes. When the download finishes, build the Medicare files, update medication_check.md, run the tests, and commit "Step 3: medication data".
+
+### Step 3 — Massachusetts vaccine coverage rules
+
+> mass.gov blocked you, so here are the official Massachusetts vaccine coverage rules I found. Use them for the Massachusetts commercial insurance part of data/vaccines.json. For the source, record the mass.gov links below, note "verified via web search, 2026-10-23" (since you could not open them directly), and use today's date.
+>
+> - Bulletin 2025-03 (Division of Insurance and Department of Public Health, issued September 3, 2025) requires insurers to cover vaccines recommended by the Massachusetts DPH, not only CDC recommendations. Link: https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download
+> - It applies to fully insured health plans issued under Massachusetts law (for example Blue Cross Blue Shield of Massachusetts and HMOs). Group Insurance Commission (GIC) plans and MassHealth also cover vaccines according to DPH guidelines. Link: https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations
+> - Covered routine vaccines have no cost-sharing and no utilization management (no prior authorization delays).
+> - Self-insured employer plans are NOT required to follow the bulletin. The app must tell patients: "If your plan is through a large employer, check with your plan, because it may not have to follow the Massachusetts rule."
+> - Insurers may cover only certain brands, as long as at least one product covers each DPH-recommended vaccine.
+> - The bulletin covers routine vaccines only. Travel vaccines (hepatitis A for travel, typhoid, yellow fever) are not part of it, so keep those as "check with your plan."
+> - DPH's current list of recommended vaccines: https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines
+>
+> Update data/vaccines.json and the vaccines section of output/medication_check.md. Add this to AI_prompts.md under Step 3.
+
+### Step 3 — clean up downloads
+
+> After the Medicare files are built and Step 3 is committed, delete the large downloads in data/raw/ (the Medicare zip and the NADAC file). The rebuild scripts can download them again if needed.

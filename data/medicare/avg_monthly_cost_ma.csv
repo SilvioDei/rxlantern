@@ -1,0 +1,25 @@
+drug_id,plans_with_price,avg_30_day_cost,min_30_day_cost,max_30_day_cost,basis
+adderall_xr_30,95,40.52,15.88,97.20,30 capsules (1 a day)
+albuterol_hfa,96,32.53,10.47,57.13,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+amlodipine_5,96,2.84,0.69,7.03,30 tablets (1 a day)
+amoxicillin_500,96,4.08,0.56,8.58,"30 capsules (a typical 10-day course, 3 a day)"
+amoxicillin_susp_400,96,4.92,1.56,11.88,1 bottle (100 mL)
+atorvastatin_20,96,5.75,1.32,9.64,30 tablets (1 a day)
+concerta_18,45,46.67,21.52,136.42,30 tablets (1 a day)
+dupixent_300,96,4073.75,3842.58,4211.65,"2 pens (2 mL each), every other week"
+eliquis_5,96,248.71,248.70,248.71,60 tablets (1 twice a day)
+epinephrine_03,96,255.16,171.13,420.93,1 two-pack of auto-injectors
+fluticasone_nasal_50,96,10.74,1.68,25.59,"1 bottle (16 g, about 120 sprays)"
+humira_40,62,6666.18,6521.86,6815.33,2 pens (every other week)
+lantus_solostar,95,93.79,88.73,98.15,1 box of 5 pens (3 mL each)
+latanoprost_0005,96,6.17,0.81,16.32,1 bottle (2.5 mL)
+levothyroxine_50,96,4.69,0.64,9.13,30 tablets (1 a day)
+lisinopril_10,96,3.40,0.66,7.48,30 tablets (1 a day)
+metformin_500,96,5.56,1.13,12.21,60 tablets (1 twice a day)
+mounjaro_5,95,1080.20,1020.42,1133.39,"4 single-dose pens (0.5 mL each), 1 a week"
+omeprazole_20,96,4.56,1.31,9.36,30 capsules (1 a day)
+ozempic_05,96,998.21,941.77,1046.00,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+paxlovid,96,1498.36,1415.00,1571.93,1 five-day dose pack (30 tablets)
+sertraline_50,96,3.85,1.16,8.57,30 tablets (1 a day)
+sumatriptan_50,96,6.55,2.21,15.34,9 tablets
+triamcinolone_cream_01,96,2.26,1.47,3.98,1 tube (30 g)

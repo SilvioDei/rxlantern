@@ -1,0 +1,2217 @@
+contract_id,plan_id,segment_id,drug_id,ndc,unit_cost,units,est_30_day_cost,basis
+H0777,001,000,adderall_xr_30,70010003401,1.1086,30,33.26,30 capsules (1 a day)
+H0777,001,000,albuterol_hfa,17270074000,2.6149,18,47.07,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H0777,001,000,amlodipine_5,82009002710,0.0893,30,2.68,30 tablets (1 a day)
+H0777,001,000,amoxicillin_500,00781261305,0.1477,30,4.43,"30 capsules (a typical 10-day course, 3 a day)"
+H0777,001,000,amoxicillin_susp_400,00143988701,0.0667,100,6.67,1 bottle (100 mL)
+H0777,001,000,atorvastatin_20,60505257908,0.2229,30,6.69,30 tablets (1 a day)
+H0777,001,000,concerta_18,31722095201,1.4482,30,43.45,30 tablets (1 a day)
+H0777,001,000,dupixent_300,00024591502,1023.9649,4,4095.86,"2 pens (2 mL each), every other week"
+H0777,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H0777,001,000,epinephrine_03,00093598627,131.9268,2,263.85,1 two-pack of auto-injectors
+H0777,001,000,fluticasone_nasal_50,60505082901,1.0970,16,17.55,"1 bottle (16 g, about 120 sprays)"
+H0777,001,000,humira_40,00074055402,3372.3228,2,6744.65,2 pens (every other week)
+H0777,001,000,lantus_solostar,00088221905,6.2304,15,93.46,1 box of 5 pens (3 mL each)
+H0777,001,000,latanoprost_0005,61314054701,5.9039,2.5,14.76,1 bottle (2.5 mL)
+H0777,001,000,levothyroxine_50,00378180310,0.1333,30,4.00,30 tablets (1 a day)
+H0777,001,000,lisinopril_10,68180098003,0.0553,30,1.66,30 tablets (1 a day)
+H0777,001,000,metformin_500,70010006310,0.0473,60,2.84,60 tablets (1 twice a day)
+H0777,001,000,mounjaro_5,00002149580,538.7346,2,1077.47,"4 single-dose pens (0.5 mL each), 1 a week"
+H0777,001,000,omeprazole_20,55111015810,0.0883,30,2.65,30 capsules (1 a day)
+H0777,001,000,ozempic_05,00169418113,332.3185,3,996.96,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H0777,001,000,paxlovid,00069504530,49.8466,30,1495.40,1 five-day dose pack (30 tablets)
+H0777,001,000,sertraline_50,65862001205,0.0937,30,2.81,30 tablets (1 a day)
+H0777,001,000,sumatriptan_50,65862014736,0.7792,9,7.01,9 tablets
+H0777,001,000,triamcinolone_cream_01,45802006436,0.0696,30,2.09,1 tube (30 g)
+H1486,001,000,adderall_xr_30,70010003401,3.2400,30,97.20,30 capsules (1 a day)
+H1486,001,000,albuterol_hfa,69097002160,1.0925,18,19.66,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H1486,001,000,amlodipine_5,82009002710,0.0520,30,1.56,30 tablets (1 a day)
+H1486,001,000,amoxicillin_500,00781261305,0.0923,30,2.77,"30 capsules (a typical 10-day course, 3 a day)"
+H1486,001,000,amoxicillin_susp_400,00143988701,0.0566,100,5.66,1 bottle (100 mL)
+H1486,001,000,atorvastatin_20,60505257908,0.1570,30,4.71,30 tablets (1 a day)
+H1486,001,000,dupixent_300,00024591502,1009.1943,4,4036.78,"2 pens (2 mL each), every other week"
+H1486,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H1486,001,000,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+H1486,001,000,fluticasone_nasal_50,60505082901,0.2565,16,4.10,"1 bottle (16 g, about 120 sprays)"
+H1486,001,000,humira_40,00074055402,3313.3029,2,6626.61,2 pens (every other week)
+H1486,001,000,lantus_solostar,00088221905,6.1476,15,92.21,1 box of 5 pens (3 mL each)
+H1486,001,000,latanoprost_0005,61314054701,0.9760,2.5,2.44,1 bottle (2.5 mL)
+H1486,001,000,levothyroxine_50,00378180310,0.2680,30,8.04,30 tablets (1 a day)
+H1486,001,000,lisinopril_10,68180098003,0.0856,30,2.57,30 tablets (1 a day)
+H1486,001,000,metformin_500,70010006310,0.0665,60,3.99,60 tablets (1 twice a day)
+H1486,001,000,mounjaro_5,00002149580,531.8381,2,1063.68,"4 single-dose pens (0.5 mL each), 1 a week"
+H1486,001,000,omeprazole_20,55111015810,0.1193,30,3.58,30 capsules (1 a day)
+H1486,001,000,ozempic_05,00169418113,327.5697,3,982.71,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H1486,001,000,paxlovid,00069504530,49.1274,30,1473.82,1 five-day dose pack (30 tablets)
+H1486,001,000,sertraline_50,65862001205,0.0805,30,2.42,30 tablets (1 a day)
+H1486,001,000,sumatriptan_50,65862014736,0.2947,9,2.65,9 tablets
+H1486,001,000,triamcinolone_cream_01,45802006436,0.0908,30,2.72,1 tube (30 g)
+H1611,001,000,adderall_xr_30,70010003401,1.1086,30,33.26,30 capsules (1 a day)
+H1611,001,000,albuterol_hfa,17270074000,2.6149,18,47.07,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H1611,001,000,amlodipine_5,82009002710,0.0893,30,2.68,30 tablets (1 a day)
+H1611,001,000,amoxicillin_500,00781261305,0.1477,30,4.43,"30 capsules (a typical 10-day course, 3 a day)"
+H1611,001,000,amoxicillin_susp_400,00143988701,0.0667,100,6.67,1 bottle (100 mL)
+H1611,001,000,atorvastatin_20,60505257908,0.2229,30,6.69,30 tablets (1 a day)
+H1611,001,000,concerta_18,31722095201,1.4482,30,43.45,30 tablets (1 a day)
+H1611,001,000,dupixent_300,00024591502,1023.9649,4,4095.86,"2 pens (2 mL each), every other week"
+H1611,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H1611,001,000,epinephrine_03,00093598627,131.9268,2,263.85,1 two-pack of auto-injectors
+H1611,001,000,fluticasone_nasal_50,60505082901,1.0970,16,17.55,"1 bottle (16 g, about 120 sprays)"
+H1611,001,000,humira_40,00074055402,3372.3228,2,6744.65,2 pens (every other week)
+H1611,001,000,lantus_solostar,00088221905,6.2304,15,93.46,1 box of 5 pens (3 mL each)
+H1611,001,000,latanoprost_0005,61314054701,5.9039,2.5,14.76,1 bottle (2.5 mL)
+H1611,001,000,levothyroxine_50,00378180310,0.1333,30,4.00,30 tablets (1 a day)
+H1611,001,000,lisinopril_10,68180098003,0.0553,30,1.66,30 tablets (1 a day)
+H1611,001,000,metformin_500,70010006310,0.0473,60,2.84,60 tablets (1 twice a day)
+H1611,001,000,mounjaro_5,00002149580,538.7346,2,1077.47,"4 single-dose pens (0.5 mL each), 1 a week"
+H1611,001,000,omeprazole_20,55111015810,0.0883,30,2.65,30 capsules (1 a day)
+H1611,001,000,ozempic_05,00169418113,332.3185,3,996.96,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H1611,001,000,paxlovid,00069504530,49.8466,30,1495.40,1 five-day dose pack (30 tablets)
+H1611,001,000,sertraline_50,65862001205,0.0937,30,2.81,30 tablets (1 a day)
+H1611,001,000,sumatriptan_50,65862014736,0.7792,9,7.01,9 tablets
+H1611,001,000,triamcinolone_cream_01,45802006436,0.0696,30,2.09,1 tube (30 g)
+H2224,001,000,adderall_xr_30,70010003401,2.2030,30,66.09,30 capsules (1 a day)
+H2224,001,000,albuterol_hfa,69097002160,1.8505,18,33.31,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2224,001,000,amlodipine_5,82009002710,0.0480,30,1.44,30 tablets (1 a day)
+H2224,001,000,amoxicillin_500,00781261305,0.0679,30,2.04,"30 capsules (a typical 10-day course, 3 a day)"
+H2224,001,000,amoxicillin_susp_400,00143988701,0.0566,100,5.66,1 bottle (100 mL)
+H2224,001,000,atorvastatin_20,60505257908,0.1029,30,3.09,30 tablets (1 a day)
+H2224,001,000,dupixent_300,00024591502,1000.5664,4,4002.27,"2 pens (2 mL each), every other week"
+H2224,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2224,001,000,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+H2224,001,000,fluticasone_nasal_50,60505082901,0.5708,16,9.13,"1 bottle (16 g, about 120 sprays)"
+H2224,001,000,humira_40,00074055402,3273.2161,2,6546.43,2 pens (every other week)
+H2224,001,000,lantus_solostar,00088221905,6.1321,15,91.98,1 box of 5 pens (3 mL each)
+H2224,001,000,latanoprost_0005,61314054701,1.2942,2.5,3.24,1 bottle (2.5 mL)
+H2224,001,000,levothyroxine_50,00378180310,0.2542,30,7.63,30 tablets (1 a day)
+H2224,001,000,lisinopril_10,68180098003,0.0561,30,1.68,30 tablets (1 a day)
+H2224,001,000,metformin_500,70010006310,0.0462,60,2.77,60 tablets (1 twice a day)
+H2224,001,000,mounjaro_5,00002149580,530.5035,2,1061.01,"4 single-dose pens (0.5 mL each), 1 a week"
+H2224,001,000,omeprazole_20,55111015810,0.0687,30,2.06,30 capsules (1 a day)
+H2224,001,000,ozempic_05,00169418113,326.7477,3,980.24,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2224,001,000,paxlovid,00069504530,49.0041,30,1470.12,1 five-day dose pack (30 tablets)
+H2224,001,000,sertraline_50,65862001205,0.0708,30,2.12,30 tablets (1 a day)
+H2224,001,000,sumatriptan_50,65862014736,0.6075,9,5.47,9 tablets
+H2224,001,000,triamcinolone_cream_01,45802006436,0.0985,30,2.96,1 tube (30 g)
+H2224,003,000,adderall_xr_30,70010003401,2.2030,30,66.09,30 capsules (1 a day)
+H2224,003,000,albuterol_hfa,69097002160,1.8505,18,33.31,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2224,003,000,amlodipine_5,82009002710,0.0480,30,1.44,30 tablets (1 a day)
+H2224,003,000,amoxicillin_500,00781261305,0.0679,30,2.04,"30 capsules (a typical 10-day course, 3 a day)"
+H2224,003,000,amoxicillin_susp_400,00143988701,0.0566,100,5.66,1 bottle (100 mL)
+H2224,003,000,atorvastatin_20,60505257908,0.1029,30,3.09,30 tablets (1 a day)
+H2224,003,000,dupixent_300,00024591502,1000.5664,4,4002.27,"2 pens (2 mL each), every other week"
+H2224,003,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2224,003,000,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+H2224,003,000,fluticasone_nasal_50,60505082901,0.5708,16,9.13,"1 bottle (16 g, about 120 sprays)"
+H2224,003,000,humira_40,00074055402,3273.2161,2,6546.43,2 pens (every other week)
+H2224,003,000,lantus_solostar,00088221905,6.1321,15,91.98,1 box of 5 pens (3 mL each)
+H2224,003,000,latanoprost_0005,61314054701,1.2942,2.5,3.24,1 bottle (2.5 mL)
+H2224,003,000,levothyroxine_50,00378180310,0.2542,30,7.63,30 tablets (1 a day)
+H2224,003,000,lisinopril_10,68180098003,0.0561,30,1.68,30 tablets (1 a day)
+H2224,003,000,metformin_500,70010006310,0.0462,60,2.77,60 tablets (1 twice a day)
+H2224,003,000,mounjaro_5,00002149580,530.5035,2,1061.01,"4 single-dose pens (0.5 mL each), 1 a week"
+H2224,003,000,omeprazole_20,55111015810,0.0687,30,2.06,30 capsules (1 a day)
+H2224,003,000,ozempic_05,00169418113,326.7477,3,980.24,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2224,003,000,paxlovid,00069504530,49.0041,30,1470.12,1 five-day dose pack (30 tablets)
+H2224,003,000,sertraline_50,65862001205,0.0708,30,2.12,30 tablets (1 a day)
+H2224,003,000,sumatriptan_50,65862014736,0.6075,9,5.47,9 tablets
+H2224,003,000,triamcinolone_cream_01,45802006436,0.0985,30,2.96,1 tube (30 g)
+H2225,001,000,adderall_xr_30,70010003401,3.2400,30,97.20,30 capsules (1 a day)
+H2225,001,000,albuterol_hfa,69097002160,1.0925,18,19.66,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2225,001,000,amlodipine_5,82009002710,0.0519,30,1.56,30 tablets (1 a day)
+H2225,001,000,amoxicillin_500,00781261305,0.0922,30,2.77,"30 capsules (a typical 10-day course, 3 a day)"
+H2225,001,000,amoxicillin_susp_400,00143988701,0.0566,100,5.66,1 bottle (100 mL)
+H2225,001,000,atorvastatin_20,60505257908,0.1578,30,4.73,30 tablets (1 a day)
+H2225,001,000,dupixent_300,00024591502,1009.4147,4,4037.66,"2 pens (2 mL each), every other week"
+H2225,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2225,001,000,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+H2225,001,000,fluticasone_nasal_50,60505082901,0.2565,16,4.10,"1 bottle (16 g, about 120 sprays)"
+H2225,001,000,humira_40,00074055402,3313.4681,2,6626.94,2 pens (every other week)
+H2225,001,000,lantus_solostar,00088221905,6.1476,15,92.21,1 box of 5 pens (3 mL each)
+H2225,001,000,latanoprost_0005,61314054701,0.9824,2.5,2.46,1 bottle (2.5 mL)
+H2225,001,000,levothyroxine_50,00378180310,0.2677,30,8.03,30 tablets (1 a day)
+H2225,001,000,lisinopril_10,68180098003,0.0861,30,2.58,30 tablets (1 a day)
+H2225,001,000,metformin_500,70010006310,0.0667,60,4.00,60 tablets (1 twice a day)
+H2225,001,000,mounjaro_5,00002149580,531.8381,2,1063.68,"4 single-dose pens (0.5 mL each), 1 a week"
+H2225,001,000,omeprazole_20,55111015810,0.1197,30,3.59,30 capsules (1 a day)
+H2225,001,000,ozempic_05,00169418113,327.5697,3,982.71,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2225,001,000,paxlovid,00069504530,49.1274,30,1473.82,1 five-day dose pack (30 tablets)
+H2225,001,000,sertraline_50,65862001205,0.0808,30,2.42,30 tablets (1 a day)
+H2225,001,000,sumatriptan_50,65862014736,0.2958,9,2.66,9 tablets
+H2225,001,000,triamcinolone_cream_01,45802006436,0.0908,30,2.72,1 tube (30 g)
+H2226,001,000,adderall_xr_30,70010003401,0.9458,30,28.37,30 capsules (1 a day)
+H2226,001,000,albuterol_hfa,17270074000,1.5668,18,28.20,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2226,001,000,amlodipine_5,82009002710,0.1267,30,3.80,30 tablets (1 a day)
+H2226,001,000,amoxicillin_500,00781261305,0.1950,30,5.85,"30 capsules (a typical 10-day course, 3 a day)"
+H2226,001,000,amoxicillin_susp_400,00143988701,0.0274,100,2.74,1 bottle (100 mL)
+H2226,001,000,atorvastatin_20,60505257908,0.1380,30,4.14,30 tablets (1 a day)
+H2226,001,000,dupixent_300,00024591502,1046.4096,4,4185.64,"2 pens (2 mL each), every other week"
+H2226,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2226,001,000,epinephrine_03,00115169449,86.0892,2,172.18,1 two-pack of auto-injectors
+H2226,001,000,fluticasone_nasal_50,60505082901,0.3593,16,5.75,"1 bottle (16 g, about 120 sprays)"
+H2226,001,000,lantus_solostar,00088221905,6.5395,15,98.09,1 box of 5 pens (3 mL each)
+H2226,001,000,latanoprost_0005,61314054701,1.7168,2.5,4.29,1 bottle (2.5 mL)
+H2226,001,000,levothyroxine_50,60793085101,0.1337,30,4.01,30 tablets (1 a day)
+H2226,001,000,lisinopril_10,68180098003,0.1307,30,3.92,30 tablets (1 a day)
+H2226,001,000,metformin_500,70010006310,0.0679,60,4.07,60 tablets (1 twice a day)
+H2226,001,000,mounjaro_5,00002149580,565.1057,2,1130.21,"4 single-dose pens (0.5 mL each), 1 a week"
+H2226,001,000,omeprazole_20,55111015810,0.1221,30,3.66,30 capsules (1 a day)
+H2226,001,000,ozempic_05,00169418113,347.3495,3,1042.05,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2226,001,000,paxlovid,00069504530,52.0565,30,1561.69,1 five-day dose pack (30 tablets)
+H2226,001,000,sertraline_50,65862001205,0.1378,30,4.13,30 tablets (1 a day)
+H2226,001,000,sumatriptan_50,65862014736,1.3503,9,12.15,9 tablets
+H2226,001,000,triamcinolone_cream_01,45802006436,0.0735,30,2.21,1 tube (30 g)
+H2226,003,000,adderall_xr_30,70010003401,0.9458,30,28.37,30 capsules (1 a day)
+H2226,003,000,albuterol_hfa,17270074000,1.5668,18,28.20,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2226,003,000,amlodipine_5,82009002710,0.1267,30,3.80,30 tablets (1 a day)
+H2226,003,000,amoxicillin_500,00781261305,0.1950,30,5.85,"30 capsules (a typical 10-day course, 3 a day)"
+H2226,003,000,amoxicillin_susp_400,00143988701,0.0274,100,2.74,1 bottle (100 mL)
+H2226,003,000,atorvastatin_20,60505257908,0.1380,30,4.14,30 tablets (1 a day)
+H2226,003,000,dupixent_300,00024591502,1046.4096,4,4185.64,"2 pens (2 mL each), every other week"
+H2226,003,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2226,003,000,epinephrine_03,00115169449,86.0892,2,172.18,1 two-pack of auto-injectors
+H2226,003,000,fluticasone_nasal_50,60505082901,0.3593,16,5.75,"1 bottle (16 g, about 120 sprays)"
+H2226,003,000,lantus_solostar,00088221905,6.5395,15,98.09,1 box of 5 pens (3 mL each)
+H2226,003,000,latanoprost_0005,61314054701,1.7168,2.5,4.29,1 bottle (2.5 mL)
+H2226,003,000,levothyroxine_50,60793085101,0.1337,30,4.01,30 tablets (1 a day)
+H2226,003,000,lisinopril_10,68180098003,0.1307,30,3.92,30 tablets (1 a day)
+H2226,003,000,metformin_500,70010006310,0.0679,60,4.07,60 tablets (1 twice a day)
+H2226,003,000,mounjaro_5,00002149580,565.1057,2,1130.21,"4 single-dose pens (0.5 mL each), 1 a week"
+H2226,003,000,omeprazole_20,55111015810,0.1221,30,3.66,30 capsules (1 a day)
+H2226,003,000,ozempic_05,00169418113,347.3495,3,1042.05,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2226,003,000,paxlovid,00069504530,52.0565,30,1561.69,1 five-day dose pack (30 tablets)
+H2226,003,000,sertraline_50,65862001205,0.1378,30,4.13,30 tablets (1 a day)
+H2226,003,000,sumatriptan_50,65862014736,1.3503,9,12.15,9 tablets
+H2226,003,000,triamcinolone_cream_01,45802006436,0.0735,30,2.21,1 tube (30 g)
+H2230,002,000,adderall_xr_30,70010003401,3.2400,30,97.20,30 capsules (1 a day)
+H2230,002,000,albuterol_hfa,69097002160,1.1202,18,20.16,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2230,002,000,amlodipine_5,82009002710,0.1382,30,4.15,30 tablets (1 a day)
+H2230,002,000,amoxicillin_500,00781261305,0.1318,30,3.95,"30 capsules (a typical 10-day course, 3 a day)"
+H2230,002,000,amoxicillin_susp_400,00143988701,0.0566,100,5.66,1 bottle (100 mL)
+H2230,002,000,atorvastatin_20,60505257908,0.2876,30,8.63,30 tablets (1 a day)
+H2230,002,000,dupixent_300,00024591502,1004.1022,4,4016.41,"2 pens (2 mL each), every other week"
+H2230,002,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2230,002,000,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+H2230,002,000,fluticasone_nasal_50,60505082901,0.2615,16,4.18,"1 bottle (16 g, about 120 sprays)"
+H2230,002,000,humira_40,00074055402,3283.3737,2,6566.75,2 pens (every other week)
+H2230,002,000,lantus_solostar,00088221905,6.1507,15,92.26,1 box of 5 pens (3 mL each)
+H2230,002,000,latanoprost_0005,61314054701,1.7797,2.5,4.45,1 bottle (2.5 mL)
+H2230,002,000,levothyroxine_50,00378180310,0.1848,30,5.54,30 tablets (1 a day)
+H2230,002,000,lisinopril_10,68180098003,0.1494,30,4.48,30 tablets (1 a day)
+H2230,002,000,metformin_500,70010006310,0.2019,60,12.11,60 tablets (1 twice a day)
+H2230,002,000,mounjaro_5,00002149580,532.0538,2,1064.11,"4 single-dose pens (0.5 mL each), 1 a week"
+H2230,002,000,omeprazole_20,55111015810,0.1716,30,5.15,30 capsules (1 a day)
+H2230,002,000,ozempic_05,00169418113,327.6791,3,983.04,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2230,002,000,paxlovid,00069504530,49.1407,30,1474.22,1 five-day dose pack (30 tablets)
+H2230,002,000,sertraline_50,65862001205,0.1268,30,3.80,30 tablets (1 a day)
+H2230,002,000,sumatriptan_50,65862014736,0.3326,9,2.99,9 tablets
+H2230,002,000,triamcinolone_cream_01,45802006436,0.0908,30,2.72,1 tube (30 g)
+H2230,018,001,adderall_xr_30,70010003401,3.2400,30,97.20,30 capsules (1 a day)
+H2230,018,001,albuterol_hfa,69097002160,1.1202,18,20.16,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2230,018,001,amlodipine_5,82009002710,0.1408,30,4.22,30 tablets (1 a day)
+H2230,018,001,amoxicillin_500,00781261305,0.1324,30,3.97,"30 capsules (a typical 10-day course, 3 a day)"
+H2230,018,001,amoxicillin_susp_400,00143988701,0.0566,100,5.66,1 bottle (100 mL)
+H2230,018,001,atorvastatin_20,60505257908,0.2877,30,8.63,30 tablets (1 a day)
+H2230,018,001,dupixent_300,00024591502,1004.2604,4,4017.04,"2 pens (2 mL each), every other week"
+H2230,018,001,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2230,018,001,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+H2230,018,001,fluticasone_nasal_50,60505082901,0.2615,16,4.18,"1 bottle (16 g, about 120 sprays)"
+H2230,018,001,humira_40,00074055402,3293.8677,2,6587.74,2 pens (every other week)
+H2230,018,001,lantus_solostar,00088221905,6.1507,15,92.26,1 box of 5 pens (3 mL each)
+H2230,018,001,latanoprost_0005,61314054701,1.8098,2.5,4.52,1 bottle (2.5 mL)
+H2230,018,001,levothyroxine_50,00378180310,0.1853,30,5.56,30 tablets (1 a day)
+H2230,018,001,lisinopril_10,68180098003,0.1497,30,4.49,30 tablets (1 a day)
+H2230,018,001,metformin_500,70010006310,0.2035,60,12.21,60 tablets (1 twice a day)
+H2230,018,001,mounjaro_5,00002149580,532.0525,2,1064.11,"4 single-dose pens (0.5 mL each), 1 a week"
+H2230,018,001,omeprazole_20,55111015810,0.1740,30,5.22,30 capsules (1 a day)
+H2230,018,001,ozempic_05,00169418113,327.6758,3,983.03,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2230,018,001,paxlovid,00069504530,49.1406,30,1474.22,1 five-day dose pack (30 tablets)
+H2230,018,001,sertraline_50,65862001205,0.1260,30,3.78,30 tablets (1 a day)
+H2230,018,001,sumatriptan_50,65862014736,0.3303,9,2.97,9 tablets
+H2230,018,001,triamcinolone_cream_01,45802006436,0.0908,30,2.72,1 tube (30 g)
+H2230,018,002,adderall_xr_30,70010003401,3.2400,30,97.20,30 capsules (1 a day)
+H2230,018,002,albuterol_hfa,69097002160,1.1202,18,20.16,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2230,018,002,amlodipine_5,82009002710,0.1202,30,3.61,30 tablets (1 a day)
+H2230,018,002,amoxicillin_500,00781261305,0.1280,30,3.84,"30 capsules (a typical 10-day course, 3 a day)"
+H2230,018,002,amoxicillin_susp_400,00143988701,0.0566,100,5.66,1 bottle (100 mL)
+H2230,018,002,atorvastatin_20,60505257908,0.2873,30,8.62,30 tablets (1 a day)
+H2230,018,002,dupixent_300,00024591502,1003.8059,4,4015.22,"2 pens (2 mL each), every other week"
+H2230,018,002,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2230,018,002,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+H2230,018,002,fluticasone_nasal_50,60505082901,0.2615,16,4.18,"1 bottle (16 g, about 120 sprays)"
+H2230,018,002,humira_40,00074055402,3260.9296,2,6521.86,2 pens (every other week)
+H2230,018,002,lantus_solostar,00088221905,6.1505,15,92.26,1 box of 5 pens (3 mL each)
+H2230,018,002,latanoprost_0005,61314054701,1.5827,2.5,3.96,1 bottle (2.5 mL)
+H2230,018,002,levothyroxine_50,00378180310,0.1817,30,5.45,30 tablets (1 a day)
+H2230,018,002,lisinopril_10,68180098003,0.1476,30,4.43,30 tablets (1 a day)
+H2230,018,002,metformin_500,70010006310,0.1915,60,11.49,60 tablets (1 twice a day)
+H2230,018,002,mounjaro_5,00002149580,532.0631,2,1064.13,"4 single-dose pens (0.5 mL each), 1 a week"
+H2230,018,002,omeprazole_20,55111015810,0.1552,30,4.66,30 capsules (1 a day)
+H2230,018,002,ozempic_05,00169418113,327.6983,3,983.09,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2230,018,002,paxlovid,00069504530,49.1415,30,1474.25,1 five-day dose pack (30 tablets)
+H2230,018,002,sertraline_50,65862001205,0.1313,30,3.94,30 tablets (1 a day)
+H2230,018,002,sumatriptan_50,65862014736,0.3515,9,3.16,9 tablets
+H2230,018,002,triamcinolone_cream_01,45802006436,0.0908,30,2.72,1 tube (30 g)
+H2230,019,000,adderall_xr_30,70010003401,3.2400,30,97.20,30 capsules (1 a day)
+H2230,019,000,albuterol_hfa,69097002160,1.1202,18,20.16,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2230,019,000,amlodipine_5,82009002710,0.1382,30,4.15,30 tablets (1 a day)
+H2230,019,000,amoxicillin_500,00781261305,0.1318,30,3.95,"30 capsules (a typical 10-day course, 3 a day)"
+H2230,019,000,amoxicillin_susp_400,00143988701,0.0566,100,5.66,1 bottle (100 mL)
+H2230,019,000,atorvastatin_20,60505257908,0.2876,30,8.63,30 tablets (1 a day)
+H2230,019,000,dupixent_300,00024591502,1004.1022,4,4016.41,"2 pens (2 mL each), every other week"
+H2230,019,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2230,019,000,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+H2230,019,000,fluticasone_nasal_50,60505082901,0.2615,16,4.18,"1 bottle (16 g, about 120 sprays)"
+H2230,019,000,humira_40,00074055402,3283.3737,2,6566.75,2 pens (every other week)
+H2230,019,000,lantus_solostar,00088221905,6.1507,15,92.26,1 box of 5 pens (3 mL each)
+H2230,019,000,latanoprost_0005,61314054701,1.7797,2.5,4.45,1 bottle (2.5 mL)
+H2230,019,000,levothyroxine_50,00378180310,0.1848,30,5.54,30 tablets (1 a day)
+H2230,019,000,lisinopril_10,68180098003,0.1494,30,4.48,30 tablets (1 a day)
+H2230,019,000,metformin_500,70010006310,0.2019,60,12.11,60 tablets (1 twice a day)
+H2230,019,000,mounjaro_5,00002149580,532.0538,2,1064.11,"4 single-dose pens (0.5 mL each), 1 a week"
+H2230,019,000,omeprazole_20,55111015810,0.1716,30,5.15,30 capsules (1 a day)
+H2230,019,000,ozempic_05,00169418113,327.6791,3,983.04,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2230,019,000,paxlovid,00069504530,49.1407,30,1474.22,1 five-day dose pack (30 tablets)
+H2230,019,000,sertraline_50,65862001205,0.1268,30,3.80,30 tablets (1 a day)
+H2230,019,000,sumatriptan_50,65862014736,0.3326,9,2.99,9 tablets
+H2230,019,000,triamcinolone_cream_01,45802006436,0.0908,30,2.72,1 tube (30 g)
+H2256,001,001,adderall_xr_30,70010003401,0.5512,30,16.54,30 capsules (1 a day)
+H2256,001,001,albuterol_hfa,17270074000,1.8290,18,32.92,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,001,001,amlodipine_5,82009002710,0.1061,30,3.18,30 tablets (1 a day)
+H2256,001,001,amoxicillin_500,00781261305,0.0867,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,001,001,amoxicillin_susp_400,00143988701,0.0367,100,3.67,1 bottle (100 mL)
+H2256,001,001,atorvastatin_20,60505257908,0.2956,30,8.87,30 tablets (1 a day)
+H2256,001,001,concerta_18,31722095201,0.7174,30,21.52,30 tablets (1 a day)
+H2256,001,001,dupixent_300,00024591502,997.6150,4,3990.46,"2 pens (2 mL each), every other week"
+H2256,001,001,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,001,001,epinephrine_03,00093598627,134.8332,2,269.67,1 two-pack of auto-injectors
+H2256,001,001,fluticasone_nasal_50,60505082901,0.4759,16,7.61,"1 bottle (16 g, about 120 sprays)"
+H2256,001,001,humira_40,00074055402,3322.5771,2,6645.15,2 pens (every other week)
+H2256,001,001,lantus_solostar,00088221905,6.0628,15,90.94,1 box of 5 pens (3 mL each)
+H2256,001,001,latanoprost_0005,61314054701,1.7848,2.5,4.46,1 bottle (2.5 mL)
+H2256,001,001,levothyroxine_50,00378180310,0.1341,30,4.02,30 tablets (1 a day)
+H2256,001,001,lisinopril_10,68180098003,0.1689,30,5.07,30 tablets (1 a day)
+H2256,001,001,metformin_500,70010006310,0.1193,60,7.16,60 tablets (1 twice a day)
+H2256,001,001,mounjaro_5,00002149580,522.6445,2,1045.29,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,001,001,omeprazole_20,55111015810,0.2803,30,8.41,30 capsules (1 a day)
+H2256,001,001,ozempic_05,00169418113,321.1126,3,963.34,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,001,001,paxlovid,00069504530,47.8919,30,1436.76,1 five-day dose pack (30 tablets)
+H2256,001,001,sertraline_50,65862001205,0.0399,30,1.20,30 tablets (1 a day)
+H2256,001,001,sumatriptan_50,65862014736,0.4217,9,3.80,9 tablets
+H2256,001,001,triamcinolone_cream_01,45802006436,0.0490,30,1.47,1 tube (30 g)
+H2256,001,002,adderall_xr_30,70010003401,0.5377,30,16.13,30 capsules (1 a day)
+H2256,001,002,albuterol_hfa,17270074000,1.8284,18,32.91,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,001,002,amlodipine_5,82009002710,0.1108,30,3.32,30 tablets (1 a day)
+H2256,001,002,amoxicillin_500,00781261305,0.0866,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,001,002,amoxicillin_susp_400,00143988701,0.0373,100,3.73,1 bottle (100 mL)
+H2256,001,002,atorvastatin_20,60505257908,0.3072,30,9.22,30 tablets (1 a day)
+H2256,001,002,concerta_18,31722095201,0.7433,30,22.30,30 tablets (1 a day)
+H2256,001,002,dupixent_300,00024591502,1015.0131,4,4060.05,"2 pens (2 mL each), every other week"
+H2256,001,002,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,001,002,epinephrine_03,00093598627,134.6688,2,269.34,1 two-pack of auto-injectors
+H2256,001,002,fluticasone_nasal_50,60505082901,0.4798,16,7.68,"1 bottle (16 g, about 120 sprays)"
+H2256,001,002,humira_40,00074055402,3347.0381,2,6694.08,2 pens (every other week)
+H2256,001,002,lantus_solostar,00088221905,6.0611,15,90.92,1 box of 5 pens (3 mL each)
+H2256,001,002,latanoprost_0005,61314054701,1.7751,2.5,4.44,1 bottle (2.5 mL)
+H2256,001,002,levothyroxine_50,00378180310,0.1338,30,4.01,30 tablets (1 a day)
+H2256,001,002,lisinopril_10,68180098003,0.1719,30,5.16,30 tablets (1 a day)
+H2256,001,002,metformin_500,70010006310,0.1287,60,7.72,60 tablets (1 twice a day)
+H2256,001,002,mounjaro_5,00002149580,523.8038,2,1047.61,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,001,002,omeprazole_20,55111015810,0.2928,30,8.78,30 capsules (1 a day)
+H2256,001,002,ozempic_05,00169418113,321.3890,3,964.17,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,001,002,paxlovid,00069504530,47.9822,30,1439.47,1 five-day dose pack (30 tablets)
+H2256,001,002,sertraline_50,65862001205,0.0402,30,1.21,30 tablets (1 a day)
+H2256,001,002,sumatriptan_50,65862014736,0.4064,9,3.66,9 tablets
+H2256,001,002,triamcinolone_cream_01,45802006436,0.0492,30,1.48,1 tube (30 g)
+H2256,001,006,adderall_xr_30,70010003401,0.5294,30,15.88,30 capsules (1 a day)
+H2256,001,006,albuterol_hfa,17270074000,1.8272,18,32.89,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,001,006,amlodipine_5,82009002710,0.1066,30,3.20,30 tablets (1 a day)
+H2256,001,006,amoxicillin_500,00781261305,0.0863,30,2.59,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,001,006,amoxicillin_susp_400,00143988701,0.0367,100,3.67,1 bottle (100 mL)
+H2256,001,006,atorvastatin_20,60505257908,0.2963,30,8.89,30 tablets (1 a day)
+H2256,001,006,concerta_18,31722095201,0.7174,30,21.52,30 tablets (1 a day)
+H2256,001,006,dupixent_300,00024591502,1008.9104,4,4035.64,"2 pens (2 mL each), every other week"
+H2256,001,006,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,001,006,epinephrine_03,00093598627,134.9583,2,269.92,1 two-pack of auto-injectors
+H2256,001,006,fluticasone_nasal_50,60505082901,0.4738,16,7.58,"1 bottle (16 g, about 120 sprays)"
+H2256,001,006,humira_40,00074055402,3322.9147,2,6645.83,2 pens (every other week)
+H2256,001,006,lantus_solostar,00088221905,6.0540,15,90.81,1 box of 5 pens (3 mL each)
+H2256,001,006,latanoprost_0005,61314054701,1.7327,2.5,4.33,1 bottle (2.5 mL)
+H2256,001,006,levothyroxine_50,00378180310,0.1311,30,3.93,30 tablets (1 a day)
+H2256,001,006,lisinopril_10,68180098003,0.1663,30,4.99,30 tablets (1 a day)
+H2256,001,006,metformin_500,70010006310,0.1221,60,7.33,60 tablets (1 twice a day)
+H2256,001,006,mounjaro_5,00002149580,522.6138,2,1045.23,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,001,006,omeprazole_20,55111015810,0.2795,30,8.39,30 capsules (1 a day)
+H2256,001,006,ozempic_05,00169418113,321.3717,3,964.12,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,001,006,paxlovid,00069504530,47.9920,30,1439.76,1 five-day dose pack (30 tablets)
+H2256,001,006,sertraline_50,65862001205,0.0391,30,1.17,30 tablets (1 a day)
+H2256,001,006,sumatriptan_50,65862014736,0.4003,9,3.60,9 tablets
+H2256,001,006,triamcinolone_cream_01,45802006436,0.0490,30,1.47,1 tube (30 g)
+H2256,015,001,adderall_xr_30,70010003401,0.5512,30,16.54,30 capsules (1 a day)
+H2256,015,001,albuterol_hfa,17270074000,1.8290,18,32.92,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,015,001,amlodipine_5,82009002710,0.1061,30,3.18,30 tablets (1 a day)
+H2256,015,001,amoxicillin_500,00781261305,0.0867,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,015,001,amoxicillin_susp_400,00143988701,0.0367,100,3.67,1 bottle (100 mL)
+H2256,015,001,atorvastatin_20,60505257908,0.2956,30,8.87,30 tablets (1 a day)
+H2256,015,001,concerta_18,31722095201,0.7174,30,21.52,30 tablets (1 a day)
+H2256,015,001,dupixent_300,00024591502,997.6150,4,3990.46,"2 pens (2 mL each), every other week"
+H2256,015,001,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,015,001,epinephrine_03,00093598627,134.8332,2,269.67,1 two-pack of auto-injectors
+H2256,015,001,fluticasone_nasal_50,60505082901,0.4759,16,7.61,"1 bottle (16 g, about 120 sprays)"
+H2256,015,001,humira_40,00074055402,3322.5771,2,6645.15,2 pens (every other week)
+H2256,015,001,lantus_solostar,00088221905,6.0628,15,90.94,1 box of 5 pens (3 mL each)
+H2256,015,001,latanoprost_0005,61314054701,1.7848,2.5,4.46,1 bottle (2.5 mL)
+H2256,015,001,levothyroxine_50,00378180310,0.1341,30,4.02,30 tablets (1 a day)
+H2256,015,001,lisinopril_10,68180098003,0.1689,30,5.07,30 tablets (1 a day)
+H2256,015,001,metformin_500,70010006310,0.1193,60,7.16,60 tablets (1 twice a day)
+H2256,015,001,mounjaro_5,00002149580,522.6445,2,1045.29,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,015,001,omeprazole_20,55111015810,0.2803,30,8.41,30 capsules (1 a day)
+H2256,015,001,ozempic_05,00169418113,321.1126,3,963.34,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,015,001,paxlovid,00069504530,47.8919,30,1436.76,1 five-day dose pack (30 tablets)
+H2256,015,001,sertraline_50,65862001205,0.0399,30,1.20,30 tablets (1 a day)
+H2256,015,001,sumatriptan_50,65862014736,0.4217,9,3.80,9 tablets
+H2256,015,001,triamcinolone_cream_01,45802006436,0.0490,30,1.47,1 tube (30 g)
+H2256,015,002,adderall_xr_30,70010003401,0.5377,30,16.13,30 capsules (1 a day)
+H2256,015,002,albuterol_hfa,17270074000,1.8284,18,32.91,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,015,002,amlodipine_5,82009002710,0.1108,30,3.32,30 tablets (1 a day)
+H2256,015,002,amoxicillin_500,00781261305,0.0866,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,015,002,amoxicillin_susp_400,00143988701,0.0373,100,3.73,1 bottle (100 mL)
+H2256,015,002,atorvastatin_20,60505257908,0.3072,30,9.22,30 tablets (1 a day)
+H2256,015,002,concerta_18,31722095201,0.7433,30,22.30,30 tablets (1 a day)
+H2256,015,002,dupixent_300,00024591502,1015.0131,4,4060.05,"2 pens (2 mL each), every other week"
+H2256,015,002,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,015,002,epinephrine_03,00093598627,134.6688,2,269.34,1 two-pack of auto-injectors
+H2256,015,002,fluticasone_nasal_50,60505082901,0.4798,16,7.68,"1 bottle (16 g, about 120 sprays)"
+H2256,015,002,humira_40,00074055402,3347.0381,2,6694.08,2 pens (every other week)
+H2256,015,002,lantus_solostar,00088221905,6.0611,15,90.92,1 box of 5 pens (3 mL each)
+H2256,015,002,latanoprost_0005,61314054701,1.7751,2.5,4.44,1 bottle (2.5 mL)
+H2256,015,002,levothyroxine_50,00378180310,0.1338,30,4.01,30 tablets (1 a day)
+H2256,015,002,lisinopril_10,68180098003,0.1719,30,5.16,30 tablets (1 a day)
+H2256,015,002,metformin_500,70010006310,0.1287,60,7.72,60 tablets (1 twice a day)
+H2256,015,002,mounjaro_5,00002149580,523.8038,2,1047.61,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,015,002,omeprazole_20,55111015810,0.2928,30,8.78,30 capsules (1 a day)
+H2256,015,002,ozempic_05,00169418113,321.3890,3,964.17,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,015,002,paxlovid,00069504530,47.9822,30,1439.47,1 five-day dose pack (30 tablets)
+H2256,015,002,sertraline_50,65862001205,0.0402,30,1.21,30 tablets (1 a day)
+H2256,015,002,sumatriptan_50,65862014736,0.4064,9,3.66,9 tablets
+H2256,015,002,triamcinolone_cream_01,45802006436,0.0492,30,1.48,1 tube (30 g)
+H2256,015,006,adderall_xr_30,70010003401,0.5294,30,15.88,30 capsules (1 a day)
+H2256,015,006,albuterol_hfa,17270074000,1.8272,18,32.89,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,015,006,amlodipine_5,82009002710,0.1066,30,3.20,30 tablets (1 a day)
+H2256,015,006,amoxicillin_500,00781261305,0.0863,30,2.59,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,015,006,amoxicillin_susp_400,00143988701,0.0367,100,3.67,1 bottle (100 mL)
+H2256,015,006,atorvastatin_20,60505257908,0.2963,30,8.89,30 tablets (1 a day)
+H2256,015,006,concerta_18,31722095201,0.7174,30,21.52,30 tablets (1 a day)
+H2256,015,006,dupixent_300,00024591502,1008.9104,4,4035.64,"2 pens (2 mL each), every other week"
+H2256,015,006,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,015,006,epinephrine_03,00093598627,134.9583,2,269.92,1 two-pack of auto-injectors
+H2256,015,006,fluticasone_nasal_50,60505082901,0.4738,16,7.58,"1 bottle (16 g, about 120 sprays)"
+H2256,015,006,humira_40,00074055402,3322.9147,2,6645.83,2 pens (every other week)
+H2256,015,006,lantus_solostar,00088221905,6.0540,15,90.81,1 box of 5 pens (3 mL each)
+H2256,015,006,latanoprost_0005,61314054701,1.7327,2.5,4.33,1 bottle (2.5 mL)
+H2256,015,006,levothyroxine_50,00378180310,0.1311,30,3.93,30 tablets (1 a day)
+H2256,015,006,lisinopril_10,68180098003,0.1663,30,4.99,30 tablets (1 a day)
+H2256,015,006,metformin_500,70010006310,0.1221,60,7.33,60 tablets (1 twice a day)
+H2256,015,006,mounjaro_5,00002149580,522.6138,2,1045.23,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,015,006,omeprazole_20,55111015810,0.2795,30,8.39,30 capsules (1 a day)
+H2256,015,006,ozempic_05,00169418113,321.3717,3,964.12,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,015,006,paxlovid,00069504530,47.9920,30,1439.76,1 five-day dose pack (30 tablets)
+H2256,015,006,sertraline_50,65862001205,0.0391,30,1.17,30 tablets (1 a day)
+H2256,015,006,sumatriptan_50,65862014736,0.4003,9,3.60,9 tablets
+H2256,015,006,triamcinolone_cream_01,45802006436,0.0490,30,1.47,1 tube (30 g)
+H2256,018,001,adderall_xr_30,70010003401,0.5512,30,16.54,30 capsules (1 a day)
+H2256,018,001,albuterol_hfa,17270074000,1.8290,18,32.92,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,018,001,amlodipine_5,82009002710,0.1108,30,3.32,30 tablets (1 a day)
+H2256,018,001,amoxicillin_500,00781261305,0.0867,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,018,001,amoxicillin_susp_400,00143988701,0.0367,100,3.67,1 bottle (100 mL)
+H2256,018,001,atorvastatin_20,60505257908,0.2696,30,8.09,30 tablets (1 a day)
+H2256,018,001,concerta_18,31722095201,0.7174,30,21.52,30 tablets (1 a day)
+H2256,018,001,dupixent_300,00024591502,1015.9187,4,4063.67,"2 pens (2 mL each), every other week"
+H2256,018,001,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,018,001,epinephrine_03,00093598627,134.8267,2,269.65,1 two-pack of auto-injectors
+H2256,018,001,fluticasone_nasal_50,60505082901,1.0147,16,16.24,"1 bottle (16 g, about 120 sprays)"
+H2256,018,001,humira_40,00074055402,3333.5849,2,6667.17,2 pens (every other week)
+H2256,018,001,lantus_solostar,00088221905,6.1960,15,92.94,1 box of 5 pens (3 mL each)
+H2256,018,001,latanoprost_0005,61314054701,1.7847,2.5,4.46,1 bottle (2.5 mL)
+H2256,018,001,levothyroxine_50,00378180310,0.2459,30,7.38,30 tablets (1 a day)
+H2256,018,001,lisinopril_10,68180098003,0.1376,30,4.13,30 tablets (1 a day)
+H2256,018,001,metformin_500,70010006310,0.1161,60,6.97,60 tablets (1 twice a day)
+H2256,018,001,mounjaro_5,00002149580,535.7299,2,1071.46,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,018,001,omeprazole_20,55111015810,0.1928,30,5.78,30 capsules (1 a day)
+H2256,018,001,ozempic_05,00169418113,330.8807,3,992.64,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,018,001,paxlovid,00069504530,49.6886,30,1490.66,1 five-day dose pack (30 tablets)
+H2256,018,001,sertraline_50,65862001205,0.2388,30,7.16,30 tablets (1 a day)
+H2256,018,001,sumatriptan_50,65862014736,0.4217,9,3.80,9 tablets
+H2256,018,001,triamcinolone_cream_01,45802006436,0.0490,30,1.47,1 tube (30 g)
+H2256,018,007,adderall_xr_30,70010003401,0.5377,30,16.13,30 capsules (1 a day)
+H2256,018,007,albuterol_hfa,17270074000,1.8284,18,32.91,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,018,007,amlodipine_5,82009002710,0.1160,30,3.48,30 tablets (1 a day)
+H2256,018,007,amoxicillin_500,00781261305,0.0866,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,018,007,amoxicillin_susp_400,00143988701,0.0373,100,3.73,1 bottle (100 mL)
+H2256,018,007,atorvastatin_20,60505257908,0.2810,30,8.43,30 tablets (1 a day)
+H2256,018,007,concerta_18,31722095201,0.7433,30,22.30,30 tablets (1 a day)
+H2256,018,007,dupixent_300,00024591502,1013.1791,4,4052.72,"2 pens (2 mL each), every other week"
+H2256,018,007,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,018,007,epinephrine_03,00093598627,134.6319,2,269.26,1 two-pack of auto-injectors
+H2256,018,007,fluticasone_nasal_50,60505082901,1.0435,16,16.70,"1 bottle (16 g, about 120 sprays)"
+H2256,018,007,humira_40,00074055402,3341.7401,2,6683.48,2 pens (every other week)
+H2256,018,007,lantus_solostar,00088221905,6.2087,15,93.13,1 box of 5 pens (3 mL each)
+H2256,018,007,latanoprost_0005,61314054701,1.7751,2.5,4.44,1 bottle (2.5 mL)
+H2256,018,007,levothyroxine_50,00378180310,0.2411,30,7.23,30 tablets (1 a day)
+H2256,018,007,lisinopril_10,68180098003,0.1406,30,4.22,30 tablets (1 a day)
+H2256,018,007,metformin_500,70010006310,0.1252,60,7.51,60 tablets (1 twice a day)
+H2256,018,007,mounjaro_5,00002149580,536.7806,2,1073.56,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,018,007,omeprazole_20,55111015810,0.2029,30,6.09,30 capsules (1 a day)
+H2256,018,007,ozempic_05,00169418113,331.2016,3,993.60,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,018,007,paxlovid,00069504530,49.6429,30,1489.29,1 five-day dose pack (30 tablets)
+H2256,018,007,sertraline_50,65862001205,0.2347,30,7.04,30 tablets (1 a day)
+H2256,018,007,sumatriptan_50,65862014736,0.4064,9,3.66,9 tablets
+H2256,018,007,triamcinolone_cream_01,45802006436,0.0492,30,1.48,1 tube (30 g)
+H2256,018,008,adderall_xr_30,70010003401,0.5294,30,15.88,30 capsules (1 a day)
+H2256,018,008,albuterol_hfa,17270074000,1.8272,18,32.89,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,018,008,amlodipine_5,82009002710,0.1115,30,3.35,30 tablets (1 a day)
+H2256,018,008,amoxicillin_500,00781261305,0.0863,30,2.59,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,018,008,amoxicillin_susp_400,00143988701,0.0367,100,3.67,1 bottle (100 mL)
+H2256,018,008,atorvastatin_20,60505257908,0.2717,30,8.15,30 tablets (1 a day)
+H2256,018,008,concerta_18,31722095201,0.7174,30,21.52,30 tablets (1 a day)
+H2256,018,008,dupixent_300,00024591502,1010.6790,4,4042.72,"2 pens (2 mL each), every other week"
+H2256,018,008,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,018,008,epinephrine_03,00093598627,134.9093,2,269.82,1 two-pack of auto-injectors
+H2256,018,008,fluticasone_nasal_50,60505082901,1.0140,16,16.22,"1 bottle (16 g, about 120 sprays)"
+H2256,018,008,humira_40,00074055402,3322.0476,2,6644.10,2 pens (every other week)
+H2256,018,008,lantus_solostar,00088221905,6.1933,15,92.90,1 box of 5 pens (3 mL each)
+H2256,018,008,latanoprost_0005,61314054701,1.7327,2.5,4.33,1 bottle (2.5 mL)
+H2256,018,008,levothyroxine_50,00378180310,0.2336,30,7.01,30 tablets (1 a day)
+H2256,018,008,lisinopril_10,68180098003,0.1368,30,4.10,30 tablets (1 a day)
+H2256,018,008,metformin_500,70010006310,0.1189,60,7.13,60 tablets (1 twice a day)
+H2256,018,008,mounjaro_5,00002149580,535.8119,2,1071.62,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,018,008,omeprazole_20,55111015810,0.1957,30,5.87,30 capsules (1 a day)
+H2256,018,008,ozempic_05,00169418113,330.5630,3,991.69,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,018,008,paxlovid,00069504530,49.5813,30,1487.44,1 five-day dose pack (30 tablets)
+H2256,018,008,sertraline_50,65862001205,0.2221,30,6.66,30 tablets (1 a day)
+H2256,018,008,sumatriptan_50,65862014736,0.4003,9,3.60,9 tablets
+H2256,018,008,triamcinolone_cream_01,45802006436,0.0490,30,1.47,1 tube (30 g)
+H2256,026,001,adderall_xr_30,70010003401,0.5512,30,16.54,30 capsules (1 a day)
+H2256,026,001,albuterol_hfa,17270074000,1.8290,18,32.92,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,026,001,amlodipine_5,82009002710,0.1108,30,3.32,30 tablets (1 a day)
+H2256,026,001,amoxicillin_500,00781261305,0.0867,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,026,001,amoxicillin_susp_400,00143988701,0.0367,100,3.67,1 bottle (100 mL)
+H2256,026,001,atorvastatin_20,60505257908,0.2696,30,8.09,30 tablets (1 a day)
+H2256,026,001,concerta_18,31722095201,0.7174,30,21.52,30 tablets (1 a day)
+H2256,026,001,dupixent_300,00024591502,1015.9187,4,4063.67,"2 pens (2 mL each), every other week"
+H2256,026,001,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,026,001,epinephrine_03,00093598627,134.8267,2,269.65,1 two-pack of auto-injectors
+H2256,026,001,fluticasone_nasal_50,60505082901,1.0147,16,16.24,"1 bottle (16 g, about 120 sprays)"
+H2256,026,001,humira_40,00074055402,3333.5849,2,6667.17,2 pens (every other week)
+H2256,026,001,lantus_solostar,00088221905,6.1960,15,92.94,1 box of 5 pens (3 mL each)
+H2256,026,001,latanoprost_0005,61314054701,1.7847,2.5,4.46,1 bottle (2.5 mL)
+H2256,026,001,levothyroxine_50,00378180310,0.2459,30,7.38,30 tablets (1 a day)
+H2256,026,001,lisinopril_10,68180098003,0.1376,30,4.13,30 tablets (1 a day)
+H2256,026,001,metformin_500,70010006310,0.1161,60,6.97,60 tablets (1 twice a day)
+H2256,026,001,mounjaro_5,00002149580,535.7299,2,1071.46,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,026,001,omeprazole_20,55111015810,0.1928,30,5.78,30 capsules (1 a day)
+H2256,026,001,ozempic_05,00169418113,330.8807,3,992.64,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,026,001,paxlovid,00069504530,49.6886,30,1490.66,1 five-day dose pack (30 tablets)
+H2256,026,001,sertraline_50,65862001205,0.2388,30,7.16,30 tablets (1 a day)
+H2256,026,001,sumatriptan_50,65862014736,0.4217,9,3.80,9 tablets
+H2256,026,001,triamcinolone_cream_01,45802006436,0.0490,30,1.47,1 tube (30 g)
+H2256,026,002,adderall_xr_30,70010003401,0.5377,30,16.13,30 capsules (1 a day)
+H2256,026,002,albuterol_hfa,17270074000,1.8284,18,32.91,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,026,002,amlodipine_5,82009002710,0.1160,30,3.48,30 tablets (1 a day)
+H2256,026,002,amoxicillin_500,00781261305,0.0866,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,026,002,amoxicillin_susp_400,00143988701,0.0373,100,3.73,1 bottle (100 mL)
+H2256,026,002,atorvastatin_20,60505257908,0.2810,30,8.43,30 tablets (1 a day)
+H2256,026,002,concerta_18,31722095201,0.7433,30,22.30,30 tablets (1 a day)
+H2256,026,002,dupixent_300,00024591502,1013.1791,4,4052.72,"2 pens (2 mL each), every other week"
+H2256,026,002,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,026,002,epinephrine_03,00093598627,134.6319,2,269.26,1 two-pack of auto-injectors
+H2256,026,002,fluticasone_nasal_50,60505082901,1.0435,16,16.70,"1 bottle (16 g, about 120 sprays)"
+H2256,026,002,humira_40,00074055402,3341.7401,2,6683.48,2 pens (every other week)
+H2256,026,002,lantus_solostar,00088221905,6.2087,15,93.13,1 box of 5 pens (3 mL each)
+H2256,026,002,latanoprost_0005,61314054701,1.7751,2.5,4.44,1 bottle (2.5 mL)
+H2256,026,002,levothyroxine_50,00378180310,0.2411,30,7.23,30 tablets (1 a day)
+H2256,026,002,lisinopril_10,68180098003,0.1406,30,4.22,30 tablets (1 a day)
+H2256,026,002,metformin_500,70010006310,0.1252,60,7.51,60 tablets (1 twice a day)
+H2256,026,002,mounjaro_5,00002149580,536.7806,2,1073.56,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,026,002,omeprazole_20,55111015810,0.2029,30,6.09,30 capsules (1 a day)
+H2256,026,002,ozempic_05,00169418113,331.2016,3,993.60,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,026,002,paxlovid,00069504530,49.6429,30,1489.29,1 five-day dose pack (30 tablets)
+H2256,026,002,sertraline_50,65862001205,0.2347,30,7.04,30 tablets (1 a day)
+H2256,026,002,sumatriptan_50,65862014736,0.4064,9,3.66,9 tablets
+H2256,026,002,triamcinolone_cream_01,45802006436,0.0492,30,1.48,1 tube (30 g)
+H2256,026,003,adderall_xr_30,70010003401,0.5294,30,15.88,30 capsules (1 a day)
+H2256,026,003,albuterol_hfa,17270074000,1.8272,18,32.89,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,026,003,amlodipine_5,82009002710,0.1115,30,3.35,30 tablets (1 a day)
+H2256,026,003,amoxicillin_500,00781261305,0.0863,30,2.59,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,026,003,amoxicillin_susp_400,00143988701,0.0367,100,3.67,1 bottle (100 mL)
+H2256,026,003,atorvastatin_20,60505257908,0.2717,30,8.15,30 tablets (1 a day)
+H2256,026,003,concerta_18,31722095201,0.7174,30,21.52,30 tablets (1 a day)
+H2256,026,003,dupixent_300,00024591502,1010.6790,4,4042.72,"2 pens (2 mL each), every other week"
+H2256,026,003,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,026,003,epinephrine_03,00093598627,134.9093,2,269.82,1 two-pack of auto-injectors
+H2256,026,003,fluticasone_nasal_50,60505082901,1.0140,16,16.22,"1 bottle (16 g, about 120 sprays)"
+H2256,026,003,humira_40,00074055402,3322.0476,2,6644.10,2 pens (every other week)
+H2256,026,003,lantus_solostar,00088221905,6.1933,15,92.90,1 box of 5 pens (3 mL each)
+H2256,026,003,latanoprost_0005,61314054701,1.7327,2.5,4.33,1 bottle (2.5 mL)
+H2256,026,003,levothyroxine_50,00378180310,0.2336,30,7.01,30 tablets (1 a day)
+H2256,026,003,lisinopril_10,68180098003,0.1368,30,4.10,30 tablets (1 a day)
+H2256,026,003,metformin_500,70010006310,0.1189,60,7.13,60 tablets (1 twice a day)
+H2256,026,003,mounjaro_5,00002149580,535.8119,2,1071.62,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,026,003,omeprazole_20,55111015810,0.1957,30,5.87,30 capsules (1 a day)
+H2256,026,003,ozempic_05,00169418113,330.5630,3,991.69,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,026,003,paxlovid,00069504530,49.5813,30,1487.44,1 five-day dose pack (30 tablets)
+H2256,026,003,sertraline_50,65862001205,0.2221,30,6.66,30 tablets (1 a day)
+H2256,026,003,sumatriptan_50,65862014736,0.4003,9,3.60,9 tablets
+H2256,026,003,triamcinolone_cream_01,45802006436,0.0490,30,1.47,1 tube (30 g)
+H2256,033,000,adderall_xr_30,70010003401,0.5816,30,17.45,30 capsules (1 a day)
+H2256,033,000,albuterol_hfa,17270074000,1.8290,18,32.92,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,033,000,amlodipine_5,82009002710,0.1151,30,3.45,30 tablets (1 a day)
+H2256,033,000,amoxicillin_500,00781261305,0.0867,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,033,000,amoxicillin_susp_400,00143988701,0.0367,100,3.67,1 bottle (100 mL)
+H2256,033,000,atorvastatin_20,60505257908,0.3214,30,9.64,30 tablets (1 a day)
+H2256,033,000,concerta_18,31722095201,1.2239,30,36.72,30 tablets (1 a day)
+H2256,033,000,dupixent_300,00024591502,1015.2736,4,4061.09,"2 pens (2 mL each), every other week"
+H2256,033,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,033,000,epinephrine_03,00093598627,135.9035,2,271.81,1 two-pack of auto-injectors
+H2256,033,000,fluticasone_nasal_50,60505082901,0.4915,16,7.86,"1 bottle (16 g, about 120 sprays)"
+H2256,033,000,humira_40,00074055402,3341.4216,2,6682.84,2 pens (every other week)
+H2256,033,000,lantus_solostar,00088221905,6.0637,15,90.96,1 box of 5 pens (3 mL each)
+H2256,033,000,latanoprost_0005,61314054701,1.7952,2.5,4.49,1 bottle (2.5 mL)
+H2256,033,000,levothyroxine_50,60846080201,0.1079,30,3.24,30 tablets (1 a day)
+H2256,033,000,lisinopril_10,68180098003,0.1777,30,5.33,30 tablets (1 a day)
+H2256,033,000,metformin_500,70010006310,0.1327,60,7.96,60 tablets (1 twice a day)
+H2256,033,000,mounjaro_5,00002149580,523.8793,2,1047.76,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,033,000,omeprazole_20,55111015810,0.3016,30,9.05,30 capsules (1 a day)
+H2256,033,000,ozempic_05,00169418113,322.2895,3,966.87,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,033,000,paxlovid,00069504530,48.1580,30,1444.74,1 five-day dose pack (30 tablets)
+H2256,033,000,sertraline_50,65862001205,0.0441,30,1.32,30 tablets (1 a day)
+H2256,033,000,sumatriptan_50,65862014736,0.4169,9,3.75,9 tablets
+H2256,033,000,triamcinolone_cream_01,45802006436,0.0494,30,1.48,1 tube (30 g)
+H2256,034,000,adderall_xr_30,70010003401,0.5816,30,17.45,30 capsules (1 a day)
+H2256,034,000,albuterol_hfa,17270074000,1.8290,18,32.92,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,034,000,amlodipine_5,82009002710,0.1207,30,3.62,30 tablets (1 a day)
+H2256,034,000,amoxicillin_500,00781261305,0.0867,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,034,000,amoxicillin_susp_400,00143988701,0.0367,100,3.67,1 bottle (100 mL)
+H2256,034,000,atorvastatin_20,60505257908,0.2941,30,8.82,30 tablets (1 a day)
+H2256,034,000,concerta_18,31722095201,1.2239,30,36.72,30 tablets (1 a day)
+H2256,034,000,dupixent_300,00024591502,1011.5972,4,4046.39,"2 pens (2 mL each), every other week"
+H2256,034,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,034,000,epinephrine_03,00093598627,135.8712,2,271.74,1 two-pack of auto-injectors
+H2256,034,000,fluticasone_nasal_50,60505082901,1.0833,16,17.33,"1 bottle (16 g, about 120 sprays)"
+H2256,034,000,humira_40,00074055402,3335.9273,2,6671.85,2 pens (every other week)
+H2256,034,000,lantus_solostar,00088221905,6.2208,15,93.31,1 box of 5 pens (3 mL each)
+H2256,034,000,latanoprost_0005,61314054701,1.7952,2.5,4.49,1 bottle (2.5 mL)
+H2256,034,000,levothyroxine_50,60846080201,0.2037,30,6.11,30 tablets (1 a day)
+H2256,034,000,lisinopril_10,68180098003,0.1444,30,4.33,30 tablets (1 a day)
+H2256,034,000,metformin_500,70010006310,0.1292,60,7.75,60 tablets (1 twice a day)
+H2256,034,000,mounjaro_5,00002149580,537.8015,2,1075.60,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,034,000,omeprazole_20,55111015810,0.2068,30,6.20,30 capsules (1 a day)
+H2256,034,000,ozempic_05,00169418113,331.6671,3,995.00,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,034,000,paxlovid,00069504530,49.8153,30,1494.46,1 five-day dose pack (30 tablets)
+H2256,034,000,sertraline_50,65862001205,0.2312,30,6.94,30 tablets (1 a day)
+H2256,034,000,sumatriptan_50,65862014736,0.4169,9,3.75,9 tablets
+H2256,034,000,triamcinolone_cream_01,45802006436,0.0494,30,1.48,1 tube (30 g)
+H2256,036,000,adderall_xr_30,70010003401,0.5816,30,17.45,30 capsules (1 a day)
+H2256,036,000,albuterol_hfa,17270074000,1.8290,18,32.92,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,036,000,amlodipine_5,82009002710,0.1207,30,3.62,30 tablets (1 a day)
+H2256,036,000,amoxicillin_500,00781261305,0.0867,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,036,000,amoxicillin_susp_400,00143988701,0.0367,100,3.67,1 bottle (100 mL)
+H2256,036,000,atorvastatin_20,60505257908,0.2941,30,8.82,30 tablets (1 a day)
+H2256,036,000,concerta_18,31722095201,1.2239,30,36.72,30 tablets (1 a day)
+H2256,036,000,dupixent_300,00024591502,1011.5972,4,4046.39,"2 pens (2 mL each), every other week"
+H2256,036,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,036,000,epinephrine_03,00093598627,135.8712,2,271.74,1 two-pack of auto-injectors
+H2256,036,000,fluticasone_nasal_50,60505082901,1.0833,16,17.33,"1 bottle (16 g, about 120 sprays)"
+H2256,036,000,humira_40,00074055402,3335.9273,2,6671.85,2 pens (every other week)
+H2256,036,000,lantus_solostar,00088221905,6.2208,15,93.31,1 box of 5 pens (3 mL each)
+H2256,036,000,latanoprost_0005,61314054701,1.7952,2.5,4.49,1 bottle (2.5 mL)
+H2256,036,000,levothyroxine_50,60846080201,0.2037,30,6.11,30 tablets (1 a day)
+H2256,036,000,lisinopril_10,68180098003,0.1444,30,4.33,30 tablets (1 a day)
+H2256,036,000,metformin_500,70010006310,0.1292,60,7.75,60 tablets (1 twice a day)
+H2256,036,000,mounjaro_5,00002149580,537.8015,2,1075.60,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,036,000,omeprazole_20,55111015810,0.2068,30,6.20,30 capsules (1 a day)
+H2256,036,000,ozempic_05,00169418113,331.6671,3,995.00,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,036,000,paxlovid,00069504530,49.8153,30,1494.46,1 five-day dose pack (30 tablets)
+H2256,036,000,sertraline_50,65862001205,0.2312,30,6.94,30 tablets (1 a day)
+H2256,036,000,sumatriptan_50,65862014736,0.4169,9,3.75,9 tablets
+H2256,036,000,triamcinolone_cream_01,45802006436,0.0494,30,1.48,1 tube (30 g)
+H2256,046,000,adderall_xr_30,70010003401,0.5457,30,16.37,30 capsules (1 a day)
+H2256,046,000,albuterol_hfa,17270074000,1.8285,18,32.91,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2256,046,000,amlodipine_5,82009002710,0.1150,30,3.45,30 tablets (1 a day)
+H2256,046,000,amoxicillin_500,00781261305,0.0866,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H2256,046,000,amoxicillin_susp_400,00143988701,0.0370,100,3.70,1 bottle (100 mL)
+H2256,046,000,atorvastatin_20,60505257908,0.2797,30,8.39,30 tablets (1 a day)
+H2256,046,000,concerta_18,31722095201,0.7992,30,23.98,30 tablets (1 a day)
+H2256,046,000,dupixent_300,00024591502,1013.4606,4,4053.84,"2 pens (2 mL each), every other week"
+H2256,046,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2256,046,000,epinephrine_03,00093598627,134.9074,2,269.81,1 two-pack of auto-injectors
+H2256,046,000,fluticasone_nasal_50,60505082901,1.0386,16,16.62,"1 bottle (16 g, about 120 sprays)"
+H2256,046,000,humira_40,00074055402,3338.6341,2,6677.27,2 pens (every other week)
+H2256,046,000,lantus_solostar,00088221905,6.2049,15,93.07,1 box of 5 pens (3 mL each)
+H2256,046,000,latanoprost_0005,61314054701,1.7765,2.5,4.44,1 bottle (2.5 mL)
+H2256,046,000,levothyroxine_50,00378180310,0.2428,30,7.28,30 tablets (1 a day)
+H2256,046,000,lisinopril_10,68180098003,0.1401,30,4.20,30 tablets (1 a day)
+H2256,046,000,metformin_500,70010006310,0.1233,60,7.40,60 tablets (1 twice a day)
+H2256,046,000,mounjaro_5,00002149580,536.5937,2,1073.19,"4 single-dose pens (0.5 mL each), 1 a week"
+H2256,046,000,omeprazole_20,55111015810,0.2004,30,6.01,30 capsules (1 a day)
+H2256,046,000,ozempic_05,00169418113,331.1332,3,993.40,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2256,046,000,paxlovid,00069504530,49.6638,30,1489.91,1 five-day dose pack (30 tablets)
+H2256,046,000,sertraline_50,65862001205,0.2331,30,6.99,30 tablets (1 a day)
+H2256,046,000,sumatriptan_50,65862014736,0.4096,9,3.69,9 tablets
+H2256,046,000,triamcinolone_cream_01,45802006436,0.0492,30,1.48,1 tube (30 g)
+H2261,005,000,adderall_xr_30,70010003401,3.2400,30,97.20,30 capsules (1 a day)
+H2261,005,000,albuterol_hfa,69097002160,1.1202,18,20.16,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2261,005,000,amlodipine_5,82009002710,0.1382,30,4.15,30 tablets (1 a day)
+H2261,005,000,amoxicillin_500,00781261305,0.1318,30,3.95,"30 capsules (a typical 10-day course, 3 a day)"
+H2261,005,000,amoxicillin_susp_400,00143988701,0.0566,100,5.66,1 bottle (100 mL)
+H2261,005,000,atorvastatin_20,60505257908,0.2876,30,8.63,30 tablets (1 a day)
+H2261,005,000,dupixent_300,00024591502,1004.1022,4,4016.41,"2 pens (2 mL each), every other week"
+H2261,005,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2261,005,000,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+H2261,005,000,fluticasone_nasal_50,60505082901,0.2615,16,4.18,"1 bottle (16 g, about 120 sprays)"
+H2261,005,000,humira_40,00074055402,3283.3737,2,6566.75,2 pens (every other week)
+H2261,005,000,lantus_solostar,00088221905,6.1507,15,92.26,1 box of 5 pens (3 mL each)
+H2261,005,000,latanoprost_0005,61314054701,1.7797,2.5,4.45,1 bottle (2.5 mL)
+H2261,005,000,levothyroxine_50,00378180310,0.1848,30,5.54,30 tablets (1 a day)
+H2261,005,000,lisinopril_10,68180098003,0.1494,30,4.48,30 tablets (1 a day)
+H2261,005,000,metformin_500,70010006310,0.2019,60,12.11,60 tablets (1 twice a day)
+H2261,005,000,mounjaro_5,00002149580,532.0538,2,1064.11,"4 single-dose pens (0.5 mL each), 1 a week"
+H2261,005,000,omeprazole_20,55111015810,0.1716,30,5.15,30 capsules (1 a day)
+H2261,005,000,ozempic_05,00169418113,327.6791,3,983.04,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2261,005,000,paxlovid,00069504530,49.1407,30,1474.22,1 five-day dose pack (30 tablets)
+H2261,005,000,sertraline_50,65862001205,0.1268,30,3.80,30 tablets (1 a day)
+H2261,005,000,sumatriptan_50,65862014736,0.3326,9,2.99,9 tablets
+H2261,005,000,triamcinolone_cream_01,45802006436,0.0908,30,2.72,1 tube (30 g)
+H2261,022,001,adderall_xr_30,70010003401,3.2400,30,97.20,30 capsules (1 a day)
+H2261,022,001,albuterol_hfa,69097002160,1.1202,18,20.16,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2261,022,001,amlodipine_5,82009002710,0.1408,30,4.22,30 tablets (1 a day)
+H2261,022,001,amoxicillin_500,00781261305,0.1324,30,3.97,"30 capsules (a typical 10-day course, 3 a day)"
+H2261,022,001,amoxicillin_susp_400,00143988701,0.0566,100,5.66,1 bottle (100 mL)
+H2261,022,001,atorvastatin_20,60505257908,0.2877,30,8.63,30 tablets (1 a day)
+H2261,022,001,dupixent_300,00024591502,1004.2604,4,4017.04,"2 pens (2 mL each), every other week"
+H2261,022,001,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2261,022,001,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+H2261,022,001,fluticasone_nasal_50,60505082901,0.2615,16,4.18,"1 bottle (16 g, about 120 sprays)"
+H2261,022,001,humira_40,00074055402,3293.8677,2,6587.74,2 pens (every other week)
+H2261,022,001,lantus_solostar,00088221905,6.1507,15,92.26,1 box of 5 pens (3 mL each)
+H2261,022,001,latanoprost_0005,61314054701,1.8098,2.5,4.52,1 bottle (2.5 mL)
+H2261,022,001,levothyroxine_50,00378180310,0.1853,30,5.56,30 tablets (1 a day)
+H2261,022,001,lisinopril_10,68180098003,0.1497,30,4.49,30 tablets (1 a day)
+H2261,022,001,metformin_500,70010006310,0.2035,60,12.21,60 tablets (1 twice a day)
+H2261,022,001,mounjaro_5,00002149580,532.0525,2,1064.11,"4 single-dose pens (0.5 mL each), 1 a week"
+H2261,022,001,omeprazole_20,55111015810,0.1740,30,5.22,30 capsules (1 a day)
+H2261,022,001,ozempic_05,00169418113,327.6758,3,983.03,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2261,022,001,paxlovid,00069504530,49.1406,30,1474.22,1 five-day dose pack (30 tablets)
+H2261,022,001,sertraline_50,65862001205,0.1260,30,3.78,30 tablets (1 a day)
+H2261,022,001,sumatriptan_50,65862014736,0.3303,9,2.97,9 tablets
+H2261,022,001,triamcinolone_cream_01,45802006436,0.0908,30,2.72,1 tube (30 g)
+H2261,022,002,adderall_xr_30,70010003401,3.2400,30,97.20,30 capsules (1 a day)
+H2261,022,002,albuterol_hfa,69097002160,1.1202,18,20.16,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2261,022,002,amlodipine_5,82009002710,0.1202,30,3.61,30 tablets (1 a day)
+H2261,022,002,amoxicillin_500,00781261305,0.1280,30,3.84,"30 capsules (a typical 10-day course, 3 a day)"
+H2261,022,002,amoxicillin_susp_400,00143988701,0.0566,100,5.66,1 bottle (100 mL)
+H2261,022,002,atorvastatin_20,60505257908,0.2873,30,8.62,30 tablets (1 a day)
+H2261,022,002,dupixent_300,00024591502,1003.8059,4,4015.22,"2 pens (2 mL each), every other week"
+H2261,022,002,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2261,022,002,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+H2261,022,002,fluticasone_nasal_50,60505082901,0.2615,16,4.18,"1 bottle (16 g, about 120 sprays)"
+H2261,022,002,humira_40,00074055402,3260.9296,2,6521.86,2 pens (every other week)
+H2261,022,002,lantus_solostar,00088221905,6.1505,15,92.26,1 box of 5 pens (3 mL each)
+H2261,022,002,latanoprost_0005,61314054701,1.5827,2.5,3.96,1 bottle (2.5 mL)
+H2261,022,002,levothyroxine_50,00378180310,0.1817,30,5.45,30 tablets (1 a day)
+H2261,022,002,lisinopril_10,68180098003,0.1476,30,4.43,30 tablets (1 a day)
+H2261,022,002,metformin_500,70010006310,0.1915,60,11.49,60 tablets (1 twice a day)
+H2261,022,002,mounjaro_5,00002149580,532.0631,2,1064.13,"4 single-dose pens (0.5 mL each), 1 a week"
+H2261,022,002,omeprazole_20,55111015810,0.1552,30,4.66,30 capsules (1 a day)
+H2261,022,002,ozempic_05,00169418113,327.6983,3,983.09,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2261,022,002,paxlovid,00069504530,49.1415,30,1474.25,1 five-day dose pack (30 tablets)
+H2261,022,002,sertraline_50,65862001205,0.1313,30,3.94,30 tablets (1 a day)
+H2261,022,002,sumatriptan_50,65862014736,0.3515,9,3.16,9 tablets
+H2261,022,002,triamcinolone_cream_01,45802006436,0.0908,30,2.72,1 tube (30 g)
+H2261,023,001,adderall_xr_30,70010003401,3.2400,30,97.20,30 capsules (1 a day)
+H2261,023,001,albuterol_hfa,69097002160,1.1202,18,20.16,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2261,023,001,amlodipine_5,82009002710,0.1408,30,4.22,30 tablets (1 a day)
+H2261,023,001,amoxicillin_500,00781261305,0.1324,30,3.97,"30 capsules (a typical 10-day course, 3 a day)"
+H2261,023,001,amoxicillin_susp_400,00143988701,0.0566,100,5.66,1 bottle (100 mL)
+H2261,023,001,atorvastatin_20,60505257908,0.2877,30,8.63,30 tablets (1 a day)
+H2261,023,001,dupixent_300,00024591502,1004.2604,4,4017.04,"2 pens (2 mL each), every other week"
+H2261,023,001,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2261,023,001,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+H2261,023,001,fluticasone_nasal_50,60505082901,0.2615,16,4.18,"1 bottle (16 g, about 120 sprays)"
+H2261,023,001,humira_40,00074055402,3293.8677,2,6587.74,2 pens (every other week)
+H2261,023,001,lantus_solostar,00088221905,6.1507,15,92.26,1 box of 5 pens (3 mL each)
+H2261,023,001,latanoprost_0005,61314054701,1.8098,2.5,4.52,1 bottle (2.5 mL)
+H2261,023,001,levothyroxine_50,00378180310,0.1853,30,5.56,30 tablets (1 a day)
+H2261,023,001,lisinopril_10,68180098003,0.1497,30,4.49,30 tablets (1 a day)
+H2261,023,001,metformin_500,70010006310,0.2035,60,12.21,60 tablets (1 twice a day)
+H2261,023,001,mounjaro_5,00002149580,532.0525,2,1064.11,"4 single-dose pens (0.5 mL each), 1 a week"
+H2261,023,001,omeprazole_20,55111015810,0.1740,30,5.22,30 capsules (1 a day)
+H2261,023,001,ozempic_05,00169418113,327.6758,3,983.03,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2261,023,001,paxlovid,00069504530,49.1406,30,1474.22,1 five-day dose pack (30 tablets)
+H2261,023,001,sertraline_50,65862001205,0.1260,30,3.78,30 tablets (1 a day)
+H2261,023,001,sumatriptan_50,65862014736,0.3303,9,2.97,9 tablets
+H2261,023,001,triamcinolone_cream_01,45802006436,0.0908,30,2.72,1 tube (30 g)
+H2261,023,002,adderall_xr_30,70010003401,3.2400,30,97.20,30 capsules (1 a day)
+H2261,023,002,albuterol_hfa,69097002160,1.1202,18,20.16,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2261,023,002,amlodipine_5,82009002710,0.1202,30,3.61,30 tablets (1 a day)
+H2261,023,002,amoxicillin_500,00781261305,0.1280,30,3.84,"30 capsules (a typical 10-day course, 3 a day)"
+H2261,023,002,amoxicillin_susp_400,00143988701,0.0566,100,5.66,1 bottle (100 mL)
+H2261,023,002,atorvastatin_20,60505257908,0.2873,30,8.62,30 tablets (1 a day)
+H2261,023,002,dupixent_300,00024591502,1003.8059,4,4015.22,"2 pens (2 mL each), every other week"
+H2261,023,002,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2261,023,002,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+H2261,023,002,fluticasone_nasal_50,60505082901,0.2615,16,4.18,"1 bottle (16 g, about 120 sprays)"
+H2261,023,002,humira_40,00074055402,3260.9296,2,6521.86,2 pens (every other week)
+H2261,023,002,lantus_solostar,00088221905,6.1505,15,92.26,1 box of 5 pens (3 mL each)
+H2261,023,002,latanoprost_0005,61314054701,1.5827,2.5,3.96,1 bottle (2.5 mL)
+H2261,023,002,levothyroxine_50,00378180310,0.1817,30,5.45,30 tablets (1 a day)
+H2261,023,002,lisinopril_10,68180098003,0.1476,30,4.43,30 tablets (1 a day)
+H2261,023,002,metformin_500,70010006310,0.1915,60,11.49,60 tablets (1 twice a day)
+H2261,023,002,mounjaro_5,00002149580,532.0631,2,1064.13,"4 single-dose pens (0.5 mL each), 1 a week"
+H2261,023,002,omeprazole_20,55111015810,0.1552,30,4.66,30 capsules (1 a day)
+H2261,023,002,ozempic_05,00169418113,327.6983,3,983.09,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2261,023,002,paxlovid,00069504530,49.1415,30,1474.25,1 five-day dose pack (30 tablets)
+H2261,023,002,sertraline_50,65862001205,0.1313,30,3.94,30 tablets (1 a day)
+H2261,023,002,sumatriptan_50,65862014736,0.3515,9,3.16,9 tablets
+H2261,023,002,triamcinolone_cream_01,45802006436,0.0908,30,2.72,1 tube (30 g)
+H2261,024,000,adderall_xr_30,70010003401,3.2400,30,97.20,30 capsules (1 a day)
+H2261,024,000,albuterol_hfa,69097002160,1.1202,18,20.16,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2261,024,000,amlodipine_5,82009002710,0.1382,30,4.15,30 tablets (1 a day)
+H2261,024,000,amoxicillin_500,00781261305,0.1318,30,3.95,"30 capsules (a typical 10-day course, 3 a day)"
+H2261,024,000,amoxicillin_susp_400,00143988701,0.0566,100,5.66,1 bottle (100 mL)
+H2261,024,000,atorvastatin_20,60505257908,0.2876,30,8.63,30 tablets (1 a day)
+H2261,024,000,dupixent_300,00024591502,1004.1022,4,4016.41,"2 pens (2 mL each), every other week"
+H2261,024,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2261,024,000,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+H2261,024,000,fluticasone_nasal_50,60505082901,0.2615,16,4.18,"1 bottle (16 g, about 120 sprays)"
+H2261,024,000,humira_40,00074055402,3283.3737,2,6566.75,2 pens (every other week)
+H2261,024,000,lantus_solostar,00088221905,6.1507,15,92.26,1 box of 5 pens (3 mL each)
+H2261,024,000,latanoprost_0005,61314054701,1.7797,2.5,4.45,1 bottle (2.5 mL)
+H2261,024,000,levothyroxine_50,00378180310,0.1848,30,5.54,30 tablets (1 a day)
+H2261,024,000,lisinopril_10,68180098003,0.1494,30,4.48,30 tablets (1 a day)
+H2261,024,000,metformin_500,70010006310,0.2019,60,12.11,60 tablets (1 twice a day)
+H2261,024,000,mounjaro_5,00002149580,532.0538,2,1064.11,"4 single-dose pens (0.5 mL each), 1 a week"
+H2261,024,000,omeprazole_20,55111015810,0.1716,30,5.15,30 capsules (1 a day)
+H2261,024,000,ozempic_05,00169418113,327.6791,3,983.04,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2261,024,000,paxlovid,00069504530,49.1407,30,1474.22,1 five-day dose pack (30 tablets)
+H2261,024,000,sertraline_50,65862001205,0.1268,30,3.80,30 tablets (1 a day)
+H2261,024,000,sumatriptan_50,65862014736,0.3326,9,2.99,9 tablets
+H2261,024,000,triamcinolone_cream_01,45802006436,0.0908,30,2.72,1 tube (30 g)
+H2737,001,000,adderall_xr_30,70010003401,0.6006,30,18.02,30 capsules (1 a day)
+H2737,001,000,albuterol_hfa,17270074000,1.9546,18,35.18,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H2737,001,000,amlodipine_5,82009002710,0.0557,30,1.67,30 tablets (1 a day)
+H2737,001,000,amoxicillin_500,00781261305,0.0890,30,2.67,"30 capsules (a typical 10-day course, 3 a day)"
+H2737,001,000,amoxicillin_susp_400,00143988701,0.0578,100,5.78,1 bottle (100 mL)
+H2737,001,000,atorvastatin_20,60505257908,0.1833,30,5.50,30 tablets (1 a day)
+H2737,001,000,dupixent_300,00024591502,1009.1962,4,4036.78,"2 pens (2 mL each), every other week"
+H2737,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H2737,001,000,epinephrine_03,00093598627,132.9869,2,265.97,1 two-pack of auto-injectors
+H2737,001,000,fluticasone_nasal_50,60505082901,0.4832,16,7.73,"1 bottle (16 g, about 120 sprays)"
+H2737,001,000,humira_40,00074055402,3345.7037,2,6691.41,2 pens (every other week)
+H2737,001,000,lantus_solostar,00088221905,6.2164,15,93.25,1 box of 5 pens (3 mL each)
+H2737,001,000,latanoprost_0005,61314054701,1.7327,2.5,4.33,1 bottle (2.5 mL)
+H2737,001,000,levothyroxine_50,60846080201,0.1080,30,3.24,30 tablets (1 a day)
+H2737,001,000,lisinopril_10,68180098003,0.0980,30,2.94,30 tablets (1 a day)
+H2737,001,000,metformin_500,70010006310,0.0713,60,4.28,60 tablets (1 twice a day)
+H2737,001,000,mounjaro_5,00002149580,538.4062,2,1076.81,"4 single-dose pens (0.5 mL each), 1 a week"
+H2737,001,000,omeprazole_20,55111015810,0.1374,30,4.12,30 capsules (1 a day)
+H2737,001,000,ozempic_05,00169418113,331.9031,3,995.71,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H2737,001,000,paxlovid,00069504530,49.8241,30,1494.72,1 five-day dose pack (30 tablets)
+H2737,001,000,sertraline_50,65862001205,0.1978,30,5.93,30 tablets (1 a day)
+H2737,001,000,sumatriptan_50,65862014736,0.4003,9,3.60,9 tablets
+H2737,001,000,triamcinolone_cream_01,45802006436,0.0579,30,1.74,1 tube (30 g)
+H4371,001,000,adderall_xr_30,70010003401,2.2030,30,66.09,30 capsules (1 a day)
+H4371,001,000,albuterol_hfa,69097002160,1.8505,18,33.31,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H4371,001,000,amlodipine_5,82009002710,0.0480,30,1.44,30 tablets (1 a day)
+H4371,001,000,amoxicillin_500,00781261305,0.0679,30,2.04,"30 capsules (a typical 10-day course, 3 a day)"
+H4371,001,000,amoxicillin_susp_400,00143988701,0.0566,100,5.66,1 bottle (100 mL)
+H4371,001,000,atorvastatin_20,60505257908,0.1029,30,3.09,30 tablets (1 a day)
+H4371,001,000,dupixent_300,00024591502,1000.5664,4,4002.27,"2 pens (2 mL each), every other week"
+H4371,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H4371,001,000,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+H4371,001,000,fluticasone_nasal_50,60505082901,0.5708,16,9.13,"1 bottle (16 g, about 120 sprays)"
+H4371,001,000,humira_40,00074055402,3273.2161,2,6546.43,2 pens (every other week)
+H4371,001,000,lantus_solostar,00088221905,6.1321,15,91.98,1 box of 5 pens (3 mL each)
+H4371,001,000,latanoprost_0005,61314054701,1.2942,2.5,3.24,1 bottle (2.5 mL)
+H4371,001,000,levothyroxine_50,00378180310,0.2542,30,7.63,30 tablets (1 a day)
+H4371,001,000,lisinopril_10,68180098003,0.0561,30,1.68,30 tablets (1 a day)
+H4371,001,000,metformin_500,70010006310,0.0462,60,2.77,60 tablets (1 twice a day)
+H4371,001,000,mounjaro_5,00002149580,530.5035,2,1061.01,"4 single-dose pens (0.5 mL each), 1 a week"
+H4371,001,000,omeprazole_20,55111015810,0.0687,30,2.06,30 capsules (1 a day)
+H4371,001,000,ozempic_05,00169418113,326.7477,3,980.24,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H4371,001,000,paxlovid,00069504530,49.0041,30,1470.12,1 five-day dose pack (30 tablets)
+H4371,001,000,sertraline_50,65862001205,0.0708,30,2.12,30 tablets (1 a day)
+H4371,001,000,sumatriptan_50,65862014736,0.6075,9,5.47,9 tablets
+H4371,001,000,triamcinolone_cream_01,45802006436,0.0985,30,2.96,1 tube (30 g)
+H4610,001,000,adderall_xr_30,70010003401,0.9458,30,28.37,30 capsules (1 a day)
+H4610,001,000,albuterol_hfa,17270074000,1.5668,18,28.20,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H4610,001,000,amlodipine_5,82009002710,0.1267,30,3.80,30 tablets (1 a day)
+H4610,001,000,amoxicillin_500,00781261305,0.1950,30,5.85,"30 capsules (a typical 10-day course, 3 a day)"
+H4610,001,000,amoxicillin_susp_400,00143988701,0.0274,100,2.74,1 bottle (100 mL)
+H4610,001,000,atorvastatin_20,60505257908,0.1380,30,4.14,30 tablets (1 a day)
+H4610,001,000,dupixent_300,00024591502,1046.4096,4,4185.64,"2 pens (2 mL each), every other week"
+H4610,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H4610,001,000,epinephrine_03,00115169449,86.0892,2,172.18,1 two-pack of auto-injectors
+H4610,001,000,fluticasone_nasal_50,60505082901,0.3593,16,5.75,"1 bottle (16 g, about 120 sprays)"
+H4610,001,000,lantus_solostar,00088221905,6.5395,15,98.09,1 box of 5 pens (3 mL each)
+H4610,001,000,latanoprost_0005,61314054701,1.7168,2.5,4.29,1 bottle (2.5 mL)
+H4610,001,000,levothyroxine_50,60793085101,0.1337,30,4.01,30 tablets (1 a day)
+H4610,001,000,lisinopril_10,68180098003,0.1307,30,3.92,30 tablets (1 a day)
+H4610,001,000,metformin_500,70010006310,0.0679,60,4.07,60 tablets (1 twice a day)
+H4610,001,000,mounjaro_5,00002149580,565.1057,2,1130.21,"4 single-dose pens (0.5 mL each), 1 a week"
+H4610,001,000,omeprazole_20,55111015810,0.1221,30,3.66,30 capsules (1 a day)
+H4610,001,000,ozempic_05,00169418113,347.3495,3,1042.05,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H4610,001,000,paxlovid,00069504530,52.0565,30,1561.69,1 five-day dose pack (30 tablets)
+H4610,001,000,sertraline_50,65862001205,0.1378,30,4.13,30 tablets (1 a day)
+H4610,001,000,sumatriptan_50,65862014736,1.3503,9,12.15,9 tablets
+H4610,001,000,triamcinolone_cream_01,45802006436,0.0735,30,2.21,1 tube (30 g)
+H4610,002,000,adderall_xr_30,70010003401,0.9458,30,28.37,30 capsules (1 a day)
+H4610,002,000,albuterol_hfa,17270074000,1.5668,18,28.20,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H4610,002,000,amlodipine_5,82009002710,0.1267,30,3.80,30 tablets (1 a day)
+H4610,002,000,amoxicillin_500,00781261305,0.1950,30,5.85,"30 capsules (a typical 10-day course, 3 a day)"
+H4610,002,000,amoxicillin_susp_400,00143988701,0.0274,100,2.74,1 bottle (100 mL)
+H4610,002,000,atorvastatin_20,60505257908,0.1380,30,4.14,30 tablets (1 a day)
+H4610,002,000,dupixent_300,00024591502,1046.4096,4,4185.64,"2 pens (2 mL each), every other week"
+H4610,002,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H4610,002,000,epinephrine_03,00115169449,86.0892,2,172.18,1 two-pack of auto-injectors
+H4610,002,000,fluticasone_nasal_50,60505082901,0.3593,16,5.75,"1 bottle (16 g, about 120 sprays)"
+H4610,002,000,lantus_solostar,00088221905,6.5395,15,98.09,1 box of 5 pens (3 mL each)
+H4610,002,000,latanoprost_0005,61314054701,1.7168,2.5,4.29,1 bottle (2.5 mL)
+H4610,002,000,levothyroxine_50,60793085101,0.1337,30,4.01,30 tablets (1 a day)
+H4610,002,000,lisinopril_10,68180098003,0.1307,30,3.92,30 tablets (1 a day)
+H4610,002,000,metformin_500,70010006310,0.0679,60,4.07,60 tablets (1 twice a day)
+H4610,002,000,mounjaro_5,00002149580,565.1057,2,1130.21,"4 single-dose pens (0.5 mL each), 1 a week"
+H4610,002,000,omeprazole_20,55111015810,0.1221,30,3.66,30 capsules (1 a day)
+H4610,002,000,ozempic_05,00169418113,347.3495,3,1042.05,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H4610,002,000,paxlovid,00069504530,52.0565,30,1561.69,1 five-day dose pack (30 tablets)
+H4610,002,000,sertraline_50,65862001205,0.1378,30,4.13,30 tablets (1 a day)
+H4610,002,000,sumatriptan_50,65862014736,1.3503,9,12.15,9 tablets
+H4610,002,000,triamcinolone_cream_01,45802006436,0.0735,30,2.21,1 tube (30 g)
+H5216,138,000,adderall_xr_30,70010003401,0.8713,30,26.14,30 capsules (1 a day)
+H5216,138,000,albuterol_hfa,17270074000,2.8087,18,50.56,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5216,138,000,amlodipine_5,82009002710,0.0312,30,0.94,30 tablets (1 a day)
+H5216,138,000,amoxicillin_500,00781261305,0.2737,30,8.21,"30 capsules (a typical 10-day course, 3 a day)"
+H5216,138,000,amoxicillin_susp_400,00143988701,0.1107,100,11.07,1 bottle (100 mL)
+H5216,138,000,atorvastatin_20,60505257908,0.1006,30,3.02,30 tablets (1 a day)
+H5216,138,000,dupixent_300,00024591502,995.9098,4,3983.64,"2 pens (2 mL each), every other week"
+H5216,138,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5216,138,000,epinephrine_03,00093598627,208.7280,2,417.46,1 two-pack of auto-injectors
+H5216,138,000,fluticasone_nasal_50,60505082901,1.0787,16,17.26,"1 bottle (16 g, about 120 sprays)"
+H5216,138,000,humira_40,00074055402,3297.5723,2,6595.14,2 pens (every other week)
+H5216,138,000,lantus_solostar,00088221905,6.1606,15,92.41,1 box of 5 pens (3 mL each)
+H5216,138,000,latanoprost_0005,61314054701,4.2648,2.5,10.66,1 bottle (2.5 mL)
+H5216,138,000,levothyroxine_50,00378180310,0.1532,30,4.60,30 tablets (1 a day)
+H5216,138,000,lisinopril_10,68180098003,0.0587,30,1.76,30 tablets (1 a day)
+H5216,138,000,metformin_500,70010006310,0.0434,60,2.60,60 tablets (1 twice a day)
+H5216,138,000,mounjaro_5,00002149580,533.7110,2,1067.42,"4 single-dose pens (0.5 mL each), 1 a week"
+H5216,138,000,omeprazole_20,55111015810,0.0875,30,2.62,30 capsules (1 a day)
+H5216,138,000,ozempic_05,00169418113,329.2156,3,987.65,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5216,138,000,paxlovid,00069504530,49.4826,30,1484.48,1 five-day dose pack (30 tablets)
+H5216,138,000,sertraline_50,65862001205,0.1149,30,3.45,30 tablets (1 a day)
+H5216,138,000,sumatriptan_50,65862014736,1.2009,9,10.81,9 tablets
+H5216,138,000,triamcinolone_cream_01,45802006436,0.1087,30,3.26,1 tube (30 g)
+H5216,249,000,adderall_xr_30,70010003401,0.8632,30,25.90,30 capsules (1 a day)
+H5216,249,000,albuterol_hfa,17270074000,2.7400,18,49.32,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5216,249,000,amlodipine_5,82009002710,0.0321,30,0.96,30 tablets (1 a day)
+H5216,249,000,amoxicillin_500,00781261305,0.2859,30,8.58,"30 capsules (a typical 10-day course, 3 a day)"
+H5216,249,000,amoxicillin_susp_400,00143988701,0.1188,100,11.88,1 bottle (100 mL)
+H5216,249,000,atorvastatin_20,60505257908,0.1037,30,3.11,30 tablets (1 a day)
+H5216,249,000,dupixent_300,00024591502,998.1643,4,3992.66,"2 pens (2 mL each), every other week"
+H5216,249,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5216,249,000,epinephrine_03,00093598627,210.4652,2,420.93,1 two-pack of auto-injectors
+H5216,249,000,fluticasone_nasal_50,60505082901,1.1042,16,17.67,"1 bottle (16 g, about 120 sprays)"
+H5216,249,000,humira_40,00074055402,3281.9918,2,6563.98,2 pens (every other week)
+H5216,249,000,lantus_solostar,00088221905,6.1647,15,92.47,1 box of 5 pens (3 mL each)
+H5216,249,000,latanoprost_0005,61314054701,4.3689,2.5,10.92,1 bottle (2.5 mL)
+H5216,249,000,levothyroxine_50,00378180310,0.1598,30,4.79,30 tablets (1 a day)
+H5216,249,000,lisinopril_10,68180098003,0.0626,30,1.88,30 tablets (1 a day)
+H5216,249,000,metformin_500,70010006310,0.0458,60,2.75,60 tablets (1 twice a day)
+H5216,249,000,mounjaro_5,00002149580,534.0367,2,1068.07,"4 single-dose pens (0.5 mL each), 1 a week"
+H5216,249,000,omeprazole_20,55111015810,0.0901,30,2.70,30 capsules (1 a day)
+H5216,249,000,ozempic_05,00169418113,329.7082,3,989.12,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5216,249,000,paxlovid,00069504530,49.6223,30,1488.67,1 five-day dose pack (30 tablets)
+H5216,249,000,sertraline_50,65862001205,0.1225,30,3.67,30 tablets (1 a day)
+H5216,249,000,sumatriptan_50,65862014736,1.2577,9,11.32,9 tablets
+H5216,249,000,triamcinolone_cream_01,45802006436,0.1132,30,3.40,1 tube (30 g)
+H5216,424,000,adderall_xr_30,70010003401,0.8632,30,25.90,30 capsules (1 a day)
+H5216,424,000,albuterol_hfa,17270074000,2.7400,18,49.32,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5216,424,000,amlodipine_5,82009002710,0.0321,30,0.96,30 tablets (1 a day)
+H5216,424,000,amoxicillin_500,00781261305,0.2859,30,8.58,"30 capsules (a typical 10-day course, 3 a day)"
+H5216,424,000,amoxicillin_susp_400,00143988701,0.1188,100,11.88,1 bottle (100 mL)
+H5216,424,000,atorvastatin_20,60505257908,0.1037,30,3.11,30 tablets (1 a day)
+H5216,424,000,dupixent_300,00024591502,998.1643,4,3992.66,"2 pens (2 mL each), every other week"
+H5216,424,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5216,424,000,epinephrine_03,00093598627,210.4652,2,420.93,1 two-pack of auto-injectors
+H5216,424,000,fluticasone_nasal_50,60505082901,1.1042,16,17.67,"1 bottle (16 g, about 120 sprays)"
+H5216,424,000,humira_40,00074055402,3281.9918,2,6563.98,2 pens (every other week)
+H5216,424,000,lantus_solostar,00088221905,6.1647,15,92.47,1 box of 5 pens (3 mL each)
+H5216,424,000,latanoprost_0005,61314054701,4.3689,2.5,10.92,1 bottle (2.5 mL)
+H5216,424,000,levothyroxine_50,00378180310,0.1598,30,4.79,30 tablets (1 a day)
+H5216,424,000,lisinopril_10,68180098003,0.0626,30,1.88,30 tablets (1 a day)
+H5216,424,000,metformin_500,70010006310,0.0458,60,2.75,60 tablets (1 twice a day)
+H5216,424,000,mounjaro_5,00002149580,534.0367,2,1068.07,"4 single-dose pens (0.5 mL each), 1 a week"
+H5216,424,000,omeprazole_20,55111015810,0.0901,30,2.70,30 capsules (1 a day)
+H5216,424,000,ozempic_05,00169418113,329.7082,3,989.12,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5216,424,000,paxlovid,00069504530,49.6223,30,1488.67,1 five-day dose pack (30 tablets)
+H5216,424,000,sertraline_50,65862001205,0.1225,30,3.67,30 tablets (1 a day)
+H5216,424,000,sumatriptan_50,65862014736,1.2577,9,11.32,9 tablets
+H5216,424,000,triamcinolone_cream_01,45802006436,0.1132,30,3.40,1 tube (30 g)
+H5253,155,000,adderall_xr_30,70010003401,0.9485,30,28.46,30 capsules (1 a day)
+H5253,155,000,albuterol_hfa,17270074000,1.6026,18,28.85,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5253,155,000,amlodipine_5,82009002710,0.1325,30,3.98,30 tablets (1 a day)
+H5253,155,000,amoxicillin_500,00781261305,0.1960,30,5.88,"30 capsules (a typical 10-day course, 3 a day)"
+H5253,155,000,amoxicillin_susp_400,00143988701,0.0281,100,2.81,1 bottle (100 mL)
+H5253,155,000,atorvastatin_20,60505257908,0.1481,30,4.44,30 tablets (1 a day)
+H5253,155,000,dupixent_300,00024591502,1050.4665,4,4201.87,"2 pens (2 mL each), every other week"
+H5253,155,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5253,155,000,epinephrine_03,00115169449,88.2028,2,176.41,1 two-pack of auto-injectors
+H5253,155,000,fluticasone_nasal_50,60505082901,0.3887,16,6.22,"1 bottle (16 g, about 120 sprays)"
+H5253,155,000,lantus_solostar,00088221905,6.5434,15,98.15,1 box of 5 pens (3 mL each)
+H5253,155,000,latanoprost_0005,61314054701,1.9770,2.5,4.94,1 bottle (2.5 mL)
+H5253,155,000,levothyroxine_50,60793085101,0.1350,30,4.05,30 tablets (1 a day)
+H5253,155,000,lisinopril_10,68180098003,0.1361,30,4.08,30 tablets (1 a day)
+H5253,155,000,metformin_500,70010006310,0.0741,60,4.45,60 tablets (1 twice a day)
+H5253,155,000,mounjaro_5,00002149580,565.3697,2,1130.74,"4 single-dose pens (0.5 mL each), 1 a week"
+H5253,155,000,omeprazole_20,55111015810,0.1328,30,3.98,30 capsules (1 a day)
+H5253,155,000,ozempic_05,00169418113,347.4325,3,1042.30,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5253,155,000,paxlovid,00069504530,52.0871,30,1562.61,1 five-day dose pack (30 tablets)
+H5253,155,000,sertraline_50,65862001205,0.1587,30,4.76,30 tablets (1 a day)
+H5253,155,000,sumatriptan_50,65862014736,1.3902,9,12.51,9 tablets
+H5253,155,000,triamcinolone_cream_01,45802006436,0.0736,30,2.21,1 tube (30 g)
+H5253,157,001,adderall_xr_30,70010003401,0.9485,30,28.46,30 capsules (1 a day)
+H5253,157,001,albuterol_hfa,17270074000,1.6026,18,28.85,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5253,157,001,amlodipine_5,82009002710,0.1325,30,3.98,30 tablets (1 a day)
+H5253,157,001,amoxicillin_500,00781261305,0.1960,30,5.88,"30 capsules (a typical 10-day course, 3 a day)"
+H5253,157,001,amoxicillin_susp_400,00143988701,0.0281,100,2.81,1 bottle (100 mL)
+H5253,157,001,atorvastatin_20,60505257908,0.1481,30,4.44,30 tablets (1 a day)
+H5253,157,001,dupixent_300,00024591502,1050.4665,4,4201.87,"2 pens (2 mL each), every other week"
+H5253,157,001,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5253,157,001,epinephrine_03,00115169449,88.2028,2,176.41,1 two-pack of auto-injectors
+H5253,157,001,fluticasone_nasal_50,60505082901,0.3887,16,6.22,"1 bottle (16 g, about 120 sprays)"
+H5253,157,001,lantus_solostar,00088221905,6.5434,15,98.15,1 box of 5 pens (3 mL each)
+H5253,157,001,latanoprost_0005,61314054701,1.9770,2.5,4.94,1 bottle (2.5 mL)
+H5253,157,001,levothyroxine_50,60793085101,0.1350,30,4.05,30 tablets (1 a day)
+H5253,157,001,lisinopril_10,68180098003,0.1361,30,4.08,30 tablets (1 a day)
+H5253,157,001,metformin_500,70010006310,0.0741,60,4.45,60 tablets (1 twice a day)
+H5253,157,001,mounjaro_5,00002149580,565.3697,2,1130.74,"4 single-dose pens (0.5 mL each), 1 a week"
+H5253,157,001,omeprazole_20,55111015810,0.1328,30,3.98,30 capsules (1 a day)
+H5253,157,001,ozempic_05,00169418113,347.4325,3,1042.30,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5253,157,001,paxlovid,00069504530,52.0871,30,1562.61,1 five-day dose pack (30 tablets)
+H5253,157,001,sertraline_50,65862001205,0.1587,30,4.76,30 tablets (1 a day)
+H5253,157,001,sumatriptan_50,65862014736,1.3902,9,12.51,9 tablets
+H5253,157,001,triamcinolone_cream_01,45802006436,0.0736,30,2.21,1 tube (30 g)
+H5253,157,002,adderall_xr_30,70010003401,0.9590,30,28.77,30 capsules (1 a day)
+H5253,157,002,albuterol_hfa,17270074000,1.5515,18,27.93,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5253,157,002,amlodipine_5,82009002710,0.1245,30,3.73,30 tablets (1 a day)
+H5253,157,002,amoxicillin_500,00781261305,0.1945,30,5.83,"30 capsules (a typical 10-day course, 3 a day)"
+H5253,157,002,amoxicillin_susp_400,00143988701,0.0272,100,2.72,1 bottle (100 mL)
+H5253,157,002,atorvastatin_20,60505257908,0.1342,30,4.03,30 tablets (1 a day)
+H5253,157,002,dupixent_300,00024591502,1045.7049,4,4182.82,"2 pens (2 mL each), every other week"
+H5253,157,002,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5253,157,002,epinephrine_03,00115169449,85.5657,2,171.13,1 two-pack of auto-injectors
+H5253,157,002,fluticasone_nasal_50,60505082901,0.3477,16,5.56,"1 bottle (16 g, about 120 sprays)"
+H5253,157,002,lantus_solostar,00088221905,6.5392,15,98.09,1 box of 5 pens (3 mL each)
+H5253,157,002,latanoprost_0005,61314054701,1.6323,2.5,4.08,1 bottle (2.5 mL)
+H5253,157,002,levothyroxine_50,00378180310,0.1333,30,4.00,30 tablets (1 a day)
+H5253,157,002,lisinopril_10,68180098003,0.1284,30,3.85,30 tablets (1 a day)
+H5253,157,002,metformin_500,70010006310,0.0656,60,3.94,60 tablets (1 twice a day)
+H5253,157,002,mounjaro_5,00002149580,565.1323,2,1130.26,"4 single-dose pens (0.5 mL each), 1 a week"
+H5253,157,002,omeprazole_20,55111015810,0.1180,30,3.54,30 capsules (1 a day)
+H5253,157,002,ozempic_05,00169418113,347.3793,3,1042.14,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5253,157,002,paxlovid,00069504530,52.0511,30,1561.53,1 five-day dose pack (30 tablets)
+H5253,157,002,sertraline_50,65862001205,0.1284,30,3.85,30 tablets (1 a day)
+H5253,157,002,sumatriptan_50,65862014736,1.3346,9,12.01,9 tablets
+H5253,157,002,triamcinolone_cream_01,45802006436,0.0734,30,2.20,1 tube (30 g)
+H5253,159,000,adderall_xr_30,70010003401,0.9485,30,28.46,30 capsules (1 a day)
+H5253,159,000,albuterol_hfa,17270074000,1.6026,18,28.85,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5253,159,000,amlodipine_5,82009002710,0.1325,30,3.98,30 tablets (1 a day)
+H5253,159,000,amoxicillin_500,00781261305,0.1960,30,5.88,"30 capsules (a typical 10-day course, 3 a day)"
+H5253,159,000,amoxicillin_susp_400,00143988701,0.0281,100,2.81,1 bottle (100 mL)
+H5253,159,000,atorvastatin_20,60505257908,0.1481,30,4.44,30 tablets (1 a day)
+H5253,159,000,dupixent_300,00024591502,1050.4665,4,4201.87,"2 pens (2 mL each), every other week"
+H5253,159,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5253,159,000,epinephrine_03,00115169449,88.2028,2,176.41,1 two-pack of auto-injectors
+H5253,159,000,fluticasone_nasal_50,60505082901,0.3887,16,6.22,"1 bottle (16 g, about 120 sprays)"
+H5253,159,000,lantus_solostar,00088221905,6.5434,15,98.15,1 box of 5 pens (3 mL each)
+H5253,159,000,latanoprost_0005,61314054701,1.9770,2.5,4.94,1 bottle (2.5 mL)
+H5253,159,000,levothyroxine_50,60793085101,0.1350,30,4.05,30 tablets (1 a day)
+H5253,159,000,lisinopril_10,68180098003,0.1361,30,4.08,30 tablets (1 a day)
+H5253,159,000,metformin_500,70010006310,0.0741,60,4.45,60 tablets (1 twice a day)
+H5253,159,000,mounjaro_5,00002149580,565.3697,2,1130.74,"4 single-dose pens (0.5 mL each), 1 a week"
+H5253,159,000,omeprazole_20,55111015810,0.1328,30,3.98,30 capsules (1 a day)
+H5253,159,000,ozempic_05,00169418113,347.4325,3,1042.30,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5253,159,000,paxlovid,00069504530,52.0871,30,1562.61,1 five-day dose pack (30 tablets)
+H5253,159,000,sertraline_50,65862001205,0.1587,30,4.76,30 tablets (1 a day)
+H5253,159,000,sumatriptan_50,65862014736,1.3902,9,12.51,9 tablets
+H5253,159,000,triamcinolone_cream_01,45802006436,0.0736,30,2.21,1 tube (30 g)
+H5314,001,000,adderall_xr_30,70010003401,0.5457,30,16.37,30 capsules (1 a day)
+H5314,001,000,albuterol_hfa,17270074000,1.8285,18,32.91,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5314,001,000,amlodipine_5,82009002710,0.1099,30,3.30,30 tablets (1 a day)
+H5314,001,000,amoxicillin_500,00781261305,0.0866,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H5314,001,000,amoxicillin_susp_400,00143988701,0.0370,100,3.70,1 bottle (100 mL)
+H5314,001,000,atorvastatin_20,60505257908,0.3059,30,9.18,30 tablets (1 a day)
+H5314,001,000,concerta_18,31722095201,0.7997,30,23.99,30 tablets (1 a day)
+H5314,001,000,dupixent_300,00024591502,1011.1909,4,4044.76,"2 pens (2 mL each), every other week"
+H5314,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5314,001,000,epinephrine_03,00093598627,134.9401,2,269.88,1 two-pack of auto-injectors
+H5314,001,000,fluticasone_nasal_50,60505082901,0.4799,16,7.68,"1 bottle (16 g, about 120 sprays)"
+H5314,001,000,humira_40,00074055402,3341.8732,2,6683.75,2 pens (every other week)
+H5314,001,000,lantus_solostar,00088221905,6.0605,15,90.91,1 box of 5 pens (3 mL each)
+H5314,001,000,latanoprost_0005,61314054701,1.7766,2.5,4.44,1 bottle (2.5 mL)
+H5314,001,000,levothyroxine_50,00378180310,0.1351,30,4.05,30 tablets (1 a day)
+H5314,001,000,lisinopril_10,68180098003,0.1715,30,5.15,30 tablets (1 a day)
+H5314,001,000,metformin_500,70010006310,0.1266,60,7.60,60 tablets (1 twice a day)
+H5314,001,000,mounjaro_5,00002149580,523.4623,2,1046.92,"4 single-dose pens (0.5 mL each), 1 a week"
+H5314,001,000,omeprazole_20,55111015810,0.2897,30,8.69,30 capsules (1 a day)
+H5314,001,000,ozempic_05,00169418113,321.4710,3,964.41,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5314,001,000,paxlovid,00069504530,47.9924,30,1439.77,1 five-day dose pack (30 tablets)
+H5314,001,000,sertraline_50,65862001205,0.0406,30,1.22,30 tablets (1 a day)
+H5314,001,000,sumatriptan_50,65862014736,0.4096,9,3.69,9 tablets
+H5314,001,000,triamcinolone_cream_01,45802006436,0.0492,30,1.48,1 tube (30 g)
+H5314,002,000,adderall_xr_30,70010003401,0.5457,30,16.37,30 capsules (1 a day)
+H5314,002,000,albuterol_hfa,17270074000,1.8285,18,32.91,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5314,002,000,amlodipine_5,82009002710,0.1099,30,3.30,30 tablets (1 a day)
+H5314,002,000,amoxicillin_500,00781261305,0.0866,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H5314,002,000,amoxicillin_susp_400,00143988701,0.0370,100,3.70,1 bottle (100 mL)
+H5314,002,000,atorvastatin_20,60505257908,0.3059,30,9.18,30 tablets (1 a day)
+H5314,002,000,concerta_18,31722095201,0.7997,30,23.99,30 tablets (1 a day)
+H5314,002,000,dupixent_300,00024591502,1011.1909,4,4044.76,"2 pens (2 mL each), every other week"
+H5314,002,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5314,002,000,epinephrine_03,00093598627,134.9401,2,269.88,1 two-pack of auto-injectors
+H5314,002,000,fluticasone_nasal_50,60505082901,0.4799,16,7.68,"1 bottle (16 g, about 120 sprays)"
+H5314,002,000,humira_40,00074055402,3341.8732,2,6683.75,2 pens (every other week)
+H5314,002,000,lantus_solostar,00088221905,6.0605,15,90.91,1 box of 5 pens (3 mL each)
+H5314,002,000,latanoprost_0005,61314054701,1.7766,2.5,4.44,1 bottle (2.5 mL)
+H5314,002,000,levothyroxine_50,00378180310,0.1351,30,4.05,30 tablets (1 a day)
+H5314,002,000,lisinopril_10,68180098003,0.1715,30,5.15,30 tablets (1 a day)
+H5314,002,000,metformin_500,70010006310,0.1266,60,7.60,60 tablets (1 twice a day)
+H5314,002,000,mounjaro_5,00002149580,523.4623,2,1046.92,"4 single-dose pens (0.5 mL each), 1 a week"
+H5314,002,000,omeprazole_20,55111015810,0.2897,30,8.69,30 capsules (1 a day)
+H5314,002,000,ozempic_05,00169418113,321.4710,3,964.41,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5314,002,000,paxlovid,00069504530,47.9924,30,1439.77,1 five-day dose pack (30 tablets)
+H5314,002,000,sertraline_50,65862001205,0.0406,30,1.22,30 tablets (1 a day)
+H5314,002,000,sumatriptan_50,65862014736,0.4096,9,3.69,9 tablets
+H5314,002,000,triamcinolone_cream_01,45802006436,0.0492,30,1.48,1 tube (30 g)
+H5521,159,000,adderall_xr_30,70010003401,2.8614,30,85.84,30 capsules (1 a day)
+H5521,159,000,albuterol_hfa,69097002160,0.7833,18,14.10,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5521,159,000,amlodipine_5,82009002710,0.0622,30,1.87,30 tablets (1 a day)
+H5521,159,000,amoxicillin_500,00781261305,0.0196,30,0.59,"30 capsules (a typical 10-day course, 3 a day)"
+H5521,159,000,amoxicillin_susp_400,00143988701,0.0156,100,1.56,1 bottle (100 mL)
+H5521,159,000,atorvastatin_20,60505257908,0.0457,30,1.37,30 tablets (1 a day)
+H5521,159,000,concerta_18,31722095201,4.5474,30,136.42,30 tablets (1 a day)
+H5521,159,000,dupixent_300,00024591502,1031.4862,4,4125.94,"2 pens (2 mL each), every other week"
+H5521,159,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5521,159,000,epinephrine_03,00115169449,90.0976,2,180.20,1 two-pack of auto-injectors
+H5521,159,000,fluticasone_nasal_50,60505082901,0.2120,16,3.39,"1 bottle (16 g, about 120 sprays)"
+H5521,159,000,lantus_solostar,00088221905,6.3250,15,94.88,1 box of 5 pens (3 mL each)
+H5521,159,000,latanoprost_0005,61314054701,0.3397,2.5,0.85,1 bottle (2.5 mL)
+H5521,159,000,levothyroxine_50,60846080201,0.0576,30,1.73,30 tablets (1 a day)
+H5521,159,000,lisinopril_10,68180098003,0.0577,30,1.73,30 tablets (1 a day)
+H5521,159,000,metformin_500,70010006310,0.0568,60,3.41,60 tablets (1 twice a day)
+H5521,159,000,mounjaro_5,00002149580,540.5206,2,1081.04,"4 single-dose pens (0.5 mL each), 1 a week"
+H5521,159,000,omeprazole_20,55111015810,0.0730,30,2.19,30 capsules (1 a day)
+H5521,159,000,ozempic_05,00169418113,332.9205,3,998.76,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5521,159,000,paxlovid,00069504530,50.5451,30,1516.35,1 five-day dose pack (30 tablets)
+H5521,159,000,sertraline_50,65862001205,0.0670,30,2.01,30 tablets (1 a day)
+H5521,159,000,sumatriptan_50,65862014736,0.3394,9,3.05,9 tablets
+H5521,159,000,triamcinolone_cream_01,45802006436,0.0609,30,1.83,1 tube (30 g)
+H5521,160,000,adderall_xr_30,70010003401,2.1691,30,65.07,30 capsules (1 a day)
+H5521,160,000,albuterol_hfa,69097002160,0.5816,18,10.47,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5521,160,000,amlodipine_5,82009002710,0.0607,30,1.82,30 tablets (1 a day)
+H5521,160,000,amoxicillin_500,00781261305,0.0189,30,0.57,"30 capsules (a typical 10-day course, 3 a day)"
+H5521,160,000,amoxicillin_susp_400,00143988701,0.0156,100,1.56,1 bottle (100 mL)
+H5521,160,000,atorvastatin_20,60505257908,0.0449,30,1.35,30 tablets (1 a day)
+H5521,160,000,concerta_18,31722095201,4.3830,30,131.49,30 tablets (1 a day)
+H5521,160,000,dupixent_300,00024591502,1031.4862,4,4125.94,"2 pens (2 mL each), every other week"
+H5521,160,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5521,160,000,epinephrine_03,00115169449,89.3305,2,178.66,1 two-pack of auto-injectors
+H5521,160,000,fluticasone_nasal_50,60505082901,0.2631,16,4.21,"1 bottle (16 g, about 120 sprays)"
+H5521,160,000,lantus_solostar,00088221905,6.3250,15,94.88,1 box of 5 pens (3 mL each)
+H5521,160,000,latanoprost_0005,61314054701,0.3461,2.5,0.87,1 bottle (2.5 mL)
+H5521,160,000,levothyroxine_50,60846080201,0.0543,30,1.63,30 tablets (1 a day)
+H5521,160,000,lisinopril_10,68180098003,0.0584,30,1.75,30 tablets (1 a day)
+H5521,160,000,metformin_500,70010006310,0.0565,60,3.39,60 tablets (1 twice a day)
+H5521,160,000,mounjaro_5,00002149580,540.5734,2,1081.15,"4 single-dose pens (0.5 mL each), 1 a week"
+H5521,160,000,omeprazole_20,55111015810,0.0713,30,2.14,30 capsules (1 a day)
+H5521,160,000,ozempic_05,00169418113,332.9551,3,998.87,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5521,160,000,paxlovid,00069504530,50.5451,30,1516.35,1 five-day dose pack (30 tablets)
+H5521,160,000,sertraline_50,65862001205,0.0672,30,2.02,30 tablets (1 a day)
+H5521,160,000,sumatriptan_50,65862014736,0.2461,9,2.21,9 tablets
+H5521,160,000,triamcinolone_cream_01,45802006436,0.0643,30,1.93,1 tube (30 g)
+H5521,450,000,adderall_xr_30,70010003401,2.1691,30,65.07,30 capsules (1 a day)
+H5521,450,000,albuterol_hfa,69097002160,0.5816,18,10.47,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5521,450,000,amlodipine_5,82009002710,0.0607,30,1.82,30 tablets (1 a day)
+H5521,450,000,amoxicillin_500,00781261305,0.0189,30,0.57,"30 capsules (a typical 10-day course, 3 a day)"
+H5521,450,000,amoxicillin_susp_400,00143988701,0.0156,100,1.56,1 bottle (100 mL)
+H5521,450,000,atorvastatin_20,60505257908,0.0449,30,1.35,30 tablets (1 a day)
+H5521,450,000,concerta_18,31722095201,4.3830,30,131.49,30 tablets (1 a day)
+H5521,450,000,dupixent_300,00024591502,1031.4862,4,4125.94,"2 pens (2 mL each), every other week"
+H5521,450,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5521,450,000,epinephrine_03,00115169449,89.3305,2,178.66,1 two-pack of auto-injectors
+H5521,450,000,fluticasone_nasal_50,60505082901,0.2631,16,4.21,"1 bottle (16 g, about 120 sprays)"
+H5521,450,000,lantus_solostar,00088221905,6.3250,15,94.88,1 box of 5 pens (3 mL each)
+H5521,450,000,latanoprost_0005,61314054701,0.3461,2.5,0.87,1 bottle (2.5 mL)
+H5521,450,000,levothyroxine_50,60846080201,0.0543,30,1.63,30 tablets (1 a day)
+H5521,450,000,lisinopril_10,68180098003,0.0584,30,1.75,30 tablets (1 a day)
+H5521,450,000,metformin_500,70010006310,0.0565,60,3.39,60 tablets (1 twice a day)
+H5521,450,000,mounjaro_5,00002149580,540.5734,2,1081.15,"4 single-dose pens (0.5 mL each), 1 a week"
+H5521,450,000,omeprazole_20,55111015810,0.0713,30,2.14,30 capsules (1 a day)
+H5521,450,000,ozempic_05,00169418113,332.9551,3,998.87,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5521,450,000,paxlovid,00069504530,50.5451,30,1516.35,1 five-day dose pack (30 tablets)
+H5521,450,000,sertraline_50,65862001205,0.0672,30,2.02,30 tablets (1 a day)
+H5521,450,000,sumatriptan_50,65862014736,0.2461,9,2.21,9 tablets
+H5521,450,000,triamcinolone_cream_01,45802006436,0.0643,30,1.93,1 tube (30 g)
+H5521,451,000,adderall_xr_30,70010003401,2.8614,30,85.84,30 capsules (1 a day)
+H5521,451,000,albuterol_hfa,69097002160,0.7833,18,14.10,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5521,451,000,amlodipine_5,82009002710,0.0622,30,1.87,30 tablets (1 a day)
+H5521,451,000,amoxicillin_500,00781261305,0.0196,30,0.59,"30 capsules (a typical 10-day course, 3 a day)"
+H5521,451,000,amoxicillin_susp_400,00143988701,0.0156,100,1.56,1 bottle (100 mL)
+H5521,451,000,atorvastatin_20,60505257908,0.0457,30,1.37,30 tablets (1 a day)
+H5521,451,000,concerta_18,31722095201,4.5474,30,136.42,30 tablets (1 a day)
+H5521,451,000,dupixent_300,00024591502,1031.4862,4,4125.94,"2 pens (2 mL each), every other week"
+H5521,451,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5521,451,000,epinephrine_03,00115169449,90.0976,2,180.20,1 two-pack of auto-injectors
+H5521,451,000,fluticasone_nasal_50,60505082901,0.2120,16,3.39,"1 bottle (16 g, about 120 sprays)"
+H5521,451,000,lantus_solostar,00088221905,6.3250,15,94.88,1 box of 5 pens (3 mL each)
+H5521,451,000,latanoprost_0005,61314054701,0.3397,2.5,0.85,1 bottle (2.5 mL)
+H5521,451,000,levothyroxine_50,60846080201,0.0576,30,1.73,30 tablets (1 a day)
+H5521,451,000,lisinopril_10,68180098003,0.0577,30,1.73,30 tablets (1 a day)
+H5521,451,000,metformin_500,70010006310,0.0568,60,3.41,60 tablets (1 twice a day)
+H5521,451,000,mounjaro_5,00002149580,540.5206,2,1081.04,"4 single-dose pens (0.5 mL each), 1 a week"
+H5521,451,000,omeprazole_20,55111015810,0.0730,30,2.19,30 capsules (1 a day)
+H5521,451,000,ozempic_05,00169418113,332.9205,3,998.76,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5521,451,000,paxlovid,00069504530,50.5451,30,1516.35,1 five-day dose pack (30 tablets)
+H5521,451,000,sertraline_50,65862001205,0.0670,30,2.01,30 tablets (1 a day)
+H5521,451,000,sumatriptan_50,65862014736,0.3394,9,3.05,9 tablets
+H5521,451,000,triamcinolone_cream_01,45802006436,0.0609,30,1.83,1 tube (30 g)
+H5652,001,000,adderall_xr_30,70010003401,0.8850,30,26.55,30 capsules (1 a day)
+H5652,001,000,albuterol_hfa,17270074000,1.5871,18,28.57,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5652,001,000,amlodipine_5,82009002710,0.1199,30,3.60,30 tablets (1 a day)
+H5652,001,000,amoxicillin_500,00781261305,0.1820,30,5.46,"30 capsules (a typical 10-day course, 3 a day)"
+H5652,001,000,amoxicillin_susp_400,00143988701,0.0283,100,2.83,1 bottle (100 mL)
+H5652,001,000,atorvastatin_20,60505257908,0.1296,30,3.89,30 tablets (1 a day)
+H5652,001,000,dupixent_300,00024591502,1040.7636,4,4163.05,"2 pens (2 mL each), every other week"
+H5652,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5652,001,000,epinephrine_03,00115169449,102.7062,2,205.41,1 two-pack of auto-injectors
+H5652,001,000,fluticasone_nasal_50,60505082901,0.3689,16,5.90,"1 bottle (16 g, about 120 sprays)"
+H5652,001,000,lantus_solostar,00088221905,6.5375,15,98.06,1 box of 5 pens (3 mL each)
+H5652,001,000,latanoprost_0005,61314054701,1.6724,2.5,4.18,1 bottle (2.5 mL)
+H5652,001,000,levothyroxine_50,00378180310,0.1276,30,3.83,30 tablets (1 a day)
+H5652,001,000,lisinopril_10,68180098003,0.1251,30,3.75,30 tablets (1 a day)
+H5652,001,000,metformin_500,70010006310,0.0634,60,3.80,60 tablets (1 twice a day)
+H5652,001,000,mounjaro_5,00002149580,566.6959,2,1133.39,"4 single-dose pens (0.5 mL each), 1 a week"
+H5652,001,000,omeprazole_20,55111015810,0.1168,30,3.50,30 capsules (1 a day)
+H5652,001,000,ozempic_05,00169418113,348.6677,3,1046.00,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5652,001,000,paxlovid,00069504530,52.3978,30,1571.93,1 five-day dose pack (30 tablets)
+H5652,001,000,sertraline_50,65862001205,0.1231,30,3.69,30 tablets (1 a day)
+H5652,001,000,sumatriptan_50,65862014736,1.3503,9,12.15,9 tablets
+H5652,001,000,triamcinolone_cream_01,45802006436,0.0730,30,2.19,1 tube (30 g)
+H5652,003,000,adderall_xr_30,70010003401,0.8891,30,26.67,30 capsules (1 a day)
+H5652,003,000,albuterol_hfa,17270074000,1.5859,18,28.55,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5652,003,000,amlodipine_5,82009002710,0.1205,30,3.61,30 tablets (1 a day)
+H5652,003,000,amoxicillin_500,00781261305,0.1827,30,5.48,"30 capsules (a typical 10-day course, 3 a day)"
+H5652,003,000,amoxicillin_susp_400,00143988701,0.0283,100,2.83,1 bottle (100 mL)
+H5652,003,000,atorvastatin_20,60505257908,0.1301,30,3.90,30 tablets (1 a day)
+H5652,003,000,dupixent_300,00024591502,1040.7266,4,4162.91,"2 pens (2 mL each), every other week"
+H5652,003,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5652,003,000,epinephrine_03,00115169449,102.8264,2,205.65,1 two-pack of auto-injectors
+H5652,003,000,fluticasone_nasal_50,60505082901,0.3701,16,5.92,"1 bottle (16 g, about 120 sprays)"
+H5652,003,000,lantus_solostar,00088221905,6.5353,15,98.03,1 box of 5 pens (3 mL each)
+H5652,003,000,latanoprost_0005,61314054701,1.6776,2.5,4.19,1 bottle (2.5 mL)
+H5652,003,000,levothyroxine_50,00378180310,0.1283,30,3.85,30 tablets (1 a day)
+H5652,003,000,lisinopril_10,68180098003,0.1258,30,3.77,30 tablets (1 a day)
+H5652,003,000,metformin_500,70010006310,0.0637,60,3.82,60 tablets (1 twice a day)
+H5652,003,000,mounjaro_5,00002149580,566.6108,2,1133.22,"4 single-dose pens (0.5 mL each), 1 a week"
+H5652,003,000,omeprazole_20,55111015810,0.1175,30,3.52,30 capsules (1 a day)
+H5652,003,000,ozempic_05,00169418113,348.6077,3,1045.82,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5652,003,000,paxlovid,00069504530,52.3897,30,1571.69,1 five-day dose pack (30 tablets)
+H5652,003,000,sertraline_50,65862001205,0.1237,30,3.71,30 tablets (1 a day)
+H5652,003,000,sumatriptan_50,65862014736,1.3520,9,12.17,9 tablets
+H5652,003,000,triamcinolone_cream_01,45802006436,0.0733,30,2.20,1 tube (30 g)
+H5652,004,000,adderall_xr_30,70010003401,0.8850,30,26.55,30 capsules (1 a day)
+H5652,004,000,albuterol_hfa,17270074000,1.5871,18,28.57,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5652,004,000,amlodipine_5,82009002710,0.1199,30,3.60,30 tablets (1 a day)
+H5652,004,000,amoxicillin_500,00781261305,0.1820,30,5.46,"30 capsules (a typical 10-day course, 3 a day)"
+H5652,004,000,amoxicillin_susp_400,00143988701,0.0283,100,2.83,1 bottle (100 mL)
+H5652,004,000,atorvastatin_20,60505257908,0.1296,30,3.89,30 tablets (1 a day)
+H5652,004,000,dupixent_300,00024591502,1040.7636,4,4163.05,"2 pens (2 mL each), every other week"
+H5652,004,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5652,004,000,epinephrine_03,00115169449,102.7062,2,205.41,1 two-pack of auto-injectors
+H5652,004,000,fluticasone_nasal_50,60505082901,0.3689,16,5.90,"1 bottle (16 g, about 120 sprays)"
+H5652,004,000,lantus_solostar,00088221905,6.5375,15,98.06,1 box of 5 pens (3 mL each)
+H5652,004,000,latanoprost_0005,61314054701,1.6724,2.5,4.18,1 bottle (2.5 mL)
+H5652,004,000,levothyroxine_50,00378180310,0.1276,30,3.83,30 tablets (1 a day)
+H5652,004,000,lisinopril_10,68180098003,0.1251,30,3.75,30 tablets (1 a day)
+H5652,004,000,metformin_500,70010006310,0.0634,60,3.80,60 tablets (1 twice a day)
+H5652,004,000,mounjaro_5,00002149580,566.6959,2,1133.39,"4 single-dose pens (0.5 mL each), 1 a week"
+H5652,004,000,omeprazole_20,55111015810,0.1168,30,3.50,30 capsules (1 a day)
+H5652,004,000,ozempic_05,00169418113,348.6677,3,1046.00,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5652,004,000,paxlovid,00069504530,52.3978,30,1571.93,1 five-day dose pack (30 tablets)
+H5652,004,000,sertraline_50,65862001205,0.1231,30,3.69,30 tablets (1 a day)
+H5652,004,000,sumatriptan_50,65862014736,1.3503,9,12.15,9 tablets
+H5652,004,000,triamcinolone_cream_01,45802006436,0.0730,30,2.19,1 tube (30 g)
+H5652,006,000,adderall_xr_30,70010003401,0.8850,30,26.55,30 capsules (1 a day)
+H5652,006,000,albuterol_hfa,17270074000,1.5871,18,28.57,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5652,006,000,amlodipine_5,82009002710,0.1199,30,3.60,30 tablets (1 a day)
+H5652,006,000,amoxicillin_500,00781261305,0.1820,30,5.46,"30 capsules (a typical 10-day course, 3 a day)"
+H5652,006,000,amoxicillin_susp_400,00143988701,0.0283,100,2.83,1 bottle (100 mL)
+H5652,006,000,atorvastatin_20,60505257908,0.1296,30,3.89,30 tablets (1 a day)
+H5652,006,000,dupixent_300,00024591502,1040.7636,4,4163.05,"2 pens (2 mL each), every other week"
+H5652,006,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5652,006,000,epinephrine_03,00115169449,102.7062,2,205.41,1 two-pack of auto-injectors
+H5652,006,000,fluticasone_nasal_50,60505082901,0.3689,16,5.90,"1 bottle (16 g, about 120 sprays)"
+H5652,006,000,lantus_solostar,00088221905,6.5375,15,98.06,1 box of 5 pens (3 mL each)
+H5652,006,000,latanoprost_0005,61314054701,1.6724,2.5,4.18,1 bottle (2.5 mL)
+H5652,006,000,levothyroxine_50,00378180310,0.1276,30,3.83,30 tablets (1 a day)
+H5652,006,000,lisinopril_10,68180098003,0.1251,30,3.75,30 tablets (1 a day)
+H5652,006,000,metformin_500,70010006310,0.0634,60,3.80,60 tablets (1 twice a day)
+H5652,006,000,mounjaro_5,00002149580,566.6959,2,1133.39,"4 single-dose pens (0.5 mL each), 1 a week"
+H5652,006,000,omeprazole_20,55111015810,0.1168,30,3.50,30 capsules (1 a day)
+H5652,006,000,ozempic_05,00169418113,348.6677,3,1046.00,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5652,006,000,paxlovid,00069504530,52.3978,30,1571.93,1 five-day dose pack (30 tablets)
+H5652,006,000,sertraline_50,65862001205,0.1231,30,3.69,30 tablets (1 a day)
+H5652,006,000,sumatriptan_50,65862014736,1.3503,9,12.15,9 tablets
+H5652,006,000,triamcinolone_cream_01,45802006436,0.0730,30,2.19,1 tube (30 g)
+H5652,008,000,adderall_xr_30,70010003401,0.8850,30,26.55,30 capsules (1 a day)
+H5652,008,000,albuterol_hfa,17270074000,1.5871,18,28.57,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5652,008,000,amlodipine_5,82009002710,0.1199,30,3.60,30 tablets (1 a day)
+H5652,008,000,amoxicillin_500,00781261305,0.1820,30,5.46,"30 capsules (a typical 10-day course, 3 a day)"
+H5652,008,000,amoxicillin_susp_400,00143988701,0.0283,100,2.83,1 bottle (100 mL)
+H5652,008,000,atorvastatin_20,60505257908,0.1296,30,3.89,30 tablets (1 a day)
+H5652,008,000,dupixent_300,00024591502,1040.7636,4,4163.05,"2 pens (2 mL each), every other week"
+H5652,008,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5652,008,000,epinephrine_03,00115169449,102.7062,2,205.41,1 two-pack of auto-injectors
+H5652,008,000,fluticasone_nasal_50,60505082901,0.3689,16,5.90,"1 bottle (16 g, about 120 sprays)"
+H5652,008,000,lantus_solostar,00088221905,6.5375,15,98.06,1 box of 5 pens (3 mL each)
+H5652,008,000,latanoprost_0005,61314054701,1.6724,2.5,4.18,1 bottle (2.5 mL)
+H5652,008,000,levothyroxine_50,00378180310,0.1276,30,3.83,30 tablets (1 a day)
+H5652,008,000,lisinopril_10,68180098003,0.1251,30,3.75,30 tablets (1 a day)
+H5652,008,000,metformin_500,70010006310,0.0634,60,3.80,60 tablets (1 twice a day)
+H5652,008,000,mounjaro_5,00002149580,566.6959,2,1133.39,"4 single-dose pens (0.5 mL each), 1 a week"
+H5652,008,000,omeprazole_20,55111015810,0.1168,30,3.50,30 capsules (1 a day)
+H5652,008,000,ozempic_05,00169418113,348.6677,3,1046.00,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5652,008,000,paxlovid,00069504530,52.3978,30,1571.93,1 five-day dose pack (30 tablets)
+H5652,008,000,sertraline_50,65862001205,0.1231,30,3.69,30 tablets (1 a day)
+H5652,008,000,sumatriptan_50,65862014736,1.3503,9,12.15,9 tablets
+H5652,008,000,triamcinolone_cream_01,45802006436,0.0730,30,2.19,1 tube (30 g)
+H5793,014,000,adderall_xr_30,70010003401,2.8212,30,84.64,30 capsules (1 a day)
+H5793,014,000,albuterol_hfa,69097002160,0.7678,18,13.82,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5793,014,000,amlodipine_5,82009002710,0.0607,30,1.82,30 tablets (1 a day)
+H5793,014,000,amoxicillin_500,00781261305,0.0188,30,0.56,"30 capsules (a typical 10-day course, 3 a day)"
+H5793,014,000,amoxicillin_susp_400,00143988701,0.0161,100,1.61,1 bottle (100 mL)
+H5793,014,000,atorvastatin_20,60505257908,0.0449,30,1.35,30 tablets (1 a day)
+H5793,014,000,concerta_18,31722095201,4.2990,30,128.97,30 tablets (1 a day)
+H5793,014,000,dupixent_300,00024591502,1031.4862,4,4125.94,"2 pens (2 mL each), every other week"
+H5793,014,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5793,014,000,epinephrine_03,00115169449,89.3305,2,178.66,1 two-pack of auto-injectors
+H5793,014,000,fluticasone_nasal_50,60505082901,0.2150,16,3.44,"1 bottle (16 g, about 120 sprays)"
+H5793,014,000,lantus_solostar,00088221905,6.3250,15,94.88,1 box of 5 pens (3 mL each)
+H5793,014,000,latanoprost_0005,61314054701,0.3230,2.5,0.81,1 bottle (2.5 mL)
+H5793,014,000,levothyroxine_50,60846080201,0.0576,30,1.73,30 tablets (1 a day)
+H5793,014,000,lisinopril_10,68180098003,0.0572,30,1.72,30 tablets (1 a day)
+H5793,014,000,metformin_500,70010006310,0.0564,60,3.38,60 tablets (1 twice a day)
+H5793,014,000,mounjaro_5,00002149580,540.5734,2,1081.15,"4 single-dose pens (0.5 mL each), 1 a week"
+H5793,014,000,omeprazole_20,55111015810,0.0714,30,2.14,30 capsules (1 a day)
+H5793,014,000,ozempic_05,00169418113,332.9551,3,998.87,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5793,014,000,paxlovid,00069504530,50.5451,30,1516.35,1 five-day dose pack (30 tablets)
+H5793,014,000,sertraline_50,65862001205,0.0668,30,2.00,30 tablets (1 a day)
+H5793,014,000,sumatriptan_50,65862014736,0.3261,9,2.93,9 tablets
+H5793,014,000,triamcinolone_cream_01,45802006436,0.0661,30,1.98,1 tube (30 g)
+H5793,018,000,adderall_xr_30,70010003401,2.7891,30,83.67,30 capsules (1 a day)
+H5793,018,000,albuterol_hfa,69097002160,0.8173,18,14.71,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H5793,018,000,amlodipine_5,82009002710,0.0621,30,1.86,30 tablets (1 a day)
+H5793,018,000,amoxicillin_500,00781261305,0.0212,30,0.64,"30 capsules (a typical 10-day course, 3 a day)"
+H5793,018,000,amoxicillin_susp_400,00143988701,0.0177,100,1.77,1 bottle (100 mL)
+H5793,018,000,atorvastatin_20,60505257908,0.0463,30,1.39,30 tablets (1 a day)
+H5793,018,000,concerta_18,31722095201,4.4850,30,134.55,30 tablets (1 a day)
+H5793,018,000,dupixent_300,00024591502,1031.4862,4,4125.94,"2 pens (2 mL each), every other week"
+H5793,018,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H5793,018,000,epinephrine_03,00115169449,90.4468,2,180.89,1 two-pack of auto-injectors
+H5793,018,000,fluticasone_nasal_50,60505082901,0.2145,16,3.43,"1 bottle (16 g, about 120 sprays)"
+H5793,018,000,lantus_solostar,00088221905,6.3250,15,94.88,1 box of 5 pens (3 mL each)
+H5793,018,000,latanoprost_0005,61314054701,0.3634,2.5,0.91,1 bottle (2.5 mL)
+H5793,018,000,levothyroxine_50,60846080201,0.0576,30,1.73,30 tablets (1 a day)
+H5793,018,000,lisinopril_10,68180098003,0.0579,30,1.74,30 tablets (1 a day)
+H5793,018,000,metformin_500,70010006310,0.0568,60,3.41,60 tablets (1 twice a day)
+H5793,018,000,mounjaro_5,00002149580,540.5196,2,1081.04,"4 single-dose pens (0.5 mL each), 1 a week"
+H5793,018,000,omeprazole_20,55111015810,0.0731,30,2.19,30 capsules (1 a day)
+H5793,018,000,ozempic_05,00169418113,332.9196,3,998.76,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H5793,018,000,paxlovid,00069504530,50.5451,30,1516.35,1 five-day dose pack (30 tablets)
+H5793,018,000,sertraline_50,65862001205,0.0671,30,2.01,30 tablets (1 a day)
+H5793,018,000,sumatriptan_50,65862014736,0.3361,9,3.02,9 tablets
+H5793,018,000,triamcinolone_cream_01,45802006436,0.0605,30,1.81,1 tube (30 g)
+H6847,001,000,adderall_xr_30,70010003401,1.1086,30,33.26,30 capsules (1 a day)
+H6847,001,000,albuterol_hfa,17270074000,2.6149,18,47.07,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H6847,001,000,amlodipine_5,82009002710,0.0893,30,2.68,30 tablets (1 a day)
+H6847,001,000,amoxicillin_500,00781261305,0.1477,30,4.43,"30 capsules (a typical 10-day course, 3 a day)"
+H6847,001,000,amoxicillin_susp_400,00143988701,0.0667,100,6.67,1 bottle (100 mL)
+H6847,001,000,atorvastatin_20,60505257908,0.2230,30,6.69,30 tablets (1 a day)
+H6847,001,000,concerta_18,31722095201,1.4482,30,43.45,30 tablets (1 a day)
+H6847,001,000,dupixent_300,00024591502,1023.2616,4,4093.05,"2 pens (2 mL each), every other week"
+H6847,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H6847,001,000,epinephrine_03,00093598627,131.9268,2,263.85,1 two-pack of auto-injectors
+H6847,001,000,fluticasone_nasal_50,60505082901,1.0970,16,17.55,"1 bottle (16 g, about 120 sprays)"
+H6847,001,000,humira_40,00074055402,3371.8183,2,6743.64,2 pens (every other week)
+H6847,001,000,lantus_solostar,00088221905,6.2304,15,93.46,1 box of 5 pens (3 mL each)
+H6847,001,000,latanoprost_0005,61314054701,5.9039,2.5,14.76,1 bottle (2.5 mL)
+H6847,001,000,levothyroxine_50,00378180310,0.1333,30,4.00,30 tablets (1 a day)
+H6847,001,000,lisinopril_10,68180098003,0.0553,30,1.66,30 tablets (1 a day)
+H6847,001,000,metformin_500,70010006310,0.0473,60,2.84,60 tablets (1 twice a day)
+H6847,001,000,mounjaro_5,00002149580,538.6980,2,1077.40,"4 single-dose pens (0.5 mL each), 1 a week"
+H6847,001,000,omeprazole_20,55111015810,0.0883,30,2.65,30 capsules (1 a day)
+H6847,001,000,ozempic_05,00169418113,332.2819,3,996.85,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H6847,001,000,paxlovid,00069504530,49.8593,30,1495.78,1 five-day dose pack (30 tablets)
+H6847,001,000,sertraline_50,65862001205,0.0937,30,2.81,30 tablets (1 a day)
+H6847,001,000,sumatriptan_50,65862014736,0.7785,9,7.01,9 tablets
+H6847,001,000,triamcinolone_cream_01,45802006436,0.0696,30,2.09,1 tube (30 g)
+H7617,046,000,adderall_xr_30,70010003401,0.8696,30,26.09,30 capsules (1 a day)
+H7617,046,000,albuterol_hfa,17270074000,2.8168,18,50.70,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H7617,046,000,amlodipine_5,82009002710,0.0309,30,0.93,30 tablets (1 a day)
+H7617,046,000,amoxicillin_500,00781261305,0.2710,30,8.13,"30 capsules (a typical 10-day course, 3 a day)"
+H7617,046,000,amoxicillin_susp_400,00143988701,0.1107,100,11.07,1 bottle (100 mL)
+H7617,046,000,atorvastatin_20,60505257908,0.0997,30,2.99,30 tablets (1 a day)
+H7617,046,000,dupixent_300,00024591502,1006.4635,4,4025.85,"2 pens (2 mL each), every other week"
+H7617,046,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H7617,046,000,epinephrine_03,00093598627,208.4308,2,416.86,1 two-pack of auto-injectors
+H7617,046,000,fluticasone_nasal_50,60505082901,1.0632,16,17.01,"1 bottle (16 g, about 120 sprays)"
+H7617,046,000,humira_40,00074055402,3326.9115,2,6653.82,2 pens (every other week)
+H7617,046,000,lantus_solostar,00088221905,6.1624,15,92.44,1 box of 5 pens (3 mL each)
+H7617,046,000,latanoprost_0005,61314054701,4.2159,2.5,10.54,1 bottle (2.5 mL)
+H7617,046,000,levothyroxine_50,00378180310,0.1520,30,4.56,30 tablets (1 a day)
+H7617,046,000,lisinopril_10,68180098003,0.0581,30,1.74,30 tablets (1 a day)
+H7617,046,000,metformin_500,70010006310,0.0429,60,2.57,60 tablets (1 twice a day)
+H7617,046,000,mounjaro_5,00002149580,533.5747,2,1067.15,"4 single-dose pens (0.5 mL each), 1 a week"
+H7617,046,000,omeprazole_20,55111015810,0.0866,30,2.60,30 capsules (1 a day)
+H7617,046,000,ozempic_05,00169418113,329.2569,3,987.77,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H7617,046,000,paxlovid,00069504530,49.4564,30,1483.69,1 five-day dose pack (30 tablets)
+H7617,046,000,sertraline_50,65862001205,0.1135,30,3.41,30 tablets (1 a day)
+H7617,046,000,sumatriptan_50,65862014736,1.1880,9,10.69,9 tablets
+H7617,046,000,triamcinolone_cream_01,45802006436,0.1078,30,3.23,1 tube (30 g)
+H7670,001,000,adderall_xr_30,70010003401,1.9339,30,58.02,30 capsules (1 a day)
+H7670,001,000,albuterol_hfa,00173068220,3.1284,18,56.31,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H7670,001,000,amlodipine_5,82009002710,0.0446,30,1.34,30 tablets (1 a day)
+H7670,001,000,amoxicillin_500,00781261305,0.2342,30,7.03,"30 capsules (a typical 10-day course, 3 a day)"
+H7670,001,000,amoxicillin_susp_400,00143988701,0.0801,100,8.01,1 bottle (100 mL)
+H7670,001,000,atorvastatin_20,60505257908,0.1255,30,3.77,30 tablets (1 a day)
+H7670,001,000,dupixent_300,00024591502,1022.1881,4,4088.75,"2 pens (2 mL each), every other week"
+H7670,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H7670,001,000,epinephrine_03,00115169449,192.9167,2,385.83,1 two-pack of auto-injectors
+H7670,001,000,fluticasone_nasal_50,60505082901,1.5995,16,25.59,"1 bottle (16 g, about 120 sprays)"
+H7670,001,000,lantus_solostar,00088221905,6.3500,15,95.25,1 box of 5 pens (3 mL each)
+H7670,001,000,latanoprost_0005,61314054701,6.5299,2.5,16.32,1 bottle (2.5 mL)
+H7670,001,000,levothyroxine_50,00378180310,0.1770,30,5.31,30 tablets (1 a day)
+H7670,001,000,lisinopril_10,68180098003,0.0804,30,2.41,30 tablets (1 a day)
+H7670,001,000,metformin_500,70010006310,0.0558,60,3.35,60 tablets (1 twice a day)
+H7670,001,000,mounjaro_5,00002149580,550.5073,2,1101.01,"4 single-dose pens (0.5 mL each), 1 a week"
+H7670,001,000,omeprazole_20,55111015810,0.1158,30,3.47,30 capsules (1 a day)
+H7670,001,000,ozempic_05,00169418113,339.7202,3,1019.16,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H7670,001,000,paxlovid,00069504530,50.9855,30,1529.57,1 five-day dose pack (30 tablets)
+H7670,001,000,sertraline_50,65862001205,0.1291,30,3.87,30 tablets (1 a day)
+H7670,001,000,sumatriptan_50,65862014736,1.3635,9,12.27,9 tablets
+H7670,001,000,triamcinolone_cream_01,45802006436,0.0869,30,2.61,1 tube (30 g)
+H7670,002,000,adderall_xr_30,70010003401,1.9339,30,58.02,30 capsules (1 a day)
+H7670,002,000,albuterol_hfa,00173068220,3.1284,18,56.31,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H7670,002,000,amlodipine_5,82009002710,0.0446,30,1.34,30 tablets (1 a day)
+H7670,002,000,amoxicillin_500,00781261305,0.2342,30,7.03,"30 capsules (a typical 10-day course, 3 a day)"
+H7670,002,000,amoxicillin_susp_400,00143988701,0.0801,100,8.01,1 bottle (100 mL)
+H7670,002,000,atorvastatin_20,60505257908,0.1255,30,3.77,30 tablets (1 a day)
+H7670,002,000,dupixent_300,00024591502,1022.1881,4,4088.75,"2 pens (2 mL each), every other week"
+H7670,002,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H7670,002,000,epinephrine_03,00115169449,192.9167,2,385.83,1 two-pack of auto-injectors
+H7670,002,000,fluticasone_nasal_50,60505082901,1.5995,16,25.59,"1 bottle (16 g, about 120 sprays)"
+H7670,002,000,lantus_solostar,00088221905,6.3500,15,95.25,1 box of 5 pens (3 mL each)
+H7670,002,000,latanoprost_0005,61314054701,6.5299,2.5,16.32,1 bottle (2.5 mL)
+H7670,002,000,levothyroxine_50,00378180310,0.1770,30,5.31,30 tablets (1 a day)
+H7670,002,000,lisinopril_10,68180098003,0.0804,30,2.41,30 tablets (1 a day)
+H7670,002,000,metformin_500,70010006310,0.0558,60,3.35,60 tablets (1 twice a day)
+H7670,002,000,mounjaro_5,00002149580,550.5073,2,1101.01,"4 single-dose pens (0.5 mL each), 1 a week"
+H7670,002,000,omeprazole_20,55111015810,0.1158,30,3.47,30 capsules (1 a day)
+H7670,002,000,ozempic_05,00169418113,339.7202,3,1019.16,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H7670,002,000,paxlovid,00069504530,50.9855,30,1529.57,1 five-day dose pack (30 tablets)
+H7670,002,000,sertraline_50,65862001205,0.1291,30,3.87,30 tablets (1 a day)
+H7670,002,000,sumatriptan_50,65862014736,1.3635,9,12.27,9 tablets
+H7670,002,000,triamcinolone_cream_01,45802006436,0.0869,30,2.61,1 tube (30 g)
+H8330,001,000,adderall_xr_30,70010003401,0.5457,30,16.37,30 capsules (1 a day)
+H8330,001,000,albuterol_hfa,17270074000,1.8285,18,32.91,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H8330,001,000,amlodipine_5,82009002710,0.1099,30,3.30,30 tablets (1 a day)
+H8330,001,000,amoxicillin_500,00781261305,0.0866,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H8330,001,000,amoxicillin_susp_400,00143988701,0.0370,100,3.70,1 bottle (100 mL)
+H8330,001,000,atorvastatin_20,60505257908,0.3059,30,9.18,30 tablets (1 a day)
+H8330,001,000,concerta_18,31722095201,0.7997,30,23.99,30 tablets (1 a day)
+H8330,001,000,dupixent_300,00024591502,1011.1909,4,4044.76,"2 pens (2 mL each), every other week"
+H8330,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H8330,001,000,epinephrine_03,00093598627,134.9401,2,269.88,1 two-pack of auto-injectors
+H8330,001,000,fluticasone_nasal_50,60505082901,0.4799,16,7.68,"1 bottle (16 g, about 120 sprays)"
+H8330,001,000,humira_40,00074055402,3341.8732,2,6683.75,2 pens (every other week)
+H8330,001,000,lantus_solostar,00088221905,6.0605,15,90.91,1 box of 5 pens (3 mL each)
+H8330,001,000,latanoprost_0005,61314054701,1.7766,2.5,4.44,1 bottle (2.5 mL)
+H8330,001,000,levothyroxine_50,00378180310,0.1351,30,4.05,30 tablets (1 a day)
+H8330,001,000,lisinopril_10,68180098003,0.1715,30,5.15,30 tablets (1 a day)
+H8330,001,000,metformin_500,70010006310,0.1266,60,7.60,60 tablets (1 twice a day)
+H8330,001,000,mounjaro_5,00002149580,523.4623,2,1046.92,"4 single-dose pens (0.5 mL each), 1 a week"
+H8330,001,000,omeprazole_20,55111015810,0.2897,30,8.69,30 capsules (1 a day)
+H8330,001,000,ozempic_05,00169418113,321.4710,3,964.41,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H8330,001,000,paxlovid,00069504530,47.9924,30,1439.77,1 five-day dose pack (30 tablets)
+H8330,001,000,sertraline_50,65862001205,0.0406,30,1.22,30 tablets (1 a day)
+H8330,001,000,sumatriptan_50,65862014736,0.4096,9,3.69,9 tablets
+H8330,001,000,triamcinolone_cream_01,45802006436,0.0492,30,1.48,1 tube (30 g)
+H8330,002,000,adderall_xr_30,70010003401,0.5457,30,16.37,30 capsules (1 a day)
+H8330,002,000,albuterol_hfa,17270074000,1.8285,18,32.91,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H8330,002,000,amlodipine_5,82009002710,0.1099,30,3.30,30 tablets (1 a day)
+H8330,002,000,amoxicillin_500,00781261305,0.0866,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H8330,002,000,amoxicillin_susp_400,00143988701,0.0370,100,3.70,1 bottle (100 mL)
+H8330,002,000,atorvastatin_20,60505257908,0.3059,30,9.18,30 tablets (1 a day)
+H8330,002,000,concerta_18,31722095201,0.7997,30,23.99,30 tablets (1 a day)
+H8330,002,000,dupixent_300,00024591502,1011.1909,4,4044.76,"2 pens (2 mL each), every other week"
+H8330,002,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H8330,002,000,epinephrine_03,00093598627,134.9401,2,269.88,1 two-pack of auto-injectors
+H8330,002,000,fluticasone_nasal_50,60505082901,0.4799,16,7.68,"1 bottle (16 g, about 120 sprays)"
+H8330,002,000,humira_40,00074055402,3341.8732,2,6683.75,2 pens (every other week)
+H8330,002,000,lantus_solostar,00088221905,6.0605,15,90.91,1 box of 5 pens (3 mL each)
+H8330,002,000,latanoprost_0005,61314054701,1.7766,2.5,4.44,1 bottle (2.5 mL)
+H8330,002,000,levothyroxine_50,00378180310,0.1351,30,4.05,30 tablets (1 a day)
+H8330,002,000,lisinopril_10,68180098003,0.1715,30,5.15,30 tablets (1 a day)
+H8330,002,000,metformin_500,70010006310,0.1266,60,7.60,60 tablets (1 twice a day)
+H8330,002,000,mounjaro_5,00002149580,523.4623,2,1046.92,"4 single-dose pens (0.5 mL each), 1 a week"
+H8330,002,000,omeprazole_20,55111015810,0.2897,30,8.69,30 capsules (1 a day)
+H8330,002,000,ozempic_05,00169418113,321.4710,3,964.41,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H8330,002,000,paxlovid,00069504530,47.9924,30,1439.77,1 five-day dose pack (30 tablets)
+H8330,002,000,sertraline_50,65862001205,0.0406,30,1.22,30 tablets (1 a day)
+H8330,002,000,sumatriptan_50,65862014736,0.4096,9,3.69,9 tablets
+H8330,002,000,triamcinolone_cream_01,45802006436,0.0492,30,1.48,1 tube (30 g)
+H8578,001,000,adderall_xr_30,70010003401,0.6006,30,18.02,30 capsules (1 a day)
+H8578,001,000,albuterol_hfa,17270074000,1.9546,18,35.18,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H8578,001,000,amlodipine_5,82009002710,0.0557,30,1.67,30 tablets (1 a day)
+H8578,001,000,amoxicillin_500,00781261305,0.0890,30,2.67,"30 capsules (a typical 10-day course, 3 a day)"
+H8578,001,000,amoxicillin_susp_400,00143988701,0.0578,100,5.78,1 bottle (100 mL)
+H8578,001,000,atorvastatin_20,60505257908,0.1833,30,5.50,30 tablets (1 a day)
+H8578,001,000,dupixent_300,00024591502,1009.1962,4,4036.78,"2 pens (2 mL each), every other week"
+H8578,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H8578,001,000,epinephrine_03,00093598627,132.9869,2,265.97,1 two-pack of auto-injectors
+H8578,001,000,fluticasone_nasal_50,60505082901,0.4832,16,7.73,"1 bottle (16 g, about 120 sprays)"
+H8578,001,000,humira_40,00074055402,3345.7037,2,6691.41,2 pens (every other week)
+H8578,001,000,lantus_solostar,00088221905,6.2164,15,93.25,1 box of 5 pens (3 mL each)
+H8578,001,000,latanoprost_0005,61314054701,1.7327,2.5,4.33,1 bottle (2.5 mL)
+H8578,001,000,levothyroxine_50,60846080201,0.1080,30,3.24,30 tablets (1 a day)
+H8578,001,000,lisinopril_10,68180098003,0.0980,30,2.94,30 tablets (1 a day)
+H8578,001,000,metformin_500,70010006310,0.0713,60,4.28,60 tablets (1 twice a day)
+H8578,001,000,mounjaro_5,00002149580,538.4062,2,1076.81,"4 single-dose pens (0.5 mL each), 1 a week"
+H8578,001,000,omeprazole_20,55111015810,0.1374,30,4.12,30 capsules (1 a day)
+H8578,001,000,ozempic_05,00169418113,331.9031,3,995.71,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H8578,001,000,paxlovid,00069504530,49.8241,30,1494.72,1 five-day dose pack (30 tablets)
+H8578,001,000,sertraline_50,65862001205,0.1978,30,5.93,30 tablets (1 a day)
+H8578,001,000,sumatriptan_50,65862014736,0.4003,9,3.60,9 tablets
+H8578,001,000,triamcinolone_cream_01,45802006436,0.0579,30,1.74,1 tube (30 g)
+H8578,004,000,adderall_xr_30,70010003401,0.6006,30,18.02,30 capsules (1 a day)
+H8578,004,000,albuterol_hfa,17270074000,1.9546,18,35.18,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H8578,004,000,amlodipine_5,82009002710,0.0557,30,1.67,30 tablets (1 a day)
+H8578,004,000,amoxicillin_500,00781261305,0.0890,30,2.67,"30 capsules (a typical 10-day course, 3 a day)"
+H8578,004,000,amoxicillin_susp_400,00143988701,0.0578,100,5.78,1 bottle (100 mL)
+H8578,004,000,atorvastatin_20,60505257908,0.1833,30,5.50,30 tablets (1 a day)
+H8578,004,000,dupixent_300,00024591502,1009.1962,4,4036.78,"2 pens (2 mL each), every other week"
+H8578,004,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H8578,004,000,epinephrine_03,00093598627,132.9869,2,265.97,1 two-pack of auto-injectors
+H8578,004,000,fluticasone_nasal_50,60505082901,0.4832,16,7.73,"1 bottle (16 g, about 120 sprays)"
+H8578,004,000,humira_40,00074055402,3345.7037,2,6691.41,2 pens (every other week)
+H8578,004,000,lantus_solostar,00088221905,6.2164,15,93.25,1 box of 5 pens (3 mL each)
+H8578,004,000,latanoprost_0005,61314054701,1.7327,2.5,4.33,1 bottle (2.5 mL)
+H8578,004,000,levothyroxine_50,60846080201,0.1080,30,3.24,30 tablets (1 a day)
+H8578,004,000,lisinopril_10,68180098003,0.0980,30,2.94,30 tablets (1 a day)
+H8578,004,000,metformin_500,70010006310,0.0713,60,4.28,60 tablets (1 twice a day)
+H8578,004,000,mounjaro_5,00002149580,538.4062,2,1076.81,"4 single-dose pens (0.5 mL each), 1 a week"
+H8578,004,000,omeprazole_20,55111015810,0.1374,30,4.12,30 capsules (1 a day)
+H8578,004,000,ozempic_05,00169418113,331.9031,3,995.71,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H8578,004,000,paxlovid,00069504530,49.8241,30,1494.72,1 five-day dose pack (30 tablets)
+H8578,004,000,sertraline_50,65862001205,0.1978,30,5.93,30 tablets (1 a day)
+H8578,004,000,sumatriptan_50,65862014736,0.4003,9,3.60,9 tablets
+H8578,004,000,triamcinolone_cream_01,45802006436,0.0579,30,1.74,1 tube (30 g)
+H8578,012,000,adderall_xr_30,70010003401,0.6006,30,18.02,30 capsules (1 a day)
+H8578,012,000,albuterol_hfa,17270074000,1.9546,18,35.18,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H8578,012,000,amlodipine_5,82009002710,0.0557,30,1.67,30 tablets (1 a day)
+H8578,012,000,amoxicillin_500,00781261305,0.0890,30,2.67,"30 capsules (a typical 10-day course, 3 a day)"
+H8578,012,000,amoxicillin_susp_400,00143988701,0.0578,100,5.78,1 bottle (100 mL)
+H8578,012,000,atorvastatin_20,60505257908,0.1833,30,5.50,30 tablets (1 a day)
+H8578,012,000,dupixent_300,00024591502,1009.1962,4,4036.78,"2 pens (2 mL each), every other week"
+H8578,012,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H8578,012,000,epinephrine_03,00093598627,132.9869,2,265.97,1 two-pack of auto-injectors
+H8578,012,000,fluticasone_nasal_50,60505082901,0.4832,16,7.73,"1 bottle (16 g, about 120 sprays)"
+H8578,012,000,humira_40,00074055402,3345.7037,2,6691.41,2 pens (every other week)
+H8578,012,000,lantus_solostar,00088221905,6.2164,15,93.25,1 box of 5 pens (3 mL each)
+H8578,012,000,latanoprost_0005,61314054701,1.7327,2.5,4.33,1 bottle (2.5 mL)
+H8578,012,000,levothyroxine_50,60846080201,0.1080,30,3.24,30 tablets (1 a day)
+H8578,012,000,lisinopril_10,68180098003,0.0980,30,2.94,30 tablets (1 a day)
+H8578,012,000,metformin_500,70010006310,0.0713,60,4.28,60 tablets (1 twice a day)
+H8578,012,000,mounjaro_5,00002149580,538.4062,2,1076.81,"4 single-dose pens (0.5 mL each), 1 a week"
+H8578,012,000,omeprazole_20,55111015810,0.1374,30,4.12,30 capsules (1 a day)
+H8578,012,000,ozempic_05,00169418113,331.9031,3,995.71,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H8578,012,000,paxlovid,00069504530,49.8241,30,1494.72,1 five-day dose pack (30 tablets)
+H8578,012,000,sertraline_50,65862001205,0.1978,30,5.93,30 tablets (1 a day)
+H8578,012,000,sumatriptan_50,65862014736,0.4003,9,3.60,9 tablets
+H8578,012,000,triamcinolone_cream_01,45802006436,0.0579,30,1.74,1 tube (30 g)
+H8768,055,001,adderall_xr_30,70010003401,0.9485,30,28.46,30 capsules (1 a day)
+H8768,055,001,albuterol_hfa,17270074000,1.6026,18,28.85,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H8768,055,001,amlodipine_5,82009002710,0.1325,30,3.98,30 tablets (1 a day)
+H8768,055,001,amoxicillin_500,00781261305,0.1960,30,5.88,"30 capsules (a typical 10-day course, 3 a day)"
+H8768,055,001,amoxicillin_susp_400,00143988701,0.0281,100,2.81,1 bottle (100 mL)
+H8768,055,001,atorvastatin_20,60505257908,0.1481,30,4.44,30 tablets (1 a day)
+H8768,055,001,dupixent_300,00024591502,1050.4665,4,4201.87,"2 pens (2 mL each), every other week"
+H8768,055,001,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H8768,055,001,epinephrine_03,00115169449,88.2028,2,176.41,1 two-pack of auto-injectors
+H8768,055,001,fluticasone_nasal_50,60505082901,0.3887,16,6.22,"1 bottle (16 g, about 120 sprays)"
+H8768,055,001,lantus_solostar,00088221905,6.5434,15,98.15,1 box of 5 pens (3 mL each)
+H8768,055,001,latanoprost_0005,61314054701,1.9770,2.5,4.94,1 bottle (2.5 mL)
+H8768,055,001,levothyroxine_50,60793085101,0.1350,30,4.05,30 tablets (1 a day)
+H8768,055,001,lisinopril_10,68180098003,0.1361,30,4.08,30 tablets (1 a day)
+H8768,055,001,metformin_500,70010006310,0.0741,60,4.45,60 tablets (1 twice a day)
+H8768,055,001,mounjaro_5,00002149580,565.3697,2,1130.74,"4 single-dose pens (0.5 mL each), 1 a week"
+H8768,055,001,omeprazole_20,55111015810,0.1328,30,3.98,30 capsules (1 a day)
+H8768,055,001,ozempic_05,00169418113,347.4325,3,1042.30,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H8768,055,001,paxlovid,00069504530,52.0871,30,1562.61,1 five-day dose pack (30 tablets)
+H8768,055,001,sertraline_50,65862001205,0.1587,30,4.76,30 tablets (1 a day)
+H8768,055,001,sumatriptan_50,65862014736,1.3902,9,12.51,9 tablets
+H8768,055,001,triamcinolone_cream_01,45802006436,0.0736,30,2.21,1 tube (30 g)
+H8768,055,002,adderall_xr_30,70010003401,0.9590,30,28.77,30 capsules (1 a day)
+H8768,055,002,albuterol_hfa,17270074000,1.5515,18,27.93,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H8768,055,002,amlodipine_5,82009002710,0.1245,30,3.73,30 tablets (1 a day)
+H8768,055,002,amoxicillin_500,00781261305,0.1945,30,5.83,"30 capsules (a typical 10-day course, 3 a day)"
+H8768,055,002,amoxicillin_susp_400,00143988701,0.0272,100,2.72,1 bottle (100 mL)
+H8768,055,002,atorvastatin_20,60505257908,0.1342,30,4.03,30 tablets (1 a day)
+H8768,055,002,dupixent_300,00024591502,1045.7049,4,4182.82,"2 pens (2 mL each), every other week"
+H8768,055,002,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H8768,055,002,epinephrine_03,00115169449,85.5657,2,171.13,1 two-pack of auto-injectors
+H8768,055,002,fluticasone_nasal_50,60505082901,0.3477,16,5.56,"1 bottle (16 g, about 120 sprays)"
+H8768,055,002,lantus_solostar,00088221905,6.5392,15,98.09,1 box of 5 pens (3 mL each)
+H8768,055,002,latanoprost_0005,61314054701,1.6323,2.5,4.08,1 bottle (2.5 mL)
+H8768,055,002,levothyroxine_50,00378180310,0.1333,30,4.00,30 tablets (1 a day)
+H8768,055,002,lisinopril_10,68180098003,0.1284,30,3.85,30 tablets (1 a day)
+H8768,055,002,metformin_500,70010006310,0.0656,60,3.94,60 tablets (1 twice a day)
+H8768,055,002,mounjaro_5,00002149580,565.1323,2,1130.26,"4 single-dose pens (0.5 mL each), 1 a week"
+H8768,055,002,omeprazole_20,55111015810,0.1180,30,3.54,30 capsules (1 a day)
+H8768,055,002,ozempic_05,00169418113,347.3793,3,1042.14,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H8768,055,002,paxlovid,00069504530,52.0511,30,1561.53,1 five-day dose pack (30 tablets)
+H8768,055,002,sertraline_50,65862001205,0.1284,30,3.85,30 tablets (1 a day)
+H8768,055,002,sumatriptan_50,65862014736,1.3346,9,12.01,9 tablets
+H8768,055,002,triamcinolone_cream_01,45802006436,0.0734,30,2.20,1 tube (30 g)
+H8928,001,000,adderall_xr_30,70010003401,0.6867,30,20.60,30 capsules (1 a day)
+H8928,001,000,albuterol_hfa,69097002160,1.8576,18,33.44,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H8928,001,000,amlodipine_5,82009002710,0.0554,30,1.66,30 tablets (1 a day)
+H8928,001,000,amoxicillin_500,00781261305,0.1153,30,3.46,"30 capsules (a typical 10-day course, 3 a day)"
+H8928,001,000,amoxicillin_susp_400,00143988701,0.0435,100,4.35,1 bottle (100 mL)
+H8928,001,000,atorvastatin_20,60505257908,0.1435,30,4.30,30 tablets (1 a day)
+H8928,001,000,concerta_18,31722095201,1.4066,30,42.20,30 tablets (1 a day)
+H8928,001,000,dupixent_300,00024591502,1040.1708,4,4160.68,"2 pens (2 mL each), every other week"
+H8928,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H8928,001,000,epinephrine_03,00115169449,139.3724,2,278.74,1 two-pack of auto-injectors
+H8928,001,000,fluticasone_nasal_50,60505082901,0.8970,16,14.35,"1 bottle (16 g, about 120 sprays)"
+H8928,001,000,humira_40,00074055402,3402.5056,2,6805.01,2 pens (every other week)
+H8928,001,000,lantus_solostar,00088221905,6.2964,15,94.45,1 box of 5 pens (3 mL each)
+H8928,001,000,latanoprost_0005,61314054701,3.0525,2.5,7.63,1 bottle (2.5 mL)
+H8928,001,000,levothyroxine_50,60793085101,0.0947,30,2.84,30 tablets (1 a day)
+H8928,001,000,lisinopril_10,68180098003,0.0694,30,2.08,30 tablets (1 a day)
+H8928,001,000,metformin_500,70010006310,0.0703,60,4.22,60 tablets (1 twice a day)
+H8928,001,000,mounjaro_5,00002149580,544.4684,2,1088.94,"4 single-dose pens (0.5 mL each), 1 a week"
+H8928,001,000,omeprazole_20,55111015810,0.1323,30,3.97,30 capsules (1 a day)
+H8928,001,000,ozempic_05,00169418113,335.4848,3,1006.45,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H8928,001,000,paxlovid,00069504530,50.3239,30,1509.72,1 five-day dose pack (30 tablets)
+H8928,001,000,sertraline_50,65862001205,0.1326,30,3.98,30 tablets (1 a day)
+H8928,001,000,sumatriptan_50,65862014736,0.6375,9,5.74,9 tablets
+H8928,001,000,triamcinolone_cream_01,45802006436,0.0832,30,2.50,1 tube (30 g)
+H9001,030,015,adderall_xr_30,70010003401,0.7159,30,21.48,30 capsules (1 a day)
+H9001,030,015,albuterol_hfa,69097002160,1.8927,18,34.07,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H9001,030,015,amlodipine_5,82009002710,0.0651,30,1.95,30 tablets (1 a day)
+H9001,030,015,amoxicillin_500,00781261305,0.1193,30,3.58,"30 capsules (a typical 10-day course, 3 a day)"
+H9001,030,015,amoxicillin_susp_400,00143988701,0.0435,100,4.35,1 bottle (100 mL)
+H9001,030,015,atorvastatin_20,60505257908,0.1746,30,5.24,30 tablets (1 a day)
+H9001,030,015,concerta_18,31722095201,1.4885,30,44.66,30 tablets (1 a day)
+H9001,030,015,dupixent_300,00024591502,1030.1609,4,4120.64,"2 pens (2 mL each), every other week"
+H9001,030,015,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H9001,030,015,epinephrine_03,00093598627,140.0826,2,280.17,1 two-pack of auto-injectors
+H9001,030,015,fluticasone_nasal_50,60505082901,1.1005,16,17.61,"1 bottle (16 g, about 120 sprays)"
+H9001,030,015,humira_40,00074055402,3397.9597,2,6795.92,2 pens (every other week)
+H9001,030,015,lantus_solostar,00088221905,6.3002,15,94.50,1 box of 5 pens (3 mL each)
+H9001,030,015,latanoprost_0005,61314054701,3.7602,2.5,9.40,1 bottle (2.5 mL)
+H9001,030,015,levothyroxine_50,60846080201,0.0793,30,2.38,30 tablets (1 a day)
+H9001,030,015,lisinopril_10,68180098003,0.0820,30,2.46,30 tablets (1 a day)
+H9001,030,015,metformin_500,70010006310,0.0890,60,5.34,60 tablets (1 twice a day)
+H9001,030,015,mounjaro_5,00002149580,544.3821,2,1088.76,"4 single-dose pens (0.5 mL each), 1 a week"
+H9001,030,015,omeprazole_20,55111015810,0.1687,30,5.06,30 capsules (1 a day)
+H9001,030,015,ozempic_05,00169418113,335.4443,3,1006.33,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H9001,030,015,paxlovid,00069504530,50.4002,30,1512.01,1 five-day dose pack (30 tablets)
+H9001,030,015,sertraline_50,65862001205,0.2095,30,6.29,30 tablets (1 a day)
+H9001,030,015,sumatriptan_50,65862014736,1.0586,9,9.53,9 tablets
+H9001,030,015,triamcinolone_cream_01,45802006436,0.0855,30,2.57,1 tube (30 g)
+H9001,030,016,adderall_xr_30,70010003401,0.6693,30,20.08,30 capsules (1 a day)
+H9001,030,016,albuterol_hfa,17270074000,1.8452,18,33.21,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H9001,030,016,amlodipine_5,82009002710,0.0522,30,1.57,30 tablets (1 a day)
+H9001,030,016,amoxicillin_500,00781261305,0.1135,30,3.41,"30 capsules (a typical 10-day course, 3 a day)"
+H9001,030,016,amoxicillin_susp_400,00143988701,0.0425,100,4.25,1 bottle (100 mL)
+H9001,030,016,atorvastatin_20,60505257908,0.1322,30,3.97,30 tablets (1 a day)
+H9001,030,016,concerta_18,31722095201,1.4251,30,42.75,30 tablets (1 a day)
+H9001,030,016,dupixent_300,00024591502,1037.8144,4,4151.26,"2 pens (2 mL each), every other week"
+H9001,030,016,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H9001,030,016,epinephrine_03,00093598627,138.9126,2,277.83,1 two-pack of auto-injectors
+H9001,030,016,fluticasone_nasal_50,60505082901,0.8279,16,13.25,"1 bottle (16 g, about 120 sprays)"
+H9001,030,016,humira_40,00074055402,3407.6633,2,6815.33,2 pens (every other week)
+H9001,030,016,lantus_solostar,00088221905,6.2833,15,94.25,1 box of 5 pens (3 mL each)
+H9001,030,016,latanoprost_0005,61314054701,2.8319,2.5,7.08,1 bottle (2.5 mL)
+H9001,030,016,levothyroxine_50,00378180310,0.0927,30,2.78,30 tablets (1 a day)
+H9001,030,016,lisinopril_10,68180098003,0.0645,30,1.94,30 tablets (1 a day)
+H9001,030,016,metformin_500,70010006310,0.0634,60,3.80,60 tablets (1 twice a day)
+H9001,030,016,mounjaro_5,00002149580,543.7701,2,1087.54,"4 single-dose pens (0.5 mL each), 1 a week"
+H9001,030,016,omeprazole_20,55111015810,0.1192,30,3.58,30 capsules (1 a day)
+H9001,030,016,ozempic_05,00169418113,335.0356,3,1005.11,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H9001,030,016,paxlovid,00069504530,50.2620,30,1507.86,1 five-day dose pack (30 tablets)
+H9001,030,016,sertraline_50,65862001205,0.1056,30,3.17,30 tablets (1 a day)
+H9001,030,016,sumatriptan_50,65862014736,0.5548,9,4.99,9 tablets
+H9001,030,016,triamcinolone_cream_01,45802006436,0.0818,30,2.45,1 tube (30 g)
+H9001,030,018,adderall_xr_30,70010003401,0.6848,30,20.54,30 capsules (1 a day)
+H9001,030,018,albuterol_hfa,69097002160,1.8527,18,33.35,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H9001,030,018,amlodipine_5,82009002710,0.0543,30,1.63,30 tablets (1 a day)
+H9001,030,018,amoxicillin_500,00781261305,0.1149,30,3.45,"30 capsules (a typical 10-day course, 3 a day)"
+H9001,030,018,amoxicillin_susp_400,00143988701,0.0435,100,4.35,1 bottle (100 mL)
+H9001,030,018,atorvastatin_20,60505257908,0.1393,30,4.18,30 tablets (1 a day)
+H9001,030,018,concerta_18,31722095201,1.3888,30,41.66,30 tablets (1 a day)
+H9001,030,018,dupixent_300,00024591502,1041.3051,4,4165.22,"2 pens (2 mL each), every other week"
+H9001,030,018,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H9001,030,018,epinephrine_03,00115169449,139.3138,2,278.63,1 two-pack of auto-injectors
+H9001,030,018,fluticasone_nasal_50,60505082901,0.8701,16,13.92,"1 bottle (16 g, about 120 sprays)"
+H9001,030,018,humira_40,00074055402,3402.6277,2,6805.26,2 pens (every other week)
+H9001,030,018,lantus_solostar,00088221905,6.2997,15,94.50,1 box of 5 pens (3 mL each)
+H9001,030,018,latanoprost_0005,61314054701,2.9532,2.5,7.38,1 bottle (2.5 mL)
+H9001,030,018,levothyroxine_50,60793085101,0.0946,30,2.84,30 tablets (1 a day)
+H9001,030,018,lisinopril_10,68180098003,0.0679,30,2.04,30 tablets (1 a day)
+H9001,030,018,metformin_500,70010006310,0.0680,60,4.08,60 tablets (1 twice a day)
+H9001,030,018,mounjaro_5,00002149580,544.5974,2,1089.19,"4 single-dose pens (0.5 mL each), 1 a week"
+H9001,030,018,omeprazole_20,55111015810,0.1280,30,3.84,30 capsules (1 a day)
+H9001,030,018,ozempic_05,00169418113,335.5648,3,1006.69,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H9001,030,018,paxlovid,00069504530,50.3208,30,1509.62,1 five-day dose pack (30 tablets)
+H9001,030,018,sertraline_50,65862001205,0.1206,30,3.62,30 tablets (1 a day)
+H9001,030,018,sumatriptan_50,65862014736,0.5937,9,5.34,9 tablets
+H9001,030,018,triamcinolone_cream_01,45802006436,0.0830,30,2.49,1 tube (30 g)
+H9001,031,015,adderall_xr_30,70010003401,0.7159,30,21.48,30 capsules (1 a day)
+H9001,031,015,albuterol_hfa,69097002160,1.8927,18,34.07,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H9001,031,015,amlodipine_5,82009002710,0.0651,30,1.95,30 tablets (1 a day)
+H9001,031,015,amoxicillin_500,00781261305,0.1193,30,3.58,"30 capsules (a typical 10-day course, 3 a day)"
+H9001,031,015,amoxicillin_susp_400,00143988701,0.0435,100,4.35,1 bottle (100 mL)
+H9001,031,015,atorvastatin_20,60505257908,0.1746,30,5.24,30 tablets (1 a day)
+H9001,031,015,concerta_18,31722095201,1.4885,30,44.66,30 tablets (1 a day)
+H9001,031,015,dupixent_300,00024591502,1030.1609,4,4120.64,"2 pens (2 mL each), every other week"
+H9001,031,015,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H9001,031,015,epinephrine_03,00093598627,140.0826,2,280.17,1 two-pack of auto-injectors
+H9001,031,015,fluticasone_nasal_50,60505082901,1.1005,16,17.61,"1 bottle (16 g, about 120 sprays)"
+H9001,031,015,humira_40,00074055402,3397.9597,2,6795.92,2 pens (every other week)
+H9001,031,015,lantus_solostar,00088221905,6.3002,15,94.50,1 box of 5 pens (3 mL each)
+H9001,031,015,latanoprost_0005,61314054701,3.7602,2.5,9.40,1 bottle (2.5 mL)
+H9001,031,015,levothyroxine_50,60846080201,0.0793,30,2.38,30 tablets (1 a day)
+H9001,031,015,lisinopril_10,68180098003,0.0820,30,2.46,30 tablets (1 a day)
+H9001,031,015,metformin_500,70010006310,0.0890,60,5.34,60 tablets (1 twice a day)
+H9001,031,015,mounjaro_5,00002149580,544.3821,2,1088.76,"4 single-dose pens (0.5 mL each), 1 a week"
+H9001,031,015,omeprazole_20,55111015810,0.1687,30,5.06,30 capsules (1 a day)
+H9001,031,015,ozempic_05,00169418113,335.4443,3,1006.33,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H9001,031,015,paxlovid,00069504530,50.4002,30,1512.01,1 five-day dose pack (30 tablets)
+H9001,031,015,sertraline_50,65862001205,0.2095,30,6.29,30 tablets (1 a day)
+H9001,031,015,sumatriptan_50,65862014736,1.0586,9,9.53,9 tablets
+H9001,031,015,triamcinolone_cream_01,45802006436,0.0855,30,2.57,1 tube (30 g)
+H9001,031,016,adderall_xr_30,70010003401,0.6693,30,20.08,30 capsules (1 a day)
+H9001,031,016,albuterol_hfa,17270074000,1.8452,18,33.21,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H9001,031,016,amlodipine_5,82009002710,0.0522,30,1.57,30 tablets (1 a day)
+H9001,031,016,amoxicillin_500,00781261305,0.1135,30,3.41,"30 capsules (a typical 10-day course, 3 a day)"
+H9001,031,016,amoxicillin_susp_400,00143988701,0.0425,100,4.25,1 bottle (100 mL)
+H9001,031,016,atorvastatin_20,60505257908,0.1322,30,3.97,30 tablets (1 a day)
+H9001,031,016,concerta_18,31722095201,1.4251,30,42.75,30 tablets (1 a day)
+H9001,031,016,dupixent_300,00024591502,1037.8144,4,4151.26,"2 pens (2 mL each), every other week"
+H9001,031,016,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H9001,031,016,epinephrine_03,00093598627,138.9126,2,277.83,1 two-pack of auto-injectors
+H9001,031,016,fluticasone_nasal_50,60505082901,0.8279,16,13.25,"1 bottle (16 g, about 120 sprays)"
+H9001,031,016,humira_40,00074055402,3407.6633,2,6815.33,2 pens (every other week)
+H9001,031,016,lantus_solostar,00088221905,6.2833,15,94.25,1 box of 5 pens (3 mL each)
+H9001,031,016,latanoprost_0005,61314054701,2.8319,2.5,7.08,1 bottle (2.5 mL)
+H9001,031,016,levothyroxine_50,00378180310,0.0927,30,2.78,30 tablets (1 a day)
+H9001,031,016,lisinopril_10,68180098003,0.0645,30,1.94,30 tablets (1 a day)
+H9001,031,016,metformin_500,70010006310,0.0634,60,3.80,60 tablets (1 twice a day)
+H9001,031,016,mounjaro_5,00002149580,543.7701,2,1087.54,"4 single-dose pens (0.5 mL each), 1 a week"
+H9001,031,016,omeprazole_20,55111015810,0.1192,30,3.58,30 capsules (1 a day)
+H9001,031,016,ozempic_05,00169418113,335.0356,3,1005.11,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H9001,031,016,paxlovid,00069504530,50.2620,30,1507.86,1 five-day dose pack (30 tablets)
+H9001,031,016,sertraline_50,65862001205,0.1056,30,3.17,30 tablets (1 a day)
+H9001,031,016,sumatriptan_50,65862014736,0.5548,9,4.99,9 tablets
+H9001,031,016,triamcinolone_cream_01,45802006436,0.0818,30,2.45,1 tube (30 g)
+H9001,031,018,adderall_xr_30,70010003401,0.6848,30,20.54,30 capsules (1 a day)
+H9001,031,018,albuterol_hfa,69097002160,1.8527,18,33.35,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H9001,031,018,amlodipine_5,82009002710,0.0543,30,1.63,30 tablets (1 a day)
+H9001,031,018,amoxicillin_500,00781261305,0.1149,30,3.45,"30 capsules (a typical 10-day course, 3 a day)"
+H9001,031,018,amoxicillin_susp_400,00143988701,0.0435,100,4.35,1 bottle (100 mL)
+H9001,031,018,atorvastatin_20,60505257908,0.1393,30,4.18,30 tablets (1 a day)
+H9001,031,018,concerta_18,31722095201,1.3888,30,41.66,30 tablets (1 a day)
+H9001,031,018,dupixent_300,00024591502,1041.3051,4,4165.22,"2 pens (2 mL each), every other week"
+H9001,031,018,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H9001,031,018,epinephrine_03,00115169449,139.3138,2,278.63,1 two-pack of auto-injectors
+H9001,031,018,fluticasone_nasal_50,60505082901,0.8701,16,13.92,"1 bottle (16 g, about 120 sprays)"
+H9001,031,018,humira_40,00074055402,3402.6277,2,6805.26,2 pens (every other week)
+H9001,031,018,lantus_solostar,00088221905,6.2997,15,94.50,1 box of 5 pens (3 mL each)
+H9001,031,018,latanoprost_0005,61314054701,2.9532,2.5,7.38,1 bottle (2.5 mL)
+H9001,031,018,levothyroxine_50,60793085101,0.0946,30,2.84,30 tablets (1 a day)
+H9001,031,018,lisinopril_10,68180098003,0.0679,30,2.04,30 tablets (1 a day)
+H9001,031,018,metformin_500,70010006310,0.0680,60,4.08,60 tablets (1 twice a day)
+H9001,031,018,mounjaro_5,00002149580,544.5974,2,1089.19,"4 single-dose pens (0.5 mL each), 1 a week"
+H9001,031,018,omeprazole_20,55111015810,0.1280,30,3.84,30 capsules (1 a day)
+H9001,031,018,ozempic_05,00169418113,335.5648,3,1006.69,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H9001,031,018,paxlovid,00069504530,50.3208,30,1509.62,1 five-day dose pack (30 tablets)
+H9001,031,018,sertraline_50,65862001205,0.1206,30,3.62,30 tablets (1 a day)
+H9001,031,018,sumatriptan_50,65862014736,0.5937,9,5.34,9 tablets
+H9001,031,018,triamcinolone_cream_01,45802006436,0.0830,30,2.49,1 tube (30 g)
+H9001,038,000,adderall_xr_30,70010003401,0.6867,30,20.60,30 capsules (1 a day)
+H9001,038,000,albuterol_hfa,69097002160,1.8576,18,33.44,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H9001,038,000,amlodipine_5,82009002710,0.0554,30,1.66,30 tablets (1 a day)
+H9001,038,000,amoxicillin_500,00781261305,0.1153,30,3.46,"30 capsules (a typical 10-day course, 3 a day)"
+H9001,038,000,amoxicillin_susp_400,00143988701,0.0435,100,4.35,1 bottle (100 mL)
+H9001,038,000,atorvastatin_20,60505257908,0.1435,30,4.30,30 tablets (1 a day)
+H9001,038,000,concerta_18,31722095201,1.4066,30,42.20,30 tablets (1 a day)
+H9001,038,000,dupixent_300,00024591502,1040.1708,4,4160.68,"2 pens (2 mL each), every other week"
+H9001,038,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H9001,038,000,epinephrine_03,00115169449,139.3724,2,278.74,1 two-pack of auto-injectors
+H9001,038,000,fluticasone_nasal_50,60505082901,0.8970,16,14.35,"1 bottle (16 g, about 120 sprays)"
+H9001,038,000,humira_40,00074055402,3402.5056,2,6805.01,2 pens (every other week)
+H9001,038,000,lantus_solostar,00088221905,6.2964,15,94.45,1 box of 5 pens (3 mL each)
+H9001,038,000,latanoprost_0005,61314054701,3.0525,2.5,7.63,1 bottle (2.5 mL)
+H9001,038,000,levothyroxine_50,60793085101,0.0947,30,2.84,30 tablets (1 a day)
+H9001,038,000,lisinopril_10,68180098003,0.0694,30,2.08,30 tablets (1 a day)
+H9001,038,000,metformin_500,70010006310,0.0703,60,4.22,60 tablets (1 twice a day)
+H9001,038,000,mounjaro_5,00002149580,544.4684,2,1088.94,"4 single-dose pens (0.5 mL each), 1 a week"
+H9001,038,000,omeprazole_20,55111015810,0.1323,30,3.97,30 capsules (1 a day)
+H9001,038,000,ozempic_05,00169418113,335.4848,3,1006.45,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H9001,038,000,paxlovid,00069504530,50.3239,30,1509.72,1 five-day dose pack (30 tablets)
+H9001,038,000,sertraline_50,65862001205,0.1326,30,3.98,30 tablets (1 a day)
+H9001,038,000,sumatriptan_50,65862014736,0.6375,9,5.74,9 tablets
+H9001,038,000,triamcinolone_cream_01,45802006436,0.0832,30,2.50,1 tube (30 g)
+H9485,001,000,adderall_xr_30,70010003401,1.1086,30,33.26,30 capsules (1 a day)
+H9485,001,000,albuterol_hfa,17270074000,2.6149,18,47.07,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H9485,001,000,amlodipine_5,82009002710,0.0893,30,2.68,30 tablets (1 a day)
+H9485,001,000,amoxicillin_500,00781261305,0.1477,30,4.43,"30 capsules (a typical 10-day course, 3 a day)"
+H9485,001,000,amoxicillin_susp_400,00143988701,0.0667,100,6.67,1 bottle (100 mL)
+H9485,001,000,atorvastatin_20,60505257908,0.2230,30,6.69,30 tablets (1 a day)
+H9485,001,000,concerta_18,31722095201,1.4482,30,43.45,30 tablets (1 a day)
+H9485,001,000,dupixent_300,00024591502,1023.2616,4,4093.05,"2 pens (2 mL each), every other week"
+H9485,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H9485,001,000,epinephrine_03,00093598627,131.9268,2,263.85,1 two-pack of auto-injectors
+H9485,001,000,fluticasone_nasal_50,60505082901,1.0970,16,17.55,"1 bottle (16 g, about 120 sprays)"
+H9485,001,000,humira_40,00074055402,3371.8183,2,6743.64,2 pens (every other week)
+H9485,001,000,lantus_solostar,00088221905,6.2304,15,93.46,1 box of 5 pens (3 mL each)
+H9485,001,000,latanoprost_0005,61314054701,5.9039,2.5,14.76,1 bottle (2.5 mL)
+H9485,001,000,levothyroxine_50,00378180310,0.1333,30,4.00,30 tablets (1 a day)
+H9485,001,000,lisinopril_10,68180098003,0.0553,30,1.66,30 tablets (1 a day)
+H9485,001,000,metformin_500,70010006310,0.0473,60,2.84,60 tablets (1 twice a day)
+H9485,001,000,mounjaro_5,00002149580,538.6980,2,1077.40,"4 single-dose pens (0.5 mL each), 1 a week"
+H9485,001,000,omeprazole_20,55111015810,0.0883,30,2.65,30 capsules (1 a day)
+H9485,001,000,ozempic_05,00169418113,332.2819,3,996.85,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H9485,001,000,paxlovid,00069504530,49.8593,30,1495.78,1 five-day dose pack (30 tablets)
+H9485,001,000,sertraline_50,65862001205,0.0937,30,2.81,30 tablets (1 a day)
+H9485,001,000,sumatriptan_50,65862014736,0.7785,9,7.01,9 tablets
+H9485,001,000,triamcinolone_cream_01,45802006436,0.0696,30,2.09,1 tube (30 g)
+H9485,002,000,adderall_xr_30,70010003401,1.1086,30,33.26,30 capsules (1 a day)
+H9485,002,000,albuterol_hfa,17270074000,2.6149,18,47.07,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H9485,002,000,amlodipine_5,82009002710,0.0893,30,2.68,30 tablets (1 a day)
+H9485,002,000,amoxicillin_500,00781261305,0.1477,30,4.43,"30 capsules (a typical 10-day course, 3 a day)"
+H9485,002,000,amoxicillin_susp_400,00143988701,0.0667,100,6.67,1 bottle (100 mL)
+H9485,002,000,atorvastatin_20,60505257908,0.2230,30,6.69,30 tablets (1 a day)
+H9485,002,000,concerta_18,31722095201,1.4482,30,43.45,30 tablets (1 a day)
+H9485,002,000,dupixent_300,00024591502,1023.2616,4,4093.05,"2 pens (2 mL each), every other week"
+H9485,002,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H9485,002,000,epinephrine_03,00093598627,131.9268,2,263.85,1 two-pack of auto-injectors
+H9485,002,000,fluticasone_nasal_50,60505082901,1.0970,16,17.55,"1 bottle (16 g, about 120 sprays)"
+H9485,002,000,humira_40,00074055402,3371.8183,2,6743.64,2 pens (every other week)
+H9485,002,000,lantus_solostar,00088221905,6.2304,15,93.46,1 box of 5 pens (3 mL each)
+H9485,002,000,latanoprost_0005,61314054701,5.9039,2.5,14.76,1 bottle (2.5 mL)
+H9485,002,000,levothyroxine_50,00378180310,0.1333,30,4.00,30 tablets (1 a day)
+H9485,002,000,lisinopril_10,68180098003,0.0553,30,1.66,30 tablets (1 a day)
+H9485,002,000,metformin_500,70010006310,0.0473,60,2.84,60 tablets (1 twice a day)
+H9485,002,000,mounjaro_5,00002149580,538.6980,2,1077.40,"4 single-dose pens (0.5 mL each), 1 a week"
+H9485,002,000,omeprazole_20,55111015810,0.0883,30,2.65,30 capsules (1 a day)
+H9485,002,000,ozempic_05,00169418113,332.2819,3,996.85,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H9485,002,000,paxlovid,00069504530,49.8593,30,1495.78,1 five-day dose pack (30 tablets)
+H9485,002,000,sertraline_50,65862001205,0.0937,30,2.81,30 tablets (1 a day)
+H9485,002,000,sumatriptan_50,65862014736,0.7785,9,7.01,9 tablets
+H9485,002,000,triamcinolone_cream_01,45802006436,0.0696,30,2.09,1 tube (30 g)
+H9485,003,000,adderall_xr_30,70010003401,1.1086,30,33.26,30 capsules (1 a day)
+H9485,003,000,albuterol_hfa,17270074000,2.6149,18,47.07,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H9485,003,000,amlodipine_5,82009002710,0.0893,30,2.68,30 tablets (1 a day)
+H9485,003,000,amoxicillin_500,00781261305,0.1477,30,4.43,"30 capsules (a typical 10-day course, 3 a day)"
+H9485,003,000,amoxicillin_susp_400,00143988701,0.0667,100,6.67,1 bottle (100 mL)
+H9485,003,000,atorvastatin_20,60505257908,0.2230,30,6.69,30 tablets (1 a day)
+H9485,003,000,concerta_18,31722095201,1.4482,30,43.45,30 tablets (1 a day)
+H9485,003,000,dupixent_300,00024591502,1023.2616,4,4093.05,"2 pens (2 mL each), every other week"
+H9485,003,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H9485,003,000,epinephrine_03,00093598627,131.9268,2,263.85,1 two-pack of auto-injectors
+H9485,003,000,fluticasone_nasal_50,60505082901,1.0970,16,17.55,"1 bottle (16 g, about 120 sprays)"
+H9485,003,000,humira_40,00074055402,3371.8183,2,6743.64,2 pens (every other week)
+H9485,003,000,lantus_solostar,00088221905,6.2304,15,93.46,1 box of 5 pens (3 mL each)
+H9485,003,000,latanoprost_0005,61314054701,5.9039,2.5,14.76,1 bottle (2.5 mL)
+H9485,003,000,levothyroxine_50,00378180310,0.1333,30,4.00,30 tablets (1 a day)
+H9485,003,000,lisinopril_10,68180098003,0.0553,30,1.66,30 tablets (1 a day)
+H9485,003,000,metformin_500,70010006310,0.0473,60,2.84,60 tablets (1 twice a day)
+H9485,003,000,mounjaro_5,00002149580,538.6980,2,1077.40,"4 single-dose pens (0.5 mL each), 1 a week"
+H9485,003,000,omeprazole_20,55111015810,0.0883,30,2.65,30 capsules (1 a day)
+H9485,003,000,ozempic_05,00169418113,332.2819,3,996.85,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H9485,003,000,paxlovid,00069504530,49.8593,30,1495.78,1 five-day dose pack (30 tablets)
+H9485,003,000,sertraline_50,65862001205,0.0937,30,2.81,30 tablets (1 a day)
+H9485,003,000,sumatriptan_50,65862014736,0.7785,9,7.01,9 tablets
+H9485,003,000,triamcinolone_cream_01,45802006436,0.0696,30,2.09,1 tube (30 g)
+H9904,001,000,adderall_xr_30,70010003401,1.9339,30,58.02,30 capsules (1 a day)
+H9904,001,000,albuterol_hfa,00173068220,3.1284,18,56.31,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H9904,001,000,amlodipine_5,82009002710,0.0446,30,1.34,30 tablets (1 a day)
+H9904,001,000,amoxicillin_500,00781261305,0.2342,30,7.03,"30 capsules (a typical 10-day course, 3 a day)"
+H9904,001,000,amoxicillin_susp_400,00143988701,0.0801,100,8.01,1 bottle (100 mL)
+H9904,001,000,atorvastatin_20,60505257908,0.1255,30,3.77,30 tablets (1 a day)
+H9904,001,000,dupixent_300,00024591502,1022.1881,4,4088.75,"2 pens (2 mL each), every other week"
+H9904,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H9904,001,000,epinephrine_03,00115169449,192.9167,2,385.83,1 two-pack of auto-injectors
+H9904,001,000,fluticasone_nasal_50,60505082901,1.5995,16,25.59,"1 bottle (16 g, about 120 sprays)"
+H9904,001,000,lantus_solostar,00088221905,6.3500,15,95.25,1 box of 5 pens (3 mL each)
+H9904,001,000,latanoprost_0005,61314054701,6.5299,2.5,16.32,1 bottle (2.5 mL)
+H9904,001,000,levothyroxine_50,00378180310,0.1770,30,5.31,30 tablets (1 a day)
+H9904,001,000,lisinopril_10,68180098003,0.0804,30,2.41,30 tablets (1 a day)
+H9904,001,000,metformin_500,70010006310,0.0558,60,3.35,60 tablets (1 twice a day)
+H9904,001,000,mounjaro_5,00002149580,550.5073,2,1101.01,"4 single-dose pens (0.5 mL each), 1 a week"
+H9904,001,000,omeprazole_20,55111015810,0.1158,30,3.47,30 capsules (1 a day)
+H9904,001,000,ozempic_05,00169418113,339.7202,3,1019.16,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H9904,001,000,paxlovid,00069504530,50.9855,30,1529.57,1 five-day dose pack (30 tablets)
+H9904,001,000,sertraline_50,65862001205,0.1291,30,3.87,30 tablets (1 a day)
+H9904,001,000,sumatriptan_50,65862014736,1.3635,9,12.27,9 tablets
+H9904,001,000,triamcinolone_cream_01,45802006436,0.0869,30,2.61,1 tube (30 g)
+H9904,002,000,adderall_xr_30,70010003401,1.9339,30,58.02,30 capsules (1 a day)
+H9904,002,000,albuterol_hfa,69097002160,3.1738,18,57.13,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H9904,002,000,amlodipine_5,82009002710,0.0446,30,1.34,30 tablets (1 a day)
+H9904,002,000,amoxicillin_500,00781261305,0.2342,30,7.03,"30 capsules (a typical 10-day course, 3 a day)"
+H9904,002,000,amoxicillin_susp_400,00143988701,0.0801,100,8.01,1 bottle (100 mL)
+H9904,002,000,atorvastatin_20,60505257908,0.1255,30,3.77,30 tablets (1 a day)
+H9904,002,000,dupixent_300,00024591502,1022.1881,4,4088.75,"2 pens (2 mL each), every other week"
+H9904,002,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H9904,002,000,epinephrine_03,00115169449,192.9167,2,385.83,1 two-pack of auto-injectors
+H9904,002,000,fluticasone_nasal_50,60505082901,1.5995,16,25.59,"1 bottle (16 g, about 120 sprays)"
+H9904,002,000,latanoprost_0005,61314054701,6.5299,2.5,16.32,1 bottle (2.5 mL)
+H9904,002,000,levothyroxine_50,00378180310,0.1770,30,5.31,30 tablets (1 a day)
+H9904,002,000,lisinopril_10,68180098003,0.0804,30,2.41,30 tablets (1 a day)
+H9904,002,000,metformin_500,70010006310,0.0558,60,3.35,60 tablets (1 twice a day)
+H9904,002,000,omeprazole_20,55111015810,0.1158,30,3.47,30 capsules (1 a day)
+H9904,002,000,ozempic_05,00169418113,339.7202,3,1019.16,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H9904,002,000,paxlovid,00069504530,50.9855,30,1529.57,1 five-day dose pack (30 tablets)
+H9904,002,000,sertraline_50,65862001205,0.1291,30,3.87,30 tablets (1 a day)
+H9904,002,000,sumatriptan_50,65862014736,1.3635,9,12.27,9 tablets
+H9904,002,000,triamcinolone_cream_01,45802006436,0.0869,30,2.61,1 tube (30 g)
+H9907,002,001,adderall_xr_30,70010003401,0.5422,30,16.27,30 capsules (1 a day)
+H9907,002,001,albuterol_hfa,17270074000,1.8284,18,32.91,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H9907,002,001,amlodipine_5,82009002710,0.1177,30,3.53,30 tablets (1 a day)
+H9907,002,001,amoxicillin_500,00781261305,0.0865,30,2.59,"30 capsules (a typical 10-day course, 3 a day)"
+H9907,002,001,amoxicillin_susp_400,00143988701,0.0367,100,3.67,1 bottle (100 mL)
+H9907,002,001,atorvastatin_20,60505257908,0.2851,30,8.55,30 tablets (1 a day)
+H9907,002,001,concerta_18,31722095201,0.8248,30,24.74,30 tablets (1 a day)
+H9907,002,001,dupixent_300,00024591502,1011.0487,4,4044.19,"2 pens (2 mL each), every other week"
+H9907,002,001,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H9907,002,001,epinephrine_03,00093598627,134.7898,2,269.58,1 two-pack of auto-injectors
+H9907,002,001,fluticasone_nasal_50,60505082901,1.0541,16,16.87,"1 bottle (16 g, about 120 sprays)"
+H9907,002,001,humira_40,00074055402,3333.0874,2,6666.17,2 pens (every other week)
+H9907,002,001,lantus_solostar,00088221905,6.2072,15,93.11,1 box of 5 pens (3 mL each)
+H9907,002,001,latanoprost_0005,61314054701,1.7796,2.5,4.45,1 bottle (2.5 mL)
+H9907,002,001,levothyroxine_50,00378180310,0.2477,30,7.43,30 tablets (1 a day)
+H9907,002,001,lisinopril_10,68180098003,0.1422,30,4.27,30 tablets (1 a day)
+H9907,002,001,metformin_500,70010006310,0.1260,60,7.56,60 tablets (1 twice a day)
+H9907,002,001,mounjaro_5,00002149580,536.7016,2,1073.40,"4 single-dose pens (0.5 mL each), 1 a week"
+H9907,002,001,omeprazole_20,55111015810,0.2049,30,6.15,30 capsules (1 a day)
+H9907,002,001,ozempic_05,00169418113,331.2619,3,993.79,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H9907,002,001,paxlovid,00069504530,49.6707,30,1490.12,1 five-day dose pack (30 tablets)
+H9907,002,001,sertraline_50,65862001205,0.2384,30,7.15,30 tablets (1 a day)
+H9907,002,001,sumatriptan_50,65862014736,0.4083,9,3.67,9 tablets
+H9907,002,001,triamcinolone_cream_01,45802006436,0.0492,30,1.48,1 tube (30 g)
+H9907,002,002,adderall_xr_30,70010003401,0.6142,30,18.43,30 capsules (1 a day)
+H9907,002,002,albuterol_hfa,17270074000,1.8316,18,32.97,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H9907,002,002,amlodipine_5,82009002710,0.0986,30,2.96,30 tablets (1 a day)
+H9907,002,002,amoxicillin_500,00781261305,0.0874,30,2.62,"30 capsules (a typical 10-day course, 3 a day)"
+H9907,002,002,amoxicillin_susp_400,00143988701,0.0367,100,3.67,1 bottle (100 mL)
+H9907,002,002,atorvastatin_20,60505257908,0.2406,30,7.22,30 tablets (1 a day)
+H9907,002,002,concerta_18,31722095201,0.7174,30,21.52,30 tablets (1 a day)
+H9907,002,002,dupixent_300,00024591502,1016.4730,4,4065.89,"2 pens (2 mL each), every other week"
+H9907,002,002,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H9907,002,002,epinephrine_03,00093598627,136.4035,2,272.81,1 two-pack of auto-injectors
+H9907,002,002,fluticasone_nasal_50,60505082901,0.9557,16,15.29,"1 bottle (16 g, about 120 sprays)"
+H9907,002,002,humira_40,00074055402,3339.6050,2,6679.21,2 pens (every other week)
+H9907,002,002,lantus_solostar,00088221905,6.2054,15,93.08,1 box of 5 pens (3 mL each)
+H9907,002,002,latanoprost_0005,61314054701,1.8426,2.5,4.61,1 bottle (2.5 mL)
+H9907,002,002,levothyroxine_50,00378180310,0.2330,30,6.99,30 tablets (1 a day)
+H9907,002,002,lisinopril_10,68180098003,0.1226,30,3.68,30 tablets (1 a day)
+H9907,002,002,metformin_500,70010006310,0.1040,60,6.24,60 tablets (1 twice a day)
+H9907,002,002,mounjaro_5,00002149580,536.4865,2,1072.97,"4 single-dose pens (0.5 mL each), 1 a week"
+H9907,002,002,omeprazole_20,55111015810,0.1688,30,5.06,30 capsules (1 a day)
+H9907,002,002,ozempic_05,00169418113,331.3910,3,994.17,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H9907,002,002,paxlovid,00069504530,49.7684,30,1493.05,1 five-day dose pack (30 tablets)
+H9907,002,002,sertraline_50,65862001205,0.2185,30,6.55,30 tablets (1 a day)
+H9907,002,002,sumatriptan_50,65862014736,0.4458,9,4.01,9 tablets
+H9907,002,002,triamcinolone_cream_01,45802006436,0.0491,30,1.47,1 tube (30 g)
+H9907,002,003,adderall_xr_30,70010003401,0.5401,30,16.20,30 capsules (1 a day)
+H9907,002,003,albuterol_hfa,17270074000,1.8279,18,32.90,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+H9907,002,003,amlodipine_5,82009002710,0.1158,30,3.47,30 tablets (1 a day)
+H9907,002,003,amoxicillin_500,00781261305,0.0867,30,2.60,"30 capsules (a typical 10-day course, 3 a day)"
+H9907,002,003,amoxicillin_susp_400,00143988701,0.0386,100,3.86,1 bottle (100 mL)
+H9907,002,003,atorvastatin_20,60505257908,0.2839,30,8.52,30 tablets (1 a day)
+H9907,002,003,concerta_18,31722095201,0.7781,30,23.34,30 tablets (1 a day)
+H9907,002,003,dupixent_300,00024591502,1014.4861,4,4057.94,"2 pens (2 mL each), every other week"
+H9907,002,003,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+H9907,002,003,epinephrine_03,00093598627,134.6324,2,269.26,1 two-pack of auto-injectors
+H9907,002,003,fluticasone_nasal_50,60505082901,1.0186,16,16.30,"1 bottle (16 g, about 120 sprays)"
+H9907,002,003,humira_40,00074055402,3344.7773,2,6689.55,2 pens (every other week)
+H9907,002,003,lantus_solostar,00088221905,6.1943,15,92.91,1 box of 5 pens (3 mL each)
+H9907,002,003,latanoprost_0005,61314054701,1.7458,2.5,4.36,1 bottle (2.5 mL)
+H9907,002,003,levothyroxine_50,00378180310,0.2348,30,7.04,30 tablets (1 a day)
+H9907,002,003,lisinopril_10,68180098003,0.1428,30,4.28,30 tablets (1 a day)
+H9907,002,003,metformin_500,70010006310,0.1250,60,7.50,60 tablets (1 twice a day)
+H9907,002,003,mounjaro_5,00002149580,536.1349,2,1072.27,"4 single-dose pens (0.5 mL each), 1 a week"
+H9907,002,003,omeprazole_20,55111015810,0.2048,30,6.14,30 capsules (1 a day)
+H9907,002,003,ozempic_05,00169418113,330.5201,3,991.56,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+H9907,002,003,paxlovid,00069504530,49.6025,30,1488.08,1 five-day dose pack (30 tablets)
+H9907,002,003,sertraline_50,65862001205,0.2225,30,6.67,30 tablets (1 a day)
+H9907,002,003,sumatriptan_50,65862014736,0.4003,9,3.60,9 tablets
+H9907,002,003,triamcinolone_cream_01,45802006436,0.0491,30,1.47,1 tube (30 g)
+S2893,001,000,adderall_xr_30,70010003401,3.2400,30,97.20,30 capsules (1 a day)
+S2893,001,000,albuterol_hfa,69097002160,1.2042,18,21.68,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+S2893,001,000,amlodipine_5,82009002710,0.2343,30,7.03,30 tablets (1 a day)
+S2893,001,000,amoxicillin_500,00781261305,0.1344,30,4.03,"30 capsules (a typical 10-day course, 3 a day)"
+S2893,001,000,amoxicillin_susp_400,00143988701,0.0735,100,7.35,1 bottle (100 mL)
+S2893,001,000,atorvastatin_20,60505257908,0.3047,30,9.14,30 tablets (1 a day)
+S2893,001,000,dupixent_300,00024591502,1012.0447,4,4048.18,"2 pens (2 mL each), every other week"
+S2893,001,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+S2893,001,000,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+S2893,001,000,fluticasone_nasal_50,60505082901,0.5998,16,9.60,"1 bottle (16 g, about 120 sprays)"
+S2893,001,000,humira_40,00074055402,3332.9923,2,6665.98,2 pens (every other week)
+S2893,001,000,lantus_solostar,00088221905,6.1356,15,92.03,1 box of 5 pens (3 mL each)
+S2893,001,000,latanoprost_0005,61314054701,2.9669,2.5,7.42,1 bottle (2.5 mL)
+S2893,001,000,levothyroxine_50,00378180310,0.2586,30,7.76,30 tablets (1 a day)
+S2893,001,000,lisinopril_10,68180098003,0.2493,30,7.48,30 tablets (1 a day)
+S2893,001,000,metformin_500,70010006310,0.1703,60,10.22,60 tablets (1 twice a day)
+S2893,001,000,mounjaro_5,00002149580,530.7705,2,1061.54,"4 single-dose pens (0.5 mL each), 1 a week"
+S2893,001,000,omeprazole_20,55111015810,0.1610,30,4.83,30 capsules (1 a day)
+S2893,001,000,ozempic_05,00169418113,326.8826,3,980.65,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+S2893,001,000,paxlovid,00069504530,49.0193,30,1470.58,1 five-day dose pack (30 tablets)
+S2893,001,000,sertraline_50,65862001205,0.1707,30,5.12,30 tablets (1 a day)
+S2893,001,000,sumatriptan_50,65862014736,0.3191,9,2.87,9 tablets
+S2893,001,000,triamcinolone_cream_01,45802006436,0.1014,30,3.04,1 tube (30 g)
+S2893,003,000,adderall_xr_30,70010003401,3.2400,30,97.20,30 capsules (1 a day)
+S2893,003,000,albuterol_hfa,69097002160,1.2042,18,21.68,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+S2893,003,000,amlodipine_5,82009002710,0.2343,30,7.03,30 tablets (1 a day)
+S2893,003,000,amoxicillin_500,00781261305,0.1344,30,4.03,"30 capsules (a typical 10-day course, 3 a day)"
+S2893,003,000,amoxicillin_susp_400,00143988701,0.0735,100,7.35,1 bottle (100 mL)
+S2893,003,000,atorvastatin_20,60505257908,0.3047,30,9.14,30 tablets (1 a day)
+S2893,003,000,dupixent_300,00024591502,1012.0447,4,4048.18,"2 pens (2 mL each), every other week"
+S2893,003,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+S2893,003,000,epinephrine_03,00115169449,111.1523,2,222.30,1 two-pack of auto-injectors
+S2893,003,000,fluticasone_nasal_50,60505082901,0.5998,16,9.60,"1 bottle (16 g, about 120 sprays)"
+S2893,003,000,humira_40,00074055402,3332.9923,2,6665.98,2 pens (every other week)
+S2893,003,000,lantus_solostar,00088221905,6.1356,15,92.03,1 box of 5 pens (3 mL each)
+S2893,003,000,latanoprost_0005,61314054701,2.9669,2.5,7.42,1 bottle (2.5 mL)
+S2893,003,000,levothyroxine_50,00378180310,0.2586,30,7.76,30 tablets (1 a day)
+S2893,003,000,lisinopril_10,68180098003,0.2493,30,7.48,30 tablets (1 a day)
+S2893,003,000,metformin_500,70010006310,0.1703,60,10.22,60 tablets (1 twice a day)
+S2893,003,000,mounjaro_5,00002149580,530.7705,2,1061.54,"4 single-dose pens (0.5 mL each), 1 a week"
+S2893,003,000,omeprazole_20,55111015810,0.1610,30,4.83,30 capsules (1 a day)
+S2893,003,000,ozempic_05,00169418113,326.8826,3,980.65,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+S2893,003,000,paxlovid,00069504530,49.0193,30,1470.58,1 five-day dose pack (30 tablets)
+S2893,003,000,sertraline_50,65862001205,0.1707,30,5.12,30 tablets (1 a day)
+S2893,003,000,sumatriptan_50,65862014736,0.3191,9,2.87,9 tablets
+S2893,003,000,triamcinolone_cream_01,45802006436,0.1014,30,3.04,1 tube (30 g)
+S4802,076,000,albuterol_hfa,17270074000,2.8147,18,50.66,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+S4802,076,000,amlodipine_5,82009002710,0.0825,30,2.48,30 tablets (1 a day)
+S4802,076,000,amoxicillin_500,00781261305,0.1252,30,3.76,"30 capsules (a typical 10-day course, 3 a day)"
+S4802,076,000,amoxicillin_susp_400,00143988701,0.0330,100,3.30,1 bottle (100 mL)
+S4802,076,000,atorvastatin_20,60505257908,0.1214,30,3.64,30 tablets (1 a day)
+S4802,076,000,dupixent_300,00024591502,960.6455,4,3842.58,"2 pens (2 mL each), every other week"
+S4802,076,000,eliquis_5,00003089421,4.1450,60,248.70,60 tablets (1 twice a day)
+S4802,076,000,epinephrine_03,00093598627,96.8168,2,193.63,1 two-pack of auto-injectors
+S4802,076,000,fluticasone_nasal_50,60505082901,0.6144,16,9.83,"1 bottle (16 g, about 120 sprays)"
+S4802,076,000,lantus_solostar,00088221905,5.9152,15,88.73,1 box of 5 pens (3 mL each)
+S4802,076,000,latanoprost_0005,61314054701,1.0673,2.5,2.67,1 bottle (2.5 mL)
+S4802,076,000,levothyroxine_50,00378180310,0.3043,30,9.13,30 tablets (1 a day)
+S4802,076,000,lisinopril_10,68180098003,0.0780,30,2.34,30 tablets (1 a day)
+S4802,076,000,metformin_500,70010006310,0.0488,60,2.93,60 tablets (1 twice a day)
+S4802,076,000,mounjaro_5,00002149580,510.2080,2,1020.42,"4 single-dose pens (0.5 mL each), 1 a week"
+S4802,076,000,omeprazole_20,55111015810,0.3120,30,9.36,30 capsules (1 a day)
+S4802,076,000,ozempic_05,00169418113,313.9234,3,941.77,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+S4802,076,000,paxlovid,00069504530,47.1668,30,1415.00,1 five-day dose pack (30 tablets)
+S4802,076,000,sertraline_50,65862001205,0.0899,30,2.70,30 tablets (1 a day)
+S4802,076,000,sumatriptan_50,65862014736,0.9927,9,8.93,9 tablets
+S4802,076,000,triamcinolone_cream_01,45802006436,0.1325,30,3.98,1 tube (30 g)
+S4802,137,000,adderall_xr_30,70010003401,2.0434,30,61.30,30 capsules (1 a day)
+S4802,137,000,albuterol_hfa,17270074000,0.7864,18,14.16,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+S4802,137,000,amlodipine_5,82009002710,0.0263,30,0.79,30 tablets (1 a day)
+S4802,137,000,amoxicillin_500,00781261305,0.0587,30,1.76,"30 capsules (a typical 10-day course, 3 a day)"
+S4802,137,000,amoxicillin_susp_400,00143988701,0.0256,100,2.56,1 bottle (100 mL)
+S4802,137,000,atorvastatin_20,60505257908,0.0647,30,1.94,30 tablets (1 a day)
+S4802,137,000,dupixent_300,00024591502,960.6455,4,3842.58,"2 pens (2 mL each), every other week"
+S4802,137,000,eliquis_5,00003089421,4.1450,60,248.70,60 tablets (1 twice a day)
+S4802,137,000,epinephrine_03,00093598627,96.1220,2,192.24,1 two-pack of auto-injectors
+S4802,137,000,fluticasone_nasal_50,60505082901,0.1049,16,1.68,"1 bottle (16 g, about 120 sprays)"
+S4802,137,000,lantus_solostar,00088221905,5.9152,15,88.73,1 box of 5 pens (3 mL each)
+S4802,137,000,latanoprost_0005,61314054701,0.5765,2.5,1.44,1 bottle (2.5 mL)
+S4802,137,000,levothyroxine_50,60846080201,0.0214,30,0.64,30 tablets (1 a day)
+S4802,137,000,lisinopril_10,68180098003,0.0221,30,0.66,30 tablets (1 a day)
+S4802,137,000,metformin_500,70010006310,0.0188,60,1.13,60 tablets (1 twice a day)
+S4802,137,000,mounjaro_5,00002149580,510.2080,2,1020.42,"4 single-dose pens (0.5 mL each), 1 a week"
+S4802,137,000,omeprazole_20,55111015810,0.0436,30,1.31,30 capsules (1 a day)
+S4802,137,000,ozempic_05,00169418113,313.9234,3,941.77,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+S4802,137,000,paxlovid,00069504530,47.1668,30,1415.00,1 five-day dose pack (30 tablets)
+S4802,137,000,sertraline_50,65862001205,0.0385,30,1.16,30 tablets (1 a day)
+S4802,137,000,sumatriptan_50,65862014736,0.4102,9,3.69,9 tablets
+S4802,137,000,triamcinolone_cream_01,45802006436,0.0911,30,2.73,1 tube (30 g)
+S5601,004,000,adderall_xr_30,70010003401,0.7796,30,23.39,30 capsules (1 a day)
+S5601,004,000,albuterol_hfa,69097002160,1.3477,18,24.26,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+S5601,004,000,amlodipine_5,82009002710,0.1031,30,3.09,30 tablets (1 a day)
+S5601,004,000,amoxicillin_500,00781261305,0.1433,30,4.30,"30 capsules (a typical 10-day course, 3 a day)"
+S5601,004,000,amoxicillin_susp_400,00143988701,0.0272,100,2.72,1 bottle (100 mL)
+S5601,004,000,atorvastatin_20,60505257908,0.0907,30,2.72,30 tablets (1 a day)
+S5601,004,000,concerta_18,31722095201,2.2443,30,67.33,30 tablets (1 a day)
+S5601,004,000,dupixent_300,00024591502,1031.4862,4,4125.94,"2 pens (2 mL each), every other week"
+S5601,004,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+S5601,004,000,epinephrine_03,00115169449,89.1819,2,178.36,1 two-pack of auto-injectors
+S5601,004,000,fluticasone_nasal_50,60505082901,0.6095,16,9.75,"1 bottle (16 g, about 120 sprays)"
+S5601,004,000,lantus_solostar,00088221905,6.3250,15,94.88,1 box of 5 pens (3 mL each)
+S5601,004,000,latanoprost_0005,61314054701,1.1056,2.5,2.76,1 bottle (2.5 mL)
+S5601,004,000,levothyroxine_50,00378180310,0.1014,30,3.04,30 tablets (1 a day)
+S5601,004,000,lisinopril_10,68180098003,0.1072,30,3.22,30 tablets (1 a day)
+S5601,004,000,metformin_500,70010006310,0.0722,60,4.33,60 tablets (1 twice a day)
+S5601,004,000,mounjaro_5,00002149580,540.5333,2,1081.07,"4 single-dose pens (0.5 mL each), 1 a week"
+S5601,004,000,omeprazole_20,55111015810,0.1058,30,3.17,30 capsules (1 a day)
+S5601,004,000,ozempic_05,00169418113,332.9322,3,998.80,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+S5601,004,000,paxlovid,00069504530,50.5451,30,1516.35,1 five-day dose pack (30 tablets)
+S5601,004,000,sertraline_50,65862001205,0.1102,30,3.31,30 tablets (1 a day)
+S5601,004,000,sumatriptan_50,65862014736,1.1144,9,10.03,9 tablets
+S5601,004,000,triamcinolone_cream_01,45802006436,0.1003,30,3.01,1 tube (30 g)
+S5617,008,000,adderall_xr_30,70010003401,1.0613,30,31.84,30 capsules (1 a day)
+S5617,008,000,albuterol_hfa,00173068220,2.9689,18,53.44,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+S5617,008,000,amlodipine_5,82009002710,0.0230,30,0.69,30 tablets (1 a day)
+S5617,008,000,amoxicillin_500,00781261305,0.1652,30,4.96,"30 capsules (a typical 10-day course, 3 a day)"
+S5617,008,000,amoxicillin_susp_400,00143988701,0.0587,100,5.87,1 bottle (100 mL)
+S5617,008,000,atorvastatin_20,60505257908,0.0439,30,1.32,30 tablets (1 a day)
+S5617,008,000,concerta_18,31722095201,2.3098,30,69.29,30 tablets (1 a day)
+S5617,008,000,dupixent_300,00024591502,961.5226,4,3846.09,"2 pens (2 mL each), every other week"
+S5617,008,000,eliquis_5,00003089421,4.1450,60,248.70,60 tablets (1 twice a day)
+S5617,008,000,epinephrine_03,00115169449,193.3446,2,386.69,1 two-pack of auto-injectors
+S5617,008,000,fluticasone_nasal_50,60505082901,0.9019,16,14.43,"1 bottle (16 g, about 120 sprays)"
+S5617,008,000,lantus_solostar,00088221905,6.2569,15,93.85,1 box of 5 pens (3 mL each)
+S5617,008,000,latanoprost_0005,61314054701,2.3548,2.5,5.89,1 bottle (2.5 mL)
+S5617,008,000,levothyroxine_50,60846080201,0.0406,30,1.22,30 tablets (1 a day)
+S5617,008,000,lisinopril_10,68180098003,0.0340,30,1.02,30 tablets (1 a day)
+S5617,008,000,metformin_500,70010006310,0.0334,60,2.00,60 tablets (1 twice a day)
+S5617,008,000,mounjaro_5,00002149580,524.5067,2,1049.01,"4 single-dose pens (0.5 mL each), 1 a week"
+S5617,008,000,omeprazole_20,55111015810,0.0501,30,1.50,30 capsules (1 a day)
+S5617,008,000,ozempic_05,00169418113,323.5812,3,970.74,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+S5617,008,000,paxlovid,00069504530,48.4156,30,1452.47,1 five-day dose pack (30 tablets)
+S5617,008,000,sertraline_50,65862001205,0.0597,30,1.79,30 tablets (1 a day)
+S5617,008,000,sumatriptan_50,65862014736,0.4519,9,4.07,9 tablets
+S5617,008,000,triamcinolone_cream_01,45802006436,0.1293,30,3.88,1 tube (30 g)
+S5884,102,000,adderall_xr_30,70010003401,0.8534,30,25.60,30 capsules (1 a day)
+S5884,102,000,albuterol_hfa,00173068220,3.0421,18,54.76,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+S5884,102,000,amlodipine_5,82009002710,0.0318,30,0.95,30 tablets (1 a day)
+S5884,102,000,amoxicillin_500,00781261305,0.2812,30,8.44,"30 capsules (a typical 10-day course, 3 a day)"
+S5884,102,000,amoxicillin_susp_400,00143988701,0.1125,100,11.25,1 bottle (100 mL)
+S5884,102,000,atorvastatin_20,60505257908,0.1027,30,3.08,30 tablets (1 a day)
+S5884,102,000,dupixent_300,00024591502,989.2727,4,3957.09,"2 pens (2 mL each), every other week"
+S5884,102,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+S5884,102,000,epinephrine_03,00093598627,208.8127,2,417.63,1 two-pack of auto-injectors
+S5884,102,000,fluticasone_nasal_50,60505082901,1.0990,16,17.58,"1 bottle (16 g, about 120 sprays)"
+S5884,102,000,lantus_solostar,00088221905,6.1835,15,92.75,1 box of 5 pens (3 mL each)
+S5884,102,000,latanoprost_0005,61314054701,4.3550,2.5,10.89,1 bottle (2.5 mL)
+S5884,102,000,levothyroxine_50,00378180310,0.1572,30,4.72,30 tablets (1 a day)
+S5884,102,000,lisinopril_10,68180098003,0.0612,30,1.84,30 tablets (1 a day)
+S5884,102,000,metformin_500,70010006310,0.0451,60,2.71,60 tablets (1 twice a day)
+S5884,102,000,mounjaro_5,00002149580,535.5515,2,1071.10,"4 single-dose pens (0.5 mL each), 1 a week"
+S5884,102,000,omeprazole_20,55111015810,0.0894,30,2.68,30 capsules (1 a day)
+S5884,102,000,ozempic_05,00169418113,330.7989,3,992.40,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+S5884,102,000,paxlovid,00069504530,49.8077,30,1494.23,1 five-day dose pack (30 tablets)
+S5884,102,000,sertraline_50,65862001205,0.1194,30,3.58,30 tablets (1 a day)
+S5884,102,000,sumatriptan_50,65862014736,1.2349,9,11.11,9 tablets
+S5884,102,000,triamcinolone_cream_01,45802006436,0.1114,30,3.34,1 tube (30 g)
+S5884,149,000,adderall_xr_30,70010003401,0.8515,30,25.55,30 capsules (1 a day)
+S5884,149,000,albuterol_hfa,17270074000,2.7584,18,49.65,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+S5884,149,000,amlodipine_5,82009002710,0.0318,30,0.95,30 tablets (1 a day)
+S5884,149,000,amoxicillin_500,00781261305,0.2812,30,8.44,"30 capsules (a typical 10-day course, 3 a day)"
+S5884,149,000,amoxicillin_susp_400,00143988701,0.1125,100,11.25,1 bottle (100 mL)
+S5884,149,000,atorvastatin_20,60505257908,0.1027,30,3.08,30 tablets (1 a day)
+S5884,149,000,dupixent_300,00024591502,989.2727,4,3957.09,"2 pens (2 mL each), every other week"
+S5884,149,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+S5884,149,000,epinephrine_03,00093598627,208.4376,2,416.88,1 two-pack of auto-injectors
+S5884,149,000,fluticasone_nasal_50,60505082901,1.0990,16,17.58,"1 bottle (16 g, about 120 sprays)"
+S5884,149,000,lantus_solostar,00088221905,6.1835,15,92.75,1 box of 5 pens (3 mL each)
+S5884,149,000,latanoprost_0005,61314054701,4.3550,2.5,10.89,1 bottle (2.5 mL)
+S5884,149,000,levothyroxine_50,00378180310,0.1572,30,4.72,30 tablets (1 a day)
+S5884,149,000,lisinopril_10,68180098003,0.0612,30,1.84,30 tablets (1 a day)
+S5884,149,000,metformin_500,70010006310,0.0451,60,2.71,60 tablets (1 twice a day)
+S5884,149,000,mounjaro_5,00002149580,535.5515,2,1071.10,"4 single-dose pens (0.5 mL each), 1 a week"
+S5884,149,000,omeprazole_20,55111015810,0.0894,30,2.68,30 capsules (1 a day)
+S5884,149,000,ozempic_05,00169418113,330.7989,3,992.40,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+S5884,149,000,paxlovid,00069504530,49.8077,30,1494.23,1 five-day dose pack (30 tablets)
+S5884,149,000,sertraline_50,65862001205,0.1194,30,3.58,30 tablets (1 a day)
+S5884,149,000,sumatriptan_50,65862014736,1.2349,9,11.11,9 tablets
+S5884,149,000,triamcinolone_cream_01,45802006436,0.1114,30,3.34,1 tube (30 g)
+S5884,182,000,adderall_xr_30,70010003401,0.8614,30,25.84,30 capsules (1 a day)
+S5884,182,000,albuterol_hfa,00173068220,3.0421,18,54.76,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+S5884,182,000,amlodipine_5,82009002710,0.0324,30,0.97,30 tablets (1 a day)
+S5884,182,000,amoxicillin_500,00781261305,0.2842,30,8.53,"30 capsules (a typical 10-day course, 3 a day)"
+S5884,182,000,amoxicillin_susp_400,00143988701,0.1134,100,11.34,1 bottle (100 mL)
+S5884,182,000,atorvastatin_20,60505257908,0.1044,30,3.13,30 tablets (1 a day)
+S5884,182,000,dupixent_300,00024591502,989.2727,4,3957.09,"2 pens (2 mL each), every other week"
+S5884,182,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+S5884,182,000,epinephrine_03,00093598627,210.4564,2,420.91,1 two-pack of auto-injectors
+S5884,182,000,fluticasone_nasal_50,60505082901,1.1071,16,17.71,"1 bottle (16 g, about 120 sprays)"
+S5884,182,000,lantus_solostar,00088221905,6.1835,15,92.75,1 box of 5 pens (3 mL each)
+S5884,182,000,latanoprost_0005,61314054701,4.4232,2.5,11.06,1 bottle (2.5 mL)
+S5884,182,000,levothyroxine_50,00378180310,0.1599,30,4.80,30 tablets (1 a day)
+S5884,182,000,lisinopril_10,68180098003,0.0622,30,1.87,30 tablets (1 a day)
+S5884,182,000,metformin_500,70010006310,0.0459,60,2.75,60 tablets (1 twice a day)
+S5884,182,000,mounjaro_5,00002149580,535.5515,2,1071.10,"4 single-dose pens (0.5 mL each), 1 a week"
+S5884,182,000,omeprazole_20,55111015810,0.0906,30,2.72,30 capsules (1 a day)
+S5884,182,000,ozempic_05,00169418113,330.7989,3,992.40,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+S5884,182,000,paxlovid,00069504530,49.8077,30,1494.23,1 five-day dose pack (30 tablets)
+S5884,182,000,sertraline_50,65862001205,0.1208,30,3.62,30 tablets (1 a day)
+S5884,182,000,sumatriptan_50,65862014736,1.2439,9,11.20,9 tablets
+S5884,182,000,triamcinolone_cream_01,45802006436,0.1131,30,3.39,1 tube (30 g)
+S5921,348,000,adderall_xr_30,70010003401,0.9423,30,28.27,30 capsules (1 a day)
+S5921,348,000,albuterol_hfa,17270074000,1.4074,18,25.33,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+S5921,348,000,amlodipine_5,82009002710,0.1709,30,5.13,30 tablets (1 a day)
+S5921,348,000,amoxicillin_500,00781261305,0.2720,30,8.16,"30 capsules (a typical 10-day course, 3 a day)"
+S5921,348,000,amoxicillin_susp_400,00143988701,0.0651,100,6.51,1 bottle (100 mL)
+S5921,348,000,atorvastatin_20,60505257908,0.2418,30,7.25,30 tablets (1 a day)
+S5921,348,000,dupixent_300,00024591502,1052.9137,4,4211.65,"2 pens (2 mL each), every other week"
+S5921,348,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+S5921,348,000,epinephrine_03,00115169449,90.5659,2,181.13,1 two-pack of auto-injectors
+S5921,348,000,fluticasone_nasal_50,60505082901,0.7698,16,12.32,"1 bottle (16 g, about 120 sprays)"
+S5921,348,000,lantus_solostar,00088221905,6.5409,15,98.11,1 box of 5 pens (3 mL each)
+S5921,348,000,latanoprost_0005,61314054701,4.4397,2.5,11.10,1 bottle (2.5 mL)
+S5921,348,000,levothyroxine_50,00378180310,0.2554,30,7.66,30 tablets (1 a day)
+S5921,348,000,lisinopril_10,68180098003,0.1947,30,5.84,30 tablets (1 a day)
+S5921,348,000,metformin_500,70010006310,0.1132,60,6.79,60 tablets (1 twice a day)
+S5921,348,000,mounjaro_5,00002149580,565.0689,2,1130.14,"4 single-dose pens (0.5 mL each), 1 a week"
+S5921,348,000,omeprazole_20,55111015810,0.2881,30,8.64,30 capsules (1 a day)
+S5921,348,000,ozempic_05,00169418113,347.4928,3,1042.48,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+S5921,348,000,paxlovid,00069504530,52.1033,30,1563.10,1 five-day dose pack (30 tablets)
+S5921,348,000,sertraline_50,65862001205,0.2371,30,7.11,30 tablets (1 a day)
+S5921,348,000,sumatriptan_50,65862014736,1.0840,9,9.76,9 tablets
+S5921,348,000,triamcinolone_cream_01,45802006436,0.0732,30,2.20,1 tube (30 g)
+S5921,385,000,adderall_xr_30,70010003401,0.9423,30,28.27,30 capsules (1 a day)
+S5921,385,000,albuterol_hfa,17270074000,1.8504,18,33.31,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+S5921,385,000,amlodipine_5,82009002710,0.2005,30,6.02,30 tablets (1 a day)
+S5921,385,000,amoxicillin_500,00781261305,0.2737,30,8.21,"30 capsules (a typical 10-day course, 3 a day)"
+S5921,385,000,amoxicillin_susp_400,00143988701,0.0606,100,6.06,1 bottle (100 mL)
+S5921,385,000,atorvastatin_20,60505257908,0.2727,30,8.18,30 tablets (1 a day)
+S5921,385,000,dupixent_300,00024591502,1052.9137,4,4211.65,"2 pens (2 mL each), every other week"
+S5921,385,000,eliquis_5,00003089421,4.1451,60,248.71,60 tablets (1 twice a day)
+S5921,385,000,epinephrine_03,00115169449,89.3733,2,178.75,1 two-pack of auto-injectors
+S5921,385,000,fluticasone_nasal_50,60505082901,0.8839,16,14.14,"1 bottle (16 g, about 120 sprays)"
+S5921,385,000,lantus_solostar,00088221905,6.5409,15,98.11,1 box of 5 pens (3 mL each)
+S5921,385,000,latanoprost_0005,61314054701,4.9593,2.5,12.40,1 bottle (2.5 mL)
+S5921,385,000,levothyroxine_50,60846080201,0.2997,30,8.99,30 tablets (1 a day)
+S5921,385,000,lisinopril_10,68180098003,0.2249,30,6.75,30 tablets (1 a day)
+S5921,385,000,metformin_500,70010006310,0.1282,60,7.69,60 tablets (1 twice a day)
+S5921,385,000,mounjaro_5,00002149580,565.0689,2,1130.14,"4 single-dose pens (0.5 mL each), 1 a week"
+S5921,385,000,omeprazole_20,55111015810,0.2620,30,7.86,30 capsules (1 a day)
+S5921,385,000,ozempic_05,00169418113,347.4928,3,1042.48,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+S5921,385,000,paxlovid,00069504530,52.1033,30,1563.10,1 five-day dose pack (30 tablets)
+S5921,385,000,sertraline_50,65862001205,0.2857,30,8.57,30 tablets (1 a day)
+S5921,385,000,sumatriptan_50,65862014736,1.7044,9,15.34,9 tablets
+S5921,385,000,triamcinolone_cream_01,45802006436,0.0676,30,2.03,1 tube (30 g)

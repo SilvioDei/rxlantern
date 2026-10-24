@@ -1,0 +1,97 @@
+contract_id,plan_id,segment_id,contract_name,plan_name,plan_type,formulary_id,premium,deductible,snp,ma_counties,available_in_boston
+H0777,001,000,"MASS GENERAL BRIGHAM HEALTH PLAN, INC",Mass General Brigham SCO (HMO D-SNP),Medicare Advantage with drug coverage,00026446,0.00,615,2,Bristol; Dukes; Essex; Middlesex; Nantucket; Norfolk; Plymouth; Suffolk,Y
+H1486,001,000,"COMMONWEALTH CARE ALLIANCE, INC.",CCA One Care (HMO D-SNP),Medicare Advantage with drug coverage,00026339,0.00,615,2,Barnstable; Berkshire; Bristol; Essex; Franklin; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H1611,001,000,"MASS GENERAL BRIGHAM HEALTH PLAN, INC",Mass General Brigham One Care (HMO D-SNP),Medicare Advantage with drug coverage,00026447,0.00,615,2,Bristol; Dukes; Essex; Middlesex; Nantucket; Norfolk; Plymouth; Suffolk,Y
+H2224,001,000,"SENIOR WHOLE HEALTH, LLC",Senior Whole Health SCO (HMO D-SNP),Medicare Advantage with drug coverage,00026142,0.00,115,2,Bristol; Essex; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H2224,003,000,"SENIOR WHOLE HEALTH, LLC",Senior Whole Health SCO NHC (HMO D-SNP),Medicare Advantage with drug coverage,00026142,0.00,615,2,Bristol; Essex; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H2225,001,000,"COMMONWEALTH CARE ALLIANCE, INC.",CCA Senior Care Options (HMO D-SNP),Medicare Advantage with drug coverage,00026339,0.00,615,2,Bristol; Essex; Franklin; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H2226,001,000,"UnitedHealthcare of New England, Inc.",UHC Senior Care Options MA-Y001 (HMO D-SNP),Medicare Advantage with drug coverage,00026002,0.00,615,2,Bristol; Essex; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H2226,003,000,"UnitedHealthcare of New England, Inc.",UHC Senior Care Options NHC MA-Y002 (HMO D-SNP),Medicare Advantage with drug coverage,00026002,0.00,615,2,Bristol; Essex; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H2230,002,000,"BCBS  OF MASSACHUSETTS HMO BLUE, INC.",Medicare PPO Blue PlusRx (PPO),Medicare Advantage with drug coverage,00026077,124.40,200,0,Barnstable; Bristol; Essex; Franklin; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H2230,018,001,"BCBS  OF MASSACHUSETTS HMO BLUE, INC.",Medicare PPO Blue ValueRx (PPO),Medicare Advantage with drug coverage,00026077,80.30,0,0,Barnstable; Bristol; Essex; Franklin; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk,Y
+H2230,018,002,"BCBS  OF MASSACHUSETTS HMO BLUE, INC.",Medicare PPO Blue ValueRx (PPO),Medicare Advantage with drug coverage,00026077,80.30,0,0,Worcester,N
+H2230,019,000,"BCBS  OF MASSACHUSETTS HMO BLUE, INC.",Medicare PPO Blue EssentialRx (PPO),Medicare Advantage with drug coverage,00026077,33.80,615,0,Barnstable; Bristol; Essex; Franklin; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H2256,001,001,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Prime Rx Plus (HMO),Medicare Advantage with drug coverage,00026452,68.00,0,0,Essex; Suffolk,Y
+H2256,001,002,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Prime Rx Plus (HMO),Medicare Advantage with drug coverage,00026452,67.00,0,0,Barnstable; Bristol; Middlesex; Norfolk; Plymouth,N
+H2256,001,006,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Prime Rx Plus (HMO),Medicare Advantage with drug coverage,00026452,64.00,0,0,Hampden; Hampshire,N
+H2256,015,001,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Prime Rx (HMO),Medicare Advantage with drug coverage,00026452,40.90,0,0,Essex; Suffolk,Y
+H2256,015,002,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Prime Rx (HMO),Medicare Advantage with drug coverage,00026452,39.90,0,0,Barnstable; Bristol; Middlesex; Norfolk; Plymouth,N
+H2256,015,006,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Prime Rx (HMO),Medicare Advantage with drug coverage,00026452,41.30,0,0,Hampden; Hampshire,N
+H2256,018,001,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Value Rx (HMO),Medicare Advantage with drug coverage,00026452,46.90,0,0,Essex; Suffolk,Y
+H2256,018,007,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Value Rx (HMO),Medicare Advantage with drug coverage,00026452,44.90,0,0,Barnstable; Bristol; Middlesex; Norfolk; Plymouth,N
+H2256,018,008,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Value Rx (HMO),Medicare Advantage with drug coverage,00026452,51.90,0,0,Hampden; Hampshire,N
+H2256,026,001,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Basic Rx (HMO),Medicare Advantage with drug coverage,00026452,21.90,0,0,Essex; Suffolk,Y
+H2256,026,002,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Basic Rx (HMO),Medicare Advantage with drug coverage,00026452,26.90,0,0,Barnstable; Bristol; Middlesex; Norfolk; Plymouth,N
+H2256,026,003,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Basic Rx (HMO),Medicare Advantage with drug coverage,00026452,10.90,0,0,Hampden; Hampshire,N
+H2256,033,000,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Prime Rx (HMO),Medicare Advantage with drug coverage,00026452,25.90,0,0,Worcester,N
+H2256,034,000,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Value Rx (HMO),Medicare Advantage with drug coverage,00026452,14.60,0,0,Worcester,N
+H2256,036,000,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Basic Rx (HMO),Medicare Advantage with drug coverage,00026452,0.00,0,0,Worcester,N
+H2256,046,000,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred HMO Smart Saver Rx (HMO),Medicare Advantage with drug coverage,00026452,0.00,615,0,Barnstable; Bristol; Essex; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H2261,005,000,"BCBS  OF MASSACHUSETTS HMO BLUE, INC.",Medicare HMO Blue PlusRx (HMO),Medicare Advantage with drug coverage,00026077,54.60,200,0,Barnstable; Bristol; Essex; Franklin; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H2261,022,001,"BCBS  OF MASSACHUSETTS HMO BLUE, INC.",Medicare HMO Blue ValueRx (HMO),Medicare Advantage with drug coverage,00026077,36.00,320,0,Barnstable; Bristol; Essex; Franklin; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk,Y
+H2261,022,002,"BCBS  OF MASSACHUSETTS HMO BLUE, INC.",Medicare HMO Blue ValueRx (HMO),Medicare Advantage with drug coverage,00026077,36.00,320,0,Worcester,N
+H2261,023,001,"BCBS  OF MASSACHUSETTS HMO BLUE, INC.",Medicare HMO Blue FlexRx (HMO-POS),Medicare Advantage with drug coverage,00026077,63.30,260,0,Barnstable; Bristol; Essex; Franklin; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk,Y
+H2261,023,002,"BCBS  OF MASSACHUSETTS HMO BLUE, INC.",Medicare HMO Blue FlexRx (HMO-POS),Medicare Advantage with drug coverage,00026077,63.30,260,0,Worcester,N
+H2261,024,000,"BCBS  OF MASSACHUSETTS HMO BLUE, INC.",Medicare HMO Blue SaverRx (HMO-POS),Medicare Advantage with drug coverage,00026077,0.00,0,0,Barnstable; Bristol; Essex; Franklin; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H2737,001,000,"HEALTH NEW ENGLAND, INC.",Health New England Medicare Compass (PPO),Medicare Advantage with drug coverage,00026255,0.00,490,0,Berkshire; Franklin; Hampden; Hampshire,N
+H4371,001,000,"SENIOR WHOLE HEALTH, LLC",Molina One Care (HMO D-SNP),Medicare Advantage with drug coverage,00026142,0.00,615,2,Bristol; Essex; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H4610,001,000,"UNITEDHEALTHCARE OF NEW ENGLAND, INC.",UHC One Care MA-Y3 (HMO D-SNP),Medicare Advantage with drug coverage,00026002,0.00,534,2,Bristol; Essex; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H4610,002,000,"UNITEDHEALTHCARE OF NEW ENGLAND, INC.",UHC One Care MA-Y4 (HMO D-SNP),Medicare Advantage with drug coverage,00026002,0.00,615,2,Bristol; Essex; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H5216,138,000,HUMANA INSURANCE COMPANY,HumanaChoice Giveback H5216-138 (PPO),Medicare Advantage with drug coverage,00026408,0.00,395,0,Bristol; Dukes; Essex; Hampden; Suffolk; Worcester,Y
+H5216,249,000,HUMANA INSURANCE COMPANY,HumanaChoice H5216-249 (PPO),Medicare Advantage with drug coverage,00026408,0.00,350,0,Bristol; Dukes; Essex; Hampden; Suffolk; Worcester,Y
+H5216,424,000,HUMANA INSURANCE COMPANY,Humana Direct Choice Giveback (PPO),Medicare Advantage with drug coverage,00026408,0.00,395,0,Bristol; Dukes; Essex; Hampden; Suffolk; Worcester,Y
+H5253,155,000,"UNITEDHEALTHCARE OF WISCONSIN, INC.",UHC Complete Care MA-7 (HMO-POS C-SNP),Medicare Advantage with drug coverage,00026003,0.00,440,1,Franklin; Hampden; Hampshire; Worcester,N
+H5253,157,001,"UNITEDHEALTHCARE OF WISCONSIN, INC.",AARP Medicare Advantage from UHC MA-0003 (HMO-POS),Medicare Advantage with drug coverage,00026002,0.00,520,0,Franklin; Hampden; Hampshire; Worcester,N
+H5253,157,002,"UNITEDHEALTHCARE OF WISCONSIN, INC.",AARP Medicare Advantage from UHC MA-0003 (HMO-POS),Medicare Advantage with drug coverage,00026002,0.00,520,0,Bristol; Essex; Middlesex; Norfolk; Plymouth; Suffolk,Y
+H5253,159,000,"UNITEDHEALTHCARE OF WISCONSIN, INC.",AARP Medicare Advantage CareFlex from UHC MA-9 (HMO-POS),Medicare Advantage with drug coverage,00026002,0.00,520,0,Franklin; Hampden; Hampshire; Worcester,N
+H5314,001,000,"TUFTS HEALTH PUBLIC PLANS, INC.",Tufts Health One Care (HMO D-SNP),Medicare Advantage with drug coverage,00026455,0.00,615,2,Barnstable; Bristol; Essex; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H5314,002,000,"TUFTS HEALTH PUBLIC PLANS, INC.",Tufts Health One Care CW (HMO D-SNP),Medicare Advantage with drug coverage,00026455,0.00,615,2,Barnstable; Bristol; Essex; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H5521,159,000,AETNA LIFE INSURANCE COMPANY,Aetna Medicare Signature Extra (PPO),Medicare Advantage with drug coverage,00026010,0.00,615,0,Bristol; Essex; Middlesex; Norfolk; Plymouth,N
+H5521,160,000,AETNA LIFE INSURANCE COMPANY,Aetna Medicare Signature (PPO),Medicare Advantage with drug coverage,00026010,0.00,500,0,Hampden; Worcester,N
+H5521,450,000,AETNA LIFE INSURANCE COMPANY,Aetna Medicare Signature Extra (PPO),Medicare Advantage with drug coverage,00026010,0.00,500,0,Hampden; Worcester,N
+H5521,451,000,AETNA LIFE INSURANCE COMPANY,Aetna Medicare Signature (PPO),Medicare Advantage with drug coverage,00026010,0.00,615,0,Bristol; Essex; Middlesex; Norfolk; Plymouth,N
+H5652,001,000,"SIERRA HEALTH AND LIFE INSURANCE COMPANY, INC.",Erickson Advantage Signature (HMO-POS),Medicare Advantage with drug coverage,00026002,173.70,270,0,Essex; Plymouth,N
+H5652,003,000,"SIERRA HEALTH AND LIFE INSURANCE COMPANY, INC.",Erickson Advantage Guardian (HMO-POS I-SNP),Medicare Advantage with drug coverage,00026002,0.00,0,3,Essex; Plymouth,N
+H5652,004,000,"SIERRA HEALTH AND LIFE INSURANCE COMPANY, INC.",Erickson Advantage Champion (HMO-POS C-SNP),Medicare Advantage with drug coverage,00026003,119.50,270,1,Essex; Plymouth,N
+H5652,006,000,"SIERRA HEALTH AND LIFE INSURANCE COMPANY, INC.",Erickson Advantage Freedom (HMO-POS),Medicare Advantage with drug coverage,00026002,89.00,355,0,Essex; Plymouth,N
+H5652,008,000,"SIERRA HEALTH AND LIFE INSURANCE COMPANY, INC.",Erickson Advantage Liberty (HMO-POS),Medicare Advantage with drug coverage,00026002,14.00,600,0,Essex; Plymouth,N
+H5793,014,000,AETNA HEALTH INC. (CT),Aetna Medicare Signature (HMO-POS),Medicare Advantage with drug coverage,00026010,0.00,615,0,Hampden; Worcester,N
+H5793,018,000,AETNA HEALTH INC. (CT),Aetna Medicare Signature (HMO-POS),Medicare Advantage with drug coverage,00026010,0.00,615,0,Bristol; Essex; Middlesex; Norfolk; Plymouth; Suffolk,Y
+H6847,001,000,"Mass General Brigham Health Plan, Inc.",Mass General Brigham Advantage Secure (HMO-POS),Medicare Advantage with drug coverage,00026444,62.00,350,0,Bristol; Dukes; Essex; Middlesex; Nantucket; Norfolk; Plymouth; Suffolk; Worcester,Y
+H7617,046,000,EMPHESYS INSURANCE COMPANY,HumanaChoice Giveback H7617-046 (PPO),Medicare Advantage with drug coverage,00026408,0.00,395,0,Bristol; Dukes; Suffolk; Worcester,Y
+H7670,001,000,"CENTRAL MASS HEALTH, LLC",Mass Advantage Basic (HMO),Medicare Advantage with drug coverage,00026304,0.00,200,0,Worcester,N
+H7670,002,000,"CENTRAL MASS HEALTH, LLC",Mass Advantage Plus (HMO),Medicare Advantage with drug coverage,00026304,39.40,150,0,Worcester,N
+H8330,001,000,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Health Plan Senior Care Options (HMO D-SNP),Medicare Advantage with drug coverage,00026455,0.00,615,2,Barnstable; Bristol; Essex; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H8330,002,000,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Health Plan Senior Care Options CW (HMO D-SNP),Medicare Advantage with drug coverage,00026455,0.00,400,2,Barnstable; Bristol; Essex; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H8578,001,000,"HEALTH NEW ENGLAND, INC.",Health New England Medicare Premium (HMO),Medicare Advantage with drug coverage,00026255,15.80,350,0,Berkshire; Franklin; Hampden; Hampshire,N
+H8578,004,000,"HEALTH NEW ENGLAND, INC.",Health New England Medicare Plus (HMO),Medicare Advantage with drug coverage,00026255,58.40,350,0,Berkshire; Franklin; Hampden; Hampshire,N
+H8578,012,000,"HEALTH NEW ENGLAND, INC.",Health New England Medicare Value (HMO),Medicare Advantage with drug coverage,00026255,0.00,490,0,Berkshire; Franklin; Hampden; Hampshire,N
+H8768,055,001,CARE IMPROVEMENT PLUS SOUTH CENTRAL INSURANCE CO.,AARP Medicare Advantage from UHC MA-0006 (PPO),Medicare Advantage with drug coverage,00026002,45.00,600,0,Franklin; Hampden; Hampshire; Worcester,N
+H8768,055,002,CARE IMPROVEMENT PLUS SOUTH CENTRAL INSURANCE CO.,AARP Medicare Advantage from UHC MA-0006 (PPO),Medicare Advantage with drug coverage,00026002,48.00,600,0,Bristol; Essex; Middlesex; Norfolk; Plymouth; Suffolk,Y
+H8928,001,000,FALLON COMMUNITY HEALTH PLAN,NaviCare (HMO D-SNP),Medicare Advantage with drug coverage,00026300,0.00,615,2,Barnstable; Berkshire; Bristol; Essex; Franklin; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H9001,030,015,FALLON COMMUNITY HEALTH PLAN,Fallon Medicare Plus Green (HMO),Medicare Advantage with drug coverage,00026299,56.40,300,0,Worcester,N
+H9001,030,016,FALLON COMMUNITY HEALTH PLAN,Fallon Medicare Plus Green (HMO),Medicare Advantage with drug coverage,00026299,56.40,300,0,Franklin; Hampden; Hampshire,N
+H9001,030,018,FALLON COMMUNITY HEALTH PLAN,Fallon Medicare Plus Green (HMO),Medicare Advantage with drug coverage,00026299,56.40,300,0,Barnstable; Berkshire; Bristol; Essex; Middlesex; Norfolk; Plymouth; Suffolk,Y
+H9001,031,015,FALLON COMMUNITY HEALTH PLAN,Fallon Medicare Plus Blue (HMO),Medicare Advantage with drug coverage,00026299,72.10,0,0,Worcester,N
+H9001,031,016,FALLON COMMUNITY HEALTH PLAN,Fallon Medicare Plus Blue (HMO),Medicare Advantage with drug coverage,00026299,72.10,0,0,Franklin; Hampden; Hampshire,N
+H9001,031,018,FALLON COMMUNITY HEALTH PLAN,Fallon Medicare Plus Blue (HMO),Medicare Advantage with drug coverage,00026299,72.10,0,0,Barnstable; Berkshire; Bristol; Essex; Middlesex; Norfolk; Plymouth; Suffolk,Y
+H9001,038,000,FALLON COMMUNITY HEALTH PLAN,Fallon Medicare Plus Orange (HMO),Medicare Advantage with drug coverage,00026299,0.00,400,0,Barnstable; Berkshire; Bristol; Essex; Franklin; Hampden; Hampshire; Middlesex; Norfolk; Plymouth; Suffolk; Worcester,Y
+H9485,001,000,"Mass General Brigham Health Plan, Inc.",Mass General Brigham Advantage (PPO),Medicare Advantage with drug coverage,00026445,0.00,350,0,Bristol; Dukes; Essex; Middlesex; Nantucket; Norfolk; Plymouth; Suffolk; Worcester,Y
+H9485,002,000,"Mass General Brigham Health Plan, Inc.",Mass General Brigham Advantage Premier (PPO),Medicare Advantage with drug coverage,00026445,79.70,350,0,Bristol; Dukes; Essex; Middlesex; Nantucket; Norfolk; Plymouth; Suffolk; Worcester,Y
+H9485,003,000,"Mass General Brigham Health Plan, Inc.",Mass General Brigham Advantage Signature (PPO),Medicare Advantage with drug coverage,00026445,147.20,350,0,Bristol; Dukes; Essex; Middlesex; Nantucket; Norfolk; Plymouth; Suffolk; Worcester,Y
+H9904,001,000,"CENTRAL MASS HEALTH, LLC",Mass Advantage Premiere (PPO),Medicare Advantage with drug coverage,00026304,0.00,250,0,Worcester,N
+H9904,002,000,"CENTRAL MASS HEALTH, LLC",Mass Advantage Extra (PPO),Medicare Advantage with drug coverage,00026305,0.00,200,0,Worcester,N
+H9907,002,001,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred PPO RX (PPO),Medicare Advantage with drug coverage,00026452,0.00,615,0,Bristol; Essex; Hampden; Hampshire; Norfolk; Plymouth; Worcester,N
+H9907,002,002,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred PPO RX (PPO),Medicare Advantage with drug coverage,00026452,0.00,615,0,Suffolk,Y
+H9907,002,003,TUFTS ASSOCIATED HEALTH MAINTENANCE ORGANIZATION,Tufts Medicare Preferred PPO RX (PPO),Medicare Advantage with drug coverage,00026452,0.00,615,0,Middlesex,N
+S2893,001,000,ANTHEM INSURANCE CO. & BCBSMA & BCBSRI & BCBSVT,Blue MedicareRx Value Plus (PDP),PDP (stand-alone drug plan),00026129,20.70,615,0,all (statewide PDP region),Y
+S2893,003,000,ANTHEM INSURANCE CO. & BCBSMA & BCBSRI & BCBSVT,Blue MedicareRx Premier (PDP),PDP (stand-alone drug plan),00026130,238.60,0,0,all (statewide PDP region),Y
+S4802,076,000,"WELLCARE PRESCRIPTION INSURANCE, INC.",Wellcare Classic (PDP),PDP (stand-alone drug plan),00026191,21.70,615,0,all (statewide PDP region),Y
+S4802,137,000,"WELLCARE PRESCRIPTION INSURANCE, INC.",Wellcare Value Script (PDP),PDP (stand-alone drug plan),00026195,16.40,615,0,all (statewide PDP region),Y
+S5601,004,000,SILVERSCRIPT INSURANCE COMPANY,SilverScript Choice (PDP),PDP (stand-alone drug plan),00026008,32.70,615,0,all (statewide PDP region),Y
+S5617,008,000,MEDCO CONTAINMENT LIFE AND MEDCO CONTAINMENT NY,HealthSpring Assurance Rx (PDP),PDP (stand-alone drug plan),00026089,139.30,615,0,all (statewide PDP region),Y
+S5884,102,000,Humana Insurance Co. & Humana Insurance Co. of NY,Humana Basic Rx Plan (PDP),PDP (stand-alone drug plan),00026399,8.40,615,0,all (statewide PDP region),Y
+S5884,149,000,Humana Insurance Co. & Humana Insurance Co. of NY,Humana Premier Rx Plan (PDP),PDP (stand-alone drug plan),00026402,138.60,0,0,all (statewide PDP region),Y
+S5884,182,000,Humana Insurance Co. & Humana Insurance Co. of NY,Humana Value Rx Plan (PDP),PDP (stand-alone drug plan),00026400,73.60,601,0,all (statewide PDP region),Y
+S5921,348,000,UNITEDHEALTHCARE INS. CO. & UHC INS. CO. OF NY,AARP Medicare Rx Saver from UHC (PDP),PDP (stand-alone drug plan),00026001,38.70,615,0,all (statewide PDP region),Y
+S5921,385,000,UNITEDHEALTHCARE INS. CO. & UHC INS. CO. OF NY,AARP Medicare Rx Preferred from UHC (PDP),PDP (stand-alone drug plan),00026000,155.10,130,0,all (statewide PDP region),Y

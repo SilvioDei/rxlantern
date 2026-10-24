@@ -1,0 +1,542 @@
+{
+  "checked_date": "2026-10-23",
+  "api": "https://api.fda.gov/drug/shortages.json",
+  "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+  "drugs": [
+    {
+      "drug_id": "adderall_xr_30",
+      "drug": "Adderall XR 30 mg ER capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [
+        "Tablet"
+      ],
+      "summary": "No FDA shortage entry was found for this exact drug and strength. FDA does list other forms or strengths of the same medicine: Tablet (current shortage). Those are different products.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:42+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "concerta_18",
+      "drug": "Concerta 18 mg ER tablet",
+      "status": "in shortage",
+      "other_forms_on_list": [
+        "Film, Extended Release",
+        "Tablet"
+      ],
+      "summary": "FDA lists a current shortage for 8 package(s) of this exact drug and strength. Some makers may still have it. Call the pharmacy to check.",
+      "matching_entries": [
+        {
+          "presentation": "Concerta, Tablet, Extended Release, 18 mg (NDC 50458-585-01)",
+          "company": "Janssen Pharmaceuticals",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/20/2026",
+          "package_ndc": "50458-585-01"
+        },
+        {
+          "presentation": "Concerta, Tablet, Extended Release, 27 mg (NDC 50458-588-01)",
+          "company": "Janssen Pharmaceuticals",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/20/2026",
+          "package_ndc": "50458-588-01"
+        },
+        {
+          "presentation": "Concerta, Tablet, Extended Release, 36 mg (NDC 50458-586-01)",
+          "company": "Janssen Pharmaceuticals",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/20/2026",
+          "package_ndc": "50458-586-01"
+        },
+        {
+          "presentation": "Concerta, Tablet, Extended Release, 54 mg (NDC 50458-587-01)",
+          "company": "Janssen Pharmaceuticals",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/20/2026",
+          "package_ndc": "50458-587-01"
+        },
+        {
+          "presentation": "Methylphenidate Hydrochloride, Tablet, Extended Release, 18 mg (NDC 13811-706-10)",
+          "company": "Trigen Laboratories, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Allocation to current contracted customers",
+          "update_date": "10/16/2026",
+          "package_ndc": "13811-706-10"
+        },
+        {
+          "presentation": "Methylphenidate Hydrochloride, Tablet, Extended Release, 18 mg (NDC 57664-606-88)",
+          "company": "Sun Pharmaceutical Industries, Inc.",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Currently not marketed",
+          "update_date": "10/19/2026",
+          "package_ndc": "57664-606-88"
+        },
+        {
+          "presentation": "Methylphenidate Hydrochloride, Tablet, Extended Release, 18 mg (NDC 62037-725-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "62037-725-01"
+        },
+        {
+          "presentation": "Methylphenidate Hydrochloride, Tablet, Extended Release, 27 mg (NDC 13811-707-10)",
+          "company": "Trigen Laboratories, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Allocation to current contracted customers",
+          "update_date": "10/16/2026",
+          "package_ndc": "13811-707-10"
+        },
+        {
+          "presentation": "Methylphenidate Hydrochloride, Tablet, Extended Release, 27 mg (NDC 62037-734-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: October 2026",
+          "update_date": "10/15/2026",
+          "package_ndc": "62037-734-01"
+        },
+        {
+          "presentation": "Methylphenidate Hydrochloride, Tablet, Extended Release, 36 mg (NDC 13811-708-10)",
+          "company": "Trigen Laboratories, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Allocation to current contracted customers",
+          "update_date": "10/16/2026",
+          "package_ndc": "13811-708-10"
+        },
+        {
+          "presentation": "Methylphenidate Hydrochloride, Tablet, Extended Release, 36 mg (NDC 62037-726-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: October 2026",
+          "update_date": "10/15/2026",
+          "package_ndc": "62037-726-01"
+        },
+        {
+          "presentation": "Methylphenidate Hydrochloride, Tablet, Extended Release, 54 mg (NDC 13811-709-10)",
+          "company": "Trigen Laboratories, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Allocation to current contracted customers",
+          "update_date": "10/16/2026",
+          "package_ndc": "13811-709-10"
+        },
+        {
+          "presentation": "Methylphenidate Hydrochloride, Tablet, Extended Release, 54 mg (NDC 62037-727-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "62037-727-01"
+        },
+        {
+          "presentation": "Methylphenidate Hydrochloride, Tablet, Extended Release, 72 mg (NDC 13811-710-30)",
+          "company": "Trigen Laboratories, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Allocation to current contracted customers",
+          "update_date": "10/16/2026",
+          "package_ndc": "13811-710-30"
+        },
+        {
+          "presentation": "Relexxii, Tablet, Extended Release, 18 mg (NDC 68025-095-10)",
+          "company": "Vertical Pharmaceuticals, LLC",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "68025-095-10"
+        },
+        {
+          "presentation": "Relexxii, Tablet, Extended Release, 18 mg (NDC 68025-095-30)",
+          "company": "Vertical Pharmaceuticals, LLC",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "68025-095-30"
+        },
+        {
+          "presentation": "Relexxii, Tablet, Extended Release, 27 mg (NDC 68025-096-10)",
+          "company": "Vertical Pharmaceuticals, LLC",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "68025-096-10"
+        },
+        {
+          "presentation": "Relexxii, Tablet, Extended Release, 27 mg (NDC 68025-096-30)",
+          "company": "Vertical Pharmaceuticals, LLC",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "68025-096-30"
+        },
+        {
+          "presentation": "Relexxii, Tablet, Extended Release, 36 mg (NDC 68025-097-10)",
+          "company": "Vertical Pharmaceuticals, LLC",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "68025-097-10"
+        },
+        {
+          "presentation": "Relexxii, Tablet, Extended Release, 36 mg (NDC 68025-097-30)",
+          "company": "Vertical Pharmaceuticals, LLC",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "68025-097-30"
+        },
+        {
+          "presentation": "Relexxii, Tablet, Extended Release, 45 mg (NDC 68025-088-30)",
+          "company": "Vertical Pharmaceuticals, LLC",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "68025-088-30"
+        },
+        {
+          "presentation": "Relexxii, Tablet, Extended Release, 54 mg (NDC 68025-098-10)",
+          "company": "Vertical Pharmaceuticals, LLC",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "68025-098-10"
+        },
+        {
+          "presentation": "Relexxii, Tablet, Extended Release, 54 mg (NDC 68025-098-30)",
+          "company": "Vertical Pharmaceuticals, LLC",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "68025-098-30"
+        },
+        {
+          "presentation": "Relexxii, Tablet, Extended Release, 63 mg (NDC 68025-089-30)",
+          "company": "Vertical Pharmaceuticals, LLC",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "68025-089-30"
+        },
+        {
+          "presentation": "Relexxii, Tablet, Extended Release, 72 mg (NDC 68025-084-30)",
+          "company": "Vertical Pharmaceuticals, LLC",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "68025-084-30"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:43+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "atorvastatin_20",
+      "drug": "Atorvastatin 20 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:43+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "lisinopril_10",
+      "drug": "Lisinopril 10 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:45+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "levothyroxine_50",
+      "drug": "Levothyroxine 50 mcg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:46+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "metformin_500",
+      "drug": "Metformin 500 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:47+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "amlodipine_5",
+      "drug": "Amlodipine 5 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:47+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "omeprazole_20",
+      "drug": "Omeprazole 20 mg DR capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:48+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "sertraline_50",
+      "drug": "Sertraline 50 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:48+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "amoxicillin_500",
+      "drug": "Amoxicillin 500 mg capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:49+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "ozempic_05",
+      "drug": "Ozempic (semaglutide) 0.5 mg pen",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:50+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "mounjaro_5",
+      "drug": "Mounjaro (tirzepatide) 5 mg pen",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:52+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "eliquis_5",
+      "drug": "Eliquis (apixaban) 5 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:54+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "humira_40",
+      "drug": "Humira (adalimumab) 40 mg pen",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:55+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "dupixent_300",
+      "drug": "Dupixent (dupilumab) 300 mg pen",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:56+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "albuterol_hfa",
+      "drug": "Albuterol HFA 90 mcg inhaler",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:56+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "lantus_solostar",
+      "drug": "Insulin glargine (Lantus SoloStar) pen",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:57+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "amoxicillin_susp_400",
+      "drug": "Amoxicillin 400 mg/5 mL oral suspension",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:58+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "sumatriptan_50",
+      "drug": "Sumatriptan 50 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:58+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "latanoprost_0005",
+      "drug": "Latanoprost 0.005% eye drops",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:15:59+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "fluticasone_nasal_50",
+      "drug": "Fluticasone 50 mcg nasal spray",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:16:00+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "triamcinolone_cream_01",
+      "drug": "Triamcinolone 0.1% cream",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [
+        "Injection"
+      ],
+      "summary": "No FDA shortage entry was found for this exact drug and strength. FDA does list other forms or strengths of the same medicine: Injection (current shortage). Those are different products.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:16:02+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "epinephrine_03",
+      "drug": "Epinephrine 0.3 mg auto-injector",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [
+        "Injection"
+      ],
+      "summary": "No FDA shortage entry was found for this exact drug and strength. FDA does list other forms or strengths of the same medicine: Injection (current shortage). Those are different products.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:16:03+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "nicotine_patch_21",
+      "drug": "Nicotine 21 mg patch",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:16:04+00:00",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "paxlovid",
+      "drug": "Paxlovid dose pack",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T00:16:04+00:00",
+      "checked_date": "2026-10-23"
+    }
+  ]
+}

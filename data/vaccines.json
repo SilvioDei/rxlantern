@@ -1,0 +1,757 @@
+{
+  "checked_date": "2026-10-23",
+  "warning": "Vaccine rules changed in 2025-2026. Re-check official sources before relying on this.",
+  "general_sources": [
+    {
+      "url": "https://www.cdc.gov/vaccines-adults/recommended-vaccines/how-to-pay-adult-vaccines.html",
+      "says": "Private plans must cover certain vaccines with no copay in-network; Part B covers COVID-19, flu, pneumococcal, hepatitis B for people at increased risk; Part D makes all other CDC-recommended adult vaccines available at no cost; most adults with Medicaid get all CDC-recommended vaccines at no cost. (Updated Sept 2, 2026)"
+    },
+    {
+      "url": "https://www.cms.gov/files/document/mln908764-medicare-part-d-vaccines.pdf",
+      "says": "Part D covers all commercially available vaccines not covered by Part B; $0 for ACIP-recommended adult vaccines; non-ACIP-recommended vaccines may have cost sharing."
+    },
+    {
+      "url": "https://www.healthcare.gov/preventive-care-adults/",
+      "says": "Adult immunizations plans must cover: chickenpox, diphtheria, flu, hepatitis A, hepatitis B, HPV, measles, meningococcal, mumps, whooping cough, pneumococcal, rubella, shingles, tetanus."
+    },
+    {
+      "url": "https://www.cdc.gov/vaccines/hcp/imz-schedules/adult-age.html",
+      "says": "Adult schedule page still shows the 2025 schedule (addendum July 2, 2025); no 2026 adult schedule found."
+    }
+  ],
+  "massachusetts_rule": {
+    "rule": "Massachusetts Bulletin 2025-03 (Division of Insurance and Department of Public Health, issued September 3, 2025)",
+    "coverage": "Insurers must cover vaccines recommended by the Massachusetts Department of Public Health (DPH), not only CDC recommendations.",
+    "cost": "No cost-sharing and no utilization management (no prior authorization delays) for covered routine vaccines.",
+    "applies_to": "Fully insured health plans issued under Massachusetts law (for example Blue Cross Blue Shield of Massachusetts and HMOs). Group Insurance Commission (GIC) plans and MassHealth also cover vaccines according to DPH guidelines.",
+    "does_not_apply_to": "Self-insured employer plans are not required to follow the bulletin.",
+    "patient_message": "If your plan is through a large employer, check with your plan, because it may not have to follow the Massachusetts rule.",
+    "brands": "Insurers may cover only certain brands, as long as at least one product covers each DPH-recommended vaccine.",
+    "dph_recommended_list": "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines",
+    "sources": [
+      "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download",
+      "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+      "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines"
+    ],
+    "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)",
+    "checked_date": "2026-10-23"
+  },
+  "not_checked": [
+    "mass.gov pages could not be opened directly (HTTP 403). The Massachusetts rule above was verified via web search, 2026-10-23 (mass.gov could not be opened directly).",
+    "MassHealth pharmacy bulletins on mass.gov could not be opened (HTTP 403)."
+  ],
+  "yellow_fever_clinic_finder": "https://wwwnc.cdc.gov/travel/yellow-fever-vaccination-clinics/search",
+  "vaccines": [
+    {
+      "id": "flu",
+      "name": "Flu (influenza)",
+      "group": "routine",
+      "medicare": {
+        "part": "B",
+        "coverage": "Part B covers the flu shot, usually once per flu season.",
+        "cost": "$0 if the provider accepts Medicare assignment (no deductible or coinsurance for Part B vaccines)",
+        "source": "https://www.medicare.gov/coverage/flu-vaccines"
+      },
+      "commercial": {
+        "coverage": "Listed on HealthCare.gov's adult preventive services list. Marketplace plans and many other plans must cover it.",
+        "cost": "No copay or coinsurance from an in-network provider, even before the deductible. HealthCare.gov adds: '$0 cost isn't guaranteed in all cases.'",
+        "source": "https://www.healthcare.gov/preventive-care-adults/",
+        "massachusetts": {
+          "rule": "Massachusetts Bulletin 2025-03 (Division of Insurance and Department of Public Health, issued September 3, 2025)",
+          "coverage": "Insurers must cover vaccines recommended by the Massachusetts Department of Public Health (DPH), not only CDC recommendations.",
+          "cost": "No cost-sharing and no utilization management (no prior authorization delays) for covered routine vaccines.",
+          "applies_to": "Fully insured health plans issued under Massachusetts law (for example Blue Cross Blue Shield of Massachusetts and HMOs). Group Insurance Commission (GIC) plans and MassHealth also cover vaccines according to DPH guidelines.",
+          "does_not_apply_to": "Self-insured employer plans are not required to follow the bulletin.",
+          "patient_message": "If your plan is through a large employer, check with your plan, because it may not have to follow the Massachusetts rule.",
+          "brands": "Insurers may cover only certain brands, as long as at least one product covers each DPH-recommended vaccine.",
+          "dph_recommended_list": "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines",
+          "sources": [
+            "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download",
+            "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+            "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines"
+          ],
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)",
+          "checked_date": "2026-10-23"
+        }
+      },
+      "notes": [
+        "CDC recommends a flu vaccine every year for everyone 6 months and older (updated Sept 1, 2026).",
+        "MassHealth pays pharmacies for seasonal flu vaccine without PA (MassHealth Drug List footnote 1)."
+      ],
+      "extra_sources": [
+        "https://www.cdc.gov/flu/hcp/vax-summary/index.html"
+      ],
+      "masshealth": {
+        "coverage": "Listed on the MassHealth Drug List (some products need PA for certain ages: Fluad PA < 65 years; Flumist PA; Fluzone PA < 65 years; Mflusiva PA < 50 years)",
+        "cost": "CDC: most adults with Medicaid get all CDC-recommended vaccines at no cost.",
+        "products": [
+          {
+            "product": "Afluria (influenza virus vaccine-Afluria)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Fluad (influenza virus vaccine, adjuvanted)",
+            "pa": "PA < 65 years",
+            "codes": "1"
+          },
+          {
+            "product": "Fluarix (influenza virus vaccine-Fluarix)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Flublok (influenza virus vaccine-Flublok)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Flucelvax (influenza virus vaccine-Flucelvax)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Flulaval (influenza virus vaccine-Flulaval)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Flumist (influenza virus vaccine, self administered)",
+            "pa": "PA",
+            "codes": ""
+          },
+          {
+            "product": "Flumist (influenza virus vaccine-Flumist)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Fluzone (influenza virus vaccine, high dose)",
+            "pa": "PA < 65 years",
+            "codes": "1"
+          },
+          {
+            "product": "Fluzone (influenza virus vaccine-Fluzone)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Mflusiva (influenza virus vaccine, mRNA)",
+            "pa": "PA < 50 years",
+            "codes": ""
+          }
+        ],
+        "rule": "MassHealth does not pay for vaccines that are free through local boards of health or the Mass. Department of Public Health (products marked '1'); flu vaccine is paid at pharmacies without PA.",
+        "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=influenza",
+        "cost_source": "https://www.cdc.gov/vaccines-adults/recommended-vaccines/how-to-pay-adult-vaccines.html",
+        "dph_rule": {
+          "says": "MassHealth covers vaccines according to DPH guidelines.",
+          "source": "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)"
+        }
+      },
+      "checked_date": "2026-10-23"
+    },
+    {
+      "id": "covid19",
+      "name": "COVID-19",
+      "group": "routine",
+      "medicare": {
+        "part": "B",
+        "coverage": "Part B covers FDA-approved or authorized COVID-19 vaccines.",
+        "cost": "$0 if the provider accepts Medicare assignment (no deductible or coinsurance for Part B vaccines)",
+        "source": "https://www.medicare.gov/coverage/covid-19-vaccine"
+      },
+      "commercial": {
+        "coverage": "Not on HealthCare.gov's adult preventive services list. Coverage depends on the plan: not found.",
+        "cost": "not found",
+        "source": "https://www.healthcare.gov/preventive-care-adults/",
+        "massachusetts": {
+          "rule": "Massachusetts Bulletin 2025-03 (Division of Insurance and Department of Public Health, issued September 3, 2025)",
+          "coverage": "Insurers must cover vaccines recommended by the Massachusetts Department of Public Health (DPH), not only CDC recommendations.",
+          "cost": "No cost-sharing and no utilization management (no prior authorization delays) for covered routine vaccines.",
+          "applies_to": "Fully insured health plans issued under Massachusetts law (for example Blue Cross Blue Shield of Massachusetts and HMOs). Group Insurance Commission (GIC) plans and MassHealth also cover vaccines according to DPH guidelines.",
+          "does_not_apply_to": "Self-insured employer plans are not required to follow the bulletin.",
+          "patient_message": "If your plan is through a large employer, check with your plan, because it may not have to follow the Massachusetts rule.",
+          "brands": "Insurers may cover only certain brands, as long as at least one product covers each DPH-recommended vaccine.",
+          "dph_recommended_list": "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines",
+          "sources": [
+            "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download",
+            "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+            "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines"
+          ],
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)",
+          "checked_date": "2026-10-23"
+        }
+      },
+      "notes": [
+        "CDC (updated Sept 23, 2026): a 2026-2027 COVID-19 vaccine is recommended for all adults 18 and older.",
+        "CDC says the July 2025 schedule's COVID-19 advice stays in effect 'because of legal uncertainties and inquiries.'",
+        "Medicare.gov still names the 2025-2026 formula; CDC names 2026-2027 vaccines."
+      ],
+      "extra_sources": [
+        "https://www.cdc.gov/covid/hcp/vaccine-considerations/routine-guidance.html"
+      ],
+      "masshealth": {
+        "coverage": "Listed on the MassHealth Drug List, no PA.",
+        "cost": "CDC: most adults with Medicaid get all CDC-recommended vaccines at no cost.",
+        "products": [
+          {
+            "product": "Comirnaty (Pfizer-BioNTech COVID-19 vaccine, mRNA)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Spikevax (Moderna COVID-19 vaccine, mRNA)",
+            "pa": "no PA",
+            "codes": "1"
+          }
+        ],
+        "rule": "MassHealth does not pay for vaccines that are free through local boards of health or the Mass. Department of Public Health (products marked '1'); flu vaccine is paid at pharmacies without PA.",
+        "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=comirnaty",
+        "cost_source": "https://www.cdc.gov/vaccines-adults/recommended-vaccines/how-to-pay-adult-vaccines.html",
+        "dph_rule": {
+          "says": "MassHealth covers vaccines according to DPH guidelines.",
+          "source": "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)"
+        }
+      },
+      "checked_date": "2026-10-23"
+    },
+    {
+      "id": "hepb",
+      "name": "Hepatitis B",
+      "group": "routine",
+      "medicare": {
+        "part": "B (for some people)",
+        "coverage": "Part B covers it if you are at medium or high risk, never finished the series, or don't know your history. Others: Part D.",
+        "cost": "$0 if the provider accepts Medicare assignment (no deductible or coinsurance for Part B vaccines)",
+        "source": "https://www.medicare.gov/coverage/hepatitis-b-vaccines"
+      },
+      "commercial": {
+        "coverage": "Listed on HealthCare.gov's adult preventive services list. Marketplace plans and many other plans must cover it.",
+        "cost": "No copay or coinsurance from an in-network provider, even before the deductible. HealthCare.gov adds: '$0 cost isn't guaranteed in all cases.'",
+        "source": "https://www.healthcare.gov/preventive-care-adults/",
+        "massachusetts": {
+          "rule": "Massachusetts Bulletin 2025-03 (Division of Insurance and Department of Public Health, issued September 3, 2025)",
+          "coverage": "Insurers must cover vaccines recommended by the Massachusetts Department of Public Health (DPH), not only CDC recommendations.",
+          "cost": "No cost-sharing and no utilization management (no prior authorization delays) for covered routine vaccines.",
+          "applies_to": "Fully insured health plans issued under Massachusetts law (for example Blue Cross Blue Shield of Massachusetts and HMOs). Group Insurance Commission (GIC) plans and MassHealth also cover vaccines according to DPH guidelines.",
+          "does_not_apply_to": "Self-insured employer plans are not required to follow the bulletin.",
+          "patient_message": "If your plan is through a large employer, check with your plan, because it may not have to follow the Massachusetts rule.",
+          "brands": "Insurers may cover only certain brands, as long as at least one product covers each DPH-recommended vaccine.",
+          "dph_recommended_list": "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines",
+          "sources": [
+            "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download",
+            "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+            "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines"
+          ],
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)",
+          "checked_date": "2026-10-23"
+        }
+      },
+      "notes": [
+        "CDC: hepatitis B vaccine for all adults 19-59; adults 60+ with risk factors should get it."
+      ],
+      "extra_sources": [
+        "https://www.cdc.gov/hepatitis-b/hcp/vaccine-administration/index.html",
+        "https://www.cms.gov/files/document/mln908764-medicare-part-d-vaccines.pdf"
+      ],
+      "masshealth": {
+        "coverage": "Listed on the MassHealth Drug List, no PA.",
+        "cost": "CDC: most adults with Medicaid get all CDC-recommended vaccines at no cost.",
+        "products": [
+          {
+            "product": "Engerix-B (hepatitis B recombinant vaccine)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Heplisav-B (hepatitis B recombinant vaccine, adjuvanted)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Recombivax HB (hepatitis B recombinant vaccine)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Twinrix (hepatitis A, inactivated / hepatitis B recombinant)",
+            "pa": "no PA",
+            "codes": "1"
+          }
+        ],
+        "rule": "MassHealth does not pay for vaccines that are free through local boards of health or the Mass. Department of Public Health (products marked '1'); flu vaccine is paid at pharmacies without PA.",
+        "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=hepatitis",
+        "cost_source": "https://www.cdc.gov/vaccines-adults/recommended-vaccines/how-to-pay-adult-vaccines.html",
+        "dph_rule": {
+          "says": "MassHealth covers vaccines according to DPH guidelines.",
+          "source": "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)"
+        }
+      },
+      "checked_date": "2026-10-23"
+    },
+    {
+      "id": "shingles",
+      "name": "Shingles (Shingrix)",
+      "group": "routine",
+      "medicare": {
+        "part": "D",
+        "coverage": "Part D (Medicare drug coverage) covers the shingles vaccine.",
+        "cost": "$0 for ACIP-recommended adult vaccines, even before the deductible",
+        "source": "https://www.medicare.gov/coverage/shingles-vaccines"
+      },
+      "commercial": {
+        "coverage": "Listed on HealthCare.gov's adult preventive services list. Marketplace plans and many other plans must cover it.",
+        "cost": "No copay or coinsurance from an in-network provider, even before the deductible. HealthCare.gov adds: '$0 cost isn't guaranteed in all cases.'",
+        "source": "https://www.healthcare.gov/preventive-care-adults/",
+        "massachusetts": {
+          "rule": "Massachusetts Bulletin 2025-03 (Division of Insurance and Department of Public Health, issued September 3, 2025)",
+          "coverage": "Insurers must cover vaccines recommended by the Massachusetts Department of Public Health (DPH), not only CDC recommendations.",
+          "cost": "No cost-sharing and no utilization management (no prior authorization delays) for covered routine vaccines.",
+          "applies_to": "Fully insured health plans issued under Massachusetts law (for example Blue Cross Blue Shield of Massachusetts and HMOs). Group Insurance Commission (GIC) plans and MassHealth also cover vaccines according to DPH guidelines.",
+          "does_not_apply_to": "Self-insured employer plans are not required to follow the bulletin.",
+          "patient_message": "If your plan is through a large employer, check with your plan, because it may not have to follow the Massachusetts rule.",
+          "brands": "Insurers may cover only certain brands, as long as at least one product covers each DPH-recommended vaccine.",
+          "dph_recommended_list": "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines",
+          "sources": [
+            "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download",
+            "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+            "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines"
+          ],
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)",
+          "checked_date": "2026-10-23"
+        }
+      },
+      "notes": [
+        "CDC: 2 doses of Shingrix for adults 50+, and adults 19+ with weakened immune systems."
+      ],
+      "extra_sources": [
+        "https://www.cdc.gov/shingles/hcp/vaccine-considerations/index.html"
+      ],
+      "masshealth": {
+        "coverage": "Listed on the MassHealth Drug List (some products need PA for certain ages: Shingrix PA < 50 years)",
+        "cost": "CDC: most adults with Medicaid get all CDC-recommended vaccines at no cost.",
+        "products": [
+          {
+            "product": "Shingrix (zoster vaccine recombinant, adjuvanted)",
+            "pa": "PA < 50 years",
+            "codes": ""
+          }
+        ],
+        "rule": "MassHealth does not pay for vaccines that are free through local boards of health or the Mass. Department of Public Health (products marked '1'); flu vaccine is paid at pharmacies without PA.",
+        "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=shingrix",
+        "cost_source": "https://www.cdc.gov/vaccines-adults/recommended-vaccines/how-to-pay-adult-vaccines.html",
+        "dph_rule": {
+          "says": "MassHealth covers vaccines according to DPH guidelines.",
+          "source": "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)"
+        }
+      },
+      "checked_date": "2026-10-23"
+    },
+    {
+      "id": "rsv",
+      "name": "RSV",
+      "group": "routine",
+      "medicare": {
+        "part": "D",
+        "coverage": "Part D covers the RSV vaccine.",
+        "cost": "$0 for ACIP-recommended adult vaccines, even before the deductible",
+        "source": "https://www.medicare.gov/coverage/respiratory-syncytial-virus-rsv-shot"
+      },
+      "commercial": {
+        "coverage": "Not on HealthCare.gov's adult preventive services list. Coverage depends on the plan: not found.",
+        "cost": "not found",
+        "source": "https://www.healthcare.gov/preventive-care-adults/",
+        "massachusetts": {
+          "rule": "Massachusetts Bulletin 2025-03 (Division of Insurance and Department of Public Health, issued September 3, 2025)",
+          "coverage": "Insurers must cover vaccines recommended by the Massachusetts Department of Public Health (DPH), not only CDC recommendations.",
+          "cost": "No cost-sharing and no utilization management (no prior authorization delays) for covered routine vaccines.",
+          "applies_to": "Fully insured health plans issued under Massachusetts law (for example Blue Cross Blue Shield of Massachusetts and HMOs). Group Insurance Commission (GIC) plans and MassHealth also cover vaccines according to DPH guidelines.",
+          "does_not_apply_to": "Self-insured employer plans are not required to follow the bulletin.",
+          "patient_message": "If your plan is through a large employer, check with your plan, because it may not have to follow the Massachusetts rule.",
+          "brands": "Insurers may cover only certain brands, as long as at least one product covers each DPH-recommended vaccine.",
+          "dph_recommended_list": "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines",
+          "sources": [
+            "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download",
+            "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+            "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines"
+          ],
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)",
+          "checked_date": "2026-10-23"
+        }
+      },
+      "notes": [
+        "CDC: one dose for all adults 75+, and adults 50-74 at higher risk (updated Feb 24, 2026)."
+      ],
+      "extra_sources": [
+        "https://www.cdc.gov/rsv/hcp/vaccine-clinical-guidance/adults.html"
+      ],
+      "masshealth": {
+        "coverage": "Listed on the MassHealth Drug List (some products need PA for certain ages: Abrysvo PA < 18 years; Arexvy PA < 50 years; Mresvia PA < 18 years)",
+        "cost": "CDC: most adults with Medicaid get all CDC-recommended vaccines at no cost.",
+        "products": [
+          {
+            "product": "Abrysvo (respiratory syncytial virus vaccine)",
+            "pa": "PA < 18 years",
+            "codes": "1"
+          },
+          {
+            "product": "Arexvy (respiratory syncytial virus vaccine, adjuvanted)",
+            "pa": "PA < 50 years",
+            "codes": ""
+          },
+          {
+            "product": "Mresvia (respiratory syncytial virus vaccine suspension)",
+            "pa": "PA < 18 years",
+            "codes": ""
+          }
+        ],
+        "rule": "MassHealth does not pay for vaccines that are free through local boards of health or the Mass. Department of Public Health (products marked '1'); flu vaccine is paid at pharmacies without PA.",
+        "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=respiratory+syncytial",
+        "cost_source": "https://www.cdc.gov/vaccines-adults/recommended-vaccines/how-to-pay-adult-vaccines.html",
+        "dph_rule": {
+          "says": "MassHealth covers vaccines according to DPH guidelines.",
+          "source": "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)"
+        }
+      },
+      "checked_date": "2026-10-23"
+    },
+    {
+      "id": "pneumococcal",
+      "name": "Pneumococcal (pneumonia)",
+      "group": "routine",
+      "medicare": {
+        "part": "B",
+        "coverage": "Part B covers pneumococcal vaccines.",
+        "cost": "$0 if the provider accepts Medicare assignment (no deductible or coinsurance for Part B vaccines)",
+        "source": "https://www.medicare.gov/coverage/pneumococcal-vaccines"
+      },
+      "commercial": {
+        "coverage": "Listed on HealthCare.gov's adult preventive services list. Marketplace plans and many other plans must cover it.",
+        "cost": "No copay or coinsurance from an in-network provider, even before the deductible. HealthCare.gov adds: '$0 cost isn't guaranteed in all cases.'",
+        "source": "https://www.healthcare.gov/preventive-care-adults/",
+        "massachusetts": {
+          "rule": "Massachusetts Bulletin 2025-03 (Division of Insurance and Department of Public Health, issued September 3, 2025)",
+          "coverage": "Insurers must cover vaccines recommended by the Massachusetts Department of Public Health (DPH), not only CDC recommendations.",
+          "cost": "No cost-sharing and no utilization management (no prior authorization delays) for covered routine vaccines.",
+          "applies_to": "Fully insured health plans issued under Massachusetts law (for example Blue Cross Blue Shield of Massachusetts and HMOs). Group Insurance Commission (GIC) plans and MassHealth also cover vaccines according to DPH guidelines.",
+          "does_not_apply_to": "Self-insured employer plans are not required to follow the bulletin.",
+          "patient_message": "If your plan is through a large employer, check with your plan, because it may not have to follow the Massachusetts rule.",
+          "brands": "Insurers may cover only certain brands, as long as at least one product covers each DPH-recommended vaccine.",
+          "dph_recommended_list": "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines",
+          "sources": [
+            "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download",
+            "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+            "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines"
+          ],
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)",
+          "checked_date": "2026-10-23"
+        }
+      },
+      "notes": [
+        "CDC: PCV15, PCV20, or PCV21 for all adults 50 and older; younger adults based on health conditions (updated Feb 25, 2026)."
+      ],
+      "extra_sources": [
+        "https://www.cdc.gov/pneumococcal/hcp/vaccine-recommendations/index.html"
+      ],
+      "masshealth": {
+        "coverage": "Listed on the MassHealth Drug List, no PA.",
+        "cost": "CDC: most adults with Medicaid get all CDC-recommended vaccines at no cost.",
+        "products": [
+          {
+            "product": "Capvaxive (pneumococcal 21-valent conjugate vaccine)",
+            "pa": "no PA",
+            "codes": ""
+          },
+          {
+            "product": "Pneumovax (pneumococcal 23-valent polysaccharide vaccine)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Prevnar 20 (pneumococcal 20-valent conjugate vaccine)",
+            "pa": "no PA",
+            "codes": ""
+          },
+          {
+            "product": "Vaxneuvance (pneumococcal 15-valent conjugate vaccine)",
+            "pa": "no PA",
+            "codes": ""
+          }
+        ],
+        "rule": "MassHealth does not pay for vaccines that are free through local boards of health or the Mass. Department of Public Health (products marked '1'); flu vaccine is paid at pharmacies without PA.",
+        "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pneumococcal",
+        "cost_source": "https://www.cdc.gov/vaccines-adults/recommended-vaccines/how-to-pay-adult-vaccines.html",
+        "dph_rule": {
+          "says": "MassHealth covers vaccines according to DPH guidelines.",
+          "source": "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)"
+        }
+      },
+      "checked_date": "2026-10-23"
+    },
+    {
+      "id": "tdap",
+      "name": "Tdap (tetanus, diphtheria, whooping cough)",
+      "group": "routine",
+      "medicare": {
+        "part": "D (Part B if given to treat an injury)",
+        "coverage": "Part D covers Tdap. A tetanus shot given to treat an injury or exposure is covered by Part B.",
+        "cost": "$0 for ACIP-recommended adult vaccines, even before the deductible",
+        "source": "https://www.medicare.gov/coverage/tdap-vaccines"
+      },
+      "commercial": {
+        "coverage": "Listed on HealthCare.gov's adult preventive services list. Marketplace plans and many other plans must cover it.",
+        "cost": "No copay or coinsurance from an in-network provider, even before the deductible. HealthCare.gov adds: '$0 cost isn't guaranteed in all cases.'",
+        "source": "https://www.healthcare.gov/preventive-care-adults/",
+        "massachusetts": {
+          "rule": "Massachusetts Bulletin 2025-03 (Division of Insurance and Department of Public Health, issued September 3, 2025)",
+          "coverage": "Insurers must cover vaccines recommended by the Massachusetts Department of Public Health (DPH), not only CDC recommendations.",
+          "cost": "No cost-sharing and no utilization management (no prior authorization delays) for covered routine vaccines.",
+          "applies_to": "Fully insured health plans issued under Massachusetts law (for example Blue Cross Blue Shield of Massachusetts and HMOs). Group Insurance Commission (GIC) plans and MassHealth also cover vaccines according to DPH guidelines.",
+          "does_not_apply_to": "Self-insured employer plans are not required to follow the bulletin.",
+          "patient_message": "If your plan is through a large employer, check with your plan, because it may not have to follow the Massachusetts rule.",
+          "brands": "Insurers may cover only certain brands, as long as at least one product covers each DPH-recommended vaccine.",
+          "dph_recommended_list": "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines",
+          "sources": [
+            "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download",
+            "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+            "https://www.mass.gov/info-details/dph-recommended-guidance-for-vaccines"
+          ],
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)",
+          "checked_date": "2026-10-23"
+        }
+      },
+      "notes": [
+        "CDC adult schedule: 1 dose of Tdap, then a Td or Tdap booster every 10 years, and Tdap in each pregnancy."
+      ],
+      "extra_sources": [
+        "https://www.cms.gov/files/document/mln908764-medicare-part-d-vaccines.pdf"
+      ],
+      "masshealth": {
+        "coverage": "Listed on the MassHealth Drug List, no PA.",
+        "cost": "CDC: most adults with Medicaid get all CDC-recommended vaccines at no cost.",
+        "products": [
+          {
+            "product": "Adacel (tetanus toxoids / diphtheria / acellular pertussis vaccine)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Boostrix (tetanus toxoids / diphtheria / acellular pertussis vaccine)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Quadracel (tetanus toxoids / diphtheria / acellular pertussis / inactivated poliovirus vaccine)",
+            "pa": "no PA",
+            "codes": ""
+          }
+        ],
+        "rule": "MassHealth does not pay for vaccines that are free through local boards of health or the Mass. Department of Public Health (products marked '1'); flu vaccine is paid at pharmacies without PA.",
+        "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tetanus",
+        "cost_source": "https://www.cdc.gov/vaccines-adults/recommended-vaccines/how-to-pay-adult-vaccines.html",
+        "dph_rule": {
+          "says": "MassHealth covers vaccines according to DPH guidelines.",
+          "source": "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)"
+        }
+      },
+      "checked_date": "2026-10-23"
+    },
+    {
+      "id": "hepa",
+      "name": "Hepatitis A",
+      "group": "travel",
+      "medicare": {
+        "part": "D (Part B only if given after an exposure)",
+        "coverage": "Part D covers commercially available vaccines needed to prevent illness. Part B covers it only to treat an exposure.",
+        "cost": "$0 under Part D if ACIP recommends it for you; otherwise the plan may charge a copay (CMS)",
+        "source": "https://www.cms.gov/files/document/mln908764-medicare-part-d-vaccines.pdf"
+      },
+      "commercial": {
+        "coverage": "Hepatitis A is on HealthCare.gov's adult preventive list ('recommended populations vary'). Coverage for travel only: not found.",
+        "cost": "No copay or coinsurance in-network for covered preventive services; '$0 cost isn't guaranteed in all cases.'",
+        "source": "https://www.healthcare.gov/preventive-care-adults/",
+        "massachusetts": {
+          "rule": "Not part of Massachusetts Bulletin 2025-03",
+          "coverage": "The bulletin covers routine vaccines only. Travel vaccines (hepatitis A for travel, typhoid, yellow fever) are not part of it. Check with your plan.",
+          "cost": "Check with your plan.",
+          "patient_message": "Check with your plan.",
+          "sources": [
+            "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download"
+          ],
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)",
+          "checked_date": "2026-10-23"
+        }
+      },
+      "notes": [
+        "CDC: travelers to countries where hepatitis A is common should get vaccinated.",
+        "Travel vaccines are often not covered by insurance. CDC: 'many health insurance plans provide no or limited coverage for travel immunizations.' Call your plan first."
+      ],
+      "extra_sources": [
+        "https://www.cdc.gov/hepatitis-a/vaccination/index.html",
+        "https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/travel-health-advice-for-resource-limited-travelers.html"
+      ],
+      "masshealth": {
+        "coverage": "Listed on the MassHealth Drug List, no PA.",
+        "cost": "CDC: most adults with Medicaid get all CDC-recommended vaccines at no cost.",
+        "products": [
+          {
+            "product": "Havrix (hepatitis A vaccine, inactivated - Havrix)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Twinrix (hepatitis A, inactivated / hepatitis B recombinant)",
+            "pa": "no PA",
+            "codes": "1"
+          },
+          {
+            "product": "Vaqta (hepatitis A vaccine, inactivated-Vaqta)",
+            "pa": "no PA",
+            "codes": "1"
+          }
+        ],
+        "rule": "MassHealth does not pay for vaccines that are free through local boards of health or the Mass. Department of Public Health (products marked '1'); flu vaccine is paid at pharmacies without PA.",
+        "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=hepatitis",
+        "cost_source": "https://www.cdc.gov/vaccines-adults/recommended-vaccines/how-to-pay-adult-vaccines.html",
+        "dph_rule": {
+          "says": "MassHealth covers vaccines according to DPH guidelines.",
+          "source": "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)"
+        }
+      },
+      "checked_date": "2026-10-23"
+    },
+    {
+      "id": "typhoid",
+      "name": "Typhoid",
+      "group": "travel",
+      "medicare": {
+        "part": "not found",
+        "coverage": "No Medicare or CMS page names typhoid. Part D covers commercially available vaccines needed to prevent illness, but a typhoid-specific rule was not found.",
+        "cost": "not found",
+        "source": "https://www.cms.gov/files/document/mln908764-medicare-part-d-vaccines.pdf"
+      },
+      "commercial": {
+        "coverage": "Not on HealthCare.gov's adult preventive services list. Coverage depends on the plan: not found.",
+        "cost": "not found",
+        "source": "https://www.healthcare.gov/preventive-care-adults/",
+        "massachusetts": {
+          "rule": "Not part of Massachusetts Bulletin 2025-03",
+          "coverage": "The bulletin covers routine vaccines only. Travel vaccines (hepatitis A for travel, typhoid, yellow fever) are not part of it. Check with your plan.",
+          "cost": "Check with your plan.",
+          "patient_message": "Check with your plan.",
+          "sources": [
+            "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download"
+          ],
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)",
+          "checked_date": "2026-10-23"
+        }
+      },
+      "notes": [
+        "CDC: oral (4 capsules, ages 6+) or shot (ages 2+), at least 2 weeks before travel.",
+        "Travel vaccines are often not covered by insurance. CDC: 'many health insurance plans provide no or limited coverage for travel immunizations.' Call your plan first."
+      ],
+      "extra_sources": [
+        "https://www.cdc.gov/typhoid-fever/prevention/index.html",
+        "https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/travel-health-advice-for-resource-limited-travelers.html"
+      ],
+      "masshealth": {
+        "coverage": "Listed on the MassHealth Drug List, no PA.",
+        "cost": "CDC: most adults with Medicaid get all CDC-recommended vaccines at no cost.",
+        "products": [
+          {
+            "product": "Typhim VI (typhoid vaccine injection)",
+            "pa": "no PA",
+            "codes": ""
+          },
+          {
+            "product": "Vivotif Berna (typhoid vaccine capsule)",
+            "pa": "no PA",
+            "codes": ""
+          }
+        ],
+        "rule": "MassHealth does not pay for vaccines that are free through local boards of health or the Mass. Department of Public Health (products marked '1'); flu vaccine is paid at pharmacies without PA.",
+        "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=typhoid",
+        "cost_source": "https://www.cdc.gov/vaccines-adults/recommended-vaccines/how-to-pay-adult-vaccines.html",
+        "dph_rule": {
+          "says": "MassHealth covers vaccines according to DPH guidelines.",
+          "source": "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)"
+        }
+      },
+      "checked_date": "2026-10-23"
+    },
+    {
+      "id": "yellowfever",
+      "name": "Yellow fever",
+      "group": "travel",
+      "medicare": {
+        "part": "D",
+        "coverage": "Medicare.gov: Part D covers ACIP-recommended vaccines you may need before travel outside the U.S., such as yellow fever.",
+        "cost": "Part D won't charge a copay or deductible for vaccines ACIP recommends",
+        "source": "https://www.medicare.gov/coverage/travel-outside-the-u.s."
+      },
+      "commercial": {
+        "coverage": "Not on HealthCare.gov's adult preventive services list. Coverage depends on the plan: not found.",
+        "cost": "not found",
+        "source": "https://www.healthcare.gov/preventive-care-adults/",
+        "massachusetts": {
+          "rule": "Not part of Massachusetts Bulletin 2025-03",
+          "coverage": "The bulletin covers routine vaccines only. Travel vaccines (hepatitis A for travel, typhoid, yellow fever) are not part of it. Check with your plan.",
+          "cost": "Check with your plan.",
+          "patient_message": "Check with your plan.",
+          "sources": [
+            "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download"
+          ],
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)",
+          "checked_date": "2026-10-23"
+        }
+      },
+      "certified_sites_only": true,
+      "clinic_finder": "https://wwwnc.cdc.gov/travel/yellow-fever-vaccination-clinics/search",
+      "notes": [
+        "Yellow fever vaccine is given ONLY at certified (designated) yellow fever vaccination centers. Most pharmacies cannot give it.",
+        "Find a certified clinic with CDC's search tool: https://wwwnc.cdc.gov/travel/yellow-fever-vaccination-clinics/search",
+        "For people 9 months and older traveling to at-risk areas of Africa and South America.",
+        "Travel vaccines are often not covered by insurance. CDC: 'many health insurance plans provide no or limited coverage for travel immunizations.' Call your plan first."
+      ],
+      "extra_sources": [
+        "https://www.cdc.gov/yellow-fever/hcp/vaccine/index.html",
+        "https://www.cdc.gov/yellow-fever/vaccine/index.html"
+      ],
+      "masshealth": {
+        "coverage": "Listed on the MassHealth Drug List, no PA.",
+        "cost": "CDC: most adults with Medicaid get all CDC-recommended vaccines at no cost.",
+        "products": [
+          {
+            "product": "Stamaril (yellow fever vaccine, live)",
+            "pa": "no PA",
+            "codes": ""
+          },
+          {
+            "product": "YF-Vax (yellow fever vaccine)",
+            "pa": "no PA",
+            "codes": ""
+          }
+        ],
+        "rule": "MassHealth does not pay for vaccines that are free through local boards of health or the Mass. Department of Public Health (products marked '1'); flu vaccine is paid at pharmacies without PA.",
+        "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=yellow+fever",
+        "cost_source": "https://www.cdc.gov/vaccines-adults/recommended-vaccines/how-to-pay-adult-vaccines.html",
+        "dph_rule": {
+          "says": "MassHealth covers vaccines according to DPH guidelines.",
+          "source": "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+          "verification": "verified via web search, 2026-10-23 (mass.gov could not be opened directly)"
+        }
+      },
+      "checked_date": "2026-10-23"
+    }
+  ]
+}

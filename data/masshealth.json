@@ -1,0 +1,550 @@
+{
+  "source": "MassHealth Drug List (Executive Office of Health and Human Services)",
+  "source_url": "https://mhdl.pharmacy.services.conduent.com/MHDL/",
+  "list_last_updated": "10/05/26",
+  "checked_date": "2026-10-23",
+  "general_rules": [
+    "Any drug that does not appear on the MassHealth Drug List requires prior authorization (PA).",
+    "PA applies to both the brand-name drug and its FDA A-rated generic for listed products.",
+    "Members in a MassHealth ACO or MCO plan: the same unified pharmacy list applies to most drugs."
+  ],
+  "vaccines_rule": "MassHealth does not pay for vaccines that are free through local boards of health or the Massachusetts Department of Public Health (130 CMR 406.413(C)). MassHealth pays pharmacies for seasonal flu vaccine without PA if the vaccine is not available free of cost. (MassHealth Drug List footnote 1)",
+  "drugs": [
+    {
+      "drug_id": "adderall_xr_30",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 3 years or >= 21 years; or > 2 units/day",
+      "drug_class": "CEREBRAL STIMULANTS",
+      "notes": [
+        "Covered. PA is needed for ages under 3 or 21 and older, or above 2 capsules a day.",
+        "PD: Preferred drug in its class."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "Adderall XR (amphetamine salts extended-release-Adderall XR); See Table 31; See Table 71",
+          "pa_status": "PA < 3 years or ≥ 21 years and PA > 2 units/day",
+          "class": "CEREBRAL STIMULANTS",
+          "codes": "PD"
+        },
+        {
+          "drug": "amphetamine salts extended-release; See Table 31; See Table 71",
+          "pa_status": "PA < 3 years or ≥ 21 years and PA > 2 units/day",
+          "class": "CEREBRAL STIMULANTS",
+          "codes": ""
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amphetamine",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "concerta_18",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 3 years or >= 21 years; or > 2 units/day",
+      "drug_class": "CEREBRAL STIMULANTS",
+      "notes": [
+        "Brand Concerta is preferred over generics. PA is needed for ages under 3 or 21 and older, or above 2 tablets a day.",
+        "BP: Brand preferred over generics: MassHealth wants the brand tried first."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "Concerta (methylphenidate extended-release-Concerta); See Table 31; See Table 71",
+          "pa_status": "PA < 3 years or ≥ 21 years and PA > 2 units/day",
+          "class": "CEREBRAL STIMULANTS",
+          "codes": "BP"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=methylphenidate",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "atorvastatin_20",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: > 1.5 units/day",
+      "drug_class": "LIPID LOWERING AGENTS",
+      "notes": [
+        "Generic atorvastatin is covered. PA is needed only above 1.5 tablets a day. Brand Lipitor needs PA.",
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "Lipitor (atorvastatin 10 mg, 20 mg, 40 mg tablet)",
+          "pa_status": "PA > 1.5 units/day",
+          "class": "LIPID LOWERING AGENTS",
+          "codes": "M90, #"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=atorvastatin",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "lisinopril_10",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "CARDIOVASCULAR",
+      "notes": [
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "lisinopril",
+          "pa_status": "(none)",
+          "class": "CARDIOVASCULAR",
+          "codes": "M90"
+        },
+        {
+          "drug": "Zestril (lisinopril)",
+          "pa_status": "(none)",
+          "class": "CARDIOVASCULAR",
+          "codes": "M90, #"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=lisinopril",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "levothyroxine_50",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "THYROID PREPARATIONS",
+      "notes": [
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "levothyroxine",
+          "pa_status": "(none)",
+          "class": "THYROID PREPARATIONS",
+          "codes": "M90"
+        },
+        {
+          "drug": "Synthroid (levothyroxine-Synthroid)",
+          "pa_status": "(none)",
+          "class": "THYROID PREPARATIONS",
+          "codes": "M90, #"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=levothyroxine",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "metformin_500",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "DIABETIC AGENTS",
+      "notes": [
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "metformin immediate-release 500 mg, 850 mg, 1,000 mg tablet",
+          "pa_status": "(none)",
+          "class": "DIABETIC AGENTS",
+          "codes": "M90"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metformin",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "amlodipine_5",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "CARDIOVASCULAR",
+      "notes": [
+        "Generic amlodipine is covered without PA. Brand Norvasc needs PA.",
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "Norvasc (amlodipine tablet)",
+          "pa_status": "(none)",
+          "class": "CARDIOVASCULAR",
+          "codes": "M90, #"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amlodipine",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "omeprazole_20",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: > 4 units/day",
+      "drug_class": "PROTON PUMP INHIBITORS",
+      "notes": [
+        "Covered. PA is needed above 4 capsules a day.",
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "omeprazole 20 mg capsule",
+          "pa_status": "PA > 4 units/day",
+          "class": "PROTON PUMP INHIBITORS",
+          "codes": "M90"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=omeprazole",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "sertraline_50",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years",
+      "drug_class": "ANTIDEPRESSANTS",
+      "notes": [
+        "Generic sertraline tablets are covered; PA is needed for children under 6. Brand Zoloft needs PA.",
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "Zoloft (sertraline oral concentrate, tablet); See Table 17; See Table 71",
+          "pa_status": "PA < 6 years",
+          "class": "ANTIDEPRESSANTS",
+          "codes": "A90, #"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sertraline",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "amoxicillin_500",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
+      "notes": [
+        "A90: Up to a 90-day supply is allowed."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "amoxicillin",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "ozempic_05",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "DIABETIC AGENTS",
+      "notes": [
+        "PD: Preferred drug in its class."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "Ozempic (semaglutide injection, tablet-Ozempic)",
+          "pa_status": "PA",
+          "class": "DIABETIC AGENTS",
+          "codes": "PD"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=semaglutide",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "mounjaro_5",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "DIABETIC AGENTS",
+      "notes": [
+        "PD: Preferred drug in its class."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "Mounjaro (tirzepatide-Mounjaro)",
+          "pa_status": "PA",
+          "class": "DIABETIC AGENTS",
+          "codes": "PD"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tirzepatide",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "eliquis_5",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTICOAGULANTS",
+      "notes": [
+        "BP: Brand preferred over generics: MassHealth wants the brand tried first.",
+        "PD: Preferred drug in its class."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "Eliquis (apixaban)",
+          "pa_status": "(none)",
+          "class": "ANTICOAGULANTS",
+          "codes": "BP, PD"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=apixaban",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "humira_40",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "IMMUNOMODULATOR",
+      "notes": [
+        "Humira needs PA. Hadlima and unbranded adalimumab-adaz are the preferred adalimumab products (also PA)."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "adalimumab-adaz, unbranded",
+          "pa_status": "PA",
+          "class": "IMMUNOMODULATOR",
+          "codes": "PD"
+        },
+        {
+          "drug": "Hadlima (adalimumab-bwwd)",
+          "pa_status": "PA",
+          "class": "IMMUNOMODULATOR",
+          "codes": "PD"
+        },
+        {
+          "drug": "Humira (adalimumab)",
+          "pa_status": "PA",
+          "class": "IMMUNOMODULATOR",
+          "codes": ""
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=adalimumab",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "dupixent_300",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "BIOLOGICAL",
+      "notes": [
+        "PD: Preferred drug in its class."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "Dupixent (dupilumab)",
+          "pa_status": "PA",
+          "class": "BIOLOGICAL",
+          "codes": "PD"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=dupilumab",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "albuterol_hfa",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "BRONCHODILATORS",
+      "notes": [
+        "Ventolin HFA (brand) is the preferred inhaler with no PA. Other albuterol HFA inhalers need PA."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "albuterol inhaler",
+          "pa_status": "PA",
+          "class": "BRONCHODILATORS",
+          "codes": ""
+        },
+        {
+          "drug": "Ventolin (albuterol inhaler-Ventolin)",
+          "pa_status": "(none)",
+          "class": "BRONCHODILATORS",
+          "codes": "BP, A90"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=albuterol",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "lantus_solostar",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "DIABETIC AGENTS",
+      "notes": [
+        "Lantus (brand) is preferred and covered without PA. Other insulin glargine products need PA.",
+        "BP: Brand preferred over generics: MassHealth wants the brand tried first."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "Lantus (insulin glargine-Lantus)",
+          "pa_status": "(none)",
+          "class": "DIABETIC AGENTS",
+          "codes": "BP"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+glargine",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "amoxicillin_susp_400",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
+      "notes": [
+        "A90: Up to a 90-day supply is allowed."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "amoxicillin",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "sumatriptan_50",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: > 16 units/30 days",
+      "drug_class": "TRIPTAN",
+      "notes": [
+        "Generic sumatriptan tablets are covered up to 16 tablets per 30 days; more needs PA. Brand Imitrex needs PA.",
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "Imitrex (sumatriptan tablet)",
+          "pa_status": "PA > 16 units/30 days",
+          "class": "TRIPTAN",
+          "codes": "A90, #"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sumatriptan",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "latanoprost_0005",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "OPHTHALMIC PREPARATIONS",
+      "notes": [
+        "Generic latanoprost is covered without PA. Brand Xalatan needs PA.",
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "Xalatan (latanoprost solution - Xalatan)",
+          "pa_status": "(none)",
+          "class": "OPHTHALMIC PREPARATIONS",
+          "codes": "M90, #"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=latanoprost",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "fluticasone_nasal_50",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: > 1 inhaler/30 days",
+      "drug_class": "NASAL PREPARATIONS",
+      "notes": [
+        "Covered. PA is needed above 1 bottle per 30 days.",
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "fluticasone propionate 50 mcg nasal spray",
+          "pa_status": "PA > 1 inhaler/30 days",
+          "class": "NASAL PREPARATIONS",
+          "codes": "M90"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluticasone",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "triamcinolone_cream_01",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "GLUCOCORTICOIDS",
+      "notes": [
+        "A90: Up to a 90-day supply is allowed."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "triamcinolone 0.1% cream",
+          "pa_status": "(none)",
+          "class": "GLUCOCORTICOIDS",
+          "codes": "A90"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=triamcinolone",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "epinephrine_03",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ADRENERGICS",
+      "notes": [
+        "Generic epinephrine auto-injectors are covered without PA. Brand EpiPen needs PA."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "epinephrine auto-injection",
+          "pa_status": "(none)",
+          "class": "ADRENERGICS",
+          "codes": ""
+        },
+        {
+          "drug": "Epipen (epinephrine 0.3 mg auto-injection-Epipen)",
+          "pa_status": "(none)",
+          "class": "ADRENERGICS",
+          "codes": "#"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=epinephrine",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "nicotine_patch_21",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "SMOKING CESSATION",
+      "notes": [
+        "Generic nicotine patches (OTC) are payable without PA.",
+        "*: The generic OTC (and generic prescription) versions are payable without PA.",
+        "A90: Up to a 90-day supply is allowed."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "nicotine gum, lozenge, patch",
+          "pa_status": "(none)",
+          "class": "SMOKING CESSATION",
+          "codes": "*, A90"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=nicotine",
+      "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "paxlovid",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 12 years; or > 30 units/claim",
+      "drug_class": "COVID - 19 related Treatments and Vaccines",
+      "notes": [
+        "Covered. PA is needed for children under 12, or above 30 tablets per claim.",
+        "PD: Preferred drug in its class."
+      ],
+      "mhdl_rows": [
+        {
+          "drug": "Paxlovid (nirmatrelvir / ritonavir 300-100 mg)",
+          "pa_status": "PA < 12 years and PA > 30 units/claim",
+          "class": "COVID - 19 related Treatments and Vaccines",
+          "codes": "PD"
+        }
+      ],
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=nirmatrelvir",
+      "checked_date": "2026-10-23"
+    }
+  ]
+}
