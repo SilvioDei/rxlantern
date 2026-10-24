@@ -31,6 +31,14 @@ MAX_TOKENS_PER_QUESTION = 60_000          # input + output, all agents together
 DAILY_TOKEN_BUDGET = 3_000_000            # whole app, per Boston calendar day
 MAX_QUESTIONS_PER_VISITOR_PER_HOUR = 30
 
+# Who can approve or reject comments in the moderation queue. Kept out of the public repo:
+# set RXLANTERN_ADMIN_EMAILS in your .env (comma-separated), e.g. RXLANTERN_ADMIN_EMAILS=you@example.com
+ADMIN_EMAILS_ENV = "RXLANTERN_ADMIN_EMAILS"
+
+
+def admin_emails() -> set[str]:
+    return {e.strip().lower() for e in os.getenv(ADMIN_EMAILS_ENV, "").split(",") if e.strip()}
+
 REPO_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_DIR / "data"
 OUTPUT_DIR = REPO_DIR / "output"

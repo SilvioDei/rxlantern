@@ -2664,6 +2664,826 @@
    },
    "safety_rules_fired": [],
    "reply_preview": "Yes. Mattapan Community Health Center is at the same address as the CVS at 1575 Blue Hill Ave. I couldn’t confirm whether the health center takes walk-ins, so please call them first to check."
+  },
+  {
+   "run_id": "6bd07d6224bd",
+   "timestamp": "2026-10-23T21:38:34-04:00",
+   "type": "moderation",
+   "review_id": 1,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "8e9607684f54",
+   "timestamp": "2026-10-23T21:38:35-04:00",
+   "type": "moderation",
+   "review_id": 2,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "1be97d9bc2b0",
+   "timestamp": "2026-10-23T21:38:35-04:00",
+   "type": "moderation",
+   "review_id": 3,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "1723a8957c60",
+   "timestamp": "2026-10-23T21:38:39-04:00",
+   "type": "moderation",
+   "review_id": 4,
+   "pharmacy_id": "cvs-10174",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes a safe personal experience at the pharmacy.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 624,
+     "cached_input_tokens": 0,
+     "output_tokens": 36,
+     "total_tokens": 660,
+     "cost_usd": 8e-05,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "48a7817dd96c",
+   "timestamp": "2026-10-23T21:38:40-04:00",
+   "type": "moderation",
+   "review_id": 5,
+   "pharmacy_id": "cvs-5874",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes the patient's own pharmacy experience and contains no identifying health information.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 624,
+     "cached_input_tokens": 0,
+     "output_tokens": 48,
+     "total_tokens": 672,
+     "cost_usd": 8.6e-05,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "c73f399a7b70",
+   "timestamp": "2026-10-23T21:38:40-04:00",
+   "type": "moderation",
+   "review_id": 6,
+   "pharmacy_id": "cvs-1217",
+   "stage": "code",
+   "decision": "rejected",
+   "category": "personal_health_information",
+   "reason": "Comment linked a person to a health detail.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation rejected: personal_health_information"
+   ]
+  },
+  {
+   "run_id": "5e298d5812a4",
+   "timestamp": "2026-10-23T21:38:40-04:00",
+   "type": "moderation",
+   "review_id": 7,
+   "pharmacy_id": "cvs-1265",
+   "stage": "code",
+   "decision": "rejected",
+   "category": "hidden_instructions",
+   "reason": "Comment tried to give instructions to the app.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation rejected: hidden_instructions"
+   ]
+  },
+  {
+   "run_id": "c655d4158514",
+   "timestamp": "2026-10-23T21:38:41-04:00",
+   "type": "moderation",
+   "review_id": 8,
+   "pharmacy_id": "cvs-1264",
+   "stage": "code",
+   "decision": "rejected",
+   "category": "spam",
+   "reason": "Comment looked like spam or advertising.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation rejected: spam"
+   ]
+  },
+  {
+   "run_id": "99ced6417682",
+   "timestamp": "2026-10-23T21:38:43-04:00",
+   "type": "moderation",
+   "review_id": 9,
+   "pharmacy_id": "cvs-2070",
+   "stage": "model",
+   "decision": "pending",
+   "category": "unclear",
+   "reason": "The comment identifies a staff member by name, so it needs a manual review.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 623,
+     "cached_input_tokens": 0,
+     "output_tokens": 161,
+     "total_tokens": 784,
+     "cost_usd": 0.000143,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation pending: unclear"
+   ]
+  },
+  {
+   "run_id": "2a73c8f8c182",
+   "timestamp": "2026-10-23T21:38:43-04:00",
+   "type": "moderation",
+   "review_id": 9,
+   "pharmacy_id": "cvs-2070",
+   "stage": "human admin",
+   "decision": "published",
+   "category": "admin decision",
+   "reason": "approved by admin",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "3cfb02e9755d",
+   "timestamp": "2026-10-23T21:39:12-04:00",
+   "type": "moderation",
+   "review_id": 1,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "decbd866fc84",
+   "timestamp": "2026-10-23T21:39:13-04:00",
+   "type": "moderation",
+   "review_id": 2,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "2c94274f25ab",
+   "timestamp": "2026-10-23T21:39:13-04:00",
+   "type": "moderation",
+   "review_id": 3,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "[ID removed]",
+   "timestamp": "2026-10-23T21:39:15-04:00",
+   "type": "moderation",
+   "review_id": 4,
+   "pharmacy_id": "cvs-10174",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes a safe personal experience at the pharmacy.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 624,
+     "cached_input_tokens": 0,
+     "output_tokens": 36,
+     "total_tokens": 660,
+     "cost_usd": 8e-05,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "2ce64e3bfb2d",
+   "timestamp": "2026-10-23T21:39:15-04:00",
+   "type": "moderation",
+   "review_id": 5,
+   "pharmacy_id": "cvs-5874",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes the patient's own pharmacy experience and contains no identifying health information.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 624,
+     "cached_input_tokens": 0,
+     "output_tokens": 48,
+     "total_tokens": 672,
+     "cost_usd": 8.6e-05,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "473ca8c51747",
+   "timestamp": "2026-10-23T21:39:15-04:00",
+   "type": "moderation",
+   "review_id": 6,
+   "pharmacy_id": "cvs-1217",
+   "stage": "code",
+   "decision": "rejected",
+   "category": "personal_health_information",
+   "reason": "Comment linked a person to a health detail.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation rejected: personal_health_information"
+   ]
+  },
+  {
+   "run_id": "c14ec237d693",
+   "timestamp": "2026-10-23T21:39:15-04:00",
+   "type": "moderation",
+   "review_id": 7,
+   "pharmacy_id": "cvs-1265",
+   "stage": "code",
+   "decision": "rejected",
+   "category": "hidden_instructions",
+   "reason": "Comment tried to give instructions to the app.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation rejected: hidden_instructions"
+   ]
+  },
+  {
+   "run_id": "bdc89f743b3b",
+   "timestamp": "2026-10-23T21:39:15-04:00",
+   "type": "moderation",
+   "review_id": 8,
+   "pharmacy_id": "cvs-1264",
+   "stage": "code",
+   "decision": "rejected",
+   "category": "spam",
+   "reason": "Comment looked like spam or advertising.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation rejected: spam"
+   ]
+  },
+  {
+   "run_id": "1ccb3db749ac",
+   "timestamp": "2026-10-23T21:39:15-04:00",
+   "type": "moderation",
+   "review_id": 9,
+   "pharmacy_id": "cvs-2070",
+   "stage": "model",
+   "decision": "pending",
+   "category": "unclear",
+   "reason": "The comment identifies a staff member by name, so it needs a manual review.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 623,
+     "cached_input_tokens": 0,
+     "output_tokens": 161,
+     "total_tokens": 784,
+     "cost_usd": 0.000143,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation pending: unclear"
+   ]
+  },
+  {
+   "run_id": "7bf6df33ab5d",
+   "timestamp": "2026-10-23T21:39:16-04:00",
+   "type": "moderation",
+   "review_id": 9,
+   "pharmacy_id": "cvs-2070",
+   "stage": "human admin",
+   "decision": "published",
+   "category": "admin decision",
+   "reason": "approved by admin",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "08570b319ce3",
+   "timestamp": "2026-10-23T21:39:43-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Has anyone reported Ozempic 0.5 mg in stock near Dorchester?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Community"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Community",
+     "request": "Recent patient stock reports from the last 72 hours for Ozempic 0.5 mg near Dorchester, Boston, Massachusetts."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Community",
+     "tool": "reports_near",
+     "input": {
+      "drug": "Ozempic 0.5 mg",
+      "place": "Dorchester, Boston, Massachusetts"
+     },
+     "result": "message: No one has reported this medicine near there in the last 72 hours."
+    },
+    {
+     "type": "agent_result",
+     "agent": "Community",
+     "answer": "No patient reports for Ozempic 0.5 mg near Dorchester in the last 72 hours: 0 reported in stock and 0 reported out of stock. There’s no latest report to share. Call to confirm before you go.",
+     "not_found": [
+      "Latest report date; there were no reports in the last 72 hours."
+     ],
+     "warnings": [
+      "Call to confirm before you go."
+     ],
+     "tokens": {
+      "requests": 2,
+      "input_tokens": 1863,
+      "cached_input_tokens": 0,
+      "output_tokens": 245,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 4985,
+     "cached_input_tokens": 1335,
+     "output_tokens": 413,
+     "total_tokens": 5398,
+     "web_searches": 0,
+     "model_requests": 4,
+     "tool_calls": 2,
+     "cost_usd": 0.000585
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3122,
+      "cached_input_tokens": 1335,
+      "output_tokens": 168,
+      "web_searches": 0,
+      "cost_usd": 0.000276
+     },
+     {
+      "agent": "Community",
+      "requests": 2,
+      "input_tokens": 1863,
+      "cached_input_tokens": 0,
+      "output_tokens": 245,
+      "web_searches": 0,
+      "cost_usd": 0.000309
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "There are no patient reports of Ozempic 0.5 mg being in stock—or out of stock—near Dorchester in the last 72 hours. There’s no recent report to share, so call a pharmacy to confirm before you go."
+  },
+  {
+   "run_id": "24aa8ccd379b",
+   "timestamp": "2026-10-23T21:39:52-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "What do people say about the wait times at the Walgreens on Morton St?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Community"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Community",
+     "request": "Reviews and patient comments specifically about wait times at the Walgreens on Morton St in Boston, Massachusetts."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Community",
+     "tool": "find_pharmacy",
+     "input": {
+      "description": "Walgreens on Morton St in Boston, Massachusetts"
+     },
+     "result": "Walgreens (walgreens-3135)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Community",
+     "tool": "pharmacy_reviews",
+     "input": {
+      "pharmacy_id": "walgreens-3135"
+     },
+     "result": "message: Not enough reviews yet (needs at least 3)."
+    },
+    {
+     "type": "agent_result",
+     "agent": "Community",
+     "answer": "There are no patient reviews or comments yet for this Walgreens, so there’s no patient-reported wait-time information to share.",
+     "not_found": [
+      "Patient comments specifically about wait times"
+     ],
+     "warnings": [],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 2952,
+      "cached_input_tokens": 0,
+      "output_tokens": 223,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 6083,
+     "cached_input_tokens": 2647,
+     "output_tokens": 426,
+     "total_tokens": 6509,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.000583
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3131,
+      "cached_input_tokens": 2647,
+      "output_tokens": 203,
+      "web_searches": 0,
+      "cost_usd": 0.000176
+     },
+     {
+      "agent": "Community",
+      "requests": 3,
+      "input_tokens": 2952,
+      "cached_input_tokens": 0,
+      "output_tokens": 223,
+      "web_searches": 0,
+      "cost_usd": 0.000407
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "There aren’t any patient reviews or recent comments yet, so there’s no wait-time information to share. The Walgreens is at 825 Morton St in Boston."
+  },
+  {
+   "run_id": "ecaacb8f3232",
+   "timestamp": "2026-10-23T21:40:10-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Has anyone seen Concerta in stock at the CVS in Jamaica Plain?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Community",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Community",
+     "request": "Recent patient stock reports from the last 72 hours for Concerta at CVS pharmacies in Jamaica Plain, Boston, Massachusetts. Do not need a specific strength if reports are available; note any strength-specific details."
+    },
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Concerta (methylphenidate extended-release tablets), strength not specified: current FDA shortage status and a patient call script for asking pharmacies about availability. This is a controlled medicine; do not identify pharmacies."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Community",
+     "tool": "find_pharmacy",
+     "input": {
+      "description": "CVS pharmacies in Jamaica Plain, Boston, Massachusetts"
+     },
+     "result": "message: More than one pharmacy matches. Ask which one."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "lookup_drug",
+     "input": {
+      "name": "Concerta (methylphenidate extended-release tablets), strength not specified"
+     },
+     "result": "found=True, drug_id=concerta_18, name=Concerta 18 mg ER tablet, generic_name=methylphenidate"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Community",
+     "tool": "reports_near",
+     "input": {
+      "drug": "Concerta",
+      "place": "Jamaica Plain, Boston, Massachusetts"
+     },
+     "result": "message: RxLantern does not accept or show stock reports for controlled medicines like Adderall XR and Concerta. This protects patients and pharmacies. Please call the pharmacy directly."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "call_script",
+     "input": {
+      "drug": "Concerta 18 mg ER tablet"
+     },
+     "result": "call_script=Hi. I'm calling about Concerta 18 mg ER , source=RxLantern call script template, checked_date=2026-10-23"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "fda_shortage",
+     "input": {
+      "drug": "concerta_18"
+     },
+     "result": "status: in shortage"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Community",
+     "answer": "RxLantern does not share patient stock reports for Concerta because it is a controlled medicine. The lookup was for Concerta 18 mg ER tablets. Please call the CVS pharmacy directly to check; the Front Desk can provide FDA shortage status and a call script.",
+     "not_found": [
+      "Patient stock reports for Concerta at CVS pharmacies in Jamaica Plain."
+     ],
+     "warnings": [
+      "Call the pharmacy directly to confirm availability."
+     ],
+     "tokens": {
+      "requests": 5,
+      "input_tokens": 6211,
+      "cached_input_tokens": 1336,
+      "output_tokens": 547,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 12036,
+     "cached_input_tokens": 2650,
+     "output_tokens": 2055,
+     "total_tokens": 14091,
+     "web_searches": 0,
+     "model_requests": 8,
+     "tool_calls": 7,
+     "cost_usd": 0.001993
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": -3,
+      "input_tokens": -2345,
+      "cached_input_tokens": -22,
+      "output_tokens": 563,
+      "web_searches": 0,
+      "cost_usd": 0.000281
+     },
+     {
+      "agent": "Community",
+      "requests": 5,
+      "input_tokens": 6211,
+      "cached_input_tokens": 1336,
+      "output_tokens": 547,
+      "web_searches": 0,
+      "cost_usd": 0.000774
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 6,
+      "input_tokens": 8170,
+      "cached_input_tokens": 1336,
+      "output_tokens": 945,
+      "web_searches": 0,
+      "cost_usd": 0.001169
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "I can’t share patient stock reports for Concerta because it is a controlled medicine, and I don’t have a recent report to confirm stock at CVS in Jamaica Plain. The FDA lists a current shortage for Co"
   }
  ]
 }

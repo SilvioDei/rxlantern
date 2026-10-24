@@ -110,7 +110,7 @@ def _log(ctx: RunContext[RunDeps], agent: str, tool: str, result, args: dict):
     ctx.deps.steps.append({"type": "tool_call", "agent": agent, "tool": tool,
                            "input": {k: v for k, v in args.items() if v not in (None, False, "")},
                            "result": _short(result)})
-    if isinstance(result, dict) and result.get("refused") and tool.startswith("stock_reports"):
+    if isinstance(result, dict) and result.get("refused") and tool in ("stock_reports", "reports_near"):
         ctx.deps.safety.append("controlled substance stock report refused")
     return _collect(ctx.deps, result)
 
@@ -297,16 +297,29 @@ community.instructions(_dynamic)
 
 
 @community.tool
+def find_pharmacy_for_reports(ctx: RunContext[RunDeps], description: str) -> dict:
+    """Find the pharmacy ID from words like 'the CVS in Mattapan' before reading its reports or reviews."""
+    return _log(ctx, "Community", "find_pharmacy", tools.find_pharmacy(description), {"description": description})
+
+
+@community.tool
 def stock_reports(ctx: RunContext[RunDeps], pharmacy_id: str, drug: str | None = None) -> dict:
-    """Patient stock reports for a pharmacy. Refused for controlled medicines."""
+    """Patient stock reports for one pharmacy from the last 72 hours. Refused for controlled medicines."""
     return _log(ctx, "Community", "stock_reports", tools.stock_reports(pharmacy_id, drug),
                 {"pharmacy_id": pharmacy_id, "drug": drug})
 
 
 @community.tool
-def pharmacy_ratings(ctx: RunContext[RunDeps], pharmacy_id: str) -> dict:
-    """Average rating (1-5) and typical wait time for a pharmacy."""
-    return _log(ctx, "Community", "pharmacy_ratings", tools.pharmacy_ratings(pharmacy_id), {"pharmacy_id": pharmacy_id})
+def reports_near(ctx: RunContext[RunDeps], drug: str, place: str) -> dict:
+    """Fresh (72-hour) stock reports for one drug at pharmacies near a Boston ZIP code or neighborhood."""
+    _remember_place(ctx, place)
+    return _log(ctx, "Community", "reports_near", tools.reports_near(drug, place), {"drug": drug, "place": place})
+
+
+@community.tool
+def pharmacy_reviews(ctx: RunContext[RunDeps], pharmacy_id: str) -> dict:
+    """Reviews for a pharmacy: average rating and wait time (only after 3+ reviews) and recent comments."""
+    return _log(ctx, "Community", "pharmacy_reviews", tools.pharmacy_ratings(pharmacy_id), {"pharmacy_id": pharmacy_id})
 
 
 # ----------------------------------------------------------------------------- Front Desk
@@ -353,7 +366,8 @@ async def ask_medication_access(ctx: RunContext[RunDeps], request: str) -> dict:
 
 @front_desk.tool
 async def ask_community(ctx: RunContext[RunDeps], request: str) -> dict:
-    """Ask Community: patient stock reports, ratings, and wait times for a pharmacy (by pharmacy id or name)."""
+    """Ask Community: patient stock reports from the last 72 hours (one pharmacy, or a drug near a ZIP code or
+    neighborhood) and reviews (ratings, wait times, comments). Include the drug and place or pharmacy."""
     return await _ask(ctx, community, "Community", request)
 
 

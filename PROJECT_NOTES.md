@@ -81,6 +81,7 @@ RxLantern should look like an elite, modern healthcare app: colorful and vibrant
 
 - `.env` lookup order: `rxcompass/.env` first, then the folder one level above (where graders put theirs). If neither exists, an already-set `PORTKEY_API_KEY` environment variable is used.
 - `.env.example` has `PORTKEY_API_KEY=` with no value. Never commit a real `.env`.
+- Moderation admins: `RXLANTERN_ADMIN_EMAILS=` (comma-separated) in `.env`, read by `config.admin_emails()`. Kept out of the public repo.
 
 ## Logging (built in a later step)
 

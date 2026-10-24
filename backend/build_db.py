@@ -16,27 +16,8 @@ JSON_PATH = DATA_DIR / "pharmacies.json"
 DB_PATH = DATA_DIR / "rxlantern.db"
 MEDICARE_DIR = DATA_DIR / "medicare"
 ZIP_PATH = DATA_DIR / "boston_zip_centroids.csv"
-# Community posts live in their own file so rebuilding the reference data never deletes them.
-USER_DB_PATH = DATA_DIR / "rxlantern_user.db"
-
-USER_SCHEMA = """
--- Accounts exist only for posting reviews and stock reports: email, display name, hashed password. No health data.
-CREATE TABLE IF NOT EXISTS community_users (
-    id INTEGER PRIMARY KEY, email TEXT UNIQUE NOT NULL, display_name TEXT NOT NULL,
-    password_hash TEXT NOT NULL, created_at TEXT NOT NULL
-);
--- "they have it" / "they don't" reports. Never allowed for controlled substances (checked in code).
-CREATE TABLE IF NOT EXISTS stock_reports (
-    id INTEGER PRIMARY KEY, pharmacy_id TEXT NOT NULL, drug_id TEXT NOT NULL,
-    in_stock INTEGER NOT NULL CHECK (in_stock IN (0, 1)), user_id INTEGER REFERENCES community_users(id),
-    created_at TEXT NOT NULL, moderation_status TEXT NOT NULL DEFAULT 'approved'
-);
-CREATE TABLE IF NOT EXISTS pharmacy_ratings (
-    id INTEGER PRIMARY KEY, pharmacy_id TEXT NOT NULL, rating INTEGER NOT NULL CHECK (rating BETWEEN 1 AND 5),
-    wait_minutes INTEGER, comment TEXT, user_id INTEGER REFERENCES community_users(id),
-    created_at TEXT NOT NULL, moderation_status TEXT NOT NULL DEFAULT 'approved'
-);
-"""
+# Community posts live in their own file (data/rxlantern_user.db) so rebuilding the reference data
+# never deletes them. Schema and access: backend/community.py.
 
 MED_SCHEMA = """
 CREATE TABLE drugs (
@@ -260,13 +241,8 @@ def _sources() -> list[Path]:
 
 def ensure_user_db() -> Path:
     """Create the community tables if they are missing. Never deletes anything."""
-    con = sqlite3.connect(USER_DB_PATH)
-    try:
-        con.executescript(USER_SCHEMA)
-        con.commit()
-    finally:
-        con.close()
-    return USER_DB_PATH
+    from backend.community import init_db
+    return init_db()
 
 
 def ensure_db() -> Path:
