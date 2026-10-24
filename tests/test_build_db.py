@@ -1,4 +1,4 @@
-"""Check that the app builds data/rxcompass.db on startup from data/pharmacies.json.
+"""Check that the app builds data/rxlantern.db on startup from data/pharmacies.json.
 
 Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe -m tests.test_build_db
 """
@@ -9,6 +9,7 @@ import sqlite3
 from fastapi.testclient import TestClient
 
 from backend.build_db import DB_PATH, JSON_PATH
+from backend.config import APP_NAME
 
 
 def main() -> None:
@@ -16,7 +17,7 @@ def main() -> None:
     from backend.main import app
 
     with TestClient(app) as client:
-        assert client.get("/api/health").json() == {"status": "ok"}
+        assert client.get("/api/health").json() == {"status": "ok", "app": APP_NAME}
     assert DB_PATH.exists(), "startup did not build the database"
 
     expected = len(json.loads(JSON_PATH.read_text(encoding="utf-8"))["pharmacies"])

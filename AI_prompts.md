@@ -142,3 +142,40 @@ Every prompt sent to the AI assistant, word for word, grouped by build step.
 > 3. Nearby clinics: for each pharmacy, list walk-in clinics within about 1 mile (MinuteClinic, urgent care, or community health centers), using public locator pages. Show the clinic name, address, and distance. Measure distance in a straight line from the coordinates and label it "about X miles away" (not exact walking distance). If none are found within 1 mile, write "none found within 1 mile".
 >
 > Same rules as before: source link and date for every fact, "not found" instead of guessing. Update data/pharmacies.json, backend/build_db.py, and output/pharmacy_check.md. Do not call Portkey. Add this to AI_prompts.md under Step 2. Then commit with the message "Step 1-2: setup and pharmacy data" (make sure no .env file or API key is included), show me the Tufts replacement and a short summary, and stop.
+
+## Step 3 — Medication data
+
+> Step 3: Medication data
+>
+> Build the medication data. Use only public sources, never guess, and record the source link and date checked for every fact.
+>
+> 1. Drug list. Create data/drugs.json with these 25 drugs, including strength and dosage form, and a "controlled" flag (Schedule II) for Adderall XR and Concerta:
+> - Controlled: Adderall XR 30 mg ER capsule, Concerta 18 mg ER tablet
+> - Commonly prescribed: atorvastatin 20 mg tablet, lisinopril 10 mg tablet, levothyroxine 50 mcg tablet, metformin 500 mg tablet, amlodipine 5 mg tablet, omeprazole 20 mg DR capsule, sertraline 50 mg tablet, amoxicillin 500 mg capsule
+> - Expensive: Ozempic (semaglutide) 0.5 mg pen, Mounjaro (tirzepatide) 5 mg pen, Eliquis 5 mg tablet, Humira 40 mg pen, Dupixent 300 mg pen
+> - Others: albuterol HFA 90 mcg inhaler, insulin glargine (Lantus SoloStar) pen, amoxicillin 400 mg/5 mL oral suspension, sumatriptan 50 mg tablet, latanoprost 0.005% eye drops, fluticasone 50 mcg nasal spray, triamcinolone 0.1% cream, epinephrine 0.3 mg auto-injector, nicotine 21 mg patch, Paxlovid dose pack
+> Use the free RxNorm API from the National Library of Medicine to match each drug to its brand and generic names and its NDC codes, so the other data sources can be linked.
+>
+> 2. FDA shortages. Write a tool function that checks the openFDA drug shortages API (api.fda.gov/drug/shortages.json, no key needed) for a drug, and saves results in the database so repeat questions don't call the API again. Also save a snapshot for all 25 drugs to data/shortages_snapshot.json, so the app still works if the API is down.
+>
+> 3. NADAC prices. Download the latest weekly NADAC file from data.medicaid.gov into data/raw/ (git-ignored). Keep only rows for our 25 drugs and save them to data/nadac_sample.csv, with the effective date. Write scripts/build_nadac_sample.py so this can be rebuilt.
+>
+> 4. MassHealth coverage. Look up each of the 25 drugs on the MassHealth Drug List website. Record whether it is covered, whether prior authorization is needed, and any notes. Save to data/masshealth.json. If the site blocks you, stop and tell me, and I will download the drug list PDF for you.
+>
+> 5. Medicare Part D. Download the current quarterly Prescription Drug Plan Formulary, Pharmacy Network, and Pricing Information file from data.cms.gov into data/raw/ (git-ignored). Use plan year 2026. Keep only plans available in Massachusetts and only our 25 drugs: plan name, premium, deductible, formulary tier, prior authorization / step therapy / quantity limit flags, cost sharing by tier, average monthly cost, and the insulin cost file. Save the small filtered files to data/medicare/. Write scripts/build_medicare_sample.py so this can be rebuilt. Also record the 2026 Part D rules from official CMS or Medicare.gov pages: the yearly out-of-pocket cap, the insulin cap, and which of our drugs have a negotiated price in 2026.
+>
+> 6. Vaccines. Create data/vaccines.json for these vaccines: flu, COVID-19, hepatitis B, shingles, RSV, pneumococcal, Tdap, hepatitis A, typhoid, and yellow fever. For each one, record what Medicare (Part B or Part D), MassHealth, and commercial insurance cover, using current official sources only (CDC, CMS, Medicare.gov, Mass.gov). Vaccine rules have changed recently, so record the date checked and write "not found" if a source is unclear. Note that travel vaccines are often not covered, and that yellow fever is only given at certified sites (include the CDC link for finding one).
+>
+> 7. Database. Update backend/build_db.py so data/rxcompass.db also gets tables for drugs, shortages, NADAC prices, MassHealth coverage, Medicare plans and formulary, and vaccines, all built from the small files in the repo.
+>
+> 8. Check file. Write output/medication_check.md with one section per drug: shortage status, NADAC price per unit and an estimated 30-day cost, MassHealth status, and how many Massachusetts Medicare plans cover it and at which tiers. Add a vaccines section. I will review this as a pharmacist.
+>
+> 9. Design direction. Add a "Design" section to PROJECT_NOTES.md for the website we will build in a later step: RxCompass should look like an elite, modern healthcare app. Colorful and vibrant, but soothing and calm, never loud or cluttered. Beautiful, easy-to-read fonts. It must stay easy to read in Easy view (large text, high contrast). Do not build anything for the website yet.
+>
+> Keep everything that goes into the repo small (under about 20 MB total). Do not call Portkey or any AI model in this step. Add this prompt to AI_prompts.md under Step 3. When you are done, commit with the message "Step 3: medication data", give me a short summary of what was found and not found, then stop.
+
+### Step 3 — rename the app
+
+> Rename: The app is now called RxLantern instead of RxCompass. Update every place the name appears (PROJECT_NOTES.md, the backend, any config, and the database or file names if they use the old name). Keep the app name in one setting in backend/config.py, next to the model name, so the website, agents, and page title all read it from there. Do not rename the rxcompass/ folder yet; we will rename the repo when we push to GitHub. In AI_prompts.md, keep my earlier prompts exactly as I wrote them (they say RxCompass) and log this prompt under Step 3. Do not call Portkey. Commit with the message "Rename app to RxLantern", then stop.
+>
+> (sent mid-task) “Is Step 3 finished? Did the Medicare step and the commit complete?”

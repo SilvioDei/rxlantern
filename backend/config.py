@@ -1,7 +1,7 @@
-"""Central settings for RxCompass.
+"""Central settings for RxLantern.
 
-The model name lives here and nowhere else. Every agent builds its model with
-get_model() so there is exactly one place to change it.
+The app name and the model name live here and nowhere else. The website, agents, and page
+title read APP_NAME from here; every agent builds its model with get_model().
 """
 
 import os
@@ -12,6 +12,7 @@ from openai import AsyncOpenAI
 from pydantic_ai.models.openai import OpenAIResponsesModel, OpenAIResponsesModelSettings
 from pydantic_ai.providers.openai import OpenAIProvider
 
+APP_NAME = "RxLantern"
 MODEL_NAME = "gpt-6-luna"
 PORTKEY_BASE_URL = "https://api.portkey.ai/v1"
 

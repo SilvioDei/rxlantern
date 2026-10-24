@@ -1,4 +1,4 @@
-"""Build data/rxcompass.db from data/pharmacies.json.
+"""Build data/rxlantern.db from data/pharmacies.json.
 
 Run by hand:   ..\\.venv\\Scripts\\python.exe -m backend.build_db
 The app also calls ensure_db() on startup, so graders never need to run this.
@@ -11,7 +11,7 @@ from pathlib import Path
 from backend.config import DATA_DIR
 
 JSON_PATH = DATA_DIR / "pharmacies.json"
-DB_PATH = DATA_DIR / "rxcompass.db"
+DB_PATH = DATA_DIR / "rxlantern.db"
 
 # Columns that hold lists or objects are stored as JSON text.
 JSON_COLUMNS = {
