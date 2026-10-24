@@ -608,3 +608,67 @@ Every prompt sent to the AI assistant, word for word, grouped by build step.
 > - Then finish the remaining steps (medication_check.md, clear the user database, rerun all tests and screenshots, delete data/raw/, commit), and give me the full summary I asked for.
 >
 > Add this to AI_prompts.md under Step 7c (part 1).
+
+### Step 7c (part 1) — MassHealth back online
+
+> (sent mid-task) "mass health is back online now i think"
+>
+> (sent mid-task) "https://mhdl.pharmacy.services.conduent.com/MHDL/"
+>
+> (sent mid-task) "I have saved a pdf file of the list in the work folder if that helps"
+
+## Step 7c (part 2) — New features
+
+> I'm continuing my final project RxLantern. If this is a new session, first read rxcompass/PROJECT_NOTES.md, rxcompass/AI_prompts.md, and the git log to catch up. Key rules: only gpt-6-luna through Portkey, never store patient health information, every fact shows its source and date checked, "not found" instead of guessing, no medical advice, keep logging every prompt I send in AI_prompts.md word for word (this one goes under a new "Step 7c (part 2)" section), and commit at the end. This will run while I sleep, so do not stop to ask me questions: make the most reasonable choice, write it down, and tell me at the end.
+>
+> Step 7c (part 2): New features
+>
+> Build these on top of the current site. Do not redesign anything else. All of them must work in English and Spanish, in Easy view, and at phone width, with the microphone and Read aloud buttons where a patient types or reads. Pages must load from the database and our own tools, without calling the AI model (the AI is only for the chat).
+>
+> A. Smarter patient journey
+> 1. One-stop pharmacy ("My medicine list"): a new page where a patient or caregiver adds 2 to 5 of our 150 drugs. RxLantern ranks nearby pharmacies by how likely they are to fill all of them, using FDA shortage status, recent community stock reports for each drug, open now, and distance. Each pharmacy shows a line like "Reported in stock for 2 of 3 of your medicines" and never claims a pharmacy definitely has them. The list is saved only in the browser.
+> 2. Prior authorization helper: whenever coverage shows "prior authorization needed", show a short plain-language card: what prior authorization means, why the pharmacy can't fill it under insurance until it's approved, and exactly what to ask the doctor's office. No medical advice.
+> 3. Transfer helper: when a patient reports "They don't have it", offer a short script for asking another pharmacy to transfer the prescription, and what to have ready (the first pharmacy's name and phone, the medicine and strength). For controlled drugs, only say "Ask your prescriber or pharmacist what to do for this medicine."
+> 4. "Send it here" card for the doctor: from any pharmacy card, a one-screen card with the pharmacy's exact name, address, and phone, big and clear, to show the doctor before they send the prescription. Printable, no personal information.
+> 5. "Before you go" checklist: on the results page and pharmacy pages: your insurance card, a photo ID (some medicines, especially some controlled ones, may need it), the medicine name and strength, and the pharmacy counter hours for today.
+>
+> B. Equity and access
+> 6. Crowdsourced languages: when a logged-in patient rates a pharmacy, they can also tick "Staff spoke my language" with a language list (Cantonese, Mandarin, Haitian Creole, Spanish, Portuguese, Vietnamese). Show these on pharmacy cards and pages as "Reported by patients", separate from facts from the pharmacy's website, and add them to the language filter. Do not add wheelchair accessibility back.
+> 7. Language help card: a printable card that says "I need help in my language, please. Can someone help me or call an interpreter?" in Chinese (Traditional and Simplified), Haitian Creole, and Spanish, with the English underneath. Label it "Translation not yet reviewed by a native speaker."
+>
+> C. Community data that gets smarter
+> 8. Best time to go: add a "time of visit" field to reviews. On each pharmacy page, show the typical wait by time of day and day of week (for example "Tuesday mornings: about 10 minutes"), only when there are at least 3 reviews for that time slot.
+> 9. Shortage watchlist: a star button on drugs in shortage watch and on the results page. Starred drugs are saved only in the browser. On the next visit, highlight new "in stock" reports near the patient's saved location since their last visit.
+>
+> D. For pharmacies and cost
+> 10. Demand signals ("For pharmacies" page): count searches anonymously by drug, strength, Boston neighborhood, and week. Never store anything about the person searching (no IP address, no account). Show only counts of 5 or more, for example "15 searches for Ozempic 0.5 mg near Dorchester this week", so pharmacy managers can stock what patients need. Do not count searches made by automated tests.
+> 11. Savings finder: for patients with no insurance, or whose insurance does not cover the drug, show:
+>    - a link to the drug's page on GoodRx and a link to the drug's page on TrumpRx.gov (link only; do not copy or show their prices), and only if the drug is listed there. TrumpRx does not list controlled substances.
+>    - for brand drugs, a link to the manufacturer's official savings program, found on the manufacturer's own website with source and date checked ("not found" if there isn't one).
+>    - this note: "Discount cards and coupons usually mean paying cash outside your insurance, so the cost may not count toward your deductible. Manufacturer copay cards generally can't be used with Medicare or MassHealth."
+>    Hide the savings finder for Medicare and MassHealth patients except the note.
+>
+> E. Evidence for my report
+> 12. Time-saved counter: on the About page and a small line on the home page, show "RxLantern has answered X questions, saving patients an estimated Y minutes on the phone and pharmacy staff an estimated Z minutes." Use my measured baselines: one real call to a Boston pharmacy took a patient about 15 minutes and 3 calls, and as a pharmacy manager I estimate each "do you have it?" call takes staff about 4 minutes. Label it clearly as an estimate, and only count real questions (not tests or sample data).
+>
+> Sample data
+> Extend the sample data (only when SHOW_SAMPLE_DATA is on, always with a "Sample" badge) so graders can see features 6, 8, and 10 working. Sample data must never be counted in the time-saved counter or mixed with real posts.
+>
+> Test everything before committing
+> Use Playwright. Report pass or fail for each, fix every failure, and rerun until all pass:
+> 1. My medicine list with Ozempic 0.5 mg, lisinopril 10 mg, and albuterol: ranked pharmacies with the "X of 3" line.
+> 2. A drug with prior authorization shows the prior authorization helper.
+> 3. Reporting "They don't have it" offers the transfer helper; for Concerta, only the "ask your prescriber or pharmacist" line.
+> 4. "Send it here" card and "Before you go" checklist appear and print cleanly.
+> 5. A review with "Staff spoke Cantonese" shows on the pharmacy page as "Reported by patients", and the language filter finds it.
+> 6. The language help card prints in all four languages.
+> 7. Best time to go appears only with at least 3 reviews in a time slot.
+> 8. Starring a drug, then adding a new report, highlights it on the next visit.
+> 9. The For pharmacies page shows counts of 5 or more and hides smaller counts; test searches are not counted.
+> 10. Savings finder shows GoodRx, TrumpRx, and manufacturer links for no insurance and for Blue Cross, and only the note for Medicare and MassHealth; no links for controlled drugs on TrumpRx.
+> 11. The time-saved counter goes up after a real chat question and not after tests or sample data.
+> 12. All new pages work in Spanish, in Easy view, and at phone width.
+> 13. The Step 7b checks and the Step 4 agent test questions still pass.
+> Then delete all test accounts, test posts, and test search counts so the real database has no real-user rows again. Retake the screenshots, adding one for each new feature. Make sure no screenshot shows an API key or my email.
+>
+> Update PROJECT_NOTES.md and README.md. Rebuild frontend/dist. Commit with the message "Step 7c part 2: new features". Then give me the pass/fail table, any choices you made while I was asleep, and the start command. Then stop.

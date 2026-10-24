@@ -26,7 +26,7 @@ UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) RxLantern student
 
 # Search words typed into the MHDL search box when the RxNorm term is not the word the list uses.
 SEARCH = {
-    "paxlovid": "nirmatrelvir", "insulin_nph_pen": "isophane", "penicillin_vk_500": "penicillin",
+    "paxlovid": "nirmatrelvir", "insulin_nph_pen": "insulin NPH", "penicillin_vk_500": "penicillin",
     "amox_clav_875": "amoxicillin", "amox_clav_susp_400": "amoxicillin", "advair_diskus_250": "salmeterol",
     "symbicort_160": "formoterol", "trelegy_100": "umeclidinium", "duoneb": "albuterol",
     "lantus_solostar": "insulin glargine", "toujeo_solostar": "insulin glargine", "humalog_kwikpen": "insulin lispro",

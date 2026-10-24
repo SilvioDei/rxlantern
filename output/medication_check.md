@@ -86,9 +86,10 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 
 - none
 
-### No MassHealth Drug List match or not checked (1)
+### No MassHealth Drug List match or not checked (2)
 
-- 125 drugs: MassHealth coverage not checked yet (the MassHealth Drug List website was unavailable on 2026-10-24). The website tells patients to call the pharmacy or MassHealth. Rerun: scripts/fetch_masshealth.py. Drugs: Wegovy (semaglutide) 2.4 mg pen, Rybelsus (semaglutide) 7 mg tablet, Zepbound (tirzepatide) 2.5 mg pen, Trulicity (dulaglutide) 1.5 mg pen, Victoza (liraglutide) pen, Jardiance (empagliflozin) 10 mg tablet, Farxiga (dapagliflozin) 10 mg tablet, Januvia (sitagliptin) 100 mg tablet, Glipizide 5 mg tablet, Pioglitazone 30 mg tablet, Metformin ER 500 mg tablet, Insulin lispro (Humalog KwikPen) pen, Insulin aspart (NovoLog FlexPen) pen, Insulin degludec (Tresiba FlexTouch) pen, Toujeo SoloStar (insulin glargine 300 units/mL) pen, Insulin NPH (Humulin N / Novolin N) pen, Fluticasone/salmeterol (Advair Diskus) 250/50 inhaler, Budesonide/formoterol (Symbicort) 160/4.5 inhaler, Trelegy Ellipta 100/62.5/25 inhaler, Tiotropium (Spiriva HandiHaler) 18 mcg capsules, Fluticasone (Flovent HFA) 110 mcg inhaler, Albuterol 2.5 mg/3 mL nebulizer solution, Ipratropium/albuterol (DuoNeb) nebulizer solution, Budesonide 0.5 mg/2 mL nebulizer suspension (Pulmicort Respules), Montelukast 10 mg tablet, Montelukast 5 mg chewable tablet (children), Benzonatate 100 mg capsule, Naloxone 4 mg nasal spray (Narcan), Oseltamivir (Tamiflu) 75 mg capsule, Oseltamivir (Tamiflu) 6 mg/mL oral suspension, Amoxicillin 250 mg/5 mL oral suspension, Amoxicillin/clavulanate (Augmentin) 875/125 mg tablet, Amoxicillin/clavulanate 400/57 mg per 5 mL oral suspension, Azithromycin (Z-Pak) 250 mg tablet, Azithromycin 200 mg/5 mL oral suspension, Cephalexin 500 mg capsule, Cephalexin 250 mg/5 mL oral suspension, Cefdinir 250 mg/5 mL oral suspension, Doxycycline hyclate 100 mg capsule, Sulfamethoxazole/trimethoprim DS 800/160 mg tablet (Bactrim DS), Sulfamethoxazole/trimethoprim 200/40 mg per 5 mL oral suspension, Nitrofurantoin (Macrobid) 100 mg capsule, Ciprofloxacin 500 mg tablet, Metronidazole 500 mg tablet, Penicillin VK 500 mg tablet, Fluconazole 150 mg tablet, Valacyclovir 1 g tablet, Mupirocin 2% ointment, Losartan 50 mg tablet, Metoprolol succinate ER 50 mg tablet, Metoprolol tartrate 25 mg tablet, Rosuvastatin 10 mg tablet, Hydrochlorothiazide 25 mg tablet, Simvastatin 20 mg tablet, Pravastatin 40 mg tablet, Furosemide 20 mg tablet, Carvedilol 12.5 mg tablet, Spironolactone 25 mg tablet, Clopidogrel 75 mg tablet, Valsartan 160 mg tablet, Ezetimibe 10 mg tablet, Propranolol 10 mg tablet, Xarelto (rivaroxaban) 20 mg tablet, Warfarin 5 mg tablet, Entresto (sacubitril/valsartan) 49/51 mg tablet, Repatha (evolocumab) 140 mg pen, Brilinta (ticagrelor) 90 mg tablet, Nitroglycerin 0.4 mg sublingual tablet, Escitalopram 10 mg tablet, Bupropion XL 150 mg tablet, Fluoxetine 20 mg capsule, Trazodone 50 mg tablet, Duloxetine 60 mg DR capsule, Buspirone 10 mg tablet, Venlafaxine ER 75 mg capsule, Hydroxyzine HCl 25 mg tablet, Quetiapine 25 mg tablet, Aripiprazole 5 mg tablet, Lamotrigine 100 mg tablet, Alprazolam 0.5 mg tablet, Clonazepam 0.5 mg tablet, Lorazepam 0.5 mg tablet, Zolpidem 10 mg tablet, Amphetamine salts (Adderall) 10 mg tablet, Lisdexamfetamine (Vyvanse) 30 mg capsule, Methylphenidate (Ritalin) 10 mg tablet, Dexmethylphenidate ER (Focalin XR) 10 mg capsule, Atomoxetine (Strattera) 40 mg capsule, Guanfacine ER (Intuniv) 1 mg tablet, Hydrocodone/acetaminophen 5/325 mg tablet, Oxycodone 5 mg tablet, Oxycodone/acetaminophen (Percocet) 5/325 mg tablet, Tramadol 50 mg tablet, Gabapentin 300 mg capsule, Pregabalin (Lyrica) 75 mg capsule, Buprenorphine/naloxone (Suboxone) 8/2 mg film, Meloxicam 15 mg tablet, Ibuprofen 800 mg tablet, Cyclobenzaprine 10 mg tablet, Diclofenac 1% gel, Phentermine 37.5 mg tablet, Testosterone cypionate 200 mg/mL injection, Pantoprazole 40 mg DR tablet, Famotidine 20 mg tablet, Ondansetron 4 mg orally disintegrating tablet, Linzess (linaclotide) 145 mcg capsule, Prednisone 20 mg tablet, Prednisolone 15 mg/5 mL oral solution, Methylprednisolone 4 mg dose pack (Medrol), Allopurinol 100 mg tablet, Colchicine 0.6 mg tablet, Estradiol 1 mg tablet, Norgestimate/ethinyl estradiol (Sprintec) birth control pack, Medroxyprogesterone (Depo-Provera) 150 mg/mL injection, Finasteride 5 mg tablet, Tamsulosin 0.4 mg capsule, Alendronate 70 mg tablet (weekly), Levetiracetam 500 mg tablet, Emtricitabine/tenofovir DF (Truvada) 200/300 mg tablet, Biktarvy (bictegravir/emtricitabine/tenofovir alafenamide) tablet, Enbrel (etanercept) 50 mg pen, Nurtec ODT (rimegepant) 75 mg, Timolol 0.5% eye drops, Clobetasol 0.05% cream, Vitamin D2 (ergocalciferol) 50,000 unit capsule.
+- Benzonatate 100 mg capsule: not found on the MassHealth Drug List search (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=benzonatate>). MassHealth rule: drugs not on the list need prior authorization.
+- Phentermine 37.5 mg tablet: not found on the MassHealth Drug List search (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=phentermine>). MassHealth rule: drugs not on the list need prior authorization.
 
 ### No Massachusetts Medicare Part D match (8)
 
@@ -130,131 +131,131 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 | Epinephrine 0.3 mg auto-injector | not found on FDA shortage list | $268.72 (generic) | no | 96 of 96 |
 | Nicotine 21 mg patch | not found on FDA shortage list | $55.62 (generic) | no | 0 of 96 |
 | Paxlovid dose pack | not found on FDA shortage list | $1,477.18 (brand) | only in some cases: < 12 years; or > 30 units/claim | 96 of 96 |
-| Wegovy (semaglutide) 2.4 mg pen | not found on FDA shortage list | $1,306.72 (brand) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 8 of 96 |
-| Rybelsus (semaglutide) 7 mg tablet | shortage resolved or discontinued | $995.84 (brand) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 0 of 96 |
-| Zepbound (tirzepatide) 2.5 mg pen | not found on FDA shortage list | $1,052.46 (brand) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 0 of 96 |
-| Trulicity (dulaglutide) 1.5 mg pen | not found on FDA shortage list | $975.24 (brand) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 93 of 96 |
-| Victoza (liraglutide) pen | in shortage | $173.31 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 18 of 96 |
-| Jardiance (empagliflozin) 10 mg tablet | not found on FDA shortage list | $335.67 (brand) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Farxiga (dapagliflozin) 10 mg tablet | not found on FDA shortage list | $5.53 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Januvia (sitagliptin) 100 mg tablet | not found on FDA shortage list | $115.48 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Glipizide 5 mg tablet | not found on FDA shortage list | $1.97 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Pioglitazone 30 mg tablet | not found on FDA shortage list | $2.90 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Metformin ER 500 mg tablet | not found on FDA shortage list | $1.70 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Insulin lispro (Humalog KwikPen) pen | shortage resolved or discontinued | $152.87 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 78 of 96 |
-| Insulin aspart (NovoLog FlexPen) pen | not found on FDA shortage list | $134.41 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Insulin degludec (Tresiba FlexTouch) pen | not found on FDA shortage list | $170.86 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 36 of 96 |
-| Toujeo SoloStar (insulin glargine 300 units/mL) pen | not found on FDA shortage list | $121.44 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Insulin NPH (Humulin N / Novolin N) pen | not found on FDA shortage list | $111.39 (brand) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Fluticasone/salmeterol (Advair Diskus) 250/50 inhaler | not found on FDA shortage list | $72.47 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 90 of 96 |
-| Budesonide/formoterol (Symbicort) 160/4.5 inhaler | not found on FDA shortage list | $176.65 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Trelegy Ellipta 100/62.5/25 inhaler | not found on FDA shortage list | $334.56 (brand) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Tiotropium (Spiriva HandiHaler) 18 mcg capsules | not found on FDA shortage list | $356.89 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 44 of 96 |
-| Fluticasone (Flovent HFA) 110 mcg inhaler | not found on FDA shortage list | $162.76 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 33 of 96 |
-| Albuterol 2.5 mg/3 mL nebulizer solution | not found on FDA shortage list | $4.61 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Ipratropium/albuterol (DuoNeb) nebulizer solution | not found on FDA shortage list | $6.88 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Budesonide 0.5 mg/2 mL nebulizer suspension (Pulmicort Respules) | not found on FDA shortage list | $37.60 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Montelukast 10 mg tablet | shortage resolved or discontinued | $1.30 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Montelukast 5 mg chewable tablet (children) | shortage resolved or discontinued | $2.17 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Benzonatate 100 mg capsule | not found on FDA shortage list | $1.85 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 0 of 96 |
-| Naloxone 4 mg nasal spray (Narcan) | not found on FDA shortage list | $33.53 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 0 of 96 |
-| Oseltamivir (Tamiflu) 75 mg capsule | not found on FDA shortage list | $7.98 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Oseltamivir (Tamiflu) 6 mg/mL oral suspension | not found on FDA shortage list | $9.33 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Amoxicillin 250 mg/5 mL oral suspension | not found on FDA shortage list | $2.49 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Amoxicillin/clavulanate (Augmentin) 875/125 mg tablet | not found on FDA shortage list | $5.64 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Amoxicillin/clavulanate 400/57 mg per 5 mL oral suspension | not found on FDA shortage list | $6.45 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Azithromycin (Z-Pak) 250 mg tablet | shortage resolved or discontinued | $1.63 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Azithromycin 200 mg/5 mL oral suspension | shortage resolved or discontinued | $3.58 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Cephalexin 500 mg capsule | not found on FDA shortage list | $3.27 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Cephalexin 250 mg/5 mL oral suspension | not found on FDA shortage list | $5.85 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Cefdinir 250 mg/5 mL oral suspension | not found on FDA shortage list | $6.88 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Doxycycline hyclate 100 mg capsule | not found on FDA shortage list | $2.16 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Sulfamethoxazole/trimethoprim DS 800/160 mg tablet (Bactrim DS) | not found on FDA shortage list | $0.91 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Sulfamethoxazole/trimethoprim 200/40 mg per 5 mL oral suspension | not found on FDA shortage list | $5.53 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Nitrofurantoin (Macrobid) 100 mg capsule | not found on FDA shortage list | $2.72 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Ciprofloxacin 500 mg tablet | not found on FDA shortage list | $1.69 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Metronidazole 500 mg tablet | not found on FDA shortage list | $1.46 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Penicillin VK 500 mg tablet | not found on FDA shortage list | $3.91 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Fluconazole 150 mg tablet | not found on FDA shortage list | $0.51 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Valacyclovir 1 g tablet | not found on FDA shortage list | $12.71 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Mupirocin 2% ointment | not found on FDA shortage list | $3.19 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Losartan 50 mg tablet | not found on FDA shortage list | $0.99 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Metoprolol succinate ER 50 mg tablet | shortage resolved or discontinued | $1.48 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Metoprolol tartrate 25 mg tablet | not found on FDA shortage list | $0.96 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Rosuvastatin 10 mg tablet | not found on FDA shortage list | $1.07 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Hydrochlorothiazide 25 mg tablet | not found on FDA shortage list | $0.34 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Simvastatin 20 mg tablet | not found on FDA shortage list | $0.97 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Pravastatin 40 mg tablet | not found on FDA shortage list | $2.37 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Furosemide 20 mg tablet | in shortage | $0.75 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Carvedilol 12.5 mg tablet | not found on FDA shortage list | $1.28 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Spironolactone 25 mg tablet | shortage resolved or discontinued | $1.28 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Clopidogrel 75 mg tablet | not found on FDA shortage list | $1.41 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Valsartan 160 mg tablet | shortage resolved or discontinued | $3.17 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Ezetimibe 10 mg tablet | not found on FDA shortage list | $2.11 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Propranolol 10 mg tablet | not found on FDA shortage list | $2.78 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Xarelto (rivaroxaban) 20 mg tablet | shortage resolved or discontinued | $586.18 (brand) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Warfarin 5 mg tablet | not found on FDA shortage list | $2.67 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Entresto (sacubitril/valsartan) 49/51 mg tablet | not found on FDA shortage list | $32.56 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Repatha (evolocumab) 140 mg pen | not found on FDA shortage list | $564.02 (brand) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 94 of 96 |
-| Brilinta (ticagrelor) 90 mg tablet | not found on FDA shortage list | $14.57 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Nitroglycerin 0.4 mg sublingual tablet | not found on FDA shortage list | $3.24 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Escitalopram 10 mg tablet | not found on FDA shortage list | $1.17 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Bupropion XL 150 mg tablet | not found on FDA shortage list | $2.35 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Fluoxetine 20 mg capsule | not found on FDA shortage list | $0.88 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Trazodone 50 mg tablet | not found on FDA shortage list | $0.90 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Duloxetine 60 mg DR capsule | not found on FDA shortage list | $4.10 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Buspirone 10 mg tablet | not found on FDA shortage list | $1.66 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Venlafaxine ER 75 mg capsule | not found on FDA shortage list | $2.40 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Hydroxyzine HCl 25 mg tablet | not found on FDA shortage list | $0.97 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Quetiapine 25 mg tablet | not found on FDA shortage list | $0.63 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Aripiprazole 5 mg tablet | not found on FDA shortage list | $3.50 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Lamotrigine 100 mg tablet | not found on FDA shortage list | $1.45 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Alprazolam 0.5 mg tablet | not found on FDA shortage list | $0.68 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Clonazepam 0.5 mg tablet | in shortage | $0.59 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Lorazepam 0.5 mg tablet | not found on FDA shortage list | $1.09 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Zolpidem 10 mg tablet | not found on FDA shortage list | $1.17 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Amphetamine salts (Adderall) 10 mg tablet | in shortage | $13.63 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Lisdexamfetamine (Vyvanse) 30 mg capsule | in shortage | $86.54 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 33 of 96 |
-| Methylphenidate (Ritalin) 10 mg tablet | not found on FDA shortage list | $8.98 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Dexmethylphenidate ER (Focalin XR) 10 mg capsule | not found on FDA shortage list | $41.78 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 58 of 96 |
-| Atomoxetine (Strattera) 40 mg capsule | not found on FDA shortage list | $13.34 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Guanfacine ER (Intuniv) 1 mg tablet | shortage resolved or discontinued | $3.97 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 95 of 96 |
-| Hydrocodone/acetaminophen 5/325 mg tablet | not found on FDA shortage list | $2.64 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Oxycodone 5 mg tablet | not found on FDA shortage list | $1.85 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Oxycodone/acetaminophen (Percocet) 5/325 mg tablet | shortage resolved or discontinued | $2.36 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Tramadol 50 mg tablet | not found on FDA shortage list | $0.78 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Gabapentin 300 mg capsule | not found on FDA shortage list | $2.95 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Pregabalin (Lyrica) 75 mg capsule | not found on FDA shortage list | $3.34 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Buprenorphine/naloxone (Suboxone) 8/2 mg film | not found on FDA shortage list | $58.45 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 89 of 96 |
-| Meloxicam 15 mg tablet | not found on FDA shortage list | $0.55 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Ibuprofen 800 mg tablet | not found on FDA shortage list | $5.00 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Cyclobenzaprine 10 mg tablet | not found on FDA shortage list | $0.52 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Diclofenac 1% gel | not found on FDA shortage list | $8.05 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 0 of 96 |
-| Phentermine 37.5 mg tablet | not found on FDA shortage list | $2.21 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 0 of 96 |
-| Testosterone cypionate 200 mg/mL injection | not found on FDA shortage list | $11.01 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 95 of 96 |
-| Pantoprazole 40 mg DR tablet | not found on FDA shortage list | $1.10 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Famotidine 20 mg tablet | not found on FDA shortage list | $1.69 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Ondansetron 4 mg orally disintegrating tablet | not found on FDA shortage list | $2.46 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Linzess (linaclotide) 145 mcg capsule | not found on FDA shortage list | $270.56 (brand) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Prednisone 20 mg tablet | not found on FDA shortage list | $0.65 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Prednisolone 15 mg/5 mL oral solution | not found on FDA shortage list | $54.01 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Methylprednisolone 4 mg dose pack (Medrol) | not found on FDA shortage list | $3.03 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Allopurinol 100 mg tablet | shortage resolved or discontinued | $0.94 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Colchicine 0.6 mg tablet | not found on FDA shortage list | $7.13 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Estradiol 1 mg tablet | not found on FDA shortage list | $1.90 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Norgestimate/ethinyl estradiol (Sprintec) birth control pack | not found on FDA shortage list | $3.11 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 73 of 96 |
-| Medroxyprogesterone (Depo-Provera) 150 mg/mL injection | not found on FDA shortage list | $23.04 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Finasteride 5 mg tablet | not found on FDA shortage list | $2.06 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Tamsulosin 0.4 mg capsule | not found on FDA shortage list | $1.47 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Alendronate 70 mg tablet (weekly) | not found on FDA shortage list | $1.03 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Levetiracetam 500 mg tablet | not found on FDA shortage list | $4.33 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Emtricitabine/tenofovir DF (Truvada) 200/300 mg tablet | not found on FDA shortage list | $15.79 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Biktarvy (bictegravir/emtricitabine/tenofovir alafenamide) tablet | not found on FDA shortage list | $4,102.59 (brand) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Enbrel (etanercept) 50 mg pen | not found on FDA shortage list | $8,334.50 (brand) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Nurtec ODT (rimegepant) 75 mg | not found on FDA shortage list | $1,029.30 (brand) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 85 of 96 |
-| Timolol 0.5% eye drops | not found on FDA shortage list | $4.11 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 96 of 96 |
-| Clobetasol 0.05% cream | not found on FDA shortage list | $5.10 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 94 of 96 |
-| Vitamin D2 (ergocalciferol) 50,000 unit capsule | not found on FDA shortage list | $0.46 (generic) | not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24 | 0 of 96 |
+| Wegovy (semaglutide) 2.4 mg pen | not found on FDA shortage list | $1,306.72 (brand) | yes | 8 of 96 |
+| Rybelsus (semaglutide) 7 mg tablet | shortage resolved or discontinued | $995.84 (brand) | yes | 0 of 96 |
+| Zepbound (tirzepatide) 2.5 mg pen | not found on FDA shortage list | $1,052.46 (brand) | yes | 0 of 96 |
+| Trulicity (dulaglutide) 1.5 mg pen | not found on FDA shortage list | $975.24 (brand) | yes | 93 of 96 |
+| Victoza (liraglutide) pen | in shortage | $173.31 (generic) | yes | 18 of 96 |
+| Jardiance (empagliflozin) 10 mg tablet | not found on FDA shortage list | $335.67 (brand) | no | 96 of 96 |
+| Farxiga (dapagliflozin) 10 mg tablet | not found on FDA shortage list | $5.53 (generic) | no | 96 of 96 |
+| Januvia (sitagliptin) 100 mg tablet | not found on FDA shortage list | $115.48 (generic) | yes | 96 of 96 |
+| Glipizide 5 mg tablet | not found on FDA shortage list | $1.97 (generic) | no | 96 of 96 |
+| Pioglitazone 30 mg tablet | not found on FDA shortage list | $2.90 (generic) | no | 96 of 96 |
+| Metformin ER 500 mg tablet | not found on FDA shortage list | $1.70 (generic) | no | 96 of 96 |
+| Insulin lispro (Humalog KwikPen) pen | shortage resolved or discontinued | $152.87 (generic) | no | 78 of 96 |
+| Insulin aspart (NovoLog FlexPen) pen | not found on FDA shortage list | $134.41 (generic) | yes | 96 of 96 |
+| Insulin degludec (Tresiba FlexTouch) pen | not found on FDA shortage list | $170.86 (generic) | yes | 36 of 96 |
+| Toujeo SoloStar (insulin glargine 300 units/mL) pen | not found on FDA shortage list | $121.44 (generic) | yes | 96 of 96 |
+| Insulin NPH (Humulin N / Novolin N) pen | not found on FDA shortage list | $111.39 (brand) | no | 96 of 96 |
+| Fluticasone/salmeterol (Advair Diskus) 250/50 inhaler | not found on FDA shortage list | $72.47 (generic) | no | 90 of 96 |
+| Budesonide/formoterol (Symbicort) 160/4.5 inhaler | not found on FDA shortage list | $176.65 (generic) | no | 96 of 96 |
+| Trelegy Ellipta 100/62.5/25 inhaler | not found on FDA shortage list | $334.56 (brand) | yes | 96 of 96 |
+| Tiotropium (Spiriva HandiHaler) 18 mcg capsules | not found on FDA shortage list | $356.89 (generic) | no | 44 of 96 |
+| Fluticasone (Flovent HFA) 110 mcg inhaler | not found on FDA shortage list | $162.76 (generic) | only in some cases: >= 12 years | 33 of 96 |
+| Albuterol 2.5 mg/3 mL nebulizer solution | not found on FDA shortage list | $4.61 (generic) | no | 96 of 96 |
+| Ipratropium/albuterol (DuoNeb) nebulizer solution | not found on FDA shortage list | $6.88 (generic) | no | 96 of 96 |
+| Budesonide 0.5 mg/2 mL nebulizer suspension (Pulmicort Respules) | not found on FDA shortage list | $37.60 (generic) | only in some cases: >= 13 years | 96 of 96 |
+| Montelukast 10 mg tablet | shortage resolved or discontinued | $1.30 (generic) | no | 96 of 96 |
+| Montelukast 5 mg chewable tablet (children) | shortage resolved or discontinued | $2.17 (generic) | no | 96 of 96 |
+| Benzonatate 100 mg capsule | not found on FDA shortage list | $1.85 (generic) | not found | 0 of 96 |
+| Naloxone 4 mg nasal spray (Narcan) | not found on FDA shortage list | $33.53 (generic) | no | 0 of 96 |
+| Oseltamivir (Tamiflu) 75 mg capsule | not found on FDA shortage list | $7.98 (generic) | only in some cases: > 10 units/ claim; or > 20 units/ 365 days | 96 of 96 |
+| Oseltamivir (Tamiflu) 6 mg/mL oral suspension | not found on FDA shortage list | $9.33 (generic) | only in some cases: > 180 mL/ claim; or > 360 mL/ 365 days | 96 of 96 |
+| Amoxicillin 250 mg/5 mL oral suspension | not found on FDA shortage list | $2.49 (generic) | no | 96 of 96 |
+| Amoxicillin/clavulanate (Augmentin) 875/125 mg tablet | not found on FDA shortage list | $5.64 (generic) | no | 96 of 96 |
+| Amoxicillin/clavulanate 400/57 mg per 5 mL oral suspension | not found on FDA shortage list | $6.45 (generic) | no | 96 of 96 |
+| Azithromycin (Z-Pak) 250 mg tablet | shortage resolved or discontinued | $1.63 (generic) | no | 96 of 96 |
+| Azithromycin 200 mg/5 mL oral suspension | shortage resolved or discontinued | $3.58 (generic) | no | 96 of 96 |
+| Cephalexin 500 mg capsule | not found on FDA shortage list | $3.27 (generic) | no | 96 of 96 |
+| Cephalexin 250 mg/5 mL oral suspension | not found on FDA shortage list | $5.85 (generic) | no | 96 of 96 |
+| Cefdinir 250 mg/5 mL oral suspension | not found on FDA shortage list | $6.88 (generic) | no | 96 of 96 |
+| Doxycycline hyclate 100 mg capsule | not found on FDA shortage list | $2.16 (generic) | no | 96 of 96 |
+| Sulfamethoxazole/trimethoprim DS 800/160 mg tablet (Bactrim DS) | not found on FDA shortage list | $0.91 (generic) | no | 96 of 96 |
+| Sulfamethoxazole/trimethoprim 200/40 mg per 5 mL oral suspension | not found on FDA shortage list | $5.53 (generic) | no | 96 of 96 |
+| Nitrofurantoin (Macrobid) 100 mg capsule | not found on FDA shortage list | $2.72 (generic) | no | 96 of 96 |
+| Ciprofloxacin 500 mg tablet | not found on FDA shortage list | $1.69 (generic) | no | 96 of 96 |
+| Metronidazole 500 mg tablet | not found on FDA shortage list | $1.46 (generic) | no | 96 of 96 |
+| Penicillin VK 500 mg tablet | not found on FDA shortage list | $3.91 (generic) | no | 96 of 96 |
+| Fluconazole 150 mg tablet | not found on FDA shortage list | $0.51 (generic) | no | 96 of 96 |
+| Valacyclovir 1 g tablet | not found on FDA shortage list | $12.71 (generic) | no | 96 of 96 |
+| Mupirocin 2% ointment | not found on FDA shortage list | $3.19 (generic) | no | 96 of 96 |
+| Losartan 50 mg tablet | not found on FDA shortage list | $0.99 (generic) | no | 96 of 96 |
+| Metoprolol succinate ER 50 mg tablet | shortage resolved or discontinued | $1.48 (generic) | no | 96 of 96 |
+| Metoprolol tartrate 25 mg tablet | not found on FDA shortage list | $0.96 (generic) | no | 96 of 96 |
+| Rosuvastatin 10 mg tablet | not found on FDA shortage list | $1.07 (generic) | only in some cases: > 1.5 units/day | 96 of 96 |
+| Hydrochlorothiazide 25 mg tablet | not found on FDA shortage list | $0.34 (generic) | no | 96 of 96 |
+| Simvastatin 20 mg tablet | not found on FDA shortage list | $0.97 (generic) | only in some cases: > 1.5 units/day | 96 of 96 |
+| Pravastatin 40 mg tablet | not found on FDA shortage list | $2.37 (generic) | only in some cases: > 1.5 units/day | 96 of 96 |
+| Furosemide 20 mg tablet | in shortage | $0.75 (generic) | no | 96 of 96 |
+| Carvedilol 12.5 mg tablet | not found on FDA shortage list | $1.28 (generic) | no | 96 of 96 |
+| Spironolactone 25 mg tablet | shortage resolved or discontinued | $1.28 (generic) | no | 96 of 96 |
+| Clopidogrel 75 mg tablet | not found on FDA shortage list | $1.41 (generic) | no | 96 of 96 |
+| Valsartan 160 mg tablet | shortage resolved or discontinued | $3.17 (generic) | no | 96 of 96 |
+| Ezetimibe 10 mg tablet | not found on FDA shortage list | $2.11 (generic) | no | 96 of 96 |
+| Propranolol 10 mg tablet | not found on FDA shortage list | $2.78 (generic) | no | 96 of 96 |
+| Xarelto (rivaroxaban) 20 mg tablet | shortage resolved or discontinued | $586.18 (brand) | no | 96 of 96 |
+| Warfarin 5 mg tablet | not found on FDA shortage list | $2.67 (generic) | no | 96 of 96 |
+| Entresto (sacubitril/valsartan) 49/51 mg tablet | not found on FDA shortage list | $32.56 (generic) | only in some cases: > 2 units/day | 96 of 96 |
+| Repatha (evolocumab) 140 mg pen | not found on FDA shortage list | $564.02 (brand) | yes | 94 of 96 |
+| Brilinta (ticagrelor) 90 mg tablet | not found on FDA shortage list | $14.57 (generic) | no | 96 of 96 |
+| Nitroglycerin 0.4 mg sublingual tablet | not found on FDA shortage list | $3.24 (generic) | no | 96 of 96 |
+| Escitalopram 10 mg tablet | not found on FDA shortage list | $1.17 (generic) | only in some cases: < 6 years | 96 of 96 |
+| Bupropion XL 150 mg tablet | not found on FDA shortage list | $2.35 (generic) | only in some cases: < 6 years; or > 1 unit/day | 96 of 96 |
+| Fluoxetine 20 mg capsule | not found on FDA shortage list | $0.88 (generic) | only in some cases: < 6 years | 96 of 96 |
+| Trazodone 50 mg tablet | not found on FDA shortage list | $0.90 (generic) | only in some cases: < 6 years | 96 of 96 |
+| Duloxetine 60 mg DR capsule | not found on FDA shortage list | $4.10 (generic) | only in some cases: < 6 years | 96 of 96 |
+| Buspirone 10 mg tablet | not found on FDA shortage list | $1.66 (generic) | only in some cases: < 6 years | 96 of 96 |
+| Venlafaxine ER 75 mg capsule | not found on FDA shortage list | $2.40 (generic) | only in some cases: < 6 years | 96 of 96 |
+| Hydroxyzine HCl 25 mg tablet | not found on FDA shortage list | $0.97 (generic) | no | 96 of 96 |
+| Quetiapine 25 mg tablet | not found on FDA shortage list | $0.63 (generic) | only in some cases: < 10 years; or > 3 units/day | 96 of 96 |
+| Aripiprazole 5 mg tablet | not found on FDA shortage list | $3.50 (generic) | only in some cases: < 10 years; or > 2 units/day | 96 of 96 |
+| Lamotrigine 100 mg tablet | not found on FDA shortage list | $1.45 (generic) | only in some cases: < 6 years | 96 of 96 |
+| Alprazolam 0.5 mg tablet | not found on FDA shortage list | $0.68 (generic) | only in some cases: < 6 years | 96 of 96 |
+| Clonazepam 0.5 mg tablet | in shortage | $0.59 (generic) | only in some cases: < 6 years | 96 of 96 |
+| Lorazepam 0.5 mg tablet | not found on FDA shortage list | $1.09 (generic) | only in some cases: < 6 years | 96 of 96 |
+| Zolpidem 10 mg tablet | not found on FDA shortage list | $1.17 (generic) | only in some cases: < 6 years; or > 1 unit/day | 96 of 96 |
+| Amphetamine salts (Adderall) 10 mg tablet | in shortage | $13.63 (generic) | only in some cases: < 3 years or >= 21 years; or > 3 units/day | 96 of 96 |
+| Lisdexamfetamine (Vyvanse) 30 mg capsule | in shortage | $86.54 (generic) | only in some cases: < 3 years or >= 21 years; or > 2 units/day | 33 of 96 |
+| Methylphenidate (Ritalin) 10 mg tablet | not found on FDA shortage list | $8.98 (generic) | only in some cases: < 3 years or >= 21 years; or > 3 units/day | 96 of 96 |
+| Dexmethylphenidate ER (Focalin XR) 10 mg capsule | not found on FDA shortage list | $41.78 (generic) | only in some cases: < 3 years or >= 21 years; or > 2 units/day | 58 of 96 |
+| Atomoxetine (Strattera) 40 mg capsule | not found on FDA shortage list | $13.34 (generic) | only in some cases: < 6 years | 96 of 96 |
+| Guanfacine ER (Intuniv) 1 mg tablet | shortage resolved or discontinued | $3.97 (generic) | only in some cases: < 3 years | 95 of 96 |
+| Hydrocodone/acetaminophen 5/325 mg tablet | not found on FDA shortage list | $2.64 (generic) | only in some cases: > 120 mg/day hydrocodone; or > 4 g/day acetaminophen | 96 of 96 |
+| Oxycodone 5 mg tablet | not found on FDA shortage list | $1.85 (generic) | only in some cases: > 80 mg/day | 96 of 96 |
+| Oxycodone/acetaminophen (Percocet) 5/325 mg tablet | shortage resolved or discontinued | $2.36 (generic) | only in some cases: > 80 mg/day oxycodone; or > 4 g/day acetaminophen | 96 of 96 |
+| Tramadol 50 mg tablet | not found on FDA shortage list | $0.78 (generic) | only in some cases: < 12 years; or > 400 mg/day | 96 of 96 |
+| Gabapentin 300 mg capsule | not found on FDA shortage list | $2.95 (generic) | only in some cases: < 6 years; or > 3600 mg/day | 96 of 96 |
+| Pregabalin (Lyrica) 75 mg capsule | not found on FDA shortage list | $3.34 (generic) | only in some cases: < 6 years; or > 600 mg/day | 96 of 96 |
+| Buprenorphine/naloxone (Suboxone) 8/2 mg film | not found on FDA shortage list | $58.45 (generic) | only in some cases: > 32 mg/day | 89 of 96 |
+| Meloxicam 15 mg tablet | not found on FDA shortage list | $0.55 (generic) | no | 96 of 96 |
+| Ibuprofen 800 mg tablet | not found on FDA shortage list | $5.00 (generic) | no | 96 of 96 |
+| Cyclobenzaprine 10 mg tablet | not found on FDA shortage list | $0.52 (generic) | only in some cases: < 15 years | 96 of 96 |
+| Diclofenac 1% gel | not found on FDA shortage list | $8.05 (generic) | no | 0 of 96 |
+| Phentermine 37.5 mg tablet | not found on FDA shortage list | $2.21 (generic) | not found | 0 of 96 |
+| Testosterone cypionate 200 mg/mL injection | not found on FDA shortage list | $11.01 (generic) | yes | 95 of 96 |
+| Pantoprazole 40 mg DR tablet | not found on FDA shortage list | $1.10 (generic) | only in some cases: > 4 units/day | 96 of 96 |
+| Famotidine 20 mg tablet | not found on FDA shortage list | $1.69 (generic) | no | 96 of 96 |
+| Ondansetron 4 mg orally disintegrating tablet | not found on FDA shortage list | $2.46 (generic) | no | 96 of 96 |
+| Linzess (linaclotide) 145 mcg capsule | not found on FDA shortage list | $270.56 (brand) | yes | 96 of 96 |
+| Prednisone 20 mg tablet | not found on FDA shortage list | $0.65 (generic) | no | 96 of 96 |
+| Prednisolone 15 mg/5 mL oral solution | not found on FDA shortage list | $54.01 (generic) | no | 96 of 96 |
+| Methylprednisolone 4 mg dose pack (Medrol) | not found on FDA shortage list | $3.03 (generic) | no | 96 of 96 |
+| Allopurinol 100 mg tablet | shortage resolved or discontinued | $0.94 (generic) | no | 96 of 96 |
+| Colchicine 0.6 mg tablet | not found on FDA shortage list | $7.13 (generic) | no | 96 of 96 |
+| Estradiol 1 mg tablet | not found on FDA shortage list | $1.90 (generic) | no | 96 of 96 |
+| Norgestimate/ethinyl estradiol (Sprintec) birth control pack | not found on FDA shortage list | $3.11 (generic) | no | 73 of 96 |
+| Medroxyprogesterone (Depo-Provera) 150 mg/mL injection | not found on FDA shortage list | $23.04 (generic) | no | 96 of 96 |
+| Finasteride 5 mg tablet | not found on FDA shortage list | $2.06 (generic) | no | 96 of 96 |
+| Tamsulosin 0.4 mg capsule | not found on FDA shortage list | $1.47 (generic) | no | 96 of 96 |
+| Alendronate 70 mg tablet (weekly) | not found on FDA shortage list | $1.03 (generic) | no | 96 of 96 |
+| Levetiracetam 500 mg tablet | not found on FDA shortage list | $4.33 (generic) | no | 96 of 96 |
+| Emtricitabine/tenofovir DF (Truvada) 200/300 mg tablet | not found on FDA shortage list | $15.79 (generic) | no | 96 of 96 |
+| Biktarvy (bictegravir/emtricitabine/tenofovir alafenamide) tablet | not found on FDA shortage list | $4,102.59 (brand) | no | 96 of 96 |
+| Enbrel (etanercept) 50 mg pen | not found on FDA shortage list | $8,334.50 (brand) | yes | 96 of 96 |
+| Nurtec ODT (rimegepant) 75 mg | not found on FDA shortage list | $1,029.30 (brand) | yes | 85 of 96 |
+| Timolol 0.5% eye drops | not found on FDA shortage list | $4.11 (generic) | no | 96 of 96 |
+| Clobetasol 0.05% cream | not found on FDA shortage list | $5.10 (generic) | no | 94 of 96 |
+| Vitamin D2 (ergocalciferol) 50,000 unit capsule | not found on FDA shortage list | $0.46 (generic) | no | 0 of 96 |
 
 ## Adderall XR 30 mg ER capsule
 
@@ -487,7 +488,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** semaglutide — brands: Wegovy — 2 RxCUIs, 2 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Brand: $435.57 per ML (median of 1 NDCs) -> about $1,306.72 for 4 single-dose pens (0.75 mL each), 1 a week
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=semaglutide>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: yes. PD: Preferred drug in its class. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=semaglutide>)
 - **Medicare Part D (Massachusetts):** on the formulary of 8 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 1, tier 5: 7. Restrictions on that tier (number of plans): prior auth: 8, quantity limit: 8.
   - Average plan cost for 4 single-dose pens (0.75 mL each), 1 a week: $1,319.10 (from 8 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -497,7 +498,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** shortage resolved or discontinued. FDA has past shortage entries for this drug, but none are current. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'not found': 3}
 - **NADAC (as of 10/21/2026):** Brand: $33.19 per EA (median of 1 NDCs) -> about $995.84 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=semaglutide>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: yes. PD: Preferred drug in its class. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=semaglutide>)
 - **Medicare Part D (Massachusetts):** not on any Massachusetts plan formulary in the CMS file.
 
 ## Zepbound (tirzepatide) 2.5 mg pen
@@ -505,7 +506,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** tirzepatide — brands: Zepbound — 2 RxCUIs, 3 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Brand: $526.23 per ML (median of 1 NDCs) -> about $1,052.46 for 4 single-dose pens (0.5 mL each), 1 a week
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tirzepatide>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: yes.  (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tirzepatide>)
 - **Medicare Part D (Massachusetts):** not on any Massachusetts plan formulary in the CMS file.
 
 ## Trulicity (dulaglutide) 1.5 mg pen
@@ -513,7 +514,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** dulaglutide — brands: Trulicity — 2 RxCUIs, 5 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Brand: $487.62 per ML (median of 1 NDCs) -> about $975.24 for 4 single-dose pens (0.5 mL each), 1 a week
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=dulaglutide>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: yes. PD: Preferred drug in its class. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=dulaglutide>)
 - **Medicare Part D (Massachusetts):** on the formulary of 93 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 3: 80, tier 6: 1. Restrictions on that tier (number of plans): prior auth: 93, quantity limit: 70.
   - Average plan cost for 4 single-dose pens (0.5 mL each), 1 a week: $979.63 (from 93 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -523,7 +524,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** in shortage. FDA lists a current shortage for 2 package(s) of this exact drug and strength. Some makers may still have it. Call the pharmacy to check. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'Available': 6, 'Limited Availability': 2}
 - **NADAC (as of 10/21/2026):** Generic: $28.89 per ML (median of 14 NDCs) -> about $173.31 for 2 pens (3 mL each), about 1 month at 1.2 mg a day; Brand: $87.75 per ML (median of 2 NDCs) -> about $526.53 for 2 pens (3 mL each), about 1 month at 1.2 mg a day
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=liraglutide>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: yes. BP: Brand preferred over generics: MassHealth wants the brand tried first. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=liraglutide>)
 - **Medicare Part D (Massachusetts):** on the formulary of 18 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 3, tier 3: 15. Restrictions on that tier (number of plans): prior auth: 18, quantity limit: 18.
   - Average plan cost for 2 pens (3 mL each), about 1 month at 1.2 mg a day: $399.46 (from 18 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -532,7 +533,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** empagliflozin — brands: Jardiance — 2 RxCUIs, 11 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Brand: $11.19 per EA (median of 3 NDCs) -> about $335.67 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=empagliflozin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. PD: Preferred drug in its class. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=empagliflozin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 3: 84. Restrictions on that tier (number of plans): quantity limit: 73.
   - Average plan cost for 30 tablets (1 a day): $203.82 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
   - Medicare negotiated price (Maximum Fair Price) starting January 1, 2026: Jardiance (empagliflozin): 66% off the 2023 list price for a 30-day supply.
@@ -542,7 +543,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** dapagliflozin — brands: Farxiga — 2 RxCUIs, 56 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.18 per EA (median of 20 NDCs) -> about $5.53 for 30 tablets (1 a day); Brand: $12.08 per EA (median of 3 NDCs) -> about $362.29 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=dapagliflozin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=dapagliflozin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 29, tier 2: 8, tier 3: 59. Restrictions on that tier (number of plans): quantity limit: 67.
   - Average plan cost for 30 tablets (1 a day): $85.58 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
   - Medicare negotiated price (Maximum Fair Price) starting January 1, 2026: Farxiga (dapagliflozin): 68% off the 2023 list price for a 30-day supply.
@@ -552,7 +553,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** sitagliptin — brands: Januvia, Zituvio — 4 RxCUIs, 36 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $3.85 per EA (median of 8 NDCs) -> about $115.48 for 30 tablets (1 a day); Brand: $10.55 per EA (median of 6 NDCs) -> about $316.50 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sitagliptin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: yes. BP: Brand preferred over generics: MassHealth wants the brand tried first. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sitagliptin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 19, tier 2: 10, tier 3: 67. Restrictions on that tier (number of plans): quantity limit: 73.
   - Average plan cost for 30 tablets (1 a day): $124.24 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
   - Medicare negotiated price (Maximum Fair Price) starting January 1, 2026: Januvia (sitagliptin): 79% off the 2023 list price for a 30-day supply.
@@ -562,7 +563,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** glipizide — brands: Glucotrol — 2 RxCUIs, 210 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.03 per EA (median of 20 NDCs) -> about $1.97 for 60 tablets (1 twice a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=glipizide>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=glipizide>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 91, tier 2: 5. Restrictions on that tier (number of plans): quantity limit: 52.
   - Average plan cost for 60 tablets (1 twice a day): $7.06 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -571,7 +572,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** pioglitazone — brands: Actos — 2 RxCUIs, 128 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.10 per EA (median of 21 NDCs) -> about $2.90 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pioglitazone>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pioglitazone>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 92, tier 2: 4. Restrictions on that tier (number of plans): quantity limit: 59.
   - Average plan cost for 30 tablets (1 a day): $9.70 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -580,7 +581,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** metformin — brands: Glucophage — 2 RxCUIs, 413 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.03 per EA (median of 31 NDCs) -> about $1.70 for 60 tablets (2 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metformin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metformin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 96. Restrictions on that tier (number of plans): quantity limit: 59.
   - Average plan cost for 60 tablets (2 a day): $6.41 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -590,7 +591,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** shortage resolved or discontinued. FDA has past shortage entries for this drug, but none are current. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'not found': 2}
 - **NADAC (as of 10/21/2026):** Generic: $10.19 per ML (median of 1 NDCs) -> about $152.87 for 1 box of 5 pens (3 mL each); Brand: $11.14 per ML (median of 2 NDCs) -> about $167.03 for 1 box of 5 pens (3 mL each)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+lispro>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no.  (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+lispro>)
 - **Medicare Part D (Massachusetts):** on the formulary of 78 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 3: 66. Restrictions on that tier (number of plans): quantity limit: 7.
   - Average plan cost for 1 box of 5 pens (3 mL each): $160.49 (from 78 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -599,7 +600,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** insulin aspart, human — brands: NovoLog — 2 RxCUIs, 14 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $8.96 per ML (median of 1 NDCs) -> about $134.41 for 1 box of 5 pens (3 mL each); Brand: $8.93 per ML (median of 1 NDCs) -> about $134.01 for 1 box of 5 pens (3 mL each)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+aspart>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: yes.  (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+aspart>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 3: 84. Restrictions on that tier (number of plans): quantity limit: 4.
   - Average plan cost for 1 box of 5 pens (3 mL each): $133.82 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
   - Medicare negotiated price (Maximum Fair Price) starting January 1, 2026: NovoLog / Fiasp insulin aspart products: 76% off the 2023 list price for a 30-day supply.
@@ -609,7 +610,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** insulin degludec — brands: Tresiba — 2 RxCUIs, 7 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $11.39 per ML (median of 1 NDCs) -> about $170.86 for 1 box of 5 pens (3 mL each); Brand: $9.03 per ML (median of 1 NDCs) -> about $135.52 for 1 box of 5 pens (3 mL each)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+degludec>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: yes. BP: Brand preferred over generics: MassHealth wants the brand tried first. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+degludec>)
 - **Medicare Part D (Massachusetts):** on the formulary of 36 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 8, tier 3: 28. Restrictions on that tier (number of plans): none.
   - Average plan cost for 1 box of 5 pens (3 mL each): $135.49 (from 36 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -618,7 +619,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** insulin glargine — brands: Toujeo — 2 RxCUIs, 7 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $26.99 per ML (median of 1 NDCs) -> about $121.44 for 1 box of 3 pens (1.5 mL each); Brand: $91.28 per ML (median of 1 NDCs) -> about $410.75 for 1 box of 3 pens (1.5 mL each)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+glargine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: yes. BP: Brand preferred over generics: MassHealth wants the brand tried first. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+glargine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 3: 84. Restrictions on that tier (number of plans): quantity limit: 4.
   - Average plan cost for 1 box of 3 pens (1.5 mL each): $401.78 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -627,7 +628,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** insulin isophane — brands: Humulin N, Novolin N — 3 RxCUIs, 7 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Brand: $7.43 per ML (median of 2 NDCs) -> about $111.39 for 1 box of 5 pens (3 mL each)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=isophane>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. BP: Brand preferred over generics: MassHealth wants the brand tried first. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+NPH>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 3: 84. Restrictions on that tier (number of plans): quantity limit: 8.
   - Average plan cost for 1 box of 5 pens (3 mL each): $106.41 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -636,7 +637,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** fluticasone / fluticasone / salmeterol / salmeterol — brands: Advair, Wixela — 3 RxCUIs, 16 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $1.21 per EA (median of 5 NDCs) -> about $72.47 for 1 inhaler (60 puffs); Brand: $3.12 per EA (median of 1 NDCs) -> about $187.31 for 1 inhaler (60 puffs)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=salmeterol>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. BP: Brand preferred over generics: MassHealth wants the brand tried first. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluticasone>)
 - **Medicare Part D (Massachusetts):** on the formulary of 90 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 21, tier 3: 57. Restrictions on that tier (number of plans): quantity limit: 90.
   - Average plan cost for 1 inhaler (60 puffs): $98.52 (from 90 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -645,7 +646,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** budesonide / budesonide / formoterol / formoterol — brands: Breyna, Symbicort — 3 RxCUIs, 9 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $17.32 per GM (median of 3 NDCs) -> about $176.65 for 1 inhaler (120 puffs, 10.2 g); Brand: $21.98 per GM (median of 1 NDCs) -> about $224.20 for 1 inhaler (120 puffs, 10.2 g)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=formoterol>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. BP: Brand preferred over generics: MassHealth wants the brand tried first. PD: Preferred drug in its class. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=budesonide>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 10, tier 3: 50, tier 4: 24. Restrictions on that tier (number of plans): quantity limit: 96.
   - Average plan cost for 1 inhaler (120 puffs, 10.2 g): $211.79 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -654,7 +655,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** fluticasone / fluticasone / umeclidinium / vilanterol / umeclidinium / vilanterol — brands: Trelegy — 2 RxCUIs, 1 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Brand: $11.15 per EA (median of 1 NDCs) -> about $334.56 for 1 inhaler (30 puffs)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=umeclidinium>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: yes.  (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluticasone>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 3: 84. Restrictions on that tier (number of plans): quantity limit: 96.
   - Average plan cost for 1 inhaler (30 puffs): $339.29 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -663,7 +664,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** tiotropium — brands: Spiriva — 2 RxCUIs, 8 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $11.90 per EA (median of 1 NDCs) -> about $356.89 for 30 capsules (1 a day); Brand: $10.61 per EA (median of 3 NDCs) -> about $318.34 for 30 capsules (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tiotropium>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. BP: Brand preferred over generics: MassHealth wants the brand tried first. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tiotropium>)
 - **Medicare Part D (Massachusetts):** on the formulary of 44 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 3, tier 3: 37, tier 4: 4. Restrictions on that tier (number of plans): quantity limit: 44.
   - Average plan cost for 30 capsules (1 a day): $359.91 (from 44 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -672,7 +673,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** fluticasone — brands: Flovent — 2 RxCUIs, 5 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $13.56 per GM (median of 1 NDCs) -> about $162.76 for 1 inhaler (12 g)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluticasone>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: >= 12 years. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluticasone>)
 - **Medicare Part D (Massachusetts):** on the formulary of 33 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 7, tier 3: 7, tier 4: 19. Restrictions on that tier (number of plans): quantity limit: 33, step therapy: 23.
   - Average plan cost for 1 inhaler (12 g): $244.28 (from 33 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -681,7 +682,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** albuterol — brands: not found — 1 RxCUIs, 76 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.06 per ML (median of 19 NDCs) -> about $4.61 for 1 box (25 vials of 3 mL)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=albuterol>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=albuterol>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 79, tier 3: 2, tier 4: 3. Restrictions on that tier (number of plans): prior auth: 96, quantity limit: 12.
   - Average plan cost for 1 box (25 vials of 3 mL): $10.46 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -690,7 +691,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** albuterol / albuterol / ipratropium / ipratropium — brands: not found — 1 RxCUIs, 54 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.08 per ML (median of 22 NDCs) -> about $6.88 for 30 vials (3 mL each)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=albuterol>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=albuterol>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 27, tier 2: 66, tier 3: 3. Restrictions on that tier (number of plans): prior auth: 96, quantity limit: 12.
   - Average plan cost for 30 vials (3 mL each): $13.72 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -699,7 +700,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** budesonide — brands: Pulmicort — 2 RxCUIs, 37 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.63 per ML (median of 15 NDCs) -> about $37.60 for 30 vials (2 mL each); Brand: $4.91 per ML (median of 1 NDCs) -> about $294.47 for 30 vials (2 mL each)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=budesonide>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: >= 13 years. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=budesonide>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 10, tier 3: 8, tier 4: 66. Restrictions on that tier (number of plans): prior auth: 96, quantity limit: 13.
   - Average plan cost for 30 vials (2 mL each): $74.30 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -709,7 +710,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** shortage resolved or discontinued. FDA has past shortage entries for this drug, but none are current. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'not found': 1}
 - **NADAC (as of 10/21/2026):** Generic: $0.04 per EA (median of 31 NDCs) -> about $1.30 for 30 tablets (1 a day); Brand: $9.23 per EA (median of 2 NDCs) -> about $276.82 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=montelukast>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=montelukast>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 64, tier 2: 32. Restrictions on that tier (number of plans): quantity limit: 36.
   - Average plan cost for 30 tablets (1 a day): $6.10 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -719,7 +720,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** shortage resolved or discontinued. FDA has past shortage entries for this drug, but none are current. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'not found': 1}
 - **NADAC (as of 10/21/2026):** Generic: $0.07 per EA (median of 18 NDCs) -> about $2.17 for 30 chewable tablets (1 a day); Brand: $9.27 per EA (median of 1 NDCs) -> about $278.22 for 30 chewable tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=montelukast>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=montelukast>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 42, tier 2: 47, tier 3: 7. Restrictions on that tier (number of plans): quantity limit: 36.
   - Average plan cost for 30 chewable tablets (1 a day): $5.48 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -728,7 +729,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** benzonatate — brands: Tessalon Perles — 2 RxCUIs, 350 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.06 per EA (median of 24 NDCs) -> about $1.85 for 30 capsules
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=benzonatate>)
+- **MassHealth:** not found; PA: not found. Not on the MassHealth Drug List (website search and the October 01, 2026 PDF). The List says any drug not on it requires PA. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=benzonatate>)
 - **Medicare Part D (Massachusetts):** not on any Massachusetts plan formulary in the CMS file.
 
 ## Naloxone 4 mg nasal spray (Narcan)
@@ -736,7 +737,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** naloxone — brands: Narcan — 2 RxCUIs, 51 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $16.77 per EA (median of 7 NDCs) -> about $33.53 for 1 two-pack; Brand: $16.08 per EA (median of 2 NDCs) -> about $32.15 for 1 two-pack
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=naloxone>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no.  (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=naloxone>)
 - **Medicare Part D (Massachusetts):** not on any Massachusetts plan formulary in the CMS file.
 
 ## Oseltamivir (Tamiflu) 75 mg capsule
@@ -744,7 +745,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** oseltamivir — brands: Tamiflu — 2 RxCUIs, 73 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.80 per EA (median of 13 NDCs) -> about $7.98 for 10 capsules (one 5-day course); Brand: $14.52 per EA (median of 1 NDCs) -> about $145.19 for 10 capsules (one 5-day course)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oseltamivir>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: > 10 units/ claim; or > 20 units/ 365 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oseltamivir>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 32, tier 3: 50, tier 4: 2. Restrictions on that tier (number of plans): quantity limit: 66.
   - Average plan cost for 10 capsules (one 5-day course): $16.98 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -753,7 +754,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** oseltamivir — brands: Tamiflu — 2 RxCUIs, 34 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.16 per ML (median of 11 NDCs) -> about $9.33 for 1 bottle (60 mL); Brand: $2.43 per ML (median of 1 NDCs) -> about $145.98 for 1 bottle (60 mL)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oseltamivir>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: > 180 mL/ claim; or > 360 mL/ 365 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oseltamivir>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 32, tier 3: 42, tier 4: 10. Restrictions on that tier (number of plans): quantity limit: 66.
   - Average plan cost for 1 bottle (60 mL): $25.03 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -762,7 +763,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** amoxicillin — brands: Amoxi Drop — 2 RxCUIs, 58 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.02 per ML (median of 12 NDCs) -> about $2.49 for 1 bottle (100 mL)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 69, tier 2: 27. Restrictions on that tier (number of plans): none.
   - Average plan cost for 1 bottle (100 mL): $3.84 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -771,7 +772,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** amoxicillin / amoxicillin / clavulanate / clavulanate — brands: Augmentin — 2 RxCUIs, 287 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.28 per EA (median of 16 NDCs) -> about $5.64 for 20 tablets (a 10-day course, 2 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 82, tier 4: 2. Restrictions on that tier (number of plans): none.
   - Average plan cost for 20 tablets (a 10-day course, 2 a day): $9.99 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -780,7 +781,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** amoxicillin / amoxicillin / clavulanate / clavulanate — brands: Augmentin — 2 RxCUIs, 55 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.06 per ML (median of 17 NDCs) -> about $6.45 for 1 bottle (100 mL)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 75, tier 3: 7, tier 4: 2. Restrictions on that tier (number of plans): none.
   - Average plan cost for 1 bottle (100 mL): $11.09 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -790,7 +791,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** shortage resolved or discontinued. FDA has past shortage entries for this drug, but none are current. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'not found': 2}
 - **NADAC (as of 10/21/2026):** Generic: $0.27 per EA (median of 28 NDCs) -> about $1.63 for 6 tablets (a 5-day pack)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=azithromycin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=azithromycin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 61, tier 2: 35. Restrictions on that tier (number of plans): none.
   - Average plan cost for 6 tablets (a 5-day pack): $2.97 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -800,7 +801,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** shortage resolved or discontinued. FDA has past shortage entries for this drug, but none are current. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'not found': 2}
 - **NADAC (as of 10/21/2026):** Generic: $0.24 per ML (median of 19 NDCs) -> about $3.58 for 1 bottle (15 mL)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=azithromycin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=azithromycin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 27, tier 2: 36, tier 3: 30, tier 4: 3. Restrictions on that tier (number of plans): none.
   - Average plan cost for 1 bottle (15 mL): $4.55 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -809,7 +810,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** cephalexin — brands: Keflex — 2 RxCUIs, 487 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.12 per EA (median of 17 NDCs) -> about $3.27 for 28 capsules (a 7-day course, 4 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cephalexin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cephalexin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 51, tier 2: 45. Restrictions on that tier (number of plans): none.
   - Average plan cost for 28 capsules (a 7-day course, 4 a day): $5.29 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -818,7 +819,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** cephalexin — brands: not found — 1 RxCUIs, 46 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.06 per ML (median of 10 NDCs) -> about $5.85 for 1 bottle (100 mL)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cephalexin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cephalexin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 56, tier 3: 26, tier 4: 2. Restrictions on that tier (number of plans): none.
   - Average plan cost for 1 bottle (100 mL): $9.48 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -827,7 +828,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** cefdinir — brands: not found — 1 RxCUIs, 40 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.11 per ML (median of 8 NDCs) -> about $6.88 for 1 bottle (60 mL)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cefdinir>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cefdinir>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 51, tier 3: 30, tier 4: 3. Restrictions on that tier (number of plans): none.
   - Average plan cost for 1 bottle (60 mL): $16.16 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -836,7 +837,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** doxycycline — brands: Morgidox, Vibramycin — 3 RxCUIs, 326 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.11 per EA (median of 21 NDCs) -> about $2.16 for 20 capsules (a 10-day course, 2 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=doxycycline>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=doxycycline>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 54, tier 3: 29, tier 4: 1. Restrictions on that tier (number of plans): none.
   - Average plan cost for 20 capsules (a 10-day course, 2 a day): $4.61 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -845,7 +846,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** sulfamethoxazole / sulfamethoxazole / trimethoprim / trimethoprim — brands: Bactrim — 2 RxCUIs, 337 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.05 per EA (median of 12 NDCs) -> about $0.91 for 20 tablets (a 10-day course, 2 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sulfamethoxazole>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sulfamethoxazole>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 82, tier 2: 14. Restrictions on that tier (number of plans): none.
   - Average plan cost for 20 tablets (a 10-day course, 2 a day): $2.75 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -854,7 +855,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** sulfamethoxazole / sulfamethoxazole / trimethoprim / trimethoprim — brands: Sulfatrim — 2 RxCUIs, 39 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.06 per ML (median of 5 NDCs) -> about $5.53 for 1 bottle (100 mL)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sulfamethoxazole>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sulfamethoxazole>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 32, tier 3: 40, tier 4: 12. Restrictions on that tier (number of plans): none.
   - Average plan cost for 1 bottle (100 mL): $9.07 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -863,7 +864,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** nitrofurantoin / nitrofurantoin, macrocrystals / nitrofurantoin, monohydrate — brands: Macrobid — 2 RxCUIs, 244 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.27 per EA (median of 13 NDCs) -> about $2.72 for 10 capsules (a 5-day course, 2 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=nitrofurantoin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=nitrofurantoin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 37, tier 3: 45, tier 4: 2. Restrictions on that tier (number of plans): none.
   - Average plan cost for 10 capsules (a 5-day course, 2 a day): $4.66 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -872,7 +873,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** ciprofloxacin — brands: Cipro — 2 RxCUIs, 552 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.12 per EA (median of 26 NDCs) -> about $1.69 for 14 tablets (a 7-day course, 2 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ciprofloxacin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ciprofloxacin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 82, tier 2: 14. Restrictions on that tier (number of plans): none.
   - Average plan cost for 14 tablets (a 7-day course, 2 a day): $3.40 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -881,7 +882,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** metronidazole — brands: not found — 1 RxCUIs, 378 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. FDA does list other forms or strengths of the same medicine: Injection (current shortage). Those are different products. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.10 per EA (median of 26 NDCs) -> about $1.46 for 14 tablets (a 7-day course, 2 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metronidazole>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metronidazole>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 30, tier 2: 66. Restrictions on that tier (number of plans): none.
   - Average plan cost for 14 tablets (a 7-day course, 2 a day): $3.03 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -890,7 +891,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** penicillin V — brands: not found — 1 RxCUIs, 143 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.10 per EA (median of 11 NDCs) -> about $3.91 for 40 tablets (a 10-day course, 4 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=penicillin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=penicillin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 65, tier 2: 31. Restrictions on that tier (number of plans): none.
   - Average plan cost for 40 tablets (a 10-day course, 4 a day): $6.30 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -899,7 +900,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** fluconazole — brands: Diflucan — 2 RxCUIs, 126 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.51 per EA (median of 13 NDCs) -> about $0.51 for 1 tablet
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluconazole>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluconazole>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 35, tier 2: 61. Restrictions on that tier (number of plans): none.
   - Average plan cost for 1 tablet: $1.10 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -908,7 +909,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** valacyclovir — brands: Valtrex — 2 RxCUIs, 272 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.42 per EA (median of 23 NDCs) -> about $12.71 for 30 tablets; Brand: $20.24 per EA (median of 2 NDCs) -> about $607.32 for 30 tablets
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=valacyclovir>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=valacyclovir>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 54, tier 3: 30. Restrictions on that tier (number of plans): quantity limit: 30.
   - Average plan cost for 30 tablets: $17.04 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -917,7 +918,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** mupirocin — brands: Bactroban, Centany, Muricin — 4 RxCUIs, 76 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.15 per GM (median of 8 NDCs) -> about $3.19 for 1 tube (22 g)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=mupirocin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=mupirocin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 22, tier 2: 74. Restrictions on that tier (number of plans): quantity limit: 89.
   - Average plan cost for 1 tube (22 g): $6.94 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -926,7 +927,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** losartan — brands: Cozaar — 2 RxCUIs, 259 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.03 per EA (median of 41 NDCs) -> about $0.99 for 30 tablets (1 a day); Brand: $4.49 per EA (median of 2 NDCs) -> about $134.78 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=losartan>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=losartan>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 95, tier 2: 1. Restrictions on that tier (number of plans): quantity limit: 25.
   - Average plan cost for 30 tablets (1 a day): $5.42 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -936,7 +937,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** shortage resolved or discontinued. FDA has past shortage entries for this drug, but none are current. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'not found': 7}
 - **NADAC (as of 10/21/2026):** Generic: $0.05 per EA (median of 46 NDCs) -> about $1.48 for 30 tablets (1 a day); Brand: $1.39 per EA (median of 1 NDCs) -> about $41.56 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metoprolol>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metoprolol>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 51, tier 2: 45. Restrictions on that tier (number of plans): none.
   - Average plan cost for 30 tablets (1 a day): $5.42 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -945,7 +946,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** metoprolol — brands: not found — 1 RxCUIs, 251 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.02 per EA (median of 25 NDCs) -> about $0.96 for 60 tablets (1 twice a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metoprolol>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metoprolol>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 96. Restrictions on that tier (number of plans): none.
   - Average plan cost for 60 tablets (1 twice a day): $5.43 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -954,7 +955,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** rosuvastatin — brands: Crestor — 2 RxCUIs, 251 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.04 per EA (median of 44 NDCs) -> about $1.07 for 30 tablets (1 a day); Brand: $8.81 per EA (median of 1 NDCs) -> about $264.18 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=rosuvastatin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: > 1.5 units/day. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=rosuvastatin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 92, tier 2: 2, tier 3: 2. Restrictions on that tier (number of plans): quantity limit: 52.
   - Average plan cost for 30 tablets (1 a day): $6.71 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -963,7 +964,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** hydrochlorothiazide — brands: not found — 1 RxCUIs, 276 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. FDA does list other forms or strengths of the same medicine: Tablet (current shortage). Those are different products. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.01 per EA (median of 23 NDCs) -> about $0.34 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=hydrochlorothiazide>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=hydrochlorothiazide>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 96. Restrictions on that tier (number of plans): none.
   - Average plan cost for 30 tablets (1 a day): $1.25 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -972,7 +973,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** simvastatin — brands: Zocor — 2 RxCUIs, 194 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.03 per EA (median of 23 NDCs) -> about $0.97 for 30 tablets (1 a day); Brand: $9.73 per EA (median of 2 NDCs) -> about $291.83 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=simvastatin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: > 1.5 units/day. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=simvastatin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 95, tier 2: 1. Restrictions on that tier (number of plans): quantity limit: 60.
   - Average plan cost for 30 tablets (1 a day): $4.74 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -981,7 +982,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** pravastatin — brands: Pravachol — 2 RxCUIs, 178 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.08 per EA (median of 21 NDCs) -> about $2.37 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pravastatin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: > 1.5 units/day. M90: Mandatory 90-day supply after a first fill of up to 30 days. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pravastatin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 92, tier 2: 4. Restrictions on that tier (number of plans): quantity limit: 43.
   - Average plan cost for 30 tablets (1 a day): $8.72 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -991,7 +992,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** in shortage. FDA lists a current shortage for 1 package(s) of this exact drug and strength. Some makers may still have it. Call the pharmacy to check. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'Available': 2, 'Limited Availability': 1}
 - **NADAC (as of 10/21/2026):** Generic: $0.02 per EA (median of 16 NDCs) -> about $0.75 for 30 tablets (1 a day); Brand: $0.75 per EA (median of 1 NDCs) -> about $22.46 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=furosemide>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=furosemide>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 96. Restrictions on that tier (number of plans): none.
   - Average plan cost for 30 tablets (1 a day): $2.10 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1000,7 +1001,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** carvedilol — brands: Coreg — 2 RxCUIs, 157 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.02 per EA (median of 20 NDCs) -> about $1.28 for 60 tablets (1 twice a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=carvedilol>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=carvedilol>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 95, tier 2: 1. Restrictions on that tier (number of plans): none.
   - Average plan cost for 60 tablets (1 twice a day): $6.52 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1010,7 +1011,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** shortage resolved or discontinued. FDA has past shortage entries for this drug, but none are current. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'not found': 2}
 - **NADAC (as of 10/21/2026):** Generic: $0.04 per EA (median of 34 NDCs) -> about $1.28 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=spironolactone>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=spironolactone>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 72, tier 2: 24. Restrictions on that tier (number of plans): none.
   - Average plan cost for 30 tablets (1 a day): $4.06 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1019,7 +1020,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** clopidogrel — brands: Plavix — 2 RxCUIs, 199 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.05 per EA (median of 41 NDCs) -> about $1.41 for 30 tablets (1 a day); Brand: $8.21 per EA (median of 1 NDCs) -> about $246.20 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=clopidogrel>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=clopidogrel>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 93, tier 2: 3. Restrictions on that tier (number of plans): quantity limit: 36.
   - Average plan cost for 30 tablets (1 a day): $6.86 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1029,7 +1030,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** shortage resolved or discontinued. FDA has past shortage entries for this drug, but none are current. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'not found': 1}
 - **NADAC (as of 10/21/2026):** Generic: $0.11 per EA (median of 18 NDCs) -> about $3.17 for 30 tablets (1 a day); Brand: $10.04 per EA (median of 1 NDCs) -> about $301.10 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=valsartan>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=valsartan>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 91, tier 2: 4, tier 3: 1. Restrictions on that tier (number of plans): quantity limit: 59.
   - Average plan cost for 30 tablets (1 a day): $13.39 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1038,7 +1039,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** ezetimibe — brands: Zetia — 2 RxCUIs, 148 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.07 per EA (median of 33 NDCs) -> about $2.11 for 30 tablets (1 a day); Brand: $13.94 per EA (median of 1 NDCs) -> about $418.31 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ezetimibe>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ezetimibe>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 31, tier 2: 58, tier 3: 4, tier 4: 3. Restrictions on that tier (number of plans): quantity limit: 50.
   - Average plan cost for 30 tablets (1 a day): $8.77 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1047,7 +1048,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** propranolol — brands: not found — 1 RxCUIs, 130 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. FDA does list other forms or strengths of the same medicine: Injection (current shortage). Those are different products. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.05 per EA (median of 23 NDCs) -> about $2.78 for 60 tablets (1 twice a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=propranolol>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=propranolol>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 27, tier 2: 67, tier 3: 2. Restrictions on that tier (number of plans): none.
   - Average plan cost for 60 tablets (1 twice a day): $7.03 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1057,7 +1058,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** shortage resolved or discontinued. FDA has past shortage entries for this drug, but none are current. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'not found': 1}
 - **NADAC (as of 10/21/2026):** Brand: $19.54 per EA (median of 5 NDCs) -> about $586.18 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=rivaroxaban>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. BP: Brand preferred over generics: MassHealth wants the brand tried first. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=rivaroxaban>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 3: 84. Restrictions on that tier (number of plans): quantity limit: 66.
   - Average plan cost for 30 tablets (1 a day): $206.43 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
   - Medicare negotiated price (Maximum Fair Price) starting January 1, 2026: Xarelto (rivaroxaban): 62% off the 2023 list price for a 30-day supply.
@@ -1067,7 +1068,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** warfarin — brands: Coumadin, Jantoven — 3 RxCUIs, 153 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.09 per EA (median of 17 NDCs) -> about $2.67 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=warfarin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=warfarin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 95, tier 2: 1. Restrictions on that tier (number of plans): none.
   - Average plan cost for 30 tablets (1 a day): $3.98 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1076,7 +1077,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** sacubitril / sacubitril / valsartan / valsartan — brands: Entresto — 2 RxCUIs, 90 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.54 per EA (median of 34 NDCs) -> about $32.56 for 60 tablets (1 twice a day); Brand: $11.56 per EA (median of 2 NDCs) -> about $693.67 for 60 tablets (1 twice a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sacubitril>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: > 2 units/day. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sacubitril>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 10, tier 3: 74. Restrictions on that tier (number of plans): quantity limit: 60.
   - Average plan cost for 60 tablets (1 twice a day): $149.42 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
   - Medicare negotiated price (Maximum Fair Price) starting January 1, 2026: Entresto (sacubitril/valsartan): 53% off the 2023 list price for a 30-day supply.
@@ -1086,7 +1087,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** evolocumab — brands: Repatha — 2 RxCUIs, 11 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Brand: $282.01 per ML (median of 2 NDCs) -> about $564.02 for 2 pens (every other week)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=evolocumab>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: yes.  (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=evolocumab>)
 - **Medicare Part D (Massachusetts):** on the formulary of 94 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 3: 82. Restrictions on that tier (number of plans): quantity limit: 58, prior auth: 78.
   - Average plan cost for 2 pens (every other week): $569.31 (from 94 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1095,7 +1096,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** ticagrelor — brands: Brilinta — 2 RxCUIs, 82 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.24 per EA (median of 21 NDCs) -> about $14.57 for 60 tablets (1 twice a day); Brand: $7.42 per EA (median of 2 NDCs) -> about $444.90 for 60 tablets (1 twice a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ticagrelor>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ticagrelor>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 10, tier 3: 61, tier 4: 13. Restrictions on that tier (number of plans): quantity limit: 25.
   - Average plan cost for 60 tablets (1 twice a day): $152.81 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1104,7 +1105,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** nitroglycerin — brands: Nitrostat — 2 RxCUIs, 82 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.13 per EA (median of 23 NDCs) -> about $3.24 for 25 tablets (1 bottle)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=nitroglycerin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=nitroglycerin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 14, tier 2: 72, tier 3: 10. Restrictions on that tier (number of plans): none.
   - Average plan cost for 25 tablets (1 bottle): $6.40 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1113,7 +1114,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** escitalopram — brands: Lexapro — 2 RxCUIs, 224 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.04 per EA (median of 22 NDCs) -> about $1.17 for 30 tablets (1 a day); Brand: $15.43 per EA (median of 1 NDCs) -> about $462.77 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=escitalopram>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 6 years. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=escitalopram>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 62, tier 2: 33, tier 4: 1. Restrictions on that tier (number of plans): quantity limit: 16.
   - Average plan cost for 30 tablets (1 a day): $5.17 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1122,7 +1123,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** bupropion — brands: Wellbutrin — 2 RxCUIs, 303 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.08 per EA (median of 51 NDCs) -> about $2.35 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=bupropion>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 6 years; or > 1 unit/day. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=bupropion>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 73, tier 3: 11. Restrictions on that tier (number of plans): quantity limit: 50.
   - Average plan cost for 30 tablets (1 a day): $7.35 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1131,7 +1132,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** fluoxetine — brands: Prozac — 2 RxCUIs, 287 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.03 per EA (median of 30 NDCs) -> about $0.88 for 30 capsules (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluoxetine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 6 years. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluoxetine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 93, tier 2: 3. Restrictions on that tier (number of plans): quantity limit: 23.
   - Average plan cost for 30 capsules (1 a day): $2.78 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1140,7 +1141,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** trazodone — brands: not found — 1 RxCUIs, 243 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.03 per EA (median of 28 NDCs) -> about $0.90 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=trazodone>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 6 years. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=trazodone>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 72, tier 2: 24. Restrictions on that tier (number of plans): none.
   - Average plan cost for 30 tablets (1 a day): $3.55 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1149,7 +1150,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** duloxetine — brands: Cymbalta — 2 RxCUIs, 281 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.14 per EA (median of 23 NDCs) -> about $4.10 for 30 capsules (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=duloxetine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 6 years. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=duloxetine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 74, tier 3: 10. Restrictions on that tier (number of plans): quantity limit: 96.
   - Average plan cost for 30 capsules (1 a day): $8.46 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1158,7 +1159,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** buspirone — brands: not found — 1 RxCUIs, 283 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.03 per EA (median of 29 NDCs) -> about $1.66 for 60 tablets (1 twice a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=buspirone>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 6 years. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=buspirone>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 41, tier 2: 55. Restrictions on that tier (number of plans): none.
   - Average plan cost for 60 tablets (1 twice a day): $6.58 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1167,7 +1168,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** venlafaxine — brands: Effexor — 2 RxCUIs, 251 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.08 per EA (median of 32 NDCs) -> about $2.40 for 30 capsules (1 a day); Brand: $19.81 per EA (median of 2 NDCs) -> about $594.38 for 30 capsules (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=venlafaxine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 6 years. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=venlafaxine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 22, tier 2: 54, tier 3: 20. Restrictions on that tier (number of plans): quantity limit: 23.
   - Average plan cost for 30 capsules (1 a day): $7.79 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1176,7 +1177,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** hydroxyzine — brands: not found — 1 RxCUIs, 300 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.03 per EA (median of 25 NDCs) -> about $0.97 for 30 tablets
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=hydroxyzine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=hydroxyzine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 33, tier 3: 21, tier 4: 30. Restrictions on that tier (number of plans): prior auth: 48.
   - Average plan cost for 30 tablets: $3.60 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1185,7 +1186,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** quetiapine — brands: Seroquel — 2 RxCUIs, 159 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.02 per EA (median of 23 NDCs) -> about $0.63 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=quetiapine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 10 years; or > 3 units/day. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=quetiapine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 75, tier 3: 8, tier 4: 1. Restrictions on that tier (number of plans): quantity limit: 88, prior auth: 4.
   - Average plan cost for 30 tablets (1 a day): $3.52 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1194,7 +1195,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** aripiprazole — brands: Abilify — 2 RxCUIs, 157 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.12 per EA (median of 32 NDCs) -> about $3.50 for 30 tablets (1 a day); Brand: $18.68 per EA (median of 1 NDCs) -> about $560.39 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=aripiprazole>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 10 years; or > 2 units/day. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=aripiprazole>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 43, tier 3: 26, tier 4: 15. Restrictions on that tier (number of plans): quantity limit: 60, prior auth: 4.
   - Average plan cost for 30 tablets (1 a day): $10.06 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1203,7 +1204,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** lamotrigine — brands: Lamictal, Subvenite — 3 RxCUIs, 131 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.05 per EA (median of 21 NDCs) -> about $1.45 for 30 tablets (1 a day); Brand: $10.91 per EA (median of 1 NDCs) -> about $327.44 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=lamotrigine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 6 years. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=lamotrigine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 44, tier 2: 52. Restrictions on that tier (number of plans): none.
   - Average plan cost for 30 tablets (1 a day): $4.11 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1212,7 +1213,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** alprazolam — brands: Xanax — 2 RxCUIs, 188 NDCs. Controlled: yes, C-IV.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.02 per EA (median of 18 NDCs) -> about $0.68 for 30 tablets; Brand: $7.03 per EA (median of 3 NDCs) -> about $210.77 for 30 tablets
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=alprazolam>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 6 years. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=alprazolam>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 23, tier 2: 64, tier 3: 7, tier 4: 2. Restrictions on that tier (number of plans): prior auth: 24, quantity limit: 73.
   - Average plan cost for 30 tablets: $2.89 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1222,7 +1223,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** in shortage. FDA lists a current shortage for 1 package(s) of this exact drug and strength. Some makers may still have it. Call the pharmacy to check. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'Available': 39, 'Unavailable': 1}
 - **NADAC (as of 10/21/2026):** Generic: $0.02 per EA (median of 20 NDCs) -> about $0.59 for 30 tablets; Brand: $2.68 per EA (median of 1 NDCs) -> about $80.41 for 30 tablets
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=clonazepam>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 6 years. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=clonazepam>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 38, tier 2: 33, tier 3: 25. Restrictions on that tier (number of plans): quantity limit: 66.
   - Average plan cost for 30 tablets: $1.84 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1231,7 +1232,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** lorazepam — brands: Ativan — 2 RxCUIs, 237 NDCs. Controlled: yes, C-IV.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. FDA does list other forms or strengths of the same medicine: Injection (current shortage). Those are different products. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.04 per EA (median of 17 NDCs) -> about $1.09 for 30 tablets
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=lorazepam>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 6 years.  (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=lorazepam>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 23, tier 2: 70, tier 3: 2, tier 4: 1. Restrictions on that tier (number of plans): quantity limit: 73, prior auth: 11.
   - Average plan cost for 30 tablets: $3.84 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1240,7 +1241,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** zolpidem — brands: Ambien — 2 RxCUIs, 277 NDCs. Controlled: yes, C-IV.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.04 per EA (median of 12 NDCs) -> about $1.17 for 30 tablets; Brand: $22.61 per EA (median of 2 NDCs) -> about $678.40 for 30 tablets
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=zolpidem>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 6 years; or > 1 unit/day. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=zolpidem>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 19, tier 2: 76, tier 3: 1. Restrictions on that tier (number of plans): quantity limit: 73, prior auth: 24.
   - Average plan cost for 30 tablets: $3.89 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1250,7 +1251,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** in shortage. FDA lists a current shortage for 28 package(s) of this exact drug and strength. Some makers may still have it. Call the pharmacy to check. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'Available': 40, 'Unavailable': 19, 'Limited Availability': 9}
 - **NADAC (as of 10/21/2026):** Generic: $0.23 per EA (median of 15 NDCs) -> about $13.63 for 60 tablets (1 twice a day); Brand: $12.20 per EA (median of 1 NDCs) -> about $731.97 for 60 tablets (1 twice a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amphetamine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 3 years or >= 21 years; or > 3 units/day. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amphetamine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 46, tier 3: 38. Restrictions on that tier (number of plans): quantity limit: 73, prior auth: 17.
   - Average plan cost for 60 tablets (1 twice a day): $21.59 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1260,7 +1261,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** in shortage. FDA lists a current shortage for 34 package(s) of this exact drug and strength. Some makers may still have it. Call the pharmacy to check. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'Limited Availability': 34, 'Available': 50}
 - **NADAC (as of 10/21/2026):** Generic: $2.88 per EA (median of 17 NDCs) -> about $86.54 for 30 capsules (1 a day); Brand: $12.34 per EA (median of 1 NDCs) -> about $370.28 for 30 capsules (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=lisdexamfetamine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 3 years or >= 21 years; or > 2 units/day. BP: Brand preferred over generics: MassHealth wants the brand tried first. PD: Preferred drug in its class. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=lisdexamfetamine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 33 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 2, tier 3: 4, tier 4: 27. Restrictions on that tier (number of plans): quantity limit: 17.
   - Average plan cost for 30 capsules (1 a day): $203.98 (from 33 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1269,7 +1270,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** methylphenidate — brands: Ritalin — 2 RxCUIs, 37 NDCs. Controlled: yes, C-II.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. FDA does list other forms or strengths of the same medicine: Film, Extended Release, Tablet (current shortage). Those are different products. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.15 per EA (median of 11 NDCs) -> about $8.98 for 60 tablets (1 twice a day); Brand: $1.13 per EA (median of 1 NDCs) -> about $68.09 for 60 tablets (1 twice a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=methylphenidate>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 3 years or >= 21 years; or > 3 units/day. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=methylphenidate>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 53, tier 3: 31. Restrictions on that tier (number of plans): quantity limit: 73, prior auth: 21.
   - Average plan cost for 60 tablets (1 twice a day): $14.24 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1278,7 +1279,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** dexmethylphenidate — brands: Focalin — 2 RxCUIs, 14 NDCs. Controlled: yes, C-II.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $1.39 per EA (median of 6 NDCs) -> about $41.78 for 30 capsules (1 a day); Brand: $4.76 per EA (median of 2 NDCs) -> about $142.71 for 30 capsules (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=dexmethylphenidate>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 3 years or >= 21 years; or > 2 units/day. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=dexmethylphenidate>)
 - **Medicare Part D (Massachusetts):** on the formulary of 58 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 5, tier 3: 4, tier 4: 49. Restrictions on that tier (number of plans): quantity limit: 15.
   - Average plan cost for 30 capsules (1 a day): $57.53 (from 58 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1287,7 +1288,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** atomoxetine — brands: Strattera — 2 RxCUIs, 48 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.44 per EA (median of 14 NDCs) -> about $13.34 for 30 capsules (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=atomoxetine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 6 years. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=atomoxetine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 10, tier 3: 19, tier 4: 55. Restrictions on that tier (number of plans): quantity limit: 96.
   - Average plan cost for 30 capsules (1 a day): $38.13 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1297,7 +1298,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** shortage resolved or discontinued. FDA has past shortage entries for this drug, but none are current. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'not found': 4}
 - **NADAC (as of 10/21/2026):** Generic: $0.13 per EA (median of 8 NDCs) -> about $3.97 for 30 tablets (1 a day); Brand: $9.35 per EA (median of 1 NDCs) -> about $280.56 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=guanfacine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 3 years. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=guanfacine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 95 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 25, tier 3: 38, tier 4: 20. Restrictions on that tier (number of plans): prior auth: 24, quantity limit: 67.
   - Average plan cost for 30 tablets (1 a day): $12.24 (from 95 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1306,7 +1307,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** acetaminophen / acetaminophen / hydrocodone / hydrocodone — brands: Norco — 2 RxCUIs, 337 NDCs. Controlled: yes, C-II.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.13 per EA (median of 32 NDCs) -> about $2.64 for 20 tablets
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=hydrocodone>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: > 120 mg/day hydrocodone; or > 4 g/day acetaminophen.  (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=hydrocodone>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 19, tier 2: 37, tier 3: 37, tier 4: 3. Restrictions on that tier (number of plans): quantity limit: 88.
   - Average plan cost for 20 tablets: $3.58 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1315,7 +1316,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** oxycodone — brands: Oxaydo, Roxicodone — 3 RxCUIs, 130 NDCs. Controlled: yes, C-II.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.09 per EA (median of 18 NDCs) -> about $1.85 for 20 tablets
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oxycodone>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: > 80 mg/day. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oxycodone>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 40, tier 3: 42, tier 4: 2. Restrictions on that tier (number of plans): quantity limit: 88.
   - Average plan cost for 20 tablets: $2.92 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1325,7 +1326,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** shortage resolved or discontinued. FDA has past shortage entries for this drug, but none are current. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'not found': 5}
 - **NADAC (as of 10/21/2026):** Generic: $0.12 per EA (median of 28 NDCs) -> about $2.36 for 20 tablets; Brand: $29.32 per EA (median of 1 NDCs) -> about $586.31 for 20 tablets
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oxycodone>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: > 80 mg/day oxycodone; or > 4 g/day acetaminophen.  (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oxycodone>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 40, tier 3: 39, tier 4: 5. Restrictions on that tier (number of plans): quantity limit: 88.
   - Average plan cost for 20 tablets: $3.53 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1334,7 +1335,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** tramadol — brands: Ultram — 2 RxCUIs, 650 NDCs. Controlled: yes, C-IV.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.03 per EA (median of 29 NDCs) -> about $0.78 for 30 tablets
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tramadol>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 12 years; or > 400 mg/day.  (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tramadol>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 38, tier 2: 57, tier 3: 1. Restrictions on that tier (number of plans): quantity limit: 88.
   - Average plan cost for 30 tablets: $2.52 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1343,7 +1344,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** gabapentin — brands: Neurontin, Relgaabi — 3 RxCUIs, 775 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.03 per EA (median of 55 NDCs) -> about $2.95 for 90 capsules (1 three times a day); Brand: $7.36 per EA (median of 2 NDCs) -> about $662.81 for 90 capsules (1 three times a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=gabapentin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 6 years; or > 3600 mg/day. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=gabapentin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 22, tier 2: 64, tier 3: 10. Restrictions on that tier (number of plans): quantity limit: 56.
   - Average plan cost for 90 capsules (1 three times a day): $9.14 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1352,7 +1353,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** pregabalin — brands: Lyrica — 2 RxCUIs, 291 NDCs. Controlled: yes, C-V.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.06 per EA (median of 30 NDCs) -> about $3.34 for 60 capsules (1 twice a day); Brand: $9.67 per EA (median of 3 NDCs) -> about $580.27 for 60 capsules (1 twice a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pregabalin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 6 years; or > 600 mg/day. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pregabalin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 40, tier 3: 41, tier 4: 3. Restrictions on that tier (number of plans): quantity limit: 73, prior auth: 24.
   - Average plan cost for 60 capsules (1 twice a day): $8.86 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1361,7 +1362,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** buprenorphine / buprenorphine / naloxone / naloxone — brands: Suboxone — 2 RxCUIs, 23 NDCs. Controlled: yes, C-III.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $1.95 per EA (median of 8 NDCs) -> about $58.45 for 30 films (1 a day); Brand: $8.59 per EA (median of 2 NDCs) -> about $257.68 for 30 films (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=buprenorphine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: > 32 mg/day. BP: Brand preferred over generics: MassHealth wants the brand tried first. PD: Preferred drug in its class. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=buprenorphine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 89 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 40, tier 4: 30, tier 6: 7. Restrictions on that tier (number of plans): quantity limit: 28.
   - Average plan cost for 30 films (1 a day): $84.33 (from 89 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1370,7 +1371,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** meloxicam — brands: Mobic — 2 RxCUIs, 363 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.02 per EA (median of 23 NDCs) -> about $0.55 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=meloxicam>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=meloxicam>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 96. Restrictions on that tier (number of plans): quantity limit: 15.
   - Average plan cost for 30 tablets (1 a day): $2.39 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1379,7 +1380,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** ibuprofen — brands: Ibu, Samson 8 — 3 RxCUIs, 684 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.06 per EA (median of 39 NDCs) -> about $5.00 for 90 tablets (up to 3 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ibuprofen>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. *: The generic OTC (and generic prescription) versions are payable without PA. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ibuprofen>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 92, tier 2: 4. Restrictions on that tier (number of plans): quantity limit: 4.
   - Average plan cost for 90 tablets (up to 3 a day): $7.75 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1388,7 +1389,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** cyclobenzaprine — brands: not found — 1 RxCUIs, 695 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.02 per EA (median of 43 NDCs) -> about $0.52 for 30 tablets
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cyclobenzaprine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: < 15 years. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cyclobenzaprine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 19, tier 2: 52, tier 3: 19, tier 4: 6. Restrictions on that tier (number of plans): prior auth: 52, quantity limit: 24.
   - Average plan cost for 30 tablets: $2.93 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1397,7 +1398,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** diclofenac — brands: Aleve Arthritis Pain, Voltaren — 3 RxCUIs, 253 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.08 per GM (median of 22 NDCs) -> about $8.05 for 1 tube (100 g)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=diclofenac>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. *: The generic OTC (and generic prescription) versions are payable without PA. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=diclofenac>)
 - **Medicare Part D (Massachusetts):** not on any Massachusetts plan formulary in the CMS file.
 
 ## Phentermine 37.5 mg tablet
@@ -1405,7 +1406,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** phentermine — brands: Adipex-P — 2 RxCUIs, 282 NDCs. Controlled: yes, C-IV.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.07 per EA (median of 12 NDCs) -> about $2.21 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=phentermine>)
+- **MassHealth:** not found; PA: not found. Not on the MassHealth Drug List (website search and the October 01, 2026 PDF). The List says any drug not on it requires PA. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=phentermine>)
 - **Medicare Part D (Massachusetts):** not on any Massachusetts plan formulary in the CMS file.
 
 ## Testosterone cypionate 200 mg/mL injection
@@ -1413,7 +1414,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** testosterone — brands: Azmiro, Depo-testosterone — 4 RxCUIs, 72 NDCs. Controlled: yes, C-III.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $11.01 per ML (median of 21 NDCs) -> about $11.01 for 1 mL
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=testosterone>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: yes.  (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=testosterone>)
 - **Medicare Part D (Massachusetts):** on the formulary of 95 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 65, tier 3: 18. Restrictions on that tier (number of plans): prior auth: 37.
   - Average plan cost for 1 mL: $7.24 (from 95 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1422,7 +1423,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** pantoprazole — brands: Protonix — 2 RxCUIs, 287 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.04 per EA (median of 40 NDCs) -> about $1.10 for 30 tablets (1 a day); Brand: $14.24 per EA (median of 1 NDCs) -> about $427.18 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pantoprazole>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: only in some cases: > 4 units/day. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pantoprazole>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 50, tier 2: 46. Restrictions on that tier (number of plans): quantity limit: 50.
   - Average plan cost for 30 tablets (1 a day): $5.48 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1431,7 +1432,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** famotidine — brands: Calmicid, Pepcid, Zantac Reformulated Aug 2022 — 4 RxCUIs, 694 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.03 per EA (median of 62 NDCs) -> about $1.69 for 60 tablets (1 twice a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=famotidine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. *: The generic OTC (and generic prescription) versions are payable without PA. M90: Mandatory 90-day supply after a first fill of up to 30 days. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=famotidine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 54, tier 2: 34, tier 3: 7, tier 4: 1. Restrictions on that tier (number of plans): none.
   - Average plan cost for 60 tablets (1 twice a day): $8.45 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1440,7 +1441,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** ondansetron — brands: not found — 1 RxCUIs, 216 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.12 per EA (median of 14 NDCs) -> about $2.46 for 20 tablets
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ondansetron>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ondansetron>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 79, tier 3: 5. Restrictions on that tier (number of plans): prior auth: 90, quantity limit: 17.
   - Average plan cost for 20 tablets: $6.88 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1449,7 +1450,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** linaclotide — brands: Linzess — 2 RxCUIs, 3 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Brand: $9.02 per EA (median of 1 NDCs) -> about $270.56 for 30 capsules (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=linaclotide>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: yes.  (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=linaclotide>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 3: 78, tier 4: 6. Restrictions on that tier (number of plans): quantity limit: 73.
   - Average plan cost for 30 capsules (1 a day): $275.23 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1458,7 +1459,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** prednisone — brands: Deltasone — 2 RxCUIs, 531 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.06 per EA (median of 30 NDCs) -> about $0.65 for 10 tablets
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=prednisone>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=prednisone>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 89, tier 2: 7. Restrictions on that tier (number of plans): prior auth: 31.
   - Average plan cost for 10 tablets: $1.49 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1467,7 +1468,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** prednisolone — brands: not found — 1 RxCUIs, 53 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.54 per ML (median of 13 NDCs) -> about $54.01 for 100 mL
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=prednisolone>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=prednisolone>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 19, tier 2: 53, tier 4: 24. Restrictions on that tier (number of plans): prior auth: 24.
   - Average plan cost for 100 mL: $71.04 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1476,7 +1477,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** methylprednisolone — brands: Medrol Dosepak — 2 RxCUIs, 42 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. FDA does list other forms or strengths of the same medicine: Injection (current shortage). Those are different products. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.14 per EA (median of 5 NDCs) -> about $3.03 for 1 dose pack (21 tablets); Brand: $0.29 per EA (median of 1 NDCs) -> about $6.12 for 1 dose pack (21 tablets)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=methylprednisolone>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=methylprednisolone>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 84. Restrictions on that tier (number of plans): none.
   - Average plan cost for 1 dose pack (21 tablets): $5.85 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1486,7 +1487,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **FDA shortage:** shortage resolved or discontinued. FDA has past shortage entries for this drug, but none are current. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
   - Listed packages by availability: {'not found': 4}
 - **NADAC (as of 10/21/2026):** Generic: $0.03 per EA (median of 40 NDCs) -> about $0.94 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=allopurinol>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=allopurinol>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 71, tier 2: 25. Restrictions on that tier (number of plans): none.
   - Average plan cost for 30 tablets (1 a day): $3.80 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1495,7 +1496,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** colchicine — brands: Colcrys — 2 RxCUIs, 116 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.12 per EA (median of 29 NDCs) -> about $7.13 for 60 tablets
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=colchicine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=colchicine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 25, tier 3: 49, tier 4: 10. Restrictions on that tier (number of plans): quantity limit: 55.
   - Average plan cost for 60 tablets: $31.43 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1504,7 +1505,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** estradiol — brands: Estrace — 2 RxCUIs, 102 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.06 per EA (median of 12 NDCs) -> about $1.90 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=estradiol>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=estradiol>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 58, tier 2: 37, tier 4: 1. Restrictions on that tier (number of plans): none.
   - Average plan cost for 30 tablets (1 a day): $4.95 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1513,7 +1514,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** ethinyl estradiol / ethinyl estradiol / norgestimate / inert ingredients / norgestimate — brands: Estarylla 28 Day, Femynor 28 Day, Mili 28 Day, Mono-Linyah 28 Day, Nymyo 28 Day, Previfem 28 Day, Sprintec 28 Day, VyLibra 28 Day — 9 RxCUIs, 41 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.11 per EA (median of 13 NDCs) -> about $3.11 for 1 pack (28 tablets)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=norgestimate>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ethinyl+estradiol>)
 - **Medicare Part D (Massachusetts):** on the formulary of 73 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 8, tier 2: 40, tier 3: 24, tier 4: 1. Restrictions on that tier (number of plans): none.
   - Average plan cost for 1 pack (28 tablets): $5.99 (from 73 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1522,7 +1523,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** medroxyprogesterone — brands: Depo-Provera — 4 RxCUIs, 52 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $23.04 per ML (median of 17 NDCs) -> about $23.04 for 1 shot (1 mL, every 3 months); Brand: $51.19 per ML (median of 2 NDCs) -> about $51.19 for 1 shot (1 mL, every 3 months)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=medroxyprogesterone>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=medroxyprogesterone>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 49, tier 3: 35. Restrictions on that tier (number of plans): quantity limit: 19.
   - Average plan cost for 1 shot (1 mL, every 3 months): $35.90 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1531,7 +1532,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** finasteride — brands: Proscar — 2 RxCUIs, 180 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.07 per EA (median of 26 NDCs) -> about $2.06 for 30 tablets (1 a day); Brand: $5.70 per EA (median of 2 NDCs) -> about $171.05 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=finasteride>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=finasteride>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 64, tier 2: 32. Restrictions on that tier (number of plans): quantity limit: 48.
   - Average plan cost for 30 tablets (1 a day): $7.59 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1540,7 +1541,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** tamsulosin — brands: Flomax — 2 RxCUIs, 268 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.05 per EA (median of 26 NDCs) -> about $1.47 for 30 capsules (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tamsulosin>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tamsulosin>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 42, tier 2: 54. Restrictions on that tier (number of plans): quantity limit: 33.
   - Average plan cost for 30 capsules (1 a day): $6.50 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1549,7 +1550,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** alendronate — brands: Fosamax — 2 RxCUIs, 55 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.26 per EA (median of 8 NDCs) -> about $1.03 for 4 tablets (1 a week); Brand: $38.70 per EA (median of 1 NDCs) -> about $154.82 for 4 tablets (1 a week)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=alendronate>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=alendronate>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 93, tier 2: 3. Restrictions on that tier (number of plans): quantity limit: 50.
   - Average plan cost for 4 tablets (1 a week): $4.84 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1558,7 +1559,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** levetiracetam — brands: Keppra, Roweepra — 3 RxCUIs, 202 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.07 per EA (median of 36 NDCs) -> about $4.33 for 60 tablets (1 twice a day); Brand: $9.92 per EA (median of 1 NDCs) -> about $594.96 for 60 tablets (1 twice a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=levetiracetam>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=levetiracetam>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 63, tier 3: 21. Restrictions on that tier (number of plans): none.
   - Average plan cost for 60 tablets (1 twice a day): $9.52 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1567,7 +1568,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** emtricitabine / emtricitabine / tenofovir disoproxil / tenofovir disoproxil — brands: Truvada — 2 RxCUIs, 65 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.53 per EA (median of 10 NDCs) -> about $15.79 for 30 tablets (1 a day); Brand: $59.59 per EA (median of 1 NDCs) -> about $1,787.78 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=emtricitabine>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. #: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=emtricitabine>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 10, tier 4: 74. Restrictions on that tier (number of plans): quantity limit: 56.
   - Average plan cost for 30 tablets (1 a day): $199.68 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1576,7 +1577,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** bictegravir / bictegravir / emtricitabine / tenofovir alafenamide / emtricitabine / tenofovir alafenamide — brands: Biktarvy — 2 RxCUIs, 5 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Brand: $136.75 per EA (median of 2 NDCs) -> about $4,102.59 for 30 tablets (1 a day)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=bictegravir>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. PD: Preferred drug in its class. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=bictegravir>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 5: 84. Restrictions on that tier (number of plans): quantity limit: 40.
   - Average plan cost for 30 tablets (1 a day): $4,105.89 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1585,7 +1586,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** etanercept — brands: Enbrel — 2 RxCUIs, 5 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Brand: $2,083.62 per ML (median of 1 NDCs) -> about $8,334.50 for 4 pens (1 a week)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=etanercept>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: yes. PD: Preferred drug in its class. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=etanercept>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 5: 84. Restrictions on that tier (number of plans): prior auth: 96, quantity limit: 96.
   - Average plan cost for 4 pens (1 a week): $2,335.07 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
   - Medicare negotiated price (Maximum Fair Price) starting January 1, 2026: Enbrel (etanercept): 67% off the 2023 list price for a 30-day supply.
@@ -1595,7 +1596,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** rimegepant — brands: Nurtec — 2 RxCUIs, 5 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Brand: $128.66 per EA (median of 1 NDCs) -> about $1,029.30 for 8 tablets
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=rimegepant>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: yes. PD: Preferred drug in its class. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=rimegepant>)
 - **Medicare Part D (Massachusetts):** on the formulary of 85 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 3: 27, tier 4: 21, tier 5: 25. Restrictions on that tier (number of plans): prior auth: 85, quantity limit: 62.
   - Average plan cost for 8 tablets: $1,047.87 (from 85 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1604,7 +1605,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** timolol — brands: Timoptic — 2 RxCUIs, 39 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.82 per ML (median of 23 NDCs) -> about $4.11 for 1 bottle (5 mL)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=timolol>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=timolol>)
 - **Medicare Part D (Massachusetts):** on the formulary of 96 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 95, tier 2: 1. Restrictions on that tier (number of plans): none.
   - Average plan cost for 1 bottle (5 mL): $6.14 (from 96 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1613,7 +1614,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** clobetasol — brands: Temovate — 2 RxCUIs, 107 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.17 per GM (median of 34 NDCs) -> about $5.10 for 1 tube (30 g)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=clobetasol>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. A90: Up to a 90-day supply is allowed. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=clobetasol>)
 - **Medicare Part D (Massachusetts):** on the formulary of 94 of 96 plan segments. Plans by lowest tier for this drug: tier 1: 12, tier 2: 43, tier 3: 8, tier 4: 31. Restrictions on that tier (number of plans): quantity limit: 77.
   - Average plan cost for 1 tube (30 g): $15.44 (from 94 plans' pricing; this is the plan's drug price, not the patient's share).
 
@@ -1622,7 +1623,7 @@ Unusual items for a pharmacist to check before anything else. NADAC estimates ar
 - **RxNorm:** ergocalciferol — brands: Drisdol — 2 RxCUIs, 161 NDCs. Controlled: no.
 - **FDA shortage:** not found on FDA shortage list. No FDA shortage entry was found for this exact drug and strength. (checked 2026-10-24, <https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm>)
 - **NADAC (as of 10/21/2026):** Generic: $0.12 per EA (median of 9 NDCs) -> about $0.46 for 4 capsules (1 a week)
-- **MassHealth:** not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24; PA: not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24. MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ergocalciferol>)
+- **MassHealth:** yes (on the MassHealth Drug List); PA: no. M90: Mandatory 90-day supply after a first fill of up to 30 days. (<https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ergocalciferol>)
 - **Medicare Part D (Massachusetts):** not on any Massachusetts plan formulary in the CMS file.
 
 ## Vaccines

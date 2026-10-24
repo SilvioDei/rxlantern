@@ -1,5 +1,5 @@
 {
- "run_at": "2026-10-24T01:32:06",
+ "run_at": "2026-10-24T02:05:22",
  "base_url": "http://127.0.0.1:8000",
  "browser": "Chromium (Playwright)",
  "passed": 7,
@@ -10,35 +10,35 @@
    "check": "Drug search finds 10+ new drugs by brand name, generic name, and a misspelling",
    "result": "PASS",
    "notes": "brand: 12/12 found; generic: 12/12 found; misspelling: 12/12 found",
-   "seconds": 12.7
+   "seconds": 13.1
   },
   {
    "n": 2,
    "check": "A newly added Schedule II drug (Vyvanse) shows no stock reports or report buttons",
    "result": "PASS",
    "notes": "Vyvanse (Lisdexamfetamine (Vyvanse) 30 mg capsule) flagged controlled; results page and shortage watch have no reports or report buttons; API refuses (403) Vyvanse and oxycodone reports",
-   "seconds": 4.2
+   "seconds": 3.2
   },
   {
    "n": 3,
    "check": "A drug not in the list shows its live FDA shortage status and a call script",
    "result": "PASS",
    "notes": "methotrexate: '⚠ In shortage' (in shortage), checked 2026-10-24 from openFDA, call script shown; made-up name -> not found",
-   "seconds": 3.5
+   "seconds": 2.9
   },
   {
    "n": 4,
    "check": "Community search by medication, pharmacy, and neighborhood works, including 'no posts'",
    "result": "PASS",
    "notes": "medicine (Keflex -> real cephalexin report; Ozempic -> sample reports), 'No posts for this medication yet' for lisinopril, pharmacy filter (1 posts, all Gary Drug), neighborhood filter (6 posts, all Dorchester), rating sort [5, 4, 4, 3, 2]",
-   "seconds": 4.2
+   "seconds": 3.1
   },
   {
    "n": 5,
    "check": "No wheelchair filter, field, or badge appears anywhere",
    "result": "PASS",
    "notes": "10 pages x English and Spanish, plus 3 API responses: no wheelchair filter, field, or badge",
-   "seconds": 24.6
+   "seconds": 23.6
   },
   {
    "n": 6,
@@ -52,7 +52,7 @@
    "check": "The top search bar is visible without scrolling at desktop and phone width, and starts the guided search",
    "result": "PASS",
    "notes": "desktop 1280x800: input and button end at 305px; phone 375x812: input and button end at 463px; Enter picks the medicine and moves to the guided search's strength step",
-   "seconds": 2.8
+   "seconds": 2.4
   }
  ],
  "cleanup": {

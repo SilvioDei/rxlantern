@@ -90,8 +90,60 @@ EXTRA_NOTES = {
 }
 
 
-# Step 7c drugs whose MHDL row needs a fixed pattern (checked by hand against the saved pages).
-OVERRIDE: dict[str, list[str]] = {}
+# Step 7c drugs whose MHDL row needs a fixed pattern (checked by hand against the saved pages on 2026-10-24):
+# drug id -> (search page, row patterns; the first pattern is the main row).
+OVERRIDE: dict[str, tuple[str, list[str]]] = {
+    "glipizide_5": ("glipizide", [r"^glipizide 5 mg, 10 mg$"]),
+    "insulin_nph_pen": ("insulin_NPH", [r"^Humulin N ", r"^Novolin N "]),
+    "humalog_kwikpen": ("insulin_lispro", [r"^insulin lispro 100 units/mL prefilled syringe, vial$",
+                                           r"^Humalog \(insulin lispro 100 units/mL prefilled syringe, vial-Humalog\)"]),
+    "advair_diskus_250": ("fluticasone", [r"^Advair \(fluticasone / salmeterol inhalation-Advair\)"]),
+    "symbicort_160": ("budesonide", [r"^Symbicort "]),
+    "trelegy_100": ("fluticasone", [r"^Trelegy "]),
+    "flovent_hfa_110": ("fluticasone", [r"^fluticasone propionate inhalation aerosol"]),
+    "oseltamivir_75": ("oseltamivir", [r"^Tamiflu \(oseltamivir 45 mg and 75 mg\)"]),
+    "amox_clav_875": ("amoxicillin", [r"^Augmentin \(amoxicillin / clavulanate 250/62\.5 mg/5 mL suspension, tablet\)"]),
+    "cephalexin_500": ("cephalexin", [r"^cephalexin 250 mg, 500 mg capsule, suspension$"]),
+    "doxycycline_100": ("doxycycline", [r"^doxycycline hyclate 100 mg capsule$"]),
+    "ciprofloxacin_500": ("ciprofloxacin", [r"^Cipro \(ciprofloxacin injection, 250 mg, 500 mg, 750 mg tablet\)"]),
+    "metronidazole_500": ("metronidazole", [r"^metronidazole 250 mg, 500 mg tablet$"]),
+    "metoprolol_tart_25": ("metoprolol", [r"^Lopressor \(metoprolol immediate-release 25 mg"]),
+    "rosuvastatin_10": ("rosuvastatin", [r"^Crestor \(rosuvastatin 5 mg, 10 mg, 20 mg\)"]),
+    "simvastatin_20": ("simvastatin", [r"^Zocor \(simvastatin 5 mg, 10 mg, 20 mg, 40 mg\)"]),
+    "pravastatin_40": ("pravastatin", [r"^pravastatin 10 mg, 20 mg, 40 mg$"]),
+    "xarelto_20": ("rivaroxaban", [r"^Xarelto \(rivaroxaban 10 mg, 15 mg, 20 mg"]),
+    "escitalopram_10": ("escitalopram", [r"^Lexapro \(escitalopram solution, tablet\)"]),
+    "fluoxetine_20": ("fluoxetine", [r"^fluoxetine 10 mg, 20 mg, 40 mg capsule"]),
+    "trazodone_50": ("trazodone", [r"^trazodone 50 mg, 100 mg, 150 mg"]),
+    "duloxetine_60": ("duloxetine", [r"^duloxetine 20 mg, 30 mg, 60 mg capsule"]),
+    "venlafaxine_er_75": ("venlafaxine", [r"^Effexor XR "]),
+    "aripiprazole_5": ("aripiprazole", [r"^Abilify \(aripiprazole tablet\)"]),
+    "alprazolam_05": ("alprazolam", [r"^Xanax \(alprazolam tablet\)"]),
+    "clonazepam_05": ("clonazepam", [r"^Klonopin \(clonazepam tablet\)"]),
+    "zolpidem_10": ("zolpidem", [r"^Ambien \(zolpidem 10 mg tablet\)"]),
+    "adderall_ir_10": ("amphetamine", [r"^Adderall \(amphetamine salts\)"]),
+    "methylphenidate_10": ("methylphenidate", [r"^Ritalin \(methylphenidate-Ritalin\)"]),
+    "guanfacine_er_1": ("guanfacine", [r"^Intuniv "]),
+    "oxycodone_apap_5_325": ("oxycodone", [r"^oxycodone / acetaminophen$", r"^Percocet "]),
+    "gabapentin_300": ("gabapentin", [r"^Neurontin \(gabapentin capsule"]),
+    "cyclobenzaprine_10": ("cyclobenzaprine", [r"^cyclobenzaprine 5 mg, 10 mg$"]),
+    "testosterone_cyp_200": ("testosterone", [r"^Depo-Testosterone \(testosterone cypionate\)", r"^Azmiro "]),
+    "ondansetron_odt_4": ("ondansetron", [r"^ondansetron 4 mg, 8 mg orally disintegrating tablet$"]),
+    "prednisolone_soln_15": ("prednisolone", [r"^prednisolone 15 mg/5 mL, 25 mg/5 mL oral solution$"]),
+    "allopurinol_100": ("allopurinol", [r"^Zyloprim \(allopurinol 100 mg, 300 mg tablet\)"]),
+    "methylprednisolone_4_pack": ("methylprednisolone", [r"^Medrol \(methylprednisolone\)"]),
+    "norgestimate_ee": ("ethinyl_estradiol", [r"^ethinyl estradiol / norgestimate$"]),
+}
+
+# Rows read from the MassHealth Drug List PDF (October 01, 2026; saved by the project owner), used only when the
+# website page for that drug is missing (the website gave the same rows on 2026-10-24). Same columns as the website: drug, PA status, class, codes.
+PDF_SOURCE = "MassHealth Drug List PDF, October 01, 2026 (www.mass.gov/druglist), alphabetical list"
+PDF_ROWS: dict[str, list[list[str]]] = {
+    "insulin_nph_pen": [["Humulin N (insulin NPH-Humulin N); See Table 26", "", "DIABETIC AGENTS", "BP"],
+                        ["Novolin N (insulin NPH-Novolin N); See Table 26", "PA", "DIABETIC AGENTS", ""]],
+}
+# Searched on the website and in the PDF, and not on the List.
+NOT_ON_LIST_CHECKED = {"benzonatate_100", "phentermine_375"}
 
 # Words in an MHDL row that tell its dosage form, and the words that mean "a different form".
 FORMS = {
@@ -184,11 +236,17 @@ def main() -> None:
         match = "hand-checked (Step 3)"
         if drug_id in PICK:
             term, patterns = PICK[drug_id]
+        elif drug_id in OVERRIDE:
+            term, patterns = OVERRIDE[drug_id]
+            match = "hand-checked (Step 7c)"
         else:
             term = terms[drug_id].replace(" ", "_")
-            patterns = OVERRIDE.get(drug_id, [])
-            match = "hand-checked (Step 7c)" if patterns else "rule-based (Step 7c): please review"
-        if not (RAW / f"{term}.html").exists():
+            patterns = []
+            match = "rule-based (Step 7c), checked by hand on 2026-10-24"
+        source_override = None
+        if drug_id in PDF_ROWS and not (RAW / f"{term}.html").exists():
+            source_override = PDF_SOURCE
+        elif not (RAW / f"{term}.html").exists():
             if drug_id in kept:  # earlier checked result (e.g. the 25 Step 3 drugs, checked 2026-10-23)
                 out.append(kept[drug_id])
                 print(f"{drug_id:28} kept the earlier result (checked {kept[drug_id]['checked_date']})")
@@ -200,8 +258,10 @@ def main() -> None:
                             "checked_date": date.today().isoformat()})
                 print(f"{drug_id:28} NOT CHECKED (no saved MHDL page)")
             continue
-        table = rows(RAW / f"{term}.html")
-        if patterns:
+        table = PDF_ROWS[drug_id] if source_override else rows(RAW / f"{term}.html")
+        if source_override:
+            picked, patterns, match = table, ["^" + re.escape(table[0][0]) + "$"], "hand-checked (PDF)"
+        elif patterns:
             picked = [r for r in table if any(re.search(p, r[0]) for p in patterns)]
         else:
             picked = auto_pick(d, table, term)
@@ -209,7 +269,9 @@ def main() -> None:
         url = SEARCH_URL + term.replace("_", "+")
         if not picked:
             out.append({"drug_id": drug_id, "covered": "not found", "prior_authorization": "not found",
-                        "notes": ["Not on the MassHealth Drug List search. The list says any drug not on it requires PA."],
+                        "notes": ["Not on the MassHealth Drug List" + (" (website search and the October 01, 2026 PDF)"
+                                  if drug_id in NOT_ON_LIST_CHECKED else " search") + ". The List says any drug not on it "
+                                  "requires PA."],
                         "mhdl_rows": [], "match": match, "source": url, "checked_date": date.today().isoformat()})
             print(f"{drug_id:28} NOT FOUND  ({len(table)} rows on the '{term}' page)")
             continue
@@ -225,7 +287,7 @@ def main() -> None:
             "notes": notes,
             "mhdl_rows": [{"drug": r[0], "pa_status": r[1] or "(none)", "class": r[2], "codes": r[3]} for r in picked],
             "match": match,
-            "source": url,
+            "source": source_override or url,
             "checked_date": date.today().isoformat(),
         })
         print(f"{drug_id:28} {main_row[0][:70]:70} | PA={out[-1]['prior_authorization'][:40]} codes={codes}")
@@ -238,6 +300,8 @@ def main() -> None:
             "Any drug that does not appear on the MassHealth Drug List requires prior authorization (PA).",
             "PA applies to both the brand-name drug and its FDA A-rated generic for listed products.",
             "Members in a MassHealth ACO or MCO plan: the same unified pharmacy list applies to most drugs.",
+            "MassHealth members (including managed care plans) do not have to pay copays for prescription drugs "
+            "(MassHealth Drug List PDF, October 01, 2026, introduction).",
         ],
         "vaccines_rule": ("MassHealth does not pay for vaccines that are free through local boards of health or the "
                           "Massachusetts Department of Public Health (130 CMR 406.413(C)). MassHealth pays pharmacies "

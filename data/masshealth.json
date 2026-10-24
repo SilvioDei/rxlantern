@@ -6,7 +6,8 @@
   "general_rules": [
     "Any drug that does not appear on the MassHealth Drug List requires prior authorization (PA).",
     "PA applies to both the brand-name drug and its FDA A-rated generic for listed products.",
-    "Members in a MassHealth ACO or MCO plan: the same unified pharmacy list applies to most drugs."
+    "Members in a MassHealth ACO or MCO plan: the same unified pharmacy list applies to most drugs.",
+    "MassHealth members (including managed care plans) do not have to pay copays for prescription drugs (MassHealth Drug List PDF, October 01, 2026, introduction)."
   ],
   "vaccines_rule": "MassHealth does not pay for vaccines that are free through local boards of health or the Massachusetts Department of Public Health (130 CMR 406.413(C)). MassHealth pays pharmacies for seasonal flu vaccine without PA if the vaccine is not available free of cost. (MassHealth Drug List footnote 1)",
   "drugs": [
@@ -33,8 +34,9 @@
           "codes": ""
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amphetamine",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "concerta_18",
@@ -53,8 +55,9 @@
           "codes": "BP"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=methylphenidate",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "atorvastatin_20",
@@ -74,8 +77,9 @@
           "codes": "M90, #"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=atorvastatin",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "lisinopril_10",
@@ -99,8 +103,9 @@
           "codes": "M90, #"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=lisinopril",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "levothyroxine_50",
@@ -124,8 +129,9 @@
           "codes": "M90, #"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=levothyroxine",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "metformin_500",
@@ -143,8 +149,9 @@
           "codes": "M90"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metformin",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "amlodipine_5",
@@ -164,8 +171,9 @@
           "codes": "M90, #"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amlodipine",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "omeprazole_20",
@@ -184,8 +192,9 @@
           "codes": "M90"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=omeprazole",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "sertraline_50",
@@ -205,8 +214,9 @@
           "codes": "A90, #"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sertraline",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "amoxicillin_500",
@@ -224,8 +234,9 @@
           "codes": "A90"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "ozempic_05",
@@ -243,8 +254,9 @@
           "codes": "PD"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=semaglutide",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "mounjaro_5",
@@ -262,8 +274,9 @@
           "codes": "PD"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tirzepatide",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "eliquis_5",
@@ -282,8 +295,9 @@
           "codes": "BP, PD"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=apixaban",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "humira_40",
@@ -313,8 +327,9 @@
           "codes": ""
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=adalimumab",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "dupixent_300",
@@ -332,8 +347,9 @@
           "codes": "PD"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=dupilumab",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "albuterol_hfa",
@@ -357,8 +373,9 @@
           "codes": "BP, A90"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=albuterol",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "lantus_solostar",
@@ -377,8 +394,9 @@
           "codes": "BP"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+glargine",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "amoxicillin_susp_400",
@@ -396,8 +414,9 @@
           "codes": "A90"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "sumatriptan_50",
@@ -417,8 +436,9 @@
           "codes": "A90, #"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sumatriptan",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "latanoprost_0005",
@@ -438,8 +458,9 @@
           "codes": "M90, #"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=latanoprost",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "fluticasone_nasal_50",
@@ -458,8 +479,9 @@
           "codes": "M90"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluticasone",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "triamcinolone_cream_01",
@@ -477,8 +499,9 @@
           "codes": "A90"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=triamcinolone",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "epinephrine_03",
@@ -502,8 +525,9 @@
           "codes": "#"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=epinephrine",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "nicotine_patch_21",
@@ -523,8 +547,9 @@
           "codes": "*, A90"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=nicotine",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "paxlovid",
@@ -543,1506 +568,2601 @@
           "codes": "PD"
         }
       ],
+      "match": "hand-checked (Step 3)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=nirmatrelvir",
-      "checked_date": "2026-10-23"
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "wegovy_24",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "GLP-1 RECEPTOR AGONIST",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "PD: Preferred drug in its class."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Wegovy (semaglutide injection, tablet-Wegovy)",
+          "pa_status": "PA",
+          "class": "GLP-1 RECEPTOR AGONIST",
+          "codes": "PD"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=semaglutide",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "rybelsus_7",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "DIABETIC AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "PD: Preferred drug in its class."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Rybelsus (semaglutide tablet)",
+          "pa_status": "PA",
+          "class": "DIABETIC AGENTS",
+          "codes": "PD"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=semaglutide",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "zepbound_25",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "GIP/GLP-1 RECEPTOR AGONIST",
+      "notes": [],
+      "mhdl_rows": [
+        {
+          "drug": "Zepbound (tirzepatide-Zepbound)",
+          "pa_status": "PA",
+          "class": "GIP/GLP-1 RECEPTOR AGONIST",
+          "codes": ""
+        }
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tirzepatide",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "trulicity_15",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "DIABETIC AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "PD: Preferred drug in its class."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Trulicity (dulaglutide)",
+          "pa_status": "PA",
+          "class": "DIABETIC AGENTS",
+          "codes": "PD"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=dulaglutide",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "victoza_18",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "DIABETIC AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "BP: Brand preferred over generics: MassHealth wants the brand tried first."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Victoza (liraglutide-Victoza)",
+          "pa_status": "PA",
+          "class": "DIABETIC AGENTS",
+          "codes": "BP"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=liraglutide",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "jardiance_10",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "DIABETIC AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "PD: Preferred drug in its class."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Jardiance (empagliflozin)",
+          "pa_status": "(none)",
+          "class": "DIABETIC AGENTS",
+          "codes": "PD"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=empagliflozin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "farxiga_10",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "DIABETIC AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Farxiga (dapagliflozin)",
+          "pa_status": "(none)",
+          "class": "DIABETIC AGENTS",
+          "codes": "#"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=dapagliflozin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "januvia_100",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "DIABETIC AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "BP: Brand preferred over generics: MassHealth wants the brand tried first."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Januvia (sitagliptin tablet-Januvia)",
+          "pa_status": "PA",
+          "class": "DIABETIC AGENTS",
+          "codes": "BP"
+        },
+        {
+          "drug": "Zituvio (sitagliptin tablet-Zituvio)",
+          "pa_status": "PA",
+          "class": "DIABETIC AGENTS",
+          "codes": "BP, M90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sitagliptin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "glipizide_5",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "DIABETIC AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "glipizide 5 mg, 10 mg",
+          "pa_status": "(none)",
+          "class": "DIABETIC AGENTS",
+          "codes": "M90"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=glipizide",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "pioglitazone_30",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "DIABETIC AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Actos (pioglitazone)",
+          "pa_status": "(none)",
+          "class": "DIABETIC AGENTS",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pioglitazone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "metformin_er_500",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "DIABETIC AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "metformin extended-release, XR tablet",
+          "pa_status": "(none)",
+          "class": "DIABETIC AGENTS",
+          "codes": "M90"
+        },
+        {
+          "drug": "metformin extended-release, gastric tablet",
+          "pa_status": "PA",
+          "class": "DIABETIC AGENTS",
+          "codes": "M90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metformin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "humalog_kwikpen",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "DIABETIC AGENTS",
+      "notes": [],
+      "mhdl_rows": [
+        {
+          "drug": "Humalog (insulin lispro 100 units/mL prefilled syringe, vial-Humalog)",
+          "pa_status": "PA",
+          "class": "DIABETIC AGENTS",
+          "codes": ""
+        },
+        {
+          "drug": "insulin lispro 100 units/mL prefilled syringe, vial",
+          "pa_status": "(none)",
+          "class": "DIABETIC AGENTS",
+          "codes": ""
+        }
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+lispro",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "novolog_flexpen",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "DIABETIC AGENTS",
+      "notes": [],
+      "mhdl_rows": [
+        {
+          "drug": "Novolog (insulin aspart)",
+          "pa_status": "PA",
+          "class": "DIABETIC AGENTS",
+          "codes": ""
+        }
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+aspart",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "tresiba_flextouch",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "DIABETIC AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "BP: Brand preferred over generics: MassHealth wants the brand tried first."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Tresiba (insulin degludec)",
+          "pa_status": "PA",
+          "class": "DIABETIC AGENTS",
+          "codes": "BP"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+degludec",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "toujeo_solostar",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "DIABETIC AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "BP: Brand preferred over generics: MassHealth wants the brand tried first."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Toujeo (insulin glargine-Toujeo)",
+          "pa_status": "PA",
+          "class": "DIABETIC AGENTS",
+          "codes": "BP"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+glargine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "insulin_nph_pen",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "DIABETIC AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "BP: Brand preferred over generics: MassHealth wants the brand tried first."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
-      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=isophane",
+      "mhdl_rows": [
+        {
+          "drug": "Humulin N (insulin NPH-Humulin N)",
+          "pa_status": "(none)",
+          "class": "DIABETIC AGENTS",
+          "codes": "BP"
+        },
+        {
+          "drug": "Novolin N (insulin NPH-Novolin N)",
+          "pa_status": "PA",
+          "class": "DIABETIC AGENTS",
+          "codes": ""
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+NPH",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "advair_diskus_250",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "BRONCHODILATORS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "BP: Brand preferred over generics: MassHealth wants the brand tried first.",
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
-      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=salmeterol",
+      "mhdl_rows": [
+        {
+          "drug": "Advair (fluticasone / salmeterol inhalation-Advair)",
+          "pa_status": "(none)",
+          "class": "BRONCHODILATORS",
+          "codes": "BP, A90"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluticasone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "symbicort_160",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "BRONCHODILATORS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "BP: Brand preferred over generics: MassHealth wants the brand tried first.",
+        "PD: Preferred drug in its class.",
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
-      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=formoterol",
+      "mhdl_rows": [
+        {
+          "drug": "Symbicort (budesonide / formoterol)",
+          "pa_status": "(none)",
+          "class": "BRONCHODILATORS",
+          "codes": "BP, PD, A90"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=budesonide",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "trelegy_100",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "BRONCHODILATORS",
+      "notes": [],
+      "mhdl_rows": [
+        {
+          "drug": "Trelegy (fluticasone furoate / umeclidinium / vilanterol)",
+          "pa_status": "PA",
+          "class": "BRONCHODILATORS",
+          "codes": ""
+        }
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
-      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=umeclidinium",
+      "match": "hand-checked (Step 7c)",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluticasone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "spiriva_handihaler",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "BRONCHODILATORS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "BP: Brand preferred over generics: MassHealth wants the brand tried first.",
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Spiriva Handihaler (tiotropium inhalation powder)",
+          "pa_status": "(none)",
+          "class": "BRONCHODILATORS",
+          "codes": "BP, A90"
+        },
+        {
+          "drug": "Spiriva Respimat (tiotropium inhalation solution)",
+          "pa_status": "(none)",
+          "class": "BRONCHODILATORS",
+          "codes": ""
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tiotropium",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "flovent_hfa_110",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: >= 12 years",
+      "drug_class": "BRONCHODILATORS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "fluticasone propionate inhalation aerosol",
+          "pa_status": "PA ≥ 12 years",
+          "class": "BRONCHODILATORS",
+          "codes": "A90"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluticasone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "albuterol_neb_25",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "BRONCHODILATORS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "albuterol inhalation solution",
+          "pa_status": "(none)",
+          "class": "BRONCHODILATORS",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=albuterol",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "duoneb",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "BRONCHODILATORS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "albuterol / ipratropium inhalation solution",
+          "pa_status": "(none)",
+          "class": "BRONCHODILATORS",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=albuterol",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "budesonide_neb_05",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: >= 13 years",
+      "drug_class": "BRONCHODILATORS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Pulmicort (budesonide inhalation suspension)",
+          "pa_status": "PA ≥ 13 years",
+          "class": "BRONCHODILATORS",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=budesonide",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "montelukast_10",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "BRONCHODILATORS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Singulair (montelukast tablet, chewable tablet)",
+          "pa_status": "(none)",
+          "class": "BRONCHODILATORS",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=montelukast",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "montelukast_chew_5",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "BRONCHODILATORS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Singulair (montelukast tablet, chewable tablet)",
+          "pa_status": "(none)",
+          "class": "BRONCHODILATORS",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=montelukast",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "benzonatate_100",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "not found",
+      "prior_authorization": "not found",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "Not on the MassHealth Drug List (website search and the October 01, 2026 PDF). The List says any drug not on it requires PA."
       ],
       "mhdl_rows": [],
-      "match": "not checked",
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=benzonatate",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "naloxone_nasal_4",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIDOTES",
+      "notes": [],
+      "mhdl_rows": [
+        {
+          "drug": "naloxone 4 mg nasal spray",
+          "pa_status": "(none)",
+          "class": "ANTIDOTES",
+          "codes": ""
+        }
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=naloxone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "oseltamivir_75",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: > 10 units/ claim; or > 20 units/ 365 days",
+      "drug_class": "ANTIVIRALS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Tamiflu (oseltamivir 45 mg and 75 mg)",
+          "pa_status": "PA > 10 units/ claim and PA > 20 units/ 365 days",
+          "class": "ANTIVIRALS",
+          "codes": "#"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oseltamivir",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "oseltamivir_susp",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: > 180 mL/ claim; or > 360 mL/ 365 days",
+      "drug_class": "ANTIVIRALS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Tamiflu (oseltamivir suspension)",
+          "pa_status": "PA > 180 mL/ claim and PA > 360 mL/ 365 days",
+          "class": "ANTIVIRALS",
+          "codes": "#"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oseltamivir",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "amoxicillin_susp_250",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "amoxicillin",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "amox_clav_875",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Augmentin (amoxicillin / clavulanate 250/62.5 mg/5 mL suspension, tablet)",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "amox_clav_susp_400",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "amoxicillin / clavulanate 200/28.5 mg/5 mL, 400/57 mg/ 5 mL suspension",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "azithromycin_250",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Zithromax (azithromycin injection, suspension, tablet)",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=azithromycin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "azithromycin_susp_200",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Zithromax (azithromycin injection, suspension, tablet)",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=azithromycin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "cephalexin_500",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "cephalexin 250 mg, 500 mg capsule, suspension",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cephalexin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "cephalexin_susp_250",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "cephalexin 250 mg, 500 mg capsule, suspension",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cephalexin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "cefdinir_susp_250",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "cefdinir",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cefdinir",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "doxycycline_100",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "doxycycline hyclate 100 mg capsule",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=doxycycline",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "smx_tmp_ds",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Bactrim (sulfamethoxazole / trimethoprim tablet)",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "#"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sulfamethoxazole",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "smx_tmp_susp",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Sulfatrim (sulfamethoxazole / trimethoprim suspension)",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sulfamethoxazole",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "nitrofurantoin_100",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Macrobid (nitrofurantoin monohydrate / macrocrystals)",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=nitrofurantoin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "ciprofloxacin_500",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Cipro (ciprofloxacin injection, 250 mg, 500 mg, 750 mg tablet); See Table 35; See Table 66",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ciprofloxacin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "metronidazole_500",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "metronidazole 250 mg, 500 mg tablet",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metronidazole",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "penicillin_vk_500",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "penicillin V",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=penicillin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "fluconazole_150",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "FUNGICIDES",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Diflucan (fluconazole)",
+          "pa_status": "(none)",
+          "class": "FUNGICIDES",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluconazole",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "valacyclovir_1g",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIVIRALS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Valtrex (valacyclovir)",
+          "pa_status": "(none)",
+          "class": "ANTIVIRALS",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=valacyclovir",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "mupirocin_2",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIBIOTICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "mupirocin ointment",
+          "pa_status": "(none)",
+          "class": "ANTIBIOTICS",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=mupirocin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "losartan_50",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "CARDIOVASCULAR",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Cozaar (losartan)",
+          "pa_status": "(none)",
+          "class": "CARDIOVASCULAR",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=losartan",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "metoprolol_succ_er_50",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "CARDIOVASCULAR",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Toprol XL (metoprolol extended-release tablet)",
+          "pa_status": "(none)",
+          "class": "CARDIOVASCULAR",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metoprolol",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "metoprolol_tart_25",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "CARDIOVASCULAR",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Lopressor (metoprolol immediate-release 25 mg, 37.5 mg, 50 mg, 75 mg, 100 mg tablet)",
+          "pa_status": "(none)",
+          "class": "CARDIOVASCULAR",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metoprolol",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "rosuvastatin_10",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: > 1.5 units/day",
+      "drug_class": "LIPID LOWERING AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Crestor (rosuvastatin 5 mg, 10 mg, 20 mg)",
+          "pa_status": "PA > 1.5 units/day",
+          "class": "LIPID LOWERING AGENTS",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=rosuvastatin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "hydrochlorothiazide_25",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "CARDIOVASCULAR",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "hydrochlorothiazide",
+          "pa_status": "(none)",
+          "class": "CARDIOVASCULAR",
+          "codes": "M90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=hydrochlorothiazide",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "simvastatin_20",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: > 1.5 units/day",
+      "drug_class": "LIPID LOWERING AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Zocor (simvastatin 5 mg, 10 mg, 20 mg, 40 mg)",
+          "pa_status": "PA > 1.5 units/day",
+          "class": "LIPID LOWERING AGENTS",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=simvastatin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "pravastatin_40",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: > 1.5 units/day",
+      "drug_class": "LIPID LOWERING AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "pravastatin 10 mg, 20 mg, 40 mg",
+          "pa_status": "PA > 1.5 units/day",
+          "class": "LIPID LOWERING AGENTS",
+          "codes": "M90"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pravastatin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "furosemide_20",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "CARDIOVASCULAR",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Lasix (furosemide tablet, injection)",
+          "pa_status": "(none)",
+          "class": "CARDIOVASCULAR",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=furosemide",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "carvedilol_125",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "CARDIOVASCULAR",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Coreg (carvedilol)",
+          "pa_status": "(none)",
+          "class": "CARDIOVASCULAR",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=carvedilol",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "spironolactone_25",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ALDOSTERONE ANTAGONISTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Aldactone (spironolactone tablet)",
+          "pa_status": "(none)",
+          "class": "ALDOSTERONE ANTAGONISTS",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=spironolactone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "clopidogrel_75",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIPLATELET AGENT",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Plavix (clopidogrel)",
+          "pa_status": "(none)",
+          "class": "ANTIPLATELET AGENT",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=clopidogrel",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "valsartan_160",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "CARDIOVASCULAR",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Diovan (valsartan tablet)",
+          "pa_status": "(none)",
+          "class": "CARDIOVASCULAR",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=valsartan",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "ezetimibe_10",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "LIPID LOWERING AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Zetia (ezetimibe)",
+          "pa_status": "(none)",
+          "class": "LIPID LOWERING AGENTS",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ezetimibe",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "propranolol_10",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "CARDIOVASCULAR",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "propranolol immediate-release tablet",
+          "pa_status": "(none)",
+          "class": "CARDIOVASCULAR",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=propranolol",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "xarelto_20",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTICOAGULANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "BP: Brand preferred over generics: MassHealth wants the brand tried first."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Xarelto (rivaroxaban 10 mg, 15 mg, 20 mg tablet, starter pack)",
+          "pa_status": "(none)",
+          "class": "ANTICOAGULANTS",
+          "codes": "BP"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=rivaroxaban",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "warfarin_5",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTICOAGULANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "warfarin",
+          "pa_status": "(none)",
+          "class": "ANTICOAGULANTS",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=warfarin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "entresto_49_51",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: > 2 units/day",
+      "drug_class": "CARDIOVASCULAR",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Entresto (sacubitril / valsartan tablet)",
+          "pa_status": "PA > 2 units/day",
+          "class": "CARDIOVASCULAR",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sacubitril",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "repatha_140",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "LIPID LOWERING AGENTS",
+      "notes": [],
+      "mhdl_rows": [
+        {
+          "drug": "Repatha (evolocumab)",
+          "pa_status": "PA",
+          "class": "LIPID LOWERING AGENTS",
+          "codes": ""
+        }
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=evolocumab",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "brilinta_90",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIPLATELET AGENT",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Brilinta (ticagrelor)",
+          "pa_status": "(none)",
+          "class": "ANTIPLATELET AGENT",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ticagrelor",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "nitroglycerin_sl_04",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "CARDIOVASCULAR",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Nitrostat (nitroglycerin sublingual tablet)",
+          "pa_status": "(none)",
+          "class": "CARDIOVASCULAR",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=nitroglycerin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "escitalopram_10",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years",
+      "drug_class": "ANTIDEPRESSANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Lexapro (escitalopram solution, tablet); See Table 17; See Table 71",
+          "pa_status": "PA < 6 years",
+          "class": "ANTIDEPRESSANTS",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=escitalopram",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "bupropion_xl_150",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years; or > 1 unit/day",
+      "drug_class": "ANTIDEPRESSANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "bupropion hydrochloride extended-release 150 mg, 300 mg tablet; See Table 17; See Table 71",
+          "pa_status": "PA < 6 years and PA > 1 unit/day",
+          "class": "ANTIDEPRESSANTS",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=bupropion",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "fluoxetine_20",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years",
+      "drug_class": "ANTIDEPRESSANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "fluoxetine 10 mg, 20 mg, 40 mg capsule, solution; See Table 17; See Table 71",
+          "pa_status": "PA < 6 years",
+          "class": "ANTIDEPRESSANTS",
+          "codes": "A90"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluoxetine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "trazodone_50",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years",
+      "drug_class": "ANTIDEPRESSANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "trazodone 50 mg, 100 mg, 150 mg; See Table 17; See Table 71",
+          "pa_status": "PA < 6 years",
+          "class": "ANTIDEPRESSANTS",
+          "codes": "A90"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=trazodone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "duloxetine_60",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years",
+      "drug_class": "ANTIDEPRESSANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "duloxetine 20 mg, 30 mg, 60 mg capsule; See Table 17; See Table 71",
+          "pa_status": "PA < 6 years",
+          "class": "ANTIDEPRESSANTS",
+          "codes": "A90"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=duloxetine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "buspirone_10",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years",
+      "drug_class": "ANTI-ANXIETY AGENT",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "buspirone tablet; See Table 69; See Table 71",
+          "pa_status": "PA < 6 years",
+          "class": "ANTI-ANXIETY AGENT",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=buspirone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "venlafaxine_er_75",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years",
+      "drug_class": "ANTIDEPRESSANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Effexor XR (venlafaxine extended-release capsule); See Table 17; See Table 71",
+          "pa_status": "PA < 6 years",
+          "class": "ANTIDEPRESSANTS",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=venlafaxine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "hydroxyzine_25",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIHISTAMINES",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "hydroxyzine hydrochloride",
+          "pa_status": "(none)",
+          "class": "ANTIHISTAMINES",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=hydroxyzine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "quetiapine_25",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 10 years; or > 3 units/day",
+      "drug_class": "ANTIPSYCHOTIC",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Seroquel (quetiapine); See Table 24; See Table 71",
+          "pa_status": "PA < 10 years and PA > 3 units/day",
+          "class": "ANTIPSYCHOTIC",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=quetiapine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "aripiprazole_5",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 10 years; or > 2 units/day",
+      "drug_class": "ANTIPSYCHOTIC",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Abilify (aripiprazole tablet); See Table 24; See Table 71",
+          "pa_status": "PA < 10 years and PA > 2 units/day",
+          "class": "ANTIPSYCHOTIC",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=aripiprazole",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "lamotrigine_100",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years",
+      "drug_class": "ANTICONVULSANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Lamictal (lamotrigine tablet); See Table 20; See Table 71",
+          "pa_status": "PA < 6 years",
+          "class": "ANTICONVULSANTS",
+          "codes": "A90, #"
+        },
+        {
+          "drug": "Lamictal (lamotrigine tablet starter kit); See Table 20; See Table 71",
+          "pa_status": "PA",
+          "class": "ANTICONVULSANTS",
+          "codes": ""
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=lamotrigine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "alprazolam_05",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years",
+      "drug_class": "BENZODIAZEPINES",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Xanax (alprazolam tablet); See Table 69; See Table 71",
+          "pa_status": "PA < 6 years",
+          "class": "BENZODIAZEPINES",
+          "codes": "#"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=alprazolam",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "clonazepam_05",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years",
+      "drug_class": "BENZODIAZEPINES",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Klonopin (clonazepam tablet); See Table 69; See Table 71",
+          "pa_status": "PA < 6 years",
+          "class": "BENZODIAZEPINES",
+          "codes": "#"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=clonazepam",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "lorazepam_05",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years",
+      "drug_class": "BENZODIAZEPINES",
+      "notes": [],
+      "mhdl_rows": [
+        {
+          "drug": "lorazepam tablet; See Table 69; See Table 71",
+          "pa_status": "PA < 6 years",
+          "class": "BENZODIAZEPINES",
+          "codes": ""
+        }
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=lorazepam",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "zolpidem_10",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years; or > 1 unit/day",
+      "drug_class": "SEDATIVES",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Ambien (zolpidem 10 mg tablet); See Table 15; See Table 71",
+          "pa_status": "PA < 6 years and PA > 1 unit/day",
+          "class": "SEDATIVES",
+          "codes": "#"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=zolpidem",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "adderall_ir_10",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 3 years or >= 21 years; or > 3 units/day",
+      "drug_class": "CEREBRAL STIMULANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Adderall (amphetamine salts); See Table 31; See Table 71",
+          "pa_status": "PA < 3 years or ≥ 21 years and PA > 3 units/day",
+          "class": "CEREBRAL STIMULANTS",
+          "codes": "#"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amphetamine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "vyvanse_30",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 3 years or >= 21 years; or > 2 units/day",
+      "drug_class": "CEREBRAL STIMULANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "BP: Brand preferred over generics: MassHealth wants the brand tried first.",
+        "PD: Preferred drug in its class."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Vyvanse (lisdexamfetamine); See Table 31; See Table 71",
+          "pa_status": "PA < 3 years or ≥ 21 years and PA > 2 units/day",
+          "class": "CEREBRAL STIMULANTS",
+          "codes": "BP, PD"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=lisdexamfetamine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "methylphenidate_10",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 3 years or >= 21 years; or > 3 units/day",
+      "drug_class": "CEREBRAL STIMULANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Ritalin (methylphenidate-Ritalin); See Table 31; See Table 71",
+          "pa_status": "PA < 3 years or ≥ 21 years and PA > 3 units/day",
+          "class": "CEREBRAL STIMULANTS",
+          "codes": "#"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=methylphenidate",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "focalin_xr_10",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 3 years or >= 21 years; or > 2 units/day",
+      "drug_class": "CEREBRAL STIMULANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Focalin XR (dexmethylphenidate extended-release); See Table 31; See Table 71",
+          "pa_status": "PA < 3 years or ≥ 21 years and PA > 2 units/day",
+          "class": "CEREBRAL STIMULANTS",
+          "codes": "#"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=dexmethylphenidate",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "atomoxetine_40",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years",
+      "drug_class": "NONSTIMULANT ADHD AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "atomoxetine; See Table 31; See Table 71",
+          "pa_status": "PA < 6 years",
+          "class": "NONSTIMULANT ADHD AGENTS",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=atomoxetine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "guanfacine_er_1",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 3 years",
+      "drug_class": "NONSTIMULANT ADHD AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Intuniv (guanfacine extended-release); See Table 31; See Table 71",
+          "pa_status": "PA < 3 years",
+          "class": "NONSTIMULANT ADHD AGENTS",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=guanfacine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "hydrocodone_apap_5_325",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: > 120 mg/day hydrocodone; or > 4 g/day acetaminophen",
+      "drug_class": "OPIOID ANALGESICS",
+      "notes": [],
+      "mhdl_rows": [
+        {
+          "drug": "hydrocodone / acetaminophen",
+          "pa_status": "PA > 120 mg/day hydrocodone and PA > 4 g/day acetaminophen",
+          "class": "OPIOID ANALGESICS",
+          "codes": ""
+        },
+        {
+          "drug": "hydrocodone 7.5 mg / ibuprofen",
+          "pa_status": "PA > 120 mg/day hydrocodone and PA > 3.2 g/day ibuprofen",
+          "class": "OPIOID ANALGESICS",
+          "codes": ""
+        }
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=hydrocodone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "oxycodone_5",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: > 80 mg/day",
+      "drug_class": "OPIOID ANALGESICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Roxicodone (oxycodone immediate-release-Roxicodone)",
+          "pa_status": "PA > 80 mg/day",
+          "class": "OPIOID ANALGESICS",
+          "codes": "#"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oxycodone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "oxycodone_apap_5_325",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: > 80 mg/day oxycodone; or > 4 g/day acetaminophen",
+      "drug_class": "OPIOID ANALGESICS",
+      "notes": [],
+      "mhdl_rows": [
+        {
+          "drug": "oxycodone / acetaminophen",
+          "pa_status": "PA > 80 mg/day oxycodone and PA > 4 g/day acetaminophen",
+          "class": "OPIOID ANALGESICS",
+          "codes": ""
+        },
+        {
+          "drug": "Percocet (oxycodone / acetaminophen-Percocet)",
+          "pa_status": "PA > 80 mg/day oxycodone and PA > 4 g/day acetaminophen",
+          "class": "OPIOID ANALGESICS",
+          "codes": "#"
+        }
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oxycodone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "tramadol_50",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 12 years; or > 400 mg/day",
+      "drug_class": "ANALGESICS",
+      "notes": [],
+      "mhdl_rows": [
+        {
+          "drug": "tramadol 50 mg",
+          "pa_status": "PA < 12 years and PA > 400 mg/day",
+          "class": "ANALGESICS",
+          "codes": ""
+        },
+        {
+          "drug": "tramadol 25 mg, 75 mg, 100 mg",
+          "pa_status": "PA",
+          "class": "ANALGESICS",
+          "codes": ""
+        }
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tramadol",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "gabapentin_300",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years; or > 3600 mg/day",
+      "drug_class": "ANTICONVULSANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Neurontin (gabapentin capsule, solution, 600 mg, 800 mg tablet); See Table 71; See Table 72",
+          "pa_status": "PA < 6 years and PA > 3600 mg/day",
+          "class": "ANTICONVULSANTS",
+          "codes": "#"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=gabapentin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "pregabalin_75",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 6 years; or > 600 mg/day",
+      "drug_class": "ANTICONVULSANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Lyrica (pregabalin); See Table 71; See Table 72",
+          "pa_status": "PA < 6 years and PA > 600 mg/day",
+          "class": "ANTICONVULSANTS",
+          "codes": "#"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pregabalin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "buprenorphine_naloxone_8_2",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: > 32 mg/day",
+      "drug_class": "ALCOHOL AND DRUG CESSATION AGENT",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "BP: Brand preferred over generics: MassHealth wants the brand tried first.",
+        "PD: Preferred drug in its class."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Suboxone (buprenorphine / naloxone film)",
+          "pa_status": "PA > 32 mg/day",
+          "class": "ALCOHOL AND DRUG CESSATION AGENT",
+          "codes": "BP, PD"
+        },
+        {
+          "drug": "buprenorphine / naloxone sublingual tablet",
+          "pa_status": "PA > 32 mg/day",
+          "class": "ALCOHOL AND DRUG CESSATION AGENT",
+          "codes": ""
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=buprenorphine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "meloxicam_15",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "NONSTEROIDAL ANTI-INFLAMMATORY",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "meloxicam tablet",
+          "pa_status": "(none)",
+          "class": "NONSTEROIDAL ANTI-INFLAMMATORY",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=meloxicam",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "ibuprofen_800",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "NONSTEROIDAL ANTI-INFLAMMATORY",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "*: The generic OTC (and generic prescription) versions are payable without PA.",
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "ibuprofen",
+          "pa_status": "(none)",
+          "class": "NONSTEROIDAL ANTI-INFLAMMATORY",
+          "codes": "*, A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ibuprofen",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "cyclobenzaprine_10",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: < 15 years",
+      "drug_class": "MUSCLE RELAXANT",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "cyclobenzaprine 5 mg, 10 mg",
+          "pa_status": "PA < 15 years",
+          "class": "MUSCLE RELAXANT",
+          "codes": "A90"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cyclobenzaprine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "diclofenac_gel_1",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "NONSTEROIDAL ANTI-INFLAMMATORY",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "*: The generic OTC (and generic prescription) versions are payable without PA.",
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "diclofenac 1% gel",
+          "pa_status": "(none)",
+          "class": "NONSTEROIDAL ANTI-INFLAMMATORY",
+          "codes": "*, A90"
+        },
+        {
+          "drug": "diclofenac 3% gel",
+          "pa_status": "(none)",
+          "class": "CHEMOTHERAPY",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=diclofenac",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "phentermine_375",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "not found",
+      "prior_authorization": "not found",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "Not on the MassHealth Drug List (website search and the October 01, 2026 PDF). The List says any drug not on it requires PA."
       ],
       "mhdl_rows": [],
-      "match": "not checked",
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=phentermine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "testosterone_cyp_200",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "HORMONE REPLACEMENT THERAPY",
+      "notes": [],
+      "mhdl_rows": [
+        {
+          "drug": "Azmiro (testosterone cypionate)",
+          "pa_status": "PA",
+          "class": "HORMONE REPLACEMENT THERAPY",
+          "codes": ""
+        },
+        {
+          "drug": "Depo-Testosterone (testosterone cypionate)",
+          "pa_status": "PA",
+          "class": "HORMONE REPLACEMENT THERAPY",
+          "codes": ""
+        }
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=testosterone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "pantoprazole_40",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "only in some cases: > 4 units/day",
+      "drug_class": "PROTON PUMP INHIBITORS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Protonix (pantoprazole tablet)",
+          "pa_status": "PA > 4 units/day",
+          "class": "PROTON PUMP INHIBITORS",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pantoprazole",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "famotidine_20",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "H2 ANTAGONISTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "*: The generic OTC (and generic prescription) versions are payable without PA.",
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "famotidine tablet",
+          "pa_status": "(none)",
+          "class": "H2 ANTAGONISTS",
+          "codes": "*, M90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=famotidine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "ondansetron_odt_4",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIEMETICS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "ondansetron 4 mg, 8 mg orally disintegrating tablet",
+          "pa_status": "(none)",
+          "class": "ANTIEMETICS",
+          "codes": "A90"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ondansetron",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "linzess_145",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "CONSTIPATION AGENTS",
+      "notes": [],
+      "mhdl_rows": [
+        {
+          "drug": "Linzess (linaclotide)",
+          "pa_status": "PA",
+          "class": "CONSTIPATION AGENTS",
+          "codes": ""
+        }
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=linaclotide",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "prednisone_20",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "GLUCOCORTICOIDS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "prednisone",
+          "pa_status": "(none)",
+          "class": "GLUCOCORTICOIDS",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=prednisone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "prednisolone_soln_15",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "GLUCOCORTICOIDS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "prednisolone 15 mg/5 mL, 25 mg/5 mL oral solution",
+          "pa_status": "(none)",
+          "class": "GLUCOCORTICOIDS",
+          "codes": "A90"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=prednisolone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "methylprednisolone_4_pack",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "GLUCOCORTICOIDS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Medrol (methylprednisolone)",
+          "pa_status": "(none)",
+          "class": "GLUCOCORTICOIDS",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=methylprednisolone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "allopurinol_100",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "GOUT AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Zyloprim (allopurinol 100 mg, 300 mg tablet)",
+          "pa_status": "(none)",
+          "class": "GOUT AGENTS",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=allopurinol",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "colchicine_06",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "GOUT AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Colcrys (colchicine tablet)",
+          "pa_status": "(none)",
+          "class": "GOUT AGENTS",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=colchicine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "estradiol_1",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "HORMONE REPLACEMENT THERAPY",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Estrace (estradiol tablet-Estrace)",
+          "pa_status": "(none)",
+          "class": "HORMONE REPLACEMENT THERAPY",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=estradiol",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "norgestimate_ee",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "CONTRACEPTIVES",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
-      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=norgestimate",
+      "mhdl_rows": [
+        {
+          "drug": "ethinyl estradiol / norgestimate",
+          "pa_status": "(none)",
+          "class": "CONTRACEPTIVES",
+          "codes": "M90"
+        }
+      ],
+      "match": "hand-checked (Step 7c)",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ethinyl+estradiol",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "medroxyprogesterone_inj_150",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "CONTRACEPTIVES",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Depo-Provera (medroxyprogesterone injection)",
+          "pa_status": "(none)",
+          "class": "CONTRACEPTIVES",
+          "codes": "#"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=medroxyprogesterone",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "finasteride_5",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "BENIGN PROSTATIC HYPERPLASIA AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Proscar (finasteride)",
+          "pa_status": "(none)",
+          "class": "BENIGN PROSTATIC HYPERPLASIA AGENTS",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=finasteride",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "tamsulosin_04",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "BENIGN PROSTATIC HYPERPLASIA AGENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Flomax (tamsulosin)",
+          "pa_status": "(none)",
+          "class": "BENIGN PROSTATIC HYPERPLASIA AGENTS",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tamsulosin",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "alendronate_70",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ELECTROLYTES AND NUTRIENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Fosamax (alendronate tablet)",
+          "pa_status": "(none)",
+          "class": "ELECTROLYTES AND NUTRIENTS",
+          "codes": "M90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=alendronate",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "levetiracetam_500",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTICONVULSANTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Keppra (levetiracetam solution, tablet)",
+          "pa_status": "(none)",
+          "class": "ANTICONVULSANTS",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=levetiracetam",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "truvada_prep",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIVIRALS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed.",
+        "#: Brand-name drug with FDA A-rated generics: PA is required for the brand; the generic is the covered choice."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Truvada (emtricitabine / tenofovir disoproxil fumarate)",
+          "pa_status": "(none)",
+          "class": "ANTIVIRALS",
+          "codes": "A90, #"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=emtricitabine",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "biktarvy",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ANTIVIRALS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "PD: Preferred drug in its class."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Biktarvy (bictegravir / emtricitabine / tenofovir alafenamide)",
+          "pa_status": "(none)",
+          "class": "ANTIVIRALS",
+          "codes": "PD"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=bictegravir",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "enbrel_50",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "IMMUNOMODULATOR",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "PD: Preferred drug in its class."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Enbrel (etanercept)",
+          "pa_status": "PA",
+          "class": "IMMUNOMODULATOR",
+          "codes": "PD"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=etanercept",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "nurtec_75",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "yes",
+      "drug_class": "CALCITONIN GENE-RELATED PEPTIDE INHIBITOR",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "PD: Preferred drug in its class."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "Nurtec (rimegepant)",
+          "pa_status": "PA",
+          "class": "CALCITONIN GENE-RELATED PEPTIDE INHIBITOR",
+          "codes": "PD"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=rimegepant",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "timolol_eye_05",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "OPHTHALMIC PREPARATIONS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "timolol opthalmic solution",
+          "pa_status": "(none)",
+          "class": "OPHTHALMIC PREPARATIONS",
+          "codes": "M90"
+        },
+        {
+          "drug": "timolol ophthalmic gel forming solution",
+          "pa_status": "PA",
+          "class": "OPHTHALMIC PREPARATIONS",
+          "codes": "M90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=timolol",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "clobetasol_cream_005",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "GLUCOCORTICOIDS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "A90: Up to a 90-day supply is allowed."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "clobetasol propionate 0.05% cream",
+          "pa_status": "(none)",
+          "class": "GLUCOCORTICOIDS",
+          "codes": "A90"
+        },
+        {
+          "drug": "clobetasol propionate 0.025% cream",
+          "pa_status": "PA",
+          "class": "GLUCOCORTICOIDS",
+          "codes": "A90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=clobetasol",
       "checked_date": "2026-10-24"
     },
     {
       "drug_id": "ergocalciferol_50000",
-      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
-      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "covered": "yes (on the MassHealth Drug List)",
+      "prior_authorization": "no",
+      "drug_class": "ELECTROLYTES AND NUTRIENTS",
       "notes": [
-        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+        "M90: Mandatory 90-day supply after a first fill of up to 30 days."
       ],
-      "mhdl_rows": [],
-      "match": "not checked",
+      "mhdl_rows": [
+        {
+          "drug": "ergocalciferol capsule",
+          "pa_status": "(none)",
+          "class": "ELECTROLYTES AND NUTRIENTS",
+          "codes": "M90"
+        }
+      ],
+      "match": "rule-based (Step 7c), checked by hand on 2026-10-24",
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ergocalciferol",
       "checked_date": "2026-10-24"
     }

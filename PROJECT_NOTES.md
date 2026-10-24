@@ -110,12 +110,13 @@ RxLantern should look like an elite, modern healthcare app: colorful and vibrant
 - **Tests:** `tests/ui_step7c.py` (7 checks), `tests/ui_step7b.py` (13 checks, updated for 150 drugs and no
   wheelchair filter), and `tests/try_agents.py` + `tests/check_agent_rules.py` (the 11 Step 4 questions plus 2 new).
 - `output/medication_check.md` starts with a "Please review first" list for the pharmacist.
-- **MassHealth (2026-10-24): the MassHealth Drug List website was down all night**, so the 25 Step 3 drugs keep
-  their checked data (2026-10-23) and the other 125 say "not checked yet: the MassHealth Drug List website was
-  unavailable on 2026-10-24". The site and the chat then say "MassHealth coverage not checked yet. Call the pharmacy or
-  MassHealth to confirm." Rerun later with one command from rxcompass/: `..\.venv\Scripts\python.exe
-  scripts\fetch_masshealth.py` (fetches the pages, rebuilds data/masshealth.json and output/medication_check.md,
-  deletes the pages). New drugs are matched by rules in `build_masshealth.py` ("match": "rule-based"): review them.
+- **MassHealth (2026-10-24):** the MassHealth Drug List website was down overnight and came back in the morning.
+  All 150 drugs are now checked: 25 hand-checked in Step 3, 38 set by hand in `OVERRIDE`, 86 matched by rules and
+  reviewed by hand, and NPH insulin by hand (the October 2026 MassHealth Drug List PDF the project owner saved
+  gives the same rows and is the fallback in `PDF_ROWS`). Benzonatate and phentermine are not on the List (website and PDF). MassHealth members pay no
+  prescription copays (PDF introduction), so the site now says that. If the site is down during a rebuild, drugs
+  without a saved page show "not checked yet" (never a guess). Refresh with one command from rxcompass/:
+  `..\.venv\Scripts\python.exe scripts\fetch_masshealth.py`.
 
 ## App name
 

@@ -10622,6 +10622,187 @@
    },
    "safety_rules_fired": [],
    "reply_preview": "I can’t share which pharmacies have stock of a controlled medicine. The FDA lists a current shortage for 34 package sizes of Vyvanse 30 mg capsules, though some makers may still have it. Please call p"
+  },
+  {
+   "run_id": "b6dba15fb3ae",
+   "timestamp": "2026-10-24T02:03:31-04:00",
+   "type": "moderation",
+   "review_id": 1,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes a positive experience at the pharmacy.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 619,
+     "cached_input_tokens": 0,
+     "output_tokens": 43,
+     "total_tokens": 662,
+     "cost_usd": 8.3e-05,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "8aaff8b57853",
+   "timestamp": "2026-10-24T02:03:58-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Can you give me a call script to ask a pharmacy if they have amoxicillin 500 mg capsules?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Provide a short call script in English for a patient in Boston, ZIP 02124, with MassHealth, asking a pharmacy whether they have amoxicillin 500 mg capsules available. Include any relevant cautions or questions to ask."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "lookup_drug",
+     "input": {
+      "name": "amoxicillin"
+     },
+     "result": "message: This medicine comes in more than one form in RxLantern. Ask which one the patient has."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "call_script",
+     "input": {
+      "drug": "Amoxicillin 500 mg capsule"
+     },
+     "result": "call_script=Hi. I'm calling about Amoxicillin 500 mg, source=RxLantern call script template, checked_date=2026-10-24"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "Ask whether they have amoxicillin 500 mg capsules in stock today, and tell them your insurance is MassHealth so they can check it. Have your insurance card ready. Call to confirm availability; the pharmacy can also confirm the quantity on your prescription.",
+     "not_found": [],
+     "warnings": [
+      "Stock can change; call the pharmacy to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 5846,
+      "cached_input_tokens": 3371,
+      "output_tokens": 632,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 9129,
+     "cached_input_tokens": 4726,
+     "output_tokens": 944,
+     "total_tokens": 10073,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.00096
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3283,
+      "cached_input_tokens": 1355,
+      "output_tokens": 312,
+      "web_searches": 0,
+      "cost_usd": 0.000362
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 3,
+      "input_tokens": 5846,
+      "cached_input_tokens": 3371,
+      "output_tokens": 632,
+      "web_searches": 0,
+      "cost_usd": 0.000597
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "You can say: “Hi, do you have amoxicillin 500 mg capsules in stock today? I have MassHealth. Can you check whether you can fill the quantity on my prescription?” Availability can change, so call to co"
+  },
+  {
+   "run_id": "dc0df89bd74f",
+   "timestamp": "2026-10-24T02:04:00-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "I took too many pills",
+   "stop_reason": "emergency message shown",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "emergency message shown (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "emergency message shown (rule in code, no model call)"
+   ],
+   "reply_preview": "If this is an emergency, call 911. For a possible poisoning or overdose, call Poison Control at 1-800-222-1222."
+  },
+  {
+   "run_id": "0c3eb6784d00",
+   "timestamp": "2026-10-24T02:04:01-04:00",
+   "language": "es",
+   "mode": "normal",
+   "question_redacted": "Tomé demasiadas pastillas y no puedo respirar",
+   "stop_reason": "emergency message shown",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "emergency message shown (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "emergency message shown (rule in code, no model call)"
+   ],
+   "reply_preview": "Si es una emergencia, llame al 911. Para un posible envenenamiento o sobredosis, llame a Poison Control (Control de Envenenamientos) al 1-800-222-1222."
   }
  ]
 }

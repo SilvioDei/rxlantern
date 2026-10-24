@@ -60,9 +60,10 @@ see the About & Privacy page.
 
 ## MassHealth data
 
-The MassHealth Drug List website was down when the 150-drug list was built (2026-10-24). The original 25
-medicines have MassHealth data; the other 125 show "MassHealth coverage not checked yet. Call the pharmacy or
-MassHealth to confirm." To check them later, from `rxcompass/` run:
+MassHealth coverage for all 150 medicines comes from the MassHealth Drug List website (checked 2026-10-24; the
+site was down overnight, so this step ran late) (cross-checked with the October 2026 MassHealth Drug List PDF). If the
+site is ever down again, new medicines show "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to
+confirm." To refresh MassHealth data, from `rxcompass/` run:
 
 ```
 ..\.venv\Scripts\python.exe scripts\fetch_masshealth.py
