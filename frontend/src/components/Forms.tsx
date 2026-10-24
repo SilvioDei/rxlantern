@@ -3,6 +3,7 @@ import { useState, type FormEvent } from "react";
 import { useApp, errorText } from "../state";
 import { api } from "../api";
 import { MicButton, MicNote, Modal } from "./Bits";
+import { STAFF_LANGUAGES, langName } from "./Journey";
 
 export function AuthModal() {
   const { authOpen } = useApp();
@@ -68,7 +69,7 @@ export function ReportFormHost() {
 }
 
 function ReportForm() {
-  const { t, meta, reportForm, closeReportForm, notify, bump } = useApp();
+  const { t, meta, reportForm, closeReportForm, notify, bump, showTransfer } = useApp();
   const [pharmacy, setPharmacy] = useState(reportForm?.pharmacyId ?? "");
   const [drug, setDrug] = useState(reportForm?.drugId ?? "");
   const [inStock, setInStock] = useState<boolean | null>(reportForm?.inStock ?? null);
@@ -84,6 +85,7 @@ function ReportForm() {
       notify(t("thanksReport"));
       bump();
       closeReportForm();
+      if (!inStock) showTransfer({ pharmacyId: pharmacy, drugId: drug });
     } catch (err) {
       setMsg(errorText(err, t));
     } finally {
@@ -133,6 +135,8 @@ function ReviewForm({ pharmacyId }: { pharmacyId: string }) {
   const [wait, setWait] = useState("");
   const [visit, setVisit] = useState(today);
   const [comment, setComment] = useState("");
+  const [visitTime, setVisitTime] = useState("");
+  const [langs, setLangs] = useState<string[]>([]);
   const [msg, setMsg] = useState("");
   const [busy, setBusy] = useState(false);
   const name = meta?.pharmacies.find((p) => p.id === pharmacyId);
@@ -144,6 +148,7 @@ function ReviewForm({ pharmacyId }: { pharmacyId: string }) {
     try {
       const r = await api.post<{ status: string; message: string }>(`/api/pharmacies/${pharmacyId}/reviews`, {
         rating, wait_minutes: wait === "" ? null : Number(wait), visit_date: visit, comment: comment || null,
+        visit_time: visitTime || null, languages: langs,
       });
       if (r.status === "rejected") {
         setMsg(`${t("modRejected")} ${r.message.replace(/^We couldn't publish this comment\.\s*/, "")}`);
@@ -174,6 +179,21 @@ function ReviewForm({ pharmacyId }: { pharmacyId: string }) {
         </fieldset>
         <label>{t("waitMinutes")}<input name="wait" type="number" min={0} max={600} inputMode="numeric" value={wait} onChange={(e) => setWait(e.target.value)} /></label>
         <label>{t("visitDate")}<input name="visit" type="date" max={today} required value={visit} onChange={(e) => setVisit(e.target.value)} /></label>
+        <label>{t("visitTimeLabel")}
+          <select name="visit_time" value={visitTime} onChange={(e) => setVisitTime(e.target.value)}>
+            <option value="">{t("vt_none")}</option>
+            {["morning", "afternoon", "evening"].map((v) => <option key={v} value={v}>{t(`vt_${v}` as never)}</option>)}
+          </select>
+        </label>
+        <fieldset className="lang-ticks">
+          <legend>{t("staffSpoke")}</legend>
+          {STAFF_LANGUAGES.map((l) => (
+            <label key={l} className="check">
+              <input type="checkbox" name="languages" value={l} checked={langs.includes(l)}
+                onChange={(e) => setLangs((xs) => (e.target.checked ? [...xs, l] : xs.filter((x) => x !== l)))} /> {langName(t, l)}
+            </label>
+          ))}
+        </fieldset>
         <label>{t("comment")}
           <textarea name="comment" maxLength={300} rows={3} value={comment} onChange={(e) => setComment(e.target.value)} aria-describedby="comment-help" />
         </label>

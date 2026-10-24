@@ -58,7 +58,7 @@ export interface DrugMeta {
 export interface Meta {
   app_name: string; neighborhoods: string[]; insurance_types: string[];
   plans: { id: string; name: string; type: string }[];
-  pharmacies: { id: string; name: string; address: string; neighborhood: string }[];
+  pharmacies: { id: string; name: string; address: string; neighborhood: string; phone: string }[];
   drugs: DrugMeta[];
   vaccines: { id: string; name: string }[];
   sample_data: boolean;
@@ -70,6 +70,8 @@ export interface PharmacyBrief {
   store_today: string; delivery: string; delivery_summary: string | null; drive_thru: string;
   languages: string[] | string; vaccines: string[]; website: string;
   vaccine_booking_url: string; checked_date: string; hours_source: string;
+  /** Step 7c part 2: languages ticked in reviews ("Reported by patients"), real and sample kept apart. */
+  reported_languages?: Record<string, number>; sample_reported_languages?: Record<string, number>;
 }
 export interface ReportCounts {
   drug_id?: string; in_stock_reports: number; out_of_stock_reports: number; latest_report: string; conflicting: boolean;
@@ -110,9 +112,23 @@ export interface Me { logged_in: boolean; display_name?: string; is_admin?: bool
 export interface StockSummary { drugs: ReportCounts[]; message: string | null; reminder: string }
 export interface Review {
   rating: number; wait_minutes: number | null; visit_date: string; comment: string | null; by: string; sample?: boolean;
-  pharmacy_id?: string; pharmacy?: string;
+  pharmacy_id?: string; pharmacy?: string; visit_time?: string | null; languages?: string[];
 }
 export interface ReviewSummary {
   reviews: number; average_rating: number | null; average_wait_minutes: number | null; message: string | null;
   recent: Review[];
 }
+
+// ---- Step 7c part 2
+export interface BestTime { weekday: number; day_en: string; day_es: string; time: string; typical_wait_minutes: number; reviews: number }
+export interface PharmacyInsights {
+  pharmacy_id: string; reported_languages: Record<string, number>; sample_reported_languages: Record<string, number>;
+  best_times: BestTime[]; sample_best_times: BestTime[]; min_reviews_per_slot: number; source: string; note: string;
+}
+export interface SavingsLink { url: string | null; listed: boolean; source: string; checked_date: string }
+export interface Savings {
+  drug_id: string; note: string; checked_date: string; show_links: boolean;
+  goodrx?: SavingsLink | null; trumprx?: SavingsLink | null; trumprx_controlled?: boolean;
+  manufacturer?: { url: string; link_text: string | null; brand_site: string; source: string; checked_date: string } | null;
+}
+export interface Impact { questions: number; patient_minutes: number; staff_minutes: number }

@@ -388,3 +388,61 @@ body.easy .result-list, body.easy .split > * { min-width: 0; }
 body.easy .mic-note { color: #1a1a1a; font-size: 0.85em; }
 body.easy .community-search .cs-grid { grid-template-columns: 1fr; }
 body.easy .top-search { border: 3px solid #000; box-shadow: none; background: #fff; }
+
+/* ---------- Step 7c part 2: my medicine list, helpers, send it here, language card, savings, watchlist */
+.badge-info { background: #e6f0fb; color: #12395f; border-color: #bcd3ee; }
+.footer-links a { font-weight: 700; }
+.mylist-items { list-style: none; padding: 0; margin: 0 0 12px; display: grid; gap: 6px; }
+.mylist-item { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.mylist-place { margin: 14px 0 10px; }
+.mylist-results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.mylist-card { margin-bottom: 0; }
+.mylist-card .rank { color: var(--teal); }
+.fill-line { margin: 6px 0; color: var(--ok-ink); }
+.pa-card { border-left: 6px solid var(--amber); }
+.pa-ask { margin-bottom: 4px; }
+.transfer-helper { margin-top: 12px; border-top: 1px dashed var(--line); padding-top: 10px; }
+.transfer-helper summary { cursor: pointer; font-weight: 700; color: var(--teal-dark); }
+.transfer-helper .h3 { margin-top: 10px; }
+.transfer-controlled { margin-top: 8px; }
+.byg-card { border-left: 6px solid var(--teal); }
+.checklist { list-style: none; padding: 0; margin: 0 0 8px; display: grid; gap: 6px; font-size: 1.05em; }
+.send-here-card { background: #fff; border: 4px solid var(--navy); border-radius: var(--radius); padding: 26px; margin: 10px 0 18px; text-align: center; }
+.sh-label { font-family: var(--font-head); font-size: 1.4rem; color: var(--navy); margin: 0; }
+.sh-label-en { color: var(--muted); margin: 0 0 10px; }
+.sh-name { font-family: var(--font-head); font-size: clamp(1.8rem, 6vw, 2.8rem); font-weight: 700; color: var(--navy); margin: 14px 0 6px; overflow-wrap: anywhere; }
+.sh-address { font-size: clamp(1.3rem, 4.5vw, 1.9rem); margin: 0 0 8px; overflow-wrap: anywhere; }
+.sh-phone { font-size: clamp(1.5rem, 5vw, 2.2rem); font-weight: 700; margin: 0 0 10px; }
+.language-card { background: #fff; border: 3px solid var(--navy); border-radius: var(--radius); padding: 18px 22px; margin-bottom: 18px; }
+.lc-line { border-top: 1px solid var(--line); padding: 12px 0; }
+.lc-line:first-child { border-top: none; }
+.lc-label { font-weight: 700; color: var(--teal-dark); margin: 0 0 4px; font-size: 0.95rem; }
+.lc-text { font-size: 1.5rem; line-height: 1.45; margin: 0 0 4px; color: #000; }
+.lc-english { color: var(--muted); margin: 0; }
+.lc-warn { margin: 12px 0 0; font-weight: 700; color: #5a3d00; background: var(--amber-soft); border-radius: 8px; padding: 8px 12px; }
+.savings-card { border-left: 6px solid var(--ok-ink); }
+.savings-card.note-only { border-left-color: var(--amber); padding: 14px 18px; }
+.savings-links { margin: 6px 0 10px; padding-left: 1.2em; display: grid; gap: 6px; }
+.savings-note { margin: 0; }
+.star-btn { padding: 6px 12px; min-height: 40px; }
+.star-btn.on { background: var(--amber-soft); border-color: var(--amber-strong); color: #5a3d00; }
+.watch-card { border-left: 6px solid var(--amber); }
+.watch-item .badge { margin-right: 4px; }
+.best-time ul { margin-bottom: 8px; }
+.lang-ticks { border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.lang-ticks legend { font-weight: 700; padding: 0 4px; }
+.impact-line { margin: 6px 0 0; }
+.impact-card .impact-line { font-size: 1.1rem; }
+.demand-list .feed-item { font-weight: 700; }
+@media (max-width: 760px) { .mylist-results { grid-template-columns: 1fr; } }
+body.easy .mylist-results { grid-template-columns: 1fr; }
+body.easy .send-here-card, body.easy .language-card { border-width: 4px; border-color: #000; }
+body.easy .lc-text { font-size: 1.6em; }
+body.easy .pa-card, body.easy .byg-card, body.easy .savings-card, body.easy .watch-card { border: 3px solid #000; }
+@media print {
+  .send-here-card { border: 3px solid #000; }
+  .language-card { border: 2px solid #000; }
+  .lc-text { font-size: 18pt; }
+  .byg-card { box-shadow: none; border: 1px solid #000; }
+  .main-nav, .easy-bar, .top-search { display: none !important; }
+}

@@ -42,6 +42,10 @@ interface AppState extends Settings {
   bump: () => void;
   toast: { text: string; ok: boolean } | null;
   notify: (text: string, ok?: boolean) => void;
+  /** Step 7c part 2: the transfer helper, opened after a "They don't have it" report. */
+  transfer: ReportRequest | null;
+  showTransfer: (r: ReportRequest) => void;
+  closeTransfer: () => void;
 }
 
 const KEY = "rxlantern.settings";
@@ -77,6 +81,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [reviewFor, setReviewFor] = useState<string | null>(null);
   const [version, setVersion] = useState(0);
   const [toast, setToast] = useState<{ text: string; ok: boolean } | null>(null);
+  const [transfer, setTransfer] = useState<ReportRequest | null>(null);
   const toastTimer = useRef<number>(0);
 
   const set = useCallback((patch: Partial<Settings>) => setSettings((s) => ({ ...s, ...patch })), []);
@@ -134,6 +139,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
           await api.post(`/api/pharmacies/${r.pharmacyId}/stock-reports`, { drug_id: r.drugId, in_stock: r.inStock });
           notify(t("thanksReport"));
           bump();
+          if (!r.inStock) setTransfer({ pharmacyId: r.pharmacyId, drugId: r.drugId });
         } catch (e) {
           notify(errorText(e, t), false);
         }
@@ -149,7 +155,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     <Ctx.Provider value={{
       ...settings, set, t, meta, me, refreshMe, requireLogin, authOpen, closeAuth, deviceOrigin, setDeviceOrigin,
       report, reportForm, closeReportForm: () => setReportForm(null), rate, reviewFor, closeReview: () => setReviewFor(null),
-      version, bump, toast, notify,
+      version, bump, toast, notify, transfer, showTransfer: setTransfer, closeTransfer: () => setTransfer(null),
     }}>
       {children}
     </Ctx.Provider>

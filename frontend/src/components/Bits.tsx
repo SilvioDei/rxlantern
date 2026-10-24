@@ -5,6 +5,7 @@ import { useApp } from "../state";
 import { canSpeak, listen, recognitionSupported, speak, stopSpeaking } from "../speech";
 import { shortageKey } from "../i18n";
 import type { Fact } from "../api";
+import { ReportedLanguages, SendHereLink, TransferHelper } from "./Journey";
 
 export function ReadAloud({ text, label }: { text: string | (() => string); label?: string }) {
   const { t, lang } = useApp();
@@ -125,6 +126,7 @@ export function CallScriptCard({ text, drugId, pharmacyId, controlled, title }: 
           <ReportButtons pharmacyId={pharmacyId} drugId={drugId} />
         </>
       )}
+      <TransferHelper pharmacyId={pharmacyId} drugId={drugId} controlled={controlled} />
     </section>
   );
 }
@@ -228,7 +230,7 @@ export function NotFoundText({ value }: { value: unknown }) {
 export function PharmacyCardView(p: {
   id: string; name: string; address: string; phone: string; open_now: boolean | null; status?: string;
   closes_at: string | null; opens_next: string | null; distance_miles?: number | null; drugId?: string | null;
-  controlled?: boolean;
+  controlled?: boolean; reported_languages?: Record<string, number>; sample_reported_languages?: Record<string, number>;
 }) {
   const { t, rate } = useApp();
   return (
@@ -246,7 +248,9 @@ export function PharmacyCardView(p: {
         <a className="btn" href={telHref(p.phone)}><span aria-hidden="true">📞</span> {t("call")} {p.phone}</a>
         <a className="btn ghost" href={directionsHref(p.address)} target="_blank" rel="noreferrer">{t("directions")}</a>
         <Link className="btn ghost" to={`/pharmacies/${p.id}`}>{t("details")}</Link>
+        <SendHereLink pharmacyId={p.id} drugId={p.drugId} />
       </div>
+      <ReportedLanguages real={p.reported_languages} sample={p.sample_reported_languages} compact />
       <ReportButtons pharmacyId={p.id} drugId={p.drugId} controlled={p.controlled} compact />
       <button type="button" className="btn ghost rate-btn" onClick={() => rate(p.id)}><span aria-hidden="true">★</span> {t("ratePharmacy")}</button>
     </article>

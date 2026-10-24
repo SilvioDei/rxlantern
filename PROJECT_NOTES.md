@@ -118,6 +118,47 @@ RxLantern should look like an elite, modern healthcare app: colorful and vibrant
   without a saved page show "not checked yet" (never a guess). Refresh with one command from rxcompass/:
   `..\.venv\Scripts\python.exe scripts\fetch_masshealth.py`.
 
+## Step 7c (part 2): new features
+
+All pages load from the database and our own tools (no AI), work in English and Spanish, in Easy view, and at phone
+width. New routes are in `backend/insights.py`; shared pieces in `frontend/src/components/Journey.tsx`.
+
+- **My medicine list** (`/my-list`): 2 to 5 of our drugs, saved only in the browser (`rxlantern.mylist`). Pharmacies
+  are ranked by: 3 x medicines reported in stock (real reports, last 72 hours) - 2 x reported out of stock + 1 if open
+  now - 0.3 x miles (distance is measured in the browser). Each card says "Reported in stock for X of N of your
+  medicines" and "Call to confirm"; sample reports are shown on their own line; controlled drugs never count.
+- **Prior authorization helper**: on the results page when MassHealth PA is "yes" or "only in some cases", or when
+  some Medicare plans need PA.
+- **Transfer helper**: opens after a "They don't have it" report and is under every call script. Controlled drugs get
+  only "Ask your prescriber or pharmacist what to do for this medicine."
+- **Send it here** (`/send-here/:id`): big name, address, phone; printable; no personal information.
+  **Before you go** checklist on results, pharmacy, and send-it-here pages.
+- **Languages reported by patients**: reviews can tick Cantonese, Mandarin, Haitian Creole, Spanish, Portuguese,
+  Vietnamese (`reviews.languages`). Shown as "Reported by patients", apart from the pharmacy's website, and used by the
+  language filters. Wheelchair access stays removed.
+- **Language help card** (`/language-card`): Chinese (Traditional and Simplified), Haitian Creole, Spanish, with
+  English; labeled "Translation not yet reviewed by a native speaker."
+- **Best time to go**: reviews have an optional time of visit (morning before noon, afternoon noon-5 PM, evening after
+  5 PM). Pharmacy pages show the typical (median) wait by weekday and time only with 3 or more reviews in that slot.
+- **Shortage watchlist**: star on shortage watch and the results page (`rxlantern.watch`, browser only). A visit is a
+  browser session; on the next visit, new real "in stock" reports for starred drugs within 3 miles of the saved place
+  are highlighted on Home and Shortage watch.
+- **For pharmacies** (`/for-pharmacies`): anonymous `search_counts` (drug, neighborhood of the nearest RxLantern
+  pharmacy to the typed ZIP/neighborhood, week, number). Counted once per browser session per drug and place; never for
+  "Use my location"; never for automated tests (headless browser, test client, scripts, or an `X-RxLantern-Test`
+  header). Only counts of 5 or more are shown.
+- **Savings finder** (`scripts/build_savings.py` -> `data/savings.json`, checked 2026-10-24): links only, never prices.
+  GoodRx "listed" = in GoodRx's drug-price sitemap (all 150). TrumpRx.gov "listed" = a product page on its browse list
+  (106 of 150; never controlled drugs). Manufacturer programs from each brand's own site (30 of 38 brand drugs; 8 "not
+  found"). Shown for no insurance, work/private plans, or no insurance chosen; Medicare and MassHealth see only the note.
+- **Time saved**: `impact_counter` counts real chat answers only (completed, not tests). Estimate per question: patient
+  15 minutes (one real call took about 15 minutes and 3 calls), staff 3 calls x 4 minutes = 12 minutes.
+- **Sample data** (`SHOW_SAMPLE_DATA`): languages on sample reviews, three sample reviews at CVS Chinatown in the same
+  weekday-morning slot (best time), and sample search counts (one under 5, so hidden). Never counted with real data.
+- **Shortage watch speed**: `/api/drugs` reads all 150 shortage results on one database connection (0.65 s -> 0.03 s).
+- **Tests**: `tests/ui_step7c2.py` (12 checks); check 13 = `tests/ui_step7b.py`, `tests/ui_step7c.py`, and
+  `tests/try_agents.py` + `tests/check_agent_rules.py`.
+
 ## App name
 
 - The app is called **RxLantern** (it was called RxCompass in Steps 1–3; earlier prompts in AI_prompts.md keep the old name).

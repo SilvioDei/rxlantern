@@ -140,7 +140,8 @@ def meta() -> dict:
         "insurance_types": INSURANCE_TYPES,
         "plans": [{"id": p["id"], "name": p["name"], "type": p["type"]} for p in _plans()["plans"]],
         "neighborhoods": sorted({p["neighborhood"] for p in pharms}),
-        "pharmacies": [{"id": p["id"], "name": p["name"], "address": p["address"], "neighborhood": p["neighborhood"]}
+        "pharmacies": [{"id": p["id"], "name": p["name"], "address": p["address"], "neighborhood": p["neighborhood"],
+                        "phone": p["phone"]}
                        for p in sorted(pharms, key=lambda p: (p["neighborhood"], p["name"]))],
         "drugs": drugs,
         "vaccines": [{"id": v["id"], "name": v["name"]} for v in tools._rows("SELECT id, name FROM vaccines")],
@@ -202,9 +203,19 @@ def _parse_at(at: str | None) -> datetime | None:
     return dt.replace(tzinfo=tools.BOSTON_TZ) if dt.tzinfo is None else dt.astimezone(tools.BOSTON_TZ)
 
 
+def with_languages(briefs: list[dict]) -> list[dict]:
+    """Add the languages patients reported in reviews (Step 7c part 2), real and sample kept apart."""
+    from backend.insights import pharmacy_extras
+    x = pharmacy_extras()
+    for b in briefs:
+        b["reported_languages"] = x["reported_languages"].get(b["id"], {})
+        b["sample_reported_languages"] = x["sample_reported_languages"].get(b["id"], {})
+    return briefs
+
+
 @router.get("/pharmacies")
 def pharmacies(lang: str = "en") -> dict:
-    return {"pharmacies": [_pharmacy_brief(p, lang) for p in tools._pharmacies()],
+    return {"pharmacies": with_languages([_pharmacy_brief(p, lang) for p in tools._pharmacies()]),
             "note": "Languages spoken are 'not found' on the pharmacies' public pages."}
 
 
@@ -225,7 +236,7 @@ def pharmacy(pharmacy_id: str, lang: str = "en") -> dict:
     samples = sample_data.report_summary(pharmacy_id)
     for x in samples:
         x["drug"] = names.get(x["drug_id"], x["drug_id"])
-    return d | {"brief": _pharmacy_brief(p, lang), "nearby_clinics": p["nearby_clinics"],
+    return d | {"brief": with_languages([_pharmacy_brief(p, lang)])[0], "nearby_clinics": p["nearby_clinics"],
                 "stock_reports": reports, "sample_reports": samples,
                 "reviews": community.review_summary(pharmacy_id), "sample_reviews": sample_data.reviews(pharmacy_id),
                 "holidays": tools.upcoming_holidays(7)}
@@ -241,13 +252,15 @@ def drugs(lang: str = "en") -> dict:
         x = samples.setdefault(s["drug_id"], {"in_stock_reports": 0, "out_of_stock_reports": 0})
         x["in_stock_reports" if s["in_stock"] else "out_of_stock_reports"] += 1
     out = []
+    with tools._connect() as con:  # one connection for all 150 drugs (the page must load in under 2 seconds)
+        shortages = {r["id"]: tools.shortage_from_db(r["id"], con) for r in _drug_rows()}
     for r in _drug_rows():
-        sh = tools.shortage_from_db(r["id"])
+        sh = shortages[r["id"]]
         item = {"id": r["id"], "name": r["display_name"], "strength": r["strength"], "form": r["dosage_form"],
                 "controlled": bool(r["controlled"]), "shortage_status": sh["status"], "shortage_summary": sh["summary"],
                 "fda_estimate": sh["fda_estimate"], "fda_updated": sh["fda_updated"],
                 "checked_date": sh["checked_date"], "source": sh["source"],
-                "call_script": tools.call_script(r["id"], lang=lang)["call_script"]}
+                "call_script": tools.call_script(r["id"], lang=lang, drug=r)["call_script"]}
         if r["controlled"]:
             item["community"] = {"refused": True, "message": community.CONTROLLED_MESSAGE}
         else:
@@ -326,7 +339,7 @@ def results(drug_id: str, insurance: str = "", plan: str = "", lang: str = "en",
         "call_script": tools.call_script(d["id"], lang=lang)["call_script"],
         "controlled_message": community.CONTROLLED_MESSAGE if controlled else None,
         "holidays": tools.upcoming_holidays(7, when),
-        "checked_at": when.strftime("%Y-%m-%d %H:%M"), "pharmacies": pharms,
+        "checked_at": when.strftime("%Y-%m-%d %H:%M"), "pharmacies": with_languages(pharms),
         "reminder": community.CALL_TO_CONFIRM, "report_window_hours": community.REPORT_WINDOW_HOURS,
         "sample_data": sample_data.enabled(),
     }
@@ -392,6 +405,11 @@ def drug_call_script(drug_id: str, lang: str = "en") -> dict:
 
 
 # ----------------------------------------------------------------------------- about & privacy
+def _savings_checked() -> str:
+    path = config.DATA_DIR / "savings.json"
+    return json.loads(path.read_text(encoding="utf-8")).get("checked_date", tools.NF) if path.exists() else tools.NF
+
+
 @router.get("/about")
 def about() -> dict:
     """Where every piece of data comes from, with the date it was checked."""
@@ -425,6 +443,9 @@ def about() -> dict:
          "url": None, "checked_date": _plans()["checked_date"]},
         {"key": "zips", "source": "U.S. Census Bureau ZIP code (ZCTA) center points",
          "url": (zp.get("src") or "").split(" ; ")[0] or None, "checked_date": zp.get("d")},
+        {"key": "savings", "source": "GoodRx drug-page sitemap and TrumpRx.gov medication list (links only, no prices); "
+                                     "each brand's official website for manufacturer savings programs",
+         "url": "https://trumprx.gov/browse", "checked_date": _savings_checked()},
         {"key": "holidays", "source": "U.S. federal holidays (OPM) and Massachusetts legal holidays (Mass.gov)",
          "url": tools.HOLIDAY_SOURCE.split(" ; ")[0], "checked_date": "2026-10-23"},
     ], "plans": _plans()["plans"], "sample_data": sample_data.enabled()}

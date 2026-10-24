@@ -19,6 +19,11 @@ import { Community } from "./pages/Community";
 import { AboutPage } from "./pages/About";
 import { Admin } from "./pages/Admin";
 import { OtherMedicine } from "./pages/OtherMedicine";
+import { MyList } from "./pages/MyList";
+import { SendHere } from "./pages/SendHere";
+import { LanguageCard } from "./pages/LanguageCard";
+import { ForPharmacies } from "./pages/ForPharmacies";
+import { TransferHost } from "./components/Journey";
 
 function ScrollTop() {
   const { pathname } = useLocation();
@@ -45,6 +50,10 @@ createRoot(document.getElementById("root")!).render(
             <Route path="/about" element={<AboutPage />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/other-medicine" element={<OtherMedicine />} />
+            <Route path="/my-list" element={<MyList />} />
+            <Route path="/send-here/:id" element={<SendHere />} />
+            <Route path="/language-card" element={<LanguageCard />} />
+            <Route path="/for-pharmacies" element={<ForPharmacies />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </main>
@@ -53,6 +62,7 @@ createRoot(document.getElementById("root")!).render(
         <AuthModal />
         <ReportFormHost />
         <ReviewFormHost />
+        <TransferHost />
       </AppProvider>
     </BrowserRouter>
   </StrictMode>,

@@ -12,6 +12,7 @@ import {
 } from "../components/Bits";
 import { cardCost, coverageLines, nadacLine } from "../coverage";
 import { shortageKey } from "../i18n";
+import { BeforeYouGo, PriorAuthCard, ReportedLanguages, SavingsFinder, SendHereLink, StarButton, speaks } from "../components/Journey";
 
 type Sort = "distance" | "open" | "latest" | "rating" | "wait";
 interface Row extends ResultPharmacy { dist: number | null }
@@ -34,6 +35,20 @@ export function useResults() {
   }, [drug, insurance, plan, lang, at]);
   useEffect(load, [load, version]);
   return { drug, data, error, reload: load };
+}
+
+/** Demand signals: count this search once per browser session (drug + typed ZIP or neighborhood + week).
+ *  Never sent for "Use my location". The server ignores automated tests. */
+function useSearchCount(drugId: string | undefined) {
+  const { place, deviceOrigin } = useApp();
+  useEffect(() => {
+    const where = place.trim();
+    if (!drugId || !where || deviceOrigin) return;
+    const key = `rxlantern.counted.${drugId}.${where.toLowerCase()}`;
+    if (sessionStorage.getItem(key)) return;
+    sessionStorage.setItem(key, "1");
+    api.post("/api/search-count", { drug_id: drugId, place: where }).catch(() => undefined);
+  }, [drugId, place, deviceOrigin]);
 }
 
 export function withDistance(data: ResultsData | null, origin: { lat: number; lon: number } | null): Row[] {
@@ -143,7 +158,9 @@ function ResultCard({ p, data, alternative, onCall, highlight }: {
         <button type="button" className="btn primary" onClick={() => onCall(p)}><span aria-hidden="true">📞</span> {t("call")}</button>
         <a className="btn ghost" href={directionsHref(p.address)} target="_blank" rel="noreferrer">{t("directions")}</a>
         <Link className="btn ghost" to={`/pharmacies/${p.id}`}>{t("details")}</Link>
+        <SendHereLink pharmacyId={p.id} drugId={data.drug.id} />
       </div>
+      <ReportedLanguages real={p.reported_languages} sample={p.sample_reported_languages} compact />
       <ReportButtons pharmacyId={p.id} drugId={data.drug.id} controlled={controlled} compact />
       <button type="button" className="btn ghost rate-btn" onClick={() => rate(p.id)}><span aria-hidden="true">★</span> {t("ratePharmacy")}</button>
     </article>
@@ -209,9 +226,10 @@ export function Results() {
   const listRef = useRef<HTMLDivElement>(null);
 
   const rows = useMemo(() => withDistance(data, origin), [data, origin]);
+  useSearchCount(data?.drug.id);
   const shown = useMemo(() => sortRows(rows.filter((p) =>
     (!openOnly || p.open_now === true) && (!delivery || p.delivery === "yes") &&
-    (!language || (Array.isArray(p.languages) && p.languages.some((l) => l.toLowerCase().includes(language.toLowerCase()))))), sort),
+    (!language || speaks(p, language))), sort),
   [rows, openOnly, delivery, language, sort]);
   const openRows = useMemo(() => sortRows(rows.filter((p) => p.open_now === true), "distance"), [rows]);
   const select = useCallback((id: string) => {
@@ -248,10 +266,14 @@ export function Results() {
           <ReadAloud text={() => [data.drug.name, t(shortageKey(data.shortage.status)), ...coverageLines(data.coverage, data.plan, t),
             ...shown.slice(0, 3).map((p) => `${p.name}, ${p.address}. ${p.open_now ? t("openNow") : p.opens_next ? t("closedOpens", { when: p.opens_next }) : t("closed")}`)].join(". ")} />
           <button type="button" className="btn ghost" onClick={() => nav(`/print?drug=${data.drug.id}`)}><span aria-hidden="true">🖨</span> {t("printShare")}</button>
+          <StarButton drugId={data.drug.id} name={data.drug.name} />
         </div>
       </header>
 
       <Summary data={data} />
+      <PriorAuthCard coverage={data.coverage} />
+      <SavingsFinder drugId={data.drug.id} />
+      <BeforeYouGo drugName={data.drug.name} />
 
       {data.holidays.map((h) => (
         <p key={h.date} className="notice" role="note"><span aria-hidden="true">📅</span> {t("holidayNotice", { name: lang === "es" ? h.name_es : h.name, date: h.date })}</p>

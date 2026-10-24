@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useApp } from "../state";
 import { api } from "../api";
 import { CallScriptCard, SampleBadge, ShortageBadge, SourceLink } from "../components/Bits";
+import { StarButton, WatchHighlights } from "../components/Journey";
 
 interface Counts { in_stock_reports: number; out_of_stock_reports: number }
 interface DrugRow {
@@ -22,6 +23,7 @@ function DrugCard({ d }: { d: DrugRow }) {
       <div className="card-top">
         <h2 className="h3" id={`drug-${d.id}`}>{d.name}</h2>
         <ShortageBadge status={d.shortage_status} />
+        <StarButton drugId={d.id} name={d.name} />
       </div>
       <p className="small">{d.fda_estimate ? t("fdaEstimate", { text: d.fda_estimate }) : t("fdaNoEstimate")}</p>
       <p className="src muted">FDA · {t("checked", { date: d.checked_date })}{d.fda_updated && ` · ${t("fdaUpdated", { date: d.fda_updated })}`} · <SourceLink url={d.source} /></p>
@@ -59,6 +61,7 @@ export function Shortages() {
     <>
       <h1>{t("shortTitle")}</h1>
       <p className="lead">{t("shortIntro")}</p>
+      <WatchHighlights />
       {error && <p className="alert" role="alert">{error}</p>}
       {!rows && !error && <p className="muted" role="status">{t("loading")}</p>}
       <div className="drug-list">{rows?.map((d) => <DrugCard key={d.id} d={d} />)}</div>

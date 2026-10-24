@@ -31,6 +31,10 @@ SESSION_DAYS = 7
 LOGIN_MAX_FAILURES = 5
 LOGIN_WINDOW_MINUTES = 15
 GENERIC_LOGIN_ERROR = "That email and password don't match. Please try again."
+# Step 7c part 2: optional review details. Languages a patient can tick ("Staff spoke my language"), and the part of
+# the day of the visit (used for "Best time to go").
+STAFF_LANGUAGES = ["Cantonese", "Mandarin", "Haitian Creole", "Spanish", "Portuguese", "Vietnamese"]
+VISIT_TIMES = ["morning", "afternoon", "evening"]  # before noon, noon to 5 PM, after 5 PM
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS users (
@@ -53,6 +57,13 @@ CREATE TABLE IF NOT EXISTS reviews (
     visit_date TEXT NOT NULL, comment TEXT, status TEXT NOT NULL CHECK (status IN ('published', 'pending', 'rejected')),
     moderation TEXT, created_at TEXT NOT NULL, decided_at TEXT, decided_by TEXT
 );
+-- Step 7c part 2. Search counts are anonymous: drug, Boston neighborhood, week, and a number. Nothing about the person.
+CREATE TABLE IF NOT EXISTS search_counts (
+    drug_id TEXT NOT NULL, neighborhood TEXT NOT NULL, week TEXT NOT NULL, count INTEGER NOT NULL,
+    PRIMARY KEY (drug_id, neighborhood, week)
+);
+-- Real questions answered by the chat (a number only, never the question).
+CREATE TABLE IF NOT EXISTS impact_counter (key TEXT PRIMARY KEY, value INTEGER NOT NULL);
 CREATE INDEX IF NOT EXISTS idx_reports_pd ON stock_reports(pharmacy_id, drug_id, reported_at);
 CREATE INDEX IF NOT EXISTS idx_reviews_p ON reviews(pharmacy_id, status);
 """
@@ -84,6 +95,11 @@ def init_db() -> Path:
         if cols and "reported_at" not in cols and con.execute("SELECT COUNT(*) FROM stock_reports").fetchone()[0] == 0:
             con.execute("DROP TABLE stock_reports")
         con.executescript(SCHEMA)
+        review_cols = [r[1] for r in con.execute("PRAGMA table_info(reviews)")]
+        if "visit_time" not in review_cols:  # Step 7c part 2: added without touching existing rows
+            con.execute("ALTER TABLE reviews ADD COLUMN visit_time TEXT")
+        if "languages" not in review_cols:
+            con.execute("ALTER TABLE reviews ADD COLUMN languages TEXT")
         con.commit()
     finally:
         con.close()
@@ -323,19 +339,27 @@ def _published_stats(con, pharmacy_id: str) -> dict:
 def review_summary(pharmacy_id: str, limit: int = 5) -> dict:
     with _con() as con:
         stats = _published_stats(con, pharmacy_id)
-        recent = con.execute("SELECT r.rating, r.wait_minutes, r.visit_date, r.comment, u.display_name "
+        recent = con.execute("SELECT r.rating, r.wait_minutes, r.visit_date, r.visit_time, r.languages, r.comment, "
+                             "u.display_name "
                              "FROM reviews r JOIN users u ON u.id = r.user_id WHERE r.pharmacy_id = ? AND "
                              "r.status = 'published' ORDER BY r.created_at DESC LIMIT ?", (pharmacy_id, limit)).fetchall()
     return {"pharmacy_id": pharmacy_id, **stats,
             "recent": [{"rating": r["rating"], "wait_minutes": r["wait_minutes"], "visit_date": r["visit_date"],
+                        "visit_time": r["visit_time"], "languages": json.loads(r["languages"] or "[]"),
                         "comment": r["comment"], "by": r["display_name"]} for r in recent],
             "source": "RxLantern community reviews"}
 
 
 async def post_review(user: dict, pharmacy_id: str, rating: int, wait_minutes: int | None, visit_date: str,
-                      comment: str | None, now: datetime | None = None) -> dict:
+                      comment: str | None, now: datetime | None = None, visit_time: str | None = None,
+                      languages: list[str] | None = None) -> dict:
     now = now or _now()
     _pharmacy(pharmacy_id)
+    if visit_time is not None and visit_time not in VISIT_TIMES:
+        raise CommunityError("Please choose morning, afternoon, or evening for the time of your visit.")
+    languages = list(dict.fromkeys(languages or []))
+    if any(x not in STAFF_LANGUAGES for x in languages):
+        raise CommunityError("Please choose languages from the list.")
     if not isinstance(rating, int) or not 1 <= rating <= 5:
         raise CommunityError("Please choose a rating from 1 to 5.")
     if wait_minutes is not None and not 0 <= wait_minutes <= 600:
@@ -363,9 +387,10 @@ async def post_review(user: dict, pharmacy_id: str, rating: int, wait_minutes: i
     text = decision.get("cleaned_text") or comment
     with _con() as con:
         cur = con.execute(
-            "INSERT INTO reviews (user_id, pharmacy_id, rating, wait_minutes, visit_date, comment, status, moderation, "
-            "created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
-            (user["id"], pharmacy_id, rating, wait_minutes, vd.isoformat(), None if status == "rejected" else text,
+            "INSERT INTO reviews (user_id, pharmacy_id, rating, wait_minutes, visit_date, visit_time, languages, comment, "
+            "status, moderation, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            (user["id"], pharmacy_id, rating, wait_minutes, vd.isoformat(), visit_time,
+             json.dumps(languages) if languages else None, None if status == "rejected" else text,
              status, json.dumps({k: decision[k] for k in ("stage", "category", "reason")}), _iso(now)))
         con.commit()
         review_id = cur.lastrowid
@@ -438,11 +463,13 @@ def latest_reports(limit: int = 30, now: datetime | None = None) -> list[dict]:
 def latest_reviews(limit: int = 30) -> list[dict]:
     """Newest published (real) reviews across all pharmacies."""
     with _con() as con:
-        rows = con.execute("SELECT r.pharmacy_id, r.rating, r.wait_minutes, r.visit_date, r.comment, r.created_at, "
+        rows = con.execute("SELECT r.pharmacy_id, r.rating, r.wait_minutes, r.visit_date, r.visit_time, r.languages, "
+                           "r.comment, r.created_at, "
                            "u.display_name FROM reviews r JOIN users u ON u.id = r.user_id WHERE r.status = 'published' "
                            "ORDER BY r.created_at DESC LIMIT ?", (limit,)).fetchall()
     return [{"sample": False, "pharmacy_id": r["pharmacy_id"], "rating": r["rating"], "wait_minutes": r["wait_minutes"],
-             "visit_date": r["visit_date"], "comment": r["comment"], "by": r["display_name"],
+             "visit_date": r["visit_date"], "visit_time": r["visit_time"],
+             "languages": json.loads(r["languages"] or "[]"), "comment": r["comment"], "by": r["display_name"],
              "created_at": r["created_at"]} for r in rows]
 
 
@@ -473,3 +500,62 @@ def decide(review_id: int, approve: bool, admin: dict) -> dict:
 
 def new_run_id() -> str:
     return uuid.uuid4().hex[:12]
+
+
+# ----------------------------------------------------------------------------- Step 7c part 2
+def published_review_details(pharmacy_id: str | None = None) -> list[dict]:
+    """Rating, wait, visit day and time, and ticked languages of published (real) reviews."""
+    sql = "SELECT pharmacy_id, wait_minutes, visit_date, visit_time, languages FROM reviews WHERE status = 'published'"
+    args: tuple = ()
+    if pharmacy_id:
+        sql += " AND pharmacy_id = ?"
+        args = (pharmacy_id,)
+    with _con() as con:
+        rows = con.execute(sql, args).fetchall()
+    return [{"pharmacy_id": r["pharmacy_id"], "wait_minutes": r["wait_minutes"], "visit_date": r["visit_date"],
+             "visit_time": r["visit_time"], "languages": json.loads(r["languages"] or "[]")} for r in rows]
+
+
+def reports_since(drug_ids: list[str], since: datetime, in_stock: bool = True) -> list[dict]:
+    """Real reports for these drugs since a time (still inside the 72-hour window)."""
+    if not drug_ids:
+        return []
+    start = max(since, _now() - timedelta(hours=REPORT_WINDOW_HOURS))
+    marks = ",".join("?" * len(drug_ids))
+    with _con() as con:
+        rows = con.execute(f"SELECT pharmacy_id, drug_id, in_stock, reported_at FROM stock_reports WHERE drug_id IN ({marks}) "
+                           "AND reported_at > ? AND in_stock = ? ORDER BY reported_at DESC",
+                           (*drug_ids, _iso(start), int(in_stock))).fetchall()
+    return [{"sample": False, "pharmacy_id": r["pharmacy_id"], "drug_id": r["drug_id"], "in_stock": bool(r["in_stock"]),
+             "reported_at": r["reported_at"]} for r in rows]
+
+
+def count_search(drug_id: str, neighborhood: str, week: str) -> None:
+    with _con() as con:
+        con.execute("INSERT INTO search_counts (drug_id, neighborhood, week, count) VALUES (?, ?, ?, 1) "
+                    "ON CONFLICT(drug_id, neighborhood, week) DO UPDATE SET count = count + 1",
+                    (drug_id, neighborhood, week))
+        con.commit()
+
+
+def search_counts(weeks: list[str]) -> list[dict]:
+    if not weeks:
+        return []
+    with _con() as con:
+        rows = con.execute(f"SELECT drug_id, neighborhood, week, count FROM search_counts WHERE week IN "
+                           f"({','.join('?' * len(weeks))})", weeks).fetchall()
+    return [dict(r) for r in rows]
+
+
+def bump_counter(key: str, by: int = 1) -> int:
+    with _con() as con:
+        con.execute("INSERT INTO impact_counter (key, value) VALUES (?, ?) "
+                    "ON CONFLICT(key) DO UPDATE SET value = value + excluded.value", (key, by))
+        con.commit()
+        return con.execute("SELECT value FROM impact_counter WHERE key = ?", (key,)).fetchone()[0]
+
+
+def read_counter(key: str) -> int:
+    with _con() as con:
+        row = con.execute("SELECT value FROM impact_counter WHERE key = ?", (key,)).fetchone()
+    return row[0] if row else 0

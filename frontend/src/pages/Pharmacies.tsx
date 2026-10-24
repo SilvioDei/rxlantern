@@ -2,6 +2,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useApp } from "../state";
+import { speaks } from "../components/Journey";
 import { api, type PharmacyBrief } from "../api";
 import { PharmacyCardView, miles } from "../components/Bits";
 import { useOrigin } from "../origin";
@@ -29,7 +30,7 @@ export function Pharmacies() {
     (!openNow || p.open_now === true) &&
     (!delivery || p.delivery === "yes") &&
     (!vaccine || p.vaccines.includes(vaccine)) &&
-    (!language || (Array.isArray(p.languages) && p.languages.some((l) => l.toLowerCase().includes(language.toLowerCase())))) &&
+    (!language || speaks(p, language)) &&
     (!hood || p.neighborhood === hood))
     .map((p) => ({ ...p, distance_miles: origin ? Math.round(miles(origin, { lat: p.latitude, lon: p.longitude }) * 10) / 10 : null }))
     .sort((a, b) => (a.distance_miles ?? 0) - (b.distance_miles ?? 0)), [all, openNow, delivery, vaccine, language, hood, origin]);
@@ -61,7 +62,7 @@ export function Pharmacies() {
           </select>
         </label>
       </section>
-      {language && <p className="notice">{t("notListedNote")}</p>}
+      {language && list.length === 0 && <p className="notice">{t("notListedNote")}</p>}
       {error && <p className="alert" role="alert">{error}</p>}
       {!all && !error && <p className="muted">{t("loading")}</p>}
       {all && (

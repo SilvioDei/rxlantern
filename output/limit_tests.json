@@ -13,9 +13,9 @@
       "stopped": true,
       "stop_reason": "per-question limit reached: The next request would exceed the request_limit of 1. Consider raising the limit, or see the docs on usage limits for budget-aware patterns: https://pydantic.dev/docs/ai/core-concepts/agent/#usage-limits",
       "reply": "Sorry, this question needed more steps than I'm allowed to use. Please ask it in a shorter, simpler way, or call the pharmacy.",
-      "tokens_used": 1543,
+      "tokens_used": 1538,
       "model_requests": 1,
-      "run_id": "8273faa35287"
+      "run_id": "f2a362c4c617"
     },
     {
       "limit": "tool calls per question",
@@ -23,19 +23,19 @@
       "stopped": true,
       "stop_reason": "per-question limit reached: The next tool call(s) would exceed the tool_calls_limit of 1 (tool_calls=4). Consider raising the limit, or see the docs on usage limits for budget-aware patterns: https://pydantic.dev/docs/ai/core-concepts/agent/#usage-limits",
       "reply": "Sorry, this question needed more steps than I'm allowed to use. Please ask it in a shorter, simpler way, or call the pharmacy.",
-      "tokens_used": 4644,
+      "tokens_used": 4607,
       "model_requests": 3,
-      "run_id": "3b5dbc0b57aa"
+      "run_id": "d0fafd39a785"
     },
     {
       "limit": "total tokens per question",
       "test_setting": "1,500 tokens",
       "stopped": true,
-      "stop_reason": "per-question limit reached: Exceeded the total_tokens_limit of 1500 (total_tokens=1543). Consider raising the limit, or see the docs on usage limits for budget-aware patterns: https://pydantic.dev/docs/ai/core-concepts/agent/#usage-limits",
+      "stop_reason": "per-question limit reached: Exceeded the total_tokens_limit of 1500 (total_tokens=1538). Consider raising the limit, or see the docs on usage limits for budget-aware patterns: https://pydantic.dev/docs/ai/core-concepts/agent/#usage-limits",
       "reply": "Sorry, this question needed more steps than I'm allowed to use. Please ask it in a shorter, simpler way, or call the pharmacy.",
-      "tokens_used": 1543,
+      "tokens_used": 1538,
       "model_requests": 0,
-      "run_id": "f6b6bd4485cd"
+      "run_id": "17fe60df000f"
     },
     {
       "limit": "daily token budget (app)",
@@ -45,7 +45,7 @@
       "reply": "RxLantern is very busy right now. Please try again later today or tomorrow, or call your pharmacy.",
       "tokens_used": 0,
       "model_requests": 0,
-      "run_id": "6d19411b5e95"
+      "run_id": "080be82100e4"
     },
     {
       "limit": "questions per visitor per hour",
@@ -59,7 +59,7 @@
       "stop_reason": "rate limit: too many questions this hour",
       "reply": "You've asked a lot of questions in the last hour. Please wait a little and try again.",
       "tokens_used": 0,
-      "run_id": "a1b9ed16822a"
+      "run_id": "5b44dc8d8942"
     }
   ]
 }

@@ -162,7 +162,9 @@ def t_journey(browser):
     for txt in page.locator(".result-card").all_inner_texts():
         assert "Delivery: yes" in txt
     page.uncheck("input[name=delivery]")
-    page.select_option("select[name=language]", "Spanish")  # Step 7c: the wheelchair filter was removed
+    # Step 7c: the wheelchair filter was removed, and the language filter now includes languages patients reported
+    # (a sample review reports Spanish), so use a language nobody reported.
+    page.select_option("select[name=language]", "Vietnamese")
     expect(page.locator(".empty")).to_contain_text("don't list languages spoken")
     page.get_by_role("button", name="Clear filters").click()
     page.check("input[name=open]")
@@ -332,7 +334,7 @@ def t_pages(browser):
     page.goto(f"{BASE}/about")
     expect(page.locator("main")).to_contain_text("never stores health information")
     expect(page.locator("main")).to_contain_text("Answers can be wrong")
-    expect(page.locator(".data-table").first.locator("tbody tr")).to_have_count(10)
+    expect(page.locator(".data-table").first.locator("tbody tr")).to_have_count(11)  # Step 7c part 2: + savings sources
     shot(page, "14_about_privacy.png", full=True)
     return "all four pages load with their key sections"
 
@@ -564,7 +566,7 @@ def cleanup(browser) -> dict:
 def main() -> int:
     SHOTS.mkdir(parents=True, exist_ok=True)
     for old in SHOTS.glob("*.png"):
-        if not old.name.startswith("7c_"):  # Step 7c screenshots are retaken by tests/ui_step7c.py
+        if not old.name.startswith("7c"):  # Step 7c screenshots are retaken by tests/ui_step7c.py and ui_step7c2.py
             old.unlink()
     assert httpx.get(f"{BASE}/api/health").status_code == 200, "start the app first: ..\\.venv\\Scripts\\python.exe run.py"
     with sync_playwright() as pw:
@@ -578,7 +580,7 @@ def main() -> int:
     out = {"run_at": datetime.now().isoformat(timespec="seconds"), "base_url": BASE, "browser": "Chromium (Playwright)",
            "passed": passed, "failed": len(results) - passed, "checks": results,
            "cleanup": {"test_accounts_created": len(accounts), "rows_left_in_user_db": counts},
-           "screenshots": sorted(p.name for p in SHOTS.glob("*.png") if not p.name.startswith("7c_"))}
+           "screenshots": sorted(p.name for p in SHOTS.glob("*.png") if not p.name.startswith("7c"))}
     RESULTS.write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"\n{passed}/{len(results)} passed. Rows left in user DB: {counts}")
     return 0 if passed == len(results) and not any(counts.values()) else 1

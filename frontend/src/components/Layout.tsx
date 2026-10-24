@@ -86,6 +86,7 @@ export function Header() {
       </div>
       <nav className="main-nav" aria-label={t("mainNav")}>
         <NavLink to="/" end>{t("navHome")}</NavLink>
+        <NavLink to="/my-list">{t("navMyList")}</NavLink>
         <NavLink to="/pharmacies">{t("navPharmacies")}</NavLink>
         <NavLink to="/shortages">{t("navShortages")}</NavLink>
         <NavLink to="/vaccines">{t("navVaccines")}</NavLink>
@@ -113,6 +114,7 @@ export function Footer() {
       <p><strong>{t("footer1")}</strong></p>
       <p>{t("footer2")}</p>
       <p>{t("footerPrivacy")} <Link to="/about">{t("navAbout")}</Link></p>
+      <p className="footer-links"><Link to="/language-card">{t("navLanguageCard")}</Link> · <Link to="/for-pharmacies">{t("navForPharmacies")}</Link></p>
       {lang === "es" && <p className="small">{t("dataEnglishNote")}</p>}
     </footer>
   );

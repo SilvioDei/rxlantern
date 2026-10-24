@@ -30,6 +30,16 @@ Put `PORTKEY_API_KEY=...` in a `.env` file in `rxcompass/` or one folder above i
   number, holiday notices, community stock reports (last 72 hours), reviews, and buttons to call (with a script),
   get directions, report "They have it / They don't", and rate the pharmacy. "Print / share for my doctor" makes a
   printable summary with no personal information.
+- **My medicine list**: add 2 to 5 medicines and see nearby pharmacies ranked by how likely they are to fill all of
+  them ("Reported in stock for 2 of 3 of your medicines"; always call to confirm). Saved only in your browser.
+- On the results page: a **prior authorization helper** when coverage needs PA, a **savings finder** (links to GoodRx,
+  TrumpRx.gov, and the maker's savings program; never prices; note only for Medicare and MassHealth), a **Before you
+  go** checklist, a star to **watch** a medicine, and **Send it here** cards to show your doctor. After "They don't
+  have it", a **transfer helper** script.
+- Pharmacy pages: **Best time to go** (typical wait by day and time, from 3+ reviews) and **languages reported by
+  patients** ("Staff spoke my language" in reviews), also used by the language filter.
+- **Language help card** (Chinese, Haitian Creole, Spanish, English) and a **For pharmacies** page with anonymous
+  search counts (5 or more only). A **time-saved** estimate is on the home and About pages.
 - **Pharmacies**, **Shortage watch** (all 150 medicines), **Vaccines**, **Community** (search by medicine, pharmacy,
   or neighborhood; sort by newest or rating), **About & Privacy**, and an **Admin** moderation queue (admins only).
 - Voice input (🎤 Speak) and Read aloud for everyone, Easy view (large text, high contrast, big buttons),
@@ -55,7 +65,8 @@ today.
 Pharmacies' own websites, the ClinCalc DrugStats "Top 300 of 2024" list (AHRQ MEPS data) for choosing the 150
 medicines, RxNorm, the openFDA NDC directory (DEA schedules), openFDA drug shortages (refreshed in the background at
 most once a day), NADAC, the MassHealth Drug List, CMS Medicare Part D files, CDC / CMS / Mass.gov vaccine rules, each insurance plan's own
-website (`data/insurance_plans.json`), and Census ZIP centers. Every fact shows its source and the date it was checked;
+website (`data/insurance_plans.json`), Census ZIP centers, and for savings links: GoodRx's sitemap, TrumpRx.gov's
+medication list, and each brand's own website (`data/savings.json`, rebuilt by `scripts/build_savings.py`). Every fact shows its source and the date it was checked;
 see the About & Privacy page.
 
 ## MassHealth data
@@ -73,8 +84,9 @@ then restart the app.
 
 ## Tests
 
-`tests/ui_step7b.py` and `tests/ui_step7c.py` check the whole site in a real browser (Playwright) while the app
-runs. Results are in `output/ui_test_results.json` and `output/ui_test_results_7c.json`, screenshots in
+`tests/ui_step7b.py`, `tests/ui_step7c.py`, and `tests/ui_step7c2.py` check the whole site in a real browser (Playwright) while the app
+runs. Results are in `output/ui_test_results.json`, `output/ui_test_results_7c.json`, and
+`output/ui_test_results_7c2.json`, screenshots in
 `output/screenshots/`. `tests/try_agents.py` runs the agent test questions (uses the AI model) and
 `tests/check_agent_rules.py` checks the answers against the rules. The medication data check for pharmacists is
 `output/medication_check.md`.

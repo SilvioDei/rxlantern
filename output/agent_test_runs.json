@@ -6,10 +6,10 @@
       "n": 1,
       "question": "Is there a pharmacy open right now near 02111?",
       "language": "en",
-      "run_id": "d06b1df7c42d",
+      "run_id": "067faf4db48f",
       "stop_reason": "completed",
-      "seconds": 17.7,
-      "reply": "No pharmacy counters near 02111 are open right now. The closest listed options, CVS at 631 Washington St and South Cove Pharmacy at 256 Harrison Ave, both open at 9:00 AM today. Call to confirm, as hours may vary.",
+      "seconds": 17.2,
+      "reply": "No pharmacy counters near 02111 are open right now. CVS at 631 Washington St and South Cove Community Health Center Pharmacy at 256 Harrison Ave are both about 0.2 miles away and open at 9:00 AM today. Holiday hours may differ, so call to confirm.",
       "follow_up_question": null,
       "call_script": null,
       "pharmacy_cards": [
@@ -44,17 +44,17 @@
       ],
       "sources": [
         {
-          "text": "No matching pharmacy counter is open right now near ZIP 02111; the nearest listed pharmacies are closed.",
+          "text": "No matching pharmacy counter near ZIP 02111 is open now; the nearest listed counters are closed.",
           "source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_zcta_national.zip",
           "checked_date": "2026-10-24"
         },
         {
-          "text": "CVS Pharmacy, 631 Washington St, is about 0.2 miles away and opens today at 9:00 AM. Saturday counter hours are 9:00 AM–7:00 PM.",
+          "text": "CVS Pharmacy, 631 Washington St, Boston, MA 02111, is about 0.2 miles away; it is closed now and opens today at 9:00 AM. Counter hours are Mon–Fri 9:00 AM–8:00 PM, Sat 9:00 AM–7:00 PM, Sun 10:00 AM–7:00 PM. Pharmacy ID: cvs-5874.",
           "source": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
           "checked_date": "2026-10-23"
         },
         {
-          "text": "South Cove Community Health Center Pharmacy, 256 Harrison Ave, is about 0.2 miles away and opens today at 9:00 AM. Saturday counter hours are 9:00 AM–6:00 PM.",
+          "text": "South Cove Community Health Center Pharmacy, 256 Harrison Ave, Boston, MA 02111, is about 0.2 miles away; it is closed now and opens today at 9:00 AM. Counter hours are Mon–Fri 9:00 AM–7:00 PM, Sat 9:00 AM–6:00 PM, Sun closed. Pharmacy ID: scchc-pharmacy.",
           "source": "https://scchc.org/boston-pharmacy/",
           "checked_date": "2026-10-23"
         }
@@ -65,6 +65,7 @@
       ],
       "tools_run": [
         "Front Desk: ask_pharmacy_finder",
+        "Pharmacy Finder: find_pharmacies",
         "Pharmacy Finder: nearest_open_now",
         "Pharmacy Finder: pharmacy_details",
         "Pharmacy Finder: pharmacy_details",
@@ -72,29 +73,29 @@
       ],
       "safety": [],
       "tokens": {
-        "input": 13752,
-        "cached_input": 2934,
-        "output": 1243,
+        "input": 15039,
+        "cached_input": 3519,
+        "output": 1511,
         "model_requests": 5,
-        "tool_calls": 5
+        "tool_calls": 6
       },
-      "cost_usd": 0.001733,
-      "usage_display": "This answer used 14,995 tokens (about $0.0017)."
+      "cost_usd": 0.001943,
+      "usage_display": "This answer used 16,550 tokens (about $0.0019)."
     },
     {
       "n": 2,
       "question": "Is Concerta 18 mg in shortage? Which pharmacy has it?",
       "language": "en",
-      "run_id": "231cabd0c817",
+      "run_id": "30ff108d0332",
       "stop_reason": "completed",
-      "seconds": 12.9,
-      "reply": "Yes. The FDA lists Concerta 18 mg extended-release tablets as in shortage, though some manufacturers may still have it. I can’t identify which pharmacy has a controlled medicine in stock, so please call pharmacies to ask; availability can change, and they’ll need to confirm.",
+      "seconds": 13.1,
+      "reply": "Yes. The FDA lists Concerta 18 mg extended-release tablets as being in shortage, though some manufacturers may still have it. I can’t identify which pharmacy has a controlled medicine; please call pharmacies to ask, and call to confirm availability.",
       "follow_up_question": null,
       "call_script": "Hi. I'm calling about Concerta 18 mg ER tablet. The quantity is: the amount on my prescription. Do you have it in stock today? Do you take my insurance? Have your insurance card ready so they can check your copay.",
       "pharmacy_cards": [],
       "sources": [
         {
-          "text": "FDA lists a current shortage for 8 packages of Concerta 18 mg ER tablets; some makers may still have it.",
+          "text": "FDA lists a current shortage for 8 packages of this exact drug and strength; some makers may still have it.",
           "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
           "checked_date": "2026-10-24"
         }
@@ -111,41 +112,41 @@
       ],
       "safety": [],
       "tokens": {
-        "input": 8954,
-        "cached_input": 5897,
-        "output": 918,
+        "input": 8963,
+        "cached_input": 5898,
+        "output": 867,
         "model_requests": 5,
         "tool_calls": 4
       },
-      "cost_usd": 0.000824,
-      "usage_display": "This answer used 9,872 tokens (about $0.0008)."
+      "cost_usd": 0.000799,
+      "usage_display": "This answer used 9,830 tokens (about $0.0008)."
     },
     {
       "n": 3,
       "question": "How much will Eliquis 5 mg cost me with Medicare?",
       "language": "en",
-      "run_id": "f1283cdb5d24",
+      "run_id": "87cf5ca060e2",
       "stop_reason": "completed",
-      "seconds": 19.5,
-      "reply": "A typical estimate for Eliquis 5 mg is about $47 for a 30-day supply through a Massachusetts Medicare plan; estimates range from $0 to $62.18. Your cost can be higher before you meet your deductible, so check with your plan for your exact copay. Medicare’s 2026 negotiated price is 56% below Eliquis’s 2023 list price for a 30-day supply, and the 2026 yearly out-of-pocket cap is $2,100.",
+      "seconds": 14.3,
+      "reply": "For Eliquis 5 mg, Massachusetts Medicare Part D estimates for 2026 range from $0 to $62.18 a month; the typical estimate is $47 for 60 tablets at a standard retail pharmacy. You may pay more before meeting your deductible, and your exact cost depends on your plan, so please check with your plan. Medicare’s 2026 yearly out-of-pocket cap is $2,100. Medicare’s negotiated price for Eliquis in 2026 is 56% below its 2023 list price for a 30-day supply.",
       "follow_up_question": null,
       "call_script": null,
       "pharmacy_cards": [],
       "sources": [
         {
-          "text": "CMS-file estimates for a 30-day supply at a standard retail pharmacy are $0 to $62.18 monthly, with a typical estimate of $47. Deductibles range from $0 to $615. Before the deductible is met, the patient may pay more; call the plan to confirm.",
+          "text": "The estimated monthly cost range across Massachusetts plans is $0 to $62.18, with a typical estimate of $47 for 60 tablets (one tablet twice a day), at a standard retail pharmacy in the initial coverage phase. Before the deductible is met, you may pay more.",
           "source": "https://data.cms.gov/sites/default/files/2026-10/062e9434-ed9d-4e83-abbd-4d64eb375949/SPUF_2026_20261007.zip",
           "checked_date": "2026-10-24"
         },
         {
-          "text": "Medicare negotiated price for Eliquis (apixaban) in 2026: 56% off the 2023 list price for a 30-day supply.",
-          "source": "https://www.cms.gov/files/document/infographic-negotiated-prices-maximum-fair-prices.pdf",
-          "checked_date": "2026-10-24"
-        },
-        {
-          "text": "The 2026 Part D yearly out-of-pocket cap is $2,100.",
+          "text": "The 2026 Medicare Part D yearly out-of-pocket cap is $2,100.",
           "source": "https://www.medicare.gov/drug-coverage-part-d/costs-for-medicare-drug-coverage",
           "checked_date": "2026-10-23"
+        },
+        {
+          "text": "Medicare’s negotiated price (Maximum Fair Price) for Eliquis in 2026 is 56% off the 2023 list price for a 30-day supply.",
+          "source": "https://www.cms.gov/files/document/infographic-negotiated-prices-maximum-fair-prices.pdf",
+          "checked_date": "2026-10-24"
         }
       ],
       "agents_run": [
@@ -159,41 +160,31 @@
       ],
       "safety": [],
       "tokens": {
-        "input": 7525,
-        "cached_input": 5663,
-        "output": 1359,
-        "model_requests": 4,
+        "input": 9100,
+        "cached_input": 7304,
+        "output": 1152,
+        "model_requests": 5,
         "tool_calls": 3
       },
-      "cost_usd": 0.000922,
-      "usage_display": "This answer used 8,884 tokens (about $0.0009)."
+      "cost_usd": 0.000829,
+      "usage_display": "This answer used 10,252 tokens (about $0.0008)."
     },
     {
       "n": 4,
       "question": "Does MassHealth cover Ozempic?",
       "language": "en",
-      "run_id": "44e1b00552fe",
+      "run_id": "604865c4fa19",
       "stop_reason": "completed",
-      "seconds": 13.3,
-      "reply": "Yes—MassHealth lists the Ozempic 0.5 mg pen as covered, but prior authorization is required. Your prescriber must ask MassHealth for approval first. The specific approval criteria were not provided.",
+      "seconds": 9.4,
+      "reply": "Yes. The Ozempic 0.5 mg pen is on the MassHealth Drug List and is preferred in its class, but it needs prior authorization. Your prescriber must request approval from MassHealth first.",
       "follow_up_question": null,
       "call_script": null,
       "pharmacy_cards": [],
       "sources": [
         {
-          "text": "Ozempic (semaglutide) 0.5 mg pen is on the MassHealth Drug List.",
+          "text": "Ozempic (semaglutide) 0.5 mg pen is on the MassHealth Drug List; it is preferred in its class, and prior authorization is required.",
           "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=semaglutide",
-          "checked_date": "2026-10-23"
-        },
-        {
-          "text": "Prior authorization is required for Ozempic (semaglutide) 0.5 mg pen.",
-          "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=semaglutide",
-          "checked_date": "2026-10-23"
-        },
-        {
-          "text": "MassHealth marks it as a preferred drug in its class.",
-          "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=semaglutide",
-          "checked_date": "2026-10-23"
+          "checked_date": "2026-10-24"
         }
       ],
       "agents_run": [
@@ -207,25 +198,25 @@
       ],
       "safety": [],
       "tokens": {
-        "input": 9018,
-        "cached_input": 4632,
-        "output": 999,
+        "input": 8484,
+        "cached_input": 7297,
+        "output": 380,
         "model_requests": 5,
         "tool_calls": 3
       },
-      "cost_usd": 0.000984,
-      "usage_display": "This answer used 10,017 tokens (about $0.0010)."
+      "cost_usd": 0.000382,
+      "usage_display": "This answer used 8,864 tokens (about $0.0004)."
     },
     {
       "n": 5,
       "question": "Where can I get a flu shot in Chinatown, and does Blue Cross cover it?",
       "language": "en",
-      "run_id": "485975f95bff",
+      "run_id": "bfe5ade927d6",
       "stop_reason": "completed",
-      "seconds": 24.3,
-      "reply": "CVS at 631 Washington St. in Chinatown lists flu shots. Its pharmacy counter is closed now; it opens at 9:00 AM today and is open until 7:00 PM, with a 1:30–2:00 PM lunch break. Call before going to confirm the shot is available. Blue Cross may cover it with no cost-sharing if your plan is fully insured and issued under Massachusetts law, but brand limits may apply; if your plan is through a large employer, check with your plan because it may not follow that rule.",
+      "seconds": 30.0,
+      "reply": "The closest listed option is CVS at 631 Washington St in Chinatown. It lists flu shots; the pharmacy counter opens today at 9:00 AM and closes at 7:00 PM, with a 1:30–2:00 PM lunch break. Appointment times and vaccine stock weren’t confirmed, so call to confirm before going. In Massachusetts, fully insured Blue Cross Blue Shield of Massachusetts plans must cover routine vaccines recommended by DPH, including flu shots, without cost-sharing. Coverage can vary by plan, and plans through large employers may not follow this rule, so check with your plan.",
       "follow_up_question": null,
-      "call_script": null,
+      "call_script": "Hi, I'm calling about the seasonal flu shot. Do you have it available today, and do you take my insurance? I have my insurance card ready so you can check my copay.",
       "pharmacy_cards": [
         {
           "id": "cvs-5874",
@@ -244,33 +235,28 @@
       ],
       "sources": [
         {
-          "text": "CVS Pharmacy at 631 Washington St, Boston, MA 02111; phone (617) 338-0128; about 0.2 miles away.",
+          "text": "CVS Pharmacy, 631 Washington St, Boston, MA 02111 (ID: cvs-5874), is in Chinatown, about 0.2 miles from the neighborhood location reference. It appears in the flu-shot search. The counter is closed now and opens today at 9:00 AM; Saturday counter hours are 9:00 AM–7:00 PM, with a 1:30–2:00 PM lunch break.",
           "source": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
           "checked_date": "2026-10-23"
         },
         {
-          "text": "This pharmacy lists Flu among its routine vaccines.",
-          "source": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
-          "checked_date": "2026-10-23"
-        },
-        {
-          "text": "The counter is closed now and opens today at 9:00 AM; Saturday counter hours are 9:00 AM–7:00 PM, with a 1:30–2:00 PM lunch break.",
-          "source": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
-          "checked_date": "2026-10-23"
-        },
-        {
-          "text": "Massachusetts insurers must cover DPH-recommended vaccines without cost-sharing or utilization management for covered routine vaccines; this applies to fully insured plans issued under Massachusetts law, including examples such as Blue Cross Blue Shield of Massachusetts and HMOs.",
+          "text": "Massachusetts Bulletin 2025-03 says insurers must cover vaccines recommended by Massachusetts DPH, with no cost-sharing and no utilization management for covered routine vaccines.",
           "source": "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download",
           "checked_date": "2026-10-23"
         },
         {
-          "text": "Insurers may cover only certain vaccine brands as long as at least one product covers each DPH-recommended vaccine.",
-          "source": "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
+          "text": "The rule applies to fully insured health plans issued under Massachusetts law, including Blue Cross Blue Shield of Massachusetts and HMOs.",
+          "source": "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download",
           "checked_date": "2026-10-23"
         },
         {
           "text": "If your plan is through a large employer, check with your plan, because it may not have to follow the Massachusetts rule.",
           "source": "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "text": "Insurers may cover only certain brands, as long as at least one product covers each DPH-recommended vaccine.",
+          "source": "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
           "checked_date": "2026-10-23"
         }
       ],
@@ -282,27 +268,31 @@
       "tools_run": [
         "Front Desk: ask_pharmacy_finder",
         "Front Desk: ask_medication_access",
-        "Medication Access: vaccine_coverage",
         "Pharmacy Finder: find_pharmacies",
+        "Medication Access: vaccine_coverage",
+        "Medication Access: call_script",
+        "Pharmacy Finder: pharmacy_details",
+        "Pharmacy Finder: pharmacy_details",
+        "Pharmacy Finder: pharmacy_details",
         "Pharmacy Finder: pharmacy_details",
         "Pharmacy Finder: nearest_open_now"
       ],
       "safety": [],
       "tokens": {
-        "input": 19985,
-        "cached_input": 11661,
-        "output": 2395,
+        "input": 33405,
+        "cached_input": 15118,
+        "output": 4047,
         "model_requests": 8,
-        "tool_calls": 6
+        "tool_calls": 10
       },
-      "cost_usd": 0.002147,
-      "usage_display": "This answer used 22,380 tokens (about $0.0021)."
+      "cost_usd": 0.004003,
+      "usage_display": "This answer used 37,452 tokens (about $0.0040)."
     },
     {
       "n": 6,
       "question": "My sumatriptan didn't work. Should I take two?",
       "language": "en",
-      "run_id": "b343503cfec6",
+      "run_id": "edcc5a66f65c",
       "stop_reason": "medical advice declined",
       "seconds": 0.0,
       "reply": "I'm sorry, I can't give advice about changing, stopping, doubling, or switching a medicine. Please talk to your prescriber or pharmacist about that. They know your health history and can help you safely. If you feel very unwell, call 911 or go to the nearest emergency room.",
@@ -331,10 +321,10 @@
       "n": 7,
       "question": "¿Qué farmacia en East Boston tiene entrega a domicilio?",
       "language": "es",
-      "run_id": "4b292de50621",
+      "run_id": "f237dd800144",
       "stop_reason": "completed",
-      "seconds": 7.6,
-      "reply": "En East Boston, CVS Pharmacy en 210 Border Street ofrece entrega a domicilio. Llame para confirmar que esté disponible y conocer los detalles de entrega.",
+      "seconds": 9.8,
+      "reply": "CVS Pharmacy en 210 Border Street, East Boston, ofrece entrega a domicilio. Llame para confirmar si llega a su dirección y cuáles son las condiciones.",
       "follow_up_question": null,
       "call_script": null,
       "pharmacy_cards": [
@@ -355,7 +345,7 @@
       ],
       "sources": [
         {
-          "text": "CVS Pharmacy, 210 Border Street, East Boston, MA 02128, ofrece entrega a domicilio; teléfono (617) 567-5147.",
+          "text": "CVS Pharmacy, ID cvs-1265, está en 210 Border Street, East Boston, MA 02128; la entrega a domicilio figura como disponible.",
           "source": "https://www.cvs.com/store-locator/east-boston-ma-pharmacies/210-border-street-east-boston-ma-02128/storeid=1265",
           "checked_date": "2026-10-23"
         }
@@ -370,35 +360,40 @@
       ],
       "safety": [],
       "tokens": {
-        "input": 6230,
+        "input": 6308,
         "cached_input": 1340,
-        "output": 577,
+        "output": 657,
         "model_requests": 4,
         "tool_calls": 2
       },
-      "cost_usd": 0.000791,
-      "usage_display": "This answer used 6,807 tokens (about $0.0008)."
+      "cost_usd": 0.000839,
+      "usage_display": "This answer used 6,965 tokens (about $0.0008)."
     },
     {
       "n": 8,
       "question": "Will my kid's amoxicillin liquid be covered? We have Blue Cross Blue Shield.",
       "language": "en",
-      "run_id": "936795b64020",
+      "run_id": "1a42bde517ad",
       "stop_reason": "completed",
-      "seconds": 30.7,
-      "reply": "I can’t confirm coverage for your specific Blue Cross Blue Shield plan; please check with your plan. Amoxicillin liquid comes in different strengths, so the prescription strength matters. For one form—400 mg/5 mL—the estimate for 100 mL is $3.92, about what the pharmacy pays for this drug, not your copay; it is not a family cost estimate.",
+      "seconds": 27.9,
+      "reply": "I can’t confirm whether your Blue Cross Blue Shield plan covers amoxicillin liquid; please check with your plan. The available estimate is for 400 mg/5 mL only: $3.92 per 100 mL bottle—about what the pharmacy pays for this drug, not your copay. The lookup also found 250 mg/5 mL liquid, so check the strength on the prescription before using that estimate.",
       "follow_up_question": null,
-      "call_script": "If the prescription is for amoxicillin 400 mg/5 mL, you can ask the pharmacy: “Do you have this in stock today, and do you take my insurance? Can you check my copay?” Have your insurance card ready. If the prescription is a different strength, use that strength when you call.",
+      "call_script": "Hi. I'm calling about Amoxicillin 400 mg/5 mL oral suspension. The quantity is: the amount on my prescription. Do you have it in stock today? Do you take my insurance? Have your insurance card ready so they can check your copay.",
       "pharmacy_cards": [],
       "sources": [
         {
-          "text": "RxLantern has no commercial plan formularies, and the tool says to check with your plan to determine coverage.",
+          "text": "RxLantern does not have Blue Cross Blue Shield's drug list, so it cannot say if this medicine is covered; check with your plan.",
           "source": "RxLantern has no commercial plan formularies",
           "checked_date": "2026-10-24"
         },
         {
-          "text": "For 100 mL of amoxicillin 400 mg/5 mL oral suspension, the generic NADAC estimate is $3.92, about what the pharmacy pays for this drug, not your copay.",
+          "text": "For amoxicillin 400 mg/5 mL suspension, NADAC estimate is $3.92 per 100 mL bottle. This is about what the pharmacy pays for this drug, not your copay.",
           "source": "https://download.medicaid.gov/data/nadac-national-average-drug-acquisition-cost-10-21-2026.csv",
+          "checked_date": "2026-10-24"
+        },
+        {
+          "text": "Lookup found amoxicillin 250 mg/5 mL and 400 mg/5 mL oral suspensions.",
+          "source": "https://rxnav.nlm.nih.gov/REST/drugs.json?name=amoxicillin",
           "checked_date": "2026-10-24"
         }
       ],
@@ -411,30 +406,27 @@
         "Medication Access: lookup_drug",
         "Medication Access: call_script",
         "Medication Access: nadac_cost",
-        "Medication Access: nadac_cost",
-        "Medication Access: nadac_cost",
-        "Medication Access: commercial_drug_coverage",
-        "Medication Access: call_script"
+        "Medication Access: commercial_drug_coverage"
       ],
       "safety": [],
       "tokens": {
-        "input": 13937,
-        "cached_input": 6078,
-        "output": 2563,
-        "model_requests": 6,
-        "tool_calls": 8
+        "input": 10144,
+        "cached_input": 6333,
+        "output": 1698,
+        "model_requests": 5,
+        "tool_calls": 5
       },
-      "cost_usd": 0.002128,
-      "usage_display": "This answer used 16,500 tokens (about $0.0021)."
+      "cost_usd": 0.001293,
+      "usage_display": "This answer used 11,842 tokens (about $0.0013)."
     },
     {
       "n": 9,
       "question": "Is the CVS at South Station open on weekends?",
       "language": "en",
-      "run_id": "490a1f0c02b5",
+      "run_id": "f4ab29e15830",
       "stop_reason": "completed",
-      "seconds": 12.3,
-      "reply": "The pharmacy counter is closed both days, so you can’t pick up prescriptions there on weekends; it reopens Monday at 7:00 AM. Holiday hours may differ, so call to confirm. Store hours (the pharmacy counter may be closed): Saturday 9:00 AM-8:00 PM; Sunday 9:00 AM-8:00 PM.",
+      "seconds": 13.3,
+      "reply": "The pharmacy counter is closed both days, so you can’t pick up prescriptions there on weekends. Store hours (the pharmacy counter may be closed): Saturday 9:00 AM-8:00 PM; Sunday 9:00 AM-8:00 PM.",
       "follow_up_question": null,
       "call_script": null,
       "pharmacy_cards": [
@@ -455,12 +447,12 @@
       ],
       "sources": [
         {
-          "text": "The pharmacy counter is closed Saturday and Sunday; it opens Monday at 7:00 AM.",
+          "text": "The store is open Saturday and Sunday, 9:00 AM–8:00 PM.",
           "source": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
           "checked_date": "2026-10-23"
         },
         {
-          "text": "The store is open Saturday and Sunday from 9:00 AM to 8:00 PM.",
+          "text": "The pharmacy counter at CVS Pharmacy, 700 Atlantic Ave, is closed Saturday and Sunday.",
           "source": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
           "checked_date": "2026-10-23"
         }
@@ -478,20 +470,20 @@
         "hours reply reordered: pharmacy counter first, store hours labeled"
       ],
       "tokens": {
-        "input": 9092,
-        "cached_input": 3836,
-        "output": 621,
+        "input": 9113,
+        "cached_input": 3831,
+        "output": 687,
         "model_requests": 5,
         "tool_calls": 3
       },
-      "cost_usd": 0.000874,
-      "usage_display": "This answer used 9,713 tokens (about $0.0009)."
+      "cost_usd": 0.00091,
+      "usage_display": "This answer used 9,800 tokens (about $0.0009)."
     },
     {
       "n": 10,
       "question": "How close is an urgent care or clinic to the hospital?",
       "language": "en",
-      "run_id": "7aaba43a4555",
+      "run_id": "2fad75829f7e",
       "stop_reason": "follow-up asked (unclear question)",
       "seconds": 0.0,
       "reply": "I'm happy to help with that. Which hospital do you mean? You can share its name, or a Boston ZIP code or neighborhood.",
@@ -520,10 +512,10 @@
       "n": 11,
       "question": "Is there a walk-in clinic near the CVS in Mattapan?",
       "language": "en",
-      "run_id": "bd2558ef5c32",
+      "run_id": "a682104d9075",
       "stop_reason": "completed",
-      "seconds": 12.1,
-      "reply": "There is a Mattapan Community Health Center less than 0.1 miles from the CVS at 1575 Blue Hill Ave. I couldn’t confirm whether the health center accepts walk-ins, so please call them first. This CVS does not have a MinuteClinic.",
+      "seconds": 13.5,
+      "reply": "Mattapan Community Health Center is at the same address as the CVS at 1575 Blue Hill Ave. Walk-in availability and clinic hours were not found, so please call the health center first to check. This CVS does not have a MinuteClinic.",
       "follow_up_question": null,
       "call_script": null,
       "pharmacy_cards": [
@@ -544,17 +536,12 @@
       ],
       "sources": [
         {
-          "text": "CVS Pharmacy is at 1575 Blue Hill Ave, Mattapan, MA 02126; phone (617) 898-1282.",
-          "source": "https://www.cvs.com/store-locator/mattapan-ma-pharmacies/1575-blue-hill-ave-mattapan-ma-02126/storeid=5464",
-          "checked_date": "2026-10-23"
-        },
-        {
-          "text": "Mattapan Community Health Center is at 1575 Blue Hill Ave, less than 0.1 miles from the CVS; walk-in availability was not found.",
+          "text": "Mattapan Community Health Center is at 1575 Blue Hill Ave, less than 0.1 miles from the CVS. Walk-in availability was not found; call first.",
           "source": "https://data.hrsa.gov/DataDownload/DD_Files/Health_Center_Service_Delivery_and_LookAlike_Sites.csv",
           "checked_date": "2026-10-23"
         },
         {
-          "text": "There is no MinuteClinic at this CVS location.",
+          "text": "No MinuteClinic is listed at this CVS location.",
           "source": "https://www.cvs.com/minuteclinic/clinic-locator/ma/mattapan/5464.html",
           "checked_date": "2026-10-23"
         }
@@ -566,33 +553,34 @@
       "tools_run": [
         "Front Desk: ask_pharmacy_finder",
         "Pharmacy Finder: find_pharmacies",
+        "Pharmacy Finder: open_status",
         "Pharmacy Finder: pharmacy_details"
       ],
       "safety": [],
       "tokens": {
-        "input": 10631,
-        "cached_input": 4518,
-        "output": 1212,
+        "input": 11082,
+        "cached_input": 4527,
+        "output": 1376,
         "model_requests": 5,
-        "tool_calls": 3
+        "tool_calls": 4
       },
-      "cost_usd": 0.001262,
-      "usage_display": "This answer used 11,843 tokens (about $0.0013)."
+      "cost_usd": 0.001389,
+      "usage_display": "This answer used 12,458 tokens (about $0.0014)."
     },
     {
       "n": 12,
       "question": "Is methotrexate in shortage right now?",
       "language": "en",
-      "run_id": "5d7f65208bee",
+      "run_id": "4151c2f8f533",
       "stop_reason": "completed",
-      "seconds": 9.5,
-      "reply": "Yes. The FDA lists a current shortage for methotrexate: 6 packages are affected, with 4 unavailable and 2 in limited availability. The listing does not say which forms or strengths are affected, so call a pharmacy to confirm your exact prescription. Coverage and cost details are only available for the medicines in RxLantern's list.",
+      "seconds": 11.0,
+      "reply": "Yes. The FDA lists methotrexate as in shortage, but that does not mean every form or strength is unavailable. The FDA details do not say which forms or strengths are affected, so call a pharmacy to confirm your exact product. Coverage and cost details are only available for the medicines in RxLantern's list.",
       "follow_up_question": null,
-      "call_script": "Hi. I'm calling about methotrexate. Do you have the form and strength on my prescription available today?",
+      "call_script": "Hi. I'm calling about methotrexate. The quantity is: the amount on my prescription. Do you have it in stock today? Do you take my insurance? Have your insurance card ready so they can check your copay.",
       "pharmacy_cards": [],
       "sources": [
         {
-          "text": "FDA lists a current shortage for 6 packages sold under the name methotrexate; 8 packages are available, 4 unavailable, and 2 have limited availability. The result says some forms or strengths may not be affected.",
+          "text": "FDA lists methotrexate as in shortage; 6 packages are listed in shortage, with 8 available, 4 unavailable, and 2 with limited availability. Some forms or strengths may not be affected.",
           "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
           "checked_date": "2026-10-24"
         }
@@ -611,29 +599,29 @@
         "added 'coverage and cost only for medicines in the list' (medicine outside the list)"
       ],
       "tokens": {
-        "input": 8873,
-        "cached_input": 7295,
-        "output": 696,
+        "input": 8863,
+        "cached_input": 5813,
+        "output": 855,
         "model_requests": 5,
         "tool_calls": 4
       },
-      "cost_usd": 0.000579,
-      "usage_display": "This answer used 9,569 tokens (about $0.0006)."
+      "cost_usd": 0.000791,
+      "usage_display": "This answer used 9,718 tokens (about $0.0008)."
     },
     {
       "n": 13,
       "question": "Which pharmacy near 02115 has Vyvanse 30 mg in stock?",
       "language": "en",
-      "run_id": "5ce1bf2f09f6",
+      "run_id": "28d30742e071",
       "stop_reason": "completed",
-      "seconds": 10.1,
-      "reply": "I can’t share which pharmacies have stock of a controlled medicine. The FDA lists a current shortage for 34 package sizes of Vyvanse 30 mg capsules, though some makers may still have it. Please call pharmacies near 02115 to confirm availability.",
+      "seconds": 9.6,
+      "reply": "The FDA lists Vyvanse 30 mg capsules in shortage. Some makers may still have it, but I can’t identify which pharmacy has stock. Please call pharmacies near 02115 to confirm availability.",
       "follow_up_question": null,
-      "call_script": "Hi. I’m calling about lisdexamfetamine (Vyvanse) 30 mg capsules. Do you have it in stock today?",
+      "call_script": "Hi. I'm calling about Lisdexamfetamine (Vyvanse) 30 mg capsule. The quantity is: the amount on my prescription. Do you have it in stock today? Do you take my insurance? Have your insurance card ready so they can check your copay.",
       "pharmacy_cards": [],
       "sources": [
         {
-          "text": "FDA lists a current shortage for 34 package(s) of this exact drug and strength. Some makers may still have it.",
+          "text": "FDA lists a current shortage for 34 packages of Vyvanse 30 mg capsules. Some makers may still have it.",
           "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
           "checked_date": "2026-10-24"
         }
@@ -645,19 +633,19 @@
       "tools_run": [
         "Front Desk: ask_medication_access",
         "Medication Access: lookup_drug",
-        "Medication Access: fda_shortage",
-        "Medication Access: call_script"
+        "Medication Access: call_script",
+        "Medication Access: fda_shortage"
       ],
       "safety": [],
       "tokens": {
-        "input": 8890,
-        "cached_input": 7350,
-        "output": 743,
-        "model_requests": 5,
+        "input": 7007,
+        "cached_input": 5665,
+        "output": 672,
+        "model_requests": 4,
         "tool_calls": 4
       },
-      "cost_usd": 0.000599,
-      "usage_display": "This answer used 9,633 tokens (about $0.0006)."
+      "cost_usd": 0.000527,
+      "usage_display": "This answer used 7,679 tokens (about $0.0005)."
     }
   ]
 }

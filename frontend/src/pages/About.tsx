@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useApp } from "../state";
 import { api, type Plan } from "../api";
 import { SourceLink } from "../components/Bits";
+import { ImpactLine } from "../components/Journey";
 import type { Key } from "../i18n";
 
 interface About { sources: { key: string; source: string; url: string | null; checked_date: string | null }[]; plans: Plan[] }
@@ -18,6 +19,7 @@ const LABELS: Record<string, Record<"en" | "es", string>> = {
   insurance: { en: "Insurance pharmacy finders and phone numbers", es: "Buscadores de farmacias y teléfonos de seguros" },
   zips: { en: "ZIP code locations", es: "Ubicación de códigos postales" },
   holidays: { en: "Holidays", es: "Días festivos" },
+  savings: { en: "Savings links (GoodRx, TrumpRx.gov, manufacturers)", es: "Enlaces de ahorro (GoodRx, TrumpRx.gov, fabricantes)" },
 };
 
 export function AboutPage() {
@@ -32,6 +34,7 @@ export function AboutPage() {
     <>
       <h1>{t("aboutTitle")}</h1>
       <section className="card"><h2>{t("aboutWhat")}</h2><p>{t("aboutWhatText")}</p></section>
+      <ImpactLine full />
       <div className="two-col">
         {sections.map(([h, p]) => (
           <section key={h} className="card" id={h === "aboutVoice" ? "voice" : undefined}>

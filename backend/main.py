@@ -9,7 +9,7 @@ from fastapi import FastAPI, HTTPException, Request, Response
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
 from pydantic import BaseModel, Field
 
-from backend import community, safety, shortage_refresh, usage_log, web_api
+from backend import community, insights, safety, shortage_refresh, usage_log, web_api
 from backend.build_db import ensure_db
 from backend.config import APP_NAME, REPO_DIR
 from backend.models import AskRequest, FinalReply
@@ -27,6 +27,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title=APP_NAME, lifespan=lifespan)
 app.include_router(web_api.router)
+app.include_router(insights.router)
 
 
 @app.get("/api/health")
@@ -48,9 +49,11 @@ async def ask_route(body: AskRequest, request: Request):
         reply = await rate_limited(body.question, body.language)
         return JSONResponse(status_code=429, content=reply.model_dump())
     try:
-        return await ask(body.question, body.language, body.zip_code, body.insurance_type)
+        reply = await ask(body.question, body.language, body.zip_code, body.insurance_type)
     except Exception as e:  # noqa: BLE001 - give the patient a calm message, not a stack trace
         raise HTTPException(502, "Something went wrong while answering. Please try again.") from e
+    insights.count_real_question(request, reply.stop_reason == "completed")  # time-saved counter (never tests)
+    return reply
 
 
 @app.get("/api/usage")
@@ -76,7 +79,7 @@ class LoginBody(BaseModel):
 
 
 class StockReportBody(BaseModel):
-    drug_id: str = Field(description="One of the 25 RxLantern drug IDs (the ID includes the strength).")
+    drug_id: str = Field(description="One of the 150 RxLantern drug IDs (the ID includes the strength).")
     in_stock: bool
 
 
@@ -85,6 +88,8 @@ class ReviewBody(BaseModel):
     wait_minutes: int | None = Field(default=None, ge=0, le=600)
     visit_date: str = Field(description="YYYY-MM-DD")
     comment: str | None = Field(default=None, max_length=300)
+    visit_time: str | None = Field(default=None, description="morning, afternoon, or evening")
+    languages: list[str] = Field(default_factory=list, max_length=6, description="Staff spoke my language")
 
 
 @app.exception_handler(community.CommunityError)
@@ -155,7 +160,8 @@ def read_reports(pharmacy_id: str, drug_id: str | None = None) -> dict:
 @app.post("/api/pharmacies/{pharmacy_id}/reviews")
 async def post_review_route(pharmacy_id: str, body: ReviewBody, request: Request) -> dict:
     return await community.post_review(require_user(request), pharmacy_id, body.rating, body.wait_minutes,
-                                       body.visit_date, body.comment)
+                                       body.visit_date, body.comment, visit_time=body.visit_time,
+                                       languages=body.languages)
 
 
 @app.get("/api/pharmacies/{pharmacy_id}/reviews")

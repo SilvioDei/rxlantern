@@ -3,6 +3,8 @@
 import { useCallback, useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useApp } from "../state";
+import { BeforeYouGo, ReportedLanguages, SendHereLink, langName } from "../components/Journey";
+import type { PharmacyInsights } from "../api";
 import { api, type Holiday, type PharmacyBrief, type ReportCounts, type Review, type ReviewSummary, type StockSummary } from "../api";
 import { CallScriptCard, NotFoundText, OpenBadge, ReadAloud, SampleBadge, Stars, ago, directionsHref, telHref } from "../components/Bits";
 import { DAY_NAMES } from "../i18n";
@@ -43,14 +45,37 @@ function ReportList({ items, sample }: { items: ReportCounts[]; sample?: boolean
   );
 }
 
+/** Best time to go: typical wait by weekday and part of the day, only with at least 3 reviews in that slot. */
+function BestTime({ pharmacyId }: { pharmacyId: string }) {
+  const { t, lang, version } = useApp();
+  const [x, setX] = useState<PharmacyInsights | null>(null);
+  useEffect(() => { api.get<PharmacyInsights>(`/api/pharmacies/${pharmacyId}/insights`).then(setX).catch(() => setX(null)); }, [pharmacyId, version]);
+  if (!x) return null;
+  const line = (b: PharmacyInsights["best_times"][number]) =>
+    t("bestTimeLine", { day: lang === "es" ? b.day_es : b.day_en, time: t(`t_${b.time}` as never), m: b.typical_wait_minutes });
+  return (
+    <section className="card best-time" aria-labelledby="best-time-title">
+      <h2 id="best-time-title">{t("bestTimeTitle")}</h2>
+      {x.best_times.length === 0 && x.sample_best_times.length === 0 && <p className="muted best-time-none">{t("bestTimeNone")}</p>}
+      {x.best_times.length > 0 && <ul className="plain-list best-time-real">{x.best_times.map((b) => <li key={b.weekday + b.time}>{line(b)} ({b.reviews})</li>)}</ul>}
+      {x.sample_best_times.length > 0 && (
+        <ul className="plain-list best-time-sample">{x.sample_best_times.map((b) => <li key={b.weekday + b.time}><SampleBadge /> {line(b)} ({b.reviews})</li>)}</ul>
+      )}
+      <p className="small muted">{t("bestTimeNote")}</p>
+    </section>
+  );
+}
+
 function ReviewList({ items }: { items: Review[] }) {
+  const { t } = useApp();
   return (
     <ul className="feed">
       {items.map((r, i) => (
         <li key={i} className={r.sample ? "feed-item is-sample" : "feed-item"}>
           {r.sample && <SampleBadge />} <Stars n={r.rating} />
           {r.wait_minutes != null && <span className="muted"> · {r.wait_minutes} min</span>}
-          <span className="muted"> · {r.visit_date} · {r.by}</span>
+          <span className="muted"> · {r.visit_date}{r.visit_time ? ` (${t(`vt_${r.visit_time}` as never)})` : ""} · {r.by}</span>
+          {r.languages && r.languages.length > 0 && <span className="muted"> · {t("langReportedBadge")}: {r.languages.map((l) => langName(t, l)).join(", ")}</span>}
           {r.comment && <p className="review-text">{r.comment}</p>}
         </li>
       ))}
@@ -100,7 +125,9 @@ export function PharmacyPage() {
         <a className="btn ghost" href={directionsHref(d.address)} target="_blank" rel="noreferrer">{t("directions")}</a>
         <a className="btn ghost" href={d.website} target="_blank" rel="noreferrer">{new URL(d.website).hostname.replace(/^www\./, "")} ↗</a>
         <button type="button" className="btn ghost" onClick={() => rate(id)}><span aria-hidden="true">★</span> {t("ratePharmacy")}</button>
+        <SendHereLink pharmacyId={id} drugId={drugId || null} />
       </div>
+      <BeforeYouGo drugName={drug?.name} hoursToday={d.brief.counter_today === "closed" ? t("closed") : d.brief.counter_today} />
       {d.holidays.map((h) => <p key={h.date} className="notice" role="note">{t("holidayNotice", { name: lang === "es" ? h.name_es : h.name, date: h.date })}</p>)}
 
       <section className="hours-grid" aria-label={t("counterHours")}>
@@ -142,8 +169,11 @@ export function PharmacyPage() {
             <li><strong>{t("clinic")}:</strong> <NotFoundText value={d.clinic_on_site} /></li>
             <li><strong>{t("specialty")}:</strong> <NotFoundText value={d.specialty_pharmacy} /></li>
             <li><strong>{t("driveThru")}:</strong> <NotFoundText value={d.drive_thru} /></li>
-            <li><strong>{t("fLanguage")}:</strong> <NotFoundText value={Array.isArray(d.languages) ? d.languages.join(", ") : d.languages} /></li>
+            <li><strong>{t("fLanguage")} ({t("langWebsite")}):</strong> <NotFoundText value={Array.isArray(d.languages) ? d.languages.join(", ") : d.languages} /></li>
           </ul>
+          <h3 className="h3">{t("langReportedTitle")}</h3>
+          <ReportedLanguages real={d.brief.reported_languages} sample={d.brief.sample_reported_languages} />
+          <p className="small muted"><Link to="/language-card">{t("langCardLink")}</Link></p>
         </div>
       </section>
 
@@ -177,6 +207,8 @@ export function PharmacyPage() {
         {d.sample_reports.length > 0 && <ReportList items={d.sample_reports} sample />}
         <p className="reminder">{t("callToConfirm")}</p>
       </section>
+
+      <BestTime pharmacyId={id} />
 
       <section className="card" aria-labelledby="reviews-title">
         <div className="section-head">

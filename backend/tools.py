@@ -301,20 +301,23 @@ def fda_estimate(entries: list[dict]) -> str | None:
     return "; ".join(dict.fromkeys(found)) or None
 
 
-def shortage_from_db(drug_id: str) -> dict:
+def shortage_from_db(drug_id: str, con=None) -> dict:
     """Shortage status for a page load: never calls openFDA. Uses the newest saved result (the daily background
-    refresh in backend/shortage_refresh.py, else the snapshot that ships with the repo)."""
-    with _connect() as con:
-        row = con.execute("SELECT result_json FROM shortage_cache WHERE drug_id = ?", (drug_id,)).fetchone()
-        if row:
-            r = json.loads(row["result_json"]) | {"from": "openFDA API (refreshed in the background, at most daily)"}
-        else:
-            snap = con.execute("SELECT * FROM shortages WHERE drug_id = ?", (drug_id,)).fetchone()
-            if snap is None:
-                return {"status": NF, "summary": "FDA shortage data not found.", "source": SHORTAGE_PAGE,
-                        "checked_date": NF, "fda_estimate": None, "fda_updated": None}
-            r = dict(snap) | {"matching_entries": json.loads(snap["matching_entries"] or "[]"),
-                              "from": "saved snapshot in data/shortages_snapshot.json"}
+    refresh in backend/shortage_refresh.py, else the snapshot that ships with the repo). Pass an open connection to
+    read many drugs at once (shortage watch)."""
+    if con is None:
+        with _connect() as own:
+            return shortage_from_db(drug_id, own)
+    row = con.execute("SELECT result_json FROM shortage_cache WHERE drug_id = ?", (drug_id,)).fetchone()
+    if row:
+        r = json.loads(row["result_json"]) | {"from": "openFDA API (refreshed in the background, at most daily)"}
+    else:
+        snap = con.execute("SELECT * FROM shortages WHERE drug_id = ?", (drug_id,)).fetchone()
+        if snap is None:
+            return {"status": NF, "summary": "FDA shortage data not found.", "source": SHORTAGE_PAGE,
+                    "checked_date": NF, "fda_estimate": None, "fda_updated": None}
+        r = dict(snap) | {"matching_entries": json.loads(snap["matching_entries"] or "[]"),
+                          "from": "saved snapshot in data/shortages_snapshot.json"}
     entries = r.get("matching_entries") or []
     try:
         checked = datetime.fromisoformat(r["checked_at"]).astimezone(BOSTON_TZ).date().isoformat()
@@ -987,9 +990,9 @@ def vaccine_coverage(vaccine: str, insurance_type: str = "unknown") -> dict:
     return out
 
 
-def call_script(drug_name: str, quantity: str | None = None, lang: str = "en") -> dict:
-    """Tool: a short script the patient can read when calling a pharmacy."""
-    d = find_drug(drug_name)
+def call_script(drug_name: str, quantity: str | None = None, lang: str = "en", drug: dict | None = None) -> dict:
+    """Tool: a short script the patient can read when calling a pharmacy. Pass the drug row to skip the lookup."""
+    d = drug or find_drug(drug_name)
     name = d["display_name"] if d else drug_name
     qty = quantity or ("the amount on my prescription" if lang == "en" else "la cantidad de mi receta")
     if lang == "es":

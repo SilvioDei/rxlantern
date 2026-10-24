@@ -7,6 +7,7 @@ import { api, ApiError, type DrugMeta, type FinalReply } from "../api";
 import { Answer } from "../components/Answer";
 import { MicButton, MicNote } from "../components/Bits";
 import { MedicineSearch } from "../components/MedicineSearch";
+import { ImpactLine, WatchHighlights } from "../components/Journey";
 import { STRINGS } from "../i18n";
 import { medicines, optionFromQuery, type Medicine } from "../search";
 
@@ -296,9 +297,11 @@ export function Home() {
   return (
     <>
       <TopSearch onPick={startGuided} />
+      <WatchHighlights />
       <section className="hero">
         <h1>{t("heroTitle")}</h1>
         <p className="lead">{t("heroText")}</p>
+        <ImpactLine />
       </section>
       <HowItWorks />
       <GuidedSearch preset={preset} />

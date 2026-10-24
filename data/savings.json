@@ -1,0 +1,2790 @@
+{
+ "checked_date": "2026-10-24",
+ "note": "Discount cards and coupons usually mean paying cash outside your insurance, so the cost may not count toward your deductible. Manufacturer copay cards generally can't be used with Medicare or MassHealth.",
+ "sources": {
+  "goodrx": "https://www.goodrx.com/sitemaps/drug-price.xml",
+  "trumprx": "https://trumprx.gov/browse",
+  "manufacturer": "each brand's official website (see brand_site)"
+ },
+ "rule": "Links only. RxLantern never copies or shows GoodRx or TrumpRx prices.",
+ "drugs": [
+  {
+   "drug_id": "adderall_xr_30",
+   "goodrx": {
+    "url": "https://www.goodrx.com/adderall-xr",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "not found",
+    "link_text": null,
+    "brand_site": "https://www.adderallxr.com/",
+    "source": "https://www.adderallxr.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "concerta_18",
+   "goodrx": {
+    "url": "https://www.goodrx.com/concerta",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.concerta.net/coupon.html",
+    "link_text": "Savings Card",
+    "brand_site": "https://www.concerta.net/",
+    "source": "https://www.concerta.net/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "atorvastatin_20",
+   "goodrx": {
+    "url": "https://www.goodrx.com/atorvastatin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/atorvastatin",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "lisinopril_10",
+   "goodrx": {
+    "url": "https://www.goodrx.com/lisinopril",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/lisinopril",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "levothyroxine_50",
+   "goodrx": {
+    "url": "https://www.goodrx.com/levothyroxine",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/levothyroxine",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "metformin_500",
+   "goodrx": {
+    "url": "https://www.goodrx.com/metformin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/metformin",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "amlodipine_5",
+   "goodrx": {
+    "url": "https://www.goodrx.com/amlodipine",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/amlodipine",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "omeprazole_20",
+   "goodrx": {
+    "url": "https://www.goodrx.com/omeprazole",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/omeprazole",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "sertraline_50",
+   "goodrx": {
+    "url": "https://www.goodrx.com/sertraline",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/sertraline",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "amoxicillin_500",
+   "goodrx": {
+    "url": "https://www.goodrx.com/amoxicillin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/amoxicillin-trihydrate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "ozempic_05",
+   "goodrx": {
+    "url": "https://www.goodrx.com/ozempic",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/ozempic",
+    "listed": true,
+    "list": "Presidential deals",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.ozempic.com/savings-and-resources/save-on-ozempic.html",
+    "link_text": "Ozempic® Savings",
+    "brand_site": "https://www.ozempic.com/",
+    "source": "https://www.ozempic.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "mounjaro_5",
+   "goodrx": {
+    "url": "https://www.goodrx.com/mounjaro",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/mounjaro",
+    "listed": true,
+    "list": "Presidential deals",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://mounjaro.lilly.com/savings-coverage",
+    "link_text": "How to save on Mounjaro",
+    "brand_site": "https://mounjaro.lilly.com/",
+    "source": "https://mounjaro.lilly.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "eliquis_5",
+   "goodrx": {
+    "url": "https://www.goodrx.com/eliquis",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.eliquis.bmscustomerconnect.com/savings-and-support",
+    "link_text": "COST, SAVINGS & SUPPORT",
+    "brand_site": "https://www.eliquis.com/",
+    "source": "https://www.eliquis.bmscustomerconnect.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "humira_40",
+   "goodrx": {
+    "url": "https://www.goodrx.com/humira",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/humira-pen",
+    "listed": true,
+    "list": "Presidential deals",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.humira.com/cost",
+    "link_text": "Cost & Savings",
+    "brand_site": "https://www.humira.com/",
+    "source": "https://www.humira.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "dupixent_300",
+   "goodrx": {
+    "url": "https://www.goodrx.com/dupixent",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.dupixent.com/support-savings/copay-card-insurance",
+    "link_text": "Copay Offer",
+    "brand_site": "https://www.dupixent.com/",
+    "source": "https://www.dupixent.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "albuterol_hfa",
+   "goodrx": {
+    "url": "https://www.goodrx.com/albuterol",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/albuterol-hfa",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "lantus_solostar",
+   "goodrx": {
+    "url": "https://www.goodrx.com/lantus",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/lantus",
+    "listed": true,
+    "list": "Presidential deals",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.lantus.com/sign-up-for-savings",
+    "link_text": "SAVINGS",
+    "brand_site": "https://www.lantus.com/",
+    "source": "https://www.lantus.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "amoxicillin_susp_400",
+   "goodrx": {
+    "url": "https://www.goodrx.com/amoxicillin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/amoxicillin-trihydrate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "sumatriptan_50",
+   "goodrx": {
+    "url": "https://www.goodrx.com/sumatriptan",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/sumatriptan",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "latanoprost_0005",
+   "goodrx": {
+    "url": "https://www.goodrx.com/latanoprost",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/latanoprost",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "fluticasone_nasal_50",
+   "goodrx": {
+    "url": "https://www.goodrx.com/fluticasone-propionate",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/fluticasone-propionate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "triamcinolone_cream_01",
+   "goodrx": {
+    "url": "https://www.goodrx.com/triamcinolone",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/triamcinolone-acetonide-topical",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "epinephrine_03",
+   "goodrx": {
+    "url": "https://www.goodrx.com/epinephrine-epipen",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/epinephrine",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "nicotine_patch_21",
+   "goodrx": {
+    "url": "https://www.goodrx.com/nicotine",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "paxlovid",
+   "goodrx": {
+    "url": "https://www.goodrx.com/paxlovid",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.paxlovid.com/paxcess",
+    "link_text": "Save on PAXLOVID Eligibility required",
+    "brand_site": "https://www.paxlovid.com/",
+    "source": "https://www.paxlovid.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "wegovy_24",
+   "goodrx": {
+    "url": "https://www.goodrx.com/wegovy",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/wegovy",
+    "listed": true,
+    "list": "Presidential deals",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.wegovy.com/obesity/what-to-pay-for-wegovy.html",
+    "link_text": "Save on Wegovy®",
+    "brand_site": "https://www.wegovy.com/",
+    "source": "https://www.wegovy.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "rybelsus_7",
+   "goodrx": {
+    "url": "https://www.goodrx.com/rybelsus",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "not found",
+    "link_text": null,
+    "brand_site": "https://www.rybelsus.com/",
+    "source": "https://www.rybelsus.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "zepbound_25",
+   "goodrx": {
+    "url": "https://www.goodrx.com/zepbound",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/zepbound",
+    "listed": true,
+    "list": "Presidential deals",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://zepbound.lilly.com/savings",
+    "link_text": "Explore savings options",
+    "brand_site": "https://zepbound.lilly.com/",
+    "source": "https://zepbound.lilly.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "trulicity_15",
+   "goodrx": {
+    "url": "https://www.goodrx.com/trulicity",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/trulicity",
+    "listed": true,
+    "list": "Presidential deals",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://trulicity.lilly.com/savings-resources",
+    "link_text": "Savings & Resources",
+    "brand_site": "https://www.trulicity.com/",
+    "source": "https://trulicity.lilly.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "victoza_18",
+   "goodrx": {
+    "url": "https://www.goodrx.com/victoza",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.victoza.com/victoza-support-and-savings.html",
+    "link_text": "Get support",
+    "brand_site": "https://www.victoza.com/",
+    "source": "https://www.victoza.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "jardiance_10",
+   "goodrx": {
+    "url": "https://www.goodrx.com/jardiance",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://patient.boehringer-ingelheim.com/us/products/jardiance/savings",
+    "link_text": "$0 CO-PAY OFFER",
+    "brand_site": "https://www.jardiance.com/",
+    "source": "https://patient.boehringer-ingelheim.com/us/products/jardiance/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "farxiga_10",
+   "goodrx": {
+    "url": "https://www.goodrx.com/farxiga",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/farxiga",
+    "listed": true,
+    "list": "Presidential deals",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.farxiga.com/savings-support",
+    "link_text": "Savings",
+    "brand_site": "https://www.farxiga.com/",
+    "source": "https://www.farxiga.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "januvia_100",
+   "goodrx": {
+    "url": "https://www.goodrx.com/januvia",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/januvia",
+    "listed": true,
+    "list": "Presidential deals",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "not found",
+    "link_text": null,
+    "brand_site": "https://www.januvia.com/",
+    "source": "https://www.januvia.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "glipizide_5",
+   "goodrx": {
+    "url": "https://www.goodrx.com/glipizide",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/glipizide",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "pioglitazone_30",
+   "goodrx": {
+    "url": "https://www.goodrx.com/pioglitazone",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/pioglitazone",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "metformin_er_500",
+   "goodrx": {
+    "url": "https://www.goodrx.com/metformin-er-glucophage-xr",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/metformin-hcl",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "humalog_kwikpen",
+   "goodrx": {
+    "url": "https://www.goodrx.com/humalog",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/insulin-lispro",
+    "listed": true,
+    "list": "Presidential deals",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://insulins.lilly.com/lilly-insulin-value-program",
+    "link_text": "Lilly Insulin Value Program",
+    "brand_site": "https://www.humalog.com/",
+    "source": "https://insulins.lilly.com/lilly-insulin-value-program",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "novolog_flexpen",
+   "goodrx": {
+    "url": "https://www.goodrx.com/novolog",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/novolog",
+    "listed": true,
+    "list": "Presidential deals",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.novolog.com/savings.html",
+    "link_text": "Savings & Affordability",
+    "brand_site": "https://www.novolog.com/",
+    "source": "https://www.novolog.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "tresiba_flextouch",
+   "goodrx": {
+    "url": "https://www.goodrx.com/tresiba",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.tresiba.com/savings.html",
+    "link_text": "Savings & Affordability",
+    "brand_site": "https://www.tresiba.com/",
+    "source": "https://www.tresiba.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "toujeo_solostar",
+   "goodrx": {
+    "url": "https://www.goodrx.com/toujeo",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/toujeo",
+    "listed": true,
+    "list": "Presidential deals",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.toujeo.com/coverage-and-savings",
+    "link_text": "COVERAGE & SAVINGS",
+    "brand_site": "https://www.toujeo.com/",
+    "source": "https://www.toujeo.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "insulin_nph_pen",
+   "goodrx": {
+    "url": "https://www.goodrx.com/humulin-n",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "advair_diskus_250",
+   "goodrx": {
+    "url": "https://www.goodrx.com/advair",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/fluticasone-salmeterol",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.gskforyou.com/",
+    "link_text": "Medicine Savings",
+    "brand_site": "https://www.advair.com/",
+    "source": "https://www.advair.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "symbicort_160",
+   "goodrx": {
+    "url": "https://www.goodrx.com/symbicort",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/budesonide-formoterol-fumarate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.azpatientsupport.com/",
+    "link_text": "SAVINGS & SUPPORT",
+    "brand_site": "https://www.symbicort.com/",
+    "source": "https://www.mysymbicort.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "trelegy_100",
+   "goodrx": {
+    "url": "https://www.goodrx.com/trelegy-ellipta",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.trelegy.com/savings-and-support",
+    "link_text": "GET SAVINGS",
+    "brand_site": "https://www.trelegy.com/",
+    "source": "https://www.trelegy.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "spiriva_handihaler",
+   "goodrx": {
+    "url": "https://www.goodrx.com/spiriva-handihaler",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/tiotropium-bromide-inhalation-powder",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "not found",
+    "link_text": null,
+    "brand_site": "https://www.spiriva.com/",
+    "source": "https://www.spiriva.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "flovent_hfa_110",
+   "goodrx": {
+    "url": "https://www.goodrx.com/flovent",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/fluticasone-propionate-hfa",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.gskforyou.com/",
+    "link_text": "Medicine Savings",
+    "brand_site": "https://www.flovent.com/",
+    "source": "https://www.flovent.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "albuterol_neb_25",
+   "goodrx": {
+    "url": "https://www.goodrx.com/albuterol",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/albuterol-sulfate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "duoneb",
+   "goodrx": {
+    "url": "https://www.goodrx.com/ipratropium-albuterol",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/ipratropium-albuterol",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "budesonide_neb_05",
+   "goodrx": {
+    "url": "https://www.goodrx.com/budesonide",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/budesonide",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "montelukast_10",
+   "goodrx": {
+    "url": "https://www.goodrx.com/montelukast",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "montelukast_chew_5",
+   "goodrx": {
+    "url": "https://www.goodrx.com/montelukast",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "benzonatate_100",
+   "goodrx": {
+    "url": "https://www.goodrx.com/benzonatate",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/benzonatate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "naloxone_nasal_4",
+   "goodrx": {
+    "url": "https://www.goodrx.com/narcan",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "not found",
+    "link_text": null,
+    "brand_site": "https://www.narcan.com/",
+    "source": "https://www.narcan.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "oseltamivir_75",
+   "goodrx": {
+    "url": "https://www.goodrx.com/oseltamivir",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/oseltamivir-phosphate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "oseltamivir_susp",
+   "goodrx": {
+    "url": "https://www.goodrx.com/oseltamivir",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/oseltamivir",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "amoxicillin_susp_250",
+   "goodrx": {
+    "url": "https://www.goodrx.com/amoxicillin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/amoxicillin-trihydrate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "amox_clav_875",
+   "goodrx": {
+    "url": "https://www.goodrx.com/augmentin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/amoxicillin-pot-clavulanate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "amox_clav_susp_400",
+   "goodrx": {
+    "url": "https://www.goodrx.com/augmentin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/amoxicillin-pot-clavulanate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "azithromycin_250",
+   "goodrx": {
+    "url": "https://www.goodrx.com/azithromycin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/azithromycin",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "azithromycin_susp_200",
+   "goodrx": {
+    "url": "https://www.goodrx.com/azithromycin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/azithromycin",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "cephalexin_500",
+   "goodrx": {
+    "url": "https://www.goodrx.com/cephalexin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/cephalexin",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "cephalexin_susp_250",
+   "goodrx": {
+    "url": "https://www.goodrx.com/cephalexin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/cephalexin",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "cefdinir_susp_250",
+   "goodrx": {
+    "url": "https://www.goodrx.com/cefdinir",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/cefdinir",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "doxycycline_100",
+   "goodrx": {
+    "url": "https://www.goodrx.com/doxycycline-hyclate",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/doxycycline-hyclate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "smx_tmp_ds",
+   "goodrx": {
+    "url": "https://www.goodrx.com/sulfamethoxazole-trimethoprim",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/sulfamethoxazole-trimethoprim",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "smx_tmp_susp",
+   "goodrx": {
+    "url": "https://www.goodrx.com/sulfamethoxazole-trimethoprim",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/sulfamethoxazole-trimethoprim",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "nitrofurantoin_100",
+   "goodrx": {
+    "url": "https://www.goodrx.com/nitrofurantoin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/nitrofurantoin-mono-macro",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "ciprofloxacin_500",
+   "goodrx": {
+    "url": "https://www.goodrx.com/ciprofloxacin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/ciprofloxacin",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "metronidazole_500",
+   "goodrx": {
+    "url": "https://www.goodrx.com/metronidazole",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/metronidazole",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "penicillin_vk_500",
+   "goodrx": {
+    "url": "https://www.goodrx.com/penicillin-v-potassium",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/penicillin-v-potassium",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "fluconazole_150",
+   "goodrx": {
+    "url": "https://www.goodrx.com/fluconazole",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/fluconazole",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "valacyclovir_1g",
+   "goodrx": {
+    "url": "https://www.goodrx.com/valacyclovir",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/valacyclovir",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "mupirocin_2",
+   "goodrx": {
+    "url": "https://www.goodrx.com/mupirocin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/mupirocin",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "losartan_50",
+   "goodrx": {
+    "url": "https://www.goodrx.com/losartan",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/losartan",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "metoprolol_succ_er_50",
+   "goodrx": {
+    "url": "https://www.goodrx.com/metoprolol-er",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "metoprolol_tart_25",
+   "goodrx": {
+    "url": "https://www.goodrx.com/metoprolol",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/metoprolol-tartrate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "rosuvastatin_10",
+   "goodrx": {
+    "url": "https://www.goodrx.com/rosuvastatin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/rosuvastatin",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "hydrochlorothiazide_25",
+   "goodrx": {
+    "url": "https://www.goodrx.com/microzide",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/hydrochlorothiazide",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "simvastatin_20",
+   "goodrx": {
+    "url": "https://www.goodrx.com/simvastatin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/simvastatin",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "pravastatin_40",
+   "goodrx": {
+    "url": "https://www.goodrx.com/pravastatin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/pravastatin",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "furosemide_20",
+   "goodrx": {
+    "url": "https://www.goodrx.com/furosemide",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/furosemide",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "carvedilol_125",
+   "goodrx": {
+    "url": "https://www.goodrx.com/carvedilol",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/carvedilol",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "spironolactone_25",
+   "goodrx": {
+    "url": "https://www.goodrx.com/spironolactone",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/spironolactone",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "clopidogrel_75",
+   "goodrx": {
+    "url": "https://www.goodrx.com/clopidogrel",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/clopidogrel",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "valsartan_160",
+   "goodrx": {
+    "url": "https://www.goodrx.com/valsartan",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/valsartan",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "ezetimibe_10",
+   "goodrx": {
+    "url": "https://www.goodrx.com/zetia",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/ezetimibe",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "propranolol_10",
+   "goodrx": {
+    "url": "https://www.goodrx.com/propranolol",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/propranolol-hcl",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "xarelto_20",
+   "goodrx": {
+    "url": "https://www.goodrx.com/xarelto",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/xarelto",
+    "listed": true,
+    "list": "Presidential deals",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.xarelto-us.com/xarelto-cost/",
+    "link_text": "Savings & Support",
+    "brand_site": "https://www.xarelto-us.com/",
+    "source": "https://www.xarelto-us.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "warfarin_5",
+   "goodrx": {
+    "url": "https://www.goodrx.com/warfarin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/warfarin",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "entresto_49_51",
+   "goodrx": {
+    "url": "https://www.goodrx.com/entresto",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/sacubitril-valsartan",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "not found",
+    "link_text": null,
+    "brand_site": "https://www.entresto.com/",
+    "source": "https://www.entresto.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "repatha_140",
+   "goodrx": {
+    "url": "https://www.goodrx.com/repatha",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/repatha",
+    "listed": true,
+    "list": "Presidential deals",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.repatha.com/enrollment",
+    "link_text": "Repatha® Co-Pay Card",
+    "brand_site": "https://www.repatha.com/",
+    "source": "https://www.repatha.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "brilinta_90",
+   "goodrx": {
+    "url": "https://www.goodrx.com/brilinta",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.brilinta.com/brilinta-coupon-savings/savings-support",
+    "link_text": "Cost & Affordability",
+    "brand_site": "https://www.brilinta.com/",
+    "source": "https://www.brilinta.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "nitroglycerin_sl_04",
+   "goodrx": {
+    "url": "https://www.goodrx.com/nitroglycerin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/nitroglycerin",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "escitalopram_10",
+   "goodrx": {
+    "url": "https://www.goodrx.com/escitalopram",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/escitalopram-oxalate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "bupropion_xl_150",
+   "goodrx": {
+    "url": "https://www.goodrx.com/bupropion-xl",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/bupropion-xl",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "fluoxetine_20",
+   "goodrx": {
+    "url": "https://www.goodrx.com/fluoxetine",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "trazodone_50",
+   "goodrx": {
+    "url": "https://www.goodrx.com/trazodone",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/trazodone",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "duloxetine_60",
+   "goodrx": {
+    "url": "https://www.goodrx.com/duloxetine",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "buspirone_10",
+   "goodrx": {
+    "url": "https://www.goodrx.com/buspirone",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/buspirone-hcl",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "venlafaxine_er_75",
+   "goodrx": {
+    "url": "https://www.goodrx.com/venlafaxine",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/venlafaxine-hcl-er",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "hydroxyzine_25",
+   "goodrx": {
+    "url": "https://www.goodrx.com/hydroxyzine-hydrochloride",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/hydroxyzine-hcl",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "quetiapine_25",
+   "goodrx": {
+    "url": "https://www.goodrx.com/quetiapine",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/quetiapine-fumarate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "aripiprazole_5",
+   "goodrx": {
+    "url": "https://www.goodrx.com/aripiprazole",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/aripiprazole",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "lamotrigine_100",
+   "goodrx": {
+    "url": "https://www.goodrx.com/lamotrigine",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/lamotrigine",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "alprazolam_05",
+   "goodrx": {
+    "url": "https://www.goodrx.com/alprazolam",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "clonazepam_05",
+   "goodrx": {
+    "url": "https://www.goodrx.com/clonazepam",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "lorazepam_05",
+   "goodrx": {
+    "url": "https://www.goodrx.com/lorazepam",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "zolpidem_10",
+   "goodrx": {
+    "url": "https://www.goodrx.com/zolpidem",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "adderall_ir_10",
+   "goodrx": {
+    "url": "https://www.goodrx.com/adderall",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "vyvanse_30",
+   "goodrx": {
+    "url": "https://www.goodrx.com/lisdexamfetamine",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "not found",
+    "link_text": null,
+    "brand_site": "https://www.vyvanse.com/",
+    "source": "https://www.vyvanse.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "methylphenidate_10",
+   "goodrx": {
+    "url": "https://www.goodrx.com/methylphenidate",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "focalin_xr_10",
+   "goodrx": {
+    "url": "https://www.goodrx.com/focalin-xr",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "not found",
+    "link_text": null,
+    "brand_site": "https://www.focalinxr.com/",
+    "source": "https://www.focalinxr.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "atomoxetine_40",
+   "goodrx": {
+    "url": "https://www.goodrx.com/atomoxetine",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "guanfacine_er_1",
+   "goodrx": {
+    "url": "https://www.goodrx.com/guanfacine-er",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "hydrocodone_apap_5_325",
+   "goodrx": {
+    "url": "https://www.goodrx.com/hydrocodone-acetaminophen",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "oxycodone_5",
+   "goodrx": {
+    "url": "https://www.goodrx.com/oxycodone",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "oxycodone_apap_5_325",
+   "goodrx": {
+    "url": "https://www.goodrx.com/oxycodone-acetaminophen",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "tramadol_50",
+   "goodrx": {
+    "url": "https://www.goodrx.com/tramadol",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "gabapentin_300",
+   "goodrx": {
+    "url": "https://www.goodrx.com/gabapentin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/gabapentin",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "pregabalin_75",
+   "goodrx": {
+    "url": "https://www.goodrx.com/pregabalin",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "buprenorphine_naloxone_8_2",
+   "goodrx": {
+    "url": "https://www.goodrx.com/buprenorphine-naloxone",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "meloxicam_15",
+   "goodrx": {
+    "url": "https://www.goodrx.com/meloxicam",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/meloxicam",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "ibuprofen_800",
+   "goodrx": {
+    "url": "https://www.goodrx.com/ibuprofen",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "cyclobenzaprine_10",
+   "goodrx": {
+    "url": "https://www.goodrx.com/cyclobenzaprine",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/cyclobenzaprine",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "diclofenac_gel_1",
+   "goodrx": {
+    "url": "https://www.goodrx.com/voltaren-gel",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "phentermine_375",
+   "goodrx": {
+    "url": "https://www.goodrx.com/phentermine",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "testosterone_cyp_200",
+   "goodrx": {
+    "url": "https://www.goodrx.com/testosterone-cypionate",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "pantoprazole_40",
+   "goodrx": {
+    "url": "https://www.goodrx.com/pantoprazole",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/pantoprazole-sodium",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "famotidine_20",
+   "goodrx": {
+    "url": "https://www.goodrx.com/famotidine",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/famotidine",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "ondansetron_odt_4",
+   "goodrx": {
+    "url": "https://www.goodrx.com/ondansetron",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/ondansetron",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "linzess_145",
+   "goodrx": {
+    "url": "https://www.goodrx.com/linzess",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.linzess.com/savings-and-support",
+    "link_text": "Savings & Support",
+    "brand_site": "https://www.linzess.com/",
+    "source": "https://www.linzess.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "prednisone_20",
+   "goodrx": {
+    "url": "https://www.goodrx.com/prednisone",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/prednisone",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "prednisolone_soln_15",
+   "goodrx": {
+    "url": "https://www.goodrx.com/prednisolone",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/prednisolone-sodium-phosphate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "methylprednisolone_4_pack",
+   "goodrx": {
+    "url": "https://www.goodrx.com/medrol",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/methylprednisolone",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "allopurinol_100",
+   "goodrx": {
+    "url": "https://www.goodrx.com/allopurinol",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/allopurinol",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "colchicine_06",
+   "goodrx": {
+    "url": "https://www.goodrx.com/colchicine",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/colchicine",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "estradiol_1",
+   "goodrx": {
+    "url": "https://www.goodrx.com/estradiol",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/estradiol",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "norgestimate_ee",
+   "goodrx": {
+    "url": "https://www.goodrx.com/sprintec",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/norgestimate-ethinyl-estradiol",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "medroxyprogesterone_inj_150",
+   "goodrx": {
+    "url": "https://www.goodrx.com/depo-provera",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/medroxyprogesterone-acetate",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "finasteride_5",
+   "goodrx": {
+    "url": "https://www.goodrx.com/finasteride",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/finasteride",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "tamsulosin_04",
+   "goodrx": {
+    "url": "https://www.goodrx.com/flomax",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/tamsulosin",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "alendronate_70",
+   "goodrx": {
+    "url": "https://www.goodrx.com/alendronate",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/alendronate-sodium",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "levetiracetam_500",
+   "goodrx": {
+    "url": "https://www.goodrx.com/levetiracetam",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/levetiracetam",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "truvada_prep",
+   "goodrx": {
+    "url": "https://www.goodrx.com/truvada",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/emtricitabine-tenofovir-df",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.gileadadvancingaccess.com/copay-savings-card",
+    "link_text": "Gilead Advancing Access Co-pay Savings Program",
+    "brand_site": "https://www.truvada.com/",
+    "source": "https://www.gileadadvancingaccess.com/copay-savings-card",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "biktarvy",
+   "goodrx": {
+    "url": "https://www.goodrx.com/biktarvy",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.biktarvy.com/resources/biktarvy-cost-support",
+    "link_text": "Help Paying for BIKTARVY",
+    "brand_site": "https://www.biktarvy.com/",
+    "source": "https://www.biktarvy.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "enbrel_50",
+   "goodrx": {
+    "url": "https://www.goodrx.com/enbrel",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/enbrel",
+    "listed": true,
+    "list": "Presidential deals",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.enbrel.com/support",
+    "link_text": "ENBREL Co-Pay Card",
+    "brand_site": "https://www.enbrel.com/",
+    "source": "https://www.enbrel.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "nurtec_75",
+   "goodrx": {
+    "url": "https://www.goodrx.com/nurtec",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": {
+    "url": "https://www.nurtec.com/copay-savings",
+    "link_text": "$0* savings card offer",
+    "brand_site": "https://www.nurtec.com/",
+    "source": "https://www.nurtec.com/",
+    "checked_date": "2026-10-24"
+   }
+  },
+  {
+   "drug_id": "timolol_eye_05",
+   "goodrx": {
+    "url": "https://www.goodrx.com/timolol",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "clobetasol_cream_005",
+   "goodrx": {
+    "url": "https://www.goodrx.com/clobetasol",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": "https://trumprx.gov/p/clobetasol-propionate-emollient",
+    "listed": true,
+    "list": "Standard prices",
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  },
+  {
+   "drug_id": "ergocalciferol_50000",
+   "goodrx": {
+    "url": "https://www.goodrx.com/vitamin-d2",
+    "listed": true,
+    "source": "https://www.goodrx.com/sitemaps/drug-price.xml",
+    "checked_date": "2026-10-24"
+   },
+   "trumprx": {
+    "url": null,
+    "listed": false,
+    "list": null,
+    "source": "https://trumprx.gov/browse",
+    "checked_date": "2026-10-24"
+   },
+   "manufacturer": null
+  }
+ ]
+}
