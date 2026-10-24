@@ -58,20 +58,37 @@ class TraceEvent(BaseModel):
     note: str | None = None
 
 
+class AgentUsage(BaseModel):
+    agent: str
+    requests: int = 0
+    input_tokens: int = 0
+    cached_input_tokens: int = 0
+    output_tokens: int = 0
+    web_searches: int = 0
+    cost_usd: float | None = None
+
+
 class Usage(BaseModel):
     requests: int = 0
     tool_calls: int = 0
     input_tokens: int = 0
     cached_input_tokens: int = 0
     output_tokens: int = 0
+    total_tokens: int = 0
+    web_searches: int = 0
+    cost_usd: float | None = Field(default=None, description="None if prices are not set in config.py.")
+    by_agent: list[AgentUsage] = Field(default_factory=list)
+    display: str = Field(default="", description='e.g. "This answer used 8,120 tokens (about $0.0012)."')
 
 
 class FinalReply(BaseModel):
     """What POST /api/ask returns."""
 
     app: str
+    run_id: str = ""
     language: Language
     reply_text: str
+    stop_reason: str = "completed"
     pharmacy_cards: list[PharmacyCard] = Field(default_factory=list)
     call_script: str | None = None
     sources: list[Fact] = Field(default_factory=list)

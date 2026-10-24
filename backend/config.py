@@ -16,6 +16,21 @@ APP_NAME = "RxLantern"
 MODEL_NAME = "gpt-6-luna"
 PORTKEY_BASE_URL = "https://api.portkey.ai/v1"
 
+# gpt-6-luna prices in US dollars per 1 million tokens, from Portkey's pricing config
+# (https://api.portkey.ai/model-configs/pricing/openai/gpt-6-luna, checked 2026-10-23, standard tier <= 272k context).
+# Portkey lists prices in cents per token (0.00001 cents/token = $0.10 per 1M), the same unit as its other OpenAI
+# entries (for example gpt-4o-mini 0.000015 = $0.15 per 1M). Web search is a flat price per search call.
+PRICES_USD_PER_MILLION = {"input": 0.10, "cached_input": 0.01, "output": 0.50}
+WEB_SEARCH_USD_PER_CALL = 0.01
+PRICE_SOURCE = "https://api.portkey.ai/model-configs/pricing/openai/gpt-6-luna"
+
+# Spending limits.
+MAX_MODEL_REQUESTS_PER_QUESTION = 14
+MAX_TOOL_CALLS_PER_QUESTION = 24
+MAX_TOKENS_PER_QUESTION = 60_000          # input + output, all agents together
+DAILY_TOKEN_BUDGET = 3_000_000            # whole app, per Boston calendar day
+MAX_QUESTIONS_PER_VISITOR_PER_HOUR = 30
+
 REPO_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_DIR / "data"
 OUTPUT_DIR = REPO_DIR / "output"

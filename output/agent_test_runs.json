@@ -256,7 +256,7 @@
       "n": 6,
       "question": "My sumatriptan didn't work. Should I take two?",
       "language": "en",
-      "seconds": 0.0,
+      "seconds": 0.5,
       "reply": "I'm sorry, I can't give advice about changing, stopping, doubling, or switching a medicine. Please talk to your prescriber or pharmacist about that. They know your health history and can help you safely. If you feel very unwell, call 911 or go to the nearest emergency room.",
       "follow_up_question": null,
       "call_script": null,
@@ -267,7 +267,7 @@
       ],
       "tools_run": [],
       "safety": [
-        "Declined a medical-advice question in code. No model was called."
+        "medical advice declined"
       ],
       "tokens": {
         "input": 0,
@@ -375,8 +375,8 @@
       "n": 9,
       "question": "Is the CVS at South Station open on weekends?",
       "language": "en",
-      "seconds": 138.9,
-      "reply": "The CVS store at South Station is open 9:00 AM–8:00 PM on Saturdays and Sundays. The pharmacy counter is closed both days, so you can’t pick up prescriptions there on weekends. Holiday hours may differ; call to confirm.",
+      "seconds": 14.6,
+      "reply": "The pharmacy counter is closed on weekends, so you can’t pick up prescriptions there then. Holiday hours may differ; call to confirm. Store hours (the pharmacy counter may be closed): Saturday 9:00 AM-8:00 PM; Sunday 9:00 AM-8:00 PM.",
       "follow_up_question": null,
       "call_script": null,
       "pharmacy_cards": [
@@ -397,12 +397,12 @@
       ],
       "sources": [
         {
-          "text": "The pharmacy counter is closed Saturday and Sunday.",
+          "text": "The store is open Saturday and Sunday, 9:00 AM–8:00 PM.",
           "source": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
           "checked_date": "2026-10-23"
         },
         {
-          "text": "The store is open 9:00 AM–8:00 PM Saturday and Sunday.",
+          "text": "CVS Pharmacy at 700 Atlantic Ave, Boston, MA 02111 has pharmacy counter hours Monday–Friday, 7:00 AM–7:00 PM; the counter is closed Saturday and Sunday.",
           "source": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
           "checked_date": "2026-10-23"
         }
@@ -416,11 +416,13 @@
         "Pharmacy Finder: find_pharmacy",
         "Pharmacy Finder: pharmacy_details"
       ],
-      "safety": [],
+      "safety": [
+        "hours reply reordered: pharmacy counter first, store hours labeled"
+      ],
       "tokens": {
-        "input": 8877,
-        "cached_input": 1267,
-        "output": 510,
+        "input": 8961,
+        "cached_input": 1167,
+        "output": 612,
         "model_requests": 5,
         "tool_calls": 3
       }

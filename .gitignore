@@ -14,7 +14,12 @@ __pycache__/
 node_modules/
 frontend/dist/
 
-# Large or local data files
+# Large or local data files (all databases, including data/rxlantern_user.db)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.tmp
 data/*.db
 data/*.sqlite
 data/*.sqlite3

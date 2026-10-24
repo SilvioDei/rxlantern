@@ -47,6 +47,7 @@ def main() -> None:
                 continue
             u = body["usage"]
             runs[q["n"]] = q | {
+                "run_id": body["run_id"], "stop_reason": body["stop_reason"],
                 "seconds": round(time.time() - t0, 1),
                 "reply": body["reply_text"], "follow_up_question": body["follow_up_question"],
                 "call_script": body["call_script"], "pharmacy_cards": body["pharmacy_cards"],
@@ -54,6 +55,7 @@ def main() -> None:
                 "safety": body["safety"],
                 "tokens": {"input": u["input_tokens"], "cached_input": u["cached_input_tokens"],
                            "output": u["output_tokens"], "model_requests": u["requests"], "tool_calls": u["tool_calls"]},
+                "cost_usd": u["cost_usd"], "usage_display": u["display"],
             }
             print(f"Q{q['n']}: {body['agents_run']} | in={u['input_tokens']} cached={u['cached_input_tokens']} "
                   f"out={u['output_tokens']} | {runs[q['n']]['seconds']}s")

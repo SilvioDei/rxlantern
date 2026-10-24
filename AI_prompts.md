@@ -277,3 +277,51 @@ Every prompt sent to the AI assistant, word for word, grouped by build step.
 > 11. "Is there a walk-in clinic near the CVS in Mattapan?"
 >
 > Add this to AI_prompts.md under Step 4.
+
+## Step 5 — Token logging, audit trail, and cost caps
+
+> Step 5: Token logging, audit trail, and cost caps
+>
+> First, a small fix from Step 4: question 9 sometimes mentions the store's weekend hours before saying the pharmacy counter is closed. Fix this in code, not only in the prompt: when a patient asks about pharmacy hours, the reply must always state the pharmacy counter hours first, and only mention store hours after, labeled as "store hours (the pharmacy counter may be closed)." Rerun question 9 to confirm.
+>
+> Now build the cost and logging side of RxLantern.
+>
+> 1. Token and cost log
+> - For every patient question, record: a run ID, timestamp, language, which agents and tools ran, and input, cached input, and output tokens for each agent call and in total.
+> - Put the gpt-6-luna prices (per 1 million tokens for input, cached input, and output) in backend/config.py. Do not guess the prices. If you cannot find them in my Portkey setup, leave clear placeholders and ask me for them before calculating any cost.
+> - Calculate the cost of each question from the token counts and those prices.
+> - Include the tokens and cost in the /api/ask reply so the website can show "This answer used X tokens (about $Y)."
+> - Add a GET /api/usage route that returns today's totals: number of questions, total tokens, average tokens per question, and total cost.
+>
+> 2. Audit trail
+> - Append every question to output/audit_trail.json and never wipe it. For each one record: run ID, timestamp, the question with personal information removed, each agent step, each tool called with short inputs and results, which agent handed work to which, tokens, and the stop reason.
+> - Also record any safety rule that fired in code (for example "medical advice declined", "personal information removed", "controlled substance stock report refused").
+> - Never log API keys, passwords, or personal health information. This file will be in a public repo.
+>
+> 3. Spending limits (so a bug or bad actor cannot burn the budget)
+> - Keep the per-question limits from Step 4 (model requests and tool calls), and add a maximum total tokens per question. If a question goes over, stop and give the patient a short, friendly message.
+> - Add a daily token budget for the whole app (a setting in config.py). When it is used up, the app says it is busy and to try again later, instead of calling the model.
+> - Add a simple rate limit: a maximum number of questions per visitor per hour.
+> - Write a test that shows each limit stopping a run, and save the results.
+>
+> 4. Did cost-cutting hurt quality? (I need evidence for my report)
+> - Write tests/cost_experiment.py that runs the same 11 test questions from Step 4 in two modes, once each:
+>   A. Normal mode: the Front Desk calls only the specialist(s) it needs (what we built).
+>   B. "Ask everyone" mode: the Front Desk calls all three specialists on every question.
+> - For each question in each mode, record tokens, cost, and whether the answer still followed the rules and gave the right facts.
+> - Save the results to output/cost_experiment.json and a short summary table to output/tokenomics.md.
+>
+> 5. Tokenomics summary (output/tokenomics.md)
+> - From the real runs: average input, cached input, and output tokens per question, and average cost per question.
+> - How much prompt caching saved (cached vs. not cached tokens).
+> - How much the code-level rules saved (questions answered with 0 tokens).
+> - Cost per user per month, assuming [NUMBER] questions per patient per month, and the monthly cost for 100 users and for 10,000 users. Show the math.
+> - The comparison table from the cost experiment.
+>
+> Make sure the user database (rxlantern_user.db) and any other database files are in .gitignore. Add this prompt to AI_prompts.md under Step 5. Commit with the message "Step 5: token logging, audit trail, and cost caps", give me the tokenomics summary and the cost experiment table, then stop.
+
+### Step 5 — answers to my questions
+
+> How many questions per patient per month should the cost estimate assume? **4 per month**
+>
+> Can I use the gpt-6-luna prices from Portkey's pricing config ($0.10 per 1M input, $0.01 per 1M cached input, $0.50 per 1M output, plus $0.01 per web search)? **Use Portkey prices**
