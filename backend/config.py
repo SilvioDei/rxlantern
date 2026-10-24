@@ -37,7 +37,9 @@ ADMIN_EMAILS_ENV = "RXLANTERN_ADMIN_EMAILS"
 
 
 def admin_emails() -> set[str]:
-    return {e.strip().lower() for e in os.getenv(ADMIN_EMAILS_ENV, "").split(",") if e.strip()}
+    """Admin emails from RXLANTERN_ADMIN_EMAILS. Missing or empty = no admins (the queue still works, nobody can
+    approve), never an error."""
+    return {e.strip().lower() for e in (os.getenv(ADMIN_EMAILS_ENV) or "").split(",") if e.strip()}
 
 REPO_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_DIR / "data"
@@ -45,16 +47,18 @@ OUTPUT_DIR = REPO_DIR / "output"
 
 
 def load_env() -> Path | None:
-    """Load .env from rxcompass/ first, then from the folder one level above.
+    """Load .env from rxcompass/ first, then from the folder one level above (where graders put theirs).
 
-    Returns the path that was loaded, or None if no .env file was found
-    (in that case an already-set PORTKEY_API_KEY environment variable is used).
+    Both files are read, so one never hides the other. A value set earlier wins: an already-set environment
+    variable beats rxcompass/.env, which beats ../.env. Returns the first file found, or None if neither exists
+    (then an already-set PORTKEY_API_KEY environment variable is used).
     """
+    found = None
     for candidate in (REPO_DIR / ".env", REPO_DIR.parent / ".env"):
         if candidate.is_file():
             load_dotenv(candidate, override=False)
-            return candidate
-    return None
+            found = found or candidate
+    return found
 
 
 ENV_FILE = load_env()

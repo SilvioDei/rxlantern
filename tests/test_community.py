@@ -152,7 +152,11 @@ def main() -> None:
         pending_id = None
         for name, pharmacy, text, want in cases:
             out = review(pharmacy, text)
-            check(name, out.get("status") == want, comment=text, status=out.get("status"), message=out.get("message"),
+            ok = out.get("status") == want
+            if want == "pending":  # the "ask for <Name>" rule must catch this in code, with no model call
+                ok = ok and (out.get("moderation") or {}).get("stage") == "code"
+                name += " (decided in code)"
+            check(name, ok, comment=text, status=out.get("status"), message=out.get("message"),
                   moderation=out.get("moderation"))
             if want == "pending":
                 pending_id = out.get("id")
@@ -171,6 +175,25 @@ def main() -> None:
             rejected_text = con.execute("SELECT COUNT(*) FROM reviews WHERE status='rejected' AND comment IS NOT NULL"
                                         ).fetchone()[0]
         check("rejected comments are not stored", rejected_text == 0)
+
+        # No admin setting at all (like the graders' .env): everything works, there is simply no admin.
+        saved_admins = os.environ.pop(config.ADMIN_EMAILS_ENV, None)
+        try:
+            me = c.get("/api/auth/me").json()
+            health = c.get("/api/health").status_code
+            queue = c.get("/api/admin/pending")
+            c.post("/api/auth/logout")
+            login(c, "patient1@example.com")
+            posted = c.post("/api/pharmacies/cvs-10174/stock-reports",
+                            json={"drug_id": "lisinopril_10", "in_stock": True}).status_code
+            check("app works with RXLANTERN_ADMIN_EMAILS missing (no admin, no errors)",
+                  config.admin_emails() == set() and me["logged_in"] and me["is_admin"] is False and health == 200
+                  and queue.status_code == 403 and posted in (200, 429),
+                  admin_emails=sorted(config.admin_emails()), queue_status=queue.status_code,
+                  queue_message=queue.json().get("error"))
+        finally:
+            if saved_admins is not None:
+                os.environ[config.ADMIN_EMAILS_ENV] = saved_admins
 
     trail = json.loads((config.OUTPUT_DIR / "audit_trail.json").read_text(encoding="utf-8"))["entries"]
     mods = [e for e in trail if e.get("type") == "moderation"][-(len(cases) + 4):]

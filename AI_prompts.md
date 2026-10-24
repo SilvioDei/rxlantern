@@ -387,3 +387,26 @@ Every prompt sent to the AI assistant, word for word, grouped by build step.
 >   - an unclear comment goes to the pending queue, and an admin approves it
 >
 > Add this prompt to AI_prompts.md under Step 6. Commit with the message "Step 6: community reports, reviews, and moderation", give me a short summary with the test results, then stop.
+
+### Step 6 — admin email and fixes
+
+> Yes, add RXLANTERN_ADMIN_EMAILS=[admin email] to .env. If .env doesn't exist yet, create it with only that line; my Portkey key stays in my Windows environment variable, so do not write the key into the file.
+>
+> Also:
+> 1. Fix the "ask for" moderation rule so it ignores capital letters, and rerun that test.
+> 2. Make sure the app runs normally if RXLANTERN_ADMIN_EMAILS is missing. The graders' .env will only have PORTKEY_API_KEY and OPENAI_API_KEY, so the admin queue should simply have no admin in that case, without errors.
+>
+> Add this to AI_prompts.md under Step 6, commit, then stop.
+
+> (sent mid-task) Create a .env file in the folder one level above rxcompass/ (where the graders' .env will go), with exactly these two lines:
+>
+> PORTKEY_API_KEY=[REMOVED]
+> RXLANTERN_ADMIN_EMAILS=[admin email]
+>
+> Leave [REMOVED] as it is; I will open the file and paste my key myself. Never read, print, or copy my key. Then tell me the full path of the file so I can open it.
+>
+> Also:
+> 1. Fix the "ask for" moderation rule so it ignores capital letters, and rerun that test.
+> 2. Make sure the app runs normally if RXLANTERN_ADMIN_EMAILS is missing. The graders' .env will only have PORTKEY_API_KEY and OPENAI_API_KEY, so the admin queue should simply have no admin in that case, without errors.
+>
+> Add this to AI_prompts.md under Step 6, commit, then stop.

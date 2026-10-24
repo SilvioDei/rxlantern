@@ -30,7 +30,8 @@ HEALTH = re.compile(r"\b(hiv|aids|prep|cancer|chemo|diabetes|diabetic|insulin|de
 OTHER_PERSON = re.compile(r"\b(my|our|the) (neighbou?r|friend|wife|husband|partner|son|daughter|mom|mother|dad|"
                           r"father|brother|sister|cousin|aunt|uncle|grandma|grandpa|roommate|coworker|boss|"
                           r"pharmacist|technician|tech|cashier)\b|\b(he|she|his|her)\b", re.I)
-NAMED_PERSON = re.compile(r"\b(?:neighbou?r|friend|wife|husband|son|daughter|pharmacist|technician|tech|cashier|"
+# Trigger words ignore capital letters ("Ask for", "ask for", "My Neighbor"); the name itself must be capitalized.
+NAMED_PERSON = re.compile(r"\b(?i:neighbou?r|friend|wife|husband|son|daughter|pharmacist|technician|tech|cashier|"
                           r"ask for|named|called|lady|guy|man|woman)\s+([A-Z][a-z]{2,})\b")
 
 
