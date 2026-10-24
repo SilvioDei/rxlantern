@@ -1,4 +1,5 @@
-"""Build data/rxlantern.db from data/pharmacies.json.
+"""Build data/rxlantern.db (reference data, rebuilt from the small files in data/) and
+data/rxlantern_user.db (community posts and accounts, never rebuilt or wiped).
 
 Run by hand:   ..\\.venv\\Scripts\\python.exe -m backend.build_db
 The app also calls ensure_db() on startup, so graders never need to run this.
@@ -14,6 +15,28 @@ from backend.config import DATA_DIR
 JSON_PATH = DATA_DIR / "pharmacies.json"
 DB_PATH = DATA_DIR / "rxlantern.db"
 MEDICARE_DIR = DATA_DIR / "medicare"
+ZIP_PATH = DATA_DIR / "boston_zip_centroids.csv"
+# Community posts live in their own file so rebuilding the reference data never deletes them.
+USER_DB_PATH = DATA_DIR / "rxlantern_user.db"
+
+USER_SCHEMA = """
+-- Accounts exist only for posting reviews and stock reports: email, display name, hashed password. No health data.
+CREATE TABLE IF NOT EXISTS community_users (
+    id INTEGER PRIMARY KEY, email TEXT UNIQUE NOT NULL, display_name TEXT NOT NULL,
+    password_hash TEXT NOT NULL, created_at TEXT NOT NULL
+);
+-- "they have it" / "they don't" reports. Never allowed for controlled substances (checked in code).
+CREATE TABLE IF NOT EXISTS stock_reports (
+    id INTEGER PRIMARY KEY, pharmacy_id TEXT NOT NULL, drug_id TEXT NOT NULL,
+    in_stock INTEGER NOT NULL CHECK (in_stock IN (0, 1)), user_id INTEGER REFERENCES community_users(id),
+    created_at TEXT NOT NULL, moderation_status TEXT NOT NULL DEFAULT 'approved'
+);
+CREATE TABLE IF NOT EXISTS pharmacy_ratings (
+    id INTEGER PRIMARY KEY, pharmacy_id TEXT NOT NULL, rating INTEGER NOT NULL CHECK (rating BETWEEN 1 AND 5),
+    wait_minutes INTEGER, comment TEXT, user_id INTEGER REFERENCES community_users(id),
+    created_at TEXT NOT NULL, moderation_status TEXT NOT NULL DEFAULT 'approved'
+);
+"""
 
 MED_SCHEMA = """
 CREATE TABLE drugs (
@@ -42,6 +65,11 @@ CREATE TABLE vaccines (
     notes TEXT, certified_sites_only INTEGER, clinic_finder TEXT, extra_sources TEXT, checked_date TEXT
 );
 CREATE TABLE medicare_rules (key TEXT PRIMARY KEY, value TEXT, source TEXT, checked_date TEXT);
+CREATE TABLE zip_centroids (zip TEXT PRIMARY KEY, latitude REAL, longitude REAL, share_of_land_in_boston REAL,
+                            source TEXT, checked_date TEXT);
+-- Holiday hours found by web search on a pharmacy's own site, kept for 24 hours.
+CREATE TABLE holiday_cache (pharmacy_id TEXT, holiday TEXT, fetched_at TEXT NOT NULL, result_json TEXT NOT NULL,
+                            PRIMARY KEY (pharmacy_id, holiday));
 """
 
 # Columns that hold lists or objects are stored as JSON text.
@@ -192,6 +220,11 @@ def _medication_tables(con: sqlite3.Connection) -> dict:
         con.execute(f"CREATE TABLE {table} ({', '.join(c + ' TEXT' for c in rows[0])})")
         _insert(con, table, rows)
         counts[table] = len(rows)
+    with open(ZIP_PATH, newline="", encoding="utf-8") as f:
+        zips = list(csv.DictReader(f))
+    _insert(con, "zip_centroids", zips)
+    counts["zip_centroids"] = len(zips)
+
     rules = MEDICARE_DIR / "part_d_rules_2026.json"
     if rules.exists():
         r = json.loads(rules.read_text(encoding="utf-8"))
@@ -220,14 +253,27 @@ def build_db(json_path: Path = JSON_PATH, db_path: Path = DB_PATH) -> int:
 
 
 def _sources() -> list[Path]:
-    names = ("drugs.json", "shortages_snapshot.json", "nadac_sample.csv", "masshealth.json", "vaccines.json")
+    names = ("drugs.json", "shortages_snapshot.json", "nadac_sample.csv", "masshealth.json", "vaccines.json",
+             "boston_zip_centroids.csv")
     return [JSON_PATH, *(DATA_DIR / n for n in names), *MEDICARE_DIR.glob("*")]
+
+
+def ensure_user_db() -> Path:
+    """Create the community tables if they are missing. Never deletes anything."""
+    con = sqlite3.connect(USER_DB_PATH)
+    try:
+        con.executescript(USER_SCHEMA)
+        con.commit()
+    finally:
+        con.close()
+    return USER_DB_PATH
 
 
 def ensure_db() -> Path:
     """Build the database if it does not exist yet, or if any source file in data/ is newer."""
     if not DB_PATH.exists() or any(p.exists() and p.stat().st_mtime > DB_PATH.stat().st_mtime for p in _sources()):
         build_db()
+    ensure_user_db()
     return DB_PATH
 
 
