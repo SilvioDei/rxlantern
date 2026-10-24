@@ -453,3 +453,7 @@ Every prompt sent to the AI assistant, word for word, grouped by build step.
 > - Tell me the exact one command to start the app.
 >
 > Add this prompt to AI_prompts.md under Step 7. Commit with the message "Step 7: website", then stop.
+
+### Step 7 — remove my email from this log
+
+> In AI_prompts.md, replace my email with [admin email] everywhere before we push. Keep everything else word for word.
