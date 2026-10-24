@@ -398,6 +398,7 @@ const en = {
 
   // ---- general
   errorBusy: "RxLantern is busy, please try again later.",
+  errorKey: "The chat is not set up yet: the PORTKEY_API_KEY in the .env file is missing or was not accepted. Every other page still works.",
   errorRate: "You've asked a lot of questions in the last hour. Please wait a little and try again.",
   errorOffline: "We lost the connection. Please check your internet and try again.",
   errorGeneric: "Something went wrong. Please try again.",
@@ -908,6 +909,7 @@ const es: Dict = {
   colStatus: "Ahora",
 
   errorBusy: "RxLantern está ocupado, por favor intente más tarde.",
+  errorKey: "El chat aún no está configurado: falta la PORTKEY_API_KEY en el archivo .env o no fue aceptada. Las demás páginas funcionan.",
   errorRate: "Ha hecho muchas preguntas en la última hora. Por favor espere un poco e intente de nuevo.",
   errorOffline: "Se perdió la conexión. Revise su internet e intente de nuevo.",
   errorGeneric: "Algo salió mal. Por favor intente de nuevo.",

@@ -1,6 +1,6 @@
 // Small fetch helpers for the RxLantern API. Errors become friendly codes the pages translate.
 
-export type ApiErrorCode = "offline" | "rate" | "busy" | "generic" | "http";
+export type ApiErrorCode = "offline" | "rate" | "busy" | "generic" | "http" | "bad_key";
 
 export class ApiError extends Error {
   code: ApiErrorCode;
@@ -28,6 +28,7 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
   if (!res.ok) {
     if (res.status === 429 && body?.stop_reason?.startsWith("rate limit")) throw new ApiError("rate", body.reply_text, 429);
     const msg = body?.error || (typeof body?.detail === "string" ? body.detail : "") || "error";
+    if (body?.code === "bad_key") throw new ApiError("bad_key", msg, res.status);
     throw new ApiError(res.status >= 500 ? "generic" : "http", msg, res.status);
   }
   return body as T;

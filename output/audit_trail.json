@@ -22408,6 +22408,574 @@
    },
    "safety_rules_fired": [],
    "reply_preview": "FDA lists Vyvanse 30 mg capsules as in shortage, though some makers may still have it. Because Vyvanse is a controlled medicine, I can’t say which pharmacies have it; please call nearby pharmacies to "
+  },
+  {
+   "run_id": "c2d36fdced46",
+   "timestamp": "2026-10-24T03:46:30-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near ZIP code 02111 in Boston that are open right now. Today is Saturday, October 24, 2026, 03:46 AM America/New_York. Report pharmacy counter hours first and include pharmacy IDs, source links, and checked dates."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston, MA"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "scchc-pharmacy"
+     },
+     "result": "South Cove Community Health Center Pharmacy (formerly Tai Tung Pharmacy) (scchc-pharmacy)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "No pharmacy counters near ZIP 02111 were open at 3:46 AM on Saturday, October 24. The nearest results are all closed now. Their counter hours are: CVS, 631 Washington St — Saturday 9 AM–7 PM; South Cove Community Health Center Pharmacy, 256 Harrison Ave — Saturday 9 AM–6 PM; CVS, 700 Atlantic Ave...",
+     "not_found": [],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 10264,
+      "cached_input_tokens": 1596,
+      "output_tokens": 1011,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 13846,
+     "cached_input_tokens": 2938,
+     "output_tokens": 1462,
+     "total_tokens": 15308,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 5,
+     "cost_usd": 0.001851
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3582,
+      "cached_input_tokens": 1342,
+      "output_tokens": 451,
+      "web_searches": 0,
+      "cost_usd": 0.000463
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 10264,
+      "cached_input_tokens": 1596,
+      "output_tokens": 1011,
+      "web_searches": 0,
+      "cost_usd": 0.001388
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "No pharmacy counters near 02111 are open right now. The closest options listed open at 9:00 AM today: CVS at 631 Washington St and South Cove Community Health Center Pharmacy at 256 Harrison Ave. Holi"
+  },
+  {
+   "run_id": "4e93d53e5c2d",
+   "timestamp": "2026-10-24T03:48:59-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near ZIP code 02111 in Boston that are open right now. Today is Saturday, October 24, 2026, at 3:48 AM America/New_York. Include pharmacy counter hours/open status, pharmacy IDs, and sources."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "02111, Boston",
+      "open_now": true
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "scchc-pharmacy"
+     },
+     "result": "South Cove Community Health Center Pharmacy (formerly Tai Tung Pharmacy) (scchc-pharmacy)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "No pharmacy counters near 02111 are open right now (Saturday, Oct. 24, at 3:48 AM). The nearest listed options are all closed:\n\n- CVS Pharmacy, 631 Washington St (about 0.2 miles): closed; opens today at 9:00 AM. Saturday counter hours 9:00 AM–7:00 PM; Sunday 10:00 AM–7:00 PM. ID: cvs-5874.\n- Sou...",
+     "not_found": [
+      "No matching pharmacy counter is open right now."
+     ],
+     "warnings": [
+      "Holiday hours may differ; call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 11351,
+      "cached_input_tokens": 2182,
+      "output_tokens": 842,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 14990,
+     "cached_input_tokens": 3524,
+     "output_tokens": 1257,
+     "total_tokens": 16247,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 6,
+     "cost_usd": 0.00181
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3639,
+      "cached_input_tokens": 1342,
+      "output_tokens": 415,
+      "web_searches": 0,
+      "cost_usd": 0.000451
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 11351,
+      "cached_input_tokens": 2182,
+      "output_tokens": 842,
+      "web_searches": 0,
+      "cost_usd": 0.00136
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "No pharmacy counters near 02111 are open right now. The closest listed options open at 9:00 AM today: CVS on Washington Street and South Cove Community Health Center Pharmacy. Holiday hours may differ"
+  },
+  {
+   "run_id": "f8bdcce1408e",
+   "timestamp": "2026-10-24T03:49:58-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near ZIP code 02111 in Boston, Massachusetts that are open right now. Today is Saturday, October 24, 2026 at 3:49 AM America/New_York. Include pharmacy-counter hours and locations; identify any open now."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "02111, Boston, Massachusetts",
+      "open_now": true
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "scchc-pharmacy"
+     },
+     "result": "South Cove Community Health Center Pharmacy (formerly Tai Tung Pharmacy) (scchc-pharmacy)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston, Massachusetts"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "No pharmacy counter near ZIP 02111 is open now (Saturday, Oct. 24, at 3:49 AM). The nearest listed counters are all closed; the first two open today at 9:00 AM.\n\n- **CVS Pharmacy**, 631 Washington St, Chinatown — about 0.2 miles away. Counter: Mon–Fri 9 AM–8 PM, Sat 9 AM–7 PM, Sun 10 AM–7 PM; dai...",
+     "not_found": [
+      "No pharmacy counter near ZIP 02111 is open right now."
+     ],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 10787,
+      "cached_input_tokens": 1598,
+      "output_tokens": 1478,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 14700,
+     "cached_input_tokens": 2940,
+     "output_tokens": 1805,
+     "total_tokens": 16505,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 6,
+     "cost_usd": 0.002108
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3913,
+      "cached_input_tokens": 1342,
+      "output_tokens": 327,
+      "web_searches": 0,
+      "cost_usd": 0.000434
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 10787,
+      "cached_input_tokens": 1598,
+      "output_tokens": 1478,
+      "web_searches": 0,
+      "cost_usd": 0.001674
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "No pharmacy counter near 02111 is open right now. The closest listed options, CVS at 631 Washington St and South Cove Pharmacy at 256 Harrison Ave, open today at 9:00 AM. Hours may change for holidays"
+  },
+  {
+   "run_id": "4a3b647b866e",
+   "timestamp": "2026-10-24T03:51:12-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies open right now near ZIP code 02111 in Boston, Massachusetts. Today is Saturday, October 24, 2026 at 3:50 AM America/New_York. Include pharmacy counter hours first, and pharmacy IDs and source links/date checked."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston, Massachusetts"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "scchc-pharmacy"
+     },
+     "result": "South Cove Community Health Center Pharmacy (formerly Tai Tung Pharmacy) (scchc-pharmacy)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "Pharmacy counter hours first: None of the nearby counters are open right now (Saturday, 3:50 AM). CVS at 631 Washington St and South Cove Community Health Center Pharmacy both open today at 9:00 AM. CVS at 700 Atlantic Ave is closed for the weekend; it opens Monday at 7:00 AM.\n\n- CVS Pharmacy — 6...",
+     "not_found": [
+      "No nearby pharmacy counter is open right now."
+     ],
+     "warnings": [
+      "Holiday hours may differ; call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 10235,
+      "cached_input_tokens": 0,
+      "output_tokens": 900,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 13912,
+     "cached_input_tokens": 0,
+     "output_tokens": 1321,
+     "total_tokens": 15233,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 5,
+     "cost_usd": 0.002052
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3677,
+      "cached_input_tokens": 0,
+      "output_tokens": 421,
+      "web_searches": 0,
+      "cost_usd": 0.000578
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 10235,
+      "cached_input_tokens": 0,
+      "output_tokens": 900,
+      "web_searches": 0,
+      "cost_usd": 0.001473
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "No pharmacy counter near 02111 is open right now. CVS at 631 Washington St and South Cove Community Health Center Pharmacy at 256 Harrison Ave open today at 9:00 AM. Holiday hours may differ, so call "
+  },
+  {
+   "run_id": "a657fc55997f",
+   "timestamp": "2026-10-24T03:51:54-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near ZIP code 02111 (Boston Chinatown/Downtown) that are open right now, Saturday, October 24, 2026 at 3:51 AM America/New_York. Include pharmacy counter hours first and source links and checked dates."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "02111, Boston Chinatown/Downtown",
+      "open_now": true
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston Chinatown/Downtown"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "scchc-pharmacy"
+     },
+     "result": "South Cove Community Health Center Pharmacy (formerly Tai Tung Pharmacy) (scchc-pharmacy)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "The pharmacy counters nearest ZIP 02111 are all closed at 3:51 AM on Saturday, Oct. 24, 2026; no matching counter is open right now. Counter hours first:\n\n- **CVS, 631 Washington St** (about 0.2 miles): Sat 9 AM–7 PM; Sun 10 AM–7 PM; opens today at 9 AM. Mon–Fri 9 AM–8 PM. Phone (617) 338-0128.\n-...",
+     "not_found": [
+      "No pharmacy counter open right now near ZIP 02111."
+     ],
+     "warnings": [
+      "Holiday hours may differ. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 4,
+      "input_tokens": 13282,
+      "cached_input_tokens": 3902,
+      "output_tokens": 1309,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 16969,
+     "cached_input_tokens": 6570,
+     "output_tokens": 1747,
+     "total_tokens": 18716,
+     "web_searches": 0,
+     "model_requests": 6,
+     "tool_calls": 6,
+     "cost_usd": 0.001979
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3687,
+      "cached_input_tokens": 2668,
+      "output_tokens": 438,
+      "web_searches": 0,
+      "cost_usd": 0.000348
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 4,
+      "input_tokens": 13282,
+      "cached_input_tokens": 3902,
+      "output_tokens": 1309,
+      "web_searches": 0,
+      "cost_usd": 0.001632
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "No pharmacy counters near 02111 are open right now. The nearest options open today at 9:00 AM are CVS at 631 Washington St and South Cove Community Health Center Pharmacy at 256 Harrison Ave. Holiday "
   }
  ]
 }

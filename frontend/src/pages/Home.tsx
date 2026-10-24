@@ -220,7 +220,8 @@ function Chat() {
       setTurns((ts) => ts.map((x, i) => (i === ts.length - 1 ? { ...x, reply } : x)));
     } catch (e) {
       const msg = e instanceof ApiError
-        ? (e.code === "rate" ? t("errorRate") : e.code === "offline" ? t("errorOffline") : e.status === 429 ? t("errorBusy") : t("errorGeneric"))
+        ? (e.code === "rate" ? t("errorRate") : e.code === "offline" ? t("errorOffline") : e.code === "bad_key" ? t("errorKey")
+          : e.status === 429 ? t("errorBusy") : t("errorGeneric"))
         : t("errorGeneric");
       setTurns((ts) => ts.map((x, i) => (i === ts.length - 1 ? { ...x, error: msg } : x)));
     } finally {

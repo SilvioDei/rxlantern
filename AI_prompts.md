@@ -724,3 +724,17 @@ Every prompt sent to the AI assistant, word for word, grouped by build step.
 > Then write output/safety_report.html: one self-contained page (screenshots embedded inside the file, so it opens by double-clicking) with a table of every test (risk, test, expected, actual, pass or fail) and the screenshot for each. I will use it in my report.
 >
 > Delete all test accounts, posts, and counters so the real database has no real-user rows again. Commit with the message "Step 8: safety tests". Give me the pass/fail table, anything you had to fix, and stop.
+
+## Step 9 — Grader setup and fresh-clone dry run
+
+> Step 9 (part 1): Grader setup and fresh-clone dry run. Log this prompt under a new "Step 9" section in AI_prompts.md. Do not stop to ask me questions; make the most reasonable choice and tell me at the end. Do not push to GitHub yet; I will do that with you when I'm awake.
+>
+> The teaching staff will clone my repo into a folder with other submissions, put their .env one folder above my repo (it only has PORTKEY_API_KEY and OPENAI_API_KEY), and follow my README. If the app isn't running within 10 minutes, I get 0 points for that part.
+>
+> 1. Rewrite README.md for the graders: what RxLantern does in two sentences, which Python versions it works with, and step-by-step setup for Windows and for Mac/Linux: clone, create a virtual environment, install requirements, put the .env one folder above the repo, start the app with one command, and open the address. Say that only PORTKEY_API_KEY is needed, that RXLANTERN_ADMIN_EMAILS is optional, what SHOW_SAMPLE_DATA does, and a short troubleshooting section. No Node.js needed.
+> 2. Make sure .env.example lists PORTKEY_API_KEY (and the optional settings) with no real values.
+> 3. Check the app works on Python 3.11, 3.12, and 3.13 as well as mine if you can, or say clearly in the README which versions are supported.
+> 4. Dry run exactly like a grader: clone the repo into a brand-new temporary folder outside my project, copy my .env file (from the folder above rxcompass) one folder above the clone without opening, printing, or reading my key, create a fresh virtual environment, install requirements, and start the app following only the README. Temporarily remove PORTKEY_API_KEY from the environment of that test run, so it proves the app reads the key from the .env file, not from my Windows settings. Ask one chat question and load the main pages. Time the whole setup.
+> 5. Fix anything that breaks and update the README, then repeat the dry run until it works on the first try in under 10 minutes. Delete the temporary folder afterwards.
+>
+> Commit with the message "Step 9: README and fresh-clone dry run". Give me the dry-run time, anything you fixed, and stop.

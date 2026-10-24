@@ -12,6 +12,12 @@ from openai import AsyncOpenAI
 from pydantic_ai.models.openai import OpenAIResponsesModel, OpenAIResponsesModelSettings
 from pydantic_ai.providers.openai import OpenAIProvider
 
+# Read .env files first (this folder, then the folder one level above), so every setting below can come from them.
+# An already-set environment variable wins. load_env() further down does the same and reports which file it used.
+for _env in (Path(__file__).resolve().parent.parent / ".env", Path(__file__).resolve().parent.parent.parent / ".env"):
+    if _env.is_file():
+        load_dotenv(_env, override=False)
+
 APP_NAME = "RxLantern"
 MODEL_NAME = "gpt-6-luna"
 PORTKEY_BASE_URL = "https://api.portkey.ai/v1"

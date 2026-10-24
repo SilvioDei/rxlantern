@@ -180,6 +180,23 @@ screenshots: `output/screenshots/safety_*.png`; one self-contained page with eve
   "[Portkey key removed]". It is still in an old local commit: remove it from git history (and rotate the key)
   before pushing.
 
+## Step 9: grader setup
+
+- README.md is written for graders: Python 3.11-3.14 (all four tested with fresh environments on 2026-10-24),
+  Windows and Mac/Linux steps, `.venv` inside the repo, `.env` one folder above, `run.py` to start.
+- `requirements.txt` pins the exact tested versions. `.env.example` lists PORTKEY_API_KEY plus the optional settings.
+- `run.py` stops with a clear message on Python < 3.11, says where the key was loaded from (or that the chat will not
+  work without it), and accepts `RXLANTERN_PORT`.
+- `.env` is now loaded before any setting is read (RXLANTERN_SHOW_SAMPLE_DATA in `.env` used to be ignored).
+- A missing or rejected Portkey key gives a clear "The chat is not set up" message instead of a generic error.
+- Fresh-clone dry run (2026-10-24, Windows, plain `python -m venv` + pip, PORTKEY_API_KEY removed from the test
+  environment, `.env` copied one folder above the clone): clone 1.4 s, venv 5.8 s, pip install 21.7 s, app answering
+  2.7 s after `run.py` = **31.6 s of setup**, 39.6 s including loading 7 pages and one chat question in a real browser.
+  The key was loaded from the copied `.env`. That `.env` key is out of date (Portkey answers 401), so the chat showed
+  the new "not set up" message; with a valid key the same question completed on Python 3.11-3.14.
+- An apparent chat "hang" in early dry runs came from the test script (it never read the server's output pipe), not
+  from the app; the script now logs to a file.
+
 ## App name
 
 - The app is called **RxLantern** (it was called RxCompass in Steps 1–3; earlier prompts in AI_prompts.md keep the old name).

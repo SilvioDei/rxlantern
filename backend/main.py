@@ -35,6 +35,10 @@ def health() -> dict:
     return {"status": "ok", "app": APP_NAME}
 
 
+BAD_KEY = {"error": "The AI chat is not set up: the PORTKEY_API_KEY in the .env file is missing or was not accepted by "
+                    "Portkey. Every other page still works.", "code": "bad_key"}
+
+
 @app.post("/api/ask", response_model=FinalReply)
 async def ask_route(body: AskRequest, request: Request):
     """One patient question -> the Front Desk's structured reply, with tokens and cost. Nothing personal is stored."""
@@ -42,7 +46,12 @@ async def ask_route(body: AskRequest, request: Request):
     emergency = safety.emergency_reply(body.question, body.language)
     if emergency is not None:
         return emergency
-    from backend.agents import ask, rate_limited  # imported here so the health check works without a Portkey key
+    try:
+        from backend.agents import ask, rate_limited  # imported here so the health check works without a Portkey key
+    except RuntimeError as e:  # no PORTKEY_API_KEY at all: a setup problem with a clear message
+        if "PORTKEY_API_KEY" not in str(e):
+            raise
+        return JSONResponse(status_code=502, content=BAD_KEY)
 
     visitor = request.client.host if request.client else "unknown"
     if not rate_limiter.allow(visitor):
@@ -51,6 +60,10 @@ async def ask_route(body: AskRequest, request: Request):
     try:
         reply = await ask(body.question, body.language, body.zip_code, body.insurance_type)
     except Exception as e:  # noqa: BLE001 - give the patient a calm message, not a stack trace
+        status = getattr(e, "status_code", None)
+        if status in (401, 403) or isinstance(e, RuntimeError) and "PORTKEY_API_KEY" in str(e):
+            # Setup problem, not the patient's: say exactly what to fix (never echo the key).
+            return JSONResponse(status_code=502, content=BAD_KEY)
         raise HTTPException(502, "Something went wrong while answering. Please try again.") from e
     insights.count_real_question(request, reply.stop_reason == "completed")  # time-saved counter (never tests)
     return reply
