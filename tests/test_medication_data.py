@@ -23,9 +23,10 @@ def main() -> None:
     finally:
         con.close()
     print("Tables:", counts)
-    assert counts["drugs"] == 25 and counts["masshealth"] == 25 and counts["shortages"] == 25
+    assert counts["drugs"] == 150 and counts["masshealth"] == 150 and counts["shortages"] == 150
     assert counts["vaccines"] == 10 and counts["nadac_prices"] > 0
-    assert controlled == ["adderall_xr_30", "concerta_18"], controlled
+    # Step 7c: the controlled flag comes from the openFDA NDC directory (18 of the 150 drugs).
+    assert len(controlled) == 18 and {"adderall_xr_30", "concerta_18", "vyvanse_30", "oxycodone_5"} <= set(controlled), controlled
 
     first = tools.check_fda_shortage("Concerta")
     second = tools.check_fda_shortage("concerta_18")
@@ -42,6 +43,9 @@ def main() -> None:
     assert offline["from"].startswith("snapshot")
 
     print("Unknown drug:", tools.check_fda_shortage("not-a-drug")["status"])
+    other = tools.shortage_for_agent("methotrexate")  # Step 7c: a medicine outside the list is checked live
+    print("Outside the list (methotrexate):", other["status"], "| in list:", other["in_list"])
+    assert other["in_list"] is False and other["status"] != "not found"
     print("OK")
 
 

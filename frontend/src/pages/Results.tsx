@@ -202,7 +202,6 @@ export function Results() {
   const [sort, setSort] = useState<Sort>("distance");
   const [openOnly, setOpenOnly] = useState(false);
   const [delivery, setDelivery] = useState(false);
-  const [wheelchair, setWheelchair] = useState(false);
   const [language, setLanguage] = useState("");
   const [calling, setCalling] = useState<Row | null>(null);
   const [highlight, setHighlight] = useState("");
@@ -212,9 +211,8 @@ export function Results() {
   const rows = useMemo(() => withDistance(data, origin), [data, origin]);
   const shown = useMemo(() => sortRows(rows.filter((p) =>
     (!openOnly || p.open_now === true) && (!delivery || p.delivery === "yes") &&
-    (!wheelchair || p.wheelchair_accessible === "yes") &&
     (!language || (Array.isArray(p.languages) && p.languages.some((l) => l.toLowerCase().includes(language.toLowerCase()))))), sort),
-  [rows, openOnly, delivery, wheelchair, language, sort]);
+  [rows, openOnly, delivery, language, sort]);
   const openRows = useMemo(() => sortRows(rows.filter((p) => p.open_now === true), "distance"), [rows]);
   const select = useCallback((id: string) => {
     setHighlight(id);
@@ -231,9 +229,9 @@ export function Results() {
   if (!data) return <div className="card loading-card" role="status"><span className="lantern-dot" aria-hidden="true" /> {t("loading")}</div>;
 
   const placeLabel = origin ? (origin.fromDevice ? t("yourLocation") : origin.label) : null;
-  const unlisted = (wheelchair || language) && shown.length === 0;
+  const unlisted = !!language && shown.length === 0;
   const insLabel = insurance ? (insurance === "commercial" ? data.plan?.name ?? t("ins_commercial") : t(`ins_${insurance}` as never)) : t("insUnsure");
-  const clear = () => { setOpenOnly(false); setDelivery(false); setWheelchair(false); setLanguage(""); };
+  const clear = () => { setOpenOnly(false); setDelivery(false); setLanguage(""); };
 
   return (
     <div className="results-page">
@@ -282,7 +280,6 @@ export function Results() {
           <legend>{t("filters")}</legend>
           <label className="check"><input type="checkbox" name="open" checked={openOnly} onChange={(e) => setOpenOnly(e.target.checked)} /> {t("fOpenNow")}</label>
           <label className="check"><input type="checkbox" name="delivery" checked={delivery} onChange={(e) => setDelivery(e.target.checked)} /> {t("fDelivery")}</label>
-          <label className="check"><input type="checkbox" name="wheelchair" checked={wheelchair} onChange={(e) => setWheelchair(e.target.checked)} /> {t("fWheelchair")}</label>
           <label className="lang-filter">{t("fLanguage")}
             <select value={language} onChange={(e) => setLanguage(e.target.value)} name="language">
               <option value="">{t("fAnyLanguage")}</option>

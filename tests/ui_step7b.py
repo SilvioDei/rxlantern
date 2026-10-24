@@ -162,8 +162,8 @@ def t_journey(browser):
     for txt in page.locator(".result-card").all_inner_texts():
         assert "Delivery: yes" in txt
     page.uncheck("input[name=delivery]")
-    page.check("input[name=wheelchair]")
-    expect(page.locator(".empty")).to_contain_text("don't list languages spoken or wheelchair access")
+    page.select_option("select[name=language]", "Spanish")  # Step 7c: the wheelchair filter was removed
+    expect(page.locator(".empty")).to_contain_text("don't list languages spoken")
     page.get_by_role("button", name="Clear filters").click()
     page.check("input[name=open]")
     page.wait_for_timeout(200)
@@ -282,7 +282,8 @@ def t_shortages(browser):
     page = JOURNEY["page"]
     t0 = time.time()
     page.goto(f"{BASE}/shortages")
-    expect(page.locator(".drug-card")).to_have_count(25)
+    n_drugs = len(httpx.get(f"{BASE}/api/meta").json()["drugs"])  # 150 since Step 7c
+    expect(page.locator(".drug-card")).to_have_count(n_drugs)
     secs = time.time() - t0
     assert secs < 2, f"took {secs:.2f} s"
     shot(page, "12_shortage_watch.png")
@@ -298,7 +299,7 @@ def t_shortages(browser):
     concerta.get_by_role("button", name="Find pharmacies near me").click()
     expect(page).to_have_url(re.compile(r"/results\?drug=concerta_18"))
     expect(page.locator(".result-card").first).to_be_visible()
-    return f"loaded in {secs:.2f} s; call script, report form (pre-filled), and results link work"
+    return f"{n_drugs} drugs loaded in {secs:.2f} s; call script, report form (pre-filled), and results link work"
 
 
 @check(7, "Pharmacy, Vaccines, Community, and About & Privacy pages show the right content")
@@ -563,7 +564,8 @@ def cleanup(browser) -> dict:
 def main() -> int:
     SHOTS.mkdir(parents=True, exist_ok=True)
     for old in SHOTS.glob("*.png"):
-        old.unlink()
+        if not old.name.startswith("7c_"):  # Step 7c screenshots are retaken by tests/ui_step7c.py
+            old.unlink()
     assert httpx.get(f"{BASE}/api/health").status_code == 200, "start the app first: ..\\.venv\\Scripts\\python.exe run.py"
     with sync_playwright() as pw:
         browser = pw.chromium.launch()
@@ -576,7 +578,7 @@ def main() -> int:
     out = {"run_at": datetime.now().isoformat(timespec="seconds"), "base_url": BASE, "browser": "Chromium (Playwright)",
            "passed": passed, "failed": len(results) - passed, "checks": results,
            "cleanup": {"test_accounts_created": len(accounts), "rows_left_in_user_db": counts},
-           "screenshots": sorted(p.name for p in SHOTS.glob("*.png"))}
+           "screenshots": sorted(p.name for p in SHOTS.glob("*.png") if not p.name.startswith("7c_"))}
     RESULTS.write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"\n{passed}/{len(results)} passed. Rows left in user DB: {counts}")
     return 0 if passed == len(results) and not any(counts.values()) else 1

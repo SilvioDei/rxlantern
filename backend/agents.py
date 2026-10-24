@@ -68,6 +68,7 @@ class RunDeps:
     pharmacy_ids_seen: set[str] = field(default_factory=set)
     hours_ids: list[str] = field(default_factory=list)     # pharmacies whose hours a tool returned
     call_script: str | None = None
+    outside_list: bool = False                             # a medicine not in RxLantern's list was looked up
 
 
 def _collect(deps: RunDeps, result):
@@ -143,13 +144,12 @@ def _remember_place(ctx: RunContext[RunDeps], place: str) -> None:
 
 @pharmacy_finder.tool
 def find_pharmacies(ctx: RunContext[RunDeps], place: str, open_now: bool = False, delivery: bool = False,
-                    vaccine: str | None = None, language_spoken: str | None = None, wheelchair: bool = False) -> dict:
+                    vaccine: str | None = None, language_spoken: str | None = None) -> dict:
     """Nearest pharmacies to a Boston ZIP code or neighborhood, with optional filters."""
     _remember_place(ctx, place)
-    r = tools.find_pharmacies(place, open_now, delivery, vaccine, language_spoken, wheelchair, lang=ctx.deps.language)
+    r = tools.find_pharmacies(place, open_now, delivery, vaccine, language_spoken, lang=ctx.deps.language)
     return _log(ctx, PF, "find_pharmacies", r, {"place": place, "open_now": open_now, "delivery": delivery,
-                                                "vaccine": vaccine, "language_spoken": language_spoken,
-                                                "wheelchair": wheelchair})
+                                                "vaccine": vaccine, "language_spoken": language_spoken})
 
 
 @pharmacy_finder.tool
@@ -241,14 +241,18 @@ MA = "Medication Access"
 
 @medication_access.tool
 def lookup_drug(ctx: RunContext[RunDeps], name: str) -> dict:
-    """Match a drug name to one of RxLantern's 25 drugs. Spelling mistakes are OK."""
+    """Match a drug name to one of RxLantern's 150 drugs. Spelling mistakes are OK."""
     return _log(ctx, MA, "lookup_drug", tools.lookup_drug(name), {"name": name})
 
 
 @medication_access.tool
 def fda_shortage(ctx: RunContext[RunDeps], drug: str) -> dict:
-    """FDA shortage status for the exact drug and strength (drug id or name)."""
-    return _log(ctx, MA, "fda_shortage", tools.shortage_for_agent(drug), {"drug": drug})
+    """FDA shortage status for the exact drug and strength (drug id or name). A medicine that is not in RxLantern's
+    list is checked live with FDA (every form and strength sold under that name)."""
+    result = tools.shortage_for_agent(drug)
+    if result.get("in_list") is False:
+        ctx.deps.outside_list = True
+    return _log(ctx, MA, "fda_shortage", result, {"drug": drug})
 
 
 @medication_access.tool
@@ -405,6 +409,8 @@ UNCLEAR = [
 ]
 CHECK_PLAN = {"en": "Please check with your plan to see if it is covered.",
               "es": "Por favor consulte con su plan para saber si lo cubre."}
+OUTSIDE_LIST = {"en": "Coverage and cost details are only available for the medicines in RxLantern's list.",
+                "es": "Los detalles de cobertura y costo solo están disponibles para las medicinas de la lista de RxLantern."}
 FRIENDLY = {
     "limit": {"en": "Sorry, this question needed more steps than I'm allowed to use. Please ask it in a shorter, "
                     "simpler way, or call the pharmacy.",
@@ -590,6 +596,9 @@ async def ask(question: str, language: str = "en", zip_code: str | None = None,
             if not re.search(r"check with your plan|consulte con su plan", reply, re.I):
                 reply += " " + CHECK_PLAN[language]
                 deps.safety.append("added 'check with your plan' (no commercial plan drug lists)")
+        if deps.outside_list and not re.search(r"only available for the medicines|solo est[aá]n disponibles", reply, re.I):
+            reply += " " + OUTSIDE_LIST[language]
+            deps.safety.append("added 'coverage and cost only for medicines in the list' (medicine outside the list)")
 
     agents_run = list(dict.fromkeys(e.agent for e in deps.trace))
     tools_run = [f"{e.agent}: {e.tool}" for e in deps.trace if e.tool]

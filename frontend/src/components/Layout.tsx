@@ -81,6 +81,9 @@ export function Header() {
           <AccountMenu />
         </div>
       </div>
+      <div className="easy-bar">
+        <ReadAloud label={t("readPage")} text={() => document.getElementById("main")?.innerText ?? ""} />
+      </div>
       <nav className="main-nav" aria-label={t("mainNav")}>
         <NavLink to="/" end>{t("navHome")}</NavLink>
         <NavLink to="/pharmacies">{t("navPharmacies")}</NavLink>
@@ -90,11 +93,6 @@ export function Header() {
         <NavLink to="/about">{t("navAbout")}</NavLink>
         {me.is_admin && <NavLink to="/admin">{t("navAdmin")}</NavLink>}
       </nav>
-      {easy && (
-        <div className="easy-bar">
-          <ReadAloud label={t("readPage")} text={() => document.getElementById("main")?.innerText ?? ""} />
-        </div>
-      )}
     </header>
   );
 }

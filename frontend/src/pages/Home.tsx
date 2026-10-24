@@ -1,12 +1,17 @@
-// Home: "How it works", the 3-step guided search (medicine, place, insurance), and the "Ask RxLantern" chat.
-import { useEffect, useMemo, useRef, useState, type FormEvent, type KeyboardEvent } from "react";
+// Home: a compact medicine search bar at the top, "How it works", the 3-step guided search (medicine, place,
+// insurance), and the "Ask RxLantern" chat. The top bar starts the same guided search.
+import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { useApp } from "../state";
 import { api, ApiError, type DrugMeta, type FinalReply } from "../api";
 import { Answer } from "../components/Answer";
-import { MicButton } from "../components/Bits";
+import { MicButton, MicNote } from "../components/Bits";
+import { MedicineSearch } from "../components/MedicineSearch";
 import { STRINGS } from "../i18n";
-import { medicines, optionFromQuery, suggest, type Medicine } from "../search";
+import { medicines, optionFromQuery, type Medicine } from "../search";
+
+/** A medicine picked in the top search bar, handed to the guided search (n changes on every pick). */
+interface Preset { m: Medicine; query: string; n: number }
 
 interface Turn { question: string; reply?: FinalReply; error?: string }
 
@@ -28,71 +33,36 @@ function HowItWorks() {
   );
 }
 
-function DrugStep({ chosen, setChosen }: { chosen: DrugMeta | null; setChosen: (d: DrugMeta | null) => void }) {
+function DrugStep({ chosen, setChosen, preset }: { chosen: DrugMeta | null; setChosen: (d: DrugMeta | null) => void; preset: Preset | null }) {
   const { t, meta } = useApp();
   const meds = useMemo(() => medicines(meta?.drugs ?? []), [meta]);
-  const [query, setQuery] = useState("");
   const [medicine, setMedicine] = useState<Medicine | null>(null);
-  const [active, setActive] = useState(0);
-  const [open, setOpen] = useState(false);
-  const list = useMemo(() => suggest(query, meds), [query, meds]);
 
   // Coming back to the page: show the medicine chosen last time.
   useEffect(() => {
     if (chosen && !medicine) setMedicine(meds.find((m) => m.options.some((o) => o.id === chosen.id)) ?? null);
   }, [chosen, meds, medicine]);
 
-  const pick = (m: Medicine) => {
+  const pick = (m: Medicine, query: string) => {
     setMedicine(m);
-    setOpen(false);
     setChosen(optionFromQuery(query, m));
   };
-  const onKey = (e: KeyboardEvent<HTMLInputElement>) => {
-    if (!list.length) return;
-    if (e.key === "ArrowDown") { e.preventDefault(); setOpen(true); setActive((a) => (a + 1) % list.length); }
-    else if (e.key === "ArrowUp") { e.preventDefault(); setActive((a) => (a - 1 + list.length) % list.length); }
-    else if (e.key === "Enter" && open) { e.preventDefault(); pick(list[active]); }
-    else if (e.key === "Escape") setOpen(false);
-  };
+  // A medicine picked in the top search bar starts this same guided search.
+  useEffect(() => { if (preset) pick(preset.m, preset.query); }, [preset?.n]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className="step-block">
       <p className="step-num">{t("step", { n: 1 })}</p>
       {!medicine ? (
-        <>
-          <label htmlFor="drug-search" className="step-label">{t("step1Label")}</label>
-          <p className="muted small" id="drug-help">{t("step1Help")}</p>
-          <div className="combo">
-            <div className="input-row">
-              <input id="drug-search" role="combobox" aria-expanded={open && list.length > 0} aria-controls="drug-list"
-                aria-autocomplete="list" aria-describedby="drug-help" autoComplete="off" value={query}
-                aria-activedescendant={open && list.length ? `drug-opt-${active}` : undefined}
-                placeholder={t("step1Placeholder")} onKeyDown={onKey}
-                onChange={(e) => { setQuery(e.target.value); setOpen(true); setActive(0); }} />
-              <MicButton onText={(txt) => { setQuery(txt); setOpen(true); }} />
-            </div>
-            {open && list.length > 0 && (
-              <ul id="drug-list" role="listbox" className="suggestions" aria-label={t("suggestions")}>
-                {list.map((m, i) => (
-                  <li key={m.label} id={`drug-opt-${i}`} role="option" aria-selected={i === active}
-                    className={i === active ? "active" : ""} onMouseDown={(e) => { e.preventDefault(); pick(m); }}>
-                    <strong>{m.label}</strong>
-                    <span className="muted small"> · {m.options.map((o) => o.strength).join(" / ")}</span>
-                    {m.controlled && <span className="badge badge-warn small-badge">{t("controlledBadge")}</span>}
-                  </li>
-                ))}
-              </ul>
-            )}
-            {query.trim().length >= 3 && list.length === 0 && <p className="notice small" role="status">{t("noDrugMatch")}</p>}
-          </div>
-        </>
+        <MedicineSearch id="drug-search" listId="drug-list" label={t("step1Label")} help={t("step1Help")}
+          placeholder={t("step1Placeholder")} onPick={pick} />
       ) : (
         <>
           <p className="step-label">{t("step1Label")}</p>
           <div className="chosen-row">
             <span className="chosen"><span aria-hidden="true">✓</span> {medicine.label}</span>
             {medicine.controlled && <span className="badge badge-warn">{t("controlledBadge")}</span>}
-            <button type="button" className="link-button" onClick={() => { setMedicine(null); setChosen(null); setQuery(""); }}>{t("changeDrug")}</button>
+            <button type="button" className="link-button" onClick={() => { setMedicine(null); setChosen(null); }}>{t("changeDrug")}</button>
           </div>
           <fieldset className="option-list">
             <legend>{medicine.options.length > 1 ? t("pickStrength") : t("pickStrengthOne")}</legend>
@@ -122,6 +92,7 @@ function PlaceStep({ error }: { error: string }) {
         <input id="place" value={deviceOrigin ? "" : place} list="neighborhoods" placeholder={t("placePlaceholder")} maxLength={40}
           disabled={!!deviceOrigin} onChange={(e) => set({ place: e.target.value })} />
         <datalist id="neighborhoods">{meta?.neighborhoods.map((n) => <option key={n} value={n} />)}</datalist>
+        {!deviceOrigin && <MicButton onText={(txt) => set({ place: txt.replace(/[.!?]+$/, "").slice(0, 40) })} />}
         {deviceOrigin ? (
           <button type="button" className="btn ghost" onClick={() => setDeviceOrigin(null)}>{t("changeDrug")}</button>
         ) : (
@@ -169,7 +140,7 @@ function InsuranceStep() {
   );
 }
 
-function GuidedSearch() {
+function GuidedSearch({ preset }: { preset: Preset | null }) {
   const { t, meta, drugId, set, place, deviceOrigin } = useApp();
   const nav = useNavigate();
   const [chosen, setChosenState] = useState<DrugMeta | null>(null);
@@ -198,11 +169,11 @@ function GuidedSearch() {
   };
 
   return (
-    <section className="card search-card" aria-labelledby="search-title">
+    <section className="card search-card" id="guided-search" aria-labelledby="search-title">
       <h2 id="search-title">{t("searchTitle")}</h2>
       <form onSubmit={submit} noValidate>
         <div className="steps-grid">
-          <DrugStep chosen={chosen} setChosen={setChosen} />
+          <DrugStep chosen={chosen} setChosen={setChosen} preset={preset} />
           <PlaceStep error={error.place ?? ""} />
           <InsuranceStep />
         </div>
@@ -271,6 +242,7 @@ function Chat() {
             <button type="submit" className="btn primary big" disabled={busy || !question.trim()}>{t("askButton")}</button>
           </div>
         </div>
+        <MicNote />
       </form>
       <div className="quick" role="group" aria-label={t("quickTitle")}>
         <button type="button" className="quick-btn" onClick={() => ask(place.trim() ? t("qOpenText", { place: place.trim() }) : t("qOpenNoPlace"))}>
@@ -297,16 +269,39 @@ function Chat() {
   );
 }
 
+function TopSearch({ onPick }: { onPick: (m: Medicine, query: string) => void }) {
+  const { t } = useApp();
+  const nav = useNavigate();
+  return (
+    <section className="top-search" aria-label={t("topSearchLabel")}>
+      <MedicineSearch id="top-search" listId="top-search-list" label={t("topSearchLabel")} labelClass="top-search-label"
+        placeholder={t("step1Placeholder")} submitLabel={t("topSearchButton")} onPick={onPick}
+        onNoMatch={(q) => nav(`/other-medicine?name=${encodeURIComponent(q)}`)} />
+    </section>
+  );
+}
+
 export function Home() {
   const { t } = useApp();
+  const [preset, setPreset] = useState<Preset | null>(null);
+  const startGuided = (m: Medicine, query: string) => {
+    setPreset((p) => ({ m, query, n: (p?.n ?? 0) + 1 }));
+    // Show the guided search with the medicine filled in; the patient confirms the strength, then the place.
+    setTimeout(() => {
+      const card = document.getElementById("guided-search");
+      card?.scrollIntoView({ behavior: "smooth", block: "start" });
+      card?.querySelector<HTMLElement>("input[name=drug-option]:checked, input[name=drug-option]")?.focus({ preventScroll: true });
+    }, 60);
+  };
   return (
     <>
+      <TopSearch onPick={startGuided} />
       <section className="hero">
         <h1>{t("heroTitle")}</h1>
         <p className="lead">{t("heroText")}</p>
       </section>
       <HowItWorks />
-      <GuidedSearch />
+      <GuidedSearch preset={preset} />
       <Chat />
     </>
   );

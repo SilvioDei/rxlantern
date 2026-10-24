@@ -246,8 +246,9 @@ def _pharmacy(pharmacy_id: str) -> dict:
     return p
 
 
-CONTROLLED_MESSAGE = ("RxLantern does not accept or show stock reports for controlled medicines like Adderall XR "
-                      "and Concerta. This protects patients and pharmacies. Please call the pharmacy directly.")
+CONTROLLED_MESSAGE = ("RxLantern does not accept or show stock reports for controlled medicines (DEA Schedule II to V, "
+                      "for example Adderall XR, Concerta, and oxycodone). This protects patients and pharmacies. "
+                      "Please call the pharmacy directly.")
 
 
 # ----------------------------------------------------------------------------- stock reports

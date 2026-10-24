@@ -9,7 +9,13 @@ const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,
 const SPANISH: Record<string, string> = { amoxicilina: "amoxicillin", atorvastatina: "atorvastatin", levotiroxina: "levothyroxine",
   metformina: "metformin", amlodipino: "amlodipine", omeprazol: "omeprazole", sertralina: "sertraline", salbutamol: "albuterol",
   albuterol: "albuterol", insulina: "insulin", sumatriptan: "sumatriptan", latanoprost: "latanoprost", fluticasona: "fluticasone",
-  triamcinolona: "triamcinolone", epinefrina: "epinephrine", nicotina: "nicotine", parche: "patch" };
+  triamcinolona: "triamcinolone", epinefrina: "epinephrine", nicotina: "nicotine", parche: "patch",
+  losartan: "losartan", ibuprofeno: "ibuprofen", gabapentina: "gabapentin", prednisona: "prednisone",
+  cefalexina: "cephalexin", azitromicina: "azithromycin", fluoxetina: "fluoxetine",
+  escitalopram: "escitalopram", pantoprazol: "pantoprazole", famotidina: "famotidine", ondansetron: "ondansetron",
+  montelukast: "montelukast", oseltamivir: "oseltamivir", furosemida: "furosemide", rosuvastatina: "rosuvastatin",
+  simvastatina: "simvastatin", clopidogrel: "clopidogrel", warfarina: "warfarin", naloxona: "naloxone",
+  metilfenidato: "methylphenidate", trazodona: "trazodone", bupropiona: "bupropion" };
 
 function lev(a: string, b: string): number {
   const dp = Array.from({ length: b.length + 1 }, (_, j) => j);

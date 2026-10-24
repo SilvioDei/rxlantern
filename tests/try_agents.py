@@ -26,6 +26,9 @@ QUESTIONS = [
     {"n": 9, "question": "Is the CVS at South Station open on weekends?", "language": "en"},
     {"n": 10, "question": "How close is an urgent care or clinic to the hospital?", "language": "en"},
     {"n": 11, "question": "Is there a walk-in clinic near the CVS in Mattapan?", "language": "en"},
+    # Step 7c: a medicine outside RxLantern's list, and a newly added Schedule II medicine.
+    {"n": 12, "question": "Is methotrexate in shortage right now?", "language": "en"},
+    {"n": 13, "question": "Which pharmacy near 02115 has Vyvanse 30 mg in stock?", "language": "en"},
 ]
 
 

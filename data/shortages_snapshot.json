@@ -1,5 +1,5 @@
 {
-  "checked_date": "2026-10-23",
+  "checked_date": "2026-10-24",
   "api": "https://api.fda.gov/drug/shortages.json",
   "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
   "drugs": [
@@ -14,8 +14,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:42+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:10+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "concerta_18",
@@ -255,8 +255,8 @@
       ],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:43+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:11+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "atorvastatin_20",
@@ -267,8 +267,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:43+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:12+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "lisinopril_10",
@@ -279,8 +279,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:45+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:13+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "levothyroxine_50",
@@ -291,8 +291,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:46+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:14+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "metformin_500",
@@ -303,8 +303,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:47+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:15+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "amlodipine_5",
@@ -315,8 +315,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:47+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:16+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "omeprazole_20",
@@ -327,8 +327,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:48+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:17+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "sertraline_50",
@@ -339,8 +339,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:48+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:18+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "amoxicillin_500",
@@ -351,8 +351,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:49+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:19+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "ozempic_05",
@@ -363,8 +363,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:50+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:20+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "mounjaro_5",
@@ -375,8 +375,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:52+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:21+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "eliquis_5",
@@ -387,8 +387,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:54+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:22+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "humira_40",
@@ -399,8 +399,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:55+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:23+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "dupixent_300",
@@ -411,8 +411,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:56+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:24+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "albuterol_hfa",
@@ -423,8 +423,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:56+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:25+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "lantus_solostar",
@@ -435,8 +435,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:57+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:26+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "amoxicillin_susp_400",
@@ -447,8 +447,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:58+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:27+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "sumatriptan_50",
@@ -459,8 +459,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:58+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:28+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "latanoprost_0005",
@@ -471,8 +471,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:15:59+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:29+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "fluticasone_nasal_50",
@@ -483,8 +483,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:16:00+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:30+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "triamcinolone_cream_01",
@@ -497,8 +497,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:16:02+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:31+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "epinephrine_03",
@@ -511,8 +511,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:16:03+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:32+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "nicotine_patch_21",
@@ -523,8 +523,8 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:16:04+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:33+00:00",
+      "checked_date": "2026-10-24"
     },
     {
       "drug_id": "paxlovid",
@@ -535,8 +535,3690 @@
       "matching_entries": [],
       "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
       "api": "https://api.fda.gov/drug/shortages.json",
-      "checked_at": "2026-10-24T00:16:04+00:00",
-      "checked_date": "2026-10-23"
+      "checked_at": "2026-10-24T04:48:34+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "wegovy_24",
+      "drug": "Wegovy (semaglutide) 2.4 mg pen",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:35+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "rybelsus_7",
+      "drug": "Rybelsus (semaglutide) 7 mg tablet",
+      "status": "shortage resolved or discontinued",
+      "other_forms_on_list": [],
+      "summary": "FDA has past shortage entries for this drug, but none are current.",
+      "matching_entries": [
+        {
+          "presentation": "Rybelsus, Tablet, 14 mg (NDC 0169-4314-30)",
+          "company": "Novo Nordisk, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug. These products will be replaced by Ozempic (semaglutide) tablets.",
+          "update_date": "06/04/2026",
+          "package_ndc": "0169-4314-30"
+        },
+        {
+          "presentation": "Rybelsus, Tablet, 3 mg (NDC 0169-4303-30)",
+          "company": "Novo Nordisk, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug. These products will be replaced by Ozempic (semaglutide) tablets.",
+          "update_date": "06/04/2026",
+          "package_ndc": "0169-4303-30"
+        },
+        {
+          "presentation": "Rybelsus, Tablet, 7 mg (NDC 0169-4307-30)",
+          "company": "Novo Nordisk, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug. These products will be replaced by Ozempic (semaglutide) tablets.",
+          "update_date": "06/04/2026",
+          "package_ndc": "0169-4307-30"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:36+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "zepbound_25",
+      "drug": "Zepbound (tirzepatide) 2.5 mg pen",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:37+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "trulicity_15",
+      "drug": "Trulicity (dulaglutide) 1.5 mg pen",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:38+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "victoza_18",
+      "drug": "Victoza (liraglutide) pen",
+      "status": "in shortage",
+      "other_forms_on_list": [
+        "Injection"
+      ],
+      "summary": "FDA lists a current shortage for 2 package(s) of this exact drug and strength. Some makers may still have it. Call the pharmacy to check.",
+      "matching_entries": [
+        {
+          "presentation": "Liraglutide, Injection, 6 mg/1 mL (NDC 0143-9144-02)",
+          "company": "Hikma Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/14/2026",
+          "package_ndc": "0143-9144-02"
+        },
+        {
+          "presentation": "Liraglutide, Injection, 6 mg/1 mL (NDC 0143-9144-03)",
+          "company": "Hikma Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/14/2026",
+          "package_ndc": "0143-9144-03"
+        },
+        {
+          "presentation": "Liraglutide, Injection, 6 mg/1 mL (NDC 0480-3667-20)",
+          "company": "Novo Nordisk, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Distributed by Teva",
+          "update_date": "09/22/2026",
+          "package_ndc": "0480-3667-20"
+        },
+        {
+          "presentation": "Liraglutide, Injection, 6 mg/1 mL (NDC 0480-3667-22)",
+          "company": "Novo Nordisk, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Distributed by Teva",
+          "update_date": "09/22/2026",
+          "package_ndc": "0480-3667-22"
+        },
+        {
+          "presentation": "Liraglutide, Injection, 6 mg/1 mL (NDC 71288-563-84)",
+          "company": "Meitheal Pharmaceuticals, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "08/27/2026",
+          "package_ndc": "71288-563-84"
+        },
+        {
+          "presentation": "Liraglutide, Injection, 6 mg/1 mL (NDC 71288-563-85)",
+          "company": "Meitheal Pharmaceuticals, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "08/27/2026",
+          "package_ndc": "71288-563-85"
+        },
+        {
+          "presentation": "Victoza, Injection, 6 mg/1 mL (NDC 0169-4060-12)",
+          "company": "Novo Nordisk, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated shortage duration: TBD",
+          "update_date": "09/22/2026",
+          "package_ndc": "0169-4060-12"
+        },
+        {
+          "presentation": "Victoza, Injection, 6 mg/1 mL (NDC 0169-4060-13)",
+          "company": "Novo Nordisk, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated shortage duration: TBD",
+          "update_date": "09/22/2026",
+          "package_ndc": "0169-4060-13"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:39+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "jardiance_10",
+      "drug": "Jardiance (empagliflozin) 10 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:40+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "farxiga_10",
+      "drug": "Farxiga (dapagliflozin) 10 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:41+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "januvia_100",
+      "drug": "Januvia (sitagliptin) 100 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:42+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "glipizide_5",
+      "drug": "Glipizide 5 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:43+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "pioglitazone_30",
+      "drug": "Pioglitazone 30 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:44+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "metformin_er_500",
+      "drug": "Metformin ER 500 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:45+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "humalog_kwikpen",
+      "drug": "Insulin lispro (Humalog KwikPen) pen",
+      "status": "shortage resolved or discontinued",
+      "other_forms_on_list": [],
+      "summary": "FDA has past shortage entries for this drug, but none are current.",
+      "matching_entries": [
+        {
+          "presentation": "Humalog, Injection, U-100 Tempo Pen (NDC 0002-8213-05)",
+          "company": "Eli Lilly and Co.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "A business decision was made to discontinue manufacture of the drug.",
+          "update_date": "10/24/2025",
+          "package_ndc": "0002-8213-05"
+        },
+        {
+          "presentation": "Insulin Lispro Junior KwikPen, Injection, 100 [iU]/1 mL (NDC 0002-7752-05)",
+          "company": "Eli Lilly and Co.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "A business decision was made to discontinue manufacture of the drug. Distribution projected to end June 2027. If patients or prescribers have any questions, the Lilly Answers Center (1-800-545-5979) is available Monday through Friday from 9am to 8pm for assistance.",
+          "update_date": "09/01/2026",
+          "package_ndc": "0002-7752-05"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:46+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "novolog_flexpen",
+      "drug": "Insulin aspart (NovoLog FlexPen) pen",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:47+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "tresiba_flextouch",
+      "drug": "Insulin degludec (Tresiba FlexTouch) pen",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:48+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "toujeo_solostar",
+      "drug": "Toujeo SoloStar (insulin glargine 300 units/mL) pen",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:48+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "insulin_nph_pen",
+      "drug": "Insulin NPH (Humulin N / Novolin N) pen",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:49+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "advair_diskus_250",
+      "drug": "Fluticasone/salmeterol (Advair Diskus) 250/50 inhaler",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:50+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "symbicort_160",
+      "drug": "Budesonide/formoterol (Symbicort) 160/4.5 inhaler",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:51+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "trelegy_100",
+      "drug": "Trelegy Ellipta 100/62.5/25 inhaler",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:52+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "spiriva_handihaler",
+      "drug": "Tiotropium (Spiriva HandiHaler) 18 mcg capsules",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:53+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "flovent_hfa_110",
+      "drug": "Fluticasone (Flovent HFA) 110 mcg inhaler",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:55+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "albuterol_neb_25",
+      "drug": "Albuterol 2.5 mg/3 mL nebulizer solution",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:56+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "duoneb",
+      "drug": "Ipratropium/albuterol (DuoNeb) nebulizer solution",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:57+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "budesonide_neb_05",
+      "drug": "Budesonide 0.5 mg/2 mL nebulizer suspension (Pulmicort Respules)",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:58+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "montelukast_10",
+      "drug": "Montelukast 10 mg tablet",
+      "status": "shortage resolved or discontinued",
+      "other_forms_on_list": [],
+      "summary": "FDA has past shortage entries for this drug, but none are current.",
+      "matching_entries": [
+        {
+          "presentation": "Singulair, Tablet, Chewable, 4 mg (NDC 78206-170-01)",
+          "company": "Organon",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug",
+          "update_date": "11/17/2025",
+          "package_ndc": "78206-170-01"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:48:59+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "montelukast_chew_5",
+      "drug": "Montelukast 5 mg chewable tablet (children)",
+      "status": "shortage resolved or discontinued",
+      "other_forms_on_list": [],
+      "summary": "FDA has past shortage entries for this drug, but none are current.",
+      "matching_entries": [
+        {
+          "presentation": "Singulair, Tablet, Chewable, 4 mg (NDC 78206-170-01)",
+          "company": "Organon",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug",
+          "update_date": "11/17/2025",
+          "package_ndc": "78206-170-01"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:00+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "benzonatate_100",
+      "drug": "Benzonatate 100 mg capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:01+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "naloxone_nasal_4",
+      "drug": "Naloxone 4 mg nasal spray (Narcan)",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:02+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "oseltamivir_75",
+      "drug": "Oseltamivir (Tamiflu) 75 mg capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:03+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "oseltamivir_susp",
+      "drug": "Oseltamivir (Tamiflu) 6 mg/mL oral suspension",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:04+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "amoxicillin_susp_250",
+      "drug": "Amoxicillin 250 mg/5 mL oral suspension",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:05+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "amox_clav_875",
+      "drug": "Amoxicillin/clavulanate (Augmentin) 875/125 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:06+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "amox_clav_susp_400",
+      "drug": "Amoxicillin/clavulanate 400/57 mg per 5 mL oral suspension",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:07+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "azithromycin_250",
+      "drug": "Azithromycin (Z-Pak) 250 mg tablet",
+      "status": "shortage resolved or discontinued",
+      "other_forms_on_list": [],
+      "summary": "FDA has past shortage entries for this drug, but none are current.",
+      "matching_entries": [
+        {
+          "presentation": "Zithromax, Tablet, 250 mg (NDC 0069-4061-01)",
+          "company": "Pfizer Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug",
+          "update_date": "04/09/2026",
+          "package_ndc": "0069-4061-01"
+        },
+        {
+          "presentation": "Zithromax, Tablet, 500 mg (NDC 0069-3070-30)",
+          "company": "Pfizer Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug",
+          "update_date": "04/09/2026",
+          "package_ndc": "0069-3070-30"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:08+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "azithromycin_susp_200",
+      "drug": "Azithromycin 200 mg/5 mL oral suspension",
+      "status": "shortage resolved or discontinued",
+      "other_forms_on_list": [],
+      "summary": "FDA has past shortage entries for this drug, but none are current.",
+      "matching_entries": [
+        {
+          "presentation": "Zithromax, Tablet, 250 mg (NDC 0069-4061-01)",
+          "company": "Pfizer Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug",
+          "update_date": "04/09/2026",
+          "package_ndc": "0069-4061-01"
+        },
+        {
+          "presentation": "Zithromax, Tablet, 500 mg (NDC 0069-3070-30)",
+          "company": "Pfizer Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug",
+          "update_date": "04/09/2026",
+          "package_ndc": "0069-3070-30"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:09+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "cephalexin_500",
+      "drug": "Cephalexin 500 mg capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:10+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "cephalexin_susp_250",
+      "drug": "Cephalexin 250 mg/5 mL oral suspension",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:11+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "cefdinir_susp_250",
+      "drug": "Cefdinir 250 mg/5 mL oral suspension",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:12+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "doxycycline_100",
+      "drug": "Doxycycline hyclate 100 mg capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:13+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "smx_tmp_ds",
+      "drug": "Sulfamethoxazole/trimethoprim DS 800/160 mg tablet (Bactrim DS)",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:14+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "smx_tmp_susp",
+      "drug": "Sulfamethoxazole/trimethoprim 200/40 mg per 5 mL oral suspension",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:15+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "nitrofurantoin_100",
+      "drug": "Nitrofurantoin (Macrobid) 100 mg capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:16+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "ciprofloxacin_500",
+      "drug": "Ciprofloxacin 500 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:17+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "metronidazole_500",
+      "drug": "Metronidazole 500 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [
+        "Injection"
+      ],
+      "summary": "No FDA shortage entry was found for this exact drug and strength. FDA does list other forms or strengths of the same medicine: Injection (current shortage). Those are different products.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:17+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "penicillin_vk_500",
+      "drug": "Penicillin VK 500 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:18+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "fluconazole_150",
+      "drug": "Fluconazole 150 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:19+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "valacyclovir_1g",
+      "drug": "Valacyclovir 1 g tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:20+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "mupirocin_2",
+      "drug": "Mupirocin 2% ointment",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:21+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "losartan_50",
+      "drug": "Losartan 50 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:22+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "metoprolol_succ_er_50",
+      "drug": "Metoprolol succinate ER 50 mg tablet",
+      "status": "shortage resolved or discontinued",
+      "other_forms_on_list": [],
+      "summary": "FDA has past shortage entries for this drug, but none are current.",
+      "matching_entries": [
+        {
+          "presentation": "Metoprolol Succinate, Tablet, Extended Release, 100 mg (NDC 45963-677-11)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "A business decision was made to discontinue manufacture of the drug.",
+          "update_date": "08/31/2026",
+          "package_ndc": "45963-677-11"
+        },
+        {
+          "presentation": "Metoprolol Succinate, Tablet, Extended Release, 100 mg (NDC 45963-677-96)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "A business decision was made to discontinue manufacture of the drug.",
+          "update_date": "08/31/2026",
+          "package_ndc": "45963-677-96"
+        },
+        {
+          "presentation": "Metoprolol Succinate, Tablet, Extended Release, 200 mg (NDC 45963-678-11)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "A business decision was made to discontinue manufacture of the drug.",
+          "update_date": "08/31/2026",
+          "package_ndc": "45963-678-11"
+        },
+        {
+          "presentation": "Metoprolol Succinate, Tablet, Extended Release, 25 mg (NDC 45963-709-11)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "A business decision was made to discontinue manufacture of the drug.",
+          "update_date": "08/31/2026",
+          "package_ndc": "45963-709-11"
+        },
+        {
+          "presentation": "Metoprolol Succinate, Tablet, Extended Release, 25 mg (NDC 45963-709-96)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "A business decision was made to discontinue manufacture of the drug.",
+          "update_date": "08/31/2026",
+          "package_ndc": "45963-709-96"
+        },
+        {
+          "presentation": "Metoprolol Succinate, Tablet, Extended Release, 50 mg (NDC 45963-676-11)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "A business decision was made to discontinue manufacture of the drug.",
+          "update_date": "08/31/2026",
+          "package_ndc": "45963-676-11"
+        },
+        {
+          "presentation": "Metoprolol Succinate, Tablet, Extended Release, 50 mg (NDC 45963-676-96)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "A business decision was made to discontinue manufacture of the drug.",
+          "update_date": "08/31/2026",
+          "package_ndc": "45963-676-96"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:23+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "metoprolol_tart_25",
+      "drug": "Metoprolol tartrate 25 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:24+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "rosuvastatin_10",
+      "drug": "Rosuvastatin 10 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:25+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "hydrochlorothiazide_25",
+      "drug": "Hydrochlorothiazide 25 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [
+        "Tablet"
+      ],
+      "summary": "No FDA shortage entry was found for this exact drug and strength. FDA does list other forms or strengths of the same medicine: Tablet (current shortage). Those are different products.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:26+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "simvastatin_20",
+      "drug": "Simvastatin 20 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:27+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "pravastatin_40",
+      "drug": "Pravastatin 40 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:28+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "furosemide_20",
+      "drug": "Furosemide 20 mg tablet",
+      "status": "in shortage",
+      "other_forms_on_list": [
+        "Injection"
+      ],
+      "summary": "FDA lists a current shortage for 1 package(s) of this exact drug and strength. Some makers may still have it. Call the pharmacy to check.",
+      "matching_entries": [
+        {
+          "presentation": "Furosemide, Oral Solution, 10 mg/1 mL (NDC 0054-3294-46)",
+          "company": "Hikma Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/14/2026",
+          "package_ndc": "0054-3294-46"
+        },
+        {
+          "presentation": "Furosemide, Oral Solution, 10 mg/1 mL (NDC 0054-3294-50)",
+          "company": "Hikma Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Available on allocation",
+          "update_date": "10/14/2026",
+          "package_ndc": "0054-3294-50"
+        },
+        {
+          "presentation": "Furosemide, Oral Solution, 40 mg/5 mL (NDC 0054-3298-63)",
+          "company": "Hikma Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/14/2026",
+          "package_ndc": "0054-3298-63"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:29+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "carvedilol_125",
+      "drug": "Carvedilol 12.5 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:30+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "spironolactone_25",
+      "drug": "Spironolactone 25 mg tablet",
+      "status": "shortage resolved or discontinued",
+      "other_forms_on_list": [],
+      "summary": "FDA has past shortage entries for this drug, but none are current.",
+      "matching_entries": [
+        {
+          "presentation": "Aldactone, Tablet, 100 mg (NDC 0025-1031-31)",
+          "company": "Pfizer Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug.",
+          "update_date": "12/10/2025",
+          "package_ndc": "0025-1031-31"
+        },
+        {
+          "presentation": "Aldactone, Tablet, 25 mg (NDC 0025-1001-31)",
+          "company": "Pfizer Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug.",
+          "update_date": "12/10/2025",
+          "package_ndc": "0025-1001-31"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:31+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "clopidogrel_75",
+      "drug": "Clopidogrel 75 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:32+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "valsartan_160",
+      "drug": "Valsartan 160 mg tablet",
+      "status": "shortage resolved or discontinued",
+      "other_forms_on_list": [],
+      "summary": "FDA has past shortage entries for this drug, but none are current.",
+      "matching_entries": [
+        {
+          "presentation": "Valsartan, Tablet, 160 mg (NDC 0378-5814-77)",
+          "company": "Mylan Pharmaceuticals Inc., a Viatris Company",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "A business decision was made to discontinue manufacture of the drug.",
+          "update_date": "11/19/2025",
+          "package_ndc": "0378-5814-77"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:33+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "ezetimibe_10",
+      "drug": "Ezetimibe 10 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:34+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "propranolol_10",
+      "drug": "Propranolol 10 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [
+        "Injection"
+      ],
+      "summary": "No FDA shortage entry was found for this exact drug and strength. FDA does list other forms or strengths of the same medicine: Injection (current shortage). Those are different products.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:35+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "xarelto_20",
+      "drug": "Xarelto (rivaroxaban) 20 mg tablet",
+      "status": "shortage resolved or discontinued",
+      "other_forms_on_list": [],
+      "summary": "FDA has past shortage entries for this drug, but none are current.",
+      "matching_entries": [
+        {
+          "presentation": "Xarelto, For Suspension, 155 mg (NDC 50458-575-01)",
+          "company": "Janssen Pharmaceuticals",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Business Decision",
+          "update_date": "09/18/2026",
+          "package_ndc": "50458-575-01"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:36+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "warfarin_5",
+      "drug": "Warfarin 5 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:37+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "entresto_49_51",
+      "drug": "Entresto (sacubitril/valsartan) 49/51 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:38+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "repatha_140",
+      "drug": "Repatha (evolocumab) 140 mg pen",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:39+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "brilinta_90",
+      "drug": "Brilinta (ticagrelor) 90 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:40+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "nitroglycerin_sl_04",
+      "drug": "Nitroglycerin 0.4 mg sublingual tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:41+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "escitalopram_10",
+      "drug": "Escitalopram 10 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:42+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "bupropion_xl_150",
+      "drug": "Bupropion XL 150 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:43+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "fluoxetine_20",
+      "drug": "Fluoxetine 20 mg capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:44+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "trazodone_50",
+      "drug": "Trazodone 50 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:45+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "duloxetine_60",
+      "drug": "Duloxetine 60 mg DR capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:46+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "buspirone_10",
+      "drug": "Buspirone 10 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:47+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "venlafaxine_er_75",
+      "drug": "Venlafaxine ER 75 mg capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:48+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "hydroxyzine_25",
+      "drug": "Hydroxyzine HCl 25 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:49+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "quetiapine_25",
+      "drug": "Quetiapine 25 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:50+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "aripiprazole_5",
+      "drug": "Aripiprazole 5 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:50+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "lamotrigine_100",
+      "drug": "Lamotrigine 100 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:51+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "alprazolam_05",
+      "drug": "Alprazolam 0.5 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:52+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "clonazepam_05",
+      "drug": "Clonazepam 0.5 mg tablet",
+      "status": "in shortage",
+      "other_forms_on_list": [],
+      "summary": "FDA lists a current shortage for 1 package(s) of this exact drug and strength. Some makers may still have it. Call the pharmacy to check.",
+      "matching_entries": [
+        {
+          "presentation": "Clonazepam, Tablet, .5 mg (NDC 0093-0832-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/23/2026",
+          "package_ndc": "0093-0832-01"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, .5 mg (NDC 0093-0832-05)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/23/2026",
+          "package_ndc": "0093-0832-05"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, .5 mg (NDC 16729-136-00)",
+          "company": "Accord Healthcare Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/17/2026",
+          "package_ndc": "16729-136-00"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, .5 mg (NDC 16729-136-16)",
+          "company": "Accord Healthcare Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/17/2026",
+          "package_ndc": "16729-136-16"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, .5 mg (NDC 43547-406-10)",
+          "company": "Prinston Pharmaceutical, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Solco Healthcare",
+          "update_date": "09/02/2026",
+          "package_ndc": "43547-406-10"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, .5 mg (NDC 43547-406-11)",
+          "company": "Prinston Pharmaceutical, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Solco Healthcare",
+          "update_date": "09/02/2026",
+          "package_ndc": "43547-406-11"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, .5 mg (NDC 43547-406-50)",
+          "company": "Prinston Pharmaceutical, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Solco Healthcare",
+          "update_date": "09/02/2026",
+          "package_ndc": "43547-406-50"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, .5 mg (NDC 59651-722-01)",
+          "company": "Aurobindo Pharma USA",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/02/2026",
+          "package_ndc": "59651-722-01"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, .5 mg (NDC 59651-722-99)",
+          "company": "Aurobindo Pharma USA",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/02/2026",
+          "package_ndc": "59651-722-99"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, .5 mg (NDC 72888-152-00)",
+          "company": "Rubicon Research Private Limited",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Advagen Pharma Ltd.",
+          "update_date": "06/01/2026",
+          "package_ndc": "72888-152-00"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, .5 mg (NDC 72888-152-01)",
+          "company": "Rubicon Research Private Limited",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Advagen Pharma Ltd.",
+          "update_date": "06/01/2026",
+          "package_ndc": "72888-152-01"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, .5 mg (NDC 72888-152-05)",
+          "company": "Rubicon Research Private Limited",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Advagen Pharma Ltd.",
+          "update_date": "06/01/2026",
+          "package_ndc": "72888-152-05"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, .5 mg (NDC 72888-152-30)",
+          "company": "Rubicon Research Private Limited",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Advagen Pharma Ltd.",
+          "update_date": "06/01/2026",
+          "package_ndc": "72888-152-30"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 1 mg (NDC 0093-3212-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/23/2026",
+          "package_ndc": "0093-3212-01"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 1 mg (NDC 0093-3212-05)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/23/2026",
+          "package_ndc": "0093-3212-05"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 1 mg (NDC 16729-137-00)",
+          "company": "Accord Healthcare Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/17/2026",
+          "package_ndc": "16729-137-00"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 1 mg (NDC 16729-137-16)",
+          "company": "Accord Healthcare Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/17/2026",
+          "package_ndc": "16729-137-16"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 1 mg (NDC 43547-407-10)",
+          "company": "Prinston Pharmaceutical, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Solco Healthcare",
+          "update_date": "09/02/2026",
+          "package_ndc": "43547-407-10"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 1 mg (NDC 43547-407-11)",
+          "company": "Prinston Pharmaceutical, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Solco Healthcare",
+          "update_date": "09/02/2026",
+          "package_ndc": "43547-407-11"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 1 mg (NDC 43547-407-50)",
+          "company": "Prinston Pharmaceutical, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Solco Healthcare",
+          "update_date": "09/02/2026",
+          "package_ndc": "43547-407-50"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 1 mg (NDC 59651-723-01)",
+          "company": "Aurobindo Pharma USA",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/02/2026",
+          "package_ndc": "59651-723-01"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 1 mg (NDC 59651-723-99)",
+          "company": "Aurobindo Pharma USA",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/02/2026",
+          "package_ndc": "59651-723-99"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 1 mg (NDC 72888-153-00)",
+          "company": "Rubicon Research Private Limited",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Advagen Pharma Ltd.",
+          "update_date": "06/01/2026",
+          "package_ndc": "72888-153-00"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 1 mg (NDC 72888-153-01)",
+          "company": "Rubicon Research Private Limited",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Advagen Pharma Ltd.",
+          "update_date": "06/01/2026",
+          "package_ndc": "72888-153-01"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 1 mg (NDC 72888-153-05)",
+          "company": "Rubicon Research Private Limited",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Advagen Pharma Ltd.",
+          "update_date": "06/01/2026",
+          "package_ndc": "72888-153-05"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 1 mg (NDC 72888-153-30)",
+          "company": "Rubicon Research Private Limited",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Advagen Pharma Ltd.",
+          "update_date": "06/01/2026",
+          "package_ndc": "72888-153-30"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 2 mg (NDC 0093-3213-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/23/2026",
+          "package_ndc": "0093-3213-01"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 2 mg (NDC 0093-3213-05)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/23/2026",
+          "package_ndc": "0093-3213-05"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 2 mg (NDC 16729-138-00)",
+          "company": "Accord Healthcare Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/17/2026",
+          "package_ndc": "16729-138-00"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 2 mg (NDC 16729-138-16)",
+          "company": "Accord Healthcare Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/17/2026",
+          "package_ndc": "16729-138-16"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 2 mg (NDC 43547-408-10)",
+          "company": "Prinston Pharmaceutical, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Solco Healthcare",
+          "update_date": "09/02/2026",
+          "package_ndc": "43547-408-10"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 2 mg (NDC 43547-408-50)",
+          "company": "Prinston Pharmaceutical, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Solco Healthcare",
+          "update_date": "09/02/2026",
+          "package_ndc": "43547-408-50"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 2 mg (NDC 59651-724-01)",
+          "company": "Aurobindo Pharma USA",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/02/2026",
+          "package_ndc": "59651-724-01"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 2 mg (NDC 59651-724-05)",
+          "company": "Aurobindo Pharma USA",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/02/2026",
+          "package_ndc": "59651-724-05"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 2 mg (NDC 72888-154-01)",
+          "company": "Rubicon Research Private Limited",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Advagen Pharma Ltd.",
+          "update_date": "06/01/2026",
+          "package_ndc": "72888-154-01"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 2 mg (NDC 72888-154-05)",
+          "company": "Rubicon Research Private Limited",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Advagen Pharma Ltd.",
+          "update_date": "06/01/2026",
+          "package_ndc": "72888-154-05"
+        },
+        {
+          "presentation": "Clonazepam, Tablet, 2 mg (NDC 72888-154-30)",
+          "company": "Rubicon Research Private Limited",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by Advagen Pharma Ltd.",
+          "update_date": "06/01/2026",
+          "package_ndc": "72888-154-30"
+        },
+        {
+          "presentation": "Klonopin, Tablet, .5 mg (NDC 61269-605-10)",
+          "company": "Cheplapharm Arzneimittel GmbH",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by H2-Pharma",
+          "update_date": "10/16/2026",
+          "package_ndc": "61269-605-10"
+        },
+        {
+          "presentation": "Klonopin, Tablet, 1 mg (NDC 61269-610-10)",
+          "company": "Cheplapharm Arzneimittel GmbH",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "Marketed by H2-Pharma",
+          "update_date": "10/16/2026",
+          "package_ndc": "61269-610-10"
+        },
+        {
+          "presentation": "Klonopin, Tablet, 2 mg (NDC 61269-620-10)",
+          "company": "Cheplapharm Arzneimittel GmbH",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated duration February 2027. Manufacturing delays. Marketed by H2-Pharma.",
+          "update_date": "10/16/2026",
+          "package_ndc": "61269-620-10"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:53+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "lorazepam_05",
+      "drug": "Lorazepam 0.5 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [
+        "Injection"
+      ],
+      "summary": "No FDA shortage entry was found for this exact drug and strength. FDA does list other forms or strengths of the same medicine: Injection (current shortage). Those are different products.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:54+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "zolpidem_10",
+      "drug": "Zolpidem 10 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:55+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "adderall_ir_10",
+      "drug": "Amphetamine salts (Adderall) 10 mg tablet",
+      "status": "in shortage",
+      "other_forms_on_list": [
+        "Tablet"
+      ],
+      "summary": "FDA lists a current shortage for 28 package(s) of this exact drug and strength. Some makers may still have it. Call the pharmacy to check.",
+      "matching_entries": [
+        {
+          "presentation": "Adderall, Tablet, 1.25 mg; 1.25 mg; 1.25 mg; 1.25 mg (NDC 57844-105-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "57844-105-01"
+        },
+        {
+          "presentation": "Adderall, Tablet, 1.875 mg; 1.875 mg; 1.875 mg; 1.875 mg (NDC 57844-117-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "57844-117-01"
+        },
+        {
+          "presentation": "Adderall, Tablet, 2.5 mg; 2.5 mg; 2.5 mg; 2.5 mg (NDC 57844-110-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "57844-110-01"
+        },
+        {
+          "presentation": "Adderall, Tablet, 3.125 mg; 3.125 mg; 3.125 mg; 3.125 mg (NDC 57844-112-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated recovery: November 2026",
+          "update_date": "10/15/2026",
+          "package_ndc": "57844-112-01"
+        },
+        {
+          "presentation": "Adderall, Tablet, 3.75 mg; 3.75 mg; 3.75 mg; 3.75 mg (NDC 57844-115-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "57844-115-01"
+        },
+        {
+          "presentation": "Adderall, Tablet, 5 mg; 5 mg; 5 mg; 5 mg (NDC 57844-120-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "57844-120-01"
+        },
+        {
+          "presentation": "Adderall, Tablet, 7.5 mg; 7.5 mg; 7.5 mg; 7.5 mg (NDC 57844-130-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "57844-130-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.25 mg; 1.25 mg; 1.25 mg; 1.25 mg (NDC 0185-2098-01)",
+          "company": "Sandoz Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/21/2026",
+          "package_ndc": "0185-2098-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.25 mg; 1.25 mg; 1.25 mg; 1.25 mg (NDC 0406-8891-01)",
+          "company": "SpecGx LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "08/20/2026",
+          "package_ndc": "0406-8891-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.25 mg; 1.25 mg; 1.25 mg; 1.25 mg (NDC 0527-0760-37)",
+          "company": "Lannett Company, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0527-0760-37"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.25 mg; 1.25 mg; 1.25 mg; 1.25 mg (NDC 0555-0971-02)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0555-0971-02"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.25 mg; 1.25 mg; 1.25 mg; 1.25 mg (NDC 11534-190-01)",
+          "company": "Sunrise Pharmaceutical, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "11534-190-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.25 mg; 1.25 mg; 1.25 mg; 1.25 mg (NDC 13107-068-01)",
+          "company": "Aurobindo Pharma USA",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated availability: April 2027",
+          "update_date": "10/02/2026",
+          "package_ndc": "13107-068-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.25 mg; 1.25 mg; 1.25 mg; 1.25 mg (NDC 42806-339-01)",
+          "company": "Epic Pharma, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "10/05/2026",
+          "package_ndc": "42806-339-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.25 mg; 1.25 mg; 1.25 mg; 1.25 mg (NDC 64850-500-01)",
+          "company": "Elite Laboratories, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "64850-500-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.25 mg; 1.25 mg; 1.25 mg; 1.25 mg (NDC 70010-111-01)",
+          "company": "Granules Pharmaceuticals Inc.",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated recovery: October 2026",
+          "update_date": "10/13/2026",
+          "package_ndc": "70010-111-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.25 mg; 1.25 mg; 1.25 mg; 1.25 mg (NDC 72516-016-01)",
+          "company": "Oryza Pharmaceuticals Inc.",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated recovery: April 2027",
+          "update_date": "10/15/2026",
+          "package_ndc": "72516-016-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.875 mg; 1.875 mg; 1.875 mg; 1.875 mg (NDC 0406-8884-01)",
+          "company": "SpecGx LLC",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "08/20/2026",
+          "package_ndc": "0406-8884-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.875 mg; 1.875 mg; 1.875 mg; 1.875 mg (NDC 0527-0761-37)",
+          "company": "Lannett Company, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0527-0761-37"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.875 mg; 1.875 mg; 1.875 mg; 1.875 mg (NDC 0555-0775-02)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0555-0775-02"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.875 mg; 1.875 mg; 1.875 mg; 1.875 mg (NDC 11534-191-01)",
+          "company": "Sunrise Pharmaceutical, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "11534-191-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.875 mg; 1.875 mg; 1.875 mg; 1.875 mg (NDC 13107-069-01)",
+          "company": "Aurobindo Pharma USA",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated availability: April 2027",
+          "update_date": "10/02/2026",
+          "package_ndc": "13107-069-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.875 mg; 1.875 mg; 1.875 mg; 1.875 mg (NDC 64850-501-01)",
+          "company": "Elite Laboratories, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "64850-501-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 1.875 mg; 1.875 mg; 1.875 mg; 1.875 mg (NDC 70010-112-01)",
+          "company": "Granules Pharmaceuticals Inc.",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated recovery: October 2026",
+          "update_date": "10/13/2026",
+          "package_ndc": "70010-112-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 10mg (NDC 47781-176-01)",
+          "company": "Alvogen",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "47781-176-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 2.5 mg; 2.5 mg; 2.5 mg; 2.5 mg (NDC 0185-0842-01)",
+          "company": "Sandoz Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/21/2026",
+          "package_ndc": "0185-0842-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 2.5 mg; 2.5 mg; 2.5 mg; 2.5 mg (NDC 0406-8892-01)",
+          "company": "SpecGx LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "08/20/2026",
+          "package_ndc": "0406-8892-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 2.5 mg; 2.5 mg; 2.5 mg; 2.5 mg (NDC 0527-1502-37)",
+          "company": "Lannett Company, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0527-1502-37"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 2.5 mg; 2.5 mg; 2.5 mg; 2.5 mg (NDC 0555-0972-02)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0555-0972-02"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 2.5 mg; 2.5 mg; 2.5 mg; 2.5 mg (NDC 11534-192-01)",
+          "company": "Sunrise Pharmaceutical, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "11534-192-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 2.5 mg; 2.5 mg; 2.5 mg; 2.5 mg (NDC 13107-070-01)",
+          "company": "Aurobindo Pharma USA",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated availability: April 2027",
+          "update_date": "10/02/2026",
+          "package_ndc": "13107-070-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 2.5 mg; 2.5 mg; 2.5 mg; 2.5 mg (NDC 42806-341-01)",
+          "company": "Epic Pharma, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "10/05/2026",
+          "package_ndc": "42806-341-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 2.5 mg; 2.5 mg; 2.5 mg; 2.5 mg (NDC 64850-502-01)",
+          "company": "Elite Laboratories, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "64850-502-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 2.5 mg; 2.5 mg; 2.5 mg; 2.5 mg (NDC 70010-113-01)",
+          "company": "Granules Pharmaceuticals Inc.",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated recovery: October 2026",
+          "update_date": "10/13/2026",
+          "package_ndc": "70010-113-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 2.5 mg; 2.5 mg; 2.5 mg; 2.5 mg (NDC 72516-014-01)",
+          "company": "Oryza Pharmaceuticals Inc.",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated recovery: April 2027",
+          "update_date": "10/15/2026",
+          "package_ndc": "72516-014-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 3.125 mg; 3.125 mg; 3.125 mg; 3.125 mg (NDC 0527-0763-37)",
+          "company": "Lannett Company, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0527-0763-37"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 3.125 mg; 3.125 mg; 3.125 mg; 3.125 mg (NDC 0555-0776-02)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0555-0776-02"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 3.125 mg; 3.125 mg; 3.125 mg; 3.125 mg (NDC 11534-193-01)",
+          "company": "Sunrise Pharmaceutical, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "11534-193-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 3.125 mg; 3.125 mg; 3.125 mg; 3.125 mg (NDC 64850-503-01)",
+          "company": "Elite Laboratories, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "64850-503-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 3.125 mg; 3.125 mg; 3.125 mg; 3.125 mg (NDC 70010-114-01)",
+          "company": "Granules Pharmaceuticals Inc.",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated recovery: October 2026",
+          "update_date": "10/13/2026",
+          "package_ndc": "70010-114-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 3.75 mg; 3.75 mg; 3.75 mg; 3.75 mg (NDC 0406-8885-01)",
+          "company": "SpecGx LLC",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "08/20/2026",
+          "package_ndc": "0406-8885-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 3.75 mg; 3.75 mg; 3.75 mg; 3.75 mg (NDC 0527-0764-37)",
+          "company": "Lannett Company, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0527-0764-37"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 3.75 mg; 3.75 mg; 3.75 mg; 3.75 mg (NDC 0555-0777-02)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0555-0777-02"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 3.75 mg; 3.75 mg; 3.75 mg; 3.75 mg (NDC 11534-194-01)",
+          "company": "Sunrise Pharmaceutical, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "11534-194-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 3.75 mg; 3.75 mg; 3.75 mg; 3.75 mg (NDC 13107-072-01)",
+          "company": "Aurobindo Pharma USA",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated availability: April 2027",
+          "update_date": "10/02/2026",
+          "package_ndc": "13107-072-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 3.75 mg; 3.75 mg; 3.75 mg; 3.75 mg (NDC 42806-343-01)",
+          "company": "Epic Pharma, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "10/05/2026",
+          "package_ndc": "42806-343-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 3.75 mg; 3.75 mg; 3.75 mg; 3.75 mg (NDC 64850-504-01)",
+          "company": "Elite Laboratories, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "64850-504-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 3.75 mg; 3.75 mg; 3.75 mg; 3.75 mg (NDC 70010-115-01)",
+          "company": "Granules Pharmaceuticals Inc.",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated recovery: October 2026",
+          "update_date": "10/13/2026",
+          "package_ndc": "70010-115-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 3.75 mg; 3.75 mg; 3.75 mg; 3.75 mg (NDC 72516-013-01)",
+          "company": "Oryza Pharmaceuticals Inc.",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated recovery: April 2027",
+          "update_date": "10/15/2026",
+          "package_ndc": "72516-013-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 5 mg; 5 mg; 5 mg; 5 mg (NDC 0185-0853-01)",
+          "company": "Sandoz Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/21/2026",
+          "package_ndc": "0185-0853-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 5 mg; 5 mg; 5 mg; 5 mg (NDC 0406-8893-01)",
+          "company": "SpecGx LLC",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "08/20/2026",
+          "package_ndc": "0406-8893-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 5 mg; 5 mg; 5 mg; 5 mg (NDC 0555-0973-02)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0555-0973-02"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 5 mg; 5 mg; 5 mg; 5 mg (NDC 11534-195-01)",
+          "company": "Sunrise Pharmaceutical, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "11534-195-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 5 mg; 5 mg; 5 mg; 5 mg (NDC 13107-073-01)",
+          "company": "Aurobindo Pharma USA",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated availability: April 2027",
+          "update_date": "10/02/2026",
+          "package_ndc": "13107-073-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 5 mg; 5 mg; 5 mg; 5 mg (NDC 42806-344-01)",
+          "company": "Epic Pharma, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "10/05/2026",
+          "package_ndc": "42806-344-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 5 mg; 5 mg; 5 mg; 5 mg (NDC 64850-505-01)",
+          "company": "Elite Laboratories, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "64850-505-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 5 mg; 5 mg; 5 mg; 5 mg (NDC 70010-116-01)",
+          "company": "Granules Pharmaceuticals Inc.",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated recovery: October 2026",
+          "update_date": "10/13/2026",
+          "package_ndc": "70010-116-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 5 mg; 5 mg; 5 mg; 5 mg (NDC 72516-012-01)",
+          "company": "Oryza Pharmaceuticals Inc.",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated recovery: April 2027",
+          "update_date": "10/15/2026",
+          "package_ndc": "72516-012-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 7.5 mg; 7.5 mg; 7.5 mg; 7.5 mg (NDC 0185-2099-01)",
+          "company": "Sandoz Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/21/2026",
+          "package_ndc": "0185-2099-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 7.5 mg; 7.5 mg; 7.5 mg; 7.5 mg (NDC 0406-8894-01)",
+          "company": "SpecGx LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "08/20/2026",
+          "package_ndc": "0406-8894-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 7.5 mg; 7.5 mg; 7.5 mg; 7.5 mg (NDC 0527-0766-37)",
+          "company": "Lannett Company, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0527-0766-37"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 7.5 mg; 7.5 mg; 7.5 mg; 7.5 mg (NDC 0555-0974-02)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "10/15/2026",
+          "package_ndc": "0555-0974-02"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 7.5 mg; 7.5 mg; 7.5 mg; 7.5 mg (NDC 11534-196-01)",
+          "company": "Sunrise Pharmaceutical, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "11534-196-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 7.5 mg; 7.5 mg; 7.5 mg; 7.5 mg (NDC 13107-074-01)",
+          "company": "Aurobindo Pharma USA",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated availability: April 2027",
+          "update_date": "10/02/2026",
+          "package_ndc": "13107-074-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 7.5 mg; 7.5 mg; 7.5 mg; 7.5 mg (NDC 42806-345-01)",
+          "company": "Epic Pharma, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "10/05/2026",
+          "package_ndc": "42806-345-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 7.5 mg; 7.5 mg; 7.5 mg; 7.5 mg (NDC 64850-506-01)",
+          "company": "Elite Laboratories, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "64850-506-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 7.5 mg; 7.5 mg; 7.5 mg; 7.5 mg (NDC 70010-117-01)",
+          "company": "Granules Pharmaceuticals Inc.",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated recovery: October 2026",
+          "update_date": "10/13/2026",
+          "package_ndc": "70010-117-01"
+        },
+        {
+          "presentation": "Amphetamine Aspartate Monohydrate, Amphetamine Sulfate, Dextroamphetamine Saccharate, Dextroamphetamine Sulfate, Tablet, 7.5 mg; 7.5 mg; 7.5 mg; 7.5 mg (NDC 72516-011-01)",
+          "company": "Oryza Pharmaceuticals Inc.",
+          "status": "Current",
+          "availability": "Unavailable",
+          "related_info": "Estimated recovery: April 2027",
+          "update_date": "10/15/2026",
+          "package_ndc": "72516-011-01"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:56+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "vyvanse_30",
+      "drug": "Lisdexamfetamine (Vyvanse) 30 mg capsule",
+      "status": "in shortage",
+      "other_forms_on_list": [
+        "Capsule",
+        "Tablet, Chewable"
+      ],
+      "summary": "FDA lists a current shortage for 34 package(s) of this exact drug and strength. Some makers may still have it. Call the pharmacy to check.",
+      "matching_entries": [
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 10 mg (NDC 0054-0660-25)",
+          "company": "Hikma Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Available on allocation",
+          "update_date": "05/12/2026",
+          "package_ndc": "0054-0660-25"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 10 mg (NDC 0378-6854-77)",
+          "company": "Mylan Pharmaceuticals Inc., a Viatris Company",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/19/2026",
+          "package_ndc": "0378-6854-77"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 10 mg (NDC 0480-3565-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0480-3565-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 10 mg (NDC 42858-161-01)",
+          "company": "Rhodes Pharmaceuticals L.P.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "06/24/2026",
+          "package_ndc": "42858-161-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 10 mg (NDC 43547-602-10)",
+          "company": "Solco Healthcare US, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "On allocation",
+          "update_date": "06/29/2026",
+          "package_ndc": "43547-602-10"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 10 mg (NDC 47781-562-01)",
+          "company": "Alvogen",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "47781-562-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 10 mg (NDC 57664-046-88)",
+          "company": "Sun Pharmaceutical Industries, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated Recovery: TBD",
+          "update_date": "10/19/2026",
+          "package_ndc": "57664-046-88"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 10 mg (NDC 64850-550-01)",
+          "company": "Elite Laboratories, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "10/15/2026",
+          "package_ndc": "64850-550-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 20 mg (NDC 0054-0370-25)",
+          "company": "Hikma Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Available on allocation",
+          "update_date": "10/14/2026",
+          "package_ndc": "0054-0370-25"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 20 mg (NDC 0378-6855-77)",
+          "company": "Mylan Pharmaceuticals Inc., a Viatris Company",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/19/2026",
+          "package_ndc": "0378-6855-77"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 20 mg (NDC 0480-3566-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0480-3566-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 20 mg (NDC 42858-162-01)",
+          "company": "Rhodes Pharmaceuticals L.P.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "06/24/2026",
+          "package_ndc": "42858-162-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 20 mg (NDC 43547-603-10)",
+          "company": "Solco Healthcare US, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "On allocation",
+          "update_date": "06/29/2026",
+          "package_ndc": "43547-603-10"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 20 mg (NDC 47781-563-01)",
+          "company": "Alvogen",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "47781-563-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 20 mg (NDC 57664-047-88)",
+          "company": "Sun Pharmaceutical Industries, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated Recovery: TBD",
+          "update_date": "10/19/2026",
+          "package_ndc": "57664-047-88"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 20 mg (NDC 64850-551-01)",
+          "company": "Elite Laboratories, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "10/15/2026",
+          "package_ndc": "64850-551-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 20 mg (NDC 65162-023-09)",
+          "company": "Amneal Pharmaceuticals",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/06/2026",
+          "package_ndc": "65162-023-09"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 30 mg (NDC 0054-0371-25)",
+          "company": "Hikma Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Available on allocation",
+          "update_date": "10/14/2026",
+          "package_ndc": "0054-0371-25"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 30 mg (NDC 0378-6856-77)",
+          "company": "Mylan Pharmaceuticals Inc., a Viatris Company",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/19/2026",
+          "package_ndc": "0378-6856-77"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 30 mg (NDC 0406-5113-01)",
+          "company": "SpecGx LLC",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "08/20/2026",
+          "package_ndc": "0406-5113-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 30 mg (NDC 0480-3567-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0480-3567-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 30 mg (NDC 0527-4663-37)",
+          "company": "Lannett Company, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: October 2026",
+          "update_date": "10/15/2026",
+          "package_ndc": "0527-4663-37"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 30 mg (NDC 42858-163-01)",
+          "company": "Rhodes Pharmaceuticals L.P.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "06/24/2026",
+          "package_ndc": "42858-163-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 30 mg (NDC 43547-604-10)",
+          "company": "Solco Healthcare US, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "On allocation",
+          "update_date": "06/29/2026",
+          "package_ndc": "43547-604-10"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 30 mg (NDC 47781-564-01)",
+          "company": "Alvogen",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "47781-564-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 30 mg (NDC 57664-048-88)",
+          "company": "Sun Pharmaceutical Industries, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated Recovery: TBD",
+          "update_date": "10/19/2026",
+          "package_ndc": "57664-048-88"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 30 mg (NDC 60505-4741-1)",
+          "company": "Apotex Corp.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "60505-4741-1"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 30 mg (NDC 64850-552-01)",
+          "company": "Elite Laboratories, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "10/15/2026",
+          "package_ndc": "64850-552-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 30 mg (NDC 65162-024-09)",
+          "company": "Amneal Pharmaceuticals",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/06/2026",
+          "package_ndc": "65162-024-09"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 40 mg (NDC 0054-0372-25)",
+          "company": "Hikma Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Available on allocation",
+          "update_date": "10/14/2026",
+          "package_ndc": "0054-0372-25"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 40 mg (NDC 0378-6857-77)",
+          "company": "Mylan Pharmaceuticals Inc., a Viatris Company",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/19/2026",
+          "package_ndc": "0378-6857-77"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 40 mg (NDC 0480-3568-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0480-3568-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 40 mg (NDC 42858-164-01)",
+          "company": "Rhodes Pharmaceuticals L.P.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "06/24/2026",
+          "package_ndc": "42858-164-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 40 mg (NDC 43547-605-10)",
+          "company": "Solco Healthcare US, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "On allocation",
+          "update_date": "06/29/2026",
+          "package_ndc": "43547-605-10"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 40 mg (NDC 47781-565-01)",
+          "company": "Alvogen",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "47781-565-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 40 mg (NDC 57664-049-88)",
+          "company": "Sun Pharmaceutical Industries, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated Recovery: TBD",
+          "update_date": "10/19/2026",
+          "package_ndc": "57664-049-88"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 40 mg (NDC 64850-553-01)",
+          "company": "Elite Laboratories, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "10/15/2026",
+          "package_ndc": "64850-553-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 40 mg (NDC 65162-025-09)",
+          "company": "Amneal Pharmaceuticals",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/06/2026",
+          "package_ndc": "65162-025-09"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 50 mg (NDC 0054-0373-25)",
+          "company": "Hikma Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Available on allocation",
+          "update_date": "10/14/2026",
+          "package_ndc": "0054-0373-25"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 50 mg (NDC 0378-6858-77)",
+          "company": "Mylan Pharmaceuticals Inc., a Viatris Company",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/19/2026",
+          "package_ndc": "0378-6858-77"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 50 mg (NDC 0480-3569-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0480-3569-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 50 mg (NDC 42858-165-01)",
+          "company": "Rhodes Pharmaceuticals L.P.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "06/24/2026",
+          "package_ndc": "42858-165-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 50 mg (NDC 43547-606-10)",
+          "company": "Solco Healthcare US, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "On allocation",
+          "update_date": "06/29/2026",
+          "package_ndc": "43547-606-10"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 50 mg (NDC 47781-566-01)",
+          "company": "Alvogen",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "47781-566-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 50 mg (NDC 57664-050-88)",
+          "company": "Sun Pharmaceutical Industries, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated Recovery: TBD",
+          "update_date": "10/19/2026",
+          "package_ndc": "57664-050-88"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 50 mg (NDC 64850-554-01)",
+          "company": "Elite Laboratories, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "10/15/2026",
+          "package_ndc": "64850-554-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 50 mg (NDC 65162-026-09)",
+          "company": "Amneal Pharmaceuticals",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/06/2026",
+          "package_ndc": "65162-026-09"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 60 mg (NDC 0054-0374-25)",
+          "company": "Hikma Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Available on allocation",
+          "update_date": "10/14/2026",
+          "package_ndc": "0054-0374-25"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 60 mg (NDC 0378-6859-77)",
+          "company": "Mylan Pharmaceuticals Inc., a Viatris Company",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/19/2026",
+          "package_ndc": "0378-6859-77"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 60 mg (NDC 0480-3570-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0480-3570-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 60 mg (NDC 42858-166-01)",
+          "company": "Rhodes Pharmaceuticals L.P.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "06/24/2026",
+          "package_ndc": "42858-166-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 60 mg (NDC 43547-607-10)",
+          "company": "Solco Healthcare US, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "On allocation",
+          "update_date": "06/29/2026",
+          "package_ndc": "43547-607-10"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 60 mg (NDC 47781-567-01)",
+          "company": "Alvogen",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "47781-567-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 60 mg (NDC 57664-051-88)",
+          "company": "Sun Pharmaceutical Industries, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated Recovery: TBD",
+          "update_date": "10/19/2026",
+          "package_ndc": "57664-051-88"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 60 mg (NDC 64850-555-01)",
+          "company": "Elite Laboratories, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "10/15/2026",
+          "package_ndc": "64850-555-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 60 mg (NDC 65162-027-09)",
+          "company": "Amneal Pharmaceuticals",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/06/2026",
+          "package_ndc": "65162-027-09"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 70 mg (NDC 0054-0375-25)",
+          "company": "Hikma Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Available on allocation",
+          "update_date": "10/14/2026",
+          "package_ndc": "0054-0375-25"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 70 mg (NDC 0378-6860-77)",
+          "company": "Mylan Pharmaceuticals Inc., a Viatris Company",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/19/2026",
+          "package_ndc": "0378-6860-77"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 70 mg (NDC 0480-3564-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "0480-3564-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 70 mg (NDC 42858-167-01)",
+          "company": "Rhodes Pharmaceuticals L.P.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "06/24/2026",
+          "package_ndc": "42858-167-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 70 mg (NDC 43547-608-10)",
+          "company": "Solco Healthcare US, LLC",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "On allocation",
+          "update_date": "06/29/2026",
+          "package_ndc": "43547-608-10"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 70 mg (NDC 47781-568-01)",
+          "company": "Alvogen",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/16/2026",
+          "package_ndc": "47781-568-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 70 mg (NDC 57664-052-88)",
+          "company": "Sun Pharmaceutical Industries, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated Recovery: TBD",
+          "update_date": "10/19/2026",
+          "package_ndc": "57664-052-88"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 70 mg (NDC 64850-556-01)",
+          "company": "Elite Laboratories, Inc.",
+          "status": "Current",
+          "availability": "Limited Availability",
+          "related_info": "Estimated recovery: TBD",
+          "update_date": "10/15/2026",
+          "package_ndc": "64850-556-01"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Capsule, 70 mg (NDC 65162-028-09)",
+          "company": "Amneal Pharmaceuticals",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/06/2026",
+          "package_ndc": "65162-028-09"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Tablet, Chewable, 10 mg (NDC 57664-083-88)",
+          "company": "Sun Pharmaceutical Industries, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/19/2026",
+          "package_ndc": "57664-083-88"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Tablet, Chewable, 20 mg (NDC 57664-084-88)",
+          "company": "Sun Pharmaceutical Industries, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/19/2026",
+          "package_ndc": "57664-084-88"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Tablet, Chewable, 30 mg (NDC 57664-085-88)",
+          "company": "Sun Pharmaceutical Industries, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/19/2026",
+          "package_ndc": "57664-085-88"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Tablet, Chewable, 40 mg (NDC 57664-086-88)",
+          "company": "Sun Pharmaceutical Industries, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/19/2026",
+          "package_ndc": "57664-086-88"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Tablet, Chewable, 50 mg (NDC 57664-087-88)",
+          "company": "Sun Pharmaceutical Industries, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/19/2026",
+          "package_ndc": "57664-087-88"
+        },
+        {
+          "presentation": "Lisdexamfetamine Dimesylate, Tablet, Chewable, 60 mg (NDC 57664-088-88)",
+          "company": "Sun Pharmaceutical Industries, Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/19/2026",
+          "package_ndc": "57664-088-88"
+        },
+        {
+          "presentation": "Vyvanse, Capsule, 10 mg (NDC 59417-101-10)",
+          "company": "Takeda Pharmaceuticals USA Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "59417-101-10"
+        },
+        {
+          "presentation": "Vyvanse, Capsule, 20 mg (NDC 59417-102-10)",
+          "company": "Takeda Pharmaceuticals USA Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "59417-102-10"
+        },
+        {
+          "presentation": "Vyvanse, Capsule, 30 mg (NDC 59417-103-10)",
+          "company": "Takeda Pharmaceuticals USA Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "59417-103-10"
+        },
+        {
+          "presentation": "Vyvanse, Capsule, 40 mg (NDC 59417-104-10)",
+          "company": "Takeda Pharmaceuticals USA Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "59417-104-10"
+        },
+        {
+          "presentation": "Vyvanse, Capsule, 50 mg (NDC 59417-105-10)",
+          "company": "Takeda Pharmaceuticals USA Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "59417-105-10"
+        },
+        {
+          "presentation": "Vyvanse, Capsule, 60 mg (NDC 59417-106-10)",
+          "company": "Takeda Pharmaceuticals USA Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "59417-106-10"
+        },
+        {
+          "presentation": "Vyvanse, Capsule, 70 mg (NDC 59417-107-10)",
+          "company": "Takeda Pharmaceuticals USA Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "59417-107-10"
+        },
+        {
+          "presentation": "Vyvanse, Tablet, Chewable, 10 mg (NDC 59417-115-01)",
+          "company": "Takeda Pharmaceuticals USA Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "59417-115-01"
+        },
+        {
+          "presentation": "Vyvanse, Tablet, Chewable, 20 mg (NDC 59417-116-01)",
+          "company": "Takeda Pharmaceuticals USA Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "59417-116-01"
+        },
+        {
+          "presentation": "Vyvanse, Tablet, Chewable, 30 mg (NDC 59417-117-01)",
+          "company": "Takeda Pharmaceuticals USA Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "59417-117-01"
+        },
+        {
+          "presentation": "Vyvanse, Tablet, Chewable, 40 mg (NDC 59417-118-01)",
+          "company": "Takeda Pharmaceuticals USA Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "59417-118-01"
+        },
+        {
+          "presentation": "Vyvanse, Tablet, Chewable, 50 mg (NDC 59417-119-01)",
+          "company": "Takeda Pharmaceuticals USA Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "59417-119-01"
+        },
+        {
+          "presentation": "Vyvanse, Tablet, Chewable, 60 mg (NDC 59417-120-01)",
+          "company": "Takeda Pharmaceuticals USA Inc.",
+          "status": "Current",
+          "availability": "Available",
+          "related_info": "",
+          "update_date": "10/15/2026",
+          "package_ndc": "59417-120-01"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:58+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "methylphenidate_10",
+      "drug": "Methylphenidate (Ritalin) 10 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [
+        "Film, Extended Release",
+        "Tablet"
+      ],
+      "summary": "No FDA shortage entry was found for this exact drug and strength. FDA does list other forms or strengths of the same medicine: Film, Extended Release, Tablet (current shortage). Those are different products.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:49:59+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "focalin_xr_10",
+      "drug": "Dexmethylphenidate ER (Focalin XR) 10 mg capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:00+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "atomoxetine_40",
+      "drug": "Atomoxetine (Strattera) 40 mg capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:01+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "guanfacine_er_1",
+      "drug": "Guanfacine ER (Intuniv) 1 mg tablet",
+      "status": "shortage resolved or discontinued",
+      "other_forms_on_list": [],
+      "summary": "FDA has past shortage entries for this drug, but none are current.",
+      "matching_entries": [
+        {
+          "presentation": "Guanfacine Hydrochloride, Tablet, Extended Release, 1 mg (NDC 0228-2850-11)",
+          "company": "Actavis Pharma, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "A business decision was made to discontinue manufacture of the drug.",
+          "update_date": "11/13/2025",
+          "package_ndc": "0228-2850-11"
+        },
+        {
+          "presentation": "Guanfacine Hydrochloride, Tablet, Extended Release, 2 mg (NDC 0228-2851-11)",
+          "company": "Actavis Pharma, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "A business decision was made to discontinue manufacture of the drug.",
+          "update_date": "11/13/2025",
+          "package_ndc": "0228-2851-11"
+        },
+        {
+          "presentation": "Guanfacine Hydrochloride, Tablet, Extended Release, 3 mg (NDC 0228-2853-11)",
+          "company": "Actavis Pharma, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "A business decision was made to discontinue manufacture of the drug.",
+          "update_date": "11/13/2025",
+          "package_ndc": "0228-2853-11"
+        },
+        {
+          "presentation": "Guanfacine Hydrochloride, Tablet, Extended Release, 4 mg (NDC 0228-2855-11)",
+          "company": "Actavis Pharma, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "A business decision was made to discontinue manufacture of the drug.",
+          "update_date": "11/13/2025",
+          "package_ndc": "0228-2855-11"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:02+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "hydrocodone_apap_5_325",
+      "drug": "Hydrocodone/acetaminophen 5/325 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:03+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "oxycodone_5",
+      "drug": "Oxycodone 5 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:04+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "oxycodone_apap_5_325",
+      "drug": "Oxycodone/acetaminophen (Percocet) 5/325 mg tablet",
+      "status": "shortage resolved or discontinued",
+      "other_forms_on_list": [],
+      "summary": "FDA has past shortage entries for this drug, but none are current.",
+      "matching_entries": [
+        {
+          "presentation": "Acetaminophen; Oxycodone Hydrochloride, Tablet, 325 mg; 10 mg (NDC 60951-712-70)",
+          "company": "Endo Pharmaceuticals, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug",
+          "update_date": "11/03/2025",
+          "package_ndc": "60951-712-70"
+        },
+        {
+          "presentation": "Acetaminophen; Oxycodone Hydrochloride, Tablet, 325 mg; 2.5 mg (NDC 60951-701-70)",
+          "company": "Endo Pharmaceuticals, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug",
+          "update_date": "11/03/2025",
+          "package_ndc": "60951-701-70"
+        },
+        {
+          "presentation": "Acetaminophen; Oxycodone Hydrochloride, Tablet, 325 mg; 5 mg (NDC 60951-602-70)",
+          "company": "Endo Pharmaceuticals, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug",
+          "update_date": "11/03/2025",
+          "package_ndc": "60951-602-70"
+        },
+        {
+          "presentation": "Acetaminophen; Oxycodone Hydrochloride, Tablet, 325 mg; 5 mg (NDC 60951-602-85)",
+          "company": "Endo Pharmaceuticals, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug",
+          "update_date": "11/03/2025",
+          "package_ndc": "60951-602-85"
+        },
+        {
+          "presentation": "Acetaminophen; Oxycodone Hydrochloride, Tablet, 325 mg; 7.5 mg (NDC 60951-700-70)",
+          "company": "Endo Pharmaceuticals, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug",
+          "update_date": "11/03/2025",
+          "package_ndc": "60951-700-70"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:05+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "tramadol_50",
+      "drug": "Tramadol 50 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:06+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "gabapentin_300",
+      "drug": "Gabapentin 300 mg capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:07+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "pregabalin_75",
+      "drug": "Pregabalin (Lyrica) 75 mg capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:08+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "buprenorphine_naloxone_8_2",
+      "drug": "Buprenorphine/naloxone (Suboxone) 8/2 mg film",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:09+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "meloxicam_15",
+      "drug": "Meloxicam 15 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:10+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "ibuprofen_800",
+      "drug": "Ibuprofen 800 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:11+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "cyclobenzaprine_10",
+      "drug": "Cyclobenzaprine 10 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:12+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "diclofenac_gel_1",
+      "drug": "Diclofenac 1% gel",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:13+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "phentermine_375",
+      "drug": "Phentermine 37.5 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:14+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "testosterone_cyp_200",
+      "drug": "Testosterone cypionate 200 mg/mL injection",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:15+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "pantoprazole_40",
+      "drug": "Pantoprazole 40 mg DR tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:16+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "famotidine_20",
+      "drug": "Famotidine 20 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:17+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "ondansetron_odt_4",
+      "drug": "Ondansetron 4 mg orally disintegrating tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:18+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "linzess_145",
+      "drug": "Linzess (linaclotide) 145 mcg capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:19+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "prednisone_20",
+      "drug": "Prednisone 20 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:20+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "prednisolone_soln_15",
+      "drug": "Prednisolone 15 mg/5 mL oral solution",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:21+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "methylprednisolone_4_pack",
+      "drug": "Methylprednisolone 4 mg dose pack (Medrol)",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [
+        "Injection"
+      ],
+      "summary": "No FDA shortage entry was found for this exact drug and strength. FDA does list other forms or strengths of the same medicine: Injection (current shortage). Those are different products.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:22+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "allopurinol_100",
+      "drug": "Allopurinol 100 mg tablet",
+      "status": "shortage resolved or discontinued",
+      "other_forms_on_list": [],
+      "summary": "FDA has past shortage entries for this drug, but none are current.",
+      "matching_entries": [
+        {
+          "presentation": "Allopurinol, Tablet, 100 mg (NDC 0591-5543-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug",
+          "update_date": "02/19/2026",
+          "package_ndc": "0591-5543-01"
+        },
+        {
+          "presentation": "Allopurinol, Tablet, 100 mg (NDC 0591-5543-10)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug",
+          "update_date": "02/19/2026",
+          "package_ndc": "0591-5543-10"
+        },
+        {
+          "presentation": "Allopurinol, Tablet, 300 mg (NDC 0591-5544-01)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug",
+          "update_date": "02/19/2026",
+          "package_ndc": "0591-5544-01"
+        },
+        {
+          "presentation": "Allopurinol, Tablet, 300 mg (NDC 0591-5544-05)",
+          "company": "Teva Pharmaceuticals USA, Inc.",
+          "status": "To Be Discontinued",
+          "availability": "not found",
+          "related_info": "Discontinuation of the manufacture of the drug",
+          "update_date": "02/19/2026",
+          "package_ndc": "0591-5544-05"
+        }
+      ],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:23+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "colchicine_06",
+      "drug": "Colchicine 0.6 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:24+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "estradiol_1",
+      "drug": "Estradiol 1 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:25+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "norgestimate_ee",
+      "drug": "Norgestimate/ethinyl estradiol (Sprintec) birth control pack",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:26+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "medroxyprogesterone_inj_150",
+      "drug": "Medroxyprogesterone (Depo-Provera) 150 mg/mL injection",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:27+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "finasteride_5",
+      "drug": "Finasteride 5 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:28+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "tamsulosin_04",
+      "drug": "Tamsulosin 0.4 mg capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:29+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "alendronate_70",
+      "drug": "Alendronate 70 mg tablet (weekly)",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:30+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "levetiracetam_500",
+      "drug": "Levetiracetam 500 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:31+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "truvada_prep",
+      "drug": "Emtricitabine/tenofovir DF (Truvada) 200/300 mg tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:32+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "biktarvy",
+      "drug": "Biktarvy (bictegravir/emtricitabine/tenofovir alafenamide) tablet",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:33+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "enbrel_50",
+      "drug": "Enbrel (etanercept) 50 mg pen",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:34+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "nurtec_75",
+      "drug": "Nurtec ODT (rimegepant) 75 mg",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:35+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "timolol_eye_05",
+      "drug": "Timolol 0.5% eye drops",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:36+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "clobetasol_cream_005",
+      "drug": "Clobetasol 0.05% cream",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:37+00:00",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "ergocalciferol_50000",
+      "drug": "Vitamin D2 (ergocalciferol) 50,000 unit capsule",
+      "status": "not found on FDA shortage list",
+      "other_forms_on_list": [],
+      "summary": "No FDA shortage entry was found for this exact drug and strength.",
+      "matching_entries": [],
+      "source": "https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm",
+      "api": "https://api.fda.gov/drug/shortages.json",
+      "checked_at": "2026-10-24T04:50:38+00:00",
+      "checked_date": "2026-10-24"
     }
   ]
 }

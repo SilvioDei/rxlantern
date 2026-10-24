@@ -68,7 +68,7 @@ export interface PharmacyBrief {
   latitude: number; longitude: number; open_now: boolean | null; status: string; closes_at: string | null;
   closes_for?: string | null; opens_next: string | null; counter_today: string; closes_latest_minutes: number | null;
   store_today: string; delivery: string; delivery_summary: string | null; drive_thru: string;
-  wheelchair_accessible: string; languages: string[] | string; vaccines: string[]; website: string;
+  languages: string[] | string; vaccines: string[]; website: string;
   vaccine_booking_url: string; checked_date: string; hours_source: string;
 }
 export interface ReportCounts {

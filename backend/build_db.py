@@ -45,7 +45,7 @@ CREATE TABLE vaccines (
     id TEXT PRIMARY KEY, name TEXT, vaccine_group TEXT, medicare TEXT, masshealth TEXT, commercial TEXT,
     notes TEXT, certified_sites_only INTEGER, clinic_finder TEXT, extra_sources TEXT, checked_date TEXT
 );
-CREATE TABLE medicare_rules (key TEXT PRIMARY KEY, value TEXT, source TEXT, checked_date TEXT);
+CREATE TABLE medicare_rules (key TEXT PRIMARY KEY, value TEXT, source TEXT, checked_date TEXT, extra TEXT);
 CREATE TABLE zip_centroids (zip TEXT PRIMARY KEY, latitude REAL, longitude REAL, share_of_land_in_boston REAL,
                             source TEXT, checked_date TEXT);
 -- Holiday hours found by web search on a pharmacy's own site, kept for 24 hours.
@@ -210,7 +210,11 @@ def _medication_tables(con: sqlite3.Connection) -> dict:
     if rules.exists():
         r = json.loads(rules.read_text(encoding="utf-8"))
         _insert(con, "medicare_rules", [{"key": k, "value": _j(v["value"]), "source": v["source"],
-                                         "checked_date": r["checked_date"]} for k, v in r["rules"].items()])
+                                         "checked_date": v.get("checked_date", r["checked_date"]),
+                                         # other fields, e.g. which drugs a rule applies to (Step 7c)
+                                         "extra": json.dumps({x: y for x, y in v.items()
+                                                              if x not in ("value", "source", "label", "checked_date")})}
+                                        for k, v in r["rules"].items()])
         counts["medicare_rules"] = len(r["rules"])
     return counts
 

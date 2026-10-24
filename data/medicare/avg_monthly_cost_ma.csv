@@ -1,25 +1,143 @@
 drug_id,plans_with_price,avg_30_day_cost,min_30_day_cost,max_30_day_cost,basis
+adderall_ir_10,96,21.59,8.01,56.12,60 tablets (1 twice a day)
 adderall_xr_30,95,40.52,15.88,97.20,30 capsules (1 a day)
+advair_diskus_250,90,98.52,8.77,252.35,1 inhaler (60 puffs)
 albuterol_hfa,96,32.53,10.47,57.13,1 inhaler (18 g size; some brands are 6.7 g or 8.5 g)
+albuterol_neb_25,96,10.46,3.94,20.89,1 box (25 vials of 3 mL)
+alendronate_70,96,4.84,0.59,10.16,4 tablets (1 a week)
+allopurinol_100,96,3.80,0.88,6.47,30 tablets (1 a day)
+alprazolam_05,96,2.89,0.54,12.01,30 tablets
 amlodipine_5,96,2.84,0.69,7.03,30 tablets (1 a day)
+amox_clav_875,96,9.99,1.75,22.74,"20 tablets (a 10-day course, 2 a day)"
+amox_clav_susp_400,96,11.09,2.35,33.98,1 bottle (100 mL)
 amoxicillin_500,96,4.08,0.56,8.58,"30 capsules (a typical 10-day course, 3 a day)"
+amoxicillin_susp_250,96,3.84,1.35,8.33,1 bottle (100 mL)
 amoxicillin_susp_400,96,4.92,1.56,11.88,1 bottle (100 mL)
+aripiprazole_5,96,10.06,3.28,41.61,30 tablets (1 a day)
+atomoxetine_40,96,38.13,16.51,98.20,30 capsules (1 a day)
 atorvastatin_20,96,5.75,1.32,9.64,30 tablets (1 a day)
+azithromycin_250,96,2.97,0.67,9.42,6 tablets (a 5-day pack)
+azithromycin_susp_200,96,4.55,1.07,9.61,1 bottle (15 mL)
+biktarvy,96,4105.89,4002.86,4378.67,30 tablets (1 a day)
+brilinta_90,96,152.81,24.58,450.51,60 tablets (1 twice a day)
+budesonide_neb_05,96,74.30,24.79,184.18,30 vials (2 mL each)
+buprenorphine_naloxone_8_2,89,84.33,19.45,172.50,30 films (1 a day)
+bupropion_xl_150,96,7.35,2.48,20.30,30 tablets (1 a day)
+buspirone_10,96,6.58,1.74,13.40,60 tablets (1 twice a day)
+carvedilol_125,96,6.52,1.51,10.75,60 tablets (1 twice a day)
+cefdinir_susp_250,96,16.16,4.13,44.77,1 bottle (60 mL)
+cephalexin_500,96,5.29,1.42,15.19,"28 capsules (a 7-day course, 4 a day)"
+cephalexin_susp_250,96,9.48,2.80,19.77,1 bottle (100 mL)
+ciprofloxacin_500,96,3.40,0.48,11.67,"14 tablets (a 7-day course, 2 a day)"
+clobetasol_cream_005,94,15.44,4.18,84.19,1 tube (30 g)
+clonazepam_05,96,1.84,0.66,8.40,30 tablets
+clopidogrel_75,96,6.86,1.08,12.31,30 tablets (1 a day)
+colchicine_06,96,31.43,8.98,115.15,60 tablets
 concerta_18,45,46.67,21.52,136.42,30 tablets (1 a day)
+cyclobenzaprine_10,96,2.93,0.59,8.32,30 tablets
+doxycycline_100,96,4.61,1.63,15.15,"20 capsules (a 10-day course, 2 a day)"
+duloxetine_60,96,8.46,1.73,14.88,30 capsules (1 a day)
+duoneb,96,13.72,3.73,43.80,30 vials (3 mL each)
 dupixent_300,96,4073.75,3842.58,4211.65,"2 pens (2 mL each), every other week"
 eliquis_5,96,248.71,248.70,248.71,60 tablets (1 twice a day)
+enbrel_50,96,2335.07,2335.07,2335.07,4 pens (1 a week)
+entresto_49_51,96,149.42,23.81,264.99,60 tablets (1 twice a day)
 epinephrine_03,96,255.16,171.13,420.93,1 two-pack of auto-injectors
+escitalopram_10,96,5.17,1.36,23.57,30 tablets (1 a day)
+estradiol_1,96,4.95,0.77,10.08,30 tablets (1 a day)
+ezetimibe_10,96,8.77,0.98,26.99,30 tablets (1 a day)
+famotidine_20,96,8.45,2.03,19.24,60 tablets (1 twice a day)
+farxiga_10,96,85.58,6.76,183.31,30 tablets (1 a day)
+finasteride_5,96,7.59,1.12,14.70,30 tablets (1 a day)
+flovent_hfa_110,33,244.28,140.48,256.26,1 inhaler (12 g)
+fluconazole_150,96,1.10,0.23,4.00,1 tablet
+fluoxetine_20,96,2.78,0.93,8.27,30 capsules (1 a day)
 fluticasone_nasal_50,96,10.74,1.68,25.59,"1 bottle (16 g, about 120 sprays)"
+focalin_xr_10,58,57.53,44.11,105.93,30 capsules (1 a day)
+furosemide_20,96,2.10,0.70,4.02,30 tablets (1 a day)
+gabapentin_300,96,9.14,3.22,21.34,90 capsules (1 three times a day)
+glipizide_5,96,7.06,1.45,12.40,60 tablets (1 twice a day)
+guanfacine_er_1,95,12.24,4.86,45.82,30 tablets (1 a day)
+humalog_kwikpen,78,160.49,149.65,181.18,1 box of 5 pens (3 mL each)
 humira_40,62,6666.18,6521.86,6815.33,2 pens (every other week)
+hydrochlorothiazide_25,96,1.25,0.47,2.81,30 tablets (1 a day)
+hydrocodone_apap_5_325,96,3.58,1.18,9.22,20 tablets
+hydroxyzine_25,96,3.60,1.10,9.03,30 tablets
+ibuprofen_800,96,7.75,2.38,14.89,90 tablets (up to 3 a day)
+insulin_nph_pen,96,106.41,84.00,144.59,1 box of 5 pens (3 mL each)
+januvia_100,96,124.24,117.23,286.34,30 tablets (1 a day)
+jardiance_10,96,203.82,203.82,203.82,30 tablets (1 a day)
+lamotrigine_100,96,4.11,0.63,10.07,30 tablets (1 a day)
 lantus_solostar,95,93.79,88.73,98.15,1 box of 5 pens (3 mL each)
 latanoprost_0005,96,6.17,0.81,16.32,1 bottle (2.5 mL)
+levetiracetam_500,96,9.52,2.89,20.11,60 tablets (1 twice a day)
 levothyroxine_50,96,4.69,0.64,9.13,30 tablets (1 a day)
+linzess_145,96,275.23,259.63,288.07,30 capsules (1 a day)
 lisinopril_10,96,3.40,0.66,7.48,30 tablets (1 a day)
+lorazepam_05,96,3.84,1.09,12.44,30 tablets
+losartan_50,96,5.42,0.62,9.25,30 tablets (1 a day)
+medroxyprogesterone_inj_150,96,35.90,11.66,55.45,"1 shot (1 mL, every 3 months)"
+meloxicam_15,96,2.39,0.67,7.08,30 tablets (1 a day)
 metformin_500,96,5.56,1.13,12.21,60 tablets (1 twice a day)
+metformin_er_500,96,6.41,1.39,11.67,60 tablets (2 a day)
+methylphenidate_10,96,14.24,4.43,28.27,60 tablets (1 twice a day)
+methylprednisolone_4_pack,96,5.85,1.76,14.94,1 dose pack (21 tablets)
+metoprolol_succ_er_50,96,5.42,1.17,9.96,30 tablets (1 a day)
+metoprolol_tart_25,96,5.43,1.27,9.29,60 tablets (1 twice a day)
+metronidazole_500,96,3.03,0.52,7.35,"14 tablets (a 7-day course, 2 a day)"
+montelukast_10,96,6.10,1.67,11.40,30 tablets (1 a day)
+montelukast_chew_5,96,5.48,1.00,18.74,30 chewable tablets (1 a day)
 mounjaro_5,95,1080.20,1020.42,1133.39,"4 single-dose pens (0.5 mL each), 1 a week"
+mupirocin_2,96,6.94,2.13,16.48,1 tube (22 g)
+nitrofurantoin_100,96,4.66,0.71,12.30,"10 capsules (a 5-day course, 2 a day)"
+nitroglycerin_sl_04,96,6.40,1.35,12.91,25 tablets (1 bottle)
+norgestimate_ee,73,5.99,1.31,13.53,1 pack (28 tablets)
+novolog_flexpen,96,133.82,131.16,134.36,1 box of 5 pens (3 mL each)
+nurtec_75,85,1047.87,985.09,1091.70,8 tablets
 omeprazole_20,96,4.56,1.31,9.36,30 capsules (1 a day)
+ondansetron_odt_4,96,6.88,0.71,17.54,20 tablets
+oseltamivir_75,96,16.98,3.66,45.33,10 capsules (one 5-day course)
+oseltamivir_susp,96,25.03,9.44,58.55,1 bottle (60 mL)
+oxycodone_5,96,2.92,1.48,7.20,20 tablets
+oxycodone_apap_5_325,96,3.53,2.02,9.66,20 tablets
 ozempic_05,96,998.21,941.77,1046.00,"1 pen (3 mL), about 1 month at 0.5 mg weekly"
+pantoprazole_40,96,5.48,1.49,10.04,30 tablets (1 a day)
 paxlovid,96,1498.36,1415.00,1571.93,1 five-day dose pack (30 tablets)
+penicillin_vk_500,96,6.30,0.74,14.39,"40 tablets (a 10-day course, 4 a day)"
+pioglitazone_30,96,9.70,0.76,17.14,30 tablets (1 a day)
+pravastatin_40,96,8.72,1.23,18.00,30 tablets (1 a day)
+prednisolone_soln_15,96,71.04,14.35,137.57,100 mL
+prednisone_20,96,1.49,0.33,3.29,10 tablets
+pregabalin_75,96,8.86,3.31,38.45,60 capsules (1 twice a day)
+propranolol_10,96,7.03,1.52,14.69,60 tablets (1 twice a day)
+quetiapine_25,96,3.52,0.57,20.78,30 tablets (1 a day)
+repatha_140,94,569.31,543.72,592.40,2 pens (every other week)
+rosuvastatin_10,96,6.71,1.14,17.79,30 tablets (1 a day)
 sertraline_50,96,3.85,1.16,8.57,30 tablets (1 a day)
+simvastatin_20,96,4.74,0.80,9.28,30 tablets (1 a day)
+smx_tmp_ds,96,2.75,0.60,11.04,"20 tablets (a 10-day course, 2 a day)"
+smx_tmp_susp,96,9.07,2.23,16.76,1 bottle (100 mL)
+spiriva_handihaler,44,359.91,273.40,385.39,30 capsules (1 a day)
+spironolactone_25,96,4.06,0.85,8.18,30 tablets (1 a day)
 sumatriptan_50,96,6.55,2.21,15.34,9 tablets
+symbicort_160,96,211.79,87.96,308.17,"1 inhaler (120 puffs, 10.2 g)"
+tamsulosin_04,96,6.50,1.57,12.20,30 capsules (1 a day)
+testosterone_cyp_200,95,7.24,0.76,11.93,1 mL
+timolol_eye_05,96,6.14,0.68,15.92,1 bottle (5 mL)
+toujeo_solostar,96,401.78,115.93,437.98,1 box of 3 pens (1.5 mL each)
+tramadol_50,96,2.52,0.77,6.23,30 tablets
+trazodone_50,96,3.55,0.85,9.13,30 tablets (1 a day)
+trelegy_100,96,339.29,321.00,355.59,1 inhaler (30 puffs)
+tresiba_flextouch,36,135.49,132.77,137.25,1 box of 5 pens (3 mL each)
 triamcinolone_cream_01,96,2.26,1.47,3.98,1 tube (30 g)
+trulicity_15,93,979.63,950.29,1023.21,"4 single-dose pens (0.5 mL each), 1 a week"
+truvada_prep,96,199.68,21.20,945.09,30 tablets (1 a day)
+valacyclovir_1g,96,17.04,3.68,49.27,30 tablets
+valsartan_160,96,13.39,0.68,25.47,30 tablets (1 a day)
+venlafaxine_er_75,96,7.79,1.51,15.50,30 capsules (1 a day)
+victoza_18,18,399.46,395.21,402.42,"2 pens (3 mL each), about 1 month at 1.2 mg a day"
+vyvanse_30,33,203.98,161.81,254.49,30 capsules (1 a day)
+warfarin_5,96,3.98,0.81,9.43,30 tablets (1 a day)
+wegovy_24,8,1319.10,1317.44,1320.05,"4 single-dose pens (0.75 mL each), 1 a week"
+xarelto_20,96,206.43,206.42,206.43,30 tablets (1 a day)
+zolpidem_10,96,3.89,1.17,9.92,30 tablets

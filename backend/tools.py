@@ -169,7 +169,7 @@ def find_drug(query: str) -> dict | None:
 
 
 def lookup_drug(name: str) -> dict:
-    """Tool: match a drug name to one of RxLantern's 25 drugs (spelling mistakes are OK).
+    """Tool: match a drug name to one of RxLantern's 150 drugs (spelling mistakes are OK).
 
     If the same medicine comes in more than one form (for example amoxicillin capsules and amoxicillin
     liquid for children) and the question does not say which, return all forms so the Front Desk can ask.
@@ -177,7 +177,9 @@ def lookup_drug(name: str) -> dict:
     found = find_drugs(name)
     if not found:
         return {"found": False, "query": name,
-                "message": f"This drug is not in {APP_NAME} yet. Please call the pharmacy to ask about it.",
+                "message": (f"This drug is not in {APP_NAME}'s list of 150 medicines. The fda_shortage tool can still "
+                            "check its FDA shortage status live, and call_script works for any name. "
+                            + OTHER_DRUG_NOTE),
                 "checked_date": today()}
     if len(found) > 1:
         return {"found": True, "needs_form": True,
@@ -373,8 +375,96 @@ def upcoming_holidays(days: int = 7, at: datetime | None = None) -> list[dict]:
     return sorted(out, key=lambda h: h["date"])
 
 
+OPENFDA_NDC = "https://api.fda.gov/drug/ndc.json"
+OTHER_DRUG_NOTE = (f"Coverage and cost details are only available for the medicines in {APP_NAME}'s list. "
+                   "Please ask the pharmacy or your insurance about coverage and cost.")
+OTHER_NAME_RE = re.compile(r"^[A-Za-z][A-Za-z0-9 .,/()+-]{1,59}$")
+
+
+def _other_key(name: str) -> str:
+    return "other:" + re.sub(r"\s+", " ", name.lower().strip())
+
+
+def other_drug_shortage(name: str, lang: str = "en") -> dict:
+    """Live FDA shortage status for a medicine that is NOT in RxLantern's list (openFDA, cached 24 hours).
+
+    We do not know the patient's exact strength or form, so this covers every listing FDA has for the name.
+    The FDA NDC directory is checked too, so a typo returns "not found" instead of a guess, and a controlled
+    medicine is flagged (no stock reports exist for medicines outside the list anyway)."""
+    name = re.sub(r"\s+", " ", (name or "").strip())
+    if not OTHER_NAME_RE.match(name):
+        return {"found": False, "query": name, "status": NF, "summary": "Please type a medicine name (letters only).",
+                "source": SHORTAGE_PAGE, "checked_date": today()}
+    key = _other_key(name)
+    with _connect() as con:
+        row = con.execute("SELECT result_json, fetched_at FROM shortage_cache WHERE drug_id = ?", (key,)).fetchone()
+    if row and datetime.fromisoformat(row["fetched_at"]) > datetime.now(timezone.utc) - timedelta(hours=CACHE_HOURS):
+        result = json.loads(row["result_json"]) | {"from": "openFDA API (saved in the last 24 hours)"}
+    else:
+        q = name.replace('"', "")
+        try:
+            with httpx.Client(timeout=20) as c:
+                ndc = c.get(OPENFDA_NDC, params={"search": f'brand_name:"{q}" generic_name:"{q}"', "limit": 100})
+                products = ndc.json().get("results", []) if ndc.status_code == 200 else []
+                sh = c.get(OPENFDA_SHORTAGES, params={"search": f'generic_name:"{q}" proprietary_name:"{q}"', "limit": 100})
+                entries = sh.json().get("results", []) if sh.status_code == 200 else []
+                if ndc.status_code not in (200, 404) or sh.status_code not in (200, 404):
+                    raise httpx.HTTPError(f"openFDA returned {ndc.status_code}/{sh.status_code}")
+        except (httpx.HTTPError, ValueError):
+            return {"found": None, "query": name, "status": NF,
+                    "summary": "FDA shortage data could not be reached right now. Please call the pharmacy.",
+                    "source": SHORTAGE_PAGE, "checked_date": today(),
+                    "call_script": call_script(name, lang=lang)["call_script"], "coverage_note": OTHER_DRUG_NOTE}
+        generic = sorted({(p.get("generic_name") or "").lower() for p in products if p.get("generic_name")})
+        brands = sorted({(p.get("brand_name") or "").title() for p in products if p.get("brand_name")}
+                        - {g.title() for g in generic})[:8]
+        schedules = sorted({"C-" + p["dea_schedule"][1:] for p in products if p.get("dea_schedule")})
+        rows = [{"presentation": e.get("presentation"), "company": e.get("company_name"), "status": e.get("status"),
+                 "availability": e.get("availability", NF), "related_info": e.get("related_info", ""),
+                 "update_date": e.get("update_date"), "package_ndc": e.get("package_ndc")} for e in entries]
+        current = [e for e in rows if e["status"] == "Current"]
+        limited = [e for e in current if e["availability"] in ("Limited Availability", "Unavailable")]
+        if limited:
+            status = "in shortage"
+            summary = (f"FDA lists a current shortage for {len(limited)} package(s) sold under this name. Some forms or "
+                       "strengths may not be affected. Call the pharmacy to check yours.")
+        elif current:
+            status = "on FDA shortage list, listed as available"
+            summary = "This medicine is on the FDA shortage list, but the listed packages show as available."
+        elif rows:
+            status = "shortage resolved or discontinued"
+            summary = "FDA has past shortage entries for this medicine, but none are current."
+        elif products:
+            status = "not found on FDA shortage list"
+            summary = "No FDA shortage entry was found for this medicine."
+        else:
+            status = NF
+            summary = ("We could not find a medicine with this name in FDA's lists. Please check the spelling, "
+                       "or call the pharmacy.")
+        result = {"found": bool(products or rows), "query": name, "generic_names": generic[:5], "brand_names": brands,
+                  "dea_schedule": schedules[0] if schedules else ("not controlled" if products else NF),
+                  "controlled": bool(schedules), "status": status, "summary": summary,
+                  "packages_by_availability": dict(Counter(e["availability"] for e in current)),
+                  "fda_estimate": fda_estimate(current), "matching_entries": current[:20],
+                  "source": SHORTAGE_PAGE, "api": OPENFDA_SHORTAGES, "ndc_directory": OPENFDA_NDC,
+                  "checked_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "from": "openFDA API (live)"}
+        with _connect() as con:
+            con.execute("INSERT OR REPLACE INTO shortage_cache (drug_id, fetched_at, result_json) VALUES (?, ?, ?)",
+                        (key, result["checked_at"], json.dumps(result)))
+            con.commit()
+    result["checked_date"] = datetime.fromisoformat(result["checked_at"]).astimezone(BOSTON_TZ).date().isoformat()
+    result["call_script"] = call_script(name, lang=lang)["call_script"]
+    result["coverage_note"] = OTHER_DRUG_NOTE
+    result["in_list"] = False
+    return result
+
+
 def shortage_for_agent(drug_name: str) -> dict:
-    """Shortage result trimmed for the model (counts, not 25 package rows)."""
+    """Shortage result trimmed for the model (counts, not 25 package rows). Medicines outside RxLantern's list
+    get a live openFDA check instead."""
+    if find_drug(drug_name) is None:
+        r = other_drug_shortage(drug_name)
+        return {k: v for k, v in r.items() if k not in ("matching_entries", "api", "call_script")}
     r = check_fda_shortage(drug_name)
     entries = r.get("matching_entries") or []
     return {k: v for k, v in r.items() if k not in ("matching_entries", "api")} | {
@@ -519,7 +609,7 @@ def _brief(p: dict, dist: float | None, lang: str) -> dict:
 
 
 def find_pharmacies(place: str, open_now: bool = False, delivery: bool = False, vaccine: str | None = None,
-                    language: str | None = None, wheelchair: bool = False, limit: int = 5, lang: str = "en") -> dict:
+                    language: str | None = None, limit: int = 5, lang: str = "en") -> dict:
     """Tool: nearest pharmacies to a Boston ZIP code or neighborhood, with optional filters."""
     loc = resolve_location(place)
     if not loc["found"]:
@@ -551,10 +641,6 @@ def find_pharmacies(place: str, open_now: bool = False, delivery: bool = False, 
         applied.append(f"language: {language}")
         keep = [p for p in keep if isinstance(p["languages"], list) and any(language.lower() in l.lower() for l in p["languages"])]
         not_found.append(f"Languages spoken by staff are 'not found' on the pharmacies' public pages. Call to ask about {language}.")
-    if wheelchair:
-        applied.append("wheelchair access")
-        keep = [p for p in keep if p["wheelchair_accessible"] == "yes"]
-        not_found.append("Wheelchair access is 'not found' on the pharmacies' public pages. Call to ask.")
     briefs = [_brief(p, p["_dist"], lang) for p in keep]
     if open_now:
         applied.append("open now")
@@ -663,7 +749,7 @@ def pharmacy_details(pharmacy_id: str, lang: str = "en") -> dict:
         "weekend": weekend_hours(p),
         "lunch_break": p["lunch_break"], "holiday_hours": p["holiday_hours"], "counter_open_24_hours": p["is_24_hours"],
         "store_open_24_hours": p["store_is_24_hours"], "delivery": p["delivery"], "delivery_details": p["delivery_details"],
-        "drive_thru": p["drive_thru"], "wheelchair_accessible": p["wheelchair_accessible"], "languages": p["languages"],
+        "drive_thru": p["drive_thru"], "languages": p["languages"],
         "vaccines_routine": p["vaccines_routine"], "vaccines_travel": p["vaccines_travel"],
         "clinic_on_site": p["clinic_on_site"], "specialty_pharmacy": p["specialty_pharmacy"],
         "nearby_clinics": clinics[:4] if isinstance(clinics, list) else clinics,
@@ -706,6 +792,11 @@ def masshealth_coverage(drug_name: str) -> dict:
     if err:
         return err
     r = _rows("SELECT * FROM masshealth WHERE drug_id = ?", (d["id"],))[0]
+    if str(r["covered"]).startswith("not checked"):
+        return {"drug": d["display_name"], "covered": r["covered"], "prior_authorization": r["prior_authorization"],
+                "patient_message": "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm.",
+                "notes": _j(r["notes"]), "list_last_updated": r["list_last_updated"],
+                "source": r["source"], "checked_date": r["checked_date"]}
     return {"drug": d["display_name"], "covered": r["covered"], "prior_authorization": r["prior_authorization"],
             "notes": _j(r["notes"]), "list_last_updated": r["list_last_updated"],
             "rule": "Any drug that is not on the MassHealth Drug List requires prior authorization.",
@@ -718,7 +809,7 @@ def _medicare_source() -> dict:
 
 def _rules() -> dict:
     return {r["key"]: {"value": _j(r["value"]), "source": r["source"], "checked_date": r["checked_date"]}
-            for r in _rows("SELECT * FROM medicare_rules")}
+            | json.loads(r.get("extra") or "{}") for r in _rows("SELECT * FROM medicare_rules")}
 
 
 def _plan_share(plan: dict, tier: str, plan_cost: float | None) -> dict:
@@ -758,10 +849,12 @@ def medicare_coverage(drug_name: str, plan_name: str | None = None) -> dict:
         "yearly_out_of_pocket_cap": rules["out_of_pocket_cap"],
         "highest_deductible_allowed": rules["deductible_max"],
     }
-    if d["id"] == "lantus_solostar":
+    if d["id"] in rules["insulin_cap"].get("applies_to", ["lantus_solostar"]):
         out_rules["insulin_cap"] = rules["insulin_cap"]
-    if d["id"] == "eliquis_5":
-        out_rules["negotiated_price_2026"] = rules["negotiated_prices_2026_our_drugs"]
+    negotiated = rules["negotiated_prices_2026_our_drugs"]
+    if d["id"] in negotiated.get("by_drug", {}):
+        out_rules["negotiated_price_2026"] = {"label": "Medicare negotiated price (Maximum Fair Price) in 2026",
+                                              "value": negotiated["by_drug"][d["id"]], "source": negotiated["source"]}
     base = {"drug": d["display_name"], "amount_used_for_estimates": supply, "rules_2026": out_rules,
             "source": src["file"], "dataset": src["dataset"], "checked_date": src["checked_date"],
             "note": ("Estimates come from CMS plan files for the initial coverage phase at a standard retail pharmacy. "
@@ -773,7 +866,7 @@ def medicare_coverage(drug_name: str, plan_name: str | None = None) -> dict:
             return {"plan": p["plan_name"], "covers_drug": False}
         key = (p["contract_id"], p["plan_id"], p["segment_id"])
         share = _plan_share(p, f["tier"], costs.get(key))
-        if d["id"] == "lantus_solostar":
+        if "insulin_cap" in out_rules:
             ins = _rows("SELECT * FROM medicare_insulin_cost_ma WHERE contract_id=? AND plan_id=? AND segment_id=? "
                         "AND tier=? AND days_supply='1'", key + (f["tier"],))
             if ins and ins[0]["copay_amt_nonpref_insln"]:

@@ -536,3 +536,75 @@ Every prompt sent to the AI assistant, word for word, grouped by build step.
 > Rebuild frontend/dist so graders still need only Python. Commit with the message "Step 7b: guided search, crowdsourcing, reviews, and fixes". Then give me the pass/fail table and the start command, and stop.
 >
 > Also: in AI_prompts.md, replace my email address with [admin email] everywhere, since the repo will be public. Keep everything else word for word.
+
+## Step 7c (part 1) — 150 medications and small improvements
+
+> I'm continuing my final project RxLantern. If this is a new session, first read rxcompass/PROJECT_NOTES.md, rxcompass/AI_prompts.md, and the git log to catch up on Steps 1 to 7b. Key rules: only gpt-6-luna through Portkey, never store patient health information, every fact shows its source and date checked, "not found" instead of guessing, no medical advice, keep logging every prompt I send in AI_prompts.md word for word (this one goes under a new "Step 7c (part 1)" section), and commit at the end.
+>
+> Step 7c (part 1): 150 medications and small improvements
+>
+> I like the Step 7b site, and logins, voice input, and read aloud all work. Only make the changes below; do not redesign anything else. This will run while I'm away, so do not stop to ask me questions: make the most reasonable choice, write it down, and tell me at the end.
+>
+> PART A: Expand from 25 to 150 commonly used medications
+> 1. Build the list from a public source of the most commonly prescribed drugs in the US (cite the source and date). Keep all 25 current drugs. Include shortage-prone and high-cost drugs patients often struggle to get (for example other GLP-1 medicines, inhalers, insulins, common antibiotics including children's liquid forms, and ADHD medicines), and a mix of dosage forms. For each drug, use the most commonly prescribed strength(s) and form(s).
+> 2. Use RxNorm to match brand and generic names and NDC codes, as in Step 3.
+> 3. Controlled substances: flag every controlled drug and its DEA schedule using the FDA's public NDC directory (openFDA), not from memory. All Schedule II drugs get the same rules as Adderall XR and Concerta (no pharmacy-level stock reports; shortage status and call script only).
+> 4. Rebuild the data with the existing scripts: FDA shortages, NADAC prices, MassHealth coverage (look up each drug on the MassHealth Drug List website as in Step 3), and Medicare Part D (plan year 2026, Massachusetts plans). Delete the large downloads in data/raw/ when you are done.
+> 5. Drugs not in our list: look up the drug's FDA shortage status live (openFDA) and give the call script, and say that coverage and cost details are only available for the medicines in RxLantern's list.
+> 6. Update the drug search suggestions, shortage watch, and output/medication_check.md for all 150 drugs. At the top of medication_check.md, add a short "please review" list of anything unusual (very high or very low cost estimates, drugs with no MassHealth or Medicare match, and every drug flagged as controlled) so I can review those first as a pharmacist.
+> 7. Keep the repo small (under about 20 MB total).
+>
+> PART B: Community page search
+> - Add a search box with a microphone button and filters to the Community page so patients can search by medication (with the same suggestions as the guided search), pharmacy, and neighborhood, and sort by newest or by rating. Show "No posts for this medication yet" when nothing matches.
+>
+> PART C: Remove wheelchair accessibility
+> - No pharmacy website listed it, so remove the wheelchair filter, field, and badges from the website.
+>
+> PART D: Make voice and read aloud easy to find (small change only)
+> - Voice input and read aloud already work. Keep them as they are, but make sure the microphone button and the "Read aloud" button are visible for everyone, not only in Easy view, wherever a patient types or reads an answer. Do not rebuild them.
+> - Add one short note by the microphone and on the About & Privacy page: "In Chrome and Edge, speech is turned into text by the browser company's service. You may prefer to type private details."
+>
+> PART E: Search at the top of the home page
+> - I like the home page design as it is. Just put a compact "What medicine do you need?" search bar (with the microphone button) at the very top of the home page, right under the header, so it's visible without scrolling. It starts the same guided search as the existing one. Keep everything else the same.
+>
+> PART F: Test before committing
+> Use Playwright. Report pass or fail for each, fix failures, and rerun until all pass:
+> 1. The drug search finds at least 10 new drugs by brand name, generic name, and a misspelling.
+> 2. A newly added Schedule II drug shows no stock reports or report buttons.
+> 3. A drug not in the list shows its live FDA shortage status and a call script.
+> 4. Community search by medication, pharmacy, and neighborhood works, including the "no posts" message.
+> 5. No wheelchair filter, field, or badge appears anywhere.
+> 6. Microphone and Read aloud buttons are visible without Easy view.
+> 7. The top search bar is visible without scrolling at desktop and phone width.
+> 8. The Step 7b checks and the Step 4 agent test questions still pass.
+> Then delete all test accounts and posts so the real database has no real-user rows again. Retake the screenshots that changed. Make sure no screenshot shows an API key or my email.
+>
+> Update PROJECT_NOTES.md and README.md. Rebuild frontend/dist. Commit with the message "Step 7c part 1: 150 medications, community search, small improvements". Then give me: the pass/fail table, the list of controlled drugs flagged, the "please review" list, any choices you made while I was away, and the start command. Then stop.
+
+### Step 7c (part 1) — MassHealth site down: retry until 7:00 AM
+
+> Keep retrying the MassHealth Drug List site every 5 minutes until 7:00 AM. If it comes back, finish everything as planned.
+>
+> If it is still down at 7:00 AM, do not wait any longer:
+> - Keep the existing MassHealth data for the original 25 drugs.
+> - For the other 125 drugs, set MassHealth coverage to "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24" (never guess), and make the website show "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+> - Write scripts/fetch_masshealth.py so I can rerun the MassHealth step later with one command, and tell me that command.
+> - Then finish the remaining steps (medication_check.md, clear the user database, rerun all tests and screenshots, delete data/raw/, commit).
+>
+> Either way, give me the full summary I asked for when you are done. Add this to AI_prompts.md under Step 7c (part 1).
+
+> (sent mid-task) "i would want  you to wait first and see if masshealth go through first"
+>
+> (sent mid-task) "i do not want to wait for a long time if it comes back up and I have to do massive edits"
+>
+> (sent mid-task) "you get it"
+
+### Step 7c (part 1) — use the MassHealth backup plan now
+
+> Don't wait for MassHealth any longer. Use the backup plan now:
+> - Keep the existing MassHealth data for the original 25 drugs.
+> - For the other 125 drugs, set MassHealth coverage to "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24" (never guess), and make the website show "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+> - Write scripts/fetch_masshealth.py so I can rerun the MassHealth step later with one command, and tell me that command. Stop the background retry loop.
+> - Then finish the remaining steps (medication_check.md, clear the user database, rerun all tests and screenshots, delete data/raw/, commit), and give me the full summary I asked for.
+>
+> Add this to AI_prompts.md under Step 7c (part 1).

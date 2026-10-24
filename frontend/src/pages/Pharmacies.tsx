@@ -17,7 +17,6 @@ export function Pharmacies() {
   const [delivery, setDelivery] = useState(false);
   const [vaccine, setVaccine] = useState("");
   const [language, setLanguage] = useState("");
-  const [wheelchair, setWheelchair] = useState(false);
   const [hood, setHood] = useState("");
 
   useEffect(() => {
@@ -31,10 +30,9 @@ export function Pharmacies() {
     (!delivery || p.delivery === "yes") &&
     (!vaccine || p.vaccines.includes(vaccine)) &&
     (!language || (Array.isArray(p.languages) && p.languages.some((l) => l.toLowerCase().includes(language.toLowerCase())))) &&
-    (!wheelchair || p.wheelchair_accessible === "yes") &&
     (!hood || p.neighborhood === hood))
     .map((p) => ({ ...p, distance_miles: origin ? Math.round(miles(origin, { lat: p.latitude, lon: p.longitude }) * 10) / 10 : null }))
-    .sort((a, b) => (a.distance_miles ?? 0) - (b.distance_miles ?? 0)), [all, openNow, delivery, vaccine, language, wheelchair, hood, origin]);
+    .sort((a, b) => (a.distance_miles ?? 0) - (b.distance_miles ?? 0)), [all, openNow, delivery, vaccine, language, hood, origin]);
   const select = useCallback((id: string) => nav(`/pharmacies/${id}`), [nav]);
 
   return (
@@ -44,7 +42,6 @@ export function Pharmacies() {
       <section className="card filters" aria-label={t("filters")}>
         <label className="check"><input type="checkbox" name="open" checked={openNow} onChange={(e) => setOpenNow(e.target.checked)} /> {t("fOpenNow")}</label>
         <label className="check"><input type="checkbox" checked={delivery} onChange={(e) => setDelivery(e.target.checked)} /> {t("fDelivery")}</label>
-        <label className="check"><input type="checkbox" checked={wheelchair} onChange={(e) => setWheelchair(e.target.checked)} /> {t("fWheelchair")}</label>
         <label>{t("fVaccine")}
           <select value={vaccine} onChange={(e) => setVaccine(e.target.value)}>
             <option value="">{t("fAnyVaccine")}</option>
@@ -64,7 +61,7 @@ export function Pharmacies() {
           </select>
         </label>
       </section>
-      {(language || wheelchair) && <p className="notice">{t("notListedNote")}</p>}
+      {language && <p className="notice">{t("notListedNote")}</p>}
       {error && <p className="alert" role="alert">{error}</p>}
       {!all && !error && <p className="muted">{t("loading")}</p>}
       {all && (

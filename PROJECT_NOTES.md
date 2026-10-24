@@ -42,7 +42,7 @@ For each vaccine, show which pharmacies offer it and what each insurance type co
 ## Safety rules
 
 1. **No patient health information is stored.** No names, birthdates, member IDs, or prescriptions tied to a person. Accounts exist only for posting reviews and stock reports and hold only an email, a display name, and a hashed password.
-2. **No pharmacy-level stock reports for controlled substances** (for example Adderall XR and Concerta). For those, show FDA shortage status and a call script only.
+2. **No pharmacy-level stock reports for controlled substances** (any DEA schedule, II to V, taken from the FDA's public NDC directory; for example Adderall XR, Concerta, Vyvanse, oxycodone, alprazolam). For those, show FDA shortage status and a call script only.
 3. **No medical advice.** Never tell a patient to change, stop, or switch a medication. Tell them to talk to their prescriber or pharmacist.
 4. **Every fact shows its source and the date it was checked.** If something is not found, say "not found" instead of guessing. Vaccine coverage must come from current official sources, never from memory.
 5. **Never say a drug is definitely in stock.** Community reports always say "call to confirm."
@@ -80,6 +80,42 @@ RxLantern should look like an elite, modern healthcare app: colorful and vibrant
 - Sample posts (`backend/sample_data.py`, `SHOW_SAMPLE_DATA` in config.py): never stored, never counted with real
   posts, always badged "Sample".
 - Browser tests: `tests/ui_step7b.py` (13 checks; types with real key presses).
+
+## Step 7c (part 1): 150 medications and small improvements
+
+- **150 drugs** (`scripts/build_drugs.py` -> `data/drugs.json`): the 25 Step 3 drugs plus 125 from the ClinCalc
+  DrugStats "Top 300 of 2024" (AHRQ MEPS 2024 data; https://clincalc.com/DrugStats/Top300Drugs.aspx, checked
+  2026-10-24), favoring shortage-prone and high-cost medicines (GLP-1s, inhalers, insulins, children's antibiotic
+  liquids, ADHD medicines) and a mix of forms. One common strength and form each (a few medicines have two forms,
+  for example amoxicillin capsules and liquids). The 30-day amounts are for cost estimates only.
+- **DEA schedules come from the openFDA NDC directory** (bulk file, matched by RxCUI and package NDC; the strictest
+  schedule seen wins; a drug with no match would count as controlled). 18 drugs are controlled. All of them, not only
+  Schedule II, get the controlled rules (no stock reports; shortage status and call script only), as in safety rule 2.
+- **Data rebuilt with the existing scripts:** RxNorm, openFDA shortages, NADAC, MassHealth Drug List, CMS Part D 2026
+  (Massachusetts plans). `data/medicare/part_d_rules_2026.json` now lists all 8 of our drugs with a 2026 negotiated
+  price (from the CMS infographic PDF) and the 6 insulins that get the $35 cap. Downloads in `data/raw/` are deleted
+  after each rebuild.
+- **Medicines outside the list:** `/api/other-drug` and the `/other-medicine` page look up FDA shortage status live
+  (openFDA shortages + NDC directory, saved 24 hours as `other:<name>` in `shortage_cache`) and give the call script.
+  They say coverage and cost are only available for the medicines in the list; the chat adds that sentence in code.
+- **Search:** one shared box (`frontend/src/components/MedicineSearch.tsx`) for the new compact search bar at the top
+  of the home page, the guided search, and the Community page. Brand, generic, and misspelled names all work.
+- **Community page:** search by medicine, pharmacy, and neighborhood; sort by newest or rating ("No posts for this
+  medication yet" when nothing matches). Reviews are about pharmacies, so the medicine search filters stock reports.
+- **Wheelchair access removed** from the website and the chat tools (no pharmacy lists it). The column stays in
+  `data/pharmacies.json` as "not found" but is never shown.
+- **Voice:** the microphone and "Read aloud" / "Read this page aloud" buttons show for everyone, not only in Easy
+  view. Note by the microphone and on About & Privacy: "In Chrome and Edge, speech is turned into text by the browser
+  company's service. You may prefer to type private details."
+- **Tests:** `tests/ui_step7c.py` (7 checks), `tests/ui_step7b.py` (13 checks, updated for 150 drugs and no
+  wheelchair filter), and `tests/try_agents.py` + `tests/check_agent_rules.py` (the 11 Step 4 questions plus 2 new).
+- `output/medication_check.md` starts with a "Please review first" list for the pharmacist.
+- **MassHealth (2026-10-24): the MassHealth Drug List website was down all night**, so the 25 Step 3 drugs keep
+  their checked data (2026-10-23) and the other 125 say "not checked yet: the MassHealth Drug List website was
+  unavailable on 2026-10-24". The site and the chat then say "MassHealth coverage not checked yet. Call the pharmacy or
+  MassHealth to confirm." Rerun later with one command from rxcompass/: `..\.venv\Scripts\python.exe
+  scripts\fetch_masshealth.py` (fetches the pages, rebuilds data/masshealth.json and output/medication_check.md,
+  deletes the pages). New drugs are matched by rules in `build_masshealth.py` ("match": "rule-based"): review them.
 
 ## App name
 

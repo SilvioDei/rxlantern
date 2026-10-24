@@ -1,10 +1,20 @@
-"""Fetch MassHealth Drug List (MHDL) search results for our 25 drugs into data/raw/masshealth/.
+"""MassHealth step in one command: fetch the MassHealth Drug List (MHDL) search pages for RxLantern's drugs, then
+rebuild data/masshealth.json and output/medication_check.md, then delete the downloaded pages.
 
 Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe scripts\\fetch_masshealth.py
-Then scripts\\build_masshealth.py turns the saved pages into data/masshealth.json.
+  --fetch-only   only save the pages to data/raw/masshealth/ (no rebuild, pages kept)
+
+If the MHDL website does not answer, nothing is changed and the script says so (run it again later).
+After it finishes, restart the app (or run ..\\.venv\\Scripts\\python.exe -m backend.build_db) so the website uses the
+new data. The search word is the drug's main ingredient (the RxNorm search term in data/drugs.json) unless SEARCH
+says otherwise.
 """
 
 import json
+import re
+import subprocess
+import sys
+import time
 from pathlib import Path
 
 import httpx
@@ -14,31 +24,73 @@ RAW = ROOT / "data" / "raw" / "masshealth"
 MHDL = "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do"
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) RxLantern student project"}
 
-# Search words typed into the MHDL search box (brand or generic, whichever the list uses).
+# Search words typed into the MHDL search box when the RxNorm term is not the word the list uses.
 SEARCH = {
-    "adderall_xr_30": ["amphetamine"], "concerta_18": ["methylphenidate"], "atorvastatin_20": ["atorvastatin"],
-    "lisinopril_10": ["lisinopril"], "levothyroxine_50": ["levothyroxine"], "metformin_500": ["metformin"],
-    "amlodipine_5": ["amlodipine"], "omeprazole_20": ["omeprazole"], "sertraline_50": ["sertraline"],
-    "amoxicillin_500": ["amoxicillin"], "ozempic_05": ["semaglutide"], "mounjaro_5": ["tirzepatide"],
-    "eliquis_5": ["apixaban"], "humira_40": ["adalimumab"], "dupixent_300": ["dupilumab"],
-    "albuterol_hfa": ["albuterol"], "lantus_solostar": ["insulin glargine"], "amoxicillin_susp_400": ["amoxicillin"],
-    "sumatriptan_50": ["sumatriptan"], "latanoprost_0005": ["latanoprost"], "fluticasone_nasal_50": ["fluticasone"],
-    "triamcinolone_cream_01": ["triamcinolone"], "epinephrine_03": ["epinephrine"], "nicotine_patch_21": ["nicotine"],
-    "paxlovid": ["nirmatrelvir"],
+    "paxlovid": "nirmatrelvir", "insulin_nph_pen": "isophane", "penicillin_vk_500": "penicillin",
+    "amox_clav_875": "amoxicillin", "amox_clav_susp_400": "amoxicillin", "advair_diskus_250": "salmeterol",
+    "symbicort_160": "formoterol", "trelegy_100": "umeclidinium", "duoneb": "albuterol",
+    "lantus_solostar": "insulin glargine", "toujeo_solostar": "insulin glargine", "humalog_kwikpen": "insulin lispro",
+    "novolog_flexpen": "insulin aspart", "tresiba_flextouch": "insulin degludec", "testosterone_cyp_200": "testosterone",
+    "norgestimate_ee": "norgestimate", "medroxyprogesterone_inj_150": "medroxyprogesterone",
+    "buprenorphine_naloxone_8_2": "buprenorphine", "hydrocodone_apap_5_325": "hydrocodone",
+    "oxycodone_apap_5_325": "oxycodone", "smx_tmp_ds": "sulfamethoxazole", "smx_tmp_susp": "sulfamethoxazole",
+    "truvada_prep": "emtricitabine", "biktarvy": "bictegravir", "entresto_49_51": "sacubitril",
 }
 
 
-def main() -> None:
+def search_terms() -> dict[str, str]:
+    drugs = json.loads((ROOT / "data" / "drugs.json").read_text(encoding="utf-8"))["drugs"]
+    out = {}
+    for d in drugs:
+        rx_term = re.search(r"name=([^&]+)$", d["sources"]["rxnorm"]).group(1).replace("+", " ")
+        out[d["id"]] = SEARCH.get(d["id"], rx_term)
+    return out
+
+
+def fetch() -> None:
     RAW.mkdir(parents=True, exist_ok=True)
-    terms = sorted({t for ts in SEARCH.values() for t in ts})
+    search = search_terms()
     with httpx.Client(timeout=60, headers=UA, follow_redirects=True) as c:
-        for t in terms:
-            r = c.get(MHDL, params={"searchFor": t})
-            r.raise_for_status()
-            (RAW / f"{t.replace(' ', '_')}.html").write_text(r.text, encoding="utf-8")
+        for t in sorted(set(search.values())):
+            path = RAW / f"{t.replace(' ', '_')}.html"
+            if path.exists():
+                continue
+            for attempt in range(3):
+                try:
+                    r = c.get(MHDL, params={"searchFor": t})
+                    r.raise_for_status()
+                    break
+                except httpx.HTTPError:
+                    if attempt == 2:
+                        raise
+                    time.sleep(5)
+            if 'id="drug"' not in r.text and "No results" not in r.text and "no drugs" not in r.text.lower():
+                print(f"warning: no result table on the page for '{t}'")
+            path.write_text(r.text, encoding="utf-8")
             print(t, r.status_code, len(r.text))
-    (RAW / "search_terms.json").write_text(json.dumps(SEARCH, indent=2), encoding="utf-8")
+            time.sleep(0.5)
+    (RAW / "search_terms.json").write_text(json.dumps(search, indent=2), encoding="utf-8")
+
+
+def main() -> int:
+    try:
+        fetch()
+    except httpx.HTTPError as e:
+        print(f"The MassHealth Drug List website did not answer ({type(e).__name__}). Nothing was changed. "
+              "Please run this again later.")
+        return 1
+    if "--fetch-only" in sys.argv:
+        return 0
+    py = sys.executable
+    for script in ("build_masshealth.py", "build_medication_check.py"):
+        subprocess.run([py, str(ROOT / "scripts" / script)], check=True, cwd=ROOT)
+    # The vaccine pages (vax_*.html) are kept only if build_vaccines.py needs them again; drug pages are removed.
+    for f in RAW.glob("*.html"):
+        if not f.name.startswith("vax_"):
+            f.unlink()
+    print("Done. Restart the app so the website uses the new MassHealth data.")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

@@ -1,10 +1,11 @@
-"""Save FDA shortage status for all 25 drugs to data/shortages_snapshot.json (offline fallback).
+"""Save FDA shortage status for all 150 drugs to data/shortages_snapshot.json (offline fallback).
 
 Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe scripts\\build_shortages_snapshot.py
 """
 
 import json
 import sys
+import time
 from datetime import date
 from pathlib import Path
 
@@ -21,6 +22,7 @@ with httpx.Client(timeout=30) as client:
     for d in drugs:
         r = fetch_fda_shortage(d, client)
         results.append(r)
+        time.sleep(0.6)  # stay well under openFDA's 240 requests per minute without a key
         print(f"{d['id']:22} {r['status']:45} entries={len(r['matching_entries'])}")
 
 out = ROOT / "data" / "shortages_snapshot.json"

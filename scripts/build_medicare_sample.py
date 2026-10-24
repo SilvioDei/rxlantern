@@ -1,4 +1,4 @@
-"""Build small Massachusetts-only Medicare Part D files in data/medicare/ for our 25 drugs.
+"""Build small Massachusetts-only Medicare Part D files in data/medicare/ for our 150 drugs.
 
 Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe scripts\\build_medicare_sample.py [--download]
 
@@ -177,7 +177,7 @@ def main() -> None:
     write("avg_monthly_cost_ma.csv", avg_rows)
     (OUT / "source.json").write_text(json.dumps({
         "dataset": title, "file": url, "plan_year": PLAN_YEAR, "checked_date": date.today().isoformat(),
-        "filters": "Plans offered in Massachusetts (MA-PD by county, PDP by region); only RxLantern's 25 drugs.",
+        "filters": "Plans offered in Massachusetts (MA-PD by county, PDP by region); only RxLantern's 150 drugs.",
         "note": "Plan unit costs are what the plan pays for the drug, not the member's share. Member share depends on tier "
                 "(cost_sharing_ma.csv), deductible, and the 2026 $2,100 out-of-pocket cap.",
     }, indent=2), encoding="utf-8")

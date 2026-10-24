@@ -64,7 +64,7 @@
           "drug_id": "ozempic_05",
           "in_stock_reports": 1,
           "out_of_stock_reports": 0,
-          "latest_report": "2026-10-24T02:11:42+00:00",
+          "latest_report": "2026-10-24T05:03:20+00:00",
           "conflicting": false
         }
       ],
@@ -79,7 +79,7 @@
     {
       "test": "stock report for Concerta is refused",
       "passed": true,
-      "message": "RxLantern does not accept or show stock reports for controlled medicines like Adderall XR and Concerta. This protects patients and pharmacies. Please call the pharmacy directly."
+      "message": "RxLantern does not accept or show stock reports for controlled medicines (DEA Schedule II to V, for example Adderall XR, Concerta, and oxycodone). This protects patients and pharmacies. Please call the pharmacy directly."
     },
     {
       "test": "one report per pharmacy and drug every 6 hours",
@@ -109,7 +109,7 @@
         "drug_id": "ozempic_05",
         "in_stock_reports": 1,
         "out_of_stock_reports": 1,
-        "latest_report": "2026-10-24T02:11:42+00:00",
+        "latest_report": "2026-10-24T05:03:21+00:00",
         "conflicting": true,
         "note": "People reported both in stock and out of stock. Stock can change quickly."
       }
@@ -234,10 +234,10 @@
       "test": "test database deleted, real database untouched",
       "passed": true,
       "real_database_rows": {
-        "users": 0,
-        "sessions": 0,
+        "users": 1,
+        "sessions": 1,
         "login_failures": 0,
-        "stock_reports": 0,
+        "stock_reports": 3,
         "reviews": 0
       }
     }

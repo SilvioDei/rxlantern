@@ -18,6 +18,7 @@ import { Vaccines } from "./pages/Vaccines";
 import { Community } from "./pages/Community";
 import { AboutPage } from "./pages/About";
 import { Admin } from "./pages/Admin";
+import { OtherMedicine } from "./pages/OtherMedicine";
 
 function ScrollTop() {
   const { pathname } = useLocation();
@@ -43,6 +44,7 @@ createRoot(document.getElementById("root")!).render(
             <Route path="/community" element={<Community />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/other-medicine" element={<OtherMedicine />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </main>

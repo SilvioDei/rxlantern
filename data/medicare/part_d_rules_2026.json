@@ -15,17 +15,56 @@
     "insulin_cap": {
       "label": "Insulin cap",
       "value": "No more than $35 for a one-month supply of each Part B- or Part D-covered insulin product, and no deductible for insulin.",
-      "source": "https://www.medicare.gov/coverage/insulin"
+      "source": "https://www.medicare.gov/coverage/insulin",
+      "applies_to": [
+        "lantus_solostar",
+        "toujeo_solostar",
+        "humalog_kwikpen",
+        "novolog_flexpen",
+        "tresiba_flextouch",
+        "insulin_nph_pen"
+      ]
     },
     "negotiated_prices_2026_all": {
       "label": "Drugs with a Medicare negotiated price (Maximum Fair Price) starting January 1, 2026",
-      "value": ["Eliquis", "Jardiance", "Xarelto", "Januvia", "Farxiga", "Entresto", "Enbrel", "Imbruvica", "Stelara", "Fiasp / NovoLog insulin aspart products"],
+      "value": [
+        "Eliquis",
+        "Jardiance",
+        "Xarelto",
+        "Januvia",
+        "Farxiga",
+        "Entresto",
+        "Enbrel",
+        "Imbruvica",
+        "Stelara",
+        "Fiasp / NovoLog insulin aspart products"
+      ],
       "source": "https://www.cms.gov/files/document/infographic-negotiated-prices-maximum-fair-prices.pdf"
     },
     "negotiated_prices_2026_our_drugs": {
-      "label": "Which of the 25 RxLantern drugs have a negotiated price in 2026",
-      "value": ["Eliquis (apixaban) - CMS lists a 56% discount off the 2023 list price for a 30-day supply"],
-      "source": "https://www.cms.gov/newsroom/fact-sheets/medicare-drug-price-negotiation-program-negotiated-prices-initial-price-applicability-year-2026"
+      "label": "Which RxLantern drugs have a Medicare negotiated price in 2026",
+      "value": [
+        "Eliquis (apixaban): 56% off the 2023 list price for a 30-day supply",
+        "Januvia (sitagliptin): 79% off the 2023 list price for a 30-day supply",
+        "NovoLog / Fiasp insulin aspart products: 76% off the 2023 list price for a 30-day supply",
+        "Farxiga (dapagliflozin): 68% off the 2023 list price for a 30-day supply",
+        "Enbrel (etanercept): 67% off the 2023 list price for a 30-day supply",
+        "Jardiance (empagliflozin): 66% off the 2023 list price for a 30-day supply",
+        "Xarelto (rivaroxaban): 62% off the 2023 list price for a 30-day supply",
+        "Entresto (sacubitril/valsartan): 53% off the 2023 list price for a 30-day supply"
+      ],
+      "by_drug": {
+        "eliquis_5": "Eliquis (apixaban): 56% off the 2023 list price for a 30-day supply",
+        "januvia_100": "Januvia (sitagliptin): 79% off the 2023 list price for a 30-day supply",
+        "novolog_flexpen": "NovoLog / Fiasp insulin aspart products: 76% off the 2023 list price for a 30-day supply",
+        "farxiga_10": "Farxiga (dapagliflozin): 68% off the 2023 list price for a 30-day supply",
+        "enbrel_50": "Enbrel (etanercept): 67% off the 2023 list price for a 30-day supply",
+        "jardiance_10": "Jardiance (empagliflozin): 66% off the 2023 list price for a 30-day supply",
+        "xarelto_20": "Xarelto (rivaroxaban): 62% off the 2023 list price for a 30-day supply",
+        "entresto_49_51": "Entresto (sacubitril/valsartan): 53% off the 2023 list price for a 30-day supply"
+      },
+      "source": "https://www.cms.gov/files/document/infographic-negotiated-prices-maximum-fair-prices.pdf",
+      "checked_date": "2026-10-24"
     },
     "negotiated_prices_effective_date": {
       "label": "When the 2026 negotiated prices start",

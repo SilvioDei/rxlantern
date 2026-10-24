@@ -1,4 +1,4 @@
-"""Build data/nadac_sample.csv: latest weekly NADAC prices for our 25 drugs only.
+"""Build data/nadac_sample.csv: latest weekly NADAC prices for our 150 drugs only.
 
 Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe scripts\\build_nadac_sample.py [--download]
 

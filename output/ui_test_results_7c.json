@@ -1,0 +1,80 @@
+{
+ "run_at": "2026-10-24T01:32:06",
+ "base_url": "http://127.0.0.1:8000",
+ "browser": "Chromium (Playwright)",
+ "passed": 7,
+ "failed": 0,
+ "checks": [
+  {
+   "n": 1,
+   "check": "Drug search finds 10+ new drugs by brand name, generic name, and a misspelling",
+   "result": "PASS",
+   "notes": "brand: 12/12 found; generic: 12/12 found; misspelling: 12/12 found",
+   "seconds": 12.7
+  },
+  {
+   "n": 2,
+   "check": "A newly added Schedule II drug (Vyvanse) shows no stock reports or report buttons",
+   "result": "PASS",
+   "notes": "Vyvanse (Lisdexamfetamine (Vyvanse) 30 mg capsule) flagged controlled; results page and shortage watch have no reports or report buttons; API refuses (403) Vyvanse and oxycodone reports",
+   "seconds": 4.2
+  },
+  {
+   "n": 3,
+   "check": "A drug not in the list shows its live FDA shortage status and a call script",
+   "result": "PASS",
+   "notes": "methotrexate: '⚠ In shortage' (in shortage), checked 2026-10-24 from openFDA, call script shown; made-up name -> not found",
+   "seconds": 3.5
+  },
+  {
+   "n": 4,
+   "check": "Community search by medication, pharmacy, and neighborhood works, including 'no posts'",
+   "result": "PASS",
+   "notes": "medicine (Keflex -> real cephalexin report; Ozempic -> sample reports), 'No posts for this medication yet' for lisinopril, pharmacy filter (1 posts, all Gary Drug), neighborhood filter (6 posts, all Dorchester), rating sort [5, 4, 4, 3, 2]",
+   "seconds": 4.2
+  },
+  {
+   "n": 5,
+   "check": "No wheelchair filter, field, or badge appears anywhere",
+   "result": "PASS",
+   "notes": "10 pages x English and Spanish, plus 3 API responses: no wheelchair filter, field, or badge",
+   "seconds": 24.6
+  },
+  {
+   "n": 6,
+   "check": "Microphone and Read aloud buttons are visible without Easy view",
+   "result": "PASS",
+   "notes": "Easy view off: mic on top search, guided search, chat, and Community; 'Read this page aloud' on every page; 'Read aloud' on results, call script, and the not-in-list page; note by the mic and on About & Privacy",
+   "seconds": 2.2
+  },
+  {
+   "n": 7,
+   "check": "The top search bar is visible without scrolling at desktop and phone width, and starts the guided search",
+   "result": "PASS",
+   "notes": "desktop 1280x800: input and button end at 305px; phone 375x812: input and button end at 463px; Enter picks the medicine and moves to the guided search's strength step",
+   "seconds": 2.8
+  }
+ ],
+ "cleanup": {
+  "test_accounts_created": 2,
+  "rows_left_in_user_db": {
+   "users": 0,
+   "sessions": 0,
+   "stock_reports": 0,
+   "reviews": 0,
+   "login_failures": 0
+  }
+ },
+ "screenshots": [
+  "7c_01_misspelled_suggestion.png",
+  "7c_02_schedule2_vyvanse_results.png",
+  "7c_03_not_in_list_methotrexate.png",
+  "7c_04_community_search_medicine.png",
+  "7c_05_community_no_posts.png",
+  "7c_06_community_search_filters.png",
+  "7c_07_voice_buttons_home.png",
+  "7c_08_about_voice_note.png",
+  "7c_09_top_search_desktop.png",
+  "7c_09_top_search_phone.png"
+ ]
+}

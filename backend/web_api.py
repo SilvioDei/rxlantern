@@ -1,5 +1,6 @@
-"""Read-only data routes for the website. No model calls and no live outside APIs: every page loads from the
-database and our own tools. (FDA shortage data is refreshed in the background, see shortage_refresh.py.)"""
+"""Read-only data routes for the website. No model calls. Every page loads from the database and our own tools
+(FDA shortage data is refreshed in the background, see shortage_refresh.py). The one exception is /api/other-drug:
+a medicine outside RxLantern's list has no saved data, so its FDA shortage status is looked up live."""
 
 import json
 from datetime import datetime
@@ -58,6 +59,63 @@ MEDICINE_LABELS = {
     "fluticasone_nasal_50": "Fluticasone nasal spray (Flonase)", "triamcinolone_cream_01": "Triamcinolone cream",
     "epinephrine_03": "Epinephrine auto-injector (EpiPen, Auvi-Q)", "nicotine_patch_21": "Nicotine patch",
     "paxlovid": "Paxlovid (nirmatrelvir and ritonavir)",
+    # Step 7c: 125 more. Forms of the same medicine share one name (for example amoxicillin capsules and liquids).
+    "amoxicillin_susp_250": "Amoxicillin",
+    "wegovy_24": "Wegovy (semaglutide)", "rybelsus_7": "Rybelsus (semaglutide tablets)",
+    "zepbound_25": "Zepbound (tirzepatide)", "trulicity_15": "Trulicity (dulaglutide)", "victoza_18": "Victoza (liraglutide)",
+    "jardiance_10": "Jardiance (empagliflozin)", "farxiga_10": "Farxiga (dapagliflozin)", "januvia_100": "Januvia (sitagliptin)",
+    "glipizide_5": "Glipizide (Glucotrol)", "pioglitazone_30": "Pioglitazone (Actos)", "metformin_er_500": "Metformin",
+    "humalog_kwikpen": "Insulin lispro (Humalog, Admelog)", "novolog_flexpen": "Insulin aspart (NovoLog)",
+    "tresiba_flextouch": "Insulin degludec (Tresiba)", "toujeo_solostar": "Toujeo (insulin glargine 300 units/mL)",
+    "insulin_nph_pen": "Insulin NPH (Humulin N, Novolin N)",
+    "advair_diskus_250": "Advair Diskus (fluticasone and salmeterol)", "symbicort_160": "Symbicort (budesonide and formoterol)",
+    "trelegy_100": "Trelegy Ellipta", "spiriva_handihaler": "Spiriva HandiHaler (tiotropium)",
+    "flovent_hfa_110": "Flovent HFA (fluticasone inhaler)", "albuterol_neb_25": "Albuterol nebulizer solution",
+    "duoneb": "DuoNeb (ipratropium and albuterol nebulizer)", "budesonide_neb_05": "Budesonide nebulizer (Pulmicort Respules)",
+    "montelukast_10": "Montelukast (Singulair)", "montelukast_chew_5": "Montelukast (Singulair)",
+    "benzonatate_100": "Benzonatate (Tessalon Perles)", "naloxone_nasal_4": "Naloxone nasal spray (Narcan)",
+    "oseltamivir_75": "Oseltamivir (Tamiflu)", "oseltamivir_susp": "Oseltamivir (Tamiflu)",
+    "amox_clav_875": "Amoxicillin-clavulanate (Augmentin)", "amox_clav_susp_400": "Amoxicillin-clavulanate (Augmentin)",
+    "azithromycin_250": "Azithromycin (Zithromax, Z-Pak)", "azithromycin_susp_200": "Azithromycin (Zithromax, Z-Pak)",
+    "cephalexin_500": "Cephalexin (Keflex)", "cephalexin_susp_250": "Cephalexin (Keflex)", "cefdinir_susp_250": "Cefdinir (Omnicef)",
+    "doxycycline_100": "Doxycycline", "smx_tmp_ds": "Sulfamethoxazole-trimethoprim (Bactrim)",
+    "smx_tmp_susp": "Sulfamethoxazole-trimethoprim (Bactrim)", "nitrofurantoin_100": "Nitrofurantoin (Macrobid)",
+    "ciprofloxacin_500": "Ciprofloxacin (Cipro)", "metronidazole_500": "Metronidazole (Flagyl)",
+    "penicillin_vk_500": "Penicillin VK", "fluconazole_150": "Fluconazole (Diflucan)", "valacyclovir_1g": "Valacyclovir (Valtrex)",
+    "mupirocin_2": "Mupirocin ointment (Bactroban)",
+    "losartan_50": "Losartan (Cozaar)", "metoprolol_succ_er_50": "Metoprolol succinate ER (Toprol XL)",
+    "metoprolol_tart_25": "Metoprolol tartrate (Lopressor)", "rosuvastatin_10": "Rosuvastatin (Crestor)",
+    "hydrochlorothiazide_25": "Hydrochlorothiazide (HCTZ)", "simvastatin_20": "Simvastatin (Zocor)",
+    "pravastatin_40": "Pravastatin (Pravachol)", "furosemide_20": "Furosemide (Lasix)", "carvedilol_125": "Carvedilol (Coreg)",
+    "spironolactone_25": "Spironolactone (Aldactone)", "clopidogrel_75": "Clopidogrel (Plavix)", "valsartan_160": "Valsartan (Diovan)",
+    "ezetimibe_10": "Ezetimibe (Zetia)", "propranolol_10": "Propranolol (Inderal)", "xarelto_20": "Xarelto (rivaroxaban)",
+    "warfarin_5": "Warfarin (Coumadin, Jantoven)", "entresto_49_51": "Entresto (sacubitril and valsartan)",
+    "repatha_140": "Repatha (evolocumab)", "brilinta_90": "Brilinta (ticagrelor)", "nitroglycerin_sl_04": "Nitroglycerin (Nitrostat)",
+    "escitalopram_10": "Escitalopram (Lexapro)", "bupropion_xl_150": "Bupropion XL (Wellbutrin XL)", "fluoxetine_20": "Fluoxetine (Prozac)",
+    "trazodone_50": "Trazodone", "duloxetine_60": "Duloxetine (Cymbalta)", "buspirone_10": "Buspirone (Buspar)",
+    "venlafaxine_er_75": "Venlafaxine ER (Effexor XR)", "hydroxyzine_25": "Hydroxyzine (Atarax)",
+    "quetiapine_25": "Quetiapine (Seroquel)", "aripiprazole_5": "Aripiprazole (Abilify)", "lamotrigine_100": "Lamotrigine (Lamictal)",
+    "alprazolam_05": "Alprazolam (Xanax)", "clonazepam_05": "Clonazepam (Klonopin)", "lorazepam_05": "Lorazepam (Ativan)",
+    "zolpidem_10": "Zolpidem (Ambien)", "adderall_ir_10": "Adderall (amphetamine salts, immediate release)",
+    "vyvanse_30": "Vyvanse (lisdexamfetamine)", "methylphenidate_10": "Ritalin (methylphenidate)",
+    "focalin_xr_10": "Focalin XR (dexmethylphenidate)", "atomoxetine_40": "Atomoxetine (Strattera)",
+    "guanfacine_er_1": "Guanfacine ER (Intuniv)", "hydrocodone_apap_5_325": "Hydrocodone-acetaminophen (Norco)",
+    "oxycodone_5": "Oxycodone (Roxicodone)", "oxycodone_apap_5_325": "Oxycodone-acetaminophen (Percocet)",
+    "tramadol_50": "Tramadol (Ultram)", "gabapentin_300": "Gabapentin (Neurontin)", "pregabalin_75": "Pregabalin (Lyrica)",
+    "buprenorphine_naloxone_8_2": "Buprenorphine-naloxone (Suboxone)", "meloxicam_15": "Meloxicam (Mobic)",
+    "ibuprofen_800": "Ibuprofen 800 mg (Motrin)", "cyclobenzaprine_10": "Cyclobenzaprine (Flexeril)",
+    "diclofenac_gel_1": "Diclofenac gel (Voltaren)", "phentermine_375": "Phentermine (Adipex-P)",
+    "testosterone_cyp_200": "Testosterone cypionate (Depo-Testosterone)", "pantoprazole_40": "Pantoprazole (Protonix)",
+    "famotidine_20": "Famotidine (Pepcid)", "ondansetron_odt_4": "Ondansetron (Zofran)", "linzess_145": "Linzess (linaclotide)",
+    "prednisone_20": "Prednisone", "prednisolone_soln_15": "Prednisolone liquid (Orapred, Millipred)",
+    "methylprednisolone_4_pack": "Methylprednisolone (Medrol Dosepak)", "allopurinol_100": "Allopurinol (Zyloprim)",
+    "colchicine_06": "Colchicine (Colcrys)", "estradiol_1": "Estradiol (Estrace)",
+    "norgestimate_ee": "Birth control: norgestimate-ethinyl estradiol (Sprintec)",
+    "medroxyprogesterone_inj_150": "Depo-Provera (medroxyprogesterone shot)", "finasteride_5": "Finasteride (Proscar)",
+    "tamsulosin_04": "Tamsulosin (Flomax)", "alendronate_70": "Alendronate (Fosamax)", "levetiracetam_500": "Levetiracetam (Keppra)",
+    "truvada_prep": "Truvada (emtricitabine and tenofovir, PrEP)", "biktarvy": "Biktarvy",
+    "enbrel_50": "Enbrel (etanercept)", "nurtec_75": "Nurtec ODT (rimegepant)", "timolol_eye_05": "Timolol eye drops (Timoptic)",
+    "clobetasol_cream_005": "Clobetasol cream (Temovate)", "ergocalciferol_50000": "Vitamin D 50,000 units (ergocalciferol)",
 }
 
 
@@ -126,7 +184,7 @@ def _pharmacy_brief(p: dict, lang: str, at: datetime | None = None) -> dict:
         "closes_for": st.get("closes_for"), "opens_next": st.get("opens_next"),
         **_today_counter(p, at), "store_today": _store_today(p, at),
         "delivery": p["delivery"], "delivery_summary": dd.get("same_day") or dd.get("cost") or None,
-        "drive_thru": p["drive_thru"], "wheelchair_accessible": p["wheelchair_accessible"], "languages": p["languages"],
+        "drive_thru": p["drive_thru"], "languages": p["languages"],
         "vaccines": _list(p["vaccines_routine"]) + _list(p["vaccines_travel"]),
         "website": p["website"], "vaccine_booking_url": p["vaccine_booking_url"], "checked_date": p["checked_date"],
         "hours_source": p["sources"].get("pharmacy_hours", p["website"]) if isinstance(p["sources"], dict) else p["website"],
@@ -147,7 +205,7 @@ def _parse_at(at: str | None) -> datetime | None:
 @router.get("/pharmacies")
 def pharmacies(lang: str = "en") -> dict:
     return {"pharmacies": [_pharmacy_brief(p, lang) for p in tools._pharmacies()],
-            "note": "Languages spoken and wheelchair access are 'not found' on the pharmacies' public pages."}
+            "note": "Languages spoken are 'not found' on the pharmacies' public pages."}
 
 
 def _drug_names() -> dict[str, str]:
@@ -175,7 +233,7 @@ def pharmacy(pharmacy_id: str, lang: str = "en") -> dict:
 
 @router.get("/drugs")
 def drugs(lang: str = "en") -> dict:
-    """Shortage watch: the 25 drugs with FDA status (from the database, refreshed daily in the background), FDA's
+    """Shortage watch: the 150 drugs with FDA status (from the database, refreshed daily in the background), FDA's
     estimate if it gave one, and community report counts (non-controlled only). Real and sample counts stay apart."""
     real = community.fresh_report_counts_by_drug()
     samples: dict[str, dict] = {}
@@ -277,17 +335,21 @@ def results(drug_id: str, insurance: str = "", plan: str = "", lang: str = "en",
 # ----------------------------------------------------------------------------- community page
 @router.get("/community")
 def community_feed() -> dict:
-    """Latest stock reports (last 72 hours) and reviews across all pharmacies. Real and sample posts stay apart."""
+    """Latest stock reports (last 72 hours) and reviews across all pharmacies, with each pharmacy's neighborhood and
+    average rating (real reviews only, from 3 reviews up) so the page can search and sort them. Real and sample
+    posts stay apart."""
     names = _drug_names()
     pharms = {p["id"]: p for p in tools._pharmacies()}
+    stats = community.review_stats_all()
 
     def label(x: dict) -> dict:
         p = pharms.get(x["pharmacy_id"], {})
         return x | {"pharmacy": p.get("name", x["pharmacy_id"]), "address": p.get("address", ""),
-                    "drug": names.get(x.get("drug_id"), x.get("drug_id"))}
+                    "neighborhood": p.get("neighborhood", ""), "drug": names.get(x.get("drug_id"), x.get("drug_id")),
+                    "pharmacy_rating": stats.get(x["pharmacy_id"], {}).get("average_rating")}
 
-    return {"reports": [label(x) for x in community.latest_reports()],
-            "reviews": [label(x) for x in community.latest_reviews()],
+    return {"reports": [label(x) for x in community.latest_reports(limit=300)],
+            "reviews": [label(x) for x in community.latest_reviews(limit=200)],
             "sample_reports": [label(x) for x in sample_data.reports()],
             "sample_reviews": [label(x) for x in sample_data.reviews()],
             "sample_data": sample_data.enabled(), "window_hours": community.REPORT_WINDOW_HOURS,
@@ -316,6 +378,14 @@ def vaccines() -> dict:
             "note": "Pharmacies are listed only if their own page names the vaccine. Others may still offer it."}
 
 
+@router.get("/other-drug")
+def other_drug(name: str, lang: str = "en") -> dict:
+    """A medicine that is not in RxLantern's list: live FDA shortage status (openFDA, saved for 24 hours) and a call
+    script. This is the one page route that calls an outside API, because there is no saved data for such a medicine.
+    Coverage and cost are not shown: those exist only for the medicines in the list."""
+    return tools.other_drug_shortage(name[:60], "es" if lang == "es" else "en")
+
+
 @router.get("/drugs/{drug_id}/call-script")
 def drug_call_script(drug_id: str, lang: str = "en") -> dict:
     return tools.call_script(drug_id, lang=lang)
@@ -339,7 +409,7 @@ def about() -> dict:
     return {"app_name": config.APP_NAME, "sources": [
         {"key": "pharmacies", "source": "Each pharmacy's own website or store page (20 Boston pharmacies)",
          "url": None, "checked_date": ph.get("d")},
-        {"key": "drugs", "source": "RxNorm, National Library of Medicine (25 drugs)",
+        {"key": "drugs", "source": "RxNorm, National Library of Medicine (150 drugs)",
          "url": "https://rxnav.nlm.nih.gov/", "checked_date": dr.get("d")},
         {"key": "shortages", "source": "FDA Drug Shortages (openFDA), refreshed in the background at most once a day",
          "url": tools.SHORTAGE_PAGE, "checked_date": max((s["checked_date"] for s in sh), default=tools.NF)},

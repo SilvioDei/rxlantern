@@ -1,4 +1,4 @@
-// Shortage watch: FDA status for the 25 drugs (from our database, refreshed daily in the background),
+// Shortage watch: FDA status for the 150 drugs (from our database, refreshed daily in the background),
 // FDA's estimate if given, community report counts (non-controlled only), and three buttons per drug.
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";

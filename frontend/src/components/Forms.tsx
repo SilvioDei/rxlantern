@@ -2,7 +2,7 @@
 import { useState, type FormEvent } from "react";
 import { useApp, errorText } from "../state";
 import { api } from "../api";
-import { Modal } from "./Bits";
+import { MicButton, MicNote, Modal } from "./Bits";
 
 export function AuthModal() {
   const { authOpen } = useApp();
@@ -177,6 +177,10 @@ function ReviewForm({ pharmacyId }: { pharmacyId: string }) {
         <label>{t("comment")}
           <textarea name="comment" maxLength={300} rows={3} value={comment} onChange={(e) => setComment(e.target.value)} aria-describedby="comment-help" />
         </label>
+        <div className="mic-line">
+          <MicButton onText={(txt) => setComment((c) => (c ? `${c} ${txt}` : txt).slice(0, 300))} />
+          <MicNote />
+        </div>
         <p id="comment-help" className="muted small">{t("commentHelp")} · {t("chars", { n: comment.length })}</p>
         {msg && <p className="alert" role="alert">{msg}</p>}
         <button type="submit" className="btn primary big" disabled={busy || !rating}>{busy ? t("saving") : t("submit")}</button>

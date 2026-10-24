@@ -22,17 +22,28 @@ export function ReadAloud({ text, label }: { text: string | (() => string); labe
   );
 }
 
-/** Microphone button (browser speech recognition). Hidden when the browser does not support it. */
+/** Microphone button (browser speech recognition). Shown to everyone; in a browser without speech recognition
+ *  it says so and asks the patient to type. */
 export function MicButton({ onText }: { onText: (text: string) => void }) {
-  const { t, lang } = useApp();
+  const { t, lang, notify } = useApp();
   const [listening, setListening] = useState(false);
-  if (!recognitionSupported()) return null;
   return (
     <button type="button" className={`btn ghost mic ${listening ? "listening" : ""}`} aria-pressed={listening}
-      onClick={() => { setListening(true); listen(lang, onText, () => setListening(false)); }}>
+      title={t("micNote")}
+      onClick={() => {
+        if (!recognitionSupported()) { notify(t("micUnsupported"), false); return; }
+        setListening(true);
+        listen(lang, onText, () => setListening(false));
+      }}>
       <span aria-hidden="true">🎤</span> {listening ? t("micListening") : t("micStart")}
     </button>
   );
+}
+
+/** The privacy note shown by the microphone. */
+export function MicNote() {
+  const { t } = useApp();
+  return <p className="mic-note"><span aria-hidden="true">ⓘ</span> {t("micNote")}</p>;
 }
 
 export function SampleBadge() {

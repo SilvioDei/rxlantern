@@ -1,4 +1,5 @@
-"""Write output/medication_check.md: one section per drug plus vaccines, for pharmacist review.
+"""Write output/medication_check.md: a "please review first" list, one section per drug, and vaccines,
+for pharmacist review.
 
 Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe scripts\\build_medication_check.py
 Reads only the small files in data/.
@@ -14,6 +15,8 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 MED = DATA / "medicare"
 NF = "not found"
+HIGH_COST = 1000.0   # NADAC 30-day estimates above this go on the review list
+LOW_COST = 1.0       # ... and below this
 
 
 def load(name):
@@ -50,8 +53,17 @@ def main() -> None:
         plans_by_formulary[p["formulary_id"]].append(p)
     n_plans = len(plans)
 
+    ls = drugs.get("list_source", {})
+    ds = drugs.get("dea_schedule_source", {})
     out = ["# Medication data check", "",
-           f"Checked: {drugs['checked_date']}. For pharmacist review. Every fact lists its source.", "",
+           f"Checked: {drugs['checked_date']}. For pharmacist review. Every fact lists its source. "
+           f"{len(drugs['drugs'])} drugs.", "",
+           f"- **Drug list:** the 25 drugs from Step 3 plus 125 chosen from {ls.get('name', NF)} "
+           f"(<{ls.get('url', NF)}>; data: {ls.get('underlying_data', NF)}; checked {ls.get('checked_date', NF)}), "
+           "adding shortage-prone and high-cost medicines (GLP-1s, inhalers, insulins, children's antibiotic liquids, "
+           "ADHD medicines). Names, RxCUIs, and NDCs from RxNorm (RxNav API).",
+           f"- **DEA schedule:** from the {ds.get('name', NF)} (<{ds.get('url', NF)}>, last updated "
+           f"{ds.get('last_updated', NF)}), matched by RxCUI and package NDC; never typed by hand.",
            "- **NADAC** is what pharmacies pay to buy the drug (CMS survey), not the patient's price. "
            "The 30-day estimate = NADAC per unit x the amount shown. It leaves out the pharmacy's dispensing fee and markup.",
            "- **Medicare counts** are Massachusetts Part D plans (stand-alone PDPs and Medicare Advantage drug plans) "
@@ -68,6 +80,8 @@ def main() -> None:
 
     summary = ["| Drug | Shortage | NADAC 30-day est. | MassHealth PA | MA Medicare plans covering |", "|---|---|---|---|---|"]
     body = []
+    not_checked = []
+    review = {"controlled": [], "high": [], "low": [], "no_nadac": [], "no_mh": [], "no_medicare": []}
     for d in drugs["drugs"]:
         did = d["id"]
         sup = d["typical_30_day_supply"]
@@ -75,7 +89,7 @@ def main() -> None:
         rows = [r for r in nadac[did] if r["pricing_unit"] == sup["nadac_unit"]]
         gen = [float(r["nadac_per_unit"]) for r in rows if r["classification"] == "G"]
         brand = [float(r["nadac_per_unit"]) for r in rows if r["classification"].startswith("B")]
-        price_lines, est = [], NF
+        price_lines, est, est_value = [], NF, None
         for label, vals in (("Generic", gen), ("Brand", brand)):
             if vals:
                 med = statistics.median(vals)
@@ -83,6 +97,19 @@ def main() -> None:
                 price_lines.append(f"{label}: {money(med)} per {sup['nadac_unit']} (median of {len(vals)} NDCs) -> about {money(cost)} for {sup['basis']}")
                 if est == NF:
                     est = money(cost) + (" (generic)" if label == "Generic" else " (brand)")
+                    est_value = cost
+        name = d["display_name"]
+        if d["controlled"]:
+            chk = d.get("dea_schedule_check", {})
+            review["controlled"].append(f"{name}: **{d['dea_schedule']}** (openFDA NDC directory: {chk.get('products_matched', '?')} "
+                                        f"products matched; schedules seen {chk.get('schedules_seen', {})}). "
+                                        "No pharmacy-level stock reports; shortage status and call script only.")
+        if est_value is None:
+            review["no_nadac"].append(f"{name}: no NADAC price in the '{sup['nadac_unit']}' unit used for the estimate.")
+        elif est_value > HIGH_COST:
+            review["high"].append(f"{name}: about {money(est_value)} for {sup['basis']} ({est.split(' ')[-1].strip('()')})")
+        elif est_value < LOW_COST:
+            review["low"].append(f"{name}: about {money(est_value)} for {sup['basis']}")
         as_of = rows[0]["as_of_date"] if rows else NF
         m = mh_by.get(did, {})
         f_rows = [r for r in formulary if r["drug_id"] == did]
@@ -102,6 +129,13 @@ def main() -> None:
                 if r[fl] == "Y":
                     flags[fl] += k
         cov_text = (f"{len(covering)} of {n_plans}" if plans else "not built")
+        if str(m.get("covered", "")).startswith("not checked"):
+            not_checked.append(name)
+        elif m.get("covered", NF) == NF:
+            review["no_mh"].append(f"{name}: not found on the MassHealth Drug List search (<{m.get('source', NF)}>). "
+                                   "MassHealth rule: drugs not on the list need prior authorization.")
+        if plans and not covering:
+            review["no_medicare"].append(f"{name}: on no Massachusetts Part D plan formulary in the CMS 2026 file.")
         summary.append(f"| {d['display_name']} | {sh['status']} | {est} | {m.get('prior_authorization', NF)} | {cov_text} |")
         body += [f"## {d['display_name']}", "",
                  f"- **RxNorm:** {d['generic_name']} — brands: {', '.join(d['brand_names']) if isinstance(d['brand_names'], list) else d['brand_names']} — "
@@ -125,8 +159,9 @@ def main() -> None:
                 a = avg_cost[did]
                 body.append(f"  - Average plan cost for {sup['basis']}: {money(float(a['avg_30_day_cost']))} "
                             f"(from {a['plans_with_price']} plans' pricing; this is the plan's drug price, not the patient's share).")
-        if did == "eliquis_5" and rules:
-            body.append("  - Eliquis has a Medicare negotiated price (Maximum Fair Price) starting January 1, 2026.")
+        neg = (rules or {}).get("rules", {}).get("negotiated_prices_2026_our_drugs", {}).get("by_drug", {})
+        if did in neg:
+            body.append(f"  - Medicare negotiated price (Maximum Fair Price) starting January 1, 2026: {neg[did]}.")
         body.append("")
 
     vac = load("vaccines.json")
@@ -150,7 +185,23 @@ def main() -> None:
             vbody.append(f"- **{v['name']}:** " + " ".join(v["notes"]))
     vbody += ["", "Not checked: " + " ".join(vac["not_checked"]), ""]
 
-    text = "\n".join(out + ["## Summary", "", *summary, "", *body, *vbody])
+    heads = [("controlled", "Controlled drugs (every one flagged; DEA schedule from openFDA)"),
+             ("high", f"Very high cost estimates (NADAC 30-day estimate above {money(HIGH_COST)})"),
+             ("low", f"Very low cost estimates (NADAC 30-day estimate below {money(LOW_COST)})"),
+             ("no_nadac", "No NADAC price for the estimate"),
+             ("no_mh", "No MassHealth Drug List match or not checked"),
+             ("no_medicare", "No Massachusetts Medicare Part D match")]
+    rv = ["## Please review first", "",
+          "Unusual items for a pharmacist to check before anything else. NADAC estimates are what pharmacies pay, "
+          "not what patients pay.", ""]
+    if not_checked:
+        review["no_mh"].insert(0, f"{len(not_checked)} drugs: MassHealth coverage not checked yet (the MassHealth Drug "
+                                  "List website was unavailable on 2026-10-24). The website tells patients to call the "
+                                  "pharmacy or MassHealth. Rerun: scripts/fetch_masshealth.py. Drugs: "
+                                  + ", ".join(not_checked) + ".")
+    for key, head in heads:
+        rv += [f"### {head} ({len(review[key])})", ""] + ([f"- {x}" for x in review[key]] or ["- none"]) + [""]
+    text = "\n".join(out + rv + ["## Summary", "", *summary, "", *body, *vbody])
     (ROOT / "output" / "medication_check.md").write_text(text, encoding="utf-8")
     print("wrote output/medication_check.md")
 

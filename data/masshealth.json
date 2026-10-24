@@ -2,7 +2,7 @@
   "source": "MassHealth Drug List (Executive Office of Health and Human Services)",
   "source_url": "https://mhdl.pharmacy.services.conduent.com/MHDL/",
   "list_last_updated": "10/05/26",
-  "checked_date": "2026-10-23",
+  "checked_date": "2026-10-24",
   "general_rules": [
     "Any drug that does not appear on the MassHealth Drug List requires prior authorization (PA).",
     "PA applies to both the brand-name drug and its FDA A-rated generic for listed products.",
@@ -545,6 +545,1506 @@
       ],
       "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=nirmatrelvir",
       "checked_date": "2026-10-23"
+    },
+    {
+      "drug_id": "wegovy_24",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=semaglutide",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "rybelsus_7",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=semaglutide",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "zepbound_25",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tirzepatide",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "trulicity_15",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=dulaglutide",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "victoza_18",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=liraglutide",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "jardiance_10",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=empagliflozin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "farxiga_10",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=dapagliflozin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "januvia_100",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sitagliptin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "glipizide_5",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=glipizide",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "pioglitazone_30",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pioglitazone",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "metformin_er_500",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metformin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "humalog_kwikpen",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+lispro",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "novolog_flexpen",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+aspart",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "tresiba_flextouch",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+degludec",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "toujeo_solostar",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=insulin+glargine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "insulin_nph_pen",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=isophane",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "advair_diskus_250",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=salmeterol",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "symbicort_160",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=formoterol",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "trelegy_100",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=umeclidinium",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "spiriva_handihaler",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tiotropium",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "flovent_hfa_110",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluticasone",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "albuterol_neb_25",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=albuterol",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "duoneb",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=albuterol",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "budesonide_neb_05",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=budesonide",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "montelukast_10",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=montelukast",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "montelukast_chew_5",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=montelukast",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "benzonatate_100",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=benzonatate",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "naloxone_nasal_4",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=naloxone",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "oseltamivir_75",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oseltamivir",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "oseltamivir_susp",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oseltamivir",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "amoxicillin_susp_250",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "amox_clav_875",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "amox_clav_susp_400",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amoxicillin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "azithromycin_250",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=azithromycin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "azithromycin_susp_200",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=azithromycin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "cephalexin_500",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cephalexin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "cephalexin_susp_250",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cephalexin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "cefdinir_susp_250",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cefdinir",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "doxycycline_100",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=doxycycline",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "smx_tmp_ds",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sulfamethoxazole",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "smx_tmp_susp",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sulfamethoxazole",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "nitrofurantoin_100",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=nitrofurantoin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "ciprofloxacin_500",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ciprofloxacin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "metronidazole_500",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metronidazole",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "penicillin_vk_500",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=penicillin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "fluconazole_150",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluconazole",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "valacyclovir_1g",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=valacyclovir",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "mupirocin_2",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=mupirocin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "losartan_50",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=losartan",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "metoprolol_succ_er_50",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metoprolol",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "metoprolol_tart_25",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=metoprolol",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "rosuvastatin_10",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=rosuvastatin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "hydrochlorothiazide_25",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=hydrochlorothiazide",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "simvastatin_20",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=simvastatin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "pravastatin_40",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pravastatin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "furosemide_20",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=furosemide",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "carvedilol_125",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=carvedilol",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "spironolactone_25",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=spironolactone",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "clopidogrel_75",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=clopidogrel",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "valsartan_160",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=valsartan",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "ezetimibe_10",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ezetimibe",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "propranolol_10",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=propranolol",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "xarelto_20",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=rivaroxaban",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "warfarin_5",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=warfarin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "entresto_49_51",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=sacubitril",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "repatha_140",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=evolocumab",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "brilinta_90",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ticagrelor",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "nitroglycerin_sl_04",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=nitroglycerin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "escitalopram_10",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=escitalopram",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "bupropion_xl_150",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=bupropion",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "fluoxetine_20",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=fluoxetine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "trazodone_50",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=trazodone",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "duloxetine_60",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=duloxetine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "buspirone_10",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=buspirone",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "venlafaxine_er_75",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=venlafaxine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "hydroxyzine_25",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=hydroxyzine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "quetiapine_25",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=quetiapine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "aripiprazole_5",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=aripiprazole",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "lamotrigine_100",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=lamotrigine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "alprazolam_05",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=alprazolam",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "clonazepam_05",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=clonazepam",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "lorazepam_05",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=lorazepam",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "zolpidem_10",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=zolpidem",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "adderall_ir_10",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=amphetamine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "vyvanse_30",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=lisdexamfetamine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "methylphenidate_10",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=methylphenidate",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "focalin_xr_10",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=dexmethylphenidate",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "atomoxetine_40",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=atomoxetine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "guanfacine_er_1",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=guanfacine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "hydrocodone_apap_5_325",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=hydrocodone",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "oxycodone_5",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oxycodone",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "oxycodone_apap_5_325",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=oxycodone",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "tramadol_50",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tramadol",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "gabapentin_300",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=gabapentin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "pregabalin_75",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pregabalin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "buprenorphine_naloxone_8_2",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=buprenorphine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "meloxicam_15",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=meloxicam",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "ibuprofen_800",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ibuprofen",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "cyclobenzaprine_10",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=cyclobenzaprine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "diclofenac_gel_1",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=diclofenac",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "phentermine_375",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=phentermine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "testosterone_cyp_200",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=testosterone",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "pantoprazole_40",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=pantoprazole",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "famotidine_20",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=famotidine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "ondansetron_odt_4",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ondansetron",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "linzess_145",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=linaclotide",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "prednisone_20",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=prednisone",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "prednisolone_soln_15",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=prednisolone",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "methylprednisolone_4_pack",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=methylprednisolone",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "allopurinol_100",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=allopurinol",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "colchicine_06",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=colchicine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "estradiol_1",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=estradiol",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "norgestimate_ee",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=norgestimate",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "medroxyprogesterone_inj_150",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=medroxyprogesterone",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "finasteride_5",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=finasteride",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "tamsulosin_04",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=tamsulosin",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "alendronate_70",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=alendronate",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "levetiracetam_500",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=levetiracetam",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "truvada_prep",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=emtricitabine",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "biktarvy",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=bictegravir",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "enbrel_50",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=etanercept",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "nurtec_75",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=rimegepant",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "timolol_eye_05",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=timolol",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "clobetasol_cream_005",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=clobetasol",
+      "checked_date": "2026-10-24"
+    },
+    {
+      "drug_id": "ergocalciferol_50000",
+      "covered": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "prior_authorization": "not checked yet: the MassHealth Drug List website was unavailable on 2026-10-24",
+      "notes": [
+        "MassHealth coverage not checked yet. Call the pharmacy or MassHealth to confirm."
+      ],
+      "mhdl_rows": [],
+      "match": "not checked",
+      "source": "https://mhdl.pharmacy.services.conduent.com/MHDL/pubdruglistget.do?searchFor=ergocalciferol",
+      "checked_date": "2026-10-24"
     }
   ]
 }

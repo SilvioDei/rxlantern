@@ -13,7 +13,9 @@ export function nadacLine(c: Coverage, t: T): string {
 /** Sentences for the coverage card, for the chosen insurance. */
 export function coverageLines(c: Coverage, plan: Plan | null, t: T): string[] {
   const out: string[] = [];
-  if (c.masshealth) {
+  if (c.masshealth?.covered.startsWith("not checked")) {
+    out.push(t("mhNotChecked"));  // the MassHealth Drug List website could not be checked: never a guess
+  } else if (c.masshealth) {
     const m = c.masshealth;
     out.push(m.covered.startsWith("yes") ? t("mhCovered") : t("mhNotListed"));
     const pa = m.prior_authorization;
@@ -45,6 +47,9 @@ export function cardCost(c: Coverage, t: T): string {
     return t("mcMonthly", { typical: money(c.medicare.monthly_estimate.typical), low: money(c.medicare.monthly_estimate.lowest), high: money(c.medicare.monthly_estimate.highest) });
   }
   const base = nadacLine(c, t);
-  if (c.masshealth) return `${c.masshealth.covered.startsWith("yes") ? t("mhCovered") : t("mhNotListed")} ${base}`;
+  if (c.masshealth) {
+    const m = c.masshealth.covered;
+    return `${m.startsWith("yes") ? t("mhCovered") : m.startsWith("not checked") ? t("mhNotChecked") : t("mhNotListed")} ${base}`;
+  }
   return base;
 }

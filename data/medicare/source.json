@@ -2,7 +2,7 @@
   "dataset": "Quarterly Prescription Drug Plan Formulary, Pharmacy Network, and Pricing Information : 2026-09-01",
   "file": "https://data.cms.gov/sites/default/files/2026-10/062e9434-ed9d-4e83-abbd-4d64eb375949/SPUF_2026_20261007.zip",
   "plan_year": "2026",
-  "checked_date": "2026-10-23",
-  "filters": "Plans offered in Massachusetts (MA-PD by county, PDP by region); only RxLantern's 25 drugs.",
+  "checked_date": "2026-10-24",
+  "filters": "Plans offered in Massachusetts (MA-PD by county, PDP by region); only RxLantern's 150 drugs.",
   "note": "Plan unit costs are what the plan pays for the drug, not the member's share. Member share depends on tier (cost_sharing_ma.csv), deductible, and the 2026 $2,100 out-of-pocket cap."
 }

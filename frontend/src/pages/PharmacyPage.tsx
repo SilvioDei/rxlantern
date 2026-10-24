@@ -13,7 +13,7 @@ interface Details {
   weekend: { summary_counter_first?: string } & Record<string, unknown>;
   lunch_break: Record<string, { start: string; end: string }> | string; holiday_hours: string | unknown;
   delivery: string; delivery_details: Record<string, string> | string; drive_thru: string;
-  wheelchair_accessible: string; languages: string[] | string;
+  languages: string[] | string;
   vaccines_routine: string[] | string; vaccines_travel: string[] | string; clinic_on_site: string;
   specialty_pharmacy: string; vaccine_booking_url: string; sources: Record<string, string>; checked_date: string;
   nearby_clinics: { name: string; kind: string; address: string; distance_label: string; walk_in: string }[] | string;
@@ -143,7 +143,6 @@ export function PharmacyPage() {
             <li><strong>{t("specialty")}:</strong> <NotFoundText value={d.specialty_pharmacy} /></li>
             <li><strong>{t("driveThru")}:</strong> <NotFoundText value={d.drive_thru} /></li>
             <li><strong>{t("fLanguage")}:</strong> <NotFoundText value={Array.isArray(d.languages) ? d.languages.join(", ") : d.languages} /></li>
-            <li><strong>{t("fWheelchair")}:</strong> <NotFoundText value={d.wheelchair_accessible} /></li>
           </ul>
         </div>
       </section>

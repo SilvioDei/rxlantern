@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useApp } from "../state";
 import type { FinalReply } from "../api";
-import { CallScriptCard, PharmacyCardView, ReadAloud, Sources } from "./Bits";
+import { CallScriptCard, MicButton, MicNote, PharmacyCardView, ReadAloud, Sources } from "./Bits";
 
 function Emergency({ reply }: { reply: FinalReply }) {
   const { t } = useApp();
@@ -59,8 +59,10 @@ export function Answer({ reply, onFollowUp }: { reply: FinalReply; onFollowUp: (
           <form className="inline-form" onSubmit={(e) => { e.preventDefault(); if (text.trim()) { onFollowUp(text.trim()); setText(""); } }}>
             <label className="sr-only" htmlFor={`followup-${reply.run_id}`}>{t("followUpPlaceholder")}</label>
             <input id={`followup-${reply.run_id}`} value={text} onChange={(e) => setText(e.target.value)} placeholder={t("followUpPlaceholder")} />
+            <MicButton onText={(txt) => setText((x) => (x ? `${x} ${txt}` : txt))} />
             <button type="submit" className="btn primary">{t("send")}</button>
           </form>
+          <MicNote />
         </div>
       )}
 

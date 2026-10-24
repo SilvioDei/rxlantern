@@ -26,14 +26,19 @@ export function AboutPage() {
   const [error, setError] = useState("");
   useEffect(() => { api.get<About>("/api/about").then(setAbout).catch(() => setError(t("errorGeneric"))); }, [t]);
   const sections: [Key, Key][] = [["aboutPrivacy", "aboutPrivacyText"], ["aboutChecks", "aboutChecksText"],
-    ["aboutAdvice", "aboutAdviceText"], ["aboutWrong", "aboutWrongText"], ["aboutAI", "aboutAIText"]];
+    ["aboutAdvice", "aboutAdviceText"], ["aboutWrong", "aboutWrongText"], ["aboutAI", "aboutAIText"], ["aboutVoice", "aboutVoiceText"]];
 
   return (
     <>
       <h1>{t("aboutTitle")}</h1>
       <section className="card"><h2>{t("aboutWhat")}</h2><p>{t("aboutWhatText")}</p></section>
       <div className="two-col">
-        {sections.map(([h, p]) => <section key={h} className="card"><h2>{t(h)}</h2><p>{t(p)}</p></section>)}
+        {sections.map(([h, p]) => (
+          <section key={h} className="card" id={h === "aboutVoice" ? "voice" : undefined}>
+            <h2>{t(h)}</h2><p>{t(p)}</p>
+            {h === "aboutVoice" && <p className="mic-note-about"><span aria-hidden="true">ⓘ</span> {t("micNote")}</p>}
+          </section>
+        ))}
       </div>
       <section className="card" aria-labelledby="data-title">
         <h2 id="data-title">{t("aboutData")}</h2>
