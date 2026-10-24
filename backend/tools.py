@@ -36,10 +36,19 @@ NADAC_LABEL = "about what the pharmacy pays for this drug, not your copay"
 
 
 # ----------------------------------------------------------------------------- shared helpers
+_DB_READY = False
+
+
 @contextmanager
 def _connect():
-    """Open the reference database and always close it (sqlite3's own 'with' only commits)."""
-    ensure_db()
+    """Open the reference database and always close it (sqlite3's own 'with' only commits).
+
+    The "is the database up to date?" check runs once per process (it looks at ~30 files), not on every query.
+    """
+    global _DB_READY
+    if not _DB_READY or not DB_PATH.exists():
+        ensure_db()
+        _DB_READY = True
     con = sqlite3.connect(DB_PATH)
     con.row_factory = sqlite3.Row
     try:
@@ -274,6 +283,96 @@ def check_fda_shortage(query: str) -> dict:
     return result | {"from": "openFDA API"}
 
 
+ESTIMATE_RE = re.compile(r"(estimated (?:recovery|resupply)(?: date)?|next delivery(?: and estimated recovery)?)\s*:\s*([^;]+)",
+                         re.I)
+
+
+def fda_estimate(entries: list[dict]) -> str | None:
+    """FDA's own estimated return date, read from the 'related_info' text of matching entries
+    (for example "Estimated recovery: December 2026"). "TBD" or nothing = no estimate (None). Never guessed."""
+    found = []
+    for e in entries or []:
+        for label, value in ESTIMATE_RE.findall(e.get("related_info") or ""):
+            value = value.strip().rstrip(".")
+            if value and value.upper() not in ("TBD", "N/A", "NA", "UNKNOWN"):
+                found.append(f"{label.strip().capitalize()}: {value}")
+    return "; ".join(dict.fromkeys(found)) or None
+
+
+def shortage_from_db(drug_id: str) -> dict:
+    """Shortage status for a page load: never calls openFDA. Uses the newest saved result (the daily background
+    refresh in backend/shortage_refresh.py, else the snapshot that ships with the repo)."""
+    with _connect() as con:
+        row = con.execute("SELECT result_json FROM shortage_cache WHERE drug_id = ?", (drug_id,)).fetchone()
+        if row:
+            r = json.loads(row["result_json"]) | {"from": "openFDA API (refreshed in the background, at most daily)"}
+        else:
+            snap = con.execute("SELECT * FROM shortages WHERE drug_id = ?", (drug_id,)).fetchone()
+            if snap is None:
+                return {"status": NF, "summary": "FDA shortage data not found.", "source": SHORTAGE_PAGE,
+                        "checked_date": NF, "fda_estimate": None, "fda_updated": None}
+            r = dict(snap) | {"matching_entries": json.loads(snap["matching_entries"] or "[]"),
+                              "from": "saved snapshot in data/shortages_snapshot.json"}
+    entries = r.get("matching_entries") or []
+    try:
+        checked = datetime.fromisoformat(r["checked_at"]).astimezone(BOSTON_TZ).date().isoformat()
+    except (KeyError, TypeError, ValueError):
+        checked = r.get("checked_date", NF)
+    updated = sorted((e.get("update_date") or "" for e in entries if e.get("status") == "Current"),
+                     key=lambda d: datetime.strptime(d, "%m/%d/%Y") if re.match(r"\d\d/\d\d/\d{4}$", d) else datetime.min)
+    return {"drug_id": drug_id, "status": r["status"], "summary": r["summary"], "source": r.get("source", SHORTAGE_PAGE),
+            "checked_date": checked, "fda_estimate": fda_estimate([e for e in entries if e.get("status") == "Current"]),
+            "fda_updated": updated[-1] if updated and updated[-1] else None, "from": r["from"]}
+
+
+# US federal holidays plus Massachusetts' own (Patriots' Day), and Christmas Eve / New Year's Eve, when
+# pharmacy hours often change. Dates are computed by rule. Source: OPM federal holidays and Mass.gov legal holidays.
+HOLIDAY_SOURCE = "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/ ; https://www.mass.gov/info-details/massachusetts-legal-holidays"
+
+
+def _nth_weekday(year: int, month: int, weekday: int, n: int) -> "date":
+    from datetime import date as _date
+    if n > 0:
+        d = _date(year, month, 1)
+        d += timedelta(days=(weekday - d.weekday()) % 7)
+        return d + timedelta(weeks=n - 1)
+    d = _date(year, month + 1, 1) - timedelta(days=1) if month < 12 else _date(year, 12, 31)
+    return d - timedelta(days=(d.weekday() - weekday) % 7)
+
+
+def holidays(year: int) -> list[tuple["date", str, str]]:
+    """(date, English name, Spanish name) for holidays when pharmacy hours may differ."""
+    from datetime import date as _date
+    return [
+        (_date(year, 1, 1), "New Year's Day", "Año Nuevo"),
+        (_nth_weekday(year, 1, 0, 3), "Martin Luther King Jr. Day", "Día de Martin Luther King Jr."),
+        (_nth_weekday(year, 2, 0, 3), "Presidents' Day", "Día de los Presidentes"),
+        (_nth_weekday(year, 4, 0, 3), "Patriots' Day (Massachusetts)", "Día de los Patriotas (Massachusetts)"),
+        (_nth_weekday(year, 5, 0, -1), "Memorial Day", "Día de los Caídos"),
+        (_date(year, 6, 19), "Juneteenth", "Juneteenth"),
+        (_date(year, 7, 4), "Independence Day", "Día de la Independencia"),
+        (_nth_weekday(year, 9, 0, 1), "Labor Day", "Día del Trabajo"),
+        (_nth_weekday(year, 10, 0, 2), "Indigenous Peoples' Day / Columbus Day", "Día de los Pueblos Indígenas / Día de la Raza"),
+        (_date(year, 11, 11), "Veterans Day", "Día de los Veteranos"),
+        (_nth_weekday(year, 11, 3, 4), "Thanksgiving", "Día de Acción de Gracias"),
+        (_date(year, 12, 24), "Christmas Eve", "Nochebuena"),
+        (_date(year, 12, 25), "Christmas Day", "Navidad"),
+        (_date(year, 12, 31), "New Year's Eve", "Fin de año"),
+    ]
+
+
+def upcoming_holidays(days: int = 7, at: datetime | None = None) -> list[dict]:
+    """Holidays from today through the next `days` days (Boston time)."""
+    start = (at or now_boston()).date()
+    end = start + timedelta(days=days)
+    out = []
+    for y in {start.year, end.year}:
+        for d, en, es in holidays(y):
+            if start <= d <= end:
+                out.append({"date": d.isoformat(), "name": en, "name_es": es})
+    return sorted(out, key=lambda h: h["date"])
+
+
 def shortage_for_agent(drug_name: str) -> dict:
     """Shortage result trimmed for the model (counts, not 25 package rows)."""
     r = check_fda_shortage(drug_name)
@@ -286,13 +385,24 @@ def shortage_for_agent(drug_name: str) -> dict:
 
 
 # ----------------------------------------------------------------------------- Pharmacy Finder
+_PHARMACY_CACHE: dict = {}
+
+
 def _pharmacies() -> list[dict]:
-    rows = _rows("SELECT * FROM pharmacies")
-    for r in rows:
-        for k in ("pharmacy_hours", "store_hours", "lunch_break", "holiday_hours", "delivery_details",
-                  "vaccines_routine", "vaccines_travel", "other_services", "nearby_clinics", "sources", "notes", "languages"):
-            r[k] = _j(r[k])
-    return rows
+    """All pharmacies, decoded. Cached per database file version (the pharmacy table only changes on rebuild).
+    Each call gets its own copies, so callers may add keys without touching the cache."""
+    with _connect():
+        pass  # makes sure the database exists and is current before reading its timestamp
+    stamp = DB_PATH.stat().st_mtime
+    if _PHARMACY_CACHE.get("stamp") != stamp:
+        rows = _rows("SELECT * FROM pharmacies")
+        for r in rows:
+            for k in ("pharmacy_hours", "store_hours", "lunch_break", "holiday_hours", "delivery_details",
+                      "vaccines_routine", "vaccines_travel", "other_services", "nearby_clinics", "sources", "notes",
+                      "languages"):
+                r[k] = _j(r[k])
+        _PHARMACY_CACHE.update(stamp=stamp, rows=rows)
+    return [dict(r) for r in _PHARMACY_CACHE["rows"]]
 
 
 def _pharmacy(pharmacy_id: str) -> dict | None:

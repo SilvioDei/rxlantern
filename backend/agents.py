@@ -28,6 +28,7 @@ from pydantic_ai.usage import RunUsage, UsageLimits
 
 from backend import config, tools, usage_log
 from backend.config import APP_NAME, MODEL_NAME, get_model
+from backend.safety import redact_phi  # noqa: F401 - re-exported; used below and by the tests
 from backend.models import (AgentUsage, FinalReply, FrontDeskOutput, PharmacyCard, SpecialistResult, TraceEvent,
                             Usage)
 
@@ -372,14 +373,6 @@ async def ask_community(ctx: RunContext[RunDeps], request: str) -> dict:
 
 
 # ----------------------------------------------------------------------------- code-level safety rules
-PHI_PATTERNS = [
-    (re.compile(r"\b(my name is|i am called|me llamo|mi nombre es)\s+[A-ZÁÉÍÓÚÑa-záéíóúñ'\-]+(\s+[A-ZÁÉÍÓÚÑ][a-záéíóúñ'\-]+)?", re.I), r"\1 [removed]"),
-    (re.compile(r"\b(born on|born|birthday is|dob|date of birth|fecha de nacimiento|nac[ií] el)\b[:\s]*[^,.;]*", re.I), "[birthdate removed]"),
-    (re.compile(r"\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b"), "[date removed]"),
-    (re.compile(r"\b(member|subscriber|policy|medicaid|masshealth|medicare)\s*(id|number|#|no\.?)\s*[:#]?\s*[A-Z0-9-]{4,}", re.I), "[member ID removed]"),
-    (re.compile(r"\b[A-Z]{1,3}\d{7,}\b|\b\d{8,}\b"), "[ID removed]"),
-    (re.compile(r"\b\d{3}[-.\s]\d{2}[-.\s]\d{4}\b"), "[ID removed]"),
-]
 
 MEDICAL_ADVICE = re.compile(
     r"\b(should|can|could|may|do)\s+i\s+(take|use|try)\s+(two|2|three|3|double|more|extra|another|less|half)\b|"
@@ -425,13 +418,6 @@ FRIENDLY = {
 HOURS_QUESTION = re.compile(r"\b(open|opens|hours|close|closes|closing|weekends?|saturdays?|sundays?|abierto|abre|"
                             r"cierra|horario|fin de semana|s[aá]bados?|domingos?)\b", re.I)
 WEEKEND_QUESTION = re.compile(r"\b(weekends?|saturdays?|sundays?|fin de semana|s[aá]bados?|domingos?)\b", re.I)
-
-
-def redact_phi(text: str) -> tuple[str, bool]:
-    out = text
-    for pat, repl in PHI_PATTERNS:
-        out = pat.sub(repl, out)
-    return out, out != text
 
 
 def enforce_hours_order(reply: str, deps: RunDeps) -> tuple[str, bool]:
@@ -558,6 +544,10 @@ async def ask(question: str, language: str = "en", zip_code: str | None = None,
                        trace=[TraceEvent(agent="Front Desk", note=note)], usage=empty, safety=safety + [stop])
         return _record(r, None, clean, mode)
 
+    from backend.safety import emergency_reply
+    emergency = emergency_reply(question, language)
+    if emergency is not None:
+        return emergency
     if MEDICAL_ADVICE.search(clean):
         return early(ADVICE_REPLY[language], "medical advice declined",
                      "declined: medical advice (rule in code, no model call)", "Front Desk (code safety rule)")
@@ -609,6 +599,8 @@ async def ask(question: str, language: str = "en", zip_code: str | None = None,
                        follow_up_question=out.follow_up_question, agents_run=agents_run, tools_run=tools_run,
                        trace=deps.trace, usage=_usage(_snapshot(usage), deps.agent_usage, usage.tool_calls),
                        safety=list(dict.fromkeys(deps.safety)))
+    named = tools.find_drugs(clean)
+    final.drug_id = named[0]["id"] if len(named) == 1 else None
     return _record(final, deps, clean, mode)
 
 

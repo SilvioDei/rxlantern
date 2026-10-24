@@ -32,7 +32,7 @@ _SECRET_PATTERNS = [
 
 def scrub(value, max_len: int = 300):
     """Shorten and clean any value before it goes into a log file."""
-    from backend.agents import redact_phi  # local import to avoid a cycle
+    from backend.safety import redact_phi  # local import to avoid a cycle
 
     if isinstance(value, dict):
         return {k: scrub(v, max_len) for k, v in value.items() if k.lower() not in {"password", "api_key", "authorization"}}

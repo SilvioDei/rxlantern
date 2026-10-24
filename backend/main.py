@@ -9,7 +9,7 @@ from fastapi import FastAPI, HTTPException, Request, Response
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
 from pydantic import BaseModel, Field
 
-from backend import community, usage_log, web_api
+from backend import community, safety, shortage_refresh, usage_log, web_api
 from backend.build_db import ensure_db
 from backend.config import APP_NAME, REPO_DIR
 from backend.models import AskRequest, FinalReply
@@ -21,6 +21,7 @@ rate_limiter = usage_log.RateLimiter()
 async def lifespan(app: FastAPI):
     # Graders get the same pharmacy data with no extra steps.
     ensure_db()
+    shortage_refresh.start()  # FDA data refreshes in the background, at most once a day; pages never wait for it
     yield
 
 
@@ -36,6 +37,10 @@ def health() -> dict:
 @app.post("/api/ask", response_model=FinalReply)
 async def ask_route(body: AskRequest, request: Request):
     """One patient question -> the Front Desk's structured reply, with tokens and cost. Nothing personal is stored."""
+    # Emergencies first: 911 / Poison Control in code, before any rate limit or AI call (works with no API key).
+    emergency = safety.emergency_reply(body.question, body.language)
+    if emergency is not None:
+        return emergency
     from backend.agents import ask, rate_limited  # imported here so the health check works without a Portkey key
 
     visitor = request.client.host if request.client else "unknown"

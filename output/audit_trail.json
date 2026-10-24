@@ -5237,6 +5237,1548 @@
     }
    },
    "safety_rules_fired": []
+  },
+  {
+   "run_id": "b5f7ad378640",
+   "timestamp": "2026-10-23T22:19:42-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "where can i get a covid shot? i live in malden",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Where can I get a COVID shot near Malden, Massachusetts? Find pharmacies in or near Malden that offer COVID vaccines, with current location/hours if available. Today is Friday, October 23, 2026, 10:19 PM Boston time."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "Malden, Massachusetts",
+      "vaccine": "COVID"
+     },
+     "result": "message: Neighborhood not found. Please share a Boston ZIP code."
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "I couldn’t find Malden in the pharmacy search. Please share a Boston ZIP code, and I can look for nearby pharmacies that offer COVID vaccines.",
+     "not_found": [
+      "Pharmacies near Malden offering COVID vaccines; the search requires a supported Boston neighborhood or ZIP code."
+     ],
+     "warnings": [],
+     "tokens": {
+      "requests": 2,
+      "input_tokens": 2377,
+      "cached_input_tokens": 0,
+      "output_tokens": 188,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 5452,
+     "cached_input_tokens": 1331,
+     "output_tokens": 401,
+     "total_tokens": 5853,
+     "web_searches": 0,
+     "model_requests": 4,
+     "tool_calls": 2,
+     "cost_usd": 0.000626
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3075,
+      "cached_input_tokens": 1331,
+      "output_tokens": 213,
+      "web_searches": 0,
+      "cost_usd": 0.000294
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 2,
+      "input_tokens": 2377,
+      "cached_input_tokens": 0,
+      "output_tokens": 188,
+      "web_searches": 0,
+      "cost_usd": 0.000332
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "I couldn’t find pharmacies offering COVID shots near Malden in the search. What ZIP code should I use to look nearby?"
+  },
+  {
+   "run_id": "ade5d74bc8a8",
+   "timestamp": "2026-10-23T22:20:01-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "where can i get a covid shot? i live in malden — East Boston",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies offering COVID-19 shots in Malden and East Boston, Massachusetts. Patient wording says they live in “Malden — East Boston,” so please cover both areas if possible."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "Malden, Massachusetts",
+      "vaccine": "COVID-19"
+     },
+     "result": "message: Neighborhood not found. Please share a Boston ZIP code."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "East Boston, Massachusetts",
+      "vaccine": "COVID-19"
+     },
+     "result": "5 pharmacies: cvs-1265, walgreens-5756, walgreens-15390, cvs-10174, cvs-5874"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "I found two East Boston pharmacies listed as offering COVID-19 shots: CVS at 210 Border Street and Walgreens at 1 Central Sq. I couldn’t search Malden because it isn’t available in this finder; please share a Malden ZIP code and I can check there. Call the pharmacies to confirm appointment availa...",
+     "not_found": [
+      "Malden pharmacies: the finder did not recognize Malden and requested a Boston ZIP code."
+     ],
+     "warnings": [
+      "Call to confirm appointment availability and vaccine stock."
+     ],
+     "tokens": {
+      "requests": 2,
+      "input_tokens": 3241,
+      "cached_input_tokens": 0,
+      "output_tokens": 593,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 6659,
+     "cached_input_tokens": 2648,
+     "output_tokens": 1146,
+     "total_tokens": 7805,
+     "web_searches": 0,
+     "model_requests": 4,
+     "tool_calls": 3,
+     "cost_usd": 0.001001
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3418,
+      "cached_input_tokens": 2648,
+      "output_tokens": 553,
+      "web_searches": 0,
+      "cost_usd": 0.00038
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 2,
+      "input_tokens": 3241,
+      "cached_input_tokens": 0,
+      "output_tokens": 593,
+      "web_searches": 0,
+      "cost_usd": 0.000621
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "If you mean East Boston, CVS at 210 Border Street and Walgreens at 1 Central Sq are listed as offering COVID-19 shots. Call first to confirm vaccine stock and appointment availability. I couldn’t find"
+  },
+  {
+   "run_id": "ee8c87c4dedb",
+   "timestamp": "2026-10-23T22:21:16-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "I need to find where they sell penicillin?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Patient asks where they can buy penicillin, but gives no form/strength or Boston neighborhood/ZIP. Find general pharmacy locations in Boston where prescriptions can be filled, if possible; clarify what location details are needed."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "Boston"
+     },
+     "result": "message: Neighborhood not found. Please share a Boston ZIP code."
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "I couldn’t find general locations from “Boston” alone. Please share a Boston ZIP code or neighborhood so I can find nearby pharmacies. Penicillin is a prescription medicine, so a pharmacy can fill it with a valid prescription; please also share the exact medication name, form, and strength from t...",
+     "not_found": [
+      "Pharmacies: a Boston ZIP code or neighborhood is needed to search.",
+      "The specific penicillin form and strength were not provided."
+     ],
+     "warnings": [
+      "Pharmacy availability and stock were not checked."
+     ],
+     "tokens": {
+      "requests": 2,
+      "input_tokens": 2346,
+      "cached_input_tokens": 0,
+      "output_tokens": 148,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 5636,
+     "cached_input_tokens": 1328,
+     "output_tokens": 587,
+     "total_tokens": 6223,
+     "web_searches": 0,
+     "model_requests": 4,
+     "tool_calls": 2,
+     "cost_usd": 0.000738
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3290,
+      "cached_input_tokens": 1328,
+      "output_tokens": 439,
+      "web_searches": 0,
+      "cost_usd": 0.000429
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 2,
+      "input_tokens": 2346,
+      "cached_input_tokens": 0,
+      "output_tokens": 148,
+      "web_searches": 0,
+      "cost_usd": 0.000309
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "I can help find a nearby pharmacy. What Boston ZIP code or neighborhood are you in, and what exact penicillin form and strength is on your prescription?"
+  },
+  {
+   "run_id": "e6216f17b1ed",
+   "timestamp": "2026-10-23T22:21:39-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "I need to find where they sell penicillin? — East Boston",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies in East Boston, Boston, MA where a patient can fill a prescription for penicillin. Include pharmacy locations and hours if available; do not assume a specific penicillin form or current stock."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "East Boston, Boston, MA"
+     },
+     "result": "5 pharmacies: cvs-1265, walgreens-5756, walgreens-15390, cvs-10174, cvs-5874"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "walgreens-5756"
+     },
+     "result": "Walgreens (walgreens-5756)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-1265"
+     },
+     "result": "CVS Pharmacy (cvs-1265)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "East Boston, Boston, MA"
+     },
+     "result": "1 pharmacies: cvs-2283"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "Here are two East Boston pharmacies to contact about filling a penicillin prescription. The search does not confirm a particular penicillin form or current stock, so please call before going. Both counters are closed now (Friday night): CVS opens Saturday at 9:00 AM; Walgreens opens Monday at 10:...",
+     "not_found": [
+      "Whether either East Boston pharmacy has the patient's prescribed penicillin form, strength, or quantity in stock."
+     ],
+     "warnings": [
+      "Call the pharmacy to confirm the prescription can be filled and the medication is in stock. Holiday hours may be different; call to confirm."
+     ],
+     "tokens": {
+      "requests": 4,
+      "input_tokens": 15694,
+      "cached_input_tokens": 7813,
+      "output_tokens": 1144,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 19451,
+     "cached_input_tokens": 10458,
+     "output_tokens": 2024,
+     "total_tokens": 21475,
+     "web_searches": 0,
+     "model_requests": 6,
+     "tool_calls": 5,
+     "cost_usd": 0.002016
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3757,
+      "cached_input_tokens": 2645,
+      "output_tokens": 880,
+      "web_searches": 0,
+      "cost_usd": 0.000578
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 4,
+      "input_tokens": 15694,
+      "cached_input_tokens": 7813,
+      "output_tokens": 1144,
+      "web_searches": 0,
+      "cost_usd": 0.001438
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "I found two East Boston pharmacies to call about filling a penicillin prescription. Both counters are closed now: CVS opens Saturday at 9:00 AM, and Walgreens opens Monday at 10:00 AM. Whether they ha"
+  },
+  {
+   "run_id": "a43cef961625",
+   "timestamp": "2026-10-23T22:23:10-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "will mass help pay for my medication? (I'm near Beacon Hill)",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "General question: Does MassHealth help pay for prescription medications? Patient did not name the medication, strength, or form. Explain general MassHealth medication coverage limits and what details are needed; include sourced facts and date."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "masshealth_coverage",
+     "input": {
+      "drug": "MassHealth prescription medications (general coverage)"
+     },
+     "result": "message: 'MassHealth prescription medications (general coverage)' is not in RxLantern yet. Please call the pharmacy."
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "I can’t confirm MassHealth’s general prescription coverage limits from the information available here. For a drug-specific check, please provide the medication name, strength, and form (such as tablet, capsule, or liquid). The coverage lookup did not find a general MassHealth prescription-medicat...",
+     "not_found": [
+      "General MassHealth prescription medication coverage limits; no medication was named, so list status or prior-authorization requirements could not be checked."
+     ],
+     "warnings": [
+      "Please call MassHealth or the pharmacy for general coverage information."
+     ],
+     "tokens": {
+      "requests": 2,
+      "input_tokens": 3147,
+      "cached_input_tokens": 1338,
+      "output_tokens": 496,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 6330,
+     "cached_input_tokens": 1338,
+     "output_tokens": 771,
+     "total_tokens": 7101,
+     "web_searches": 0,
+     "model_requests": 4,
+     "tool_calls": 2,
+     "cost_usd": 0.000898
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3183,
+      "cached_input_tokens": 0,
+      "output_tokens": 275,
+      "web_searches": 0,
+      "cost_usd": 0.000456
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 2,
+      "input_tokens": 3147,
+      "cached_input_tokens": 1338,
+      "output_tokens": 496,
+      "web_searches": 0,
+      "cost_usd": 0.000442
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "I can check whether MassHealth helps pay for it. What is the medication’s name, strength, and form (such as tablet or liquid)?"
+  },
+  {
+   "run_id": "c180537a492f",
+   "timestamp": "2026-10-23T22:23:26-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "will mass help pay for my medication? — Capsules (I'm near Beacon Hill)",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Patient asks whether MassHealth will pay for their medication; they only said capsules, no drug name or strength. Explain whether coverage can be checked without the drug name and what exact details are needed. Do not guess a specific drug."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "lookup_drug",
+     "input": {
+      "name": "capsules"
+     },
+     "result": "message: This drug is not in RxLantern yet. Please call the pharmacy to ask about it."
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "I can’t check MassHealth coverage from “capsules” alone; the lookup could not identify a medicine. Please provide the medication’s exact name and strength from the label, and confirm it is the capsule form. Then coverage and any prior-approval requirement can be checked.",
+     "not_found": [
+      "A medication name and strength were not provided, so MassHealth coverage and prior-approval status could not be checked."
+     ],
+     "warnings": [],
+     "tokens": {
+      "requests": 2,
+      "input_tokens": 3144,
+      "cached_input_tokens": 2632,
+      "output_tokens": 522,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 6371,
+     "cached_input_tokens": 5282,
+     "output_tokens": 881,
+     "total_tokens": 7252,
+     "web_searches": 0,
+     "model_requests": 4,
+     "tool_calls": 2,
+     "cost_usd": 0.000602
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3227,
+      "cached_input_tokens": 2650,
+      "output_tokens": 359,
+      "web_searches": 0,
+      "cost_usd": 0.000264
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 2,
+      "input_tokens": 3144,
+      "cached_input_tokens": 2632,
+      "output_tokens": 522,
+      "web_searches": 0,
+      "cost_usd": 0.000339
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "I can check, but MassHealth coverage can’t be looked up from “capsules” alone. What is the medication’s exact name and strength from the label?"
+  },
+  {
+   "run_id": "0bf5e3c28f53",
+   "timestamp": "2026-10-23T22:23:44-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "will mass help pay for my medication? — Capsules — amoxicillin  mg (I'm near Beacon Hill)",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Does MassHealth cover amoxicillin capsules? The patient did not provide the capsule strength (mg). Explain any coverage details and whether strength is needed to confirm."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "lookup_drug",
+     "input": {
+      "name": "amoxicillin capsules"
+     },
+     "result": "found=True, drug_id=amoxicillin_500, name=Amoxicillin 500 mg capsule, generic_name=amoxicillin"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "masshealth_coverage",
+     "input": {
+      "drug": "amoxicillin_500"
+     },
+     "result": "covered: yes (on the MassHealth Drug List)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "MassHealth lists amoxicillin 500 mg capsules, with no prior authorization required; up to a 90-day supply is allowed. The patient’s strength wasn’t provided, so this confirms coverage only for the 500 mg capsule. Please provide the strength to confirm if it is different.",
+     "not_found": [],
+     "warnings": [],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 4769,
+      "cached_input_tokens": 4076,
+      "output_tokens": 441,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 8178,
+     "cached_input_tokens": 6732,
+     "output_tokens": 879,
+     "total_tokens": 9057,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.000651
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3409,
+      "cached_input_tokens": 2656,
+      "output_tokens": 438,
+      "web_searches": 0,
+      "cost_usd": 0.000321
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 3,
+      "input_tokens": 4769,
+      "cached_input_tokens": 4076,
+      "output_tokens": 441,
+      "web_searches": 0,
+      "cost_usd": 0.000331
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "MassHealth lists 500 mg amoxicillin capsules with no prior authorization needed. What strength is on your prescription so I can confirm whether that applies to yours?"
+  },
+  {
+   "run_id": "b53b7ada6178",
+   "timestamp": "2026-10-23T22:24:11-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "will mass help pay for my medication? — Capsules — amoxicillin  mg — 500 mh (I'm near Beacon Hill)",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Does MassHealth cover amoxicillin 500 mg capsules? Patient near Beacon Hill, Boston. Please verify drug/form and provide any relevant coverage details, sourced facts, and call script if available."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "lookup_drug",
+     "input": {
+      "name": "amoxicillin 500 mg capsules"
+     },
+     "result": "found=True, drug_id=amoxicillin_500, name=Amoxicillin 500 mg capsule, generic_name=amoxicillin"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "masshealth_coverage",
+     "input": {
+      "drug": "amoxicillin_500"
+     },
+     "result": "covered: yes (on the MassHealth Drug List)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "Yes. The drug match is amoxicillin 500 mg capsule. MassHealth lists it as covered, and prior authorization is not required. Its listing allows up to a 90-day supply. No pharmacy call script is needed for this coverage check.",
+     "not_found": [],
+     "warnings": [],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 4796,
+      "cached_input_tokens": 2759,
+      "output_tokens": 331,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 8029,
+     "cached_input_tokens": 4074,
+     "output_tokens": 705,
+     "total_tokens": 8734,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.000789
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3233,
+      "cached_input_tokens": 1315,
+      "output_tokens": 374,
+      "web_searches": 0,
+      "cost_usd": 0.000392
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 3,
+      "input_tokens": 4796,
+      "cached_input_tokens": 2759,
+      "output_tokens": 331,
+      "web_searches": 0,
+      "cost_usd": 0.000397
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "Yes. MassHealth lists amoxicillin 500 mg capsules as covered, with no prior authorization needed, and allows up to a 90-day supply. The exact amount you may pay at the pharmacy was not found."
+  },
+  {
+   "run_id": "cb3f976c6bed",
+   "timestamp": "2026-10-23T22:45:58-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near Beacon Hill?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near Beacon Hill, Boston, MA that are open right now. Current time: Friday, October 23, 2026, 10:45 PM America/New_York. Include pharmacy counter hours and IDs."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "Beacon Hill, Boston, MA"
+     },
+     "result": "1 pharmacies: cvs-2283"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-2283"
+     },
+     "result": "CVS Pharmacy (cvs-2283)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "One pharmacy counter is open now near Beacon Hill: CVS Pharmacy, 715 Morrissey Boulevard, Dorchester, MA 02122 (about 4.3 miles away in a straight line). It is open until 11:00 PM tonight. Counter hours: Monday–Friday 8:00 AM–11:00 PM; Saturday and Sunday 8:00 AM–8:00 PM. ID: cvs-2283.",
+     "not_found": [],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 6087,
+      "cached_input_tokens": 1268,
+      "output_tokens": 449,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 9386,
+     "cached_input_tokens": 2598,
+     "output_tokens": 688,
+     "total_tokens": 10074,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.001049
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3299,
+      "cached_input_tokens": 1330,
+      "output_tokens": 239,
+      "web_searches": 0,
+      "cost_usd": 0.00033
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 6087,
+      "cached_input_tokens": 1268,
+      "output_tokens": 449,
+      "web_searches": 0,
+      "cost_usd": 0.000719
+     }
+    ]
+   },
+   "safety_rules_fired": [
+    "hours reply reordered: pharmacy counter first, store hours labeled"
+   ],
+   "reply_preview": "The pharmacy counter is open now until 11:00 PM. Yes. CVS at 715 Morrissey Boulevard in Dorchester is open now, about 4.3 miles from Beacon Hill. The pharmacy counter closes at 11:00 PM tonight; call "
+  },
+  {
+   "run_id": "3f6d938ed613",
+   "timestamp": "2026-10-23T22:48:37-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near Beacon Hill?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near Beacon Hill, Boston, MA that are open right now. For any open pharmacy, report prescription counter hours first, store hours if useful, IDs, and source links with checked dates. Current time is Friday, October 23, 2026 at 10:48 PM Boston time."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "Beacon Hill, Boston, MA"
+     },
+     "result": "1 pharmacies: cvs-2283"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-2283"
+     },
+     "result": "CVS Pharmacy (cvs-2283)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "One pharmacy counter is open now near Beacon Hill: CVS Pharmacy, 715 Morrissey Boulevard, Dorchester (about 4.3 miles away, straight-line). Prescription counter hours: Friday 8:00 AM–11:00 PM; Saturday and Sunday 8:00 AM–8:00 PM; Monday–Thursday 8:00 AM–11:00 PM. It is open now and closes at 11:0...",
+     "not_found": [],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 6167,
+      "cached_input_tokens": 1284,
+      "output_tokens": 695,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 9601,
+     "cached_input_tokens": 2614,
+     "output_tokens": 1108,
+     "total_tokens": 10709,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.001279
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3434,
+      "cached_input_tokens": 1330,
+      "output_tokens": 413,
+      "web_searches": 0,
+      "cost_usd": 0.00043
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 6167,
+      "cached_input_tokens": 1284,
+      "output_tokens": 695,
+      "web_searches": 0,
+      "cost_usd": 0.000849
+     }
+    ]
+   },
+   "safety_rules_fired": [
+    "hours reply reordered: pharmacy counter first, store hours labeled"
+   ],
+   "reply_preview": "The pharmacy counter is open now until 11:00 PM. Yes. CVS Pharmacy at 715 Morrissey Boulevard in Dorchester is open now, about 4.3 miles from Beacon Hill, and its pharmacy counter closes at 11:00 PM. "
+  },
+  {
+   "run_id": "13dc7d71b9e7",
+   "timestamp": "2026-10-23T22:49:22-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Hello, can you show me a pharmacy that is open now? (I'm near Beacon Hill)",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near Beacon Hill, Boston, MA that are open now. It is Friday, October 23, 2026 at 10:49 PM America/New_York. Prioritize pharmacy counter hours (prescription counter), and include pharmacy IDs, addresses, and counter/store closing times if available."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "Beacon Hill, Boston, MA"
+     },
+     "result": "1 pharmacies: cvs-2283"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-2283"
+     },
+     "result": "CVS Pharmacy (cvs-2283)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "The nearest pharmacy counter listed as open now is CVS Pharmacy, about 4.3 miles from Beacon Hill (straight-line). Pharmacy ID: cvs-2283. Address: 715 Morrissey Boulevard, Dorchester, MA 02122. At 10:49 PM Friday, the counter is open and closes at 11:00 PM; the store also closes at 11:00 PM. Only...",
+     "not_found": [],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm.",
+      "The nearest-open search returned only this pharmacy; call before traveling, especially with the counter closing soon."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 6167,
+      "cached_input_tokens": 1284,
+      "output_tokens": 681,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 9654,
+     "cached_input_tokens": 2622,
+     "output_tokens": 1137,
+     "total_tokens": 10791,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.001298
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3487,
+      "cached_input_tokens": 1338,
+      "output_tokens": 456,
+      "web_searches": 0,
+      "cost_usd": 0.000456
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 6167,
+      "cached_input_tokens": 1284,
+      "output_tokens": 681,
+      "web_searches": 0,
+      "cost_usd": 0.000842
+     }
+    ]
+   },
+   "safety_rules_fired": [
+    "hours reply reordered: pharmacy counter first, store hours labeled"
+   ],
+   "reply_preview": "The pharmacy counter is open now until 11:00 PM. The nearest pharmacy I found open now is a CVS in Dorchester, about 4.3 miles from Beacon Hill. Its pharmacy counter is open and closes at 11:00 PM, so"
+  },
+  {
+   "run_id": "ee2561395bee",
+   "timestamp": "2026-10-23T22:54:03-04:00",
+   "language": "es",
+   "mode": "normal",
+   "question_redacted": "I took too many pills",
+   "stop_reason": "emergency message shown",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "emergency message shown (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "emergency message shown (rule in code, no model call)"
+   ],
+   "reply_preview": "Si es una emergencia, llame al 911. Para un posible envenenamiento o sobredosis, llame a Poison Control (Control de Envenenamientos) al 1-800-222-1222."
+  },
+  {
+   "run_id": "d2e99a071981",
+   "timestamp": "2026-10-23T23:10:23-04:00",
+   "type": "moderation",
+   "review_id": 1,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes a positive experience at the pharmacy.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 619,
+     "cached_input_tokens": 0,
+     "output_tokens": 43,
+     "total_tokens": 662,
+     "cost_usd": 8.3e-05,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "822f01d9569a",
+   "timestamp": "2026-10-23T23:10:52-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Can you give me a call script to ask a pharmacy if they have amoxicillin 500 mg capsules?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Please provide a patient-friendly call script in English for asking a pharmacy whether amoxicillin 500 mg capsules are available. Patient is in Boston ZIP 02124 and has MassHealth. Do not provide medical advice; focus on stock inquiry and whether prescription/insurance details can be discussed by..."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "lookup_drug",
+     "input": {
+      "name": "amoxicillin 500 mg capsules"
+     },
+     "result": "found=True, drug_id=amoxicillin_500, name=Amoxicillin 500 mg capsule, generic_name=amoxicillin"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "call_script",
+     "input": {
+      "drug": "amoxicillin 500 mg capsules"
+     },
+     "result": "call_script=Hi. I'm calling about Amoxicillin 500 mg, source=RxLantern call script template, checked_date=2026-10-23"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "You can call a pharmacy and ask: “Hi. I’m calling about amoxicillin 500 mg capsules. The quantity is the amount on my prescription. Do you have it in stock today? Can I discuss my prescription and MassHealth insurance details with you by phone? Do you take my insurance? I can have my insurance ca...",
+     "not_found": [],
+     "warnings": [
+      "Call to confirm stock."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 4966,
+      "cached_input_tokens": 2918,
+      "output_tokens": 732,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 8249,
+     "cached_input_tokens": 4261,
+     "output_tokens": 1112,
+     "total_tokens": 9361,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.000997
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3283,
+      "cached_input_tokens": 1343,
+      "output_tokens": 380,
+      "web_searches": 0,
+      "cost_usd": 0.000397
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 3,
+      "input_tokens": 4966,
+      "cached_input_tokens": 2918,
+      "output_tokens": 732,
+      "web_searches": 0,
+      "cost_usd": 0.0006
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "Sure—you can say: “Hi, I’m calling about amoxicillin 500 mg capsules. Do you have them in stock today? Do you take MassHealth, and can you check my copay? I can share my prescription details by phone "
+  },
+  {
+   "run_id": "d2f500da1bff",
+   "timestamp": "2026-10-23T23:10:54-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "I took too many pills",
+   "stop_reason": "emergency message shown",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "emergency message shown (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "emergency message shown (rule in code, no model call)"
+   ],
+   "reply_preview": "If this is an emergency, call 911. For a possible poisoning or overdose, call Poison Control at 1-800-222-1222."
+  },
+  {
+   "run_id": "8ba544249fbd",
+   "timestamp": "2026-10-23T23:10:55-04:00",
+   "language": "es",
+   "mode": "normal",
+   "question_redacted": "Tomé demasiadas pastillas y no puedo respirar",
+   "stop_reason": "emergency message shown",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "emergency message shown (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "emergency message shown (rule in code, no model call)"
+   ],
+   "reply_preview": "Si es una emergencia, llame al 911. Para un posible envenenamiento o sobredosis, llame a Poison Control (Control de Envenenamientos) al 1-800-222-1222."
+  },
+  {
+   "run_id": "edcb2da48b18",
+   "timestamp": "2026-10-23T23:12:50-04:00",
+   "type": "moderation",
+   "review_id": 1,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes a positive experience at the pharmacy.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 619,
+     "cached_input_tokens": 0,
+     "output_tokens": 43,
+     "total_tokens": 662,
+     "cost_usd": 8.3e-05,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "609135356f3f",
+   "timestamp": "2026-10-23T23:13:14-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Can you give me a call script to ask a pharmacy if they have amoxicillin 500 mg capsules?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Provide a brief call script in English for a patient asking a pharmacy whether it has amoxicillin 500 mg capsules. Insurance: MassHealth. No need to discuss coverage unless relevant. Include only sourced facts."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "lookup_drug",
+     "input": {
+      "name": "amoxicillin 500 mg capsules"
+     },
+     "result": "found=True, drug_id=amoxicillin_500, name=Amoxicillin 500 mg capsule, generic_name=amoxicillin"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "call_script",
+     "input": {
+      "drug": "Amoxicillin 500 mg capsules"
+     },
+     "result": "call_script=Hi. I'm calling about Amoxicillin 500 mg, source=RxLantern call script template, checked_date=2026-10-23"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "Amoxicillin 500 mg capsules are listed in RxLantern. Call the pharmacy to confirm stock.",
+     "not_found": [],
+     "warnings": [
+      "Stock can change; call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 4771,
+      "cached_input_tokens": 2812,
+      "output_tokens": 257,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 7929,
+     "cached_input_tokens": 4155,
+     "output_tokens": 558,
+     "total_tokens": 8487,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.000698
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3158,
+      "cached_input_tokens": 1343,
+      "output_tokens": 301,
+      "web_searches": 0,
+      "cost_usd": 0.000345
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 3,
+      "input_tokens": 4771,
+      "cached_input_tokens": 2812,
+      "output_tokens": 257,
+      "web_searches": 0,
+      "cost_usd": 0.000353
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "Here’s a script you can use. Stock can change, so call to confirm."
+  },
+  {
+   "run_id": "6eedb1fb468c",
+   "timestamp": "2026-10-23T23:13:15-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "I took too many pills",
+   "stop_reason": "emergency message shown",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "emergency message shown (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "emergency message shown (rule in code, no model call)"
+   ],
+   "reply_preview": "If this is an emergency, call 911. For a possible poisoning or overdose, call Poison Control at 1-800-222-1222."
+  },
+  {
+   "run_id": "f389481071ab",
+   "timestamp": "2026-10-23T23:13:16-04:00",
+   "language": "es",
+   "mode": "normal",
+   "question_redacted": "Tomé demasiadas pastillas y no puedo respirar",
+   "stop_reason": "emergency message shown",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "emergency message shown (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "emergency message shown (rule in code, no model call)"
+   ],
+   "reply_preview": "Si es una emergencia, llame al 911. Para un posible envenenamiento o sobredosis, llame a Poison Control (Control de Envenenamientos) al 1-800-222-1222."
+  },
+  {
+   "run_id": "11f3b63312c5",
+   "timestamp": "2026-10-23T23:14:52-04:00",
+   "type": "moderation",
+   "review_id": 1,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes a positive experience at the pharmacy.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 619,
+     "cached_input_tokens": 0,
+     "output_tokens": 43,
+     "total_tokens": 662,
+     "cost_usd": 8.3e-05,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "ec59013503a0",
+   "timestamp": "2026-10-23T23:15:15-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Can you give me a call script to ask a pharmacy if they have amoxicillin 500 mg capsules?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Provide a short patient-friendly call script in English to ask a pharmacy whether it has amoxicillin 500 mg capsules available. No need for coverage details. Include any relevant caution about stock confirmation."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "lookup_drug",
+     "input": {
+      "name": "amoxicillin 500 mg capsules"
+     },
+     "result": "found=True, drug_id=amoxicillin_500, name=Amoxicillin 500 mg capsule, generic_name=amoxicillin"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "call_script",
+     "input": {
+      "drug": "amoxicillin 500 mg capsules"
+     },
+     "result": "call_script=Hi. I'm calling about Amoxicillin 500 mg, source=RxLantern call script template, checked_date=2026-10-23"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "Ask the pharmacy to confirm availability; stock can change, so call to confirm.",
+     "not_found": [],
+     "warnings": [
+      "Pharmacy stock can change; call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 4762,
+      "cached_input_tokens": 2806,
+      "output_tokens": 198,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 7916,
+     "cached_input_tokens": 4149,
+     "output_tokens": 712,
+     "total_tokens": 8628,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.000774
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3154,
+      "cached_input_tokens": 1343,
+      "output_tokens": 514,
+      "web_searches": 0,
+      "cost_usd": 0.000452
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 3,
+      "input_tokens": 4762,
+      "cached_input_tokens": 2806,
+      "output_tokens": 198,
+      "web_searches": 0,
+      "cost_usd": 0.000323
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "Sure—here’s a simple script. Pharmacy stock can change, so call to confirm."
+  },
+  {
+   "run_id": "a29b7354cd1e",
+   "timestamp": "2026-10-23T23:15:17-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "I took too many pills",
+   "stop_reason": "emergency message shown",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "emergency message shown (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "emergency message shown (rule in code, no model call)"
+   ],
+   "reply_preview": "If this is an emergency, call 911. For a possible poisoning or overdose, call Poison Control at 1-800-222-1222."
+  },
+  {
+   "run_id": "30d36a4972b3",
+   "timestamp": "2026-10-23T23:15:18-04:00",
+   "language": "es",
+   "mode": "normal",
+   "question_redacted": "Tomé demasiadas pastillas y no puedo respirar",
+   "stop_reason": "emergency message shown",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "emergency message shown (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "emergency message shown (rule in code, no model call)"
+   ],
+   "reply_preview": "Si es una emergencia, llame al 911. Para un posible envenenamiento o sobredosis, llame a Poison Control (Control de Envenenamientos) al 1-800-222-1222."
   }
  ]
 }

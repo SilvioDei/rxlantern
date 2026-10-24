@@ -90,11 +90,18 @@ def init_db() -> Path:
     return path
 
 
+_READY: set[Path] = set()
+
+
 @contextmanager
 def _con():
-    """Open the user database and always close it (sqlite3's own 'with' only commits)."""
-    init_db()
-    con = sqlite3.connect(db_path())
+    """Open the user database and always close it (sqlite3's own 'with' only commits).
+    Tables are created once per database file per process, not on every query."""
+    path = db_path()
+    if path not in _READY or not path.exists():
+        init_db()
+        _READY.add(path)
+    con = sqlite3.connect(path)
     con.row_factory = sqlite3.Row
     con.execute("PRAGMA foreign_keys = ON")
     try:
@@ -369,6 +376,73 @@ async def post_review(user: dict, pharmacy_id: str, rating: int, wait_minutes: i
                 if decision.get("patient_reason") else "We couldn't publish this comment."}
     return {"id": review_id, "status": status, "message": messages[status], "cleaned": bool(decision.get("cleaned_text")),
             "moderation": {k: decision[k] for k in ("stage", "category", "reason")}}
+
+
+# ----------------------------------------------------------------------------- bulk reads for the website
+def fresh_reports_by_pharmacy(drug_id: str, now: datetime | None = None) -> dict[str, dict]:
+    """Real reports (last 72 hours) for one drug at every pharmacy, in one query: pharmacy_id -> counts."""
+    now = now or _now()
+    with _con() as con:
+        rows = con.execute("SELECT pharmacy_id, in_stock, COUNT(DISTINCT user_id) AS people, MAX(reported_at) AS latest "
+                           "FROM stock_reports WHERE drug_id = ? AND reported_at > ? GROUP BY pharmacy_id, in_stock",
+                           (drug_id, _iso(now - timedelta(hours=REPORT_WINDOW_HOURS)))).fetchall()
+    out: dict[str, dict] = {}
+    for r in rows:
+        x = out.setdefault(r["pharmacy_id"], {"drug_id": drug_id, "in_stock_reports": 0, "out_of_stock_reports": 0,
+                                               "latest_report": r["latest"]})
+        x["in_stock_reports" if r["in_stock"] else "out_of_stock_reports"] += r["people"]
+        x["latest_report"] = max(x["latest_report"], r["latest"])
+    for x in out.values():
+        x["conflicting"] = x["in_stock_reports"] > 0 and x["out_of_stock_reports"] > 0
+    return out
+
+
+def fresh_report_counts_by_drug(now: datetime | None = None) -> dict[str, dict]:
+    """Real reports (last 72 hours) across all pharmacies, in one query: drug_id -> counts."""
+    now = now or _now()
+    with _con() as con:
+        rows = con.execute("SELECT drug_id, SUM(in_stock) AS ins, SUM(1 - in_stock) AS outs, "
+                           "COUNT(DISTINCT pharmacy_id) AS pharmacies, MAX(reported_at) AS latest FROM stock_reports "
+                           "WHERE reported_at > ? GROUP BY drug_id",
+                           (_iso(now - timedelta(hours=REPORT_WINDOW_HOURS)),)).fetchall()
+    return {r["drug_id"]: {"in_stock_reports": r["ins"], "out_of_stock_reports": r["outs"],
+                           "pharmacies": r["pharmacies"], "latest_report": r["latest"]} for r in rows}
+
+
+def review_stats_all() -> dict[str, dict]:
+    """Published (real) review stats for every pharmacy, in one query. Averages only from 3 reviews up."""
+    with _con() as con:
+        rows = con.execute("SELECT pharmacy_id, COUNT(*) AS n, AVG(rating) AS avg_rating, AVG(wait_minutes) AS avg_wait "
+                           "FROM reviews WHERE status = 'published' GROUP BY pharmacy_id").fetchall()
+    out = {}
+    for r in rows:
+        enough = r["n"] >= MIN_REVIEWS_FOR_AVERAGE
+        out[r["pharmacy_id"]] = {
+            "reviews": r["n"], "average_rating": round(r["avg_rating"], 1) if enough else None,
+            "average_wait_minutes": round(r["avg_wait"]) if enough and r["avg_wait"] is not None else None}
+    return out
+
+
+def latest_reports(limit: int = 30, now: datetime | None = None) -> list[dict]:
+    """Newest real stock reports (last 72 hours) across all pharmacies. No names: reports are anonymous."""
+    now = now or _now()
+    with _con() as con:
+        rows = con.execute("SELECT pharmacy_id, drug_id, in_stock, reported_at FROM stock_reports WHERE reported_at > ? "
+                           "ORDER BY reported_at DESC LIMIT ?",
+                           (_iso(now - timedelta(hours=REPORT_WINDOW_HOURS)), limit)).fetchall()
+    return [{"sample": False, "pharmacy_id": r["pharmacy_id"], "drug_id": r["drug_id"], "in_stock": bool(r["in_stock"]),
+             "reported_at": r["reported_at"]} for r in rows]
+
+
+def latest_reviews(limit: int = 30) -> list[dict]:
+    """Newest published (real) reviews across all pharmacies."""
+    with _con() as con:
+        rows = con.execute("SELECT r.pharmacy_id, r.rating, r.wait_minutes, r.visit_date, r.comment, r.created_at, "
+                           "u.display_name FROM reviews r JOIN users u ON u.id = r.user_id WHERE r.status = 'published' "
+                           "ORDER BY r.created_at DESC LIMIT ?", (limit,)).fetchall()
+    return [{"sample": False, "pharmacy_id": r["pharmacy_id"], "rating": r["rating"], "wait_minutes": r["wait_minutes"],
+             "visit_date": r["visit_date"], "comment": r["comment"], "by": r["display_name"],
+             "created_at": r["created_at"]} for r in rows]
 
 
 def pending_queue() -> list[dict]:

@@ -1,0 +1,87 @@
+{
+  "about": "Official pharmacy finder links and member services numbers for the insurance choices in RxLantern. Every value comes from the plan's own website (or mass.gov / medicare.gov). 'not found' means no official public page was found; nothing is guessed. 'verified' says whether the page itself was opened or the value was only seen in official search results.",
+  "checked_date": "2026-10-23",
+  "plans": [
+    {
+      "id": "masshealth", "type": "masshealth", "name": "MassHealth",
+      "pharmacy_finder_url": "not found",
+      "member_services_phone": "(800) 841-2900",
+      "phone_note": "MassHealth Customer Service Center, Monday to Friday 8 a.m. to 5 p.m. TTY: 711. If you are in a MassHealth health plan (ACO or MCO), you can also call the number on your plan card.",
+      "finder_note": "MassHealth has no public pharmacy search. Most pharmacies in Massachusetts take MassHealth, but call to confirm.",
+      "source_url": "https://www.mass.gov/info-details/contact-masshealth-information-for-members",
+      "checked_date": "2026-10-23", "verified": "verified via web search (mass.gov blocks automated page loads)"
+    },
+    {
+      "id": "medicare", "type": "medicare", "name": "Medicare",
+      "pharmacy_finder_url": "https://www.medicare.gov/plan-compare/",
+      "member_services_phone": "1-800-MEDICARE (1-800-633-4227)",
+      "phone_note": "24 hours a day, 7 days a week (except some federal holidays). TTY: 1-877-486-2048. Your Part D or Medicare Advantage plan's own number is on your plan card.",
+      "finder_note": "Medicare's Plan Finder shows pharmacies in your drug plan's network. Your plan can also tell you.",
+      "source_url": "https://www.medicare.gov/health-drug-plans/part-d/what-drug-plans-cover/pharmacies ; https://www.medicare.gov/talk-to-someone",
+      "checked_date": "2026-10-23", "verified": "opened page"
+    },
+    {
+      "id": "bcbs_ma", "type": "commercial", "name": "Blue Cross Blue Shield of Massachusetts",
+      "pharmacy_finder_url": "https://member.bluecrossma.com/pharmacy-locator?locale=en",
+      "member_services_phone": "1-800-262-2583",
+      "phone_note": "Member Service. TTY: 711. Blue Cross also says you can call the Member Service number on your ID card.",
+      "finder_note": "",
+      "source_url": "https://www.bluecrossma.org/myblue/learn-and-save/plans-and-benefits/pharmacy",
+      "checked_date": "2026-10-23", "verified": "opened page"
+    },
+    {
+      "id": "harvard_pilgrim", "type": "commercial", "name": "Harvard Pilgrim Health Care",
+      "pharmacy_finder_url": "https://www.harvardpilgrim.org/public/prescription-drug-plans",
+      "member_services_phone": "888-333-4742",
+      "phone_note": "Member Services. TTY: 711.",
+      "finder_note": "Pick your plan from your ID card; Harvard Pilgrim then shows its pharmacy network (run by Optum Rx).",
+      "source_url": "https://www.harvardpilgrim.org/public/prescription-drug-plans ; https://www.harvardpilgrim.org/public/contact-us",
+      "checked_date": "2026-10-23", "verified": "opened page"
+    },
+    {
+      "id": "tufts_health_plan", "type": "commercial", "name": "Tufts Health Plan",
+      "pharmacy_finder_url": "not found",
+      "member_services_phone": "800-462-0224",
+      "phone_note": "Member Services, or the number on your member ID card.",
+      "finder_note": "No public pharmacy finder was found on Tufts Health Plan's website. Call Member Services to check a pharmacy.",
+      "source_url": "https://tuftshealthplan.com/member/employer-individual-or-family-plans/information-for-new-members/welcome",
+      "checked_date": "2026-10-23", "verified": "opened page"
+    },
+    {
+      "id": "unitedhealthcare", "type": "commercial", "name": "UnitedHealthcare",
+      "pharmacy_finder_url": "https://www.optumrx.com/oe_rxexternal/pharmacy-locator?type=PDPClientPharmacy&var=NPNUHC01&infoid=NPNUHC01&page=insert&par=",
+      "member_services_phone": "1-866-801-4409",
+      "phone_note": "For UnitedHealthcare plans through work. TTY: 711. You can also call the number on your member ID card.",
+      "finder_note": "Linked from uhc.com; the pharmacy search is run by Optum Rx, UnitedHealthcare's pharmacy benefit company.",
+      "source_url": "https://www.uhc.com/member-resources/pharmacy-benefits ; https://www.uhc.com/contact-us",
+      "checked_date": "2026-10-23", "verified": "opened page"
+    },
+    {
+      "id": "aetna", "type": "commercial", "name": "Aetna",
+      "pharmacy_finder_url": "https://health.aetna.com/ahpublic/location?siteId=commercial",
+      "member_services_phone": "not found",
+      "phone_note": "Aetna says: call the number on your ID card.",
+      "finder_note": "",
+      "source_url": "https://www.aetna.com/individuals-families/health-insurance-through-work/pharmacy.html ; https://www.aetna.com/about-us/contact-aetna.html",
+      "checked_date": "2026-10-23", "verified": "opened page"
+    },
+    {
+      "id": "cigna", "type": "commercial", "name": "Cigna Healthcare",
+      "pharmacy_finder_url": "not found",
+      "member_services_phone": "1 (800) 997-1654",
+      "phone_note": "Customer Service, 24/7. TTY: dial 711.",
+      "finder_note": "Cigna has no public pharmacy finder; it asks members to log in to myCigna to see network pharmacies.",
+      "source_url": "https://www.cigna.com/contact-us",
+      "checked_date": "2026-10-23", "verified": "opened page"
+    },
+    {
+      "id": "other_commercial", "type": "commercial", "name": "Other plan",
+      "pharmacy_finder_url": "not found",
+      "member_services_phone": "not found",
+      "phone_note": "Call the member services number on the back of your insurance card.",
+      "finder_note": "Your plan's website or member services can tell you which pharmacies are in network.",
+      "source_url": "not found",
+      "checked_date": "2026-10-23", "verified": "not applicable"
+    }
+  ]
+}

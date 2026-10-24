@@ -1,26 +1,228 @@
-// Home: "Ask RxLantern" box, quick starts, optional details (saved in this browser only), and answers.
-import { useEffect, useRef, useState, type FormEvent } from "react";
+// Home: "How it works", the 3-step guided search (medicine, place, insurance), and the "Ask RxLantern" chat.
+import { useEffect, useMemo, useRef, useState, type FormEvent, type KeyboardEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { useApp } from "../state";
-import { api, ApiError, type FinalReply } from "../api";
+import { api, ApiError, type DrugMeta, type FinalReply } from "../api";
 import { Answer } from "../components/Answer";
-import { ReportForm } from "../components/Forms";
-import { Logo } from "../components/Logo";
+import { MicButton } from "../components/Bits";
 import { STRINGS } from "../i18n";
-import { listen, recognitionSupported } from "../speech";
+import { medicines, optionFromQuery, suggest, type Medicine } from "../search";
 
 interface Turn { question: string; reply?: FinalReply; error?: string }
 
-export function Home() {
-  const { t, lang, easy, place, insurance, set, meta, requireLogin } = useApp();
+function HowItWorks() {
+  const { t } = useApp();
+  const steps = [["how1Title", "how1", "💊"], ["how2Title", "how2", "🏥"], ["how3Title", "how3", "📞"]] as const;
+  return (
+    <section className="how" aria-labelledby="how-title">
+      <h2 id="how-title">{t("howTitle")}</h2>
+      <ol className="how-steps">
+        {steps.map(([title, text, icon], i) => (
+          <li key={title} className="how-step">
+            <span className="how-num" aria-hidden="true">{i + 1}</span>
+            <div><h3><span aria-hidden="true">{icon}</span> {t(title)}</h3><p>{t(text)}</p></div>
+          </li>
+        ))}
+      </ol>
+    </section>
+  );
+}
+
+function DrugStep({ chosen, setChosen }: { chosen: DrugMeta | null; setChosen: (d: DrugMeta | null) => void }) {
+  const { t, meta } = useApp();
+  const meds = useMemo(() => medicines(meta?.drugs ?? []), [meta]);
+  const [query, setQuery] = useState("");
+  const [medicine, setMedicine] = useState<Medicine | null>(null);
+  const [active, setActive] = useState(0);
+  const [open, setOpen] = useState(false);
+  const list = useMemo(() => suggest(query, meds), [query, meds]);
+
+  // Coming back to the page: show the medicine chosen last time.
+  useEffect(() => {
+    if (chosen && !medicine) setMedicine(meds.find((m) => m.options.some((o) => o.id === chosen.id)) ?? null);
+  }, [chosen, meds, medicine]);
+
+  const pick = (m: Medicine) => {
+    setMedicine(m);
+    setOpen(false);
+    setChosen(optionFromQuery(query, m));
+  };
+  const onKey = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (!list.length) return;
+    if (e.key === "ArrowDown") { e.preventDefault(); setOpen(true); setActive((a) => (a + 1) % list.length); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); setActive((a) => (a - 1 + list.length) % list.length); }
+    else if (e.key === "Enter" && open) { e.preventDefault(); pick(list[active]); }
+    else if (e.key === "Escape") setOpen(false);
+  };
+
+  return (
+    <div className="step-block">
+      <p className="step-num">{t("step", { n: 1 })}</p>
+      {!medicine ? (
+        <>
+          <label htmlFor="drug-search" className="step-label">{t("step1Label")}</label>
+          <p className="muted small" id="drug-help">{t("step1Help")}</p>
+          <div className="combo">
+            <div className="input-row">
+              <input id="drug-search" role="combobox" aria-expanded={open && list.length > 0} aria-controls="drug-list"
+                aria-autocomplete="list" aria-describedby="drug-help" autoComplete="off" value={query}
+                aria-activedescendant={open && list.length ? `drug-opt-${active}` : undefined}
+                placeholder={t("step1Placeholder")} onKeyDown={onKey}
+                onChange={(e) => { setQuery(e.target.value); setOpen(true); setActive(0); }} />
+              <MicButton onText={(txt) => { setQuery(txt); setOpen(true); }} />
+            </div>
+            {open && list.length > 0 && (
+              <ul id="drug-list" role="listbox" className="suggestions" aria-label={t("suggestions")}>
+                {list.map((m, i) => (
+                  <li key={m.label} id={`drug-opt-${i}`} role="option" aria-selected={i === active}
+                    className={i === active ? "active" : ""} onMouseDown={(e) => { e.preventDefault(); pick(m); }}>
+                    <strong>{m.label}</strong>
+                    <span className="muted small"> · {m.options.map((o) => o.strength).join(" / ")}</span>
+                    {m.controlled && <span className="badge badge-warn small-badge">{t("controlledBadge")}</span>}
+                  </li>
+                ))}
+              </ul>
+            )}
+            {query.trim().length >= 3 && list.length === 0 && <p className="notice small" role="status">{t("noDrugMatch")}</p>}
+          </div>
+        </>
+      ) : (
+        <>
+          <p className="step-label">{t("step1Label")}</p>
+          <div className="chosen-row">
+            <span className="chosen"><span aria-hidden="true">✓</span> {medicine.label}</span>
+            {medicine.controlled && <span className="badge badge-warn">{t("controlledBadge")}</span>}
+            <button type="button" className="link-button" onClick={() => { setMedicine(null); setChosen(null); setQuery(""); }}>{t("changeDrug")}</button>
+          </div>
+          <fieldset className="option-list">
+            <legend>{medicine.options.length > 1 ? t("pickStrength") : t("pickStrengthOne")}</legend>
+            {medicine.options.map((o) => (
+              <label key={o.id} className={`option ${chosen?.id === o.id ? "on" : ""}`}>
+                <input type="radio" name="drug-option" checked={chosen?.id === o.id} onChange={() => setChosen(o)} />
+                <span><strong>{o.strength}</strong> · {o.form}</span>
+              </label>
+            ))}
+          </fieldset>
+        </>
+      )}
+    </div>
+  );
+}
+
+function PlaceStep({ error }: { error: string }) {
+  const { t, place, set, meta, deviceOrigin, setDeviceOrigin } = useApp();
+  const [locating, setLocating] = useState(false);
+  const [geoError, setGeoError] = useState("");
+  return (
+    <div className="step-block">
+      <p className="step-num">{t("step", { n: 2 })}</p>
+      <label htmlFor="place" className="step-label">{t("step2Label")}</label>
+      <p className="muted small">{t("step2Help")}</p>
+      <div className="input-row">
+        <input id="place" value={deviceOrigin ? "" : place} list="neighborhoods" placeholder={t("placePlaceholder")} maxLength={40}
+          disabled={!!deviceOrigin} onChange={(e) => set({ place: e.target.value })} />
+        <datalist id="neighborhoods">{meta?.neighborhoods.map((n) => <option key={n} value={n} />)}</datalist>
+        {deviceOrigin ? (
+          <button type="button" className="btn ghost" onClick={() => setDeviceOrigin(null)}>{t("changeDrug")}</button>
+        ) : (
+          <button type="button" className="btn ghost" disabled={locating || !("geolocation" in navigator)} onClick={() => {
+            setLocating(true);
+            setGeoError("");
+            navigator.geolocation.getCurrentPosition(
+              (pos) => { setDeviceOrigin({ lat: pos.coords.latitude, lon: pos.coords.longitude, label: "", fromDevice: true }); setLocating(false); },
+              () => { setGeoError(t("locationError")); setLocating(false); },
+              { timeout: 10000, maximumAge: 300000 });
+          }}><span aria-hidden="true">📍</span> {locating ? t("locating") : t("useLocation")}</button>
+        )}
+      </div>
+      {deviceOrigin && <p className="notice small"><span aria-hidden="true">📍</span> {t("usingLocation")}</p>}
+      {(geoError || error) && <p className="alert small" role="alert">{geoError || error}</p>}
+    </div>
+  );
+}
+
+function InsuranceStep() {
+  const { t, insurance, plan, set, meta } = useApp();
+  const options = ["masshealth", "medicare", "commercial", "uninsured", ""] as const;
+  return (
+    <div className="step-block">
+      <p className="step-num">{t("step", { n: 3 })}</p>
+      <fieldset className="option-list ins-list">
+        <legend className="step-label">{t("step3Label")}</legend>
+        <p className="muted small">{t("step3Help")}</p>
+        {options.map((o) => (
+          <label key={o || "unsure"} className={`option ${insurance === o ? "on" : ""}`}>
+            <input type="radio" name="insurance" checked={insurance === o} onChange={() => set({ insurance: o })} />
+            <span>{o ? t(`ins_${o}` as never) : t("insUnsure")}</span>
+          </label>
+        ))}
+      </fieldset>
+      {insurance === "commercial" && (
+        <label className="plan-select">{t("planLabel")}
+          <select value={plan} onChange={(e) => set({ plan: e.target.value })}>
+            <option value="">{t("planPick")}</option>
+            {meta?.plans.filter((p) => p.type === "commercial").map((p) => <option key={p.id} value={p.id}>{p.name}</option>)}
+          </select>
+        </label>
+      )}
+    </div>
+  );
+}
+
+function GuidedSearch() {
+  const { t, meta, drugId, set, place, deviceOrigin } = useApp();
+  const nav = useNavigate();
+  const [chosen, setChosenState] = useState<DrugMeta | null>(null);
+  const [error, setError] = useState<{ drug?: string; place?: string }>({});
+  const [busy, setBusy] = useState(false);
+  useEffect(() => { if (meta && drugId && !chosen) setChosenState(meta.drugs.find((d) => d.id === drugId) ?? null); }, [meta, drugId, chosen]);
+  const setChosen = (d: DrugMeta | null) => { setChosenState(d); set({ drugId: d?.id ?? "" }); };
+
+  const submit = async (e: FormEvent) => {
+    e.preventDefault();
+    const errs: { drug?: string; place?: string } = {};
+    if (!chosen) errs.drug = t("needDrug");
+    if (!deviceOrigin && !place.trim()) errs.place = t("needPlace");
+    if (!errs.place && !deviceOrigin) {
+      setBusy(true);
+      try {
+        const loc = await api.get<{ found: boolean }>(`/api/location?place=${encodeURIComponent(place.trim())}`);
+        if (!loc.found) errs.place = t("placeNotFound");
+      } catch {
+        errs.place = t("errorOffline");
+      }
+      setBusy(false);
+    }
+    setError(errs);
+    if (!errs.drug && !errs.place && chosen) nav(`/results?drug=${chosen.id}`);
+  };
+
+  return (
+    <section className="card search-card" aria-labelledby="search-title">
+      <h2 id="search-title">{t("searchTitle")}</h2>
+      <form onSubmit={submit} noValidate>
+        <div className="steps-grid">
+          <DrugStep chosen={chosen} setChosen={setChosen} />
+          <PlaceStep error={error.place ?? ""} />
+          <InsuranceStep />
+        </div>
+        {error.drug && <p className="alert" role="alert">{error.drug}</p>}
+        <div className="search-submit">
+          <button type="submit" className="btn primary big" disabled={busy}><span aria-hidden="true">🔎</span> {t("findButton")}</button>
+          <p className="privacy"><span aria-hidden="true">🔒</span> {t("privacyNote")}</p>
+        </div>
+      </form>
+    </section>
+  );
+}
+
+function Chat() {
+  const { t, lang, place, insurance } = useApp();
   const nav = useNavigate();
   const [question, setQuestion] = useState("");
   const [turns, setTurns] = useState<Turn[]>([]);
   const [busy, setBusy] = useState(false);
   const [step, setStep] = useState(0);
-  const [listening, setListening] = useState(false);
-  const [reportOpen, setReportOpen] = useState(false);
-  const box = useRef<HTMLTextAreaElement>(null);
   const answers = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -55,76 +257,35 @@ export function Home() {
     }
   };
 
-  const submit = (e: FormEvent) => { e.preventDefault(); ask(question); };
-  const prefill = (text: string) => { setQuestion(text); setTimeout(() => { box.current?.focus(); box.current?.setSelectionRange(text.length, text.length); }, 0); };
-  const micOk = easy && recognitionSupported();
-
   return (
-    <>
-      <section className="hero">
-        <div className="hero-logo"><Logo size={easy ? 76 : 96} /></div>
-        <h1>{t("heroTitle")}</h1>
-        <p className="lead">{t("heroText")}</p>
-      </section>
-
-      <section className="ask-panel card" aria-labelledby="ask-label">
-        <form onSubmit={submit}>
-          <label id="ask-label" htmlFor="ask-box" className="ask-label">{t("askLabel")}</label>
-          <div className="ask-row">
-            <textarea id="ask-box" ref={box} rows={easy ? 3 : 2} value={question} maxLength={1000}
-              placeholder={t("askPlaceholder")} onChange={(e) => setQuestion(e.target.value)}
-              onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); ask(question); } }} />
-            <div className="ask-buttons">
-              {micOk && (
-                <button type="button" className={`btn mic ${listening ? "listening" : ""}`} aria-pressed={listening}
-                  onClick={() => {
-                    setListening(true);
-                    listen(lang, (txt) => setQuestion((q) => (q ? `${q} ${txt}` : txt)), () => setListening(false));
-                  }}>
-                  <span aria-hidden="true">🎤</span> {listening ? t("micListening") : t("micStart")}
-                </button>
-              )}
-              <button type="submit" className="btn primary big" disabled={busy || !question.trim()}>{t("askButton")}</button>
-            </div>
+    <section className="card ask-panel" aria-labelledby="ask-title">
+      <h2 id="ask-title">{t("orAsk")}</h2>
+      <form onSubmit={(e) => { e.preventDefault(); ask(question); }}>
+        <label htmlFor="ask-box" className="sr-only">{t("askLabel")}</label>
+        <div className="ask-row">
+          <textarea id="ask-box" rows={2} value={question} maxLength={1000} placeholder={t("askPlaceholder")}
+            onChange={(e) => setQuestion(e.target.value)}
+            onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); ask(question); } }} />
+          <div className="ask-buttons">
+            <MicButton onText={(txt) => setQuestion((q) => (q ? `${q} ${txt}` : txt))} />
+            <button type="submit" className="btn primary big" disabled={busy || !question.trim()}>{t("askButton")}</button>
           </div>
-        </form>
-
-        <div className="quick" role="group" aria-label={t("quickTitle")}>
-          <button type="button" className="quick-btn" onClick={() => ask(place.trim() ? t("qOpenText", { place: place.trim() }) : t("qOpenNoPlace"))}>
-            <span aria-hidden="true">🕯️</span> {t("qOpen")}</button>
-          <button type="button" className="quick-btn" onClick={() => prefill(t("qShortageText"))}><span aria-hidden="true">📋</span> {t("qShortage")}</button>
-          <button type="button" className="quick-btn" onClick={() => prefill(t("qCostText"))}><span aria-hidden="true">💲</span> {t("qCost")}</button>
-          <button type="button" className="quick-btn" onClick={() => nav("/vaccines")}><span aria-hidden="true">💉</span> {t("qVaccines")}</button>
-          <button type="button" className="quick-btn" onClick={() => requireLogin(() => setReportOpen(true))}><span aria-hidden="true">☎️</span> {t("qCalled")}</button>
         </div>
-
-        <details className="details-box" open={!!(place || insurance)}>
-          <summary>{t("detailsTitle")}</summary>
-          <div className="details-grid">
-            <label>{t("placeLabel")}
-              <input value={place} list="neighborhoods" placeholder={t("placePlaceholder")} maxLength={40}
-                onChange={(e) => set({ place: e.target.value })} />
-              <datalist id="neighborhoods">{meta?.neighborhoods.map((n) => <option key={n} value={n} />)}</datalist>
-            </label>
-            <label>{t("insuranceLabel")}
-              <select value={insurance} onChange={(e) => set({ insurance: e.target.value })}>
-                <option value="">{t("insNone")}</option>
-                {(meta?.insurance_types ?? []).map((i) => <option key={i} value={i}>{t(`ins_${i}` as never)}</option>)}
-              </select>
-            </label>
-          </div>
-          <p className="privacy"><span aria-hidden="true">🔒</span> {t("privacyNote")}</p>
-        </details>
-      </section>
-
+      </form>
+      <div className="quick" role="group" aria-label={t("quickTitle")}>
+        <button type="button" className="quick-btn" onClick={() => ask(place.trim() ? t("qOpenText", { place: place.trim() }) : t("qOpenNoPlace"))}>
+          <span aria-hidden="true">🕯️</span> {t("qOpen")}</button>
+        <button type="button" className="quick-btn" onClick={() => nav("/vaccines")}><span aria-hidden="true">💉</span> {t("qVaccines")}</button>
+        <button type="button" className="quick-btn" onClick={() => nav("/shortages")}><span aria-hidden="true">📋</span> {t("qShortages")}</button>
+      </div>
       <div className="conversation" ref={answers}>
         {turns.map((turn, i) => (
           <div key={i} className="turn">
-            <p className="you-asked"><span className="muted">›</span> {turn.question}</p>
+            <p className="you-asked"><span className="muted" aria-hidden="true">›</span> {turn.question}</p>
             {turn.reply && <Answer reply={turn.reply} onFollowUp={(a) => ask(`${turn.question} — ${a}`)} />}
             {turn.error && <p className="alert" role="alert">{turn.error}</p>}
             {!turn.reply && !turn.error && busy && i === turns.length - 1 && (
-              <div className="working card" role="status" aria-live="polite">
+              <div className="working" role="status" aria-live="polite">
                 <span className="lantern-dot" aria-hidden="true" />
                 {(STRINGS[lang].working as string[])[step]}
               </div>
@@ -132,7 +293,21 @@ export function Home() {
           </div>
         ))}
       </div>
-      {reportOpen && <ReportForm onClose={() => setReportOpen(false)} />}
+    </section>
+  );
+}
+
+export function Home() {
+  const { t } = useApp();
+  return (
+    <>
+      <section className="hero">
+        <h1>{t("heroTitle")}</h1>
+        <p className="lead">{t("heroText")}</p>
+      </section>
+      <HowItWorks />
+      <GuidedSearch />
+      <Chat />
     </>
   );
 }

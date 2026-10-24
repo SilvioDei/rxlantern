@@ -1,10 +1,10 @@
-// One pharmacy: counter hours and store hours side by side (counter first), services, clinics, reports, reviews.
+// One pharmacy: counter hours and store hours side by side (counter first), lunch, weekend and holiday notes,
+// delivery, services, vaccines with booking link, nearby clinics, call script, community reports, and reviews.
 import { useCallback, useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useApp } from "../state";
-import { api, type PharmacyBrief, type ReviewSummary, type StockSummary } from "../api";
-import { NotFoundText, OpenBadge, directionsHref, telHref } from "../components/Bits";
-import { ReportForm, ReviewForm } from "../components/Forms";
+import { api, type Holiday, type PharmacyBrief, type ReportCounts, type Review, type ReviewSummary, type StockSummary } from "../api";
+import { CallScriptCard, NotFoundText, OpenBadge, ReadAloud, SampleBadge, Stars, ago, directionsHref, telHref } from "../components/Bits";
 import { DAY_NAMES } from "../i18n";
 
 interface Details {
@@ -17,7 +17,8 @@ interface Details {
   vaccines_routine: string[] | string; vaccines_travel: string[] | string; clinic_on_site: string;
   specialty_pharmacy: string; vaccine_booking_url: string; sources: Record<string, string>; checked_date: string;
   nearby_clinics: { name: string; kind: string; address: string; distance_label: string; walk_in: string }[] | string;
-  brief: PharmacyBrief; stock_reports: StockSummary; reviews: ReviewSummary;
+  brief: PharmacyBrief; stock_reports: StockSummary; sample_reports: ReportCounts[];
+  reviews: ReviewSummary; sample_reviews: Review[]; holidays: Holiday[];
 }
 
 const DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
@@ -28,52 +29,86 @@ function to12(hhmm: string) {
   return `${h % 12 || 12}:${String(m).padStart(2, "0")} ${h < 12 ? "AM" : "PM"}`;
 }
 
-function fmtTime(iso: string, lang: string) {
-  try { return new Date(iso).toLocaleString(lang === "es" ? "es-US" : "en-US", { dateStyle: "medium", timeStyle: "short" }); }
-  catch { return iso; }
+function ReportList({ items, sample }: { items: ReportCounts[]; sample?: boolean }) {
+  const { t, lang } = useApp();
+  return (
+    <ul className="feed">
+      {items.map((x) => (
+        <li key={x.drug_id} className={sample ? "feed-item is-sample" : "feed-item"}>
+          {sample && <SampleBadge />} <strong>{x.drug ?? x.drug_id}</strong>: {t("inStockCount", { n: x.in_stock_reports })} · {t("outStockCount", { n: x.out_of_stock_reports })} · <span className="muted">{t("latest", { time: ago(x.latest_report, lang) })}</span>
+          {x.conflicting && <div className="warn-text">{t("conflicting")}</div>}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function ReviewList({ items }: { items: Review[] }) {
+  return (
+    <ul className="feed">
+      {items.map((r, i) => (
+        <li key={i} className={r.sample ? "feed-item is-sample" : "feed-item"}>
+          {r.sample && <SampleBadge />} <Stars n={r.rating} />
+          {r.wait_minutes != null && <span className="muted"> · {r.wait_minutes} min</span>}
+          <span className="muted"> · {r.visit_date} · {r.by}</span>
+          {r.comment && <p className="review-text">{r.comment}</p>}
+        </li>
+      ))}
+    </ul>
+  );
 }
 
 export function PharmacyPage() {
   const { id = "" } = useParams();
-  const { t, lang, requireLogin } = useApp();
+  const nav = useNavigate();
+  const { t, lang, meta, drugId, set, version, rate } = useApp();
   const [d, setD] = useState<Details | null>(null);
   const [error, setError] = useState("");
-  const [form, setForm] = useState<"report" | "review" | null>(null);
+  const [script, setScript] = useState("");
+  const drug = meta?.drugs.find((x) => x.id === drugId);
 
   const load = useCallback(() => {
-    api.get<Details>(`/api/pharmacies/${id}?lang=${lang}`).then(setD).catch(() => setError(t("errorGeneric")));
+    api.get<Details>(`/api/pharmacies/${id}?lang=${lang}`).then(setD).catch((e) => setError(e?.status === 404 ? t("notFound") : t("errorGeneric")));
   }, [id, lang, t]);
-  useEffect(load, [load]);
+  useEffect(load, [load, version]);
+  useEffect(() => {
+    if (!drugId) { setScript(""); return; }
+    api.get<{ call_script: string }>(`/api/drugs/${drugId}/call-script?lang=${lang}`).then((r) => setScript(r.call_script)).catch(() => setScript(""));
+  }, [drugId, lang]);
 
-  if (error) return <p className="alert">{error}</p>;
-  if (!d) return <p className="muted">{t("loading")}</p>;
+  if (error) return <p className="alert" role="alert">{error}</p>;
+  if (!d) return <p className="muted" role="status">{t("loading")}</p>;
   const counter = typeof d.counter_hours === "object" ? d.counter_hours : null;
   const store = typeof d.store_hours === "object" ? d.store_hours : null;
   const lunch = typeof d.lunch_break === "object" ? d.lunch_break : null;
   const lunchSpans = lunch ? [...new Set(Object.values(lunch).map((b) => `${to12(b.start)}–${to12(b.end)}`))] : [];
   const vaccines = [d.vaccines_routine, d.vaccines_travel].flatMap((v) => (Array.isArray(v) ? v : []));
   const dd = typeof d.delivery_details === "object" ? d.delivery_details : null;
+  const realReviews = d.reviews.recent;
 
   return (
     <article className="pharmacy-page">
-      <Link to="/pharmacies" className="back">← {t("back")}</Link>
+      <button type="button" className="link-button back" onClick={() => nav(-1)}>← {t("back")}</button>
       <header className="page-head">
         <h1>{d.name}</h1>
-        <OpenBadge open={d.brief.open_now} opensNext={d.brief.opens_next} />
+        <OpenBadge open={d.brief.open_now} opensNext={d.brief.opens_next} status={d.brief.status} />
       </header>
       <p className="address big">{d.address} · {d.neighborhood}</p>
+      {d.brief.open_now && d.brief.closes_at && <p><strong>{t("closesAt", { time: d.brief.closes_at })}</strong></p>}
       <div className="card-actions">
         <a className="btn primary" href={telHref(d.phone)}><span aria-hidden="true">📞</span> {t("call")} {d.phone}</a>
         <a className="btn ghost" href={directionsHref(d.address)} target="_blank" rel="noreferrer">{t("directions")}</a>
-        <a className="btn ghost" href={d.website} target="_blank" rel="noreferrer">{new URL(d.website).hostname.replace(/^www\./, "")}</a>
+        <a className="btn ghost" href={d.website} target="_blank" rel="noreferrer">{new URL(d.website).hostname.replace(/^www\./, "")} ↗</a>
+        <button type="button" className="btn ghost" onClick={() => rate(id)}><span aria-hidden="true">★</span> {t("ratePharmacy")}</button>
       </div>
+      {d.holidays.map((h) => <p key={h.date} className="notice" role="note">{t("holidayNotice", { name: lang === "es" ? h.name_es : h.name, date: h.date })}</p>)}
 
       <section className="hours-grid" aria-label={t("counterHours")}>
         <div className="card hours counter">
           <h2>{t("counterHours")}</h2>
           {counter ? (
             <table>
-              <tbody>{DAYS.map((day) => <tr key={day}><th scope="row">{DAY_NAMES[lang][day]}</th><td>{counter[day]}</td></tr>)}</tbody>
+              <tbody>{DAYS.map((day) => <tr key={day}><th scope="row">{DAY_NAMES[lang][day]}</th><td>{counter[day] === "closed" ? t("closed") : counter[day]}</td></tr>)}</tbody>
             </table>
           ) : <p className="muted">{t("notFound")}</p>}
           <p><strong>{t("lunch")}:</strong> {lunchSpans.length ? `${lunchSpans.join(", ")} (${Object.keys(lunch!).map((k) => DAY_NAMES[lang][DAY_KEYS[k]].slice(0, 3)).join(", ")})` : t("noLunch")}</p>
@@ -82,35 +117,31 @@ export function PharmacyPage() {
           <h2>{t("storeHours")}</h2>
           {store ? (
             <table>
-              <tbody>{DAYS.map((day) => <tr key={day}><th scope="row">{DAY_NAMES[lang][day]}</th><td>{store[day]}</td></tr>)}</tbody>
+              <tbody>{DAYS.map((day) => <tr key={day}><th scope="row">{DAY_NAMES[lang][day]}</th><td>{store[day] === "closed" ? t("closed") : store[day]}</td></tr>)}</tbody>
             </table>
           ) : <p className="muted">{t("notFound")}</p>}
         </div>
       </section>
 
-      <section className="card">
-        <h2>{t("weekend")}</h2>
-        <p>{d.weekend?.summary_counter_first ?? t("notFound")}</p>
-        <h2>{t("holiday")}</h2>
-        <p>{d.holiday_hours && d.holiday_hours !== "not found" ? String(d.holiday_hours) : t("holidayNotFound")}</p>
+      <section className="card two-col">
+        <div><h2>{t("weekend")}</h2><p>{d.weekend?.summary_counter_first ?? t("notFound")}</p></div>
+        <div><h2>{t("holiday")}</h2><p>{d.holiday_hours && d.holiday_hours !== "not found" ? String(d.holiday_hours) : t("holidayNotFound")}</p></div>
       </section>
 
       <section className="card two-col">
         <div>
           <h2>{t("delivery")}</h2>
           <p><NotFoundText value={d.delivery} /></p>
-          {dd && (
-            <ul className="small">
-              {["same_day", "cost", "area", "how_to_request"].map((k) => dd[k] && <li key={k}><NotFoundText value={dd[k]} /></li>)}
-            </ul>
-          )}
+          {dd && <ul className="small">{["same_day", "cost", "area", "how_to_request"].map((k) => dd[k] && <li key={k}><NotFoundText value={dd[k]} /></li>)}</ul>}
         </div>
         <div>
           <h2>{t("services")}</h2>
           <ul className="small">
-            <li><strong>{t("vaccinesListed")}:</strong> {vaccines.length ? vaccines.join(", ") : <NotFoundText value={null} />}</li>
+            <li><strong>{t("vaccinesListed")}:</strong> {vaccines.length ? vaccines.join(", ") : <NotFoundText value={null} />}
+              {d.vaccine_booking_url && d.vaccine_booking_url !== "not found" && <> · <a href={d.vaccine_booking_url} target="_blank" rel="noreferrer">{t("bookVaccine")} ↗</a></>}</li>
             <li><strong>{t("clinic")}:</strong> <NotFoundText value={d.clinic_on_site} /></li>
             <li><strong>{t("specialty")}:</strong> <NotFoundText value={d.specialty_pharmacy} /></li>
+            <li><strong>{t("driveThru")}:</strong> <NotFoundText value={d.drive_thru} /></li>
             <li><strong>{t("fLanguage")}:</strong> <NotFoundText value={Array.isArray(d.languages) ? d.languages.join(", ") : d.languages} /></li>
             <li><strong>{t("fWheelchair")}:</strong> <NotFoundText value={d.wheelchair_accessible} /></li>
           </ul>
@@ -129,44 +160,38 @@ export function PharmacyPage() {
         ) : <p className="muted">{String(d.nearby_clinics)}</p>}
       </section>
 
-      <section className="card">
-        <div className="section-head">
-          <h2>{t("stockReports")}</h2>
-          <button type="button" className="btn" onClick={() => requireLogin(() => setForm("report"))}>{t("postReport")}</button>
-        </div>
-        {d.stock_reports.drugs.length === 0 ? <p className="muted">{t("noReports")}</p> : (
-          <ul>
-            {d.stock_reports.drugs.map((x) => (
-              <li key={x.drug_id}><strong>{x.drug ?? x.drug_id}</strong>: {t("inStockCount", { n: x.in_stock_reports })} · {t("outStockCount", { n: x.out_of_stock_reports })} · <span className="muted">{t("latest", { time: fmtTime(x.latest_report, lang) })}</span>
-                {x.conflicting && <div className="warn-text">{t("conflicting")}</div>}</li>
-            ))}
-          </ul>
-        )}
+      <section className="card" aria-labelledby="call-about">
+        <label id="call-about" className="step-label">{t("callAbout")}
+          <select value={drugId} onChange={(e) => set({ drugId: e.target.value })} name="call-drug">
+            <option value="">{t("pickMedicine")}</option>
+            {meta?.drugs.map((x) => <option key={x.id} value={x.id}>{x.name}</option>)}
+          </select>
+        </label>
+        {script && <CallScriptCard text={script} drugId={drugId} pharmacyId={id} controlled={drug?.controlled} />}
+        {drug?.controlled && <p className="notice small">{t("controlledExplain")}</p>}
+      </section>
+
+      <section className="card" aria-labelledby="reports-title">
+        <h2 id="reports-title">{t("stockReports")}</h2>
+        {d.stock_reports.drugs.length === 0 && d.sample_reports.length === 0 && <p className="muted">{t("noReportsYet")}</p>}
+        {d.stock_reports.drugs.length > 0 && <ReportList items={d.stock_reports.drugs} />}
+        {d.sample_reports.length > 0 && <ReportList items={d.sample_reports} sample />}
         <p className="reminder">{t("callToConfirm")}</p>
       </section>
 
-      <section className="card">
+      <section className="card" aria-labelledby="reviews-title">
         <div className="section-head">
-          <h2>{t("reviews")}</h2>
-          <button type="button" className="btn" onClick={() => requireLogin(() => setForm("review"))}>{t("writeReview")}</button>
+          <h2 id="reviews-title">{t("reviews")}</h2>
+          <button type="button" className="btn" onClick={() => rate(id)}><span aria-hidden="true">★</span> {t("ratePharmacy")}</button>
         </div>
-        <p className="muted">{t("reviewCount", { n: d.reviews.reviews })}</p>
         {d.reviews.average_rating != null ? (
-          <p className="big">★ {t("avgRating", { r: d.reviews.average_rating })}{d.reviews.average_wait_minutes != null && ` · ${t("avgWait", { m: d.reviews.average_wait_minutes })}`}</p>
-        ) : <p>{t("notEnoughReviews")}</p>}
-        <ul className="reviews">
-          {d.reviews.recent.map((r, i) => (
-            <li key={i}><span aria-label={t("stars", { n: r.rating })}>{"★".repeat(r.rating)}{"☆".repeat(5 - r.rating)}</span>
-              {r.wait_minutes != null && <span className="muted"> · {r.wait_minutes} min</span>}
-              <span className="muted"> · {r.visit_date} · {r.by}</span>
-              {r.comment && <p className="review-text">{r.comment}</p>}</li>
-          ))}
-        </ul>
+          <p className="big">★ {t("avgRating", { r: d.reviews.average_rating })}{d.reviews.average_wait_minutes != null && ` · ${t("avgWait", { m: d.reviews.average_wait_minutes })}`} ({d.reviews.reviews})</p>
+        ) : d.reviews.reviews > 0 ? <p>{t("fewReviews", { n: d.reviews.reviews })}</p> : <p className="empty-text">{t("noReviewsYet")}</p>}
+        {realReviews.length > 0 && <ReviewList items={realReviews} />}
+        {d.sample_reviews.length > 0 && <><h3 className="sample-head">{t("samplePosts")}</h3><ReviewList items={d.sample_reviews} /></>}
       </section>
-      <p className="muted small">{t("checked", { date: d.checked_date })}</p>
-
-      {form === "report" && <ReportForm pharmacyId={id} onDone={load} onClose={() => setForm(null)} />}
-      {form === "review" && <ReviewForm pharmacyId={id} onDone={load} onClose={() => setForm(null)} />}
+      <div className="card-actions"><ReadAloud label={t("readPage")} text={() => document.getElementById("main")?.innerText ?? ""} /></div>
+      <p className="muted small">{t("checked", { date: d.checked_date })} · <Link to="/about">{t("navAbout")}</Link></p>
     </article>
   );
 }

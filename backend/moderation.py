@@ -46,7 +46,7 @@ class ModerationResult(BaseModel):
 
 def code_checks(comment: str) -> dict | None:
     """Return a decision if code can decide alone, else None (send to the model)."""
-    from backend.agents import redact_phi
+    from backend.safety import redact_phi
 
     def out(decision, category, reason, patient_reason=""):
         return {"decision": decision, "stage": "code", "category": category, "reason": reason,

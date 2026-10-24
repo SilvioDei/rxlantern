@@ -1,4 +1,4 @@
-"""Start RxLantern (API + website) with one command.
+r"""Start RxLantern (API + website) with one command.
 
 From the rxcompass/ folder:  ..\.venv\Scripts\python.exe run.py
 Then open http://127.0.0.1:8000

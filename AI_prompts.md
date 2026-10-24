@@ -457,3 +457,82 @@ Every prompt sent to the AI assistant, word for word, grouped by build step.
 ### Step 7 — remove my email from this log
 
 > In AI_prompts.md, replace my email with [admin email] everywhere before we push. Keep everything else word for word.
+
+## Step 7b — Make the website deliver my idea
+
+> I'm continuing my final project RxLantern from another session. Before anything else, read rxcompass/PROJECT_NOTES.md, rxcompass/AI_prompts.md, and the git log to catch up on the app, the rules, and Steps 1 to 7. Key rules: only gpt-6-luna through Portkey, never store patient health information, keep logging every prompt I send in AI_prompts.md word for word (this one goes under a new "Step 7b" section), and commit at the end.
+>
+> Step 7b: Make the website deliver my idea (final website step)
+>
+> I tested the site and I'm not happy with it. The pieces work, but it doesn't deliver my idea: before leaving the doctor's office, a patient finds which pharmacy can actually fill their prescription, whether it's open, whether it takes their insurance, and roughly what it will cost, and patients help each other by reporting stock. This is the last website step, so please cover everything below completely and check every item before committing.
+>
+> PART A: Fix what is broken
+> 1. I could not create an account. It did not work when I tried. Reproduce it in a real browser with Playwright, find the cause, and fix it. Create account, log in, log out, and "delete my account" must all work.
+> 2. Shortage watch is slow and does little. It must load instantly from the database (never call the AI model to load any page; the AI is only for the chat). Refresh FDA data in the background at most once a day.
+> 3. The language list has no English option. Make a clear selector that always shows "English" and "Español", with the current one highlighted.
+> 4. run.py shows "SyntaxWarning: invalid escape sequence" when it starts. Fix it.
+>
+> PART B: New home page with a guided search
+> - At the top, a short "How it works" in 3 steps: tell us your medicine, where you are, and your insurance; see which pharmacies can help; call with our script and tell others what you found.
+> - Step 1: "What medicine do you need?" A search box that suggests our 25 drugs (brand and generic names, small spelling mistakes allowed) as the patient types, then asks for the strength or form if needed.
+> - Step 2: "Where are you?" ZIP code or Boston neighborhood, or a "Use my location" button (browser location, used only for this search and never saved on the server).
+> - Step 3: "What insurance do you have?" MassHealth, Medicare, a commercial plan (with a list: Blue Cross Blue Shield of Massachusetts, Harvard Pilgrim, Tufts Health Plan, UnitedHealthcare, Aetna, Cigna, Other), or none. Saved only in the browser.
+> - Below the guided search: "Or ask RxLantern anything" (the chat), plus quick buttons for "Pharmacy open now", "Vaccines", and "Drug shortages".
+>
+> PART C: The results page (the heart of the app)
+> For the chosen drug and location, show nearby pharmacies with a small map. Let the patient sort by distance, open now, open latest, rating, or shortest wait, and filter by open now, delivery, language spoken, and wheelchair access. At the top, show the drug's FDA shortage status (and FDA's estimated return date if FDA gives one; otherwise "FDA has not given an estimate") and the coverage summary for the chosen insurance. Each pharmacy card shows:
+> - Open now / "Closed, opens at…" and closes at, using pharmacy counter hours (store hours only in the details, labeled). If a holiday is coming in the next 7 days, show a short notice that hours may differ.
+> - Recent community stock reports for this drug (last 72 hours), with "Call to confirm before you go."
+> - Estimated cost and coverage for the chosen insurance, always labeled as an estimate and never as the patient's copay.
+> - Insurance: a link to the chosen plan's official pharmacy finder so the patient can check this pharmacy is in network, plus "Call to confirm they take your insurance." Find the official pharmacy finder links and member services phone numbers for each plan in the insurance list from the plans' own websites, with source and date checked. If you cannot find one, write "not found". Never guess a link or number.
+> - Delivery, and the average rating and wait time (once there are 3 reviews).
+> - Buttons: Call (opens the call script, then dials), Directions, "I called: They have it", "I called: They don't have it", and "Rate this pharmacy".
+> - For controlled drugs (Adderall XR, Concerta): show the shortage status, pharmacies with their hours, and the call script, but no stock reports and no report buttons, with a short explanation.
+> - A "Print / share for my doctor" button that makes a simple printable summary of the results (drug, pharmacies, hours, shortage status, cost estimates). No personal information.
+> - A "Call my insurance" link showing the member services number for the chosen plan.
+> - The results page must load fast from the database and our own tools. Do not call the AI model to build it.
+>
+> PART D: Crowdsourcing and reviews everywhere
+> - "I called: They have it / They don't" buttons under every call script (on the results page, pharmacy pages, shortage watch, and chat answers) and on every pharmacy card. Pre-fill the pharmacy and drug. Ask the patient to log in only at that moment, then save the report and show it right away.
+> - "Rate this pharmacy" (stars, wait time, date of visit, optional comment) on every pharmacy card and page. When there are no reviews, show "No reviews yet. Be the first to rate this pharmacy."
+> - A "Community" page with the latest stock reports and reviews across all pharmacies.
+> - Sample data for graders: graders will clone the repo with an empty database, so they would see no reports or reviews. Add a small set of sample stock reports and reviews that load only when a SHOW_SAMPLE_DATA setting in config.py is on (on by default). Every sample item must show a clear "Sample" badge, the Community page must show a note "Includes sample posts for demonstration", sample posts must never be counted together with real posts, and they must never appear as if real patients wrote them. Sample reports must always look fresh (dated relative to today) so they are not hidden by the 72-hour rule.
+>
+> PART E: Other pages
+> - Shortage watch: each drug card shows shortage status and date, FDA's estimate if given, recent community report counts (non-controlled only), and buttons: "Find pharmacies near me" (opens the results page for that drug), "Get a call script", and "I called a pharmacy".
+> - Pharmacy page: counter hours and store hours side by side (counter first), lunch breaks, weekend and holiday notes, delivery details, services, vaccines with the booking link, nearby clinics, community reports, reviews, and all the buttons above.
+> - Vaccines: choose a vaccine, see which nearby pharmacies offer it with booking links, and coverage by insurance type (Massachusetts rule, large-employer warning, travel vaccines "check with your plan", yellow fever certified sites).
+> - About & Privacy page: what RxLantern does, where every piece of data comes from (with dates), that it never stores health information, how stock reports and reviews are checked, that it is not medical advice, and that answers can be wrong so patients should always call to confirm.
+> - Account menu: log in, log out, and "Delete my account" (removes the account and all its posts).
+> - Admin page for the pending moderation queue (admins only).
+>
+> PART F: Safety and emergencies
+> - If a patient writes something that sounds like an emergency or overdose (for example "I took too many pills", "can't breathe", "overdose"), in English or Spanish, immediately show in code, before any AI call: "If this is an emergency, call 911. For a possible poisoning or overdose, call Poison Control at 1-800-222-1222." Log that this rule fired in the audit trail.
+> - Keep all existing safety rules from earlier steps.
+>
+> PART G: Design
+> - Keep the Lantern Glow fonts (an elegant serif for headings, Atkinson Hyperlegible for body), the lantern logo, and the colors, but make the main page background light (soft cream or white) so it feels clean and trustworthy like a modern healthcare app. Use deep teal and navy for the header and key sections, amber for main buttons and highlights, and coral only for warnings.
+> - Big, clear cards with plenty of space; clear empty states ("No reports yet"), loading states, and error messages everywhere. Someone who has never seen the app should understand it without help.
+> - Easy view, read aloud, voice input, keyboard navigation, and Spanish must work on every page, including the new ones. Good contrast everywhere and no sideways scrolling at phone width.
+>
+> PART H: Test everything before committing
+> Use Playwright in a real browser and check each item below. Report pass or fail for each, fix every failure, and rerun until all pass:
+> 1. Create account, log in, log out, delete account.
+> 2. Full journey: search "Ozempic", pick 0.5 mg, enter 02124, choose MassHealth, see results with map, sorting and filters working, report "They have it" for one pharmacy, rate that pharmacy, and see both on the results page and the Community page.
+> 3. Search "Concerta 18 mg": no stock reports or report buttons, with the explanation.
+> 4. Search with Medicare, then with Blue Cross: the coverage, plan pharmacy finder link, and member services number change correctly.
+> 5. A closed pharmacy shows "Closed, opens at…" and open alternatives.
+> 6. Shortage watch loads in under 2 seconds, and its buttons work.
+> 7. Pharmacy page, Vaccines page, Community page, About & Privacy page all load and show the right content.
+> 8. "Print / share for my doctor" produces a clean printable page.
+> 9. The chat still answers, and its call scripts show the report buttons.
+> 10. The emergency message appears in English and Spanish without calling the AI.
+> 11. English and Español both selectable, and the whole site switches.
+> 12. Easy view on the results page, and every page at phone width.
+> 13. Sample data shows "Sample" badges and the Community note, and turning SHOW_SAMPLE_DATA off hides it.
+> Then delete all test accounts and their posts so the real database has no real-user rows again.
+> Retake all screenshots in output/screenshots/ with the new design, including the results page, the report buttons, a review, the Community page, and the emergency message. Make sure no screenshot shows an API key or my email.
+>
+> Rebuild frontend/dist so graders still need only Python. Commit with the message "Step 7b: guided search, crowdsourcing, reviews, and fixes". Then give me the pass/fail table and the start command, and stop.
+>
+> Also: in AI_prompts.md, replace my email address with [admin email] everywhere, since the repo will be public. Keep everything else word for word.

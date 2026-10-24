@@ -1,169 +1,135 @@
 {
-  "passed": 34,
-  "total": 34,
-  "results": [
-    {
-      "step": "home loads with app name from the backend",
-      "passed": true,
-      "title": "RxLantern"
-    },
-    {
-      "step": "Easy view button on the first screen",
-      "passed": true
-    },
-    {
-      "step": "footer shows the safety lines",
-      "passed": true
-    },
-    {
-      "step": "no key or owner email visible: 01_home_normal",
-      "passed": true
-    },
-    {
-      "step": "asked through the website: Is there a pharmacy open right now near 02111?",
-      "passed": true,
-      "reply": "The pharmacy counter is open now until 11:00 PM. Yes. CVS Pharmacy at 715 Morrissey Boulevard in Dorchester is open now, about 3.7 miles from ZIP code 02111. Th",
-      "tokens_line": "This answer used 10,198 tokens, about $0.0011."
-    },
-    {
-      "step": "asked through the website: Is Concerta 18 mg in shortage? Which pharmacy has it?",
-      "passed": true,
-      "reply": "Yes. The FDA lists Concerta 18 mg extended-release tablets as in shortage, though some makers may still have it. I can’t identify which pharmacies have this con",
-      "tokens_line": "This answer used 8,864 tokens, about $0.0009."
-    },
-    {
-      "step": "asked through the website: Is the CVS at South Station open on weekends?",
-      "passed": true,
-      "reply": "The pharmacy counter is closed both days, so you can’t pick up prescriptions there on weekends. Call to confirm, especially around holidays. Store hours (the ph",
-      "tokens_line": "This answer used 9,758 tokens, about $0.0009."
-    },
-    {
-      "step": "answer shows pharmacy cards and a call script",
-      "passed": true,
-      "cards": 4,
-      "script": true
-    },
-    {
-      "step": "pharmacy card has tap-to-call and directions links",
-      "passed": true
-    },
-    {
-      "step": "tokens and cost line shown",
-      "passed": true
-    },
-    {
-      "step": "no key or owner email visible: answer",
-      "passed": true
-    },
-    {
-      "step": "pharmacies list with filters and map",
-      "passed": true,
-      "all": 20,
-      "delivery": 14
-    },
-    {
-      "step": "no key or owner email visible: 09_pharmacies_list_and_map",
-      "passed": true
-    },
-    {
-      "step": "pharmacy page: counter hours first, store hours beside it",
-      "passed": true
-    },
-    {
-      "step": "no key or owner email visible: 05_pharmacy_page",
-      "passed": true
-    },
-    {
-      "step": "shortage watch: 25 drugs, controlled show call script only",
-      "passed": true
-    },
-    {
-      "step": "no key or owner email visible: 06_shortage_watch",
-      "passed": true
-    },
-    {
-      "step": "vaccines: pharmacies, Massachusetts rule, large-employer warning",
-      "passed": true
-    },
-    {
-      "step": "no key or owner email visible: 07_vaccines",
-      "passed": true
-    },
-    {
-      "step": "admin page hidden from visitors",
-      "passed": true
-    },
-    {
-      "step": "account pop-up appears only when posting, then the report form opens",
-      "passed": true
-    },
-    {
-      "step": "stock report posted and shown",
-      "passed": true
-    },
-    {
-      "step": "review posted with a friendly moderation message",
-      "passed": true,
-      "message": "Thank you! Your review is published."
-    },
-    {
-      "step": "test account and its posts deleted; real database empty again",
-      "passed": true,
-      "deleted": {
-        "deleted": true,
-        "stock_reports_deleted": 1,
-        "reviews_deleted": 1
-      },
-      "counts": {
-        "users": 0,
-        "sessions": 0,
-        "stock_reports": 0,
-        "reviews": 0
-      }
-    },
-    {
-      "step": "Easy view: larger text and remembered in the browser",
-      "passed": true,
-      "font_px": 22
-    },
-    {
-      "step": "microphone button shown only when the browser supports it",
-      "passed": true,
-      "supported": true
-    },
-    {
-      "step": "keyboard focus is visible",
-      "passed": true,
-      "outline": "solid"
-    },
-    {
-      "step": "no key or owner email visible: 02_home_easy_view",
-      "passed": true
-    },
-    {
-      "step": "Easy view: read-aloud button on the answer",
-      "passed": true
-    },
-    {
-      "step": "Spanish switch changes the site text",
-      "passed": true
-    },
-    {
-      "step": "no key or owner email visible: 03_home_spanish",
-      "passed": true
-    },
-    {
-      "step": "agent reply is in Spanish",
-      "passed": true,
-      "reply": "CVS Pharmacy en 210 Border Street ofrece entrega a domicilio. Está cerrada ahora y abre mañana a las 9:00 a. m. No encontré detalles sobre el costo ni las condi"
-    },
-    {
-      "step": "phone width: no sideways scrolling",
-      "passed": true
-    },
-    {
-      "step": "no key or owner email visible: 08_home_phone",
-      "passed": true
-    }
-  ]
+ "run_at": "2026-10-23T23:15:47",
+ "base_url": "http://127.0.0.1:8000",
+ "browser": "Chromium (Playwright)",
+ "passed": 13,
+ "failed": 0,
+ "checks": [
+  {
+   "n": 1,
+   "check": "Create account, log in, log out, delete account",
+   "result": "PASS",
+   "notes": "typed with real key presses; deleted account can no longer log in",
+   "seconds": 6.6
+  },
+  {
+   "n": 2,
+   "check": "Full journey: Ozempic 0.5 mg, 02124, MassHealth, results, sort/filter, report, review, Community",
+   "result": "PASS",
+   "notes": "report + review for Walgreens (walgreens-3135) shown on results and Community",
+   "seconds": 10.9
+  },
+  {
+   "n": 3,
+   "check": "Concerta 18 mg: no stock reports or report buttons, with the explanation",
+   "result": "PASS",
+   "notes": "shortage status, hours, and call script shown; no reports, no report buttons",
+   "seconds": 1.7
+  },
+  {
+   "n": 4,
+   "check": "Medicare, then Blue Cross: coverage, plan finder link, and member services number change",
+   "result": "PASS",
+   "notes": "Medicare: Plan Finder + 1-800-MEDICARE; Blue Cross: BCBS locator + 1-800-262-2583",
+   "seconds": 1.4
+  },
+  {
+   "n": 5,
+   "check": "A closed pharmacy shows 'Closed, opens at…' and an open alternative",
+   "result": "PASS",
+   "notes": "'Closed, opens Monday 7:00 AM' + open alternative (checked at Sat 1:45 PM)",
+   "seconds": 1.0
+  },
+  {
+   "n": 6,
+   "check": "Shortage watch loads in under 2 seconds, and its buttons work",
+   "result": "PASS",
+   "notes": "loaded in 0.21 s; call script, report form (pre-filled), and results link work",
+   "seconds": 1.0
+  },
+  {
+   "n": 7,
+   "check": "Pharmacy, Vaccines, Community, and About & Privacy pages show the right content",
+   "result": "PASS",
+   "notes": "all four pages load with their key sections",
+   "seconds": 3.6
+  },
+  {
+   "n": 8,
+   "check": "'Print / share for my doctor' makes a clean printable page",
+   "result": "PASS",
+   "notes": "print view hides site chrome; no ZIP or email; PDF saved to output/print_summary_sample.pdf",
+   "seconds": 1.6
+  },
+  {
+   "n": 9,
+   "check": "The chat still answers, and its call script shows the report buttons",
+   "result": "PASS",
+   "notes": "This answer used 8,628 tokens, about $0.0008.",
+   "seconds": 12.6
+  },
+  {
+   "n": 10,
+   "check": "Emergency message in English and Spanish, before any AI call",
+   "result": "PASS",
+   "notes": "0 model requests, 0 tokens; audit trail logs 'emergency message shown' for both",
+   "seconds": 2.0
+  },
+  {
+   "n": 11,
+   "check": "English and Español both selectable, and the whole site switches",
+   "result": "PASS",
+   "notes": "7 pages checked in Spanish, then back to English",
+   "seconds": 1.9
+  },
+  {
+   "n": 12,
+   "check": "Easy view on the results page, and every page at phone width",
+   "result": "PASS",
+   "notes": "Easy view: 22px text, 68px buttons; 11 pages x 2 views at 390px, no sideways scroll",
+   "seconds": 18.6
+  },
+  {
+   "n": 13,
+   "check": "Sample data: 'Sample' badges and Community note; SHOW_SAMPLE_DATA off hides it",
+   "result": "PASS",
+   "notes": "12 sample items, each badged; real counts kept apart; with SHOW_SAMPLE_DATA off: no samples, no note",
+   "seconds": 7.1
+  }
+ ],
+ "cleanup": {
+  "test_accounts_created": 2,
+  "rows_left_in_user_db": {
+   "users": 0,
+   "sessions": 0,
+   "stock_reports": 0,
+   "reviews": 0,
+   "login_failures": 0
+  }
+ },
+ "screenshots": [
+  "01_home.png",
+  "02_home_easy_view.png",
+  "03_home_spanish.png",
+  "04_drug_suggestions.png",
+  "05_results_page.png",
+  "05b_results_blue_cross.png",
+  "05c_closed_with_alternative.png",
+  "06_report_posted_on_card.png",
+  "07_review_on_results_card.png",
+  "08_community.png",
+  "09_emergency_english.png",
+  "10_emergency_spanish.png",
+  "11_pharmacy_page.png",
+  "12_shortage_watch.png",
+  "13_vaccines.png",
+  "14_about_privacy.png",
+  "15_print_summary.png",
+  "16_results_concerta_controlled.png",
+  "17_results_easy_view.png",
+  "18_phone_home.png",
+  "19_phone_results.png",
+  "20_chat_answer_with_report_buttons.png",
+  "21_account_menu.png"
+ ]
 }

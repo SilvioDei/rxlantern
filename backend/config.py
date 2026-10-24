@@ -31,6 +31,11 @@ MAX_TOKENS_PER_QUESTION = 60_000          # input + output, all agents together
 DAILY_TOKEN_BUDGET = 3_000_000            # whole app, per Boston calendar day
 MAX_QUESTIONS_PER_VISITOR_PER_HOUR = 30
 
+# Sample stock reports and reviews for demonstration (graders start with an empty database). They are never saved
+# to the database, never counted with real posts, and always shown with a "Sample" badge. Turn off with False
+# (or set RXLANTERN_SHOW_SAMPLE_DATA=0 in the environment).
+SHOW_SAMPLE_DATA = os.getenv("RXLANTERN_SHOW_SAMPLE_DATA", "1").strip().lower() not in ("0", "false", "no", "off")
+
 # Who can approve or reject comments in the moderation queue. Kept out of the public repo:
 # set RXLANTERN_ADMIN_EMAILS in your .env (comma-separated), e.g. RXLANTERN_ADMIN_EMAILS=you@example.com
 ADMIN_EMAILS_ENV = "RXLANTERN_ADMIN_EMAILS"

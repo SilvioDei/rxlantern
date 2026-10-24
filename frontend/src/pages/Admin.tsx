@@ -15,6 +15,7 @@ export function Admin() {
   return (
     <>
       <h1>{t("adminTitle")}</h1>
+      {!items && <p className="muted" role="status">{t("loading")}</p>}
       {items && items.length === 0 && <p className="muted">{t("adminEmpty")}</p>}
       {items?.map((r) => (
         <article key={r.id} className="card">
