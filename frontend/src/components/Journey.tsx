@@ -90,9 +90,10 @@ export function TransferHost() {
 }
 
 // ----------------------------------------------------------------------------- before you go + send it here
-export function BeforeYouGo({ drugName, hoursToday }: { drugName?: string | null; hoursToday?: string | null }) {
+export function BeforeYouGo({ drugName, vaccineName, hoursToday }: { drugName?: string | null; vaccineName?: string | null; hoursToday?: string | null }) {
   const { t } = useApp();
-  const items = [t("bygInsurance"), t("bygId"), drugName ? t("bygMedicine", { drug: drugName }) : t("bygMedicineAny"),
+  const items = [t("bygInsurance"), vaccineName ? t("bygIdVaccine") : t("bygId"),
+    vaccineName ? t("bygVaccine", { vaccine: vaccineName }) : drugName ? t("bygMedicine", { drug: drugName }) : t("bygMedicineAny"),
     hoursToday ? t("bygHours", { hours: hoursToday }) : t("bygHoursCards")];
   return (
     <section className="card byg-card" aria-labelledby="byg-title">
@@ -103,10 +104,11 @@ export function BeforeYouGo({ drugName, hoursToday }: { drugName?: string | null
   );
 }
 
-export function SendHereLink({ pharmacyId, drugId }: { pharmacyId: string; drugId?: string | null }) {
+export function SendHereLink({ pharmacyId, drugId, vaccineId }: { pharmacyId: string; drugId?: string | null; vaccineId?: string | null }) {
   const { t } = useApp();
+  const q = vaccineId ? `?vaccine=${vaccineId}` : drugId ? `?drug=${drugId}` : "";
   return (
-    <Link className="btn ghost send-here-btn" to={`/send-here/${pharmacyId}${drugId ? `?drug=${drugId}` : ""}`}>
+    <Link className="btn ghost send-here-btn" to={`/send-here/${pharmacyId}${q}`}>
       <span aria-hidden="true">🩺</span> {t("sendHereButton")}</Link>
   );
 }

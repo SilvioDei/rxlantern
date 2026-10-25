@@ -1,0 +1,15 @@
+{
+  "about": "Vaccines a pharmacy chain lists on its own national vaccine page. A store is shown as 'listed by the chain' only when its own store page does not name the vaccine. The chain page itself says to confirm availability at the store.",
+  "chains": [
+    {
+      "chain": "CVS",
+      "name_contains": "CVS",
+      "source": "https://www.cvs.com/immunizations/get-vaccinated",
+      "checked_date": "2026-10-24",
+      "says": "Scheduling an appointment online or through the CVS Health app is recommended to help reduce wait times and confirm vaccine availability at your preferred CVS Pharmacy location. Walk-ins may be available, depending on vaccine availability and location.",
+      "vaccine_ids": ["covid19", "flu", "hepa", "hepb", "pneumococcal", "rsv", "shingles", "tdap"],
+      "other_vaccines_named": ["HPV", "MMR", "Meningitis (meningococcal)", "Mpox", "Polio", "Varicella (chickenpox)"],
+      "travel": "The page links to CVS travel vaccines but does not name typhoid or yellow fever on this page: not found."
+    }
+  ]
+}

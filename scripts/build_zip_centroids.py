@@ -23,6 +23,14 @@ REL_URL = "https://www2.census.gov/geo/docs/maps-data/data/rel2020/zcta520/tab20
 GAZ_URL = "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_zcta_national.zip"
 BOSTON_PLACE = "2507000"
 MIN_SHARE = 0.10  # keep a ZCTA if at least 10% of its land is inside Boston
+# Nearby towns where patients who use Boston pharmacies often live or work (share of land in Boston = 0). Added
+# 2026-10-24 after a patient searched from Randolph (02368).
+NEARBY = {"02368": "Randolph", "02186": "Milton", "02169": "Quincy", "02170": "Quincy", "02171": "Quincy",
+          "02184": "Braintree", "02021": "Canton", "02026": "Dedham", "02445": "Brookline", "02446": "Brookline",
+          "02138": "Cambridge", "02139": "Cambridge", "02140": "Cambridge", "02141": "Cambridge", "02142": "Cambridge",
+          "02143": "Somerville", "02144": "Somerville", "02145": "Somerville", "02148": "Malden", "02149": "Everett",
+          "02150": "Chelsea", "02151": "Revere", "02152": "Winthrop", "02155": "Medford", "02458": "Newton",
+          "02459": "Newton", "02460": "Newton", "02472": "Watertown", "02492": "Needham"}
 
 
 def fetch(url: str) -> bytes:
@@ -42,6 +50,8 @@ def main() -> None:
             total = float(r["AREALAND_ZCTA5_20"] or 0)
             share[r["GEOID_ZCTA5_20"]] = land / total if total else 0.0
     keep = {z: s for z, s in share.items() if s >= MIN_SHARE}
+    for z in NEARBY:
+        keep.setdefault(z, 0.0)
 
     gz = zipfile.ZipFile(io.BytesIO(fetch(GAZ_URL)))
     txt = gz.read(gz.namelist()[0]).decode("utf-8")
@@ -60,7 +70,7 @@ def main() -> None:
         w = csv.DictWriter(f, fieldnames=list(out[0]))
         w.writeheader()
         w.writerows(out)
-    print(f"{len(out)} Boston ZIP centers -> {OUT}")
+    print(f"{len(out)} Boston and nearby ZIP centers -> {OUT}")
     print(" ".join(x["zip"] for x in out))
 
 

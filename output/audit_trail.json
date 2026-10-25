@@ -22976,6 +22976,2691 @@
    },
    "safety_rules_fired": [],
    "reply_preview": "No pharmacy counters near 02111 are open right now. The nearest options open today at 9:00 AM are CVS at 631 Washington St and South Cove Community Health Center Pharmacy at 256 Harrison Ave. Holiday "
+  },
+  {
+   "run_id": "04a65dec98a9",
+   "timestamp": "2026-10-24T22:15:23-04:00",
+   "type": "moderation",
+   "review_id": 1,
+   "pharmacy_id": "cvs-5464",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes the patient's own positive experience at the pharmacy.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 634,
+     "cached_input_tokens": 0,
+     "output_tokens": 79,
+     "total_tokens": 713,
+     "cost_usd": 0.000103,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "e1e0b42b5cd5",
+   "timestamp": "2026-10-24T22:18:42-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "where can i get a covid shot?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies in Boston, Massachusetts that offer COVID-19 shots. ZIP code or neighborhood was not provided; return suitable Boston-area locations if possible."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "Boston, Massachusetts",
+      "vaccine": "COVID-19"
+     },
+     "result": "message: Neighborhood not found. Please share a Boston ZIP code."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "Downtown, Boston",
+      "vaccine": "COVID-19"
+     },
+     "result": "5 pharmacies: walgreens-15390, cvs-10174, cvs-5874, cvs-1217, walgreens-5756"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "Downtown, Boston"
+     },
+     "result": "3 pharmacies: walgreens-15390, cvs-10174, cvs-5874"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "I couldn’t search all of Boston without a ZIP code or neighborhood, so I used Downtown as an example. These pharmacies are listed for COVID-19 shots: CVS Pharmacy, 700 Atlantic Ave (617) 737-7232, about 0.2 miles away; CVS Pharmacy, 631 Washington St (617) 338-0128, about 0.3 miles away; Walgreen...",
+     "not_found": [
+      "A citywide Boston search could not be completed without a ZIP code or neighborhood; Downtown was used as an example.",
+      "Other pharmacies may offer COVID-19 shots; the search only lists pharmacies whose own page names the vaccine.",
+      "No matching pharmacy counter is open right now near Downtown."
+     ],
+     "warnings": [
+      "The vaccine listing is not a promise that a particular location can vaccinate you at your preferred time. Call or book online to confirm."
+     ],
+     "tokens": {
+      "requests": 4,
+      "input_tokens": 8196,
+      "cached_input_tokens": 4735,
+      "output_tokens": 1131,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 12213,
+     "cached_input_tokens": 6135,
+     "output_tokens": 1821,
+     "total_tokens": 14034,
+     "web_searches": 0,
+     "model_requests": 6,
+     "tool_calls": 4,
+     "cost_usd": 0.00158
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 4017,
+      "cached_input_tokens": 1400,
+      "output_tokens": 690,
+      "web_searches": 0,
+      "cost_usd": 0.000621
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 4,
+      "input_tokens": 8196,
+      "cached_input_tokens": 4735,
+      "output_tokens": 1131,
+      "web_searches": 0,
+      "cost_usd": 0.000959
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "Downtown Boston pharmacies listed for COVID shots include the CVS at 631 Washington St, which opens tomorrow at 10:00 AM, and the CVS at 587 Boylston St, which opens tomorrow at 11:00 AM. They are clo"
+  },
+  {
+   "run_id": "b8cffac21eb3",
+   "timestamp": "2026-10-24T22:21:18-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "where can i get a covid shot? — Dorchester",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find places in Dorchester, Boston where a patient can get a COVID shot; include pharmacy names, addresses, availability/appointments if known, vaccine offerings, and relevant Saturday or current hours if returned. ZIP code not provided."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "Dorchester, Boston",
+      "vaccine": "COVID-19"
+     },
+     "result": "5 pharmacies: community-care-pharmacy, cvs-2283, walgreens-3135, cvs-2070, cvs-1264"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_vaccine",
+     "input": {
+      "pharmacy_id": "community-care-pharmacy",
+      "vaccine": "COVID-19"
+     },
+     "result": "Community Care Pharmacy (community-care-pharmacy)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "community-care-pharmacy"
+     },
+     "result": "Community Care Pharmacy (community-care-pharmacy)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_vaccine",
+     "input": {
+      "pharmacy_id": "cvs-2283",
+      "vaccine": "COVID-19"
+     },
+     "result": "CVS Pharmacy (cvs-2283)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-2283"
+     },
+     "result": "CVS Pharmacy (cvs-2283)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "Dorchester, Boston"
+     },
+     "result": "3 pharmacies: community-care-pharmacy, cvs-2283, stopandshop-0429"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "Two Dorchester pharmacies list the COVID-19 vaccine; the listing does not confirm stock today. At 10:21 PM Saturday, both counters are closed, and no nearby Dorchester pharmacy counter was found open. Community Care Pharmacy opens Monday at 9:00 AM; CVS at 715 Morrissey opens Sunday at 8:00 AM. C...",
+     "not_found": [
+      "Whether a COVID-19 dose is in stock today and whether an appointment is required; contact the pharmacies or use the booking links to confirm."
+     ],
+     "warnings": [
+      "Do not treat the vaccine listing as confirmation of stock or same-day availability.",
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 11379,
+      "cached_input_tokens": 3743,
+      "output_tokens": 1656,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 15346,
+     "cached_input_tokens": 3743,
+     "output_tokens": 2373,
+     "total_tokens": 17719,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 7,
+     "cost_usd": 0.002384
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3967,
+      "cached_input_tokens": 0,
+      "output_tokens": 717,
+      "web_searches": 0,
+      "cost_usd": 0.000755
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 11379,
+      "cached_input_tokens": 3743,
+      "output_tokens": 1656,
+      "web_searches": 0,
+      "cost_usd": 0.001629
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "Two Dorchester pharmacies list COVID-19 shots: Community Care Pharmacy and CVS at 715 Morrissey Boulevard. Both pharmacy counters are closed now; CVS opens Sunday at 8:00 AM, and Community Care opens "
+  },
+  {
+   "run_id": "3b04d119496e",
+   "timestamp": "2026-10-24T22:22:38-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "where can i get a covid shot? — Chinatown",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies in or near Chinatown, Boston where a patient can get a COVID shot. Include current vaccine offering and location; today is Saturday October 24, 2026 at 10:21 PM Boston time, so note if any are open now and weekend hours."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacies",
+     "input": {
+      "place": "Chinatown, Boston",
+      "vaccine": "COVID-19"
+     },
+     "result": "5 pharmacies: cvs-5874, cvs-10174, walgreens-15390, cvs-1217, walgreens-5756"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_vaccine",
+     "input": {
+      "pharmacy_id": "cvs-5874",
+      "vaccine": "COVID-19"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "open_status",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874), closed now"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_vaccine",
+     "input": {
+      "pharmacy_id": "cvs-10174",
+      "vaccine": "COVID-19"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "open_status",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174), closed now"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 34975,
+     "cached_input_tokens": 18996,
+     "output_tokens": 2793,
+     "total_tokens": 37768,
+     "web_searches": 0,
+     "model_requests": 6,
+     "tool_calls": 15,
+     "cost_usd": 0.003184
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 4558,
+      "cached_input_tokens": 1388,
+      "output_tokens": 612,
+      "web_searches": 0,
+      "cost_usd": 0.000637
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 4,
+      "input_tokens": 30417,
+      "cached_input_tokens": 17608,
+      "output_tokens": 2181,
+      "web_searches": 0,
+      "cost_usd": 0.002547
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "The closest option listed is CVS at 631 Washington St, about 0.2 miles from Chinatown. Its pharmacy counter is closed now and opens Sunday at 10:00 AM; COVID-19 vaccination is listed there, but doses "
+  },
+  {
+   "run_id": "b02b128565b2",
+   "timestamp": "2026-10-24T22:23:20-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Does the CVS on Morrissey Blvd have the hepatitis B vaccine, and is it covered?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Does the CVS on Morrissey Blvd in Boston offer the hepatitis B vaccine? Patient asks about this specific pharmacy; find location and vaccine offering."
+    },
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Is the hepatitis B vaccine covered under MassHealth in Massachusetts? Include any relevant limits or large-employer warning if returned."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "vaccine_coverage",
+     "input": {
+      "vaccine": "hepatitis B",
+      "insurance_type": "masshealth"
+     },
+     "result": "vaccine=Hepatitis B, group=routine, checked_date=2026-10-23, warning=Vaccine rules changed in 2025-2026. Cove"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacy",
+     "input": {
+      "description": "CVS on Morrissey Blvd in Boston"
+     },
+     "result": "CVS Pharmacy (cvs-2283)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_vaccine",
+     "input": {
+      "pharmacy_id": "cvs-2283",
+      "vaccine": "hepatitis B"
+     },
+     "result": "CVS Pharmacy (cvs-2283)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "I found the CVS Pharmacy at 715 Morrissey Boulevard, Dorchester. Hepatitis B is listed on CVS’s national vaccine page, but not on this store’s own page—so please call or book online to confirm this location offers it. Phone: (617) 822-1307. Booking: https://www.cvs.com/immunizations/get-vaccinated",
+     "not_found": [],
+     "warnings": [
+      "This listing does not confirm vaccine availability at this specific store; call or book online first."
+     ],
+     "tokens": {
+      "requests": 4,
+      "input_tokens": 6082,
+      "cached_input_tokens": 2498,
+      "output_tokens": 404,
+      "web_searches": 0
+     }
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "Yes. Hepatitis B vaccine is listed on the MassHealth Drug List with no prior authorization. MassHealth covers vaccines according to Massachusetts DPH guidelines. The tool did not return a large-employer warning or specific coverage limits.",
+     "not_found": [],
+     "warnings": [
+      "Vaccine rules changed in 2025–2026, and coverage can differ by plan."
+     ],
+     "tokens": {
+      "requests": 5,
+      "input_tokens": 7922,
+      "cached_input_tokens": 4001,
+      "output_tokens": 593,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 11656,
+     "cached_input_tokens": 5413,
+     "output_tokens": 1113,
+     "total_tokens": 12769,
+     "web_searches": 0,
+     "model_requests": 7,
+     "tool_calls": 5,
+     "cost_usd": 0.001235
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": -2,
+      "input_tokens": -2348,
+      "cached_input_tokens": -1086,
+      "output_tokens": 116,
+      "web_searches": 0,
+      "cost_usd": 4.7e-05
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 4,
+      "input_tokens": 6082,
+      "cached_input_tokens": 2498,
+      "output_tokens": 404,
+      "web_searches": 0,
+      "cost_usd": 0.000585
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 5,
+      "input_tokens": 7922,
+      "cached_input_tokens": 4001,
+      "output_tokens": 593,
+      "web_searches": 0,
+      "cost_usd": 0.000729
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "CVS lists the hepatitis B vaccine on its national vaccine page, but this specific store’s page does not confirm it offers the vaccine. Please call or book online to confirm the Dorchester location has"
+  },
+  {
+   "run_id": "75a4832006f5",
+   "timestamp": "2026-10-24T22:24:27-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Does the CVS on Morrissey Blvd have the hepatitis B vaccine, and is it covered?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Does the CVS on Morrissey Blvd in Boston offer the hepatitis B vaccine? Patient asks whether this specific pharmacy has/offers it. ZIP code not provided."
+    },
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Is the hepatitis B vaccine covered for a patient with MassHealth in Massachusetts? Include any caveats or plan-specific limits."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "vaccine_coverage",
+     "input": {
+      "vaccine": "hepatitis B",
+      "insurance_type": "masshealth"
+     },
+     "result": "vaccine=Hepatitis B, group=routine, checked_date=2026-10-23, warning=Vaccine rules changed in 2025-2026. Cove"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacy",
+     "input": {
+      "description": "the CVS on Morrissey Blvd in Boston"
+     },
+     "result": "CVS Pharmacy (cvs-2283)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_vaccine",
+     "input": {
+      "pharmacy_id": "cvs-2283",
+      "vaccine": "hepatitis B"
+     },
+     "result": "CVS Pharmacy (cvs-2283)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "Yes. Hepatitis B vaccine is listed on the MassHealth Drug List and does not need prior authorization. MassHealth covers vaccines according to Massachusetts DPH guidelines. Most adults with Medicaid get CDC-recommended vaccines at no cost, but coverage can differ by plan, so confirm with MassHealt...",
+     "not_found": [],
+     "warnings": [
+      "Vaccine rules changed in 2025–2026; coverage can differ by plan."
+     ],
+     "tokens": {
+      "requests": 4,
+      "input_tokens": 6225,
+      "cached_input_tokens": 2686,
+      "output_tokens": 298,
+      "web_searches": 0
+     }
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "Hepatitis B is listed on CVS’s national vaccine page, but not on this store’s own page. That does not confirm this location offers it; please call or book online to check first. CVS Pharmacy is at 715 Morrissey Boulevard, Dorchester, MA 02122. Phone: (617) 822-1307. Booking: https://www.cvs.com/i...",
+     "not_found": [],
+     "warnings": [
+      "The national listing does not confirm this store's offering or current stock; call or book online to confirm."
+     ],
+     "tokens": {
+      "requests": 5,
+      "input_tokens": 7931,
+      "cached_input_tokens": 4007,
+      "output_tokens": 625,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 11664,
+     "cached_input_tokens": 5419,
+     "output_tokens": 1150,
+     "total_tokens": 12814,
+     "web_searches": 0,
+     "model_requests": 7,
+     "tool_calls": 5,
+     "cost_usd": 0.001254
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": -2,
+      "input_tokens": -2492,
+      "cached_input_tokens": -1274,
+      "output_tokens": 227,
+      "web_searches": 0,
+      "cost_usd": 0.000101
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 4,
+      "input_tokens": 6225,
+      "cached_input_tokens": 2686,
+      "output_tokens": 298,
+      "web_searches": 0,
+      "cost_usd": 0.00053
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 5,
+      "input_tokens": 7931,
+      "cached_input_tokens": 4007,
+      "output_tokens": 625,
+      "web_searches": 0,
+      "cost_usd": 0.000745
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "MassHealth lists the hepatitis B vaccine, with no prior authorization, and covers vaccines under Massachusetts DPH guidelines; coverage can still differ by plan, so please confirm with your plan. CVS "
+  },
+  {
+   "run_id": "0b2c81b34db3",
+   "timestamp": "2026-10-24T22:25:12-04:00",
+   "type": "moderation",
+   "review_id": 2,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes a positive experience at the pharmacy.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 619,
+     "cached_input_tokens": 0,
+     "output_tokens": 43,
+     "total_tokens": 662,
+     "cost_usd": 8.3e-05,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "b3bc05a2e0df",
+   "timestamp": "2026-10-24T22:25:53-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Can you give me a call script to ask a pharmacy if they have amoxicillin 500 mg capsules?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Please provide a patient-friendly call script to ask a pharmacy about availability of amoxicillin 500 mg capsules. Patient has MassHealth. Do not provide medical advice."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "lookup_drug",
+     "input": {
+      "name": "amoxicillin 500 mg capsules"
+     },
+     "result": "found=True, drug_id=amoxicillin_500, name=Amoxicillin 500 mg capsule, generic_name=amoxicillin"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "call_script",
+     "input": {
+      "drug": "amoxicillin 500 mg capsules"
+     },
+     "result": "call_script=Hi. I'm calling about Amoxicillin 500 mg, source=RxLantern call script template, checked_date=2026-10-24"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "You can say: “Hi. I’m calling about amoxicillin 500 mg capsules. The quantity is the amount on my prescription. Do you have it in stock today? Do you take my insurance? I can have my insurance card ready so you can check my copay.”",
+     "not_found": [],
+     "warnings": [
+      "Call the pharmacy to confirm availability; stock can change."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 5296,
+      "cached_input_tokens": 3162,
+      "output_tokens": 302,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 8635,
+     "cached_input_tokens": 4579,
+     "output_tokens": 486,
+     "total_tokens": 9121,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 3,
+     "cost_usd": 0.000694
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3339,
+      "cached_input_tokens": 1417,
+      "output_tokens": 184,
+      "web_searches": 0,
+      "cost_usd": 0.000298
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 3,
+      "input_tokens": 5296,
+      "cached_input_tokens": 3162,
+      "output_tokens": 302,
+      "web_searches": 0,
+      "cost_usd": 0.000396
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "Here’s a simple script you can use: “Hi, I’m calling about amoxicillin 500 mg capsules. Do you have them in stock today? Do you take MassHealth, and can you check my copay? The quantity is the amount "
+  },
+  {
+   "run_id": "785c72bf9b0c",
+   "timestamp": "2026-10-24T22:25:55-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "I took too many pills",
+   "stop_reason": "emergency message shown",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "emergency message shown (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "emergency message shown (rule in code, no model call)"
+   ],
+   "reply_preview": "If this is an emergency, call 911. For a possible poisoning or overdose, call Poison Control at 1-800-222-1222."
+  },
+  {
+   "run_id": "61a4a44fb221",
+   "timestamp": "2026-10-24T22:25:55-04:00",
+   "language": "es",
+   "mode": "normal",
+   "question_redacted": "Tomé demasiadas pastillas y no puedo respirar",
+   "stop_reason": "emergency message shown",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "emergency message shown (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "emergency message shown (rule in code, no model call)"
+   ],
+   "reply_preview": "Si es una emergencia, llame al 911. Para un posible envenenamiento o sobredosis, llame a Poison Control (Control de Envenenamientos) al 1-800-222-1222."
+  },
+  {
+   "run_id": "cae29512bf06",
+   "timestamp": "2026-10-24T22:27:28-04:00",
+   "type": "moderation",
+   "review_id": 2,
+   "pharmacy_id": "bmc-yawkey",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "ac0f4d887209",
+   "timestamp": "2026-10-24T22:27:30-04:00",
+   "type": "moderation",
+   "review_id": 3,
+   "pharmacy_id": "gary-drug",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "2c4b0d4bb789",
+   "timestamp": "2026-10-24T22:27:31-04:00",
+   "type": "moderation",
+   "review_id": 4,
+   "pharmacy_id": "gary-drug",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "4120916b63f1",
+   "timestamp": "2026-10-24T22:27:32-04:00",
+   "type": "moderation",
+   "review_id": 5,
+   "pharmacy_id": "gary-drug",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "3c6b6c690c2a",
+   "timestamp": "2026-10-24T22:27:55-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near ZIP code 02111 in Boston that are open right now. Today is Saturday, October 24, 2026, 10:27 PM Boston time. Include pharmacy counter hours and location details."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston, MA"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "scchc-pharmacy"
+     },
+     "result": "South Cove Community Health Center Pharmacy (formerly Tai Tung Pharmacy) (scchc-pharmacy)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "There are no pharmacy counters open right now near 02111 (checked Saturday, October 24 at 10:27 PM Boston time). The nearest listed options are closed:\n\n• CVS Pharmacy, 631 Washington St, Chinatown — about 0.2 miles away; (617) 338-0128. Counter hours: Saturday 9 AM–7 PM, Sunday 10 AM–7 PM. Opens...",
+     "not_found": [
+      "No pharmacy counter is open right now near 02111."
+     ],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 10696,
+      "cached_input_tokens": 2967,
+      "output_tokens": 998,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 14514,
+     "cached_input_tokens": 4371,
+     "output_tokens": 1438,
+     "total_tokens": 15952,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 5,
+     "cost_usd": 0.001777
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3818,
+      "cached_input_tokens": 1404,
+      "output_tokens": 440,
+      "web_searches": 0,
+      "cost_usd": 0.000475
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 10696,
+      "cached_input_tokens": 2967,
+      "output_tokens": 998,
+      "web_searches": 0,
+      "cost_usd": 0.001302
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "No pharmacy counter near 02111 is open right now. The nearest listed option is CVS at 631 Washington St; it opens tomorrow at 10:00 AM. South Cove Pharmacy opens Monday at 9:00 AM. Hours can change, s"
+  },
+  {
+   "run_id": "86be759f5337",
+   "timestamp": "2026-10-24T22:28:28-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies open right now near ZIP code 02111 in Boston. Today is Saturday, October 24, 2026 at 10:28 PM America/New_York. Include pharmacy counter hours, not just store hours, and any pharmacy IDs."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "scchc-pharmacy"
+     },
+     "result": "South Cove Community Health Center Pharmacy (formerly Tai Tung Pharmacy) (scchc-pharmacy)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "There are no pharmacy counters open right now near 02111 (Saturday, Oct. 24, 2026, 10:28 PM). The closest listed pharmacies are all closed:\n\n- CVS, 631 Washington St (about 0.2 miles): counter hours Saturday 9 AM–7 PM; Sunday 10 AM–7 PM. Opens tomorrow at 10 AM. ID: cvs-5874.\n- South Cove Communi...",
+     "not_found": [],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 10768,
+      "cached_input_tokens": 2979,
+      "output_tokens": 984,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 14518,
+     "cached_input_tokens": 4383,
+     "output_tokens": 1429,
+     "total_tokens": 15947,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 5,
+     "cost_usd": 0.001772
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3750,
+      "cached_input_tokens": 1404,
+      "output_tokens": 445,
+      "web_searches": 0,
+      "cost_usd": 0.000471
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 10768,
+      "cached_input_tokens": 2979,
+      "output_tokens": 984,
+      "web_searches": 0,
+      "cost_usd": 0.001301
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "There isn’t a pharmacy counter open right now near 02111. The closest listed option, CVS at 631 Washington St, opens tomorrow at 10:00 AM; its store is open until 11:00 PM, but the pharmacy counter is"
+  },
+  {
+   "run_id": "233e594c527d",
+   "timestamp": "2026-10-24T22:28:29-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies open right now near ZIP code 02111 in Boston. Today is Saturday, October 24, 2026 at 10:28 PM America/New_York. Include pharmacy counter hours, not just store hours, and any pharmacy IDs."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "scchc-pharmacy"
+     },
+     "result": "South Cove Community Health Center Pharmacy (formerly Tai Tung Pharmacy) (scchc-pharmacy)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "There are no pharmacy counters open right now near 02111 (Saturday, Oct. 24, 2026, 10:28 PM). The closest listed pharmacies are all closed:\n\n- CVS, 631 Washington St (about 0.2 miles): counter hours Saturday 9 AM–7 PM; Sunday 10 AM–7 PM. Opens tomorrow at 10 AM. ID: cvs-5874.\n- South Cove Communi...",
+     "not_found": [],
+     "warnings": [
+      "Holiday hours may be different. Call to confirm."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 10768,
+      "cached_input_tokens": 2979,
+      "output_tokens": 984,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 14518,
+     "cached_input_tokens": 4383,
+     "output_tokens": 1429,
+     "total_tokens": 15947,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 5,
+     "cost_usd": 0.001772
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3750,
+      "cached_input_tokens": 1404,
+      "output_tokens": 445,
+      "web_searches": 0,
+      "cost_usd": 0.000471
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 10768,
+      "cached_input_tokens": 2979,
+      "output_tokens": 984,
+      "web_searches": 0,
+      "cost_usd": 0.001301
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "There isn’t a pharmacy counter open right now near 02111. The closest listed option, CVS at 631 Washington St, opens tomorrow at 10:00 AM; its store is open until 11:00 PM, but the pharmacy counter is"
+  },
+  {
+   "run_id": "2f287a4506b3",
+   "timestamp": "2026-10-24T22:28:29-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "I took too many pills",
+   "stop_reason": "emergency message shown",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "emergency message shown (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "emergency message shown (rule in code, no model call)"
+   ],
+   "reply_preview": "If this is an emergency, call 911. For a possible poisoning or overdose, call Poison Control at 1-800-222-1222."
+  },
+  {
+   "run_id": "8280cd030ee9",
+   "timestamp": "2026-10-24T22:28:50-04:00",
+   "type": "moderation",
+   "review_id": 2,
+   "pharmacy_id": "bmc-yawkey",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "913479803c4a",
+   "timestamp": "2026-10-24T22:28:52-04:00",
+   "type": "moderation",
+   "review_id": 3,
+   "pharmacy_id": "gary-drug",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "736ecdfdef08",
+   "timestamp": "2026-10-24T22:28:53-04:00",
+   "type": "moderation",
+   "review_id": 4,
+   "pharmacy_id": "gary-drug",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "86ca070c1e9e",
+   "timestamp": "2026-10-24T22:28:53-04:00",
+   "type": "moderation",
+   "review_id": 5,
+   "pharmacy_id": "gary-drug",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "8d84025df75d",
+   "timestamp": "2026-10-24T22:29:30-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near ZIP code 02111 in Boston that are open right now. It is Saturday, October 24, 2026, 10:29 PM America/New_York. Provide pharmacy counter hours first, relevant store hours, IDs, and sources."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "scchc-pharmacy"
+     },
+     "result": "South Cove Community Health Center Pharmacy (formerly Tai Tung Pharmacy) (scchc-pharmacy)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "No pharmacy counters near ZIP 02111 were open at 10:29 PM on Saturday, October 24. The nearest pharmacies returned were all closed:\n\n- CVS, 631 Washington St (about 0.2 miles): Counter Saturday 9:00 AM–7:00 PM; Sunday 10:00 AM–7:00 PM. Store Saturday/Sunday 7:00 AM–11:00 PM. Closed now; counter o...",
+     "not_found": [
+      "No pharmacy counter open now near ZIP 02111.",
+      "South Cove Community Health Center Pharmacy store hours."
+     ],
+     "warnings": [
+      "Holiday hours may differ; call to confirm.",
+      "No nearby pharmacy that is open right now was returned by the tool."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 10789,
+      "cached_input_tokens": 2981,
+      "output_tokens": 1187,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 14618,
+     "cached_input_tokens": 4385,
+     "output_tokens": 1528,
+     "total_tokens": 16146,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 5,
+     "cost_usd": 0.001831
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3829,
+      "cached_input_tokens": 1404,
+      "output_tokens": 341,
+      "web_searches": 0,
+      "cost_usd": 0.000427
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 10789,
+      "cached_input_tokens": 2981,
+      "output_tokens": 1187,
+      "web_searches": 0,
+      "cost_usd": 0.001404
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "No pharmacy counters near 02111 are open right now. The nearby CVS at 631 Washington St opens tomorrow at 10:00 AM; its store is open later, but the pharmacy counter is closed. Holiday hours may diffe"
+  },
+  {
+   "run_id": "4ab3101e957c",
+   "timestamp": "2026-10-24T22:29:30-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies near ZIP code 02111 in Boston that are open right now. It is Saturday, October 24, 2026, 10:29 PM America/New_York. Provide pharmacy counter hours first, relevant store hours, IDs, and sources."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "scchc-pharmacy"
+     },
+     "result": "South Cove Community Health Center Pharmacy (formerly Tai Tung Pharmacy) (scchc-pharmacy)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-10174"
+     },
+     "result": "CVS Pharmacy (cvs-10174)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_details",
+     "input": {
+      "pharmacy_id": "cvs-5874"
+     },
+     "result": "CVS Pharmacy (cvs-5874)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "No pharmacy counters near ZIP 02111 were open at 10:29 PM on Saturday, October 24. The nearest pharmacies returned were all closed:\n\n- CVS, 631 Washington St (about 0.2 miles): Counter Saturday 9:00 AM–7:00 PM; Sunday 10:00 AM–7:00 PM. Store Saturday/Sunday 7:00 AM–11:00 PM. Closed now; counter o...",
+     "not_found": [
+      "No pharmacy counter open now near ZIP 02111.",
+      "South Cove Community Health Center Pharmacy store hours."
+     ],
+     "warnings": [
+      "Holiday hours may differ; call to confirm.",
+      "No nearby pharmacy that is open right now was returned by the tool."
+     ],
+     "tokens": {
+      "requests": 3,
+      "input_tokens": 10789,
+      "cached_input_tokens": 2981,
+      "output_tokens": 1187,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 14618,
+     "cached_input_tokens": 4385,
+     "output_tokens": 1528,
+     "total_tokens": 16146,
+     "web_searches": 0,
+     "model_requests": 5,
+     "tool_calls": 5,
+     "cost_usd": 0.001831
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 2,
+      "input_tokens": 3829,
+      "cached_input_tokens": 1404,
+      "output_tokens": 341,
+      "web_searches": 0,
+      "cost_usd": 0.000427
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 3,
+      "input_tokens": 10789,
+      "cached_input_tokens": 2981,
+      "output_tokens": 1187,
+      "web_searches": 0,
+      "cost_usd": 0.001404
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "No pharmacy counters near 02111 are open right now. The nearby CVS at 631 Washington St opens tomorrow at 10:00 AM; its store is open later, but the pharmacy counter is closed. Holiday hours may diffe"
+  },
+  {
+   "run_id": "24e032e8a20c",
+   "timestamp": "2026-10-24T22:29:30-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "I took too many pills",
+   "stop_reason": "emergency message shown",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "emergency message shown (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "emergency message shown (rule in code, no model call)"
+   ],
+   "reply_preview": "If this is an emergency, call 911. For a possible poisoning or overdose, call Poison Control at 1-800-222-1222."
+  },
+  {
+   "run_id": "200c9d23cb96",
+   "timestamp": "2026-10-24T22:30:59-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Does the CVS on Morrissey Blvd have the hepatitis B vaccine, and is it covered?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Does the CVS on Morrissey Blvd in Boston offer the hepatitis B vaccine? Identify the relevant location and whether it offers this vaccine."
+    },
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Is hepatitis B vaccine covered by MassHealth in Massachusetts? Include any age, setting, or large-employer warning, and sources."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacy",
+     "input": {
+      "description": "CVS on Morrissey Blvd in Boston"
+     },
+     "result": "CVS Pharmacy (cvs-2283)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "vaccine_coverage",
+     "input": {
+      "vaccine": "hepatitis B vaccine",
+      "insurance_type": "masshealth"
+     },
+     "result": "vaccine=Hepatitis B, group=routine, checked_date=2026-10-23, warning=Vaccine rules changed in 2025-2026. Cove"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_vaccine",
+     "input": {
+      "pharmacy_id": "cvs-2283",
+      "vaccine": "hepatitis B"
+     },
+     "result": "CVS Pharmacy (cvs-2283)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "Yes. Hepatitis B vaccine is listed on the MassHealth Drug List with no prior authorization. The result says most adults with Medicaid get CDC-recommended vaccines at no cost, and MassHealth covers vaccines according to DPH guidelines. No age- or setting-specific limit or large-employer warning wa...",
+     "not_found": [],
+     "warnings": [
+      "Vaccine rules changed in 2025–2026; coverage can differ by plan. The tool result did not provide an age-, setting-, or large-employer-specific warning."
+     ],
+     "tokens": {
+      "requests": 4,
+      "input_tokens": 6220,
+      "cached_input_tokens": 2683,
+      "output_tokens": 507,
+      "web_searches": 0
+     }
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "The relevant location is CVS Pharmacy at 715 Morrissey Boulevard, Dorchester, MA 02122. Hepatitis B is listed on CVS’s national vaccine page, not on this store’s own page, so call or book online to confirm this location offers it. Phone: (617) 822-1307. Booking: https://www.cvs.com/immunizations/...",
+     "not_found": [],
+     "warnings": [
+      "The national listing does not confirm that this store offers the vaccine; call or book online first."
+     ],
+     "tokens": {
+      "requests": 5,
+      "input_tokens": 7921,
+      "cached_input_tokens": 3999,
+      "output_tokens": 823,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 11733,
+     "cached_input_tokens": 5411,
+     "output_tokens": 1239,
+     "total_tokens": 12972,
+     "web_searches": 0,
+     "model_requests": 7,
+     "tool_calls": 5,
+     "cost_usd": 0.001306
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": -2,
+      "input_tokens": -2408,
+      "cached_input_tokens": -1271,
+      "output_tokens": -91,
+      "web_searches": 0,
+      "cost_usd": -5.8e-05
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 4,
+      "input_tokens": 6220,
+      "cached_input_tokens": 2683,
+      "output_tokens": 507,
+      "web_searches": 0,
+      "cost_usd": 0.000634
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 5,
+      "input_tokens": 7921,
+      "cached_input_tokens": 3999,
+      "output_tokens": 823,
+      "web_searches": 0,
+      "cost_usd": 0.000844
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "MassHealth lists the hepatitis B vaccine with no prior authorization, and says it covers vaccines according to DPH guidelines. CVS lists hepatitis B on its national vaccine page, but this does not con"
+  },
+  {
+   "run_id": "a2d315cda8c1",
+   "timestamp": "2026-10-24T22:33:04-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Does the CVS on Morrissey Blvd have the hepatitis B vaccine, and is it covered?",
+   "stop_reason": "completed",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder",
+    "Medication Access"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Does the CVS on Morrissey Blvd in Boston offer the hepatitis B vaccine? Identify the exact location and whether it offers this vaccine."
+    },
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Medication Access",
+     "request": "Is the hepatitis B vaccine covered under MassHealth in Massachusetts? Include any relevant vaccine coverage details and source links."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Medication Access",
+     "tool": "vaccine_coverage",
+     "input": {
+      "vaccine": "hepatitis B",
+      "insurance_type": "masshealth"
+     },
+     "result": "vaccine=Hepatitis B, group=routine, checked_date=2026-10-23, warning=Vaccine rules changed in 2025-2026. Cove"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "find_pharmacy",
+     "input": {
+      "description": "CVS on Morrissey Blvd in Boston"
+     },
+     "result": "CVS Pharmacy (cvs-2283)"
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "pharmacy_vaccine",
+     "input": {
+      "pharmacy_id": "cvs-2283",
+      "vaccine": "hepatitis B"
+     },
+     "result": "CVS Pharmacy (cvs-2283)"
+    },
+    {
+     "type": "agent_result",
+     "agent": "Medication Access",
+     "answer": "Yes. Hepatitis B vaccine is listed on the MassHealth Drug List, and no prior authorization is needed. MassHealth covers vaccines according to Massachusetts DPH guidelines.",
+     "not_found": [],
+     "warnings": [
+      "Vaccine rules changed in 2025–2026, and coverage can differ by plan."
+     ],
+     "tokens": {
+      "requests": 4,
+      "input_tokens": 6211,
+      "cached_input_tokens": 2679,
+      "output_tokens": 570,
+      "web_searches": 0
+     }
+    },
+    {
+     "type": "agent_result",
+     "agent": "Pharmacy Finder",
+     "answer": "The location is CVS Pharmacy, 715 Morrissey Boulevard, Dorchester, MA 02122. Hepatitis B is listed on CVS’s national vaccine page, but not on this store’s own page, so call or book online to confirm this location offers it. Phone: (617) 822-1307. Booking: https://www.cvs.com/immunizations/get-vac...",
+     "not_found": [],
+     "warnings": [
+      "The national listing does not confirm that this specific store offers the vaccine; call or book online to confirm."
+     ],
+     "tokens": {
+      "requests": 5,
+      "input_tokens": 7912,
+      "cached_input_tokens": 3995,
+      "output_tokens": 842,
+      "web_searches": 0
+     }
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 11594,
+     "cached_input_tokens": 3995,
+     "output_tokens": 1345,
+     "total_tokens": 12939,
+     "web_searches": 0,
+     "model_requests": 7,
+     "tool_calls": 5,
+     "cost_usd": 0.001472
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": -2,
+      "input_tokens": -2529,
+      "cached_input_tokens": -2679,
+      "output_tokens": -67,
+      "web_searches": 0,
+      "cost_usd": -4.5e-05
+     },
+     {
+      "agent": "Medication Access",
+      "requests": 4,
+      "input_tokens": 6211,
+      "cached_input_tokens": 2679,
+      "output_tokens": 570,
+      "web_searches": 0,
+      "cost_usd": 0.000665
+     },
+     {
+      "agent": "Pharmacy Finder",
+      "requests": 5,
+      "input_tokens": 7912,
+      "cached_input_tokens": 3995,
+      "output_tokens": 842,
+      "web_searches": 0,
+      "cost_usd": 0.000853
+     }
+    ]
+   },
+   "safety_rules_fired": [],
+   "reply_preview": "MassHealth lists the hepatitis B vaccine with no prior authorization, and says vaccine coverage follows Massachusetts DPH guidelines. CVS lists hepatitis B on its national vaccine page, but that does "
+  },
+  {
+   "run_id": "d154f94894ee",
+   "timestamp": "2026-10-24T22:33:56-04:00",
+   "type": "moderation",
+   "review_id": 1,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "29a460c642ac",
+   "timestamp": "2026-10-24T22:33:56-04:00",
+   "type": "moderation",
+   "review_id": 2,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "fef84911b2c3",
+   "timestamp": "2026-10-24T22:33:57-04:00",
+   "type": "moderation",
+   "review_id": 3,
+   "pharmacy_id": "walgreens-3135",
+   "stage": "no comment",
+   "decision": "published",
+   "category": "none",
+   "reason": "Rating only, no comment.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "f1ed7393378c",
+   "timestamp": "2026-10-24T22:33:57-04:00",
+   "type": "moderation",
+   "review_id": 4,
+   "pharmacy_id": "cvs-10174",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes a safe personal experience at the pharmacy.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 624,
+     "cached_input_tokens": 0,
+     "output_tokens": 36,
+     "total_tokens": 660,
+     "cost_usd": 8e-05,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "2d752694a45c",
+   "timestamp": "2026-10-24T22:33:58-04:00",
+   "type": "moderation",
+   "review_id": 5,
+   "pharmacy_id": "cvs-5874",
+   "stage": "model",
+   "decision": "published",
+   "category": "none",
+   "reason": "The comment describes the patient's own pharmacy experience and contains no identifying health information.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 624,
+     "cached_input_tokens": 0,
+     "output_tokens": 48,
+     "total_tokens": 672,
+     "cost_usd": 8.6e-05,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "7cebbcdccb1c",
+   "timestamp": "2026-10-24T22:33:58-04:00",
+   "type": "moderation",
+   "review_id": 6,
+   "pharmacy_id": "cvs-1217",
+   "stage": "code",
+   "decision": "rejected",
+   "category": "personal_health_information",
+   "reason": "Comment linked a person to a health detail.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation rejected: personal_health_information"
+   ]
+  },
+  {
+   "run_id": "f2b6a2931903",
+   "timestamp": "2026-10-24T22:33:58-04:00",
+   "type": "moderation",
+   "review_id": 7,
+   "pharmacy_id": "cvs-1265",
+   "stage": "code",
+   "decision": "rejected",
+   "category": "hidden_instructions",
+   "reason": "Comment tried to give instructions to the app.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation rejected: hidden_instructions"
+   ]
+  },
+  {
+   "run_id": "dcccca7a52a2",
+   "timestamp": "2026-10-24T22:33:58-04:00",
+   "type": "moderation",
+   "review_id": 8,
+   "pharmacy_id": "cvs-1264",
+   "stage": "code",
+   "decision": "rejected",
+   "category": "spam",
+   "reason": "Comment looked like spam or advertising.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation rejected: spam"
+   ]
+  },
+  {
+   "run_id": "58988f5724df",
+   "timestamp": "2026-10-24T22:33:58-04:00",
+   "type": "moderation",
+   "review_id": 9,
+   "pharmacy_id": "cvs-2070",
+   "stage": "code",
+   "decision": "pending",
+   "category": "unclear",
+   "reason": "Comment names a person; a human will check it.",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": [
+    "moderation pending: unclear"
+   ]
+  },
+  {
+   "run_id": "5b700cf217e5",
+   "timestamp": "2026-10-24T22:33:58-04:00",
+   "type": "moderation",
+   "review_id": 9,
+   "pharmacy_id": "cvs-2070",
+   "stage": "human admin",
+   "decision": "published",
+   "category": "admin decision",
+   "reason": "approved by admin",
+   "cleaned": false,
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "cost_usd": 0.0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0
+    }
+   },
+   "safety_rules_fired": []
+  },
+  {
+   "run_id": "9926bce5a798",
+   "timestamp": "2026-10-24T22:34:03-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "per-question limit reached: The next request would exceed the request_limit of 1. Consider raising the limit, or see the docs on usage limits for budget-aware patterns: https://pydantic.dev/docs/ai/core-concepts/agent/#usage-limits",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies open right now near ZIP code 02111, Boston. It is Saturday, October 24, 2026, 10:34 PM America/New_York. Include pharmacy counter hours first, location and pharmacy IDs, and confirm which are open at this time."
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 1530,
+     "cached_input_tokens": 0,
+     "output_tokens": 76,
+     "total_tokens": 1606,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0,
+     "cost_usd": 0.000191
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 1,
+      "input_tokens": 1530,
+      "cached_input_tokens": 0,
+      "output_tokens": 76,
+      "web_searches": 0,
+      "cost_usd": 0.000191
+     }
+    ]
+   },
+   "safety_rules_fired": [
+    "per-question limit reached"
+   ],
+   "reply_preview": "Sorry, this question needed more steps than I'm allowed to use. Please ask it in a shorter, simpler way, or call the pharmacy."
+  },
+  {
+   "run_id": "ad4904144ae9",
+   "timestamp": "2026-10-24T22:34:06-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "per-question limit reached: The next tool call(s) would exceed the tool_calls_limit of 1 (tool_calls=4). Consider raising the limit, or see the docs on usage limits for budget-aware patterns: https://pydantic.dev/docs/ai/core-concepts/agent/#usage-limits",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies open right now near ZIP code 02111, Boston. It is Saturday, October 24, 2026, 10:34 PM America/New_York. Include pharmacy counter hours first, location and pharmacy IDs, and confirm which are open at this time."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 4771,
+     "cached_input_tokens": 1206,
+     "output_tokens": 254,
+     "total_tokens": 5025,
+     "web_searches": 0,
+     "model_requests": 3,
+     "tool_calls": 1,
+     "cost_usd": 0.000496
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 3,
+      "input_tokens": 4771,
+      "cached_input_tokens": 1206,
+      "output_tokens": 254,
+      "web_searches": 0,
+      "cost_usd": 0.000496
+     }
+    ]
+   },
+   "safety_rules_fired": [
+    "per-question limit reached"
+   ],
+   "reply_preview": "Sorry, this question needed more steps than I'm allowed to use. Please ask it in a shorter, simpler way, or call the pharmacy."
+  },
+  {
+   "run_id": "c71adaedc4ef",
+   "timestamp": "2026-10-24T22:34:06-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "per-question limit reached: Exceeded the total_tokens_limit of 1500 (total_tokens=1606). Consider raising the limit, or see the docs on usage limits for budget-aware patterns: https://pydantic.dev/docs/ai/core-concepts/agent/#usage-limits",
+   "agents_run": [
+    "Front Desk"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "started"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 1530,
+     "cached_input_tokens": 0,
+     "output_tokens": 76,
+     "total_tokens": 1606,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.000191
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "per-question limit reached"
+   ],
+   "reply_preview": "Sorry, this question needed more steps than I'm allowed to use. Please ask it in a shorter, simpler way, or call the pharmacy."
+  },
+  {
+   "run_id": "1e1e42cd54a9",
+   "timestamp": "2026-10-24T22:34:06-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "daily token budget used up",
+   "agents_run": [
+    "Front Desk (code rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "daily token budget used up (no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "daily token budget used up"
+   ],
+   "reply_preview": "RxLantern is very busy right now. Please try again later today or tomorrow, or call your pharmacy."
+  },
+  {
+   "run_id": "2a453369f9c9",
+   "timestamp": "2026-10-24T22:34:06-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Should I take two of my pills?",
+   "stop_reason": "medical advice declined",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "declined: medical advice (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "medical advice declined"
+   ],
+   "reply_preview": "I'm sorry, I can't give advice about changing, stopping, doubling, or switching a medicine. Please talk to your prescriber or pharmacist about that. They know your health history and can help you safe"
+  },
+  {
+   "run_id": "73efd519eb00",
+   "timestamp": "2026-10-24T22:34:06-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Should I take two of my pills?",
+   "stop_reason": "medical advice declined",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "declined: medical advice (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "medical advice declined"
+   ],
+   "reply_preview": "I'm sorry, I can't give advice about changing, stopping, doubling, or switching a medicine. Please talk to your prescriber or pharmacist about that. They know your health history and can help you safe"
+  },
+  {
+   "run_id": "aa5fba3f97d3",
+   "timestamp": "2026-10-24T22:34:06-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Should I take two of my pills?",
+   "stop_reason": "rate limit: too many questions this hour",
+   "agents_run": [
+    "Front Desk (code rule)"
+   ],
+   "steps": [],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "rate limit reached"
+   ],
+   "reply_preview": "You've asked a lot of questions in the last hour. Please wait a little and try again."
+  },
+  {
+   "run_id": "79caa4ec1458",
+   "timestamp": "2026-10-24T22:34:21-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "per-question limit reached: The next request would exceed the request_limit of 1. Consider raising the limit, or see the docs on usage limits for budget-aware patterns: https://pydantic.dev/docs/ai/core-concepts/agent/#usage-limits",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies open right now near ZIP code 02111, Boston. It is Saturday, October 24, 2026, 10:34 PM America/New_York. Include pharmacy counter hours first, location and pharmacy IDs, and confirm which are open at this time."
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 1530,
+     "cached_input_tokens": 0,
+     "output_tokens": 76,
+     "total_tokens": 1606,
+     "web_searches": 0,
+     "model_requests": 1,
+     "tool_calls": 0,
+     "cost_usd": 0.000191
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 1,
+      "input_tokens": 1530,
+      "cached_input_tokens": 0,
+      "output_tokens": 76,
+      "web_searches": 0,
+      "cost_usd": 0.000191
+     }
+    ]
+   },
+   "safety_rules_fired": [
+    "per-question limit reached"
+   ],
+   "reply_preview": "Sorry, this question needed more steps than I'm allowed to use. Please ask it in a shorter, simpler way, or call the pharmacy."
+  },
+  {
+   "run_id": "47c8a81fc55a",
+   "timestamp": "2026-10-24T22:34:22-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "per-question limit reached: The next tool call(s) would exceed the tool_calls_limit of 1 (tool_calls=4). Consider raising the limit, or see the docs on usage limits for budget-aware patterns: https://pydantic.dev/docs/ai/core-concepts/agent/#usage-limits",
+   "agents_run": [
+    "Front Desk",
+    "Pharmacy Finder"
+   ],
+   "steps": [
+    {
+     "type": "handoff",
+     "from": "Front Desk",
+     "to": "Pharmacy Finder",
+     "request": "Find pharmacies open right now near ZIP code 02111, Boston. It is Saturday, October 24, 2026, 10:34 PM America/New_York. Include pharmacy counter hours first, location and pharmacy IDs, and confirm which are open at this time."
+    },
+    {
+     "type": "tool_call",
+     "agent": "Pharmacy Finder",
+     "tool": "nearest_open_now",
+     "input": {
+      "place": "02111, Boston"
+     },
+     "result": "3 pharmacies: cvs-5874, scchc-pharmacy, cvs-10174"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 4771,
+     "cached_input_tokens": 1206,
+     "output_tokens": 254,
+     "total_tokens": 5025,
+     "web_searches": 0,
+     "model_requests": 3,
+     "tool_calls": 1,
+     "cost_usd": 0.000496
+    },
+    "by_agent": [
+     {
+      "agent": "Front Desk",
+      "requests": 3,
+      "input_tokens": 4771,
+      "cached_input_tokens": 1206,
+      "output_tokens": 254,
+      "web_searches": 0,
+      "cost_usd": 0.000496
+     }
+    ]
+   },
+   "safety_rules_fired": [
+    "per-question limit reached"
+   ],
+   "reply_preview": "Sorry, this question needed more steps than I'm allowed to use. Please ask it in a shorter, simpler way, or call the pharmacy."
+  },
+  {
+   "run_id": "1e82e2dbc2cd",
+   "timestamp": "2026-10-24T22:34:22-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "per-question limit reached: Exceeded the total_tokens_limit of 1500 (total_tokens=1606). Consider raising the limit, or see the docs on usage limits for budget-aware patterns: https://pydantic.dev/docs/ai/core-concepts/agent/#usage-limits",
+   "agents_run": [
+    "Front Desk"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "started"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 1530,
+     "cached_input_tokens": 0,
+     "output_tokens": 76,
+     "total_tokens": 1606,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.000191
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "per-question limit reached"
+   ],
+   "reply_preview": "Sorry, this question needed more steps than I'm allowed to use. Please ask it in a shorter, simpler way, or call the pharmacy."
+  },
+  {
+   "run_id": "53fe1bb27147",
+   "timestamp": "2026-10-24T22:34:22-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Is there a pharmacy open right now near 02111?",
+   "stop_reason": "daily token budget used up",
+   "agents_run": [
+    "Front Desk (code rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "daily token budget used up (no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "daily token budget used up"
+   ],
+   "reply_preview": "RxLantern is very busy right now. Please try again later today or tomorrow, or call your pharmacy."
+  },
+  {
+   "run_id": "5f7a4ff6d0fe",
+   "timestamp": "2026-10-24T22:34:22-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Should I take two of my pills?",
+   "stop_reason": "medical advice declined",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "declined: medical advice (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "medical advice declined"
+   ],
+   "reply_preview": "I'm sorry, I can't give advice about changing, stopping, doubling, or switching a medicine. Please talk to your prescriber or pharmacist about that. They know your health history and can help you safe"
+  },
+  {
+   "run_id": "52318fdb7e32",
+   "timestamp": "2026-10-24T22:34:22-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Should I take two of my pills?",
+   "stop_reason": "medical advice declined",
+   "agents_run": [
+    "Front Desk (code safety rule)"
+   ],
+   "steps": [
+    {
+     "type": "code_rule",
+     "note": "declined: medical advice (rule in code, no model call)"
+    }
+   ],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "medical advice declined"
+   ],
+   "reply_preview": "I'm sorry, I can't give advice about changing, stopping, doubling, or switching a medicine. Please talk to your prescriber or pharmacist about that. They know your health history and can help you safe"
+  },
+  {
+   "run_id": "430c980d7f7d",
+   "timestamp": "2026-10-24T22:34:22-04:00",
+   "language": "en",
+   "mode": "normal",
+   "question_redacted": "Should I take two of my pills?",
+   "stop_reason": "rate limit: too many questions this hour",
+   "agents_run": [
+    "Front Desk (code rule)"
+   ],
+   "steps": [],
+   "tokens": {
+    "total": {
+     "input_tokens": 0,
+     "cached_input_tokens": 0,
+     "output_tokens": 0,
+     "total_tokens": 0,
+     "web_searches": 0,
+     "model_requests": 0,
+     "tool_calls": 0,
+     "cost_usd": 0.0
+    },
+    "by_agent": []
+   },
+   "safety_rules_fired": [
+    "rate limit reached"
+   ],
+   "reply_preview": "You've asked a lot of questions in the last hour. Please wait a little and try again."
   }
  ]
 }

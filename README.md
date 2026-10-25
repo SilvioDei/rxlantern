@@ -105,14 +105,17 @@ environment wins over both.
 
 ## What is on the site
 
-- **Find my medicine** (home): a "What medicine do you need?" search bar, then a 3-step guided search (150 medicines by
-  brand or generic name, small spelling mistakes OK; ZIP, neighborhood, or "Use my location"; insurance), and the chat.
+- **Find my medicine** (home): a "What medicine or vaccine do you need?" search bar, then a 3-step guided search (150
+  medicines by brand or generic name and 10 vaccines by the names patients use, such as "hep B" or "flu shot"; small
+  spelling mistakes OK; Boston or nearby-town ZIP, neighborhood, or "Use my location"; insurance), and the chat.
   A medicine not in the list gets its live FDA shortage status and a call script.
 - **Results**: nearby pharmacies with a map, open hours (pharmacy counter first), FDA shortage status, coverage and
   cost estimates for the chosen insurance, the plan's pharmacy finder and phone number, community stock reports
   (last 72 hours), reviews, a prior authorization helper, a savings finder (links to GoodRx, TrumpRx.gov, and the
   maker's program; never prices), a "Before you go" checklist, "Send it here" cards for the doctor, call scripts, and
   "I called: They have it / They don't" buttons (with a transfer helper).
+- **Vaccine results**: pharmacies that list the vaccine (on their own page, or on their chain's vaccine page: call to
+  confirm), open now, booking link, a vaccine call script, and who pays for your insurance. No stock reports for vaccines.
 - **My medicine list**, **Pharmacies** (with best time to go and languages reported by patients), **Shortage watch**
   (with a watchlist), **Vaccines**, **Community**, **About & Privacy**, **Language help card**, **For pharmacies**
   (anonymous search counts), and an **Admin** moderation queue.
@@ -132,7 +135,7 @@ their screenshots are in `output/safety_report.html` (open it by double-clicking
 
 Pharmacies' own websites; the ClinCalc DrugStats "Top 300 of 2024" list (AHRQ MEPS data) for choosing the 150 medicines;
 RxNorm; the openFDA NDC directory and drug shortages; NADAC; the MassHealth Drug List (checked 2026-10-24); CMS Medicare
-Part D 2026 files; CDC, CMS, and Mass.gov vaccine rules; each insurance plan's own website; Census ZIP centers; GoodRx's
+Part D 2026 files; CDC, CMS, and Mass.gov vaccine rules; CVS's national vaccine page; each insurance plan's own website; Census ZIP centers; GoodRx's
 sitemap, TrumpRx.gov's medication list, and each brand's own website for savings links. Every fact shows its source and
 the date it was checked (see About & Privacy). Rebuild scripts are in `scripts/` (for example
 `scripts/fetch_masshealth.py` refreshes the MassHealth data in one command).
@@ -141,5 +144,5 @@ the date it was checked (see About & Privacy). Rebuild scripts are in `scripts/`
 
 Install the test tools with `pip install -r requirements-dev.txt` and `python -m playwright install chromium`, start the
 app, then run `tests/ui_step7b.py`, `tests/ui_step7c.py`, `tests/ui_step7c2.py` (website checks in a real browser),
-`tests/safety_tests.py` (16 safety tests), and `tests/try_agents.py` + `tests/check_agent_rules.py` (the agent test
+`tests/ui_step9_vaccines.py` (vaccine search), `tests/safety_tests.py` (16 safety tests), and `tests/try_agents.py` + `tests/check_agent_rules.py` (the agent test
 questions; these use the AI model). Results are saved in `output/`.

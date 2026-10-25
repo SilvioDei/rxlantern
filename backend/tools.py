@@ -512,7 +512,8 @@ def resolve_location(place: str) -> dict:
             return {"found": True, "label": f"ZIP {z.group(1)}", "latitude": row[0]["latitude"],
                     "longitude": row[0]["longitude"], "source": row[0]["source"].split(" ; ")[0],
                     "checked_date": row[0]["checked_date"]}
-        return {"found": False, "label": place, "message": f"ZIP {z.group(1)} is not a Boston ZIP code in {APP_NAME}."}
+        return {"found": False, "label": place,
+                "message": f"ZIP {z.group(1)} is not in {APP_NAME}'s area (Boston and nearby towns)."}
     pharms = _pharmacies()
     names = sorted({p["neighborhood"] for p in pharms})
     match = next((n for n in names if n.lower() in place.lower()), None)
@@ -586,18 +587,68 @@ def open_status(pharmacy_id: str, lang: str = "en", at: datetime | None = None) 
     return base | {"open_now": False, "status": "closed now", "closes_at": None, "opens_next": NF}
 
 
-VACCINE_KEYS = {
-    "flu": ["Flu"], "influenza": ["Flu"], "gripe": ["Flu"], "covid": ["COVID-19"], "shingles": ["Shingles"],
-    "zoster": ["Shingles"], "culebrilla": ["Shingles"], "rsv": ["RSV"], "vsr": ["RSV"], "pneumo": ["Pneumococcal"],
-    "neumo": ["Pneumococcal"], "tdap": ["Tdap"], "tetanus": ["Tdap"], "hepatitis b": ["Hepatitis B"], "hep b": ["Hepatitis B"],
-    "hepatitis a": ["Hepatitis A"], "hep a": ["Hepatitis A"], "typhoid": ["Typhoid"], "tifoidea": ["Typhoid"],
-    "yellow fever": ["Yellow fever"], "fiebre amarilla": ["Yellow fever"],
+# The words patients use for each vaccine (English and Spanish, lower case, no accents). The search box (sent in
+# /api/meta), the chat, and the pharmacy filter all read this one list. Spelling mistakes are handled by the search box.
+VACCINE_ALIASES = {
+    "flu": ["flu", "flu shot", "flu vaccine", "influenza", "gripe", "vacuna de la gripe", "vacuna contra la gripe",
+            "vacuna contra la influenza", "fluzone", "flublok", "flucelvax", "fluad"],
+    "covid19": ["covid", "covid 19", "covid shot", "covid booster", "covid vaccine", "coronavirus", "vacuna covid",
+                "vacuna contra el covid", "refuerzo covid", "comirnaty", "spikevax", "novavax"],
+    "hepb": ["hepatitis b", "hep b", "hepb", "hepatitis b shot", "hepatitis b vaccine", "engerix", "heplisav",
+             "recombivax", "vacuna hepatitis b", "vacuna de la hepatitis b", "vacuna contra la hepatitis b"],
+    "shingles": ["shingles", "shingles shot", "shingrix", "zoster", "herpes zoster", "culebrilla"],
+    "rsv": ["rsv", "rsv shot", "respiratory syncytial virus", "arexvy", "abrysvo", "mresvia", "vsr", "virus sincitial",
+            "virus respiratorio sincitial"],
+    "pneumococcal": ["pneumonia", "pneumonia shot", "pneumonia vaccine", "pneumococcal", "prevnar", "pneumovax",
+                     "capvaxive", "vaxneuvance", "neumonia", "neumococo", "neumococica"],
+    "tdap": ["tdap", "tetanus", "tetanus shot", "whooping cough", "pertussis", "boostrix", "adacel", "tetanos",
+             "tos ferina", "difteria"],
+    "hepa": ["hepatitis a", "hep a", "havrix", "vaqta", "vacuna hepatitis a"],
+    "typhoid": ["typhoid", "typhoid fever", "typhoid shot", "vivotif", "typhim", "tifoidea", "fiebre tifoidea"],
+    "yellowfever": ["yellow fever", "yf vax", "stamaril", "fiebre amarilla"],
 }
 
 
+def _plain(text: str) -> str:
+    import unicodedata
+    t = unicodedata.normalize("NFD", (text or "").lower())
+    t = "".join(c for c in t if unicodedata.category(c) != "Mn")
+    return " " + re.sub(r"[^a-z0-9]+", " ", t).strip() + " "
+
+
+def vaccine_id(text: str) -> str | None:
+    """Which vaccine the words name ("hep B shot", "vacuna de la gripe"), longest match first; None if none."""
+    q = _plain(text)
+    best = None
+    for vid, aliases in VACCINE_ALIASES.items():
+        for a in aliases:
+            if f" {a} " in q and (best is None or len(a) > best[1]):
+                best = (vid, len(a))
+    return best[0] if best else None
+
+
 def _vaccine_labels(vaccine: str) -> list[str]:
-    v = vaccine.lower()
-    return next((labels for k, labels in VACCINE_KEYS.items() if k in v), [vaccine])
+    vid = vaccine_id(vaccine)
+    return [next(k for k, v in VACCINE_IDS.items() if v == vid)] if vid else [vaccine]
+
+
+def _chains() -> list[dict]:
+    return json.loads((DATA_DIR / "chain_vaccines.json").read_text(encoding="utf-8"))["chains"]
+
+
+def vaccine_offer(p: dict, vid: str) -> dict:
+    """Does this pharmacy offer the vaccine? 'store' = its own page names it; 'chain' = its chain's national vaccine
+    page lists it (call the store to confirm); 'not_listed' = not found on either page."""
+    label = next((k for k, v in VACCINE_IDS.items() if v == vid), vid)
+    lists = [x for x in (p["vaccines_routine"], p["vaccines_travel"]) if isinstance(x, list)]
+    if any(label.lower() in v.lower() for lst in lists for v in lst):
+        src = p["sources"].get("services") if isinstance(p["sources"], dict) else None
+        return {"offer": "store", "source": src or p["website"], "checked_date": p["checked_date"]}
+    for c in _chains():
+        if c["name_contains"].lower() in p["name"].lower() and vid in c["vaccine_ids"]:
+            return {"offer": "chain", "chain": c["chain"], "source": c["source"], "checked_date": c["checked_date"],
+                    "says": c["says"]}
+    return {"offer": "not_listed", "source": p["website"], "checked_date": p["checked_date"]}
 
 
 def _brief(p: dict, dist: float | None, lang: str) -> dict:
@@ -629,14 +680,16 @@ def find_pharmacies(place: str, open_now: bool = False, delivery: bool = False, 
         keep = [p for p in keep if p["delivery"] == "yes"]
         if unknown:
             not_found.append(f"Delivery is 'not found' or not listed for {unknown} pharmacies, so they are left out.")
+    offers = {}
     if vaccine:
         labels = _vaccine_labels(vaccine)
+        vid = vaccine_id(vaccine)
         applied.append(f"vaccine: {', '.join(labels)}")
-        def has(p):
-            lists = [x for x in (p["vaccines_routine"], p["vaccines_travel"]) if isinstance(x, list)]
-            return any(any(lab.lower() in v.lower() for v in lst) for lst in lists for lab in labels)
-        keep = [p for p in keep if has(p)]
-        not_found.append(f"Only pharmacies whose own page names this vaccine are listed. Others may still offer it: call to check.")
+        for p in keep:
+            offers[p["id"]] = vaccine_offer(p, vid) if vid else {"offer": "not_listed"}
+        keep = [p for p in keep if offers[p["id"]]["offer"] != "not_listed"]
+        not_found.append("Pharmacies are listed when their own page or their chain's vaccine page names this vaccine. "
+                         "A chain listing is not a promise for one store: call to confirm. Others may still offer it.")
         if "Yellow fever" in labels:
             not_found.append("Yellow fever vaccine is given only at certified sites. Find one: "
                              "https://wwwnc.cdc.gov/travel/yellow-fever-vaccination-clinics/search")
@@ -645,6 +698,13 @@ def find_pharmacies(place: str, open_now: bool = False, delivery: bool = False, 
         keep = [p for p in keep if isinstance(p["languages"], list) and any(language.lower() in l.lower() for l in p["languages"])]
         not_found.append(f"Languages spoken by staff are 'not found' on the pharmacies' public pages. Call to ask about {language}.")
     briefs = [_brief(p, p["_dist"], lang) for p in keep]
+    for b in briefs:
+        o = offers.get(b["pharmacy_id"])
+        if o:
+            b["vaccine_listed"] = ("on this pharmacy's own page" if o["offer"] == "store" else
+                                   f"on {o['chain']}'s national vaccine page, not on this store's page: call to confirm")
+            b["vaccine_source"] = o["source"]
+            b["vaccine_checked_date"] = o["checked_date"]
     if open_now:
         applied.append("open now")
         open_list = [b for b in briefs if b["open_now"]]
@@ -961,7 +1021,7 @@ VACCINE_IDS = {"Flu": "flu", "COVID-19": "covid19", "Hepatitis B": "hepb", "Shin
 
 def vaccine_coverage(vaccine: str, insurance_type: str = "unknown") -> dict:
     """Tool: who pays for a vaccine, by insurance type (medicare, masshealth, commercial, uninsured, unknown)."""
-    vid = VACCINE_IDS.get(_vaccine_labels(vaccine)[0])
+    vid = vaccine_id(vaccine) or (vaccine if vaccine in VACCINE_IDS.values() else None)
     rows = _rows("SELECT * FROM vaccines WHERE id = ?", (vid,)) if vid else []
     if not rows:
         return {"found": False, "message": f"'{vaccine}' is not in {APP_NAME}'s vaccine list.", "checked_date": today()}
@@ -1010,6 +1070,48 @@ def call_script(drug_name: str, quantity: str | None = None, lang: str = "en", d
                 "Do you have it in stock today? Do you take my insurance? "
                 "Have your insurance card ready so they can check your copay.")
     return {"call_script": text, "source": "RxLantern call script template", "checked_date": today()}
+
+
+def _spoken_vaccine(name: str) -> str:
+    n = re.sub(r"\s*\(.*?\)", "", name).strip()          # "Flu (influenza)" -> "Flu"
+    return n if n[:2].isupper() or n == "Tdap" else n[0].lower() + n[1:]
+
+
+def vaccine_call_script(vaccine_name: str, lang: str = "en") -> str:
+    """A short script for calling a pharmacy about a vaccine (no personal health information)."""
+    vaccine_name = _spoken_vaccine(vaccine_name)
+    if lang == "es":
+        return (f"Hola. Llamo para preguntar por la vacuna de {vaccine_name}. ¿La tienen hoy? "
+                "¿Necesito cita o puedo ir sin cita? ¿Aceptan mi seguro y tendré algún costo? "
+                "Tenga lista su tarjeta del seguro.")
+    return (f"Hi. I'm calling about the {vaccine_name} vaccine. Do you have it today? "
+            "Do I need an appointment, or can I walk in? Do you take my insurance, and will I have to pay anything? "
+            "Have your insurance card ready.")
+
+
+def pharmacy_vaccine(pharmacy_id: str, vaccine: str, lang: str = "en") -> dict:
+    """Tool: does one pharmacy offer a vaccine? Its own page, its chain's national vaccine page, or not found."""
+    p = _pharmacy(pharmacy_id)
+    if p is None:
+        return {"found": False, "message": "Pharmacy not found in RxLantern."}
+    vid = vaccine_id(vaccine)
+    if not vid:
+        return {"found": False, "message": f"'{vaccine}' is not in {APP_NAME}'s vaccine list. Suggest calling."}
+    label = next(k for k, v in VACCINE_IDS.items() if v == vid)
+    o = vaccine_offer(p, vid)
+    listed = {"store": f"{label} is listed on this pharmacy's own page.",
+              "chain": (f"{label} is listed on {o.get('chain')}'s national vaccine page, not on this store's own page. "
+                        f"{o.get('chain')} says to confirm availability at the store: call or book online first."),
+              "not_listed": f"{label} is not found on this pharmacy's page. Call to ask."}[o["offer"]]
+    out = {"found": True, "pharmacy_id": p["id"], "name": p["name"], "address": p["address"], "phone": p["phone"],
+           "vaccine": label, "offer": o["offer"], "answer": listed, "source": o["source"],
+           "checked_date": o["checked_date"], "booking_url": p["vaccine_booking_url"],
+           "call_script": vaccine_call_script(label, lang),
+           "never_say": "Do not say the vaccine is in stock today; no page says that."}
+    if vid == "yellowfever":
+        out["certified_sites_only"] = ("Yellow fever vaccine is given only at certified sites. Find one: "
+                                       "https://wwwnc.cdc.gov/travel/yellow-fever-vaccination-clinics/search")
+    return out
 
 
 # ----------------------------------------------------------------------------- Community

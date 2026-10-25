@@ -19,10 +19,13 @@ from backend import community, config, sample_data, tools
 
 router = APIRouter(prefix="/api")
 
-# Time-saved estimate (baselines measured by the project owner, a Boston pharmacy manager):
-PATIENT_MINUTES_PER_QUESTION = 15     # one real call to a Boston pharmacy took a patient about 15 minutes ...
-CALLS_PER_QUESTION = 3                # ... and 3 calls (one was a voicemail and one a dropped callback)
-STAFF_MINUTES_PER_QUESTION = 4        # only one of those calls took staff time: about 4 minutes (manager's estimate)
+# Time-saved estimate, based on two measured calls to Boston pharmacies (2026-10-24 update):
+#   Friday: a prescription question took a patient about 15 minutes and 3 calls (a voicemail, a dropped callback).
+#   Saturday about 5 PM: asking the CVS at 715 Morrissey Blvd, Dorchester about the hepatitis B vaccine meant waiting
+#   about 13 minutes for a callback.
+MEASURED_CALL_MINUTES = [15, 13]
+PATIENT_MINUTES_PER_QUESTION = round(sum(MEASURED_CALL_MINUTES) / len(MEASURED_CALL_MINUTES))  # about 14
+STAFF_MINUTES_PER_QUESTION = 4        # staff time for the one answered call: about 4 minutes (manager's estimate)
 MIN_DEMAND_COUNT = 5                  # demand signals: show only counts of 5 or more
 MIN_SLOT_REVIEWS = 3                  # best time to go: at least 3 reviews in a time slot
 DAY_NAMES = tools.DAY_NAMES
@@ -246,10 +249,14 @@ def impact() -> dict:
     return {"questions": q, "patient_minutes": q * PATIENT_MINUTES_PER_QUESTION,
             "staff_minutes": q * STAFF_MINUTES_PER_QUESTION,
             "baselines": {"patient_minutes_per_question": PATIENT_MINUTES_PER_QUESTION,
-                          "calls_per_question": CALLS_PER_QUESTION, "staff_minutes_per_question": STAFF_MINUTES_PER_QUESTION,
-                          "source": "Measured by the RxLantern project owner: one real call to a Boston pharmacy took a "
-                                    "patient about 15 minutes and 3 calls; only one of the calls (the others were a "
-                                    "voicemail and a dropped callback) took staff time, about 4 minutes by a pharmacy "
-                                    "manager's estimate."},
+                          "staff_minutes_per_question": STAFF_MINUTES_PER_QUESTION,
+                          "measured_calls": [
+                              {"when": "Friday", "about": "a prescription", "minutes": 15,
+                               "note": "3 calls: a voicemail, a dropped callback, and one answered call"},
+                              {"when": "Saturday about 5 PM", "about": "the hepatitis B vaccine", "minutes": 13,
+                               "pharmacy": "CVS, 715 Morrissey Blvd, Dorchester", "note": "waited for a callback"}],
+                          "source": "Based on two measured calls to Boston pharmacies (about 15 and 13 minutes), so "
+                                    "about 14 patient minutes per answered question. Staff: about 4 minutes, by a "
+                                    "pharmacy manager's estimate."},
             "counts": "Only real chat questions answered by RxLantern (not tests, not sample data).",
             "label": "estimate"}

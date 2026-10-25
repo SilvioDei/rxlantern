@@ -3,20 +3,23 @@
 import { useMemo, useState, type FormEvent, type KeyboardEvent } from "react";
 import { Link } from "react-router-dom";
 import { useApp } from "../state";
-import { medicines, suggest, type Medicine } from "../search";
+import { medicines, suggest, vaccineItems, type Medicine } from "../search";
 import { MicButton, MicNote } from "./Bits";
 
 export function MedicineSearch({ id, listId, label, help, placeholder, onPick, submitLabel, onNoMatch, otherLink = true,
-  labelClass = "step-label", className = "" }: {
+  labelClass = "step-label", className = "", withVaccines = false }: {
   id: string; listId: string; label: string; help?: string; placeholder?: string;
   onPick: (m: Medicine, query: string) => void;
   /** With a submit button, Enter or the button picks the best suggestion, or calls onNoMatch when there is none. */
   submitLabel?: string; onNoMatch?: (query: string) => void;
   /** Offer the live FDA shortage check when the medicine is not in RxLantern's list. */
   otherLink?: boolean; labelClass?: string; className?: string;
+  /** Also suggest the 10 vaccines (top search bar and guided search). */
+  withVaccines?: boolean;
 }) {
   const { t, meta } = useApp();
-  const meds = useMemo(() => medicines(meta?.drugs ?? []), [meta]);
+  const meds = useMemo(() => [...medicines(meta?.drugs ?? []), ...(withVaccines ? vaccineItems(meta?.vaccines) : [])],
+    [meta, withVaccines]);
   const [query, setQuery] = useState("");
   const [active, setActive] = useState(0);
   const [open, setOpen] = useState(false);
@@ -54,7 +57,9 @@ export function MedicineSearch({ id, listId, label, help, placeholder, onPick, s
             <li key={m.label} id={`${id}-opt-${i}`} role="option" aria-selected={i === active}
               className={i === active ? "active" : ""} onMouseDown={(e) => { e.preventDefault(); pick(m); }}>
               <strong>{m.label}</strong>
-              <span className="muted small"> · {m.options.map((o) => o.strength).join(" / ")}</span>
+              {m.vaccine
+                ? <span className="badge badge-ok small-badge vaccine-badge"><span aria-hidden="true">💉</span> {t("vaccineBadge")}</span>
+                : <span className="muted small"> · {m.options.map((o) => o.strength).join(" / ")}</span>}
               {m.controlled && <span className="badge badge-warn small-badge">{t("controlledBadge")}</span>}
             </li>
           ))}

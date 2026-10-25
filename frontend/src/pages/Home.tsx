@@ -3,13 +3,13 @@
 import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { useApp } from "../state";
-import { api, ApiError, type DrugMeta, type FinalReply } from "../api";
+import { api, ApiError, type DrugMeta, type FinalReply, type VaccineMeta } from "../api";
 import { Answer } from "../components/Answer";
 import { MicButton, MicNote } from "../components/Bits";
 import { MedicineSearch } from "../components/MedicineSearch";
 import { ImpactLine, WatchHighlights } from "../components/Journey";
 import { STRINGS } from "../i18n";
-import { medicines, optionFromQuery, type Medicine } from "../search";
+import { medicines, optionFromQuery, vaccineItems, type Medicine } from "../search";
 
 /** A medicine picked in the top search bar, handed to the guided search (n changes on every pick). */
 interface Preset { m: Medicine; query: string; n: number }
@@ -34,19 +34,24 @@ function HowItWorks() {
   );
 }
 
-function DrugStep({ chosen, setChosen, preset }: { chosen: DrugMeta | null; setChosen: (d: DrugMeta | null) => void; preset: Preset | null }) {
+function DrugStep({ chosen, setChosen, vaccine, setVaccine, preset }: {
+  chosen: DrugMeta | null; setChosen: (d: DrugMeta | null) => void;
+  vaccine: VaccineMeta | null; setVaccine: (v: VaccineMeta | null) => void; preset: Preset | null;
+}) {
   const { t, meta } = useApp();
   const meds = useMemo(() => medicines(meta?.drugs ?? []), [meta]);
   const [medicine, setMedicine] = useState<Medicine | null>(null);
 
-  // Coming back to the page: show the medicine chosen last time.
+  // Coming back to the page: show the medicine or vaccine chosen last time.
   useEffect(() => {
     if (chosen && !medicine) setMedicine(meds.find((m) => m.options.some((o) => o.id === chosen.id)) ?? null);
-  }, [chosen, meds, medicine]);
+    else if (vaccine && !medicine) setMedicine(vaccineItems([vaccine])[0]);
+  }, [chosen, vaccine, meds, medicine]);
 
   const pick = (m: Medicine, query: string) => {
     setMedicine(m);
-    setChosen(optionFromQuery(query, m));
+    if (m.vaccine) { setChosen(null); setVaccine(m.vaccine); }
+    else { setVaccine(null); setChosen(optionFromQuery(query, m)); }
   };
   // A medicine picked in the top search bar starts this same guided search.
   useEffect(() => { if (preset) pick(preset.m, preset.query); }, [preset?.n]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -56,15 +61,17 @@ function DrugStep({ chosen, setChosen, preset }: { chosen: DrugMeta | null; setC
       <p className="step-num">{t("step", { n: 1 })}</p>
       {!medicine ? (
         <MedicineSearch id="drug-search" listId="drug-list" label={t("step1Label")} help={t("step1Help")}
-          placeholder={t("step1Placeholder")} onPick={pick} />
+          placeholder={t("step1Placeholder")} onPick={pick} withVaccines />
       ) : (
         <>
           <p className="step-label">{t("step1Label")}</p>
           <div className="chosen-row">
             <span className="chosen"><span aria-hidden="true">✓</span> {medicine.label}</span>
             {medicine.controlled && <span className="badge badge-warn">{t("controlledBadge")}</span>}
-            <button type="button" className="link-button" onClick={() => { setMedicine(null); setChosen(null); }}>{t("changeDrug")}</button>
+            {medicine.vaccine && <span className="badge badge-ok vaccine-badge"><span aria-hidden="true">💉</span> {t("vaccineBadge")}</span>}
+            <button type="button" className="link-button" onClick={() => { setMedicine(null); setChosen(null); setVaccine(null); }}>{t("changeDrug")}</button>
           </div>
+          {medicine.vaccine ? <p className="muted small vaccine-next" id="vaccine-chosen">{t("vaccineChosenNote")}</p> : (
           <fieldset className="option-list">
             <legend>{medicine.options.length > 1 ? t("pickStrength") : t("pickStrengthOne")}</legend>
             {medicine.options.map((o) => (
@@ -73,7 +80,7 @@ function DrugStep({ chosen, setChosen, preset }: { chosen: DrugMeta | null; setC
                 <span><strong>{o.strength}</strong> · {o.form}</span>
               </label>
             ))}
-          </fieldset>
+          </fieldset>)}
         </>
       )}
     </div>
@@ -142,9 +149,12 @@ function InsuranceStep() {
 }
 
 function GuidedSearch({ preset }: { preset: Preset | null }) {
-  const { t, meta, drugId, set, place, deviceOrigin } = useApp();
+  const { t, meta, drugId, vaccineId, set, place, deviceOrigin } = useApp();
   const nav = useNavigate();
   const [chosen, setChosenState] = useState<DrugMeta | null>(null);
+  const [vaccine, setVaccineState] = useState<VaccineMeta | null>(null);
+  useEffect(() => { if (meta && vaccineId && !vaccine) setVaccineState(meta.vaccines.find((v) => v.id === vaccineId) ?? null); }, [meta, vaccineId, vaccine]);
+  const setVaccine = (v: VaccineMeta | null) => { setVaccineState(v); set({ vaccineId: v?.id ?? "" }); };
   const [error, setError] = useState<{ drug?: string; place?: string }>({});
   const [busy, setBusy] = useState(false);
   useEffect(() => { if (meta && drugId && !chosen) setChosenState(meta.drugs.find((d) => d.id === drugId) ?? null); }, [meta, drugId, chosen]);
@@ -153,7 +163,7 @@ function GuidedSearch({ preset }: { preset: Preset | null }) {
   const submit = async (e: FormEvent) => {
     e.preventDefault();
     const errs: { drug?: string; place?: string } = {};
-    if (!chosen) errs.drug = t("needDrug");
+    if (!chosen && !vaccine) errs.drug = t("needDrug");
     if (!deviceOrigin && !place.trim()) errs.place = t("needPlace");
     if (!errs.place && !deviceOrigin) {
       setBusy(true);
@@ -166,7 +176,8 @@ function GuidedSearch({ preset }: { preset: Preset | null }) {
       setBusy(false);
     }
     setError(errs);
-    if (!errs.drug && !errs.place && chosen) nav(`/results?drug=${chosen.id}`);
+    if (!errs.drug && !errs.place && vaccine) nav(`/vaccine-results?vaccine=${vaccine.id}`);
+    else if (!errs.drug && !errs.place && chosen) nav(`/results?drug=${chosen.id}`);
   };
 
   return (
@@ -174,7 +185,7 @@ function GuidedSearch({ preset }: { preset: Preset | null }) {
       <h2 id="search-title">{t("searchTitle")}</h2>
       <form onSubmit={submit} noValidate>
         <div className="steps-grid">
-          <DrugStep chosen={chosen} setChosen={setChosen} preset={preset} />
+          <DrugStep chosen={chosen} setChosen={setChosen} vaccine={vaccine} setVaccine={setVaccine} preset={preset} />
           <PlaceStep error={error.place ?? ""} />
           <InsuranceStep />
         </div>
@@ -277,7 +288,7 @@ function TopSearch({ onPick }: { onPick: (m: Medicine, query: string) => void })
   return (
     <section className="top-search" aria-label={t("topSearchLabel")}>
       <MedicineSearch id="top-search" listId="top-search-list" label={t("topSearchLabel")} labelClass="top-search-label"
-        placeholder={t("step1Placeholder")} submitLabel={t("topSearchButton")} onPick={onPick}
+        placeholder={t("step1Placeholder")} submitLabel={t("topSearchButton")} onPick={onPick} withVaccines
         onNoMatch={(q) => nav(`/other-medicine?name=${encodeURIComponent(q)}`)} />
     </section>
   );
@@ -292,7 +303,7 @@ export function Home() {
     setTimeout(() => {
       const card = document.getElementById("guided-search");
       card?.scrollIntoView({ behavior: "smooth", block: "start" });
-      card?.querySelector<HTMLElement>("input[name=drug-option]:checked, input[name=drug-option]")?.focus({ preventScroll: true });
+      card?.querySelector<HTMLElement>("input[name=drug-option]:checked, input[name=drug-option], #place")?.focus({ preventScroll: true });
     }, 60);
   };
   return (

@@ -171,6 +171,14 @@ def pharmacy_details(ctx: RunContext[RunDeps], pharmacy_id: str) -> dict:
 
 
 @pharmacy_finder.tool
+def pharmacy_vaccine(ctx: RunContext[RunDeps], pharmacy_id: str, vaccine: str) -> dict:
+    """Does this pharmacy offer this vaccine? Its own page, its chain's national vaccine page, or not found.
+    Also gives the phone, booking link, and a short call script."""
+    return _log(ctx, PF, "pharmacy_vaccine", tools.pharmacy_vaccine(pharmacy_id, vaccine, ctx.deps.language),
+                {"pharmacy_id": pharmacy_id, "vaccine": vaccine})
+
+
+@pharmacy_finder.tool
 def open_status(ctx: RunContext[RunDeps], pharmacy_id: str) -> dict:
     """Is this pharmacy counter open right now in Boston (lunch breaks and weekends included)?"""
     ctx.deps.hours_ids.append(pharmacy_id)

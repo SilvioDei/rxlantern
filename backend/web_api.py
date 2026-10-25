@@ -144,7 +144,9 @@ def meta() -> dict:
                         "phone": p["phone"]}
                        for p in sorted(pharms, key=lambda p: (p["neighborhood"], p["name"]))],
         "drugs": drugs,
-        "vaccines": [{"id": v["id"], "name": v["name"]} for v in tools._rows("SELECT id, name FROM vaccines")],
+        "vaccines": [{"id": v["id"], "name": v["name"], "group": v["vaccine_group"],
+                      "aliases": tools.VACCINE_ALIASES.get(v["id"], [])}
+                     for v in tools._rows("SELECT id, name, vaccine_group FROM vaccines")],
         "sample_data": sample_data.enabled(),
     }
 
@@ -376,19 +378,65 @@ def vaccines() -> dict:
     pharms = tools._pharmacies()
     out = []
     for v in tools._rows("SELECT * FROM vaccines"):
-        label = next((k for k, vid in tools.VACCINE_IDS.items() if vid == v["id"]), v["name"])
-        offering = [{"id": p["id"], "name": p["name"], "address": p["address"], "neighborhood": p["neighborhood"],
-                     "phone": p["phone"], "latitude": p["latitude"], "longitude": p["longitude"],
-                     "booking_url": p["vaccine_booking_url"]}
-                    for p in pharms if any(label.lower() in x.lower()
-                                           for x in _list(p["vaccines_routine"]) + _list(p["vaccines_travel"]))]
+        offering = []
+        for p in pharms:
+            o = tools.vaccine_offer(p, v["id"])
+            if o["offer"] != "not_listed":
+                offering.append({"id": p["id"], "name": p["name"], "address": p["address"],
+                                 "neighborhood": p["neighborhood"], "phone": p["phone"], "latitude": p["latitude"],
+                                 "longitude": p["longitude"], "booking_url": p["vaccine_booking_url"],
+                                 "offer": o["offer"], "offer_source": o["source"]})
         out.append({"id": v["id"], "name": v["name"], "group": v["vaccine_group"],
                     "pharmacies": offering, "medicare": tools._j(v["medicare"]), "masshealth": tools._j(v["masshealth"]),
                     "commercial": tools._j(v["commercial"]), "notes": tools._j(v["notes"]),
                     "certified_sites_only": bool(v["certified_sites_only"]), "clinic_finder": v["clinic_finder"],
                     "checked_date": v["checked_date"]})
     return {"vaccines": out,
-            "note": "Pharmacies are listed only if their own page names the vaccine. Others may still offer it."}
+            "note": "Pharmacies are listed if their own page or their chain's vaccine page names the vaccine. "
+                    "Others may still offer it."}
+
+
+@router.get("/vaccine-results")
+def vaccine_results(vaccine_id: str, insurance: str = "", plan: str = "", lang: str = "en",
+                    at: str | None = None) -> dict:
+    """The vaccine results page: every pharmacy with whether it offers the vaccine (its own page, its chain's page,
+    or not found), open now, booking link, reviews; coverage for the chosen insurance; a short call script.
+    No stock reports for vaccines. The browser sorts by distance, as on the medicine results page."""
+    rows = tools._rows("SELECT * FROM vaccines WHERE id = ?", (vaccine_id,))
+    if not rows:
+        raise HTTPException(404, "That vaccine is not in RxLantern. Please call the pharmacy.")
+    v = rows[0]
+    when = _parse_at(at) or tools.now_boston()
+    insurance = insurance if insurance in INSURANCE_TYPES else ""
+    stats = community.review_stats_all()
+    sample_reviews: dict[str, int] = {}
+    for r in sample_data.reviews():
+        sample_reviews[r["pharmacy_id"]] = sample_reviews.get(r["pharmacy_id"], 0) + 1
+    pharms = []
+    for p in tools._pharmacies():
+        b = _pharmacy_brief(p, lang, when)
+        o = tools.vaccine_offer(p, v["id"])
+        b.update(offer=o["offer"], offer_source=o["source"], offer_checked_date=o["checked_date"],
+                 offer_chain=o.get("chain"), booking_url=p["vaccine_booking_url"],
+                 reviews=stats.get(p["id"], {"reviews": 0, "average_rating": None, "average_wait_minutes": None}),
+                 sample_reviews=sample_reviews.get(p["id"], 0))
+        pharms.append(b)
+    chain = next((c for c in tools._chains() if v["id"] in c["vaccine_ids"]), None)
+    return {
+        "vaccine": {"id": v["id"], "name": v["name"], "group": v["vaccine_group"], "notes": tools._j(v["notes"]),
+                    "certified_sites_only": bool(v["certified_sites_only"]), "clinic_finder": v["clinic_finder"],
+                    "checked_date": v["checked_date"]},
+        "coverage": tools.vaccine_coverage(v["id"], insurance or "unknown"),
+        "details": {"medicare": tools._j(v["medicare"]), "masshealth": tools._j(v["masshealth"]),
+                    "commercial": tools._j(v["commercial"])},
+        "insurance": insurance, "plan": _plan(plan, insurance),
+        "call_script": tools.vaccine_call_script(v["name"], "es" if lang == "es" else "en"),
+        "chain_note": {"chain": chain["chain"], "says": chain["says"], "source": chain["source"],
+                       "checked_date": chain["checked_date"]} if chain else None,
+        "holidays": tools.upcoming_holidays(7, when),
+        "checked_at": when.strftime("%Y-%m-%d %H:%M"), "pharmacies": with_languages(pharms),
+        "sample_data": sample_data.enabled(),
+    }
 
 
 @router.get("/other-drug")

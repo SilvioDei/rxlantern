@@ -61,9 +61,10 @@ export interface Meta {
   plans: { id: string; name: string; type: string }[];
   pharmacies: { id: string; name: string; address: string; neighborhood: string; phone: string }[];
   drugs: DrugMeta[];
-  vaccines: { id: string; name: string }[];
+  vaccines: VaccineMeta[];
   sample_data: boolean;
 }
+export interface VaccineMeta { id: string; name: string; group: string; aliases: string[] }
 export interface PharmacyBrief {
   id: string; name: string; type: string; address: string; phone: string; neighborhood: string;
   latitude: number; longitude: number; open_now: boolean | null; status: string; closes_at: string | null;

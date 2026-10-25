@@ -25,6 +25,10 @@ import httpx
 from playwright.sync_api import Page, expect, sync_playwright
 
 REPO = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO / "tests"))
+import cleanup_util  # noqa: E402
+
+SNAP = cleanup_util.snapshot()  # counts before this run, put back by cleanup()
 BASE = os.getenv("RXL_BASE", "http://127.0.0.1:8000")
 SHOTS = REPO / "output" / "screenshots"
 RESULTS = REPO / "output" / "ui_test_results_7c2.json"
@@ -419,7 +423,7 @@ def t_impact(browser):
     assert r.status_code == 200 and r.json()["stop_reason"] == "completed", r.text[:200]
     after_real = httpx.get(f"{BASE}/api/impact").json()
     assert after_real["questions"] == start + 1, after_real
-    assert after_real["patient_minutes"] == (start + 1) * 15 and after_real["staff_minutes"] == (start + 1) * 4
+    assert after_real["patient_minutes"] == (start + 1) * 14 and after_real["staff_minutes"] == (start + 1) * 4
     ctx = new_ctx(browser)
     page = ctx.new_page()
     resp = page.request.post(f"{BASE}/api/ask", data=q, timeout=180000)  # headless browser = automated test
@@ -430,12 +434,12 @@ def t_impact(browser):
     expect(page.locator(".impact-line").first).to_contain_text(f"RxLantern has answered {start + 1} question")
     expect(page.locator(".impact-line .estimate-tag").first).to_have_text("Estimate")
     page.goto(f"{BASE}/about")
-    expect(page.locator(".impact-card")).to_contain_text(f"saving patients an estimated {(start + 1) * 15} minutes")
-    expect(page.locator(".impact-card")).to_contain_text("about 15 minutes and 3 calls")
+    expect(page.locator(".impact-card")).to_contain_text(f"saving patients an estimated {(start + 1) * 14} minutes")
+    expect(page.locator(".impact-card")).to_contain_text("based on two measured calls")
     expect(page.locator(".impact-card")).to_contain_text(f"pharmacy staff an estimated {(start + 1) * 4} minutes")
     shot(page, "11_time_saved_about.png")
     ctx.close()
-    return f"real question: {start} -> {start + 1} (15 patient min, 4 staff min each); headless-browser question and emergency message: not counted; home line and About card labeled 'Estimate'"
+    return f"real question: {start} -> {start + 1} (14 patient min, 4 staff min each); headless-browser question and emergency message: not counted; home line and About card labeled 'Estimate'"
 
 
 # ----------------------------------------------------------------------------- 12. Spanish, Easy view, phone
@@ -475,23 +479,8 @@ def cleanup() -> dict:
         for e in accounts:
             if c.post("/api/auth/login", json={"email": e, "password": PASSWORD}).status_code == 200:
                 c.delete("/api/auth/account")
-    con = sqlite3.connect(USER_DB)
-    for uid in [r[0] for r in con.execute("SELECT id FROM users WHERE email LIKE '%@example.com'")]:
-        for table in ("stock_reports", "reviews", "sessions"):
-            con.execute(f"DELETE FROM {table} WHERE user_id = ?", (uid,))
-        con.execute("DELETE FROM users WHERE id = ?", (uid,))
-    con.execute("DELETE FROM login_failures")
-    con.execute("DELETE FROM search_counts")  # every count made by this test run (the database had none before)
-    if "impact_start" in STATE:
-        if STATE["impact_start"]:
-            con.execute("UPDATE impact_counter SET value = ? WHERE key = 'questions_answered'", (STATE["impact_start"],))
-        else:
-            con.execute("DELETE FROM impact_counter")
-    con.commit()
-    counts = {t: con.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0]
-              for t in ("users", "sessions", "stock_reports", "reviews", "login_failures", "search_counts", "impact_counter")}
-    con.close()
-    return counts
+    # Only test accounts (@example.com) and their posts; counts go back to how they were before the run.
+    return cleanup_util.restore(SNAP)
 
 
 def main() -> int:

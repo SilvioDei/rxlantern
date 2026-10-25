@@ -25,6 +25,10 @@ import httpx
 from playwright.sync_api import Page, expect, sync_playwright
 
 REPO = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO / "tests"))
+import cleanup_util  # noqa: E402
+
+SNAP = cleanup_util.snapshot()  # counts before this run, put back by cleanup()
 BASE = os.getenv("RXL_BASE", "http://127.0.0.1:8000")
 NO_SAMPLE_PORT = 8001
 SHOTS = REPO / "output" / "screenshots"
@@ -548,26 +552,14 @@ def cleanup(browser) -> dict:
         for e in accounts:
             if c.post("/api/auth/login", json={"email": e, "password": PASSWORD}).status_code == 200:
                 c.delete("/api/auth/account")
-    con = sqlite3.connect(USER_DB)
-    # Also remove anything left from earlier manual tries on this machine (test runs only use example.com addresses).
-    ids = [r[0] for r in con.execute("SELECT id FROM users WHERE email LIKE '%@example.com'")]
-    for uid in ids:
-        for table in ("stock_reports", "reviews", "sessions"):
-            con.execute(f"DELETE FROM {table} WHERE user_id = ?", (uid,))
-        con.execute("DELETE FROM users WHERE id = ?", (uid,))
-    con.execute("DELETE FROM login_failures")
-    con.commit()
-    counts = {t: con.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0]
-              for t in ("users", "sessions", "stock_reports", "reviews", "login_failures")}
-    con.close()
-    return counts
+    # Only test accounts (@example.com) and their posts; counts go back to how they were before the run.
+    return cleanup_util.restore(SNAP)
 
 
 def main() -> int:
     SHOTS.mkdir(parents=True, exist_ok=True)
-    for old in SHOTS.glob("*.png"):
-        if not old.name.startswith("7c"):  # Step 7c screenshots are retaken by tests/ui_step7c.py and ui_step7c2.py
-            old.unlink()
+    for old in SHOTS.glob("[0-9][0-9]*.png"):  # only this test's own numbered screenshots (01_home.png ...)
+        old.unlink()
     assert httpx.get(f"{BASE}/api/health").status_code == 200, "start the app first: ..\\.venv\\Scripts\\python.exe run.py"
     with sync_playwright() as pw:
         browser = pw.chromium.launch()
@@ -580,7 +572,7 @@ def main() -> int:
     out = {"run_at": datetime.now().isoformat(timespec="seconds"), "base_url": BASE, "browser": "Chromium (Playwright)",
            "passed": passed, "failed": len(results) - passed, "checks": results,
            "cleanup": {"test_accounts_created": len(accounts), "rows_left_in_user_db": counts},
-           "screenshots": sorted(p.name for p in SHOTS.glob("*.png") if not p.name.startswith("7c"))}
+           "screenshots": sorted(p.name for p in SHOTS.glob("[0-9][0-9]*.png"))}
     RESULTS.write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"\n{passed}/{len(results)} passed. Rows left in user DB: {counts}")
     return 0 if passed == len(results) and not any(counts.values()) else 1

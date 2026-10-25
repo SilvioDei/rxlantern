@@ -754,3 +754,32 @@ Every prompt sent to the AI assistant, word for word, grouped by build step.
 > 5. Make sure .env is in .gitignore and is not in any commit.
 >
 > If a command needs my permission, ask and I will approve it. Add this prompt to AI_prompts.md under Step 9. When you are done, tell me the results of steps 1 and 4, then stop.
+
+> Keep my Yale email as the commit author. Delete the two backup bundle files that still contain the old key. Then stop.
+
+(Sent twice.)
+
+### Step 9 (part 1b) — Make vaccines searchable
+
+> Step 9 (part 1b): Make vaccines searchable. Log this prompt under Step 9 in AI_prompts.md.
+>
+> A real user tried to search for "hepatitis B vaccine" in the search bar and it didn't work; vaccines are only on the Vaccines page. Fix this:
+>
+> 1. Make the top search bar and the guided search find all 10 vaccines, including common names patients use: "hep B" / "hepatitis B shot", "flu shot", "COVID shot" / "COVID booster", "shingles" / "Shingrix", "RSV", "pneumonia" / "pneumococcal", "tetanus" / "Tdap", "hep A", "typhoid", "yellow fever". Spoken searches should work too. Allow small spelling mistakes.
+> 2. When a patient picks a vaccine, ask for location and insurance like the medicine search, then show a vaccine results page: nearby pharmacies that offer that vaccine (open now / closes at, distance, booking link, Call button with a short vaccine call script), and the coverage for the chosen insurance (Massachusetts rule, large-employer warning, Medicare, MassHealth, travel vaccines "check with your plan", yellow fever certified sites).
+> 3. Include the "Rate this pharmacy" button and the "Send it here" and "Before you go" cards. Do not add stock-report buttons for vaccines.
+> 4. The chat should also answer vaccine questions like "Does the CVS on Morrissey Blvd have the hepatitis B vaccine, and is it covered?"
+> 5. Update the time-saved estimate: I now have two measured calls. A family member called the CVS at 715 Morrissey Blvd, Dorchester on Saturday around 5 PM to ask about the hepatitis B vaccine and waited about 13 minutes for a callback, and the Friday call took about 15 minutes. Change the patient estimate to about 14 minutes "based on two measured calls" (keep staff at 4 minutes). Update the About page in English and Spanish and PROJECT_NOTES.md. Do not include anyone's name.
+>
+> Test with Playwright, report pass or fail, fix failures, and rerun until all pass:
+> - Searching "hepatitis B vaccine", "hep b", and "flu shot" from the top search bar each reach the vaccine results page, with Morrissey Blvd listed when searching near 02368 (Randolph) or 02122.
+> - Coverage shows correctly for MassHealth, Medicare, and Blue Cross.
+> - A medicine search still works as before.
+> - The chat answers the Morrissey Blvd hepatitis B question.
+> - Works in Spanish, in Easy view, and at phone width.
+> - The Step 7b and Step 7c checks still pass.
+> Delete any test accounts and posts so the real database has no test rows (keep any real reviews my family member or roommate posted). Retake the affected screenshots. Rebuild frontend/dist. Commit with the message "Make vaccines searchable; update time-saved baseline". Give me the pass/fail table and stop.
+
+Sent while this step was running:
+
+> Important for the cleanup: only delete accounts and posts created by your tests (for example accounts with @example.com addresses). Never delete accounts, reviews, or stock reports made by real people through the website. Before deleting anything, list what you plan to delete and confirm none of it is a real post.

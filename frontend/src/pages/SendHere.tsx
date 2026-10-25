@@ -15,6 +15,7 @@ export function SendHere() {
   const [p, setP] = useState<PharmacyBrief | null>(null);
   const [error, setError] = useState("");
   const drug = meta?.drugs.find((d) => d.id === params.get("drug"));
+  const vaccine = meta?.vaccines.find((v) => v.id === params.get("vaccine"));
   useEffect(() => {
     api.get<{ brief: PharmacyBrief }>(`/api/pharmacies/${id}?lang=${lang}`).then((r) => setP(r.brief))
       .catch(() => setError(t("notFound")));
@@ -36,7 +37,7 @@ export function SendHere() {
         <p className="small">{t("sendHereNoPersonal")}</p>
       </section>
       <p className="no-print">{t("sendHereNote")}</p>
-      <BeforeYouGo drugName={drug ? drug.name : null} hoursToday={hours} />
+      <BeforeYouGo drugName={drug ? drug.name : null} vaccineName={vaccine ? vaccine.name : null} hoursToday={hours} />
       <div className="card-actions no-print">
         <button type="button" className="btn primary big" onClick={() => window.print()}><span aria-hidden="true">🖨</span> {t("sendHerePrint")}</button>
         <ReadAloud text={() => `${t("sendHereTitle")} ${p.name}. ${p.address}. ${p.phone}.`} />

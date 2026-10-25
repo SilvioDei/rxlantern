@@ -254,3 +254,41 @@ rxcompass/
 - A scan of every object in the git database (all commits, trees, and blobs) found no Portkey key value and no owner
   email in any file or commit message, and no `.env` file in any commit. `.env` and `.env.*` are in `.gitignore`.
 - The commit author lines still carry the git `user.email` (normal for git); that is a separate choice before pushing.
+
+## Step 9 (part 1b): vaccines are searchable (2026-10-24)
+
+- **Search**: the top search bar and step 1 of the guided search suggest the 10 vaccines (with a "Vaccine" badge)
+  alongside the 150 medicines. One list of the words patients use, `tools.VACCINE_ALIASES` (English and Spanish:
+  "hep B", "hepatitis B shot", "flu shot", "COVID booster", "Shingrix", "pneumonia", "tetanus", "vacuna de la gripe",
+  brand names...), is sent in `/api/meta` and also used by the chat tools. The box allows small spelling mistakes in a
+  word or a whole phrase ("hepatits b", "flu shto", "yelow fever"). Spoken searches go into the same box.
+- **Flow**: picking a vaccine fills step 1 ("Next: where you are and your insurance"); Find pharmacies opens
+  `/vaccine-results?vaccine=<id>` (`/api/vaccine-results`). The page has: nearby pharmacies that list the vaccine,
+  sorted by distance (open now / closes at, booking link, Call button with a short vaccine call script, directions,
+  Send it here, Rate this pharmacy, reviews), the other pharmacies folded under "not found on their pages (call to
+  ask)", the map, coverage for the chosen insurance (Massachusetts Bulletin 2025-03 first, then the large-employer
+  warning; Medicare part; MassHealth; travel "check with your plan"; yellow fever certified sites and CDC finder), a
+  Before you go card (photo ID, insurance card, vaccination record). No stock-report buttons anywhere on it.
+- **Where a vaccine is listed** (choice made while the owner was away): store pages for the 8 CVS stores name only
+  flu and COVID-19, but CVS's national vaccine page (https://www.cvs.com/immunizations/get-vaccinated, checked
+  2026-10-24) lists hepatitis A and B, pneumococcal, RSV, shingles, and Tdap too and says to confirm availability at
+  the store. Those stores are shown as "Listed on CVS's vaccine page, not on this store's own page: call or book online
+  to confirm", with that source; never "in stock". Data: `data/chain_vaccines.json`. Typhoid and yellow fever are not
+  named on that page: not found.
+- **Nearby towns**: `data/boston_zip_centroids.csv` now also has 29 ZIP codes of towns next to Boston (Randolph 02368,
+  Milton, Quincy, Braintree, Brookline, Cambridge, Somerville, Chelsea, Everett, Revere, Winthrop, Dedham, Canton,
+  Newton, Watertown, Malden, Medford, Needham) from the same Census files (`scripts/build_zip_centroids.py`).
+- **Chat**: new Pharmacy Finder tool `pharmacy_vaccine` (own page / chain page / not found, phone, booking link, call
+  script). The Front Desk asks the Pharmacy Finder and Medication Access for a "does this pharmacy have the vaccine and
+  is it covered" question and answers both parts.
+- **Time saved**: now "based on two measured calls": a Friday prescription call (about 15 minutes, 3 calls) and a
+  Saturday call around 5 PM to the CVS at 715 Morrissey Blvd, Dorchester about the hepatitis B vaccine (about 13
+  minutes waiting for a callback). Patient estimate 14 minutes per answered question (the average), staff still 4.
+  About page in English and Spanish; no names.
+- **Tests**: `tests/ui_step9_vaccines.py` (10 checks, one chat question). The browser tests now share
+  `tests/cleanup_util.py`: they delete only test accounts (@example.com) and their posts, print what they delete, and
+  put search counts and the time-saved counter back to their values before the run (they used to clear those tables,
+  which would have removed real rows). `tests/ui_step7b.py` now deletes only its own numbered screenshots (it used to
+  delete every screenshot except the 7c ones).
+- **Real rows kept**: 3 real accounts, 2 stock reports, 1 review, 1 search count, and 2 real chat questions from people
+  using the website were left untouched.

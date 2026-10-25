@@ -15,6 +15,7 @@ import { Pharmacies } from "./pages/Pharmacies";
 import { PharmacyPage } from "./pages/PharmacyPage";
 import { Shortages } from "./pages/Shortages";
 import { Vaccines } from "./pages/Vaccines";
+import { VaccineResults } from "./pages/VaccineResults";
 import { Community } from "./pages/Community";
 import { AboutPage } from "./pages/About";
 import { Admin } from "./pages/Admin";
@@ -46,6 +47,7 @@ createRoot(document.getElementById("root")!).render(
             <Route path="/pharmacies/:id" element={<PharmacyPage />} />
             <Route path="/shortages" element={<Shortages />} />
             <Route path="/vaccines" element={<Vaccines />} />
+            <Route path="/vaccine-results" element={<VaccineResults />} />
             <Route path="/community" element={<Community />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/admin" element={<Admin />} />

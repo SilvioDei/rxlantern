@@ -23,6 +23,10 @@ import httpx
 from playwright.sync_api import Page, expect, sync_playwright
 
 REPO = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO / "tests"))
+import cleanup_util  # noqa: E402
+
+SNAP = cleanup_util.snapshot()  # counts before this run, put back by cleanup()
 BASE = os.getenv("RXL_BASE", "http://127.0.0.1:8000")
 SHOTS = REPO / "output" / "screenshots"
 RESULTS = REPO / "output" / "ui_test_results_7c.json"
@@ -349,17 +353,8 @@ def cleanup() -> dict:
         for e in accounts:
             if c.post("/api/auth/login", json={"email": e, "password": PASSWORD}).status_code == 200:
                 c.delete("/api/auth/account")
-    con = sqlite3.connect(USER_DB)
-    for uid in [r[0] for r in con.execute("SELECT id FROM users WHERE email LIKE '%@example.com'")]:
-        for table in ("stock_reports", "reviews", "sessions"):
-            con.execute(f"DELETE FROM {table} WHERE user_id = ?", (uid,))
-        con.execute("DELETE FROM users WHERE id = ?", (uid,))
-    con.execute("DELETE FROM login_failures")
-    con.commit()
-    counts = {t: con.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0]
-              for t in ("users", "sessions", "stock_reports", "reviews", "login_failures")}
-    con.close()
-    return counts
+    # Only test accounts (@example.com) and their posts; counts go back to how they were before the run.
+    return cleanup_util.restore(SNAP)
 
 
 def main() -> int:

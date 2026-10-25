@@ -11,6 +11,7 @@ interface Settings {
   insurance: string;  // masshealth | medicare | commercial | uninsured | ""
   plan: string;       // commercial plan id
   drugId: string;     // last medicine chosen in the guided search
+  vaccineId: string;  // or the last vaccine chosen there (only one of the two is set)
 }
 
 /** A position from "Use my location": kept in memory only (never saved, never sent to the server). */
@@ -53,7 +54,7 @@ const Ctx = createContext<AppState | null>(null);
 
 function load(): Settings {
   const fallback: Settings = { lang: navigator.language?.startsWith("es") ? "es" : "en", easy: false, place: "",
-    insurance: "", plan: "", drugId: "" };
+    insurance: "", plan: "", drugId: "", vaccineId: "" };
   try {
     return { ...fallback, ...JSON.parse(localStorage.getItem(KEY) || "{}") };
   } catch {
