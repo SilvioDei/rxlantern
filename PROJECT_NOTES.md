@@ -245,3 +245,12 @@ rxcompass/
 
 - One step at a time.
 - Every prompt is logged word for word in `AI_prompts.md` under its step.
+
+## Step 9 follow-up: git history cleaned (2026-10-24)
+
+- The old Portkey key (the one Portkey rejected, from `../.env`) had been pasted into an early AI_prompts.md entry. It was
+  replaced with `[REMOVED]` in every commit with git filter-repo; all commits and messages were kept in the same order.
+- The owner's email in two early versions of AI_prompts.md was replaced with `[admin email]` the same way.
+- A scan of every object in the git database (all commits, trees, and blobs) found no Portkey key value and no owner
+  email in any file or commit message, and no `.env` file in any commit. `.env` and `.env.*` are in `.gitignore`.
+- The commit author lines still carry the git `user.email` (normal for git); that is a separate choice before pushing.
