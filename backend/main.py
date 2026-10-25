@@ -1,6 +1,6 @@
 """FastAPI app (name comes from backend.config.APP_NAME). Serves the API and the built website (frontend/dist).
 
-Start everything with one command from rxcompass/:  ..\\.venv\\Scripts\\python.exe run.py
+Start everything with one command from the repository folder:  ..\\.venv\\Scripts\\python.exe run.py
 """
 
 from contextlib import asynccontextmanager

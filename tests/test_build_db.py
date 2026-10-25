@@ -1,6 +1,6 @@
 """Check that the app builds data/rxlantern.db on startup from data/pharmacies.json.
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe -m tests.test_build_db
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe -m tests.test_build_db
 """
 
 import json

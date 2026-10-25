@@ -1,7 +1,7 @@
 """Build data/drugs.json: RxLantern's 150 drugs matched to RxNorm (NLM) names, RxCUIs, and NDCs, with each
 drug's DEA schedule taken from the FDA's public NDC directory (openFDA), never typed in by hand.
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe scripts\\build_drugs.py
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe scripts\\build_drugs.py
 Uses the free RxNav REST API (https://lhncbc.nlm.nih.gov/RxNav/APIs/RxNormAPIs.html) and the openFDA NDC
 directory bulk file (https://open.fda.gov/apis/drug/ndc/download/, saved to data/raw/, git-ignored). No keys.
 

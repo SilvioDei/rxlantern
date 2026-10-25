@@ -1,7 +1,7 @@
 """Build data/savings.json: for each of RxLantern's drugs, links (never prices) to its GoodRx page and TrumpRx.gov page
 when the drug is listed there, and, for brand-name drugs, the manufacturer's official savings program.
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe scripts\\build_savings.py
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe scripts\\build_savings.py
 Needs Playwright's Chromium (TrumpRx and the manufacturer sites only load in a real browser).
 
 - GoodRx: "listed" = the drug's page is in GoodRx's own sitemap of drug price pages

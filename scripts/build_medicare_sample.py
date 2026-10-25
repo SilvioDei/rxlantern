@@ -1,6 +1,6 @@
 """Build small Massachusetts-only Medicare Part D files in data/medicare/ for our 150 drugs.
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe scripts\\build_medicare_sample.py [--download]
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe scripts\\build_medicare_sample.py [--download]
 
 Source: CMS "Quarterly Prescription Drug Plan Formulary, Pharmacy Network, and Pricing Information"
 (data.cms.gov), newest 2026 release. The big zip (about 2.5 GB) goes to data/raw/ (git-ignored).

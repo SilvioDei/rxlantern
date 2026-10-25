@@ -5,7 +5,7 @@
 
 The code-level safety rules (medical advice, unclear hospital) stay on in both modes: safety is never turned off.
 Each answer is checked automatically for the rule and the key fact that question needs.
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe -m tests.cost_experiment
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe -m tests.cost_experiment
 Results: output/cost_experiment.json
 """
 

@@ -1,6 +1,6 @@
 """Click through the website with Playwright and save screenshots to output/screenshots/.
 
-Start the app first (python run.py), then run from rxcompass/:
+Start the app first (python run.py), then run from the repository folder:
     ..\\.venv\\Scripts\\python.exe -m tests.ui_test
 Asks a few questions (model calls), posts a stock report and a review with a throwaway test account,
 then deletes that account and its posts so data/rxlantern_user.db is empty again.

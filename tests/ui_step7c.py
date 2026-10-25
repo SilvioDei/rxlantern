@@ -1,6 +1,6 @@
 """Step 7c (part 1) website checks in a real browser (Playwright, Chromium).
 
-Run from rxcompass/ while the app is running (..\\.venv\\Scripts\\python.exe run.py):
+Run from the repository folder while the app is running (..\\.venv\\Scripts\\python.exe run.py):
     ..\\.venv\\Scripts\\python.exe tests\\ui_step7c.py
 
 Checks 1-7 of Step 7c. (Check 8 = tests\\ui_step7b.py plus the Step 4 agent questions in tests\\try_agents.py.)

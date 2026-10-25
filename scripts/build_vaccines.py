@@ -1,6 +1,6 @@
 """Build data/vaccines.json: who pays for each vaccine (Medicare, MassHealth, commercial).
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe scripts\\build_vaccines.py
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe scripts\\build_vaccines.py
 Facts below were read from official pages on the checked date. MassHealth rows come from the saved
 MassHealth Drug List searches in data/raw/masshealth/vax_*.html (scripts/fetch_masshealth.py pattern).
 Vaccine rules changed in 2025-2026: re-check before relying on this.

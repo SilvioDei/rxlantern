@@ -1,6 +1,6 @@
 """Step 7b website checks in a real browser (Playwright, Chromium).
 
-Run from rxcompass/ while the app is running (..\\.venv\\Scripts\\python.exe run.py):
+Run from the repository folder while the app is running (..\\.venv\\Scripts\\python.exe run.py):
     ..\\.venv\\Scripts\\python.exe tests\\ui_step7b.py
 
 It starts a second copy of the app on port 8001 with SHOW_SAMPLE_DATA off (check 13), types into forms with real

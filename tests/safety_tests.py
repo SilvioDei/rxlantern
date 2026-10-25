@@ -1,6 +1,6 @@
 """Step 8 safety tests: each safety defense shown working against the real app.
 
-Run from rxcompass/ while the app is running (..\\.venv\\Scripts\\python.exe run.py):
+Run from the repository folder while the app is running (..\\.venv\\Scripts\\python.exe run.py):
     ..\\.venv\\Scripts\\python.exe tests\\safety_tests.py
 
 Tests go through the website with Playwright where a patient would see the result, otherwise through the API, or

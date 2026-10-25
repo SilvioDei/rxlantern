@@ -804,3 +804,11 @@ Sent while this step was running:
 > 3. The local folder can stay named rxcompass. Make sure nothing in the README
 
 (The message ended here, after "Make sure nothing in the README".)
+
+### Step 9 (part 2) — OK to push
+
+> Yes. First reword the folder-name references: in the error message and code comments, say "the repository folder" instead of "rxcompass", and in the README use the real clone URL (https://github.com/SilvioDei/rxlantern) and "cd rxlantern". Commit that.
+>
+> Keeping the anonymized audit trail questions in the public repo is fine, since they contain no personal details.
+>
+> Then create SilvioDei/rxlantern as a public repo and push all commits. After pushing, confirm the repo page is public and shows the README, do the quick fresh-clone dry run from the GitHub URL, save the link in output/github_url.txt, and give it to me.

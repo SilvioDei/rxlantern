@@ -1,6 +1,6 @@
 """Community tests: accounts, stock reports, reviews, and moderation. Results -> output/community_tests.json.
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe -m tests.test_community
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe -m tests.test_community
 Uses a separate temporary database (deleted at the end), so data/rxlantern_user.db stays empty.
 Two moderation checks call the model (a clean review and an honest negative review); the rest are decided in code.
 """

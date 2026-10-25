@@ -27,11 +27,11 @@ submissions/
 ### Windows (PowerShell or Command Prompt)
 
 ```bash
-git clone <this repository's URL>
+git clone https://github.com/SilvioDei/rxlantern
 ```
 
 ```bash
-cd <the cloned folder>
+cd rxlantern
 ```
 
 ```bash
@@ -52,11 +52,11 @@ You do not need to "activate" the virtual environment.
 ### Mac / Linux
 
 ```bash
-git clone <this repository's URL>
+git clone https://github.com/SilvioDei/rxlantern
 ```
 
 ```bash
-cd <the cloned folder>
+cd rxlantern
 ```
 
 ```bash

@@ -1,6 +1,6 @@
 """Build data/boston_zip_centroids.csv: center points of ZIP code areas (ZCTAs) in the City of Boston.
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe scripts\\build_zip_centroids.py
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe scripts\\build_zip_centroids.py
 
 Sources (U.S. Census Bureau, public):
 - Which ZCTAs overlap Boston city (place GEOID 2507000): 2020 ZCTA-to-place relationship file.

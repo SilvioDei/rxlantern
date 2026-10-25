@@ -1,6 +1,6 @@
 """Write output/tokenomics.md from the real runs in output/cost_experiment.json.
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe scripts\\build_tokenomics.py
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe scripts\\build_tokenomics.py
 """
 
 import json

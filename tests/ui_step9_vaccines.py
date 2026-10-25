@@ -1,6 +1,6 @@
 """Step 9 (part 1b) checks in a real browser (Playwright, Chromium): vaccines are searchable.
 
-Run from rxcompass/ while the app is running (..\\.venv\\Scripts\\python.exe run.py):
+Run from the repository folder while the app is running (..\\.venv\\Scripts\\python.exe run.py):
     ..\\.venv\\Scripts\\python.exe tests\\ui_step9_vaccines.py
 
 Check 6 sends one chat question (gpt-6-luna through Portkey); nothing else uses the AI model.

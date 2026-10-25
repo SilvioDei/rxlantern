@@ -1,6 +1,6 @@
 """Run the Step 4 test questions through the full agent team and save the results.
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe -m tests.try_agents [question numbers...]
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe -m tests.try_agents [question numbers...]
 Calls gpt-6-luna through Portkey. Results go to output/agent_test_runs.json.
 """
 

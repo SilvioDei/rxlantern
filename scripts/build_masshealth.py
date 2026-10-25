@@ -5,7 +5,7 @@ pharmacist-checked pattern is needed, otherwise auto_pick(): the brand's own row
 Victoza, ...), else the generic row whose wording best fits our dosage form. Every MHDL row used is saved in
 "mhdl_rows" so it can be checked, and new drugs carry "match": "rule-based" for review.
 
-Run from rxcompass/:
+Run from the repository folder:
   ..\\.venv\\Scripts\\python.exe scripts\\fetch_masshealth.py   (saves pages to data/raw/masshealth/)
   ..\\.venv\\Scripts\\python.exe scripts\\build_masshealth.py
 """

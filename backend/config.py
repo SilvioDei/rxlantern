@@ -59,11 +59,11 @@ OUTPUT_DIR = REPO_DIR / "output"
 
 
 def load_env() -> Path | None:
-    """Load .env from rxcompass/ first, then from the folder one level above (where graders put theirs).
+    """Load .env from the repository folder first, then from the folder one level above (where graders put theirs).
 
     Both files are read, so one never hides the other. A value set earlier wins: an already-set environment
-    variable beats rxcompass/.env, which beats ../.env. Returns the first file found, or None if neither exists
-    (then an already-set PORTKEY_API_KEY environment variable is used).
+    variable beats the repository folder's .env, which beats ../.env. Returns the first file found, or None if
+    neither exists (then an already-set PORTKEY_API_KEY environment variable is used).
     """
     found = None
     for candidate in (REPO_DIR / ".env", REPO_DIR.parent / ".env"):
@@ -80,7 +80,7 @@ def get_portkey_key() -> str:
     key = os.getenv("PORTKEY_API_KEY", "").strip()
     if not key:
         raise RuntimeError(
-            "PORTKEY_API_KEY not found. Put it in a .env file in rxcompass/ "
+            "PORTKEY_API_KEY not found. Put it in a .env file in the repository folder "
             "or in the folder one level above it."
         )
     return key

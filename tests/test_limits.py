@@ -1,6 +1,6 @@
 """Show each spending limit stopping a run. Results go to output/limit_tests.json.
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe -m tests.test_limits
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe -m tests.test_limits
 Limits are lowered on purpose for each check, then put back. A few small model calls are made.
 """
 

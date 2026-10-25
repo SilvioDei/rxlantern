@@ -1,6 +1,6 @@
 """Tiny setup check: .env loading, Portkey key, and a tool call on the model.
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe -m tests.smoke_test_model
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe -m tests.smoke_test_model
 """
 
 from pydantic_ai import Agent

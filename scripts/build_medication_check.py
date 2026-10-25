@@ -1,7 +1,7 @@
 """Write output/medication_check.md: a "please review first" list, one section per drug, and vaccines,
 for pharmacist review.
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe scripts\\build_medication_check.py
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe scripts\\build_medication_check.py
 Reads only the small files in data/.
 """
 

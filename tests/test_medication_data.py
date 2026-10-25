@@ -1,6 +1,6 @@
 """Check the Step 3 medication tables and the FDA shortage tool (cache + offline fallback).
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe -m tests.test_medication_data
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe -m tests.test_medication_data
 Calls the public openFDA API once; no AI model is called.
 """
 

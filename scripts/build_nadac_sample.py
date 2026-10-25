@@ -1,6 +1,6 @@
 """Build data/nadac_sample.csv: latest weekly NADAC prices for our 150 drugs only.
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe scripts\\build_nadac_sample.py [--download]
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe scripts\\build_nadac_sample.py [--download]
 
 NADAC = National Average Drug Acquisition Cost (CMS / data.medicaid.gov): the average price
 pharmacies pay to buy a drug. It is not what a patient pays at the counter.

@@ -1,7 +1,7 @@
 """MassHealth step in one command: fetch the MassHealth Drug List (MHDL) search pages for RxLantern's drugs, then
 rebuild data/masshealth.json and output/medication_check.md, then delete the downloaded pages.
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe scripts\\fetch_masshealth.py
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe scripts\\fetch_masshealth.py
   --fetch-only   only save the pages to data/raw/masshealth/ (no rebuild, pages kept)
 
 If the MHDL website does not answer, nothing is changed and the script says so (run it again later).

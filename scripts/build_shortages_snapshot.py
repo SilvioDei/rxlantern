@@ -1,6 +1,6 @@
 """Save FDA shortage status for all 150 drugs to data/shortages_snapshot.json (offline fallback).
 
-Run from rxcompass/:  ..\\.venv\\Scripts\\python.exe scripts\\build_shortages_snapshot.py
+Run from the repository folder:  ..\\.venv\\Scripts\\python.exe scripts\\build_shortages_snapshot.py
 """
 
 import json

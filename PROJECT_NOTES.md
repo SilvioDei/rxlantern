@@ -115,7 +115,7 @@ RxLantern should look like an elite, modern healthcare app: colorful and vibrant
   reviewed by hand, and NPH insulin by hand (the October 2026 MassHealth Drug List PDF the project owner saved
   gives the same rows and is the fallback in `PDF_ROWS`). Benzonatate and phentermine are not on the List (website and PDF). MassHealth members pay no
   prescription copays (PDF introduction), so the site now says that. If the site is down during a rebuild, drugs
-  without a saved page show "not checked yet" (never a guess). Refresh with one command from rxcompass/:
+  without a saved page show "not checked yet" (never a guess). Refresh with one command from the repository folder:
   `..\.venv\Scripts\python.exe scripts\fetch_masshealth.py`.
 
 ## Step 7c (part 2): new features
@@ -201,7 +201,7 @@ screenshots: `output/screenshots/safety_*.png`; one self-contained page with eve
 
 - The app is called **RxLantern** (it was called RxCompass in Steps 1–3; earlier prompts in AI_prompts.md keep the old name).
 - The name lives in one setting: `APP_NAME` in `backend/config.py`, next to `MODEL_NAME`. The website, agents, and page title read it from there.
-- The project folder is still `rxcompass/`; it will be renamed when the repo is pushed to GitHub.
+- The GitHub repository is https://github.com/SilvioDei/rxlantern (cloned as `rxlantern/`). The owner's local folder is still named `rxcompass/`; code, comments, and the README say "the repository folder" instead of a folder name.
 
 ## AI model
 
@@ -211,7 +211,7 @@ screenshots: `output/screenshots/safety_*.png`; one self-contained page with eve
 
 ## Keys
 
-- `.env` files: both `rxcompass/.env` and the folder one level above (where graders put theirs) are read. An already-set environment variable wins, then `rxcompass/.env`, then `../.env`. If neither file exists, an already-set `PORTKEY_API_KEY` environment variable is used.
+- `.env` files: both the repository folder's `.env` and the folder one level above (where graders put theirs) are read. An already-set environment variable wins, then `rxcompass/.env`, then `../.env`. If neither file exists, an already-set `PORTKEY_API_KEY` environment variable is used.
 - `.env.example` has `PORTKEY_API_KEY=` with no value. Never commit a real `.env`.
 - Moderation admins: `RXLANTERN_ADMIN_EMAILS=` (comma-separated) in `.env`, read by `config.admin_emails()`. Kept out of the public repo. If it is missing, there is simply no admin (no errors).
 
@@ -226,7 +226,7 @@ screenshots: `output/screenshots/safety_*.png`; one self-contained page with eve
 - **Back end:** FastAPI in `backend/`, PydanticAI multi-agent team, SQLite database in `data/`.
 
 ```
-rxcompass/
+rxlantern/   (the repository folder)
   backend/   main.py, agents.py, tools.py, models.py, config.py, prompts/ (one file per agent)
   frontend/
   data/
@@ -238,7 +238,7 @@ rxcompass/
 ## My computer
 
 - Windows, PowerShell.
-- Python: `..\.venv\Scripts\python.exe` (the `.venv` is one level above `rxcompass/`).
+- Python: `..\.venv\Scripts\python.exe` (on the owner's machine the `.venv` is one level above the repository folder).
 - Use `npm.cmd`, not `npm`.
 
 ## How we work

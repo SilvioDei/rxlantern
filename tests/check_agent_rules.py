@@ -1,6 +1,6 @@
 """Check the Step 4 agent test answers (plus the Step 7c questions) against the rules, from output/agent_test_runs.json.
 
-Run from rxcompass/ after tests\\try_agents.py:  ..\\.venv\\Scripts\\python.exe -m tests.check_agent_rules
+Run from the repository folder after tests\\try_agents.py:  ..\\.venv\\Scripts\\python.exe -m tests.check_agent_rules
 Each question has the rule it was written to test. Prints a pass/fail table and saves it to
 output/agent_rule_checks.json. These are simple text checks; a pharmacist should still read the answers.
 """
