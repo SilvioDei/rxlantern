@@ -875,3 +875,11 @@ Sent while this step was running:
 > - Section 8: add Q8 as "found and fixed" instead of a known miss, if the fix works.
 >
 > Commit and push the app fixes, the updated tokenomics.md, and the prompt log. Tell me the new page count and any remaining [CHECK], then stop.
+
+### Step 10 — screenshot and disclaimer
+
+> I saved the screenshot at ../evidence/cousin_covid.png. Rebuild the report with it.
+>
+> Also, if not already done, add this one-line disclaimer under the report title, on the app's About & Privacy page, and in the README: "RxLantern is an independent class project. It is not affiliated with or endorsed by CVS Health or any pharmacy, and it uses only public information." Rebuild frontend/dist if the About page changes.
+>
+> Keep the report at 15 pages or fewer. Commit and push the app and README changes, log this prompt under Step 10, tell me the page count and any remaining [CHECK], then stop.

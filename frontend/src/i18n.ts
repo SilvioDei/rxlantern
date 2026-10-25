@@ -326,6 +326,7 @@ const en = {
 
   // ---- about
   aboutTitle: "About & Privacy",
+  aboutDisclaimer: "RxLantern is an independent class project. It is not affiliated with or endorsed by CVS Health or any pharmacy, and it uses only public information.",
   aboutWhat: "What RxLantern does",
   aboutWhatText: "RxLantern helps patients in Boston find which pharmacy can fill a prescription, whether it is open, whether it may take their insurance, and roughly what it may cost, before they leave the doctor's office. Patients help each other by sharing what they found when they called.",
   aboutData: "Where the data comes from",
@@ -857,6 +858,7 @@ const es: Dict = {
   howChecked: "Cada comentario se revisa antes de mostrarse. Los reportes tienen límites y se ocultan después de 72 horas.",
 
   aboutTitle: "Acerca de y privacidad",
+  aboutDisclaimer: "RxLantern es un proyecto de clase independiente. No está afiliado ni respaldado por CVS Health ni por ninguna farmacia, y usa solo información pública.",
   aboutWhat: "Qué hace RxLantern",
   aboutWhatText: "RxLantern ayuda a pacientes en Boston a encontrar qué farmacia puede surtir una receta, si está abierta, si puede aceptar su seguro y cuánto puede costar, antes de salir del consultorio. Los pacientes se ayudan entre sí compartiendo lo que encontraron al llamar.",
   aboutData: "De dónde vienen los datos",

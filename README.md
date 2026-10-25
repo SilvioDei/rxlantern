@@ -5,6 +5,9 @@ it is open, whether it may take their insurance, and roughly what it will cost. 
 they found when they called, and an AI pharmacist chat (gpt-6-luna through Portkey) answers questions in plain English or
 Spanish.
 
+RxLantern is an independent class project. It is not affiliated with or endorsed by CVS Health or any pharmacy, and it
+uses only public information.
+
 ## Requirements
 
 - **Python 3.11, 3.12, 3.13, or 3.14** (tested on all four on 2026-10-24). Python 3.10 or older will not work.

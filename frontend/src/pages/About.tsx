@@ -33,6 +33,7 @@ export function AboutPage() {
   return (
     <>
       <h1>{t("aboutTitle")}</h1>
+      <p className="about-disclaimer muted">{t("aboutDisclaimer")}</p>
       <section className="card"><h2>{t("aboutWhat")}</h2><p>{t("aboutWhatText")}</p></section>
       <ImpactLine full />
       <div className="two-col">

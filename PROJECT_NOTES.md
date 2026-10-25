@@ -339,3 +339,6 @@ rxlantern/   (the repository folder)
   opens; Q7 accepts a Spanish answer that names the pharmacy without the word "farmacia". Final run (2026-10-24, 11:46 PM):
   normal 11/11, ask everyone 11/11; normal used 41% fewer tokens and cost 42% less; $0.001087 per question.
   `output/tokenomics.md` is regenerated from `output/cost_experiment.json` and matches the report.
+- **Disclaimer** (2026-10-25): "RxLantern is an independent class project. It is not affiliated with or endorsed by CVS
+  Health or any pharmacy, and it uses only public information." Under the report title, at the top of About & Privacy
+  (`aboutDisclaimer`, English and Spanish), and in the README.
