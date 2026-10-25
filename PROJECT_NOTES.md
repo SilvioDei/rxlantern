@@ -322,3 +322,16 @@ rxlantern/   (the repository folder)
   test environment, `.env` one folder above the clone): clone 2.7 s, venv 3.8 s, pip install 17.0 s, app answering
   2.6 s = 26.2 s of setup; 7 pages loaded and one chat question in a real browser, 34.6 s in all. The copied `.env`
   key is the old one Portkey rejects, so the chat showed the "not set up" message.
+
+## Step 10a: report (2026-10-24)
+
+- `report.html` lives outside the repo in `../submission/` (with `build_report.py`, which rebuilds it from the repo's
+  output files and `../evidence/notes.txt`). 15 letter pages, everything embedded.
+- Reran `tests/try_agents.py` (13 questions, all completed) and `tests/cost_experiment.py` at about 11:17 PM Saturday.
+  The cost experiment now loops only over the 11 questions it has checks for (try_agents has 13). Automatic checks: normal
+  8/11, ask everyone 9/11. On review, Q1 (no counter open late Saturday night, correct answer) and Q7 (correct Spanish
+  answer without the word "farmacia") are test-check problems; Q8 normal left out the cost estimate (real miss).
+  Normal mode: 36% fewer tokens, 43% lower cost; average $0.000998 per question. `output/tokenomics.md` still has the
+  Step 5 numbers.
+- Known logging bug: when two specialists run in parallel, the audit trail's per-agent token split overlaps (the Front
+  Desk can show negative numbers); run totals are correct.

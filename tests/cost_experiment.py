@@ -61,7 +61,7 @@ def grade(n: int, r) -> dict:
 
 async def run_mode(ask_everyone: bool) -> list[dict]:
     rows = []
-    for q in QUESTIONS:
+    for q in [q for q in QUESTIONS if q["n"] in CHECKS]:  # the 11 Step 4 questions (try_agents now has 13)
         r = await ask(q["question"], q["language"], ask_everyone=ask_everyone)
         g = grade(q["n"], r)
         called = sorted(SPECIALISTS & set(r.agents_run))

@@ -812,3 +812,37 @@ Sent while this step was running:
 > Keeping the anonymized audit trail questions in the public repo is fine, since they contain no personal details.
 >
 > Then create SilvioDei/rxlantern as a public repo and push all commits. After pushing, confirm the repo page is public and shows the README, do the quick fresh-clone dry run from the GitHub URL, save the link in output/github_url.txt, and give it to me.
+
+## Step 10 — Report
+
+### Step 10a — Write my report
+
+> I'm continuing my final project RxLantern. First read rxcompass/PROJECT_NOTES.md, rxcompass/AI_prompts.md, and the git log to catch up. Log this prompt in AI_prompts.md under a new "Step 10" section, then commit and push the log at the end.
+>
+> Step 10a: Write my report
+>
+> Build report.html: a single self-contained HTML file, 10 to 15 printed pages (letter size, normal font), that opens by double-clicking on any computer with every image embedded inside the file. Save it outside the repo, in a new folder ../submission/ (one level above rxcompass), because it uses evidence that should not be in the public repo. Write it for a smart manager who has never seen the app. Plain language, my voice as a pharmacist, no filler. Use the RxLantern look (fonts and colors) for a clean design.
+>
+> First refresh the numbers: rerun tests/try_agents.py and tests/cost_experiment.py once so the token counts match the current app, and use the latest results. My evidence is in ../evidence/notes.txt.
+>
+> Use these sections, in this order:
+>
+> 1. Title and links: RxLantern, Silvio Dei, the GitHub link https://github.com/SilvioDei/rxlantern, a note that the app runs locally (see README), and one sentence on what it does.
+>
+> 2. Motivation. Use my words below, lightly edited for grammar only:
+> "As a pharmacist at CVS Health in Boston, I watched patients lose time, money, and sometimes their health because they could not get simple pharmacy information. One patient came to fill Eliquis for a blood clot in his leg. When he arrived, his insurance would not cover it. A pharmacist cannot change a prescription to a different medicine, and his doctor could not be reached. He had to go back to the emergency room to stay protected from a possible stroke. If he had been able to check his coverage before leaving his doctor's office, his doctor could have chosen a medicine his insurance pays for, right there. This is not rare. My pharmacy received about 50 calls a day just asking whether a medication was in stock. Each call pulls a pharmacist or technician away from filling prescriptions and counseling patients, and patients wait on hold."
+> Then add the three measured calls from ../evidence/notes.txt in a small table.
+>
+> 3. What is new. Name and compare the products patients use today: calling the pharmacy, GoodRx, TrumpRx.gov, chain apps (CVS, Walgreens), Google Maps, Medicare Plan Finder, the FDA drug shortage list, and Pharmacy Compass (RxEOB). Say honestly what each does and what it misses, then what RxLantern combines and adds (crowdsourced stock reports, counter hours vs. store hours, Massachusetts coverage rules, vaccine search, plain language, Easy view, voice, Spanish, controlled-substance safety). Include a comparison table.
+>
+> 4. The agents. Explain the Front Desk, Pharmacy Finder, Medication Access, and Community agents and each one's tools. Draw a clear diagram (inline SVG) showing who hands work to whom. Explain why gpt-6-luna through Portkey. Explain the design choices: routing to one specialist, safety rules in code before any AI call, pages that load from the database without the AI, and the "My medicine list" ranking scores. Then walk through one real run step by step, using the audit trail and screenshots: the question, which agent ran, which tools it called, what each returned, and the final answer.
+>
+> 5. Tokenomics. From the real runs: average input, cached input, and output tokens per question, cost per question (with the Portkey gpt-6-luna prices and their source), cost per user per month (4 questions a month), and at 100 and 10,000 users, with the math shown. What I did to keep cost down (prompt caching, routing, code-level answers costing 0 tokens, database-first pages, cached holiday searches) and the cost experiment comparing normal vs. "ask everyone" mode (tokens, cost, and pass rate). State the limits of that evidence honestly. Include a screenshot of the app showing its token usage.
+>
+> 6. Safety. The risks that matter for this app and the defenses built, with evidence from output/safety_tests.json and the screenshots in output/screenshots/safety_*.png: prompt injection, data leaks, personal health information, made-up facts, controlled substances, medical advice (including questions that must not be blocked), emergencies, spending limits, moderation, and secrets. Include the story of the pre-push scan catching an old, already-invalid key in the git history before anything was published. Show at least four defenses working with screenshots.
+>
+> 7. Impact. Use ../evidence/notes.txt: the three measured calls (about 12 minutes on the phone on average), the real users' timed results (under 1 minute in the app), and their quotes exactly as written in the notes (no names; say "a roommate" and "a family member"). Add the staff estimate: half of ~50 calls a day × 4 minutes ≈ 100 minutes of staff time per pharmacy per day, about 600 hours a year, at about 2 cents a day in AI cost. Be precise about what matched: RxLantern matched coverage and cost; stock still needs a call, which the call script and community reports make faster. Mention that real-user testing found vaccines weren't searchable, and I fixed it the same evening. Say clearly which numbers are measured and which are estimates. Include screenshots from ../evidence/ if there are any (with phone numbers cropped out).
+>
+> 8. Limits and next steps. What doesn't work yet (no live pharmacy inventory, commercial plan drug lists not public, some Spanish data stays in English, AI-written translations not yet reviewed, wheelchair and language data missing from pharmacy websites, the app runs locally, community data needs real users to grow) and what I'd build next with another month (an AI agent that calls pharmacies with consent, doctor mode, more languages, all of Massachusetts, putting it online, pharmacy partnerships).
+>
+> Every number and claim must come from the project files or my evidence notes. If something is missing, write [CHECK] so I can fill it in rather than guessing. When done, give me the page count and a list of every [CHECK], then stop.
