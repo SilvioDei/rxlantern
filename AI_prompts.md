@@ -738,3 +738,19 @@ Every prompt sent to the AI assistant, word for word, grouped by build step.
 > 5. Fix anything that breaks and update the README, then repeat the dry run until it works on the first try in under 10 minutes. Delete the temporary folder afterwards.
 >
 > Commit with the message "Step 9: README and fresh-clone dry run". Give me the dry-run time, anything you fixed, and stop.
+
+### Step 9 — remove the old Portkey key from the git history
+
+> Step 9 follow-up: remove the old Portkey key from the git history before we push.
+>
+> 1. First check, without showing any key: is the old key you found in the git history the same as the key Portkey rejected from ../.env, or the same as the working key in my Windows settings? Just tell me "same as the rejected one" or "same as the working one".
+>
+> 2. Rewrite the git history so the old key text is replaced with "[REMOVED]" in every commit. Keep all commits and their messages, because my step-by-step history matters for my grade. Use git filter-repo or an equivalent.
+>
+> 3. Do not print, log, or show any key anywhere, including in AI_prompts.md, the audit trail, or your replies.
+>
+> 4. Afterwards, scan every commit in the history (not just the current files) for any Portkey key and for my email, and confirm none remain.
+>
+> 5. Make sure .env is in .gitignore and is not in any commit.
+>
+> If a command needs my permission, ask and I will approve it. Add this prompt to AI_prompts.md under Step 9. When you are done, tell me the results of steps 1 and 4, then stop.
