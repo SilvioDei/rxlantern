@@ -312,3 +312,13 @@ rxlantern/   (the repository folder)
   get a covid shot?" and its two follow-ups) were added from `output/audit_trail.json` by their run ids. Earlier
   questions in the audit trail that are not in any test script were not added, because the trail does not record
   whether a question came from a person or from a manual test.
+
+## Step 9 (part 2): pushed to GitHub (2026-10-25)
+
+- Public repository: https://github.com/SilvioDei/rxlantern (also in `output/github_url.txt`). All commits pushed with
+  their messages (the full step-by-step history). No `.env`, database, or backup file is in any commit; a scan of
+  every git object found no API key.
+- Fresh-clone dry run from the GitHub URL (Windows, plain `python -m venv` + pip, PORTKEY_API_KEY removed from the
+  test environment, `.env` one folder above the clone): clone 2.7 s, venv 3.8 s, pip install 17.0 s, app answering
+  2.6 s = 26.2 s of setup; 7 pages loaded and one chat question in a real browser, 34.6 s in all. The copied `.env`
+  key is the old one Portkey rejects, so the chat showed the "not set up" message.
