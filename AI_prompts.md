@@ -893,3 +893,21 @@ Sent while this step was running:
 > 4. Footer: change "Screenshots are from the app's automated tests." to "Screenshots are from the app's automated tests, except the two walkthrough screenshots in section 4, which I took."
 > 5. Use a plain sans-serif font with tabular, unslashed numbers (for example the system UI font) for numbers in tables and the code-style math block, so zeros don't show a slash. Keep Atkinson Hyperlegible for body text.
 > Tell me the page count when done. Log this prompt under Step 10 and push the log.
+
+### Step 10b — caption fix, log push, and slides
+
+> 1. Report: in the page 1 home-page caption, remove "and the AI pharmacist chat below" so it matches the cropped image. Keep it at 15 pages.
+> 2. Commit and push output/audit_trail.json and output/token_log.jsonl (my re-asked COVID question for the screenshots; check they contain no personal details first).
+>
+> Then Step 10b: Build ../submission/slides.html with reveal.js loaded from a CDN, 10 slides maximum, following my report. Embed every image inside the file so it works when emailed. Big readable text, the RxLantern colors and fonts, plain unslashed zeros in numbers, and the same privacy cleanup as the report screenshots (no bookmarks, profile photos, account names, or phone numbers). Slides:
+> 1. Title: RxLantern, Silvio Dei, one-line pitch, and the disclaimer line in small text
+> 2. The problem and who has it (the Eliquis story in one line, ~50 calls a day, the three measured calls)
+> 3. What is new (short comparison with the named products)
+> 4. How the agents work (the diagram)
+> 5. Demo screenshots (results page with report buttons, the Dorchester COVID answer, Easy view)
+> 6. Cost to run (cost per question, per patient per month, at 10,000 patients; the cost experiment result)
+> 7. Safety (3 or 4 defenses with small screenshots)
+> 8. Impact: the numbers (about 12 minutes on the phone vs. under 1 minute in the app; ~100 staff minutes saved per pharmacy per day; one or two real-user quotes)
+> 9. What's next
+> 10. Thank you, with the GitHub link https://github.com/SilvioDei/rxlantern
+> Open it in a real browser and check every slide with the arrow keys; make sure nothing overflows the slide. Log this prompt in AI_prompts.md under Step 10, commit and push the log, and stop.
