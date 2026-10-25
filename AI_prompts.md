@@ -911,3 +911,20 @@ Sent while this step was running:
 > 9. What's next
 > 10. Thank you, with the GitHub link https://github.com/SilvioDei/rxlantern
 > Open it in a real browser and check every slide with the arrow keys; make sure nothing overflows the slide. Log this prompt in AI_prompts.md under Step 10, commit and push the log, and stop.
+
+### Step 10 — final polish (slides and report)
+
+> Final polish. Keep every number and claim as is.
+>
+> Slides (../submission/slides.html):
+> 1. Slide 1: under my name, add "Yale SOM · AI Foundations for Managers · Final Project".
+> 2. Slide 4: make the diagram text larger and keep the caption above the navigation arrows, so nothing is cut off.
+> 3. Slide 5: show two screenshots instead of three, large enough to read at a glance: the results card with "I called" buttons, and the Dorchester COVID answer. Move Easy view to a one-line note.
+> 4. Slide 7: show two large screenshots instead of four: the emergency message and the controlled-medicine answer. List medical advice and prompt injection as short text lines with a check mark. If you keep the prompt-injection screenshot, crop it to just the red rejection message.
+> 5. Slide 8: keep "~100 min" on one line (smaller font or "~100 min/day"). Add my uncle's quote as a third quote (from ../evidence/notes.txt, attributed "A family member"), shortened with "…" if needed so all three fit without crowding.
+> Check every slide in a real browser at 1280x720 and 1920x1080 with the arrow keys: nothing overflows, nothing overlaps the navigation arrows, and all text is readable.
+>
+> Report (../submission/report.html):
+> 6. It is right at the 15-page limit; on another computer the final "Sources" paragraph spilled onto page 16. Trim about a third of a page (for example tighten the section 3 table text or shrink one screenshot) so it prints at 15 pages with margin to spare in both Chrome and Edge.
+>
+> Log this prompt under Step 10 and push the log. Tell me the report page count and confirm all 10 slides fit.
