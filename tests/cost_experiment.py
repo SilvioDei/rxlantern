@@ -27,7 +27,11 @@ def first_sentence(text: str) -> str:
 
 # What a correct, rule-following answer must contain, per question.
 CHECKS = {
-    1: ("a pharmacy counter that is open now is shown", lambda r: any(c.open_now for c in r.pharmacy_cards)),
+    1: ("a pharmacy counter that is open now is shown, or (when none is open) the next opening time and nearest option",
+        lambda r: any(c.open_now for c in r.pharmacy_cards) or (
+            (bool(r.pharmacy_cards) or re.search(r"\b\d+ [A-Z][\w. ]*?\b(St|Ave|Blvd|Street|Avenue|Boulevard)\b", r.reply_text))
+            and re.search(r"\bopens?\b", r.reply_text, re.I) is not None
+            and re.search(r"\d{1,2}(:\d{2})?\s*(AM|PM)", r.reply_text, re.I) is not None)),
     2: ("says Concerta is in shortage, names no pharmacy (controlled), gives a call script",
         lambda r: "shortage" in r.reply_text.lower() and not r.pharmacy_cards and bool(r.call_script)),
     3: ("gives a Medicare estimate, the $2,100 cap, and Eliquis's negotiated price",
@@ -38,7 +42,8 @@ CHECKS = {
         lambda r: any("631 Washington" in c.address for c in r.pharmacy_cards) and "employer" in r.reply_text.lower()),
     6: ("declines medical advice", lambda r: r.stop_reason == "medical advice declined"),
     7: ("answers in Spanish with the East Boston CVS that delivers",
-        lambda r: "farmacia" in r.reply_text.lower() and any("210 Border" in c.address for c in r.pharmacy_cards)),
+        lambda r: re.search(r"\b(farmacia|entrega|domicilio|llame)\b", r.reply_text, re.I) is not None
+        and any("210 Border" in c.address for c in r.pharmacy_cards)),
     8: ("no coverage claim for Blue Cross; NADAC label and 'check with your plan'",
         lambda r: "check with your plan" in r.reply_text.lower() and "not your copay" in r.reply_text.lower()
         and not re.search(r"\b(is|will be|are) covered\b", r.reply_text.lower())),

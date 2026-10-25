@@ -10,22 +10,22 @@
   "summary": {
     "normal": {
       "questions": 11,
-      "passed": 8,
-      "total_tokens": 109864,
-      "avg_tokens_per_question": 9988,
-      "avg_tokens_per_model_answered_question": 12207,
-      "total_cost_usd": 0.010978,
-      "avg_cost_usd": 0.000998,
+      "passed": 11,
+      "total_tokens": 116435,
+      "avg_tokens_per_question": 10585,
+      "avg_tokens_per_model_answered_question": 12937,
+      "total_cost_usd": 0.011954,
+      "avg_cost_usd": 0.001087,
       "avg_specialists_called": 0.91
     },
     "ask_everyone": {
       "questions": 11,
-      "passed": 9,
-      "total_tokens": 170450,
-      "avg_tokens_per_question": 15495,
-      "avg_tokens_per_model_answered_question": 18939,
-      "total_cost_usd": 0.019173,
-      "avg_cost_usd": 0.001743,
+      "passed": 11,
+      "total_tokens": 197037,
+      "avg_tokens_per_question": 17912,
+      "avg_tokens_per_model_answered_question": 21893,
+      "total_cost_usd": 0.020738,
+      "avg_cost_usd": 0.001885,
       "avg_specialists_called": 2.45
     }
   },
@@ -35,123 +35,123 @@
         "n": 1,
         "question": "Is there a pharmacy open right now near 02111?",
         "mode": "normal",
-        "run_id": "4e542e9b6609",
+        "run_id": "fc21d5f2eb30",
         "specialists_called": [
           "Pharmacy Finder"
         ],
         "tools_run": 5,
         "tokens": {
-          "input": 14746,
-          "cached_input": 5811,
-          "output": 1396,
-          "total": 16142
+          "input": 14537,
+          "cached_input": 5821,
+          "output": 1649,
+          "total": 16186
         },
         "model_requests": 5,
-        "cost_usd": 0.00165,
+        "cost_usd": 0.001754,
         "stop_reason": "completed",
-        "check": "a pharmacy counter that is open now is shown",
-        "passed": false,
+        "check": "a pharmacy counter that is open now is shown, or (when none is open) the next opening time and nearest option",
+        "passed": true,
         "rules_broken": [],
-        "reply": "I couldn’t find a pharmacy counter open right now near 02111. The closest listed option, CVS at 631 Washington St, opens tomorrow at 10:00 AM. Holiday hours may differ, so call to confirm."
+        "reply": "No pharmacy counters near 02111 were open at 11:46 PM Saturday. The closest options are closed now: CVS at 631 Washington St opens Sunday at 10 AM, and South Cove Community Health Center Pharmacy at 256 Harrison Ave opens Monday at 9 AM. Holiday hours may differ, so call to confirm."
       },
       {
         "n": 2,
         "question": "Is Concerta 18 mg in shortage? Which pharmacy has it?",
         "mode": "normal",
-        "run_id": "7148fe879c0a",
+        "run_id": "ed889e24b65b",
         "specialists_called": [
           "Medication Access"
         ],
         "tools_run": 4,
         "tokens": {
-          "input": 9069,
-          "cached_input": 7507,
-          "output": 801,
-          "total": 9870
+          "input": 8843,
+          "cached_input": 7418,
+          "output": 747,
+          "total": 9590
         },
         "model_requests": 5,
-        "cost_usd": 0.000632,
+        "cost_usd": 0.00059,
         "stop_reason": "completed",
         "check": "says Concerta is in shortage, names no pharmacy (controlled), gives a call script",
         "passed": true,
         "rules_broken": [],
-        "reply": "Yes. The FDA lists Concerta 18 mg extended-release tablets as currently in shortage for 8 packages, though some manufacturers may still have it. I can’t identify which pharmacies have this controlled medicine in stock; please call pharmacies to check, and call to confirm availability. Use the script below when you call."
+        "reply": "Yes. The FDA lists Concerta 18 mg extended-release tablets as in shortage, affecting 8 packages; some makers may still have it. I can’t share which pharmacy has a controlled medicine, and the shortage listing does not show local stock. Please call pharmacies to ask, and call to confirm availability."
       },
       {
         "n": 3,
         "question": "How much will Eliquis 5 mg cost me with Medicare?",
         "mode": "normal",
-        "run_id": "26b6780813a4",
-        "specialists_called": [
-          "Medication Access"
-        ],
-        "tools_run": 4,
-        "tokens": {
-          "input": 12286,
-          "cached_input": 9687,
-          "output": 1815,
-          "total": 14101
-        },
-        "model_requests": 6,
-        "cost_usd": 0.001264,
-        "stop_reason": "completed",
-        "check": "gives a Medicare estimate, the $2,100 cap, and Eliquis's negotiated price",
-        "passed": true,
-        "rules_broken": [],
-        "reply": "For 60 Eliquis 5 mg tablets (a 30-day supply), 2026 Massachusetts Medicare Part D estimates range from $0 to $62.18 per month; the typical estimate is $47. Your cost may be higher before you meet your plan’s deductible, and your plan can confirm your exact copay. Eliquis’s 2026 Medicare negotiated price is 56% below its 2023 list price for a 30-day supply; that is not your personal copay. Medicare’s yearly out-of-pocket cap is $2,100 in 2026."
-      },
-      {
-        "n": 4,
-        "question": "Does MassHealth cover Ozempic?",
-        "mode": "normal",
-        "run_id": "c1fa94d705c9",
+        "run_id": "448dd724ac0b",
         "specialists_called": [
           "Medication Access"
         ],
         "tools_run": 3,
         "tokens": {
-          "input": 8754,
-          "cached_input": 4565,
-          "output": 684,
-          "total": 9438
+          "input": 9276,
+          "cached_input": 7450,
+          "output": 1182,
+          "total": 10458
         },
         "model_requests": 5,
-        "cost_usd": 0.000807,
+        "cost_usd": 0.000848,
+        "stop_reason": "completed",
+        "check": "gives a Medicare estimate, the $2,100 cap, and Eliquis's negotiated price",
+        "passed": true,
+        "rules_broken": [],
+        "reply": "Eliquis 5 mg is estimated at about $47 a month with Medicare Part D, with plan estimates from $0 to $62.18 for 60 tablets. You may pay more before meeting your deductible, so check your plan to confirm. In 2026, the yearly out-of-pocket cap is $2,100. Medicare’s 2026 negotiated price for Eliquis is 56% off its 2023 list price for a 30-day supply; I don’t have a dollar amount for that price."
+      },
+      {
+        "n": 4,
+        "question": "Does MassHealth cover Ozempic?",
+        "mode": "normal",
+        "run_id": "433d666cf9b9",
+        "specialists_called": [
+          "Medication Access"
+        ],
+        "tools_run": 3,
+        "tokens": {
+          "input": 8708,
+          "cached_input": 4569,
+          "output": 659,
+          "total": 9367
+        },
+        "model_requests": 5,
+        "cost_usd": 0.000789,
         "stop_reason": "completed",
         "check": "says MassHealth covers it with prior authorization",
         "passed": true,
         "rules_broken": [],
-        "reply": "Yes. MassHealth lists the Ozempic 0.5 mg pen as preferred, but it requires prior authorization, meaning approval is needed before coverage. The result did not include the approval rules, so please check with MassHealth or your pharmacist about the requirements. This information is for the 0.5 mg pen only."
+        "reply": "Yes. MassHealth lists the Ozempic 0.5 mg weekly pen as covered and preferred, but prior authorization is required. The result did not include the diagnosis-specific approval rules."
       },
       {
         "n": 5,
         "question": "Where can I get a flu shot in Chinatown, and does Blue Cross cover it?",
         "mode": "normal",
-        "run_id": "18f67e6a298a",
+        "run_id": "6520df77feec",
         "specialists_called": [
           "Medication Access",
           "Pharmacy Finder"
         ],
-        "tools_run": 11,
+        "tools_run": 10,
         "tokens": {
-          "input": 19256,
-          "cached_input": 11311,
-          "output": 4067,
-          "total": 23323
+          "input": 25820,
+          "cached_input": 9392,
+          "output": 4070,
+          "total": 29890
         },
-        "model_requests": 8,
-        "cost_usd": 0.002941,
+        "model_requests": 7,
+        "cost_usd": 0.003772,
         "stop_reason": "completed",
         "check": "shows the Chinatown CVS that lists flu shots and the large-employer warning",
         "passed": true,
         "rules_broken": [],
-        "reply": "The closest option is CVS at 631 Washington St in Chinatown. Its page lists flu shots, and the pharmacy counter opens Sunday at 10:00 AM; call or book ahead to confirm the shot is available. Blue Cross coverage depends on your specific plan, so I can’t confirm your cost. Massachusetts rules require many plans to cover routine vaccines recommended by the state with no cost-sharing, but large-employer plans may not have to follow that rule. Check with your plan or the pharmacy before you go."
+        "reply": "The closest option is CVS at 631 Washington St in Chinatown; its page lists flu shots. The pharmacy counter is closed now and opens Sunday at 10:00 AM. Please call or book online to confirm before going. I can’t confirm coverage for your exact Blue Cross plan: Massachusetts requires fully insured plans issued under state law to cover DPH-recommended routine vaccines without cost-sharing, but large-employer plans may not have to follow that rule. Check with Blue Cross about your plan."
       },
       {
         "n": 6,
         "question": "My sumatriptan didn't work. Should I take two?",
         "mode": "normal",
-        "run_id": "3d56d5b7ba7e",
+        "run_id": "35a635a53c24",
         "specialists_called": [],
         "tools_run": 0,
         "tokens": {
@@ -172,76 +172,76 @@
         "n": 7,
         "question": "¿Qué farmacia en East Boston tiene entrega a domicilio?",
         "mode": "normal",
-        "run_id": "d16ca2d29226",
+        "run_id": "d77b0ed74be4",
         "specialists_called": [
           "Pharmacy Finder"
         ],
         "tools_run": 2,
         "tokens": {
-          "input": 6901,
-          "cached_input": 1198,
-          "output": 698,
-          "total": 7599
+          "input": 6848,
+          "cached_input": 2600,
+          "output": 452,
+          "total": 7300
         },
         "model_requests": 4,
-        "cost_usd": 0.000931,
+        "cost_usd": 0.000677,
         "stop_reason": "completed",
         "check": "answers in Spanish with the East Boston CVS that delivers",
-        "passed": false,
+        "passed": true,
         "rules_broken": [],
-        "reply": "La CVS Pharmacy de 210 Border Street, East Boston, indica que ofrece entrega a domicilio. Llame para confirmar si entrega en su dirección y cuáles son las condiciones del servicio."
+        "reply": "Encontré una farmacia en East Boston que indica que ofrece entrega a domicilio: CVS Pharmacy, en 210 Border Street. Llame para confirmar los detalles de entrega."
       },
       {
         "n": 8,
         "question": "Will my kid's amoxicillin liquid be covered? We have Blue Cross Blue Shield.",
         "mode": "normal",
-        "run_id": "6c9390234649",
+        "run_id": "10b9c5b2a5fb",
         "specialists_called": [
           "Medication Access"
         ],
-        "tools_run": 2,
+        "tools_run": 5,
         "tokens": {
-          "input": 6884,
-          "cached_input": 2910,
-          "output": 1239,
-          "total": 8123
+          "input": 10023,
+          "cached_input": 6161,
+          "output": 2176,
+          "total": 12199
         },
-        "model_requests": 4,
-        "cost_usd": 0.001046,
+        "model_requests": 5,
+        "cost_usd": 0.001536,
         "stop_reason": "completed",
         "check": "no coverage claim for Blue Cross; NADAC label and 'check with your plan'",
-        "passed": false,
+        "passed": true,
         "rules_broken": [],
-        "reply": "I can’t confirm whether your Blue Cross Blue Shield plan covers it. Please check with your plan for the coverage details for your child’s amoxicillin liquid prescription."
+        "reply": "I can’t confirm whether your Blue Cross Blue Shield plan covers it because RxLantern does not have that plan’s drug list; please check with your plan. The liquid comes in different strengths, and the strength on the prescription is needed for a useful cost estimate. For 400 mg/5 mL, the estimate is $3.92 for a 100 mL bottle—about what the pharmacy pays for this drug, not your copay. Use the call script only if your prescription says 400 mg/5 mL."
       },
       {
         "n": 9,
         "question": "Is the CVS at South Station open on weekends?",
         "mode": "normal",
-        "run_id": "41a945ed5c00",
+        "run_id": "ead426cefbfd",
         "specialists_called": [
           "Pharmacy Finder"
         ],
         "tools_run": 3,
         "tokens": {
-          "input": 9818,
-          "cached_input": 5383,
-          "output": 564,
-          "total": 10382
+          "input": 9832,
+          "cached_input": 3963,
+          "output": 644,
+          "total": 10476
         },
         "model_requests": 5,
-        "cost_usd": 0.000779,
+        "cost_usd": 0.000949,
         "stop_reason": "completed",
         "check": "pharmacy counter first (closed on weekends), store hours after",
         "passed": true,
         "rules_broken": [],
-        "reply": "The pharmacy counter is closed on Saturday and Sunday. You cannot pick up prescriptions here on weekends. The CVS at South Station is open on weekends from 9:00 AM to 8:00 PM. The pharmacy counter is closed Saturday and Sunday, so prescriptions cannot be picked up there on weekends; it opens Monday at 7:00 AM. Holiday hours may differ, so call to confirm. Store hours (the pharmacy counter may be closed): Saturday 9:00 AM-8:00 PM; Sunday 9:00 AM-8:00 PM."
+        "reply": "The CVS pharmacy counter is closed on Saturdays and Sundays. The store itself is open 9:00 AM–8:00 PM both days, but you cannot pick up prescriptions at the counter then. Holiday hours may differ. Store hours (the pharmacy counter may be closed): Saturday 9:00 AM-8:00 PM; Sunday 9:00 AM-8:00 PM."
       },
       {
         "n": 10,
         "question": "How close is an urgent care or clinic to the hospital?",
         "mode": "normal",
-        "run_id": "b6efb4750fed",
+        "run_id": "eef8da3f04a9",
         "specialists_called": [],
         "tools_run": 0,
         "tokens": {
@@ -262,24 +262,24 @@
         "n": 11,
         "question": "Is there a walk-in clinic near the CVS in Mattapan?",
         "mode": "normal",
-        "run_id": "962140857b2a",
+        "run_id": "4a6a21fc6784",
         "specialists_called": [
           "Pharmacy Finder"
         ],
         "tools_run": 3,
         "tokens": {
-          "input": 9826,
-          "cached_input": 6493,
-          "output": 1060,
-          "total": 10886
+          "input": 9910,
+          "cached_input": 5350,
+          "output": 1059,
+          "total": 10969
         },
         "model_requests": 5,
-        "cost_usd": 0.000928,
+        "cost_usd": 0.001039,
         "stop_reason": "completed",
         "check": "names Mattapan Community Health Center near the CVS",
         "passed": true,
         "rules_broken": [],
-        "reply": "Mattapan Community Health Center is at the same address as the CVS at 1575 Blue Hill Ave. Walk-in availability was not found, so please call the health center first to ask if it can see you. This CVS does not have an on-site MinuteClinic."
+        "reply": "Mattapan Community Health Center is listed at the same address as the CVS at 1575 Blue Hill Ave, less than 0.1 miles away. Walk-in availability was not found, so please call first at (617) 898-1282 to ask if you can be seen without an appointment."
       }
     ],
     "ask_everyone": [
@@ -287,32 +287,7 @@
         "n": 1,
         "question": "Is there a pharmacy open right now near 02111?",
         "mode": "ask_everyone",
-        "run_id": "8f48d61ff886",
-        "specialists_called": [
-          "Community",
-          "Medication Access",
-          "Pharmacy Finder"
-        ],
-        "tools_run": 5,
-        "tokens": {
-          "input": 11018,
-          "cached_input": 2696,
-          "output": 1782,
-          "total": 12800
-        },
-        "model_requests": 7,
-        "cost_usd": 0.00175,
-        "stop_reason": "completed",
-        "check": "a pharmacy counter that is open now is shown",
-        "passed": false,
-        "rules_broken": [],
-        "reply": "I couldn’t find a pharmacy counter open right now near 02111. CVS at 631 Washington St is about 0.2 miles away and opens Sunday at 10:00 AM. South Cove Community Health Center Pharmacy is about 0.2 miles away and opens Monday at 9:00 AM; CVS at 700 Atlantic Ave opens Monday at 7:00 AM."
-      },
-      {
-        "n": 2,
-        "question": "Is Concerta 18 mg in shortage? Which pharmacy has it?",
-        "mode": "ask_everyone",
-        "run_id": "8d06ca1a0f69",
+        "run_id": "8287478accd1",
         "specialists_called": [
           "Community",
           "Medication Access",
@@ -320,49 +295,74 @@
         ],
         "tools_run": 9,
         "tokens": {
-          "input": 16295,
-          "cached_input": 6929,
-          "output": 1740,
-          "total": 18035
+          "input": 20985,
+          "cached_input": 6115,
+          "output": 2624,
+          "total": 23609
         },
-        "model_requests": 10,
-        "cost_usd": 0.001876,
+        "model_requests": 9,
+        "cost_usd": 0.00286,
+        "stop_reason": "completed",
+        "check": "a pharmacy counter that is open now is shown, or (when none is open) the next opening time and nearest option",
+        "passed": true,
+        "rules_broken": [],
+        "reply": "No pharmacy counter near 02111 is open right now (Saturday, October 24, at 11:49 PM Boston time). The closest listed option is CVS at 631 Washington St; its pharmacy counter opens tomorrow at 10 AM. The other nearby counters are also closed now."
+      },
+      {
+        "n": 2,
+        "question": "Is Concerta 18 mg in shortage? Which pharmacy has it?",
+        "mode": "ask_everyone",
+        "run_id": "f6feb29c6e35",
+        "specialists_called": [
+          "Community",
+          "Medication Access",
+          "Pharmacy Finder"
+        ],
+        "tools_run": 8,
+        "tokens": {
+          "input": 14548,
+          "cached_input": 10098,
+          "output": 1724,
+          "total": 16272
+        },
+        "model_requests": 9,
+        "cost_usd": 0.001408,
         "stop_reason": "completed",
         "check": "says Concerta is in shortage, names no pharmacy (controlled), gives a call script",
         "passed": true,
         "rules_broken": [],
-        "reply": "Yes. The FDA lists Concerta 18 mg extended-release tablets as in shortage, though some makers may still have it. I can’t identify pharmacies that may have this controlled medicine; please call pharmacies directly to check availability."
+        "reply": "Yes. Concerta 18 mg extended-release tablets are listed in an FDA shortage, but some manufacturers may still have them. I can’t identify pharmacies that have a controlled medicine; please call pharmacies to check current availability. Availability is not guaranteed, so call to confirm."
       },
       {
         "n": 3,
         "question": "How much will Eliquis 5 mg cost me with Medicare?",
         "mode": "ask_everyone",
-        "run_id": "9891c75ed027",
+        "run_id": "94846a17c2ae",
         "specialists_called": [
           "Community",
           "Medication Access",
           "Pharmacy Finder"
         ],
-        "tools_run": 7,
+        "tools_run": 8,
         "tokens": {
-          "input": 15019,
-          "cached_input": 10089,
-          "output": 2444,
-          "total": 17463
+          "input": 15107,
+          "cached_input": 10093,
+          "output": 2373,
+          "total": 17480
         },
         "model_requests": 9,
-        "cost_usd": 0.001816,
+        "cost_usd": 0.001789,
         "stop_reason": "completed",
         "check": "gives a Medicare estimate, the $2,100 cap, and Eliquis's negotiated price",
         "passed": true,
         "rules_broken": [],
-        "reply": "For Eliquis 5 mg, estimated Medicare Part D prices in Massachusetts range from $0 to $62.18 a month for 60 tablets, with a typical estimate of $47. Your exact cost may be higher before you meet your deductible, so check with your plan to confirm. The 2026 Part D yearly out-of-pocket cap is $2,100. Medicare’s 2026 negotiated price for Eliquis is 56% below its 2023 list price, but that is not your individual copay."
+        "reply": "For Eliquis 5 mg, the estimated Medicare Part D cost in Massachusetts is $0–$62.18 per month; the typical estimate is $47. This estimate assumes 60 tablets at a standard retail pharmacy, and you may pay more before meeting your plan’s deductible, so check your plan for your exact cost. Medicare’s 2026 yearly out-of-pocket cap is $2,100. Medicare’s 2026 negotiated price for Eliquis is 56% off its 2023 list price for a 30-day supply; that does not tell us your personal copay."
       },
       {
         "n": 4,
         "question": "Does MassHealth cover Ozempic?",
         "mode": "ask_everyone",
-        "run_id": "744006862e44",
+        "run_id": "5a75b6e84613",
         "specialists_called": [
           "Community",
           "Medication Access",
@@ -370,24 +370,24 @@
         ],
         "tools_run": 7,
         "tokens": {
-          "input": 14551,
-          "cached_input": 10165,
-          "output": 1721,
-          "total": 16272
+          "input": 14401,
+          "cached_input": 5940,
+          "output": 1726,
+          "total": 16127
         },
         "model_requests": 9,
-        "cost_usd": 0.001401,
+        "cost_usd": 0.001769,
         "stop_reason": "completed",
         "check": "says MassHealth covers it with prior authorization",
         "passed": true,
         "rules_broken": [],
-        "reply": "Yes. MassHealth lists the Ozempic 0.5 mg pen as a preferred drug, but it requires prior authorization—your prescriber must request approval first. The detailed approval criteria were not available in the coverage result."
+        "reply": "MassHealth lists the Ozempic 0.5 mg per weekly-dose pen as covered and preferred, but prior authorization is required. This result only confirms that pen strength and form."
       },
       {
         "n": 5,
         "question": "Where can I get a flu shot in Chinatown, and does Blue Cross cover it?",
         "mode": "ask_everyone",
-        "run_id": "59e6ec4ef039",
+        "run_id": "767c8e9b46fc",
         "specialists_called": [
           "Community",
           "Medication Access",
@@ -395,24 +395,24 @@
         ],
         "tools_run": 16,
         "tokens": {
-          "input": 28236,
-          "cached_input": 12538,
-          "output": 4541,
-          "total": 32777
+          "input": 36482,
+          "cached_input": 23612,
+          "output": 4752,
+          "total": 41234
         },
-        "model_requests": 11,
-        "cost_usd": 0.003966,
+        "model_requests": 13,
+        "cost_usd": 0.003899,
         "stop_reason": "completed",
         "check": "shows the Chinatown CVS that lists flu shots and the large-employer warning",
         "passed": true,
         "rules_broken": [],
-        "reply": "The closest listed option in Chinatown is CVS at 631 Washington St; it lists flu shots, but call first to confirm an appointment. Its pharmacy counter is closed now and opens Sunday at 10:00 AM. I can’t confirm your specific Blue Cross plan: Massachusetts requires fully insured plans issued under state law to cover DPH-recommended vaccines with no cost-sharing, but plans may limit vaccine brands; large-employer plans may not have to follow this rule. Please check with Blue Cross about your plan and which flu-shot brands it covers."
+        "reply": "CVS Pharmacy at 631 Washington St lists the flu shot, but that does not confirm it is available today—please call to confirm. The pharmacy counter is closed now and opens Sunday at 10:00 AM. Massachusetts rules require fully insured plans issued under state law, including Blue Cross Blue Shield of Massachusetts, to cover recommended routine vaccines without cost-sharing; your exact plan may differ, and large-employer plans may not follow this rule, so check with your plan or pharmacy."
       },
       {
         "n": 6,
         "question": "My sumatriptan didn't work. Should I take two?",
         "mode": "ask_everyone",
-        "run_id": "5f67225a3063",
+        "run_id": "5b2d0f37d873",
         "specialists_called": [],
         "tools_run": 0,
         "tokens": {
@@ -433,57 +433,7 @@
         "n": 7,
         "question": "¿Qué farmacia en East Boston tiene entrega a domicilio?",
         "mode": "ask_everyone",
-        "run_id": "b02d33e53168",
-        "specialists_called": [
-          "Community",
-          "Medication Access",
-          "Pharmacy Finder"
-        ],
-        "tools_run": 7,
-        "tokens": {
-          "input": 13120,
-          "cached_input": 3779,
-          "output": 2075,
-          "total": 15195
-        },
-        "model_requests": 8,
-        "cost_usd": 0.002009,
-        "stop_reason": "completed",
-        "check": "answers in Spanish with the East Boston CVS that delivers",
-        "passed": false,
-        "rules_broken": [],
-        "reply": "CVS Pharmacy, en 210 Border Street, East Boston, ofrece entrega a domicilio. Llame para confirmar los detalles y la disponibilidad de entrega."
-      },
-      {
-        "n": 8,
-        "question": "Will my kid's amoxicillin liquid be covered? We have Blue Cross Blue Shield.",
-        "mode": "ask_everyone",
-        "run_id": "e1a849944b94",
-        "specialists_called": [
-          "Community",
-          "Medication Access",
-          "Pharmacy Finder"
-        ],
-        "tools_run": 11,
-        "tokens": {
-          "input": 15793,
-          "cached_input": 6045,
-          "output": 2746,
-          "total": 18539
-        },
-        "model_requests": 9,
-        "cost_usd": 0.002408,
-        "stop_reason": "completed",
-        "check": "no coverage claim for Blue Cross; NADAC label and 'check with your plan'",
-        "passed": true,
-        "rules_broken": [],
-        "reply": "I can’t confirm coverage because Blue Cross Blue Shield plan drug lists aren’t available here. Please check with your plan. Amoxicillin liquid comes in different strengths, so confirm which one is on your child’s prescription. For 400 mg/5 mL, the estimate is $3.92 for a 100 mL bottle—about what the pharmacy pays for this drug, not your copay. The call script below is for that strength."
-      },
-      {
-        "n": 9,
-        "question": "Is the CVS at South Station open on weekends?",
-        "mode": "ask_everyone",
-        "run_id": "b599f9b60910",
+        "run_id": "518f8ae1a63f",
         "specialists_called": [
           "Community",
           "Medication Access",
@@ -491,24 +441,74 @@
         ],
         "tools_run": 9,
         "tokens": {
-          "input": 17633,
-          "cached_input": 9449,
-          "output": 1593,
-          "total": 19226
+          "input": 17830,
+          "cached_input": 7407,
+          "output": 2646,
+          "total": 20476
         },
         "model_requests": 10,
-        "cost_usd": 0.001709,
+        "cost_usd": 0.002439,
+        "stop_reason": "completed",
+        "check": "answers in Spanish with the East Boston CVS that delivers",
+        "passed": true,
+        "rules_broken": [],
+        "reply": "Encontré una farmacia en East Boston que indica entrega a domicilio: CVS Pharmacy, en 210 Border Street. Puedes llamar al (617) 567-5147 para confirmar los detalles de entrega. El mostrador de farmacia está cerrado ahora y abre mañana a las 10:00 a. m. No encontré otras farmacias de East Boston con entrega a domicilio indicada."
+      },
+      {
+        "n": 8,
+        "question": "Will my kid's amoxicillin liquid be covered? We have Blue Cross Blue Shield.",
+        "mode": "ask_everyone",
+        "run_id": "8b9beb587d57",
+        "specialists_called": [
+          "Community",
+          "Medication Access",
+          "Pharmacy Finder"
+        ],
+        "tools_run": 10,
+        "tokens": {
+          "input": 15917,
+          "cached_input": 6112,
+          "output": 3419,
+          "total": 19336
+        },
+        "model_requests": 9,
+        "cost_usd": 0.002751,
+        "stop_reason": "completed",
+        "check": "no coverage claim for Blue Cross; NADAC label and 'check with your plan'",
+        "passed": true,
+        "rules_broken": [],
+        "reply": "I can’t confirm coverage because RxLantern doesn’t have Blue Cross Blue Shield’s drug list; please check with your plan. I can help with the cost information once I know the strength. Cost estimate for Amoxicillin 400 mg/5 mL oral suspension (generic): about $3.92 for 1 bottle (100 mL). This is about what the pharmacy pays for this drug, not your copay (NADAC, 10/21/2026)."
+      },
+      {
+        "n": 9,
+        "question": "Is the CVS at South Station open on weekends?",
+        "mode": "ask_everyone",
+        "run_id": "d4f27ee43fc2",
+        "specialists_called": [
+          "Community",
+          "Medication Access",
+          "Pharmacy Finder"
+        ],
+        "tools_run": 8,
+        "tokens": {
+          "input": 19468,
+          "cached_input": 11831,
+          "output": 1708,
+          "total": 21176
+        },
+        "model_requests": 10,
+        "cost_usd": 0.001736,
         "stop_reason": "completed",
         "check": "pharmacy counter first (closed on weekends), store hours after",
         "passed": true,
         "rules_broken": [],
-        "reply": "The pharmacy counter is closed both days. Holiday hours may differ, so call to confirm before going. Store hours (the pharmacy counter may be closed): Saturday 9:00 AM-8:00 PM; Sunday 9:00 AM-8:00 PM."
+        "reply": "The pharmacy counter is closed both days, so you can’t pick up prescriptions there on weekends. Store hours (the pharmacy counter may be closed): Saturday 9:00 AM-8:00 PM; Sunday 9:00 AM-8:00 PM."
       },
       {
         "n": 10,
         "question": "How close is an urgent care or clinic to the hospital?",
         "mode": "ask_everyone",
-        "run_id": "9d0b17df39f1",
+        "run_id": "e133cda8bec6",
         "specialists_called": [],
         "tools_run": 0,
         "tokens": {
@@ -529,26 +529,26 @@
         "n": 11,
         "question": "Is there a walk-in clinic near the CVS in Mattapan?",
         "mode": "ask_everyone",
-        "run_id": "bb7205bb67f1",
+        "run_id": "5a141657daa0",
         "specialists_called": [
           "Community",
           "Medication Access",
           "Pharmacy Finder"
         ],
-        "tools_run": 7,
+        "tools_run": 9,
         "tokens": {
-          "input": 17829,
-          "cached_input": 7804,
-          "output": 2314,
-          "total": 20143
+          "input": 18819,
+          "cached_input": 11653,
+          "output": 2508,
+          "total": 21327
         },
-        "model_requests": 9,
-        "cost_usd": 0.002238,
+        "model_requests": 10,
+        "cost_usd": 0.002087,
         "stop_reason": "completed",
         "check": "names Mattapan Community Health Center near the CVS",
         "passed": true,
         "rules_broken": [],
-        "reply": "Mattapan Community Health Center is listed at the same address as the CVS on Blue Hill Ave, less than 0.1 miles away. Its walk-in availability was not found, so please call the center first to confirm it can see walk-ins."
+        "reply": "Yes—Mattapan Community Health Center is listed at the same address as the CVS at 1575 Blue Hill Ave. I couldn’t confirm whether the health center accepts walk-ins, so please call first. This CVS does not have a MinuteClinic. Coverage and cost details are only available for the medicines in RxLantern's list."
       }
     ]
   }

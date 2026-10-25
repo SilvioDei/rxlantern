@@ -236,12 +236,12 @@
       "n": 5,
       "question": "Where can I get a flu shot in Chinatown, and does Blue Cross cover it?",
       "language": "en",
-      "run_id": "85ac9630a055",
+      "run_id": "b004b63691d0",
       "stop_reason": "completed",
-      "seconds": 15.5,
-      "reply": "A CVS in Chinatown lists flu shots: 631 Washington St. The pharmacy counter is closed now and opens Sunday at 10:00 AM Boston time; call or book ahead to confirm they can give you a shot. If your Blue Cross plan is fully insured under Massachusetts law, routine flu shots recommended by the state should have no cost-sharing, but coverage can vary by plan and brand. If your plan is through a large employer, check with your plan, since it may not have to follow that rule.",
+      "seconds": 82.4,
+      "reply": "You can get a flu shot at CVS at 631 Washington St in Chinatown; it is closed now and opens Sunday at 10:00 AM. CVS at 700 Atlantic Ave and Walgreens at 24 School St are also listed nearby, but they open Monday. Call before going to confirm they have a shot available. If you have a fully insured Blue Cross Blue Shield of Massachusetts plan, Massachusetts rules generally require coverage of recommended routine vaccines with no cost-sharing, though the plan may limit brands; check with Blue Cross to confirm your plan. If your plan is through a large employer, it may not have to follow that state rule.",
       "follow_up_question": null,
-      "call_script": "Hi. I'm calling about seasonal flu shot. The quantity is: the amount on my prescription. Do you have it in stock today? Do you take my insurance? Have your insurance card ready so they can check your copay.",
+      "call_script": null,
       "pharmacy_cards": [
         {
           "id": "cvs-5874",
@@ -256,27 +256,65 @@
           "distance_label": "about 0.2 miles away",
           "source": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
           "checked_date": "2026-10-23"
+        },
+        {
+          "id": "cvs-10174",
+          "name": "CVS Pharmacy",
+          "address": "700 Atlantic Ave, Boston, MA 02111",
+          "phone": "(617) 737-7232",
+          "open_now": false,
+          "status": "closed now",
+          "closes_at": null,
+          "opens_next": "Monday 7:00 AM",
+          "distance_miles": 0.4,
+          "distance_label": "about 0.4 miles away",
+          "source": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "id": "walgreens-15390",
+          "name": "Walgreens",
+          "address": "24 School St, Boston, MA 02108",
+          "phone": "(617) 372-8156",
+          "open_now": false,
+          "status": "closed now",
+          "closes_at": null,
+          "opens_next": "Monday 10:00 AM",
+          "distance_miles": 0.5,
+          "distance_label": "about 0.5 miles away",
+          "source": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+          "checked_date": "2026-10-23"
         }
       ],
       "sources": [
         {
-          "text": "CVS Pharmacy, ID cvs-5874, is at 631 Washington St, Boston, MA 02111; its page lists the flu vaccine.",
+          "text": "CVS Pharmacy at 631 Washington St, Boston, MA 02111, is in Chinatown, about 0.2 miles away; its own pharmacy page lists flu shots. Closed now and opens tomorrow at 10:00 AM; phone (617) 338-0128.",
           "source": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
           "checked_date": "2026-10-23"
         },
         {
-          "text": "The pharmacy counter is closed now and opens tomorrow at 10:00 AM; counter hours are Monday–Friday 9:00 AM–8:00 PM, Saturday 9:00 AM–7:00 PM, and Sunday 10:00 AM–7:00 PM, with a daily 1:30–2:00 PM lunch break.",
+          "text": "CVS Pharmacy at 700 Atlantic Ave, Boston, MA 02111, is about 0.4 miles away; its own pharmacy page lists flu shots. Closed now and opens Monday at 7:00 AM; phone (617) 737-7232.",
+          "source": "https://www.cvs.com/store-locator/boston-ma-pharmacies/700-atlantic-ave-boston-ma-02111/storeid=10174",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "text": "Walgreens at 24 School St, Boston, MA 02108, is about 0.5 miles away; its own pharmacy page lists flu shots. Closed now and opens Monday at 10:00 AM; phone (617) 372-8156.",
+          "source": "https://www.walgreens.com/locator/walgreens-24+school+st-boston-ma-02108/id=15390",
+          "checked_date": "2026-10-23"
+        },
+        {
+          "text": "No matching pharmacy counter is open right now near Chinatown.",
           "source": "https://www.cvs.com/store-locator/boston-ma-pharmacies/631-washington-st-boston-ma-02111/storeid=5874",
-          "checked_date": "2026-10-23"
+          "checked_date": "2026-10-24"
         },
         {
-          "text": "Massachusetts Bulletin 2025-03 says insurers must cover vaccines recommended by Massachusetts DPH, with no cost-sharing or utilization management for covered routine vaccines.",
+          "text": "The tool says fully insured health plans issued under Massachusetts law, including Blue Cross Blue Shield of Massachusetts, are subject to the Massachusetts rule.",
           "source": "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download",
           "checked_date": "2026-10-23"
         },
         {
-          "text": "The rule applies to fully insured health plans issued under Massachusetts law, including examples such as Blue Cross Blue Shield of Massachusetts and HMOs.",
-          "source": "https://www.mass.gov/doc/bulletin-2025-03-coverage-for-vaccines-issued-september-3-2025/download",
+          "text": "Insurers may cover only certain brands, as long as at least one product covers each DPH-recommended vaccine.",
+          "source": "https://www.mass.gov/info-details/frequently-asked-questions-about-vaccinations",
           "checked_date": "2026-10-23"
         },
         {
@@ -294,21 +332,19 @@
         "Front Desk: ask_pharmacy_finder",
         "Front Desk: ask_medication_access",
         "Pharmacy Finder: find_pharmacies",
-        "Medication Access: vaccine_coverage",
-        "Pharmacy Finder: pharmacy_details",
-        "Medication Access: vaccine_coverage",
-        "Medication Access: call_script"
+        "Pharmacy Finder: nearest_open_now",
+        "Medication Access: vaccine_coverage"
       ],
       "safety": [],
       "tokens": {
-        "input": 19467,
-        "cached_input": 11327,
-        "output": 2744,
-        "model_requests": 8,
-        "tool_calls": 7
+        "input": 15112,
+        "cached_input": 5109,
+        "output": 2842,
+        "model_requests": 7,
+        "tool_calls": 5
       },
-      "cost_usd": 0.002299,
-      "usage_display": "This answer used 22,211 tokens (about $0.0023)."
+      "cost_usd": 0.002472,
+      "usage_display": "This answer used 17,954 tokens (about $0.0025)."
     },
     {
       "n": 6,
@@ -401,26 +437,31 @@
       "n": 8,
       "question": "Will my kid's amoxicillin liquid be covered? We have Blue Cross Blue Shield.",
       "language": "en",
-      "run_id": "99e7e91876d5",
+      "run_id": "e135d48e2cf8",
       "stop_reason": "completed",
-      "seconds": 22.1,
-      "reply": "I can’t confirm whether your Blue Cross Blue Shield plan covers amoxicillin liquid; please check with your plan. The liquid comes in different strengths, so check the prescription for the exact one. For a 100 mL bottle, the estimates are $2.49 for 250 mg/5 mL and $3.92 for 400 mg/5 mL—about what the pharmacy pays for this drug, not your copay. These are not your expected out-of-pocket costs.",
+      "seconds": 19.7,
+      "reply": "I can’t confirm whether your Blue Cross Blue Shield plan covers amoxicillin liquid; please check with your plan. The estimated pharmacy cost for a 100 mL bottle is $2.49 for 250 mg/5 mL or $3.92 for 400 mg/5 mL—about what the pharmacy pays for this drug, not your copay. Use the strength and amount written on your child’s prescription when you call.",
       "follow_up_question": null,
-      "call_script": "Hi. I'm calling about amoxicillin oral suspension. The strength is: the strength on my prescription. The quantity is: the amount on my prescription. Do you take my insurance, and can you check my copay? Have your insurance card ready so they can check your copay.",
+      "call_script": "Hi. I’m calling about amoxicillin oral suspension, [strength on prescription], for [amount on prescription]. Do you take my insurance, and can you check my copay? Do you have it in stock today?",
       "pharmacy_cards": [],
       "sources": [
         {
-          "text": "RxLantern does not have Blue Cross Blue Shield's drug list, so it cannot say whether this medicine is covered; check with the plan.",
+          "text": "RxLantern does not have Blue Cross Blue Shield's drug list, so it cannot say if amoxicillin 250 mg/5 mL oral suspension is covered; check with your plan.",
           "source": "RxLantern has no commercial plan formularies",
           "checked_date": "2026-10-24"
         },
         {
-          "text": "For a 100 mL bottle of amoxicillin 250 mg/5 mL oral suspension, the generic NADAC estimate is $2.49; this is about what the pharmacy pays for this drug, not your copay.",
+          "text": "RxLantern does not have Blue Cross Blue Shield's drug list, so it cannot say if amoxicillin 400 mg/5 mL oral suspension is covered; check with your plan.",
+          "source": "RxLantern has no commercial plan formularies",
+          "checked_date": "2026-10-24"
+        },
+        {
+          "text": "NADAC estimate for a 100 mL bottle of amoxicillin 250 mg/5 mL oral suspension is $2.49; this is about what the pharmacy pays for this drug, not your copay.",
           "source": "https://download.medicaid.gov/data/nadac-national-average-drug-acquisition-cost-10-21-2026.csv",
           "checked_date": "2026-10-24"
         },
         {
-          "text": "For a 100 mL bottle of amoxicillin 400 mg/5 mL oral suspension, the generic NADAC estimate is $3.92; this is about what the pharmacy pays for this drug, not your copay.",
+          "text": "NADAC estimate for a 100 mL bottle of amoxicillin 400 mg/5 mL oral suspension is $3.92; this is about what the pharmacy pays for this drug, not your copay.",
           "source": "https://download.medicaid.gov/data/nadac-national-average-drug-acquisition-cost-10-21-2026.csv",
           "checked_date": "2026-10-24"
         }
@@ -434,21 +475,21 @@
         "Medication Access: lookup_drug",
         "Medication Access: call_script",
         "Medication Access: nadac_cost",
+        "Medication Access: commercial_drug_coverage",
         "Medication Access: nadac_cost",
         "Medication Access: commercial_drug_coverage",
-        "Medication Access: commercial_drug_coverage",
-        "Medication Access: call_script"
+        "Medication Access: commercial_drug_coverage"
       ],
       "safety": [],
       "tokens": {
-        "input": 14420,
-        "cached_input": 7912,
-        "output": 2461,
+        "input": 14481,
+        "cached_input": 4342,
+        "output": 2185,
         "model_requests": 6,
         "tool_calls": 8
       },
-      "cost_usd": 0.00196,
-      "usage_display": "This answer used 16,881 tokens (about $0.0020)."
+      "cost_usd": 0.00215,
+      "usage_display": "This answer used 16,666 tokens (about $0.0022)."
     },
     {
       "n": 9,

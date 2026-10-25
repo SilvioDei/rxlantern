@@ -846,3 +846,32 @@ Sent while this step was running:
 > 8. Limits and next steps. What doesn't work yet (no live pharmacy inventory, commercial plan drug lists not public, some Spanish data stays in English, AI-written translations not yet reviewed, wheelchair and language data missing from pharmacy websites, the app runs locally, community data needs real users to grow) and what I'd build next with another month (an AI agent that calls pharmacies with consent, doctor mode, more languages, all of Massachusetts, putting it online, pharmacy partnerships).
 >
 > Every number and claim must come from the project files or my evidence notes. If something is missing, write [CHECK] so I can fill it in rather than guessing. When done, give me the page count and a list of every [CHECK], then stop.
+
+### Step 10a — follow-up: improve the report
+
+> Step 10a follow-up: improve the report.
+>
+> 1. Fix Q8 in the app: for commercial insurance (like Blue Cross), the answer must always include the NADAC cost estimate (labeled "about what the pharmacy pays, not your copay") along with "check with your plan" and the call script. Rerun Q8 and the cost experiment's Q8 to confirm.
+>
+> 2. Fix the audit trail token split: when two specialists run at the same time, per-agent token numbers overlap and the Front Desk can show negative numbers. Make each agent's numbers its own, so they add up to the run total and are never negative. Rerun one two-specialist question to confirm.
+>
+> 3. Improve the automated checks so they don't fail correct answers: Q1 should pass if no pharmacy is open and the answer gives the next opening time and nearest open option; Q7 should accept a pharmacy name in Spanish answers. Rerun the cost experiment once and use the new numbers.
+>
+> 4. Update output/tokenomics.md so it matches the numbers in the report.
+>
+> 5. Report changes (rebuild ../submission/report.html with build_report.py, keep it at 15 pages or fewer):
+> - Section 3, replace the [CHECK] with these facts:
+>   - TrumpRx.gov: a federal website launched February 5, 2026, that lists discounted cash prices; in May 2026 it added more than 600 generic medicines and integrated discounts from Amazon Pharmacy, Cost Plus Drugs, and GoodRx. It does not list controlled substances, and it doesn't show local stock, pharmacy hours, or insurance coverage. Sources: whitehouse.gov fact sheet (May 2026) and AP/Reuters coverage (February 2026).
+>   - Pharmacy Compass (RxEOB): an app that shows discount card options and real-time pharmacy benefit pricing for members of plans that offer it, and lets them send prescriptions to a lower-cost pharmacy. It doesn't show stock, shortages, or community reports. Source: its App Store listing.
+>   - GoodRx: coupon cash prices at nearby pharmacies; no stock, shortages, counter hours, or insurance coverage.
+>   - Chain apps (CVS, Walgreens): refills and store info for that chain only.
+>   - Google Maps: often shows store hours, not pharmacy counter hours.
+>   - Medicare Plan Finder: compares Medicare drug plans and costs; Medicare only, no stock or local hours.
+>   - FDA drug shortage list: national and technical, not local or patient-friendly.
+> - Section 4, replace the [CHECK] with: "The course requires using the course Portkey key with gpt-6-luna only. That also fit the project: it is low-cost, supports tool calling through Portkey's Responses API, and prompt caching cuts the cost of repeated instructions."
+> - Section 4 walkthrough: use the real visitor's COVID question from the audit trail ("where can I get a COVID shot in Dorchester?") instead of the automated test run, with the screenshot ../evidence/cousin_covid.png. Describe the user as "a family member".
+> - Section 6: if the token-split fix works, remove it from the limits.
+> - Section 7: say the vaccine search gap was found while a family member was testing the app, and fixed the same evening.
+> - Section 8: add Q8 as "found and fixed" instead of a known miss, if the fix works.
+>
+> Commit and push the app fixes, the updated tokenomics.md, and the prompt log. Tell me the new page count and any remaining [CHECK], then stop.

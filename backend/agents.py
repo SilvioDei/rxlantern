@@ -23,6 +23,7 @@ from pydantic import BaseModel, Field
 from pydantic_ai import Agent, RunContext, WebSearchTool
 from pydantic_ai.capabilities import NativeTool
 from pydantic_ai.exceptions import UsageLimitExceeded
+from pydantic_ai.messages import ModelResponse
 from pydantic_ai.models.openai import OpenAIResponsesModelSettings
 from pydantic_ai.usage import RunUsage, UsageLimits
 
@@ -30,7 +31,7 @@ from backend import config, tools, usage_log
 from backend.config import APP_NAME, MODEL_NAME, get_model
 from backend.moderation import INJECTION
 from backend.safety import redact_phi  # noqa: F401 - re-exported; used below and by the tests
-from backend.models import (AgentUsage, FinalReply, FrontDeskOutput, PharmacyCard, SpecialistResult, TraceEvent,
+from backend.models import (AgentUsage, Fact, FinalReply, FrontDeskOutput, PharmacyCard, SpecialistResult, TraceEvent,
                             Usage)
 
 PROMPTS = Path(__file__).resolve().parent / "prompts"
@@ -71,6 +72,8 @@ class RunDeps:
     call_script: str | None = None
     outside_list: bool = False                             # a medicine not in RxLantern's list was looked up
     controlled: bool = False                               # a tool result was about a controlled medicine
+    nadacs: list = field(default_factory=list)             # every NADAC estimate a tool returned
+    nested_usage: dict = field(default_factory=dict)       # tokens of agents run inside a tool (holiday search)
 
 
 def _collect(deps: RunDeps, result):
@@ -90,6 +93,8 @@ def _collect(deps: RunDeps, result):
             elif k == "controlled" and v is True:
                 deps.controlled = True
             _collect(deps, v)
+        if result.get("label") == tools.NADAC_LABEL:
+            deps.nadacs.append(result)
     elif isinstance(result, list):
         for x in result:
             _collect(deps, x)
@@ -236,6 +241,7 @@ async def holiday_hours(ctx: RunContext[RunDeps], pharmacy_id: str, holiday: str
     res = await _holiday_agent(domain).run(
         f"Pharmacy: {p['name']}, {p['address']}. Holiday: {holiday}. Website: {p['website']}",
         usage=ctx.usage, usage_limits=limits())
+    ctx.deps.nested_usage[PF] = _add(_own_usage(res.new_messages()), ctx.deps.nested_usage.get(PF, {}))
     found, text = res.output.found, res.output.hours_text
     if INJECTION.search(text or ""):  # the page tried to give instructions: never pass them on
         ctx.deps.safety.append("web page text with instructions ignored")
@@ -354,17 +360,33 @@ def _snapshot(u: RunUsage) -> dict:
             "output_tokens": u.output_tokens, "web_searches": int((u.details or {}).get("web_search_requests", 0))}
 
 
-def _delta(after: dict, before: dict) -> dict:
-    return {k: after[k] - before[k] for k in after}
+def _own_usage(messages) -> dict:
+    """Tokens of one agent run, from its own model responses only. Specialists can run at the same time and share
+    the question's usage counter, so 'counter after minus counter before' would also count the other specialist."""
+    out = {"requests": 0, "input_tokens": 0, "cached_input_tokens": 0, "output_tokens": 0, "web_searches": 0}
+    for m in messages:
+        if isinstance(m, ModelResponse):
+            u = m.usage
+            out["requests"] += 1
+            out["input_tokens"] += u.input_tokens
+            out["cached_input_tokens"] += u.cache_read_tokens
+            out["output_tokens"] += u.output_tokens
+            out["web_searches"] += int((u.details or {}).get("web_search_requests", 0))
+    return out
+
+
+def _add(a: dict, b: dict) -> dict:
+    return {k: a.get(k, 0) + b.get(k, 0) for k in a}
 
 
 async def _ask(ctx: RunContext[RunDeps], agent: Agent, label: str, request: str) -> dict:
     ctx.deps.trace.append(TraceEvent(agent="Front Desk", tool=f"ask_{label.lower().replace(' ', '_')}"))
     ctx.deps.trace.append(TraceEvent(agent=label, note="started"))
     ctx.deps.steps.append({"type": "handoff", "from": "Front Desk", "to": label, "request": request})
-    before = _snapshot(ctx.usage)
     res = await agent.run(request, deps=ctx.deps, usage=ctx.usage, usage_limits=limits())
-    used = _delta(_snapshot(ctx.usage), before)
+    used = _own_usage(res.new_messages())
+    if label in ctx.deps.nested_usage:  # e.g. the holiday web search the Pharmacy Finder ran
+        used = _add(used, ctx.deps.nested_usage.pop(label))
     ctx.deps.agent_usage.append({"agent": label, **used})
     ctx.deps.steps.append({"type": "agent_result", "agent": label, "answer": res.output.answer,
                            "not_found": res.output.not_found, "warnings": res.output.warnings, "tokens": used})
@@ -465,6 +487,32 @@ UNCLEAR = [
      {"en": "Which hospital do you mean? You can share its name, or a Boston ZIP code or neighborhood.",
       "es": "¿A qué hospital se refiere? Puede darme el nombre, o un código postal o barrio de Boston."}),
 ]
+
+
+def nadac_sentence(est: dict | None, language: str) -> str | None:
+    """The NADAC estimate as one labeled sentence (used when a commercial-plan answer left it out)."""
+    if not est:
+        return None
+    for kind in ("generic", "brand"):
+        e = est.get(kind)
+        if isinstance(e, dict) and e.get("estimate") is not None:
+            amount, as_of = est.get("amount") or "a typical amount", est.get("as_of") or est.get("checked_date")
+            drug = est.get("drug") or ""
+            if language == "es":
+                tipo = "genérico" if kind == "generic" else "de marca"
+                return (f"Costo estimado de {drug} ({tipo}): unos ${e['estimate']:,.2f} por {amount}. Es aproximadamente "
+                        f"lo que paga la farmacia por esta medicina, no su copago (NADAC, {as_of}).")
+            return (f"Cost estimate for {drug} ({kind}): about ${e['estimate']:,.2f} for {amount}. This is about what the "
+                    f"pharmacy pays for this drug, not your copay (NADAC, {as_of}).")
+    return None
+
+
+# A model sentence saying no estimate was found (removed when code adds the estimate, so the reply does not contradict itself).
+NO_ESTIMATE = re.compile(r"[^.!?]*\b(couldn[’']t|could not|can[’']t|cannot|was not|wasn[’']t|not)\b[^.!?]*\b(find|found)\b"
+                         r"[^.!?]*\bestimate\b[^.!?]*[.!?]\s*|[^.!?]*\bestimate\b[^.!?]*\bnot found\b[^.!?]*[.!?]\s*|"
+                         r"[^.!?]*\bno (encontr[ée]|se encontr[óo])\b[^.!?]*\bestimad[oa]\b[^.!?]*[.!?]\s*", re.I)
+
+
 CHECK_PLAN = {"en": "Please check with your plan to see if it is covered.",
               "es": "Por favor consulte con su plan para saber si lo cubre."}
 OUTSIDE_LIST = {"en": "Coverage and cost details are only available for the medicines in RxLantern's list.",
@@ -657,10 +705,27 @@ async def ask(question: str, language: str = "en", zip_code: str | None = None,
         reply, changed = enforce_hours_order(reply, deps)
         if changed:
             deps.safety.append("hours reply reordered: pharmacy counter first, store hours labeled")
-        if any(w in clean.lower() for w in tools.COMMERCIAL_PLAN_WORDS) and tools.find_drugs(clean):
+        commercial = any(w in clean.lower() for w in tools.COMMERCIAL_PLAN_WORDS) or insurance_type == "commercial"
+        drugs_named = tools.find_drugs(clean)
+        if commercial and drugs_named:
             if not re.search(r"check with your plan|consulte con su plan", reply, re.I):
                 reply += " " + CHECK_PLAN[language]
                 deps.safety.append("added 'check with your plan' (no commercial plan drug lists)")
+            # Commercial plans: always give the NADAC estimate and a call script, even if the model left them out.
+            # Only an estimate for the medicine the patient named (a tool may also have returned other forms).
+            best = tools.find_drug(clean)
+            names = {d["display_name"] for d in drugs_named}
+            matching = [e for e in deps.nadacs if e.get("drug") in names]
+            est = (next((e for e in matching if best and e.get("drug") == best["display_name"]), None)
+                   or (matching[-1] if matching else None) or (tools.nadac_cost(best["id"]) if best else None))
+            sentence = nadac_sentence(est, language)
+            if sentence and not re.search(r"not your copay|no (es )?su copago", reply, re.I):
+                reply = re.sub(r"\s{2,}", " ", NO_ESTIMATE.sub(" ", reply)).strip() + " " + sentence
+                if all(f.source != est["source"] for f in kept):
+                    kept.append(Fact(text=sentence, source=est["source"], checked_date=est["checked_date"]))
+                deps.safety.append("added the NADAC cost estimate (commercial plan)")
+            if not (out.call_script or deps.call_script) and est:
+                deps.call_script = tools.call_script(est["drug"], lang=language)["call_script"]
         if deps.outside_list and not re.search(r"only available for the medicines|solo est[aá]n disponibles", reply, re.I):
             reply += " " + OUTSIDE_LIST[language]
             deps.safety.append("added 'coverage and cost only for medicines in the list' (medicine outside the list)")

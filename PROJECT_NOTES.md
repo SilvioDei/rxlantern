@@ -326,12 +326,16 @@ rxlantern/   (the repository folder)
 ## Step 10a: report (2026-10-24)
 
 - `report.html` lives outside the repo in `../submission/` (with `build_report.py`, which rebuilds it from the repo's
-  output files and `../evidence/notes.txt`). 15 letter pages, everything embedded.
-- Reran `tests/try_agents.py` (13 questions, all completed) and `tests/cost_experiment.py` at about 11:17 PM Saturday.
-  The cost experiment now loops only over the 11 questions it has checks for (try_agents has 13). Automatic checks: normal
-  8/11, ask everyone 9/11. On review, Q1 (no counter open late Saturday night, correct answer) and Q7 (correct Spanish
-  answer without the word "farmacia") are test-check problems; Q8 normal left out the cost estimate (real miss).
-  Normal mode: 36% fewer tokens, 43% lower cost; average $0.000998 per question. `output/tokenomics.md` still has the
-  Step 5 numbers.
-- Known logging bug: when two specialists run in parallel, the audit trail's per-agent token split overlaps (the Front
-  Desk can show negative numbers); run totals are correct.
+  output files and `../evidence/`). 15 letter pages, everything embedded. It shows a [CHECK] box until
+  `../evidence/cousin_covid.png` exists (space for it is already reserved in the page count).
+- **Commercial plans always get the cost estimate** (`agents.ask`): if the reply has no "not your copay" estimate, code adds
+  the NADAC estimate for the medicine named in the question (never another form a tool happened to return), removes a model
+  sentence saying no estimate was found, and makes sure there is a call script. Logged as "added the NADAC cost estimate
+  (commercial plan)".
+- **Per-agent tokens**: each specialist is counted from its own model responses (`_own_usage`), plus the holiday search it
+  ran; the Front Desk is the rest. Two specialists running at the same time no longer overlap; per-agent numbers add up to
+  the run total and are never negative (checked on every run of the cost experiment).
+- **Cost experiment checks**: Q1 also passes when no counter is open and the answer names the nearest pharmacy and when it
+  opens; Q7 accepts a Spanish answer that names the pharmacy without the word "farmacia". Final run (2026-10-24, 11:46 PM):
+  normal 11/11, ask everyone 11/11; normal used 41% fewer tokens and cost 42% less; $0.001087 per question.
+  `output/tokenomics.md` is regenerated from `output/cost_experiment.json` and matches the report.
