@@ -883,3 +883,13 @@ Sent while this step was running:
 > Also, if not already done, add this one-line disclaimer under the report title, on the app's About & Privacy page, and in the README: "RxLantern is an independent class project. It is not affiliated with or endorsed by CVS Health or any pharmacy, and it uses only public information." Rebuild frontend/dist if the About page changes.
 >
 > Keep the report at 15 pages or fewer. Commit and push the app and README changes, log this prompt under Step 10, tell me the page count and any remaining [CHECK], then stop.
+
+### Step 10 — report accuracy fixes
+
+> Report fixes (accuracy first). Rebuild ../submission/report.html and keep it at 15 pages:
+> 1. Section 2: replace "I called three Boston-area pharmacies myself with the kind of questions patients ask, and timed how long it took to get an answer." with "To put a number on 'waiting on hold,' a roommate and two family members called three Boston-area pharmacies with the kind of questions patients ask, and we timed how long it took to get an answer." (Keep the table as is.)
+> 2. Section 7, table row for the family member in Randolph: change "the Morrissey Blvd CVS I called was 3rd closest" to "the Morrissey Blvd CVS they had called was 3rd closest".
+> 3. Number the first section: add a "1. RxLantern at a glance" heading above "What it does", so the sections run 1 to 8.
+> 4. Footer: change "Screenshots are from the app's automated tests." to "Screenshots are from the app's automated tests, except the two walkthrough screenshots in section 4, which I took."
+> 5. Use a plain sans-serif font with tabular, unslashed numbers (for example the system UI font) for numbers in tables and the code-style math block, so zeros don't show a slash. Keep Atkinson Hyperlegible for body text.
+> Tell me the page count when done. Log this prompt under Step 10 and push the log.
