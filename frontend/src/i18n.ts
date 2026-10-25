@@ -217,6 +217,7 @@ const en = {
   storeToday: "Store hours today (the pharmacy counter may be closed): {hours}",
   openAlternative: "Open now nearby:",
   away: "about {miles} miles away",
+  awayOne: "about 1 mile away",
   call: "Call",
   directions: "Directions",
   details: "Details",
@@ -537,7 +538,7 @@ const en = {
   impactTitle: "Time saved",
   impactLine: "RxLantern has answered {x} questions, saving patients an estimated {y} minutes on the phone and pharmacy staff an estimated {z} minutes.",
   impactEstimate: "Estimate",
-  impactHow: "How we estimate: we measured two real calls to Boston pharmacies. On a Friday, getting an answer about a prescription took about 15 minutes and 3 calls (a voicemail, a dropped callback, and one answered call). On a Saturday around 5 PM, asking the CVS at 715 Morrissey Blvd in Dorchester about the hepatitis B vaccine meant waiting about 13 minutes for a callback. So each answered question saves a patient about 14 minutes, based on two measured calls, and pharmacy staff about 4 minutes, by a pharmacy manager's estimate. Only real chat questions are counted, not tests or sample data.",
+  impactHow: "How we estimate: we measured three real calls to Boston-area pharmacies. On a Friday, getting an answer about a prescription took about 15 minutes and 3 calls (a voicemail, a dropped callback, and one answered call). On a Saturday around 5 PM, asking the CVS at 715 Morrissey Blvd in Dorchester about the hepatitis B vaccine meant waiting about 13 minutes for a callback. On a Saturday, a call to the CVS at 1575 Blue Hill Ave in Mattapan took about 9 minutes for a callback. So each answered question saves a patient about 12 minutes, based on three measured calls to Boston-area pharmacies, and pharmacy staff about 4 minutes, by a pharmacy manager's estimate. Only real chat questions are counted, not tests or sample data.",
 
 };
 
@@ -752,6 +753,7 @@ const es: Dict = {
   storeToday: "Horario de la tienda hoy (el mostrador puede estar cerrado): {hours}",
   openAlternative: "Abierta ahora cerca:",
   away: "a unas {miles} millas",
+  awayOne: "a aproximadamente 1 milla",
   call: "Llamar",
   directions: "Cómo llegar",
   details: "Detalles",
@@ -1064,7 +1066,7 @@ const es: Dict = {
   impactTitle: "Tiempo ahorrado",
   impactLine: "RxLantern ha respondido {x} preguntas, ahorrando a los pacientes unos {y} minutos al teléfono (estimado) y al personal de farmacia unos {z} minutos (estimado).",
   impactEstimate: "Estimado",
-  impactHow: "Cómo lo estimamos: medimos dos llamadas reales a farmacias de Boston. Un viernes, obtener una respuesta sobre una receta tomó unos 15 minutos y 3 llamadas (un buzón de voz, una devolución de llamada que se cortó y una llamada contestada). Un sábado alrededor de las 5 PM, preguntar en el CVS de 715 Morrissey Blvd en Dorchester por la vacuna de la hepatitis B significó esperar unos 13 minutos a que devolvieran la llamada. Así que cada pregunta respondida ahorra unos 14 minutos al paciente, según dos llamadas medidas, y unos 4 minutos al personal de la farmacia, según una gerente de farmacia. Solo se cuentan preguntas reales del chat, no pruebas ni datos de ejemplo.",
+  impactHow: "Cómo lo estimamos: medimos tres llamadas reales a farmacias del área de Boston. Un viernes, obtener una respuesta sobre una receta tomó unos 15 minutos y 3 llamadas (un buzón de voz, una devolución de llamada que se cortó y una llamada contestada). Un sábado alrededor de las 5 PM, preguntar en el CVS de 715 Morrissey Blvd en Dorchester por la vacuna de la hepatitis B significó esperar unos 13 minutos a que devolvieran la llamada. Un sábado, una llamada al CVS de 1575 Blue Hill Ave en Mattapan tomó unos 9 minutos hasta que devolvieron la llamada. Así que cada pregunta respondida ahorra unos 12 minutos al paciente, según tres llamadas medidas a farmacias del área de Boston, y unos 4 minutos al personal de la farmacia, según una gerente de farmacia. Solo se cuentan preguntas reales del chat, no pruebas ni datos de ejemplo.",
 
 };
 
@@ -1072,6 +1074,8 @@ export const STRINGS: Record<Lang, Dict> = { en, es };
 export type Key = keyof typeof en;
 
 export function translate(lang: Lang, key: Key, vars?: Record<string, string | number>): string {
+  // "about 1 mile away" (singular) when a distance rounds to 1; "miles" otherwise.
+  if (key === "away" && Number(vars?.miles) === 1) key = "awayOne";
   const raw = STRINGS[lang][key] ?? STRINGS.en[key];
   let text = Array.isArray(raw) ? raw.join(" ") : String(raw);
   for (const [k, v] of Object.entries(vars ?? {})) text = text.replaceAll(`{${k}}`, String(v));

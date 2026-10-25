@@ -354,6 +354,7 @@ def t_demand(browser):
         rows = c.get("/api/demand").json()["rows"]
         assert not any(r["drug_id"] == drug for r in rows), "a count under 5 was shown"
         c.post("/api/search-count", json={"drug_id": drug, "place": "Dorchester"})
+    cleanup_util.note_search(drug, "Dorchester", 5)  # these 5 are taken off again at cleanup
     ctx = new_ctx(browser, place="Dorchester")
     page = ctx.new_page()
     page.goto(f"{BASE}/results?drug={drug}")  # a test search in the browser
@@ -421,9 +422,10 @@ def t_impact(browser):
     q = {"question": "Is there a pharmacy open right now near 02111?", "language": "en"}
     r = httpx.post(f"{BASE}/api/ask", json=q, headers=REAL_UA, timeout=180)
     assert r.status_code == 200 and r.json()["stop_reason"] == "completed", r.text[:200]
+    cleanup_util.note_question(r.json()["run_id"])  # only this test answer is removed at cleanup
     after_real = httpx.get(f"{BASE}/api/impact").json()
     assert after_real["questions"] == start + 1, after_real
-    assert after_real["patient_minutes"] == (start + 1) * 14 and after_real["staff_minutes"] == (start + 1) * 4
+    assert after_real["patient_minutes"] == (start + 1) * 12 and after_real["staff_minutes"] == (start + 1) * 4
     ctx = new_ctx(browser)
     page = ctx.new_page()
     resp = page.request.post(f"{BASE}/api/ask", data=q, timeout=180000)  # headless browser = automated test
@@ -434,12 +436,12 @@ def t_impact(browser):
     expect(page.locator(".impact-line").first).to_contain_text(f"RxLantern has answered {start + 1} question")
     expect(page.locator(".impact-line .estimate-tag").first).to_have_text("Estimate")
     page.goto(f"{BASE}/about")
-    expect(page.locator(".impact-card")).to_contain_text(f"saving patients an estimated {(start + 1) * 14} minutes")
-    expect(page.locator(".impact-card")).to_contain_text("based on two measured calls")
+    expect(page.locator(".impact-card")).to_contain_text(f"saving patients an estimated {(start + 1) * 12} minutes")
+    expect(page.locator(".impact-card")).to_contain_text("based on three measured calls")
     expect(page.locator(".impact-card")).to_contain_text(f"pharmacy staff an estimated {(start + 1) * 4} minutes")
     shot(page, "11_time_saved_about.png")
     ctx.close()
-    return f"real question: {start} -> {start + 1} (14 patient min, 4 staff min each); headless-browser question and emergency message: not counted; home line and About card labeled 'Estimate'"
+    return f"real question: {start} -> {start + 1} (12 patient min, 4 staff min each); headless-browser question and emergency message: not counted; home line and About card labeled 'Estimate'"
 
 
 # ----------------------------------------------------------------------------- 12. Spanish, Easy view, phone

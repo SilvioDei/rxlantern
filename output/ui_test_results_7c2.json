@@ -1,5 +1,5 @@
 {
- "run_at": "2026-10-24T22:29:38",
+ "run_at": "2026-10-24T22:53:28",
  "base_url": "http://127.0.0.1:8000",
  "browser": "Chromium (Playwright)",
  "passed": 12,
@@ -10,7 +10,7 @@
    "check": "My medicine list with Ozempic 0.5 mg, lisinopril 10 mg, and albuterol: ranked pharmacies with 'X of 3'",
    "result": "PASS",
    "notes": "3 medicines added by typing; each card says 'Reported in stock for X of 3'; 2 real reports moved BMC Yawkey to #1 (2 of 3); list saved only in localStorage",
-   "seconds": 2.2
+   "seconds": 2.1
   },
   {
    "n": 2,
@@ -24,7 +24,7 @@
    "check": "'They don't have it' offers the transfer helper; Concerta shows only the prescriber/pharmacist line",
    "result": "PASS",
    "notes": "after 'They don't have it' at Walgreens: transfer script with that pharmacy and the medicine; Concerta: only 'Ask your prescriber or pharmacist'",
-   "seconds": 1.8
+   "seconds": 1.7
   },
   {
    "n": 4,
@@ -38,56 +38,56 @@
    "check": "A review with 'Staff spoke Cantonese' shows as 'Reported by patients', and the language filter finds it",
    "result": "PASS",
    "notes": "review ticked Cantonese -> pharmacy page 'Reported by patients: Cantonese (1)' (not sample); Pharmacies and Results language filters include BMC Yawkey",
-   "seconds": 1.6
+   "seconds": 1.5
   },
   {
    "n": 6,
    "check": "The language help card prints in all four languages",
    "result": "PASS",
    "notes": "Chinese (Traditional and Simplified), Haitian Creole, Spanish, each with the English; warning label; print view; PDF saved to output/language_card_sample.pdf",
-   "seconds": 1.1
+   "seconds": 1.0
   },
   {
    "n": 7,
    "check": "Best time to go appears only with at least 3 reviews in a time slot",
    "result": "PASS",
    "notes": "1 and 2 reviews: 'Not enough reviews yet'; 3rd review -> 'Saturdays, afternoons: about 12 minutes (3)'; sample slot shown with a Sample badge at CVS Chinatown",
-   "seconds": 2.2
+   "seconds": 1.7
   },
   {
    "n": 8,
    "check": "Starring a drug, then a new report, highlights it on the next visit",
    "result": "PASS",
    "notes": "star saved in localStorage only; new real 'in stock' report near 02124 highlighted on the next visit (a new browser session: shortage watch and home), not on the visit after",
-   "seconds": 4.2
+   "seconds": 3.9
   },
   {
    "n": 9,
    "check": "For pharmacies: counts of 5 or more shown, smaller hidden; test searches not counted",
    "result": "PASS",
    "notes": "4 searches: hidden; 5th: '5 searches for Lisinopril 10 mg tablet near Dorchester'; headless-browser and marked test searches not counted; sample 3-count hidden",
-   "seconds": 1.9
+   "seconds": 1.8
   },
   {
    "n": 10,
    "check": "Savings finder: links for no insurance and Blue Cross; only the note for Medicare and MassHealth; no TrumpRx for controlled",
    "result": "PASS",
    "notes": "Ozempic, no insurance and Blue Cross: GoodRx, TrumpRx, and Novo Nordisk savings links (no prices); Medicare and MassHealth: note only; Vyvanse: no TrumpRx link; no controlled drug linked to TrumpRx",
-   "seconds": 3.5
+   "seconds": 3.1
   },
   {
    "n": 11,
    "check": "Time-saved counter goes up after a real chat question, not after tests or sample data",
    "result": "PASS",
-   "notes": "real question: 2 -> 3 (14 patient min, 4 staff min each); headless-browser question and emergency message: not counted; home line and About card labeled 'Estimate'",
-   "seconds": 28.1
+   "notes": "real question: 3 -> 4 (12 patient min, 4 staff min each); headless-browser question and emergency message: not counted; home line and About card labeled 'Estimate'",
+   "seconds": 27.6
   },
   {
    "n": 12,
    "check": "All new pages work in Spanish, in Easy view, and at phone width",
    "result": "PASS",
    "notes": "24 page views: 6 new pages x (Spanish desktop, Easy view, phone, phone + Easy view + Spanish); no sideways scroll; mic and read aloud present",
-   "seconds": 5.2
+   "seconds": 5.5
   }
  ],
  "cleanup": {
@@ -97,9 +97,8 @@
    "sessions": 1,
    "stock_reports": 2,
    "reviews": 1,
-   "login_failures": 0,
    "search_counts": 1,
-   "impact_counter": 1
+   "answered_questions": 3
   }
  },
  "screenshots": [

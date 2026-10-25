@@ -19,12 +19,13 @@ from backend import community, config, sample_data, tools
 
 router = APIRouter(prefix="/api")
 
-# Time-saved estimate, based on two measured calls to Boston pharmacies (2026-10-24 update):
+# Time-saved estimate, based on three measured calls to Boston-area pharmacies (updated 2026-10-25):
 #   Friday: a prescription question took a patient about 15 minutes and 3 calls (a voicemail, a dropped callback).
 #   Saturday about 5 PM: asking the CVS at 715 Morrissey Blvd, Dorchester about the hepatitis B vaccine meant waiting
 #   about 13 minutes for a callback.
-MEASURED_CALL_MINUTES = [15, 13]
-PATIENT_MINUTES_PER_QUESTION = round(sum(MEASURED_CALL_MINUTES) / len(MEASURED_CALL_MINUTES))  # about 14
+#   Saturday: a call to the CVS at 1575 Blue Hill Ave, Mattapan took about 9 minutes for a callback.
+MEASURED_CALL_MINUTES = [15, 13, 9]
+PATIENT_MINUTES_PER_QUESTION = round(sum(MEASURED_CALL_MINUTES) / len(MEASURED_CALL_MINUTES))  # about 12
 STAFF_MINUTES_PER_QUESTION = 4        # staff time for the one answered call: about 4 minutes (manager's estimate)
 MIN_DEMAND_COUNT = 5                  # demand signals: show only counts of 5 or more
 MIN_SLOT_REVIEWS = 3                  # best time to go: at least 3 reviews in a time slot
@@ -238,14 +239,14 @@ def savings(drug_id: str, insurance: str = "") -> dict:
 
 
 # ----------------------------------------------------------------------------- time saved
-def count_real_question(request: Request, completed: bool) -> None:
+def count_real_question(request: Request, completed: bool, run_id: str = "") -> None:
     if completed and not is_automated(request):
-        community.bump_counter("questions_answered")
+        community.record_answered(run_id)
 
 
 @router.get("/impact")
 def impact() -> dict:
-    q = community.read_counter("questions_answered")
+    q = community.answered_count()
     return {"questions": q, "patient_minutes": q * PATIENT_MINUTES_PER_QUESTION,
             "staff_minutes": q * STAFF_MINUTES_PER_QUESTION,
             "baselines": {"patient_minutes_per_question": PATIENT_MINUTES_PER_QUESTION,
@@ -254,9 +255,11 @@ def impact() -> dict:
                               {"when": "Friday", "about": "a prescription", "minutes": 15,
                                "note": "3 calls: a voicemail, a dropped callback, and one answered call"},
                               {"when": "Saturday about 5 PM", "about": "the hepatitis B vaccine", "minutes": 13,
-                               "pharmacy": "CVS, 715 Morrissey Blvd, Dorchester", "note": "waited for a callback"}],
-                          "source": "Based on two measured calls to Boston pharmacies (about 15 and 13 minutes), so "
-                                    "about 14 patient minutes per answered question. Staff: about 4 minutes, by a "
-                                    "pharmacy manager's estimate."},
+                               "pharmacy": "CVS, 715 Morrissey Blvd, Dorchester", "note": "waited for a callback"},
+                              {"when": "Saturday", "minutes": 9, "pharmacy": "CVS, 1575 Blue Hill Ave, Mattapan",
+                               "note": "waited for a callback"}],
+                          "source": "Based on three measured calls to Boston-area pharmacies (about 15, 13, and 9 "
+                                    "minutes), so about 12 patient minutes per answered question. Staff: about 4 "
+                                    "minutes, by a pharmacy manager's estimate."},
             "counts": "Only real chat questions answered by RxLantern (not tests, not sample data).",
             "label": "estimate"}

@@ -783,3 +783,24 @@ Every prompt sent to the AI assistant, word for word, grouped by build step.
 Sent while this step was running:
 
 > Important for the cleanup: only delete accounts and posts created by your tests (for example accounts with @example.com addresses). Never delete accounts, reviews, or stock reports made by real people through the website. Before deleting anything, list what you plan to delete and confirm none of it is a real post.
+
+### Step 9 — stop the server
+
+> First, stop any RxLantern server that is running on port 8000 (including your own background task).
+
+### Step 9 (part 2) — three fixes, then push to GitHub
+
+> First, stop any RxLantern server that is running on port 8000 (including your own background task).
+>
+> Before pushing, three quick fixes (do not delete any real accounts, posts, search counts, or real chat questions):
+> 1. Time-saved baseline: I now have three measured calls, not two. A third call to the CVS at 1575 Blue Hill Ave, Mattapan on Saturday took about 9 minutes for a callback (the others took about 15 and 13 minutes). Change the patient estimate to about 12 minutes "based on three measured calls to Boston-area pharmacies" (keep staff at 4 minutes), in English and Spanish, PROJECT_NOTES.md, and the tests. No names.
+> 2. Distances: write "about 1 mile away" (singular) when the distance rounds to 1, and "miles" otherwise, in English and Spanish.
+> 3. The home page counter showed "answered 0 questions" even after real people asked questions in the chat. Make sure real chat questions are counted and never reset by test cleanup.
+> Rerun the affected checks, rebuild frontend/dist, and commit with the message "Three-call baseline, mile wording, question counter".
+>
+> Then Step 9 (part 2): Push to GitHub. Log this prompt under Step 9 in AI_prompts.md.
+> 1. Scan the full git history one more time for any API key, and show me the list of files that will be pushed. Wait for my OK.
+> 2. After I say OK, create a public GitHub repository named rxlantern under my account SilvioDei and push all commits (keep the full step-by-step history). Do not push .env or any database file.
+> 3. The local folder can stay named rxcompass. Make sure nothing in the README
+
+(The message ended here, after "Make sure nothing in the README".)

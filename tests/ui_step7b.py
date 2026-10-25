@@ -150,7 +150,7 @@ def t_journey(browser):
     shot(page, "05_results_page.png")
     names = lambda: page.locator(".result-card h3").all_inner_texts()  # noqa: E731
     by_distance = page.locator(".result-card .address").all_inner_texts()
-    dists = [float(re.search(r"about ([\d.]+) miles", a).group(1)) for a in by_distance]
+    dists = [float(re.search(r"about ([\d.]+) miles?", a).group(1)) for a in by_distance]
     assert dists == sorted(dists), "not sorted by distance"
     page.select_option("select[name=sort]", "latest")
     page.wait_for_timeout(200)

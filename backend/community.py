@@ -62,7 +62,10 @@ CREATE TABLE IF NOT EXISTS search_counts (
     drug_id TEXT NOT NULL, neighborhood TEXT NOT NULL, week TEXT NOT NULL, count INTEGER NOT NULL,
     PRIMARY KEY (drug_id, neighborhood, week)
 );
--- Real questions answered by the chat (a number only, never the question).
+-- Real questions answered by the chat: one row per answer (its run id and time only, never the question), so the
+-- count can never be reset by mistake and a test can remove only the rows it made itself.
+CREATE TABLE IF NOT EXISTS answered_questions (run_id TEXT PRIMARY KEY, answered_at TEXT NOT NULL);
+-- The single-number counter used before Step 9 (part 2); no longer read or written.
 CREATE TABLE IF NOT EXISTS impact_counter (key TEXT PRIMARY KEY, value INTEGER NOT NULL);
 CREATE INDEX IF NOT EXISTS idx_reports_pd ON stock_reports(pharmacy_id, drug_id, reported_at);
 CREATE INDEX IF NOT EXISTS idx_reviews_p ON reviews(pharmacy_id, status);
@@ -547,15 +550,14 @@ def search_counts(weeks: list[str]) -> list[dict]:
     return [dict(r) for r in rows]
 
 
-def bump_counter(key: str, by: int = 1) -> int:
+def record_answered(run_id: str) -> None:
+    """One real chat answer (run id and time only). Recording the same run twice counts it once."""
     with _con() as con:
-        con.execute("INSERT INTO impact_counter (key, value) VALUES (?, ?) "
-                    "ON CONFLICT(key) DO UPDATE SET value = value + excluded.value", (key, by))
+        con.execute("INSERT OR IGNORE INTO answered_questions (run_id, answered_at) VALUES (?, ?)",
+                    (run_id or f"run-{time.time_ns()}", _iso(_now())))
         con.commit()
-        return con.execute("SELECT value FROM impact_counter WHERE key = ?", (key,)).fetchone()[0]
 
 
-def read_counter(key: str) -> int:
+def answered_count() -> int:
     with _con() as con:
-        row = con.execute("SELECT value FROM impact_counter WHERE key = ?", (key,)).fetchone()
-    return row[0] if row else 0
+        return con.execute("SELECT COUNT(*) FROM answered_questions").fetchone()[0]

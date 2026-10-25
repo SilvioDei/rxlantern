@@ -12,63 +12,70 @@
    "check": "Top search 'hep b' near 02122 reaches the vaccine results page with Morrissey Blvd",
    "result": "PASS",
    "notes": "Morrissey Blvd is the first (nearest) card near 02122",
-   "seconds": 0.9
+   "seconds": 0.8
   },
   {
    "n": 3,
    "check": "Top search 'flu shot' near 02368 reaches the flu vaccine results with Morrissey Blvd",
    "result": "PASS",
    "notes": "flu is on the Morrissey Blvd store's own page",
-   "seconds": 2.3
+   "seconds": 1.3
   },
   {
    "n": 4,
    "check": "All 10 vaccines found by the names patients use, with small spelling mistakes and spoken-style text",
    "result": "PASS",
    "notes": "23 names and misspellings, all 10 vaccines; guided search too; mic present (speech goes into the same box)",
-   "seconds": 9.5
+   "seconds": 8.7
   },
   {
    "n": 5,
    "check": "Coverage shows correctly for MassHealth, Medicare, and Blue Cross (plus travel and yellow fever rules)",
    "result": "PASS",
    "notes": "MassHealth: drug list, no PA; Medicare: Part B for some people, $0; Blue Cross: Massachusetts rule first, then the large-employer warning; typhoid: check with your plan; yellow fever: certified sites + CDC finder",
-   "seconds": 2.1
+   "seconds": 1.8
   },
   {
    "n": 6,
    "check": "Vaccine cards: Call with a vaccine script, Rate this pharmacy, Send it here, Before you go; no stock-report buttons",
    "result": "PASS",
    "notes": "call window shows the vaccine script and a tel: link, no report buttons; Send it here page carries the vaccine into Before you go",
-   "seconds": 1.2
+   "seconds": 1.0
   },
   {
    "n": 7,
    "check": "A medicine search still works as before (top search 'Ozempic' -> strength -> results)",
    "result": "PASS",
    "notes": "Ozempic -> strength -> 02124 -> results with stock-report buttons, as before",
-   "seconds": 1.3
+   "seconds": 1.2
   },
   {
    "n": 8,
    "check": "Chat answers 'Does the CVS on Morrissey Blvd have the hepatitis B vaccine, and is it covered?'",
    "result": "PASS",
-   "notes": "stop=completed; reply: MassHealth lists the hepatitis B vaccine with no prior authorization, and says vaccine coverage follows Massachusetts DPH guidelines. CVS lists hepatitis B on its national vaccine page, but that does not confirm the Morrissey Boulevard store offers it. Call the store or book online to confirm availability and coverage at that location.",
-   "seconds": 27.5
+   "notes": "stop=completed; reply: The CVS at 715 Morrissey Boulevard lists hepatitis B on CVS’s vaccine page, but that does not confirm this store has it today. Please call to confirm. Hepatitis B vaccine is listed on the MassHealth Drug List with no prior authorization required, and MassHealth covers vaccines according to DPH guidelines; coverage can differ by plan.",
+   "seconds": 12.9
   },
   {
    "n": 9,
    "check": "Works in Spanish, in Easy view, and at phone width (no sideways scroll)",
    "result": "PASS",
    "notes": "4 views (Spanish desktop, Easy view, phone, phone + Easy view + Spanish); no sideways scroll",
-   "seconds": 5.9
+   "seconds": 5.0
   },
   {
    "n": 10,
-   "check": "Time-saved estimate: about 14 patient minutes 'based on two measured calls', staff 4 (English and Spanish)",
+   "check": "Time-saved estimate: about 12 patient minutes 'based on three measured calls', staff 4 (English and Spanish)",
    "result": "PASS",
-   "notes": "API baselines 14/4 with two measured calls; About page in en and es; no names",
-   "seconds": 1.5
+   "notes": "API baselines 12/4 with three measured calls; About page in en and es; no names",
+   "seconds": 1.3
+  },
+  {
+   "n": 11,
+   "check": "Distances say 'about 1 mile away' (singular) when they round to 1, and 'miles' otherwise (English and Spanish)",
+   "result": "PASS",
+   "notes": "ZIP 02116 to Walgreens 24 School St, Boston, MA (1.00 mi): en: 'about 1 mile away'; es: 'a aproximadamente 1 milla'; chat labels too",
+   "seconds": 3.3
   }
  ],
  "user_db_after": {
@@ -76,8 +83,7 @@
   "sessions": 1,
   "stock_reports": 2,
   "reviews": 1,
-  "login_failures": 0,
   "search_counts": 1,
-  "impact_counter": 1
+  "answered_questions": 3
  }
 }

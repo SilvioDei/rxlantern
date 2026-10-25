@@ -297,15 +297,16 @@ def t_es_easy_phone(browser):
 
 
 # ----------------------------------------------------------------------------- 10. time-saved baseline
-@check(10, "Time-saved estimate: about 14 patient minutes 'based on two measured calls', staff 4 (English and Spanish)")
+@check(10, "Time-saved estimate: about 12 patient minutes 'based on three measured calls', staff 4 (English and Spanish)")
 def t_impact(browser):
     imp = httpx.get(f"{BASE}/api/impact").json()
     b = imp["baselines"]
-    assert b["patient_minutes_per_question"] == 14 and b["staff_minutes_per_question"] == 4, b
-    assert len(b["measured_calls"]) == 2
+    assert b["patient_minutes_per_question"] == 12 and b["staff_minutes_per_question"] == 4, b
+    assert len(b["measured_calls"]) == 3
     out = []
-    for lang, words in (("en", ["about 14 minutes", "based on two measured calls", "about 4 minutes", "13 minutes", "15 minutes"]),
-                        ("es", ["unos 14 minutos", "según dos llamadas medidas", "unos 4 minutos"])):
+    for lang, words in (("en", ["about 12 minutes", "based on three measured calls to Boston-area pharmacies",
+                                 "about 4 minutes", "15 minutes", "13 minutes", "9 minutes"]),
+                        ("es", ["unos 12 minutos", "según tres llamadas medidas a farmacias del área de Boston", "unos 4 minutos"])):
         page = new_page(browser, lang=lang)
         page.goto(f"{BASE}/about")
         main = page.locator("main")
@@ -317,9 +318,42 @@ def t_impact(browser):
         assert not [n for n in names if n in text], "a person's name is on the About page"
         out.append(lang)
         if lang == "en":
-            main.get_by_text("based on two measured calls").first.scroll_into_view_if_needed()
+            main.get_by_text("based on three measured calls").first.scroll_into_view_if_needed()
             shot(page, "10_about_time_saved.png")
-    return "API baselines 14/4 with two measured calls; About page in " + " and ".join(out) + "; no names"
+    return "API baselines 12/4 with three measured calls; About page in " + " and ".join(out) + "; no names"
+
+
+# ----------------------------------------------------------------------------- 11. "about 1 mile away"
+@check(11, "Distances say 'about 1 mile away' (singular) when they round to 1, and 'miles' otherwise (English and Spanish)")
+def t_one_mile(browser):
+    sys.path.insert(0, str(REPO))
+    from backend import tools  # same distance formula as the browser
+    best = None
+    for z in tools._rows("SELECT zip, latitude, longitude FROM zip_centroids"):
+        for ph in tools._pharmacies():
+            d = tools.miles(z["latitude"], z["longitude"], ph["latitude"], ph["longitude"])
+            if 0.97 <= d <= 1.03 and (best is None or abs(d - 1) < abs(best[2] - 1)):
+                best = (z["zip"], ph, d)
+    assert best, "no ZIP about 1 mile from a pharmacy"
+    zip_code, ph, d = best
+    notes = []
+    for lang, one, many in (("en", "about 1 mile away", re.compile(r"about \d+(\.\d)? miles away")),
+                            ("es", "a aproximadamente 1 milla", re.compile(r"a unas \d+(\.\d)? millas"))):
+        page = new_page(browser, lang=lang, place=zip_code, insurance="masshealth")
+        page.goto(f"{BASE}/results?drug=lisinopril_10")
+        card = page.locator(f"#ph-{ph['id']}")
+        page.get_by_role("button", name=re.compile("Show all|Mostrar")).click() if page.get_by_role("button", name=re.compile("Show all|Mostrar")).count() else None
+        expect(card.locator(".address")).to_contain_text(one, timeout=15000)
+        text = page.locator("main").inner_text()
+        bad = re.findall(r"(?<![\d.])1(\.0)? (miles|millas)", text)
+        assert not bad, f"plural used for 1: {bad}"
+        assert many.search(text), "other distances should still say miles"
+        if lang == "en":
+            card.scroll_into_view_if_needed()
+            shot(page, "11_about_1_mile_away.png")
+        notes.append(f"{lang}: '{one}'")
+    assert tools.miles_label(1.0) == "about 1 mile away" and tools.miles_label(2.34) == "about 2.3 miles away"
+    return f"ZIP {zip_code} to {ph['name']} {ph['address'][:24]} ({d:.2f} mi): " + "; ".join(notes) + "; chat labels too"
 
 
 def main() -> int:
@@ -329,7 +363,7 @@ def main() -> int:
     with sync_playwright() as p:
         browser = p.chromium.launch()
         for n, fn in enumerate((t_hepb_full, t_hepb_short, t_flu, t_all_names, t_coverage, t_cards, t_medicine,
-                                t_chat, t_es_easy_phone, t_impact), 1):
+                                t_chat, t_es_easy_phone, t_impact, t_one_mile), 1):
             if not only or n in only:
                 fn(browser)
         browser.close()

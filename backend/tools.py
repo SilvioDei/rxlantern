@@ -651,11 +651,18 @@ def vaccine_offer(p: dict, vid: str) -> dict:
     return {"offer": "not_listed", "source": p["website"], "checked_date": p["checked_date"]}
 
 
+def miles_label(dist: float, straight_line: bool = False) -> str:
+    """'about 1 mile away' when the distance rounds to 1.0, otherwise 'about 2.3 miles away'."""
+    x = f"{dist:.1f}"
+    text = "about 1 mile away" if x == "1.0" else f"about {x} miles away"
+    return text + (" (straight line)" if straight_line else "")
+
+
 def _brief(p: dict, dist: float | None, lang: str) -> dict:
     st = open_status(p["id"], lang)
     return {"pharmacy_id": p["id"], "name": p["name"], "type": p["type"], "address": p["address"], "phone": p["phone"],
             "neighborhood": p["neighborhood"],
-            "distance_label": f"about {dist:.1f} miles away (straight line)" if dist is not None else None,
+            "distance_label": miles_label(dist, straight_line=True) if dist is not None else None,
             "distance_miles": round(dist, 2) if dist is not None else None,
             "open_now": st["open_now"], "status": st["status"], "closes_at": st.get("closes_at"),
             "opens_next": st.get("opens_next"), "delivery": p["delivery"],
@@ -1155,7 +1162,7 @@ def reports_near(drug_name: str, place: str, limit: int = 5) -> dict:
             x = s["drugs"][0]
             dist = miles(loc["latitude"], loc["longitude"], p["latitude"], p["longitude"])
             out.append({"pharmacy_id": p["id"], "name": p["name"], "address": p["address"],
-                        "distance_label": f"about {dist:.1f} miles away", **{k: x[k] for k in
+                        "distance_label": miles_label(dist), **{k: x[k] for k in
                         ("in_stock_reports", "out_of_stock_reports", "latest_report", "conflicting")}})
         if len(out) >= limit:
             break

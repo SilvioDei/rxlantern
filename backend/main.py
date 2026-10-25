@@ -65,7 +65,7 @@ async def ask_route(body: AskRequest, request: Request):
             # Setup problem, not the patient's: say exactly what to fix (never echo the key).
             return JSONResponse(status_code=502, content=BAD_KEY)
         raise HTTPException(502, "Something went wrong while answering. Please try again.") from e
-    insights.count_real_question(request, reply.stop_reason == "completed")  # time-saved counter (never tests)
+    insights.count_real_question(request, reply.stop_reason == "completed", reply.run_id)  # time-saved counter (never tests)
     return reply
 
 

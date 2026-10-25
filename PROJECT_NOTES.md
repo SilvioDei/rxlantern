@@ -152,7 +152,7 @@ width. New routes are in `backend/insights.py`; shared pieces in `frontend/src/c
   (106 of 150; never controlled drugs). Manufacturer programs from each brand's own site (30 of 38 brand drugs; 8 "not
   found"). Shown for no insurance, work/private plans, or no insurance chosen; Medicare and MassHealth see only the note.
 - **Time saved**: `impact_counter` counts real chat answers only (completed, not tests). Estimate per question: patient
-  15 minutes (getting an answer took about 15 minutes and 3 calls), staff 4 minutes (only one of the 3 calls took
+  15 minutes at first (later 14, then 12: see Step 9), staff 4 minutes (only one of the 3 calls took
   staff time; the others were a voicemail and a dropped callback).
 - **Sample data** (`SHOW_SAMPLE_DATA`): languages on sample reviews, three sample reviews at CVS Chinatown in the same
   weekday-morning slot (best time), and sample search counts (one under 5, so hidden). Never counted with real data.
@@ -284,7 +284,7 @@ rxcompass/
 - **Time saved**: now "based on two measured calls": a Friday prescription call (about 15 minutes, 3 calls) and a
   Saturday call around 5 PM to the CVS at 715 Morrissey Blvd, Dorchester about the hepatitis B vaccine (about 13
   minutes waiting for a callback). Patient estimate 14 minutes per answered question (the average), staff still 4.
-  About page in English and Spanish; no names.
+  About page in English and Spanish; no names. (Replaced in Step 9 part 2 by three measured calls: 12 minutes.)
 - **Tests**: `tests/ui_step9_vaccines.py` (10 checks, one chat question). The browser tests now share
   `tests/cleanup_util.py`: they delete only test accounts (@example.com) and their posts, print what they delete, and
   put search counts and the time-saved counter back to their values before the run (they used to clear those tables,
@@ -292,3 +292,23 @@ rxcompass/
   delete every screenshot except the 7c ones).
 - **Real rows kept**: 3 real accounts, 2 stock reports, 1 review, 1 search count, and 2 real chat questions from people
   using the website were left untouched.
+
+## Step 9 (part 2): three-call baseline, mile wording, question counter (2026-10-25)
+
+- **Time saved**: about 12 patient minutes per answered question, "based on three measured calls to Boston-area
+  pharmacies": a Friday prescription call (about 15 minutes, 3 calls), a Saturday call around 5 PM to the CVS at 715
+  Morrissey Blvd, Dorchester about the hepatitis B vaccine (about 13 minutes for a callback), and a Saturday call to
+  the CVS at 1575 Blue Hill Ave, Mattapan (about 9 minutes for a callback). Average 12.3, shown as about 12. Staff
+  still about 4 minutes. `backend/insights.py` (`MEASURED_CALL_MINUTES`), About page in English and Spanish. No names.
+- **Distances**: "about 1 mile away" / "a aproximadamente 1 milla" when a distance rounds to 1.0; "miles" / "millas"
+  otherwise. Website: `translate()` picks `awayOne`. Chat and tools: `tools.miles_label()`.
+- **Question counter**: the home page said "answered 0 questions" because the counter was one number that test
+  cleanups reset: the Step 8 safety test cleared it, and later test runs put it back to its value from the start of
+  the run, which erased real questions asked while tests ran. Now each real answered question is one row in
+  `answered_questions` (run id and time only, never the question); the count is the number of rows. Test cleanup
+  (`tests/cleanup_util.py`) never resets anything: it removes only the run ids of the test's own "real visitor"
+  questions and takes off only the searches the test itself made. The old `impact_counter` table is no longer used.
+- **Counter repaired**: the 3 real chat answers from the evening of 2026-10-24 (22:18-22:22 Boston time, "where can i
+  get a covid shot?" and its two follow-ups) were added from `output/audit_trail.json` by their run ids. Earlier
+  questions in the audit trail that are not in any test script were not added, because the trail does not record
+  whether a question came from a person or from a manual test.

@@ -548,7 +548,7 @@ def _card(pid: str, deps: RunDeps) -> PharmacyCard | None:
     dist = round(tools.miles(loc[0], loc[1], p["latitude"], p["longitude"]), 1) if loc else None
     return PharmacyCard(id=pid, name=p["name"], address=p["address"], phone=p["phone"], open_now=st["open_now"],
                         status=st["status"], closes_at=st.get("closes_at"), opens_next=st.get("opens_next"),
-                        distance_miles=dist, distance_label=f"about {dist} miles away" if dist is not None else None,
+                        distance_miles=dist, distance_label=tools.miles_label(dist) if dist is not None else None,
                         source=p["website"], checked_date=p["checked_date"])
 
 
