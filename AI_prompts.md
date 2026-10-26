@@ -928,3 +928,13 @@ Sent while this step was running:
 > 6. It is right at the 15-page limit; on another computer the final "Sources" paragraph spilled onto page 16. Trim about a third of a page (for example tighten the section 3 table text or shrink one screenshot) so it prints at 15 pages with margin to spare in both Chrome and Edge.
 >
 > Log this prompt under Step 10 and push the log. Tell me the report page count and confirm all 10 slides fit.
+
+### Step 10 — submission rules: repository link in both files
+
+> My professor just sent new submission rules: on Canvas I can submit only files (no URL), and I must upload ONLY report.html and slides.html (plus an optional video). Any other file will be penalized. The GitHub repo URL must be inside both the report and the slides so they can clone it.
+>
+> 1. Confirm https://github.com/SilvioDei/rxlantern appears near the top of ../submission/report.html as a clickable link. If not, add it there. Change nothing else.
+> 2. Add the same link to slide 1 of ../submission/slides.html, under my name and the course line, as a clickable link in small but readable text (it's already on the last slide; keep it there). Change nothing else.
+> 3. Check in a real browser: the report still prints at 15 pages or fewer in Chrome and Edge, slide 1 still fits with nothing cut off, and every image still shows.
+> 4. Do not create any new files in ../submission/ (no backups or copies). Tell me what files are in that folder now, so I know exactly which two to upload.
+> 5. Tell me exactly where the URL appears in each file. Log this prompt under Step 10 and push the log.
